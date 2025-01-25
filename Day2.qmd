@@ -1,0 +1,238 @@
+---
+title: "Day 2"
+title-slide-attributes:
+  data-background-image: images/lake.jpg
+  data-background-size: contain
+  data-background-opacity: "0.5"
+subtitle: "Math 216: Statistical Thinking"
+author: "Bastola"
+format:
+  revealjs:
+    html-math-method: mathjax
+    mathjax-url: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/MathJax.js"
+    theme: [default, scss/main.scss]
+    slide-number: true
+    preview-links: auto
+    history: true
+    chalkboard: 
+      src: drawings.json
+    transition: slide
+    background-transition: fade    
+    touch: false
+    controls: true
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+options(htmltools.preserve.raw = FALSE)
+options(ggrepel.max.overlaps = Inf)
+
+# Load necessary packages
+library(tidyverse)
+library(countdown)
+library(ggthemes)
+library(forcats)
+library(patchwork)
+
+yt <- 0
+```
+
+
+
+::: centered-content
+## Sampling and Inference
+
+::: cle9
+- A **population** includes all individuals or objects of interest.
+- A **sample** is all the cases that we have collected data on (a subset of the population).
+- **Statistical inference** is the process of using data from a sample to gain information about the population.
+:::
+:::
+
+::: centered-content
+## Sampling and Inference ([Source](https://scholarworks.wm.edu/cgi/viewcontent.cgi?article=3030&context=vimsarticles))
+
+::: {style="text-align: center;"}
+![](images/bluecrab.png){width="70%" height="60%"}
+:::
+:::
+
+
+##
+
+::: cle8
+::: font90
+**Population**
+
+- All blue crabs in the Maryland Coastal Bays (MCB).
+- Includes sub-estuaries: Assawoman Bay, St. Martin River, Isle of Wight, Sinepuxent Bay, Newport Bay, Chincoteague Bay.
+
+**Sample**
+
+- Blue crabs collected from 20 sites within MCB.
+- Sample period: April - December, 2014-2016.
+- Method: Trawl surveys.
+:::
+:::
+
+##
+
+::: cle3
+::: font90
+**Variables**
+
+- **Primary Variable**: Carapace width, sex, maturity status, molt stage.
+
+**Inference**
+
+- Population structure of blue crabs in MCB.
+- Seasonal variations: size distribution, molt cycles, reproductive patterns.
+:::
+:::
+
+::: centered-content
+# Sampling Bias
+
+::: bq
+- Sampling bias occurs when the method of selecting a sample causes the sample to differ from the population in some relevant way.
+- If sampling bias exists, we cannot trust generalizations from the sample to the population.
+:::
+
+To eliminate sampling bias, always take a <span class="bold-text">RANDOM SAMPLE!</span>
+:::
+
+::: middle-align-xy
+# Bias in Data
+
+> Even with a random sample, data can still be biased, especially when collected on humans.
+
+::: lqt
+Some forms of bias to watch out for in data collection:
+
+- Question wording.
+- Question order.
+- Context.
+- Non-response bias.
+:::
+:::
+
+::: centered-content
+### Question Wording
+
+::: green-h
+A random sample was asked: “Should there be a tax cut, or should money be used to fund new government programs?”
+:::
+
+| Tax Cut | Programs |
+|---------|----------|
+| 60%     | 40%      |
+:::
+
+::: centered-content
+### Question Wording
+
+::: green-h
+A different random sample was asked: “Should there be a tax cut, or should money be spent on programs for education, the environment, health care, crime-fighting, and military defense?”
+:::
+
+| Tax Cut | Programs |
+|---------|----------|
+| 22%     | 78%      |
+:::
+
+::: centered-content
+## Question Order
+
+::: bq
+- Depending on the order of questions, we can see either greater or lesser differences in responses.
+- Respondents tend to provide answers consistent with their prior responses.
+:::
+:::
+
+::: centered-content
+## [Swedish Study](https://link.springer.com/article/10.1007/s11109-020-09630-5): Response Bias
+
+<center>
+<img src="images/swedish_study.png" width="70%" height="50%"> <br>
+</center>
+:::
+
+::: centered-content
+## Identified Sources of Bias in `Swedish Study`
+
+::: bqt
+`Political Bias:` The study experimentally primes the political affiliations of the respondents before asking questions about corruption. This bias arises when people's political leanings affect their perception and reporting of corruption levels.
+:::
+
+::: bqt
+`Sensitivity Bias:` Questions about one's experiences with corruption are sensitive in nature and may result in biased responses due to fear of retribution or social stigma.
+:::
+:::
+
+::: centered-content
+## Context
+
+::: green-h
+**Ann Landers** column asked readers *“If you had it to do over again, would you have children?”*
+
+The first request for data contained a letter from a young couple which listed worries about parenting and various reasons not to have kids.
+
+$$30\% \text{ said yes}$$
+:::
+:::
+
+::: centered-content
+## Context
+
+::: green-h
+The second request for data was in response to this number, in which Ann wrote how she was *“stunned, disturbed, and just plain flummoxed.”*
+
+$$95\% \text{ said yes}$$
+:::
+:::
+
+::: centered-content
+## Non-response Bias
+
+> When respondents are either unable or unwilling to respond to your survey, this results in non-response bias.
+
+::: bq
+- Survey targeted to the wrong audience.
+- There is general unwillingness due to polar opposite opinions.
+- The survey did not reach the right respondent.
+  - e.g., A survey asking teenagers about the best cigarette brands.
+:::
+:::
+
+::: centered-content
+### Experiment vs. Observational Study
+
+::: lqt
+An [observational study]{.bold-text} is a study in which the researcher does not actively control the value of any variable but simply observes the values as they naturally exist.
+:::
+
+::: lqt
+An [experiment]{.bold-text} is a study in which the researcher actively controls one or more of the explanatory variables.
+:::
+:::
+
+::: centered-content
+## Experiment or Observational Study?
+
+::: bq
+To examine whether farm-grown salmon contain more omega-3 oils if water is more acidic, we collect samples of salmon and water from multiple fish farms to see if the two variables are related.
+:::
+
+<details>
+<summary class="answer">Click for answer</summary>
+This is an observational study because the researchers do not actively manipulate or control the acidity of the water; they simply observe the naturally occurring conditions at each fish farm.
+</details>
+:::
+
+::: centered-content
+## Conclusion: Statistical Thinking!
+
+::: green-h
+**Statistical thinking** involves applying rational thought and the science of statistics to critically assess data and inferences. Fundamental to the thought process is that variation exists in populations of data.
+:::
+:::

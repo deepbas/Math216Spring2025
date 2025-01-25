@@ -1,0 +1,247 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Welcome to the captivating world of statistical thinking! This course will provide you with a solid foundation in statistical theory while taking you on a journey through the practical aspects of the subject. Along the way, you’ll gain experience with statistical software, learn to interpret and effectively communicate statistical findings, and explore a range of topics in descriptive and inferential data analysis and both parametric and non-parametric statistical inference. Some of the areas we’ll delve into include probability, normal distribution, sampling distributions, confidence intervals, hypothesis testing and simple linear regression.\nAt the heart of this course is the ability to interpret results and grasp underlying concepts, rather than merely obtaining numerical outcomes. By engaging with a diverse set of problems, you’ll become well-versed in statistical methodologies. However, it’s crucial to remember that a deep understanding of the concepts is the key to drawing meaningful conclusions.\n\n\n\n\nMaster the basic principles of data analysis, including the production and application of data in studies and experiments.\nApply principles of inference to construct confidence intervals and conduct hypothesis tests effectively.\nCritically evaluate statistical arguments and methodologies in published research.\nCompare and differentiate between parametric and non-parametric methods in statistical analysis.\nUtilize software R to conduct data analysis, create graphs, and perform basic statistical tests."
+  },
+  {
+    "objectID": "about.html#learning-objectives",
+    "href": "about.html#learning-objectives",
+    "title": "About",
+    "section": "",
+    "text": "Master the basic principles of data analysis, including the production and application of data in studies and experiments.\nApply principles of inference to construct confidence intervals and conduct hypothesis tests effectively.\nCritically evaluate statistical arguments and methodologies in published research.\nCompare and differentiate between parametric and non-parametric methods in statistical analysis.\nUtilize software R to conduct data analysis, create graphs, and perform basic statistical tests."
+  },
+  {
+    "objectID": "RandRStudio.html",
+    "href": "RandRStudio.html",
+    "title": "Setting Up R and RStudio",
+    "section": "",
+    "text": "This lab tutorial will guide you through installing R and RStudio on your computer, managing packages, and loading data into R. This setup is essential for performing all kinds of data analysis tasks in R."
+  },
+  {
+    "objectID": "RandRStudio.html#on-windows",
+    "href": "RandRStudio.html#on-windows",
+    "title": "Setting Up R and RStudio",
+    "section": "On Windows",
+    "text": "On Windows\n\n\nDownload R:\n\nVisit CRAN and download the latest version of R for Windows.\nRun the downloaded .exe file and follow the installation instructions.\n\n\n\n\n\nCRAN mirror\nDownload Latest R\nExecutable File in Downloads Folder\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDownload RStudio:\n\nGo to the RStudio Download page and download the free version of RStudio Desktop for Windows.\nInstall it by running the downloaded .exe file.\n\n\n\n\n\nDownload Latest RStudio\nExecutable File in Downloads Folder"
+  },
+  {
+    "objectID": "RandRStudio.html#on-mac",
+    "href": "RandRStudio.html#on-mac",
+    "title": "Setting Up R and RStudio",
+    "section": "On Mac",
+    "text": "On Mac\n\n\nDownload R:\n\nNavigate to CRAN and choose the version for macOS.\nOpen the downloaded .pkg file to start the installation.\n\n\n\n\n\nCRAN mirror\nDownload Latest R\nExecutable File in Downloads Folder\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDownload RStudio:\n\nVisit RStudio Download page and select RStudio for macOS.\nOpen the downloaded .dmg file and drag RStudio to your Applications folder.\n\n\n\n\n\nDownload Latest RStudio\nExecutable File in Downloads Folder"
+  },
+  {
+    "objectID": "RandRStudio.html#understanding-r-markdown-documents",
+    "href": "RandRStudio.html#understanding-r-markdown-documents",
+    "title": "Setting Up R and RStudio",
+    "section": "Understanding R Markdown Documents",
+    "text": "Understanding R Markdown Documents\nR Markdown allows you to integrate code and text in the same document, facilitating reproducible research and interactive data analysis reports. Here’s a quick overview:"
+  },
+  {
+    "objectID": "RandRStudio.html#managing-.rmd-files-and-setting-the-working-directory",
+    "href": "RandRStudio.html#managing-.rmd-files-and-setting-the-working-directory",
+    "title": "Setting Up R and RStudio",
+    "section": "Managing .Rmd Files and Setting the Working Directory",
+    "text": "Managing .Rmd Files and Setting the Working Directory\nDownloading and Organizing .Rmd Files\nTo effectively manage your course materials in RStudio, follow these steps:\n\n\nDownload .Rmd File:\n\nNavigate to MyClasses and locate the desired .Rmd file for your course.\nDownload the file to your local machine.\n\n\n\nCreate a Course Folder:\n\nCreate a new folder named math214 in a suitable location on your computer or within your OneDrive account.\n\n\n\nOrganize Files:\n\nMove the downloaded .Rmd file into the math214 folder to keep your course materials organized."
+  },
+  {
+    "objectID": "RandRStudio.html#text-formatting-in-r-markdown",
+    "href": "RandRStudio.html#text-formatting-in-r-markdown",
+    "title": "Setting Up R and RStudio",
+    "section": "Text Formatting in R Markdown",
+    "text": "Text Formatting in R Markdown\nMarkdown is a lightweight markup language that allows you to add formatting elements using plain text. Here’s how you can use different Markdown syntax to format text within your R Markdown documents.\nHeaders\nCreate headers by prefixing the text with one or more hash symbols (#). The number of # symbols before the text determines the level of the header.\n# Header 1\n## Header 2\n### Header 3\nLists\nYou can create bulleted or numbered lists:\n\n\nUnordered Lists (bullets):\n\n- Item 1\n- Item 2\n  - Subitem 1\n  - Subitem 2\n\n\nOrdered Lists:\n\n1. First item\n2. Second item\n   1. Subitem 1\n   2. Subitem 2\nLinks\nInclude hyperlinks using the format [link text](URL):\n[Visit Canvas](https://salisbury.instructure.com/courses/71470)\nEmphasis\nItalicize or bold text using asterisks or underscores:\n\n\nItalic: *Italic* or _Italic_\n\n\nBold: **Bold** or __Bold__\n\nImages\nEmbed images using the format ![Alt text](image_URL \"Optional Title\"):\n![Example Image](path_to_image.jpg \"This is an image\")\nBlockquotes\nCreate blockquotes with &gt;:\n&gt; This is a blockquote.\nCode\nDisplay inline code with backticks and code blocks with triple backticks:\n\nInline code: `code`\n\nCode block:\n\n\n\n\n\n\n\n\n\n\n\n[1] -5\n\n\nHorizontal Rules\nInsert a horizontal line with three or more hyphens:\n---\nCombining Markdown with R Code\nMarkdown can be interleaved with executable R code chunks:\n\n# Calculate the sum of numbers from 1 to 10\nsum(1:10)\n\n[1] 55"
+  },
+  {
+    "objectID": "RandRStudio.html#r-code-chunk-options",
+    "href": "RandRStudio.html#r-code-chunk-options",
+    "title": "Setting Up R and RStudio",
+    "section": "R Code Chunk Options",
+    "text": "R Code Chunk Options\nBefore diving into data loading, let’s understand important R chunk options:\n\n\neval: Use eval=FALSE to prevent code from running but still display it.\n\necho: With echo=FALSE, the code is run but not displayed in the document.\n\ninclude: include=FALSE runs the code and hides both the code and output from the final output.\n\nExample to demonstrate:\n\n\n\n\n\n\n\n\n\n# This code will run, and both code and output will appear in the document.\nsummary(cars)\n\n     speed           dist       \n Min.   : 4.0   Min.   :  2.00  \n 1st Qu.:12.0   1st Qu.: 26.00  \n Median :15.0   Median : 36.00  \n Mean   :15.4   Mean   : 42.98  \n 3rd Qu.:19.0   3rd Qu.: 56.00  \n Max.   :25.0   Max.   :120.00  \n\n\nSetting the Working Directory\nIt’s crucial to set the working directory in R to the folder where your course files are stored. This can be done in several ways:\n\n\nUsing RStudio:\n\nIn RStudio, you can set the working directory through the menu by navigating to Session &gt; Set Working Directory &gt; Choose Directory... and selecting your math216 folder.\n\n\n\nUsing R Script:\n\nYou can also set the working directory directly in an R script using the setwd() function. Place the following line of code at the beginning of your script:\n\nsetwd(\"~/math216\")\nReplace \"~/math216\" with the actual path to your course folder.\n\n\nUsing R Console:\n\nYou can manually set the working directory in the R console with the same command:\n\nsetwd(\"~/math216\")"
+  },
+  {
+    "objectID": "Day2.html#sampling-and-inference",
+    "href": "Day2.html#sampling-and-inference",
+    "title": "Day 2",
+    "section": "Sampling and Inference",
+    "text": "Sampling and Inference\n\n\nA population includes all individuals or objects of interest.\nA sample is all the cases that we have collected data on (a subset of the population).\nStatistical inference is the process of using data from a sample to gain information about the population."
+  },
+  {
+    "objectID": "Day2.html#sampling-and-inference-source",
+    "href": "Day2.html#sampling-and-inference-source",
+    "title": "Day 2",
+    "section": "Sampling and Inference (Source)",
+    "text": "Sampling and Inference (Source)"
+  },
+  {
+    "objectID": "Day2.html#section",
+    "href": "Day2.html#section",
+    "title": "Day 2",
+    "section": "",
+    "text": "Population\n\nAll blue crabs in the Maryland Coastal Bays (MCB).\nIncludes sub-estuaries: Assawoman Bay, St. Martin River, Isle of Wight, Sinepuxent Bay, Newport Bay, Chincoteague Bay.\n\nSample\n\nBlue crabs collected from 20 sites within MCB.\nSample period: April - December, 2014-2016.\nMethod: Trawl surveys."
+  },
+  {
+    "objectID": "Day2.html#section-1",
+    "href": "Day2.html#section-1",
+    "title": "Day 2",
+    "section": "",
+    "text": "Variables\n\nPrimary Variable: Carapace width, sex, maturity status, molt stage.\n\nInference\n\nPopulation structure of blue crabs in MCB.\nSeasonal variations: size distribution, molt cycles, reproductive patterns."
+  },
+  {
+    "objectID": "Day2.html#question-order",
+    "href": "Day2.html#question-order",
+    "title": "Day 2",
+    "section": "Question Order",
+    "text": "Question Order\n\n\nDepending on the order of questions, we can see either greater or lesser differences in responses.\nRespondents tend to provide answers consistent with their prior responses."
+  },
+  {
+    "objectID": "Day2.html#swedish-study-response-bias",
+    "href": "Day2.html#swedish-study-response-bias",
+    "title": "Day 2",
+    "section": "Swedish Study: Response Bias",
+    "text": "Swedish Study: Response Bias"
+  },
+  {
+    "objectID": "Day2.html#identified-sources-of-bias-in-swedish-study",
+    "href": "Day2.html#identified-sources-of-bias-in-swedish-study",
+    "title": "Day 2",
+    "section": "Identified Sources of Bias in Swedish Study",
+    "text": "Identified Sources of Bias in Swedish Study\n\nPolitical Bias: The study experimentally primes the political affiliations of the respondents before asking questions about corruption. This bias arises when people’s political leanings affect their perception and reporting of corruption levels.\n\n\nSensitivity Bias: Questions about one’s experiences with corruption are sensitive in nature and may result in biased responses due to fear of retribution or social stigma."
+  },
+  {
+    "objectID": "Day2.html#context",
+    "href": "Day2.html#context",
+    "title": "Day 2",
+    "section": "Context",
+    "text": "Context\n\nAnn Landers column asked readers “If you had it to do over again, would you have children?”\nThe first request for data contained a letter from a young couple which listed worries about parenting and various reasons not to have kids.\n\\[30\\% \\text{ said yes}\\]"
+  },
+  {
+    "objectID": "Day2.html#context-1",
+    "href": "Day2.html#context-1",
+    "title": "Day 2",
+    "section": "Context",
+    "text": "Context\n\nThe second request for data was in response to this number, in which Ann wrote how she was “stunned, disturbed, and just plain flummoxed.”\n\\[95\\% \\text{ said yes}\\]"
+  },
+  {
+    "objectID": "Day2.html#non-response-bias",
+    "href": "Day2.html#non-response-bias",
+    "title": "Day 2",
+    "section": "Non-response Bias",
+    "text": "Non-response Bias\n\nWhen respondents are either unable or unwilling to respond to your survey, this results in non-response bias.\n\n\n\nSurvey targeted to the wrong audience.\nThere is general unwillingness due to polar opposite opinions.\nThe survey did not reach the right respondent.\n\ne.g., A survey asking teenagers about the best cigarette brands."
+  },
+  {
+    "objectID": "Day2.html#experiment-or-observational-study",
+    "href": "Day2.html#experiment-or-observational-study",
+    "title": "Day 2",
+    "section": "Experiment or Observational Study?",
+    "text": "Experiment or Observational Study?\n\nTo examine whether farm-grown salmon contain more omega-3 oils if water is more acidic, we collect samples of salmon and water from multiple fish farms to see if the two variables are related.\n\n\n\nClick for answer\n\nThis is an observational study because the researchers do not actively manipulate or control the acidity of the water; they simply observe the naturally occurring conditions at each fish farm."
+  },
+  {
+    "objectID": "Day2.html#conclusion-statistical-thinking",
+    "href": "Day2.html#conclusion-statistical-thinking",
+    "title": "Day 2",
+    "section": "Conclusion: Statistical Thinking!",
+    "text": "Conclusion: Statistical Thinking!\n\nStatistical thinking involves applying rational thought and the science of statistics to critically assess data and inferences. Fundamental to the thought process is that variation exists in populations of data."
+  },
+  {
+    "objectID": "Day1.html#about-me",
+    "href": "Day1.html#about-me",
+    "title": "Day 1",
+    "section": "About Me",
+    "text": "About Me\n\n\n\n\n\nFirst year at Salisbury\nResearch in Statistical Computation and Applied Statistics\nAvid learner and traveler"
+  },
+  {
+    "objectID": "Day1.html#active-participation",
+    "href": "Day1.html#active-participation",
+    "title": "Day 1",
+    "section": "Active Participation",
+    "text": "Active Participation\n\n\n\nEngage Actively\n\nTake lecture notes\nFollow class handouts\n\nAsk Questions\n\nEvery question is valuable; we’re learning together\n\nGain Conceptual Understanding\n\nTo be able to apply the knowledge; understanding the concepts is key"
+  },
+  {
+    "objectID": "Day1.html#tell-me-about-yourself",
+    "href": "Day1.html#tell-me-about-yourself",
+    "title": "Day 1",
+    "section": "Tell Me About Yourself!",
+    "text": "Tell Me About Yourself!\n\n\n\n\n\nYour name?\nGender Pronouns?\nFavorite Summer Memory?\n\n\n\n\n\n\n\nvia GIPHY"
+  },
+  {
+    "objectID": "Day1.html#class-pipelines",
+    "href": "Day1.html#class-pipelines",
+    "title": "Day 1",
+    "section": "Class Pipelines",
+    "text": "Class Pipelines\n\n\n\nMost of the course information and schedule will be posted in MyClasses\nHomework will be posted but not collected\nLabs most Tuesdays; lab reports due in MyClasses a week from the lab date\nQuizzes every Friday in-person; includes HW, lectures, labs"
+  },
+  {
+    "objectID": "Day1.html#what-will-a-typical-dayweek-look-like",
+    "href": "Day1.html#what-will-a-typical-dayweek-look-like",
+    "title": "Day 1",
+    "section": "What Will a Typical Day/Week Look Like?",
+    "text": "What Will a Typical Day/Week Look Like?\n\n\n\nBefore class:\n\nRead assigned topics from textbook\nWork on homework/lab reports, come with questions\n\nDuring class:\n\nMini lectures\nClass activities"
+  },
+  {
+    "objectID": "Day1.html#statistical-computation",
+    "href": "Day1.html#statistical-computation",
+    "title": "Day 1",
+    "section": "Statistical Computation",
+    "text": "Statistical Computation\n \n\n\nStatistical computing software called R\nRStudio/Posit provides a user-friendly interface to R\nR Markdown is a platform in Posit to write your codes and results\n\n\n\nRMarkdown Documentation"
+  },
+  {
+    "objectID": "Day1.html#data-units-and-variables",
+    "href": "Day1.html#data-units-and-variables",
+    "title": "Day 1",
+    "section": "Data: Units and Variables",
+    "text": "Data: Units and Variables\n\nExperimental (or Observational) Unit\nAn experimental (or observational) unit is an object (e.g., person, thing, transaction, or event) about which we collect data.\n\n\nData is stored and presented in a dataset that comprises variables measured on units.\n\nA variable is any characteristic that is recorded for each unit."
+  },
+  {
+    "objectID": "Day1.html#qualitative-versus-quantitative",
+    "href": "Day1.html#qualitative-versus-quantitative",
+    "title": "Day 1",
+    "section": "Qualitative Versus Quantitative",
+    "text": "Qualitative Versus Quantitative\n\nVariables are classified as either qualitative or quantitative:\n\n\n\nA qualitative variable divides the cases into groups (e.g., gender, country, state).\nA quantitative variable measures a numerical quantity for each case (e.g., age, height, sleep hours, blood pressure)."
+  },
+  {
+    "objectID": "Day1.html#kidney-cancer",
+    "href": "Day1.html#kidney-cancer",
+    "title": "Day 1",
+    "section": "Kidney Cancer",
+    "text": "Kidney Cancer\n\nCounties with the highest kidney cancer rates.\n\n\n Source: Gelman et. al. Bayesian Data Analysis, CRC Press, 2004"
+  },
+  {
+    "objectID": "Day1.html#kidney-cancer-1",
+    "href": "Day1.html#kidney-cancer-1",
+    "title": "Day 1",
+    "section": "Kidney Cancer",
+    "text": "Kidney Cancer\n\nIf the cases in the kidney cancer dataset are people, then the measured variable is qualitative.\n\n\nWe categorize each person as either having kidney cancer or not, which is qualitative."
+  },
+  {
+    "objectID": "Day1.html#kidney-cancer-2",
+    "href": "Day1.html#kidney-cancer-2",
+    "title": "Day 1",
+    "section": "Kidney Cancer",
+    "text": "Kidney Cancer\n\nIf the cases in the kidney cancer dataset are counties, then the measured variable is quantitative.\n\n\nData collected at the county level is aggregated across all people living in the county. We then get rates of cancer, which are numbers (quantitative)."
+  },
+  {
+    "objectID": "Day1.html#variable-manipulations",
+    "href": "Day1.html#variable-manipulations",
+    "title": "Day 1",
+    "section": "Variable Manipulations",
+    "text": "Variable Manipulations\n\nCan use numbers to code categories of qualitative variables.\n\ne.g., Gender (1 for male and 2 for female).\n\n\n\n\nCan convert quantitative variables into qualitative groups.\n\ne.g., Income (0-50000 as Low, 50000+ as High)."
+  },
+  {
+    "objectID": "Day1.html#group-activity-1",
+    "href": "Day1.html#group-activity-1",
+    "title": "Day 1",
+    "section": " Group Activity 1",
+    "text": "Group Activity 1\n\n\n\n\n\n\n\n\nInstall R and RStudio on your machine\nMake a course folder called ‘math216’ on your local computer\nYou will keep all of your class materials in this folder\n\n\n\n\n\n −+ 10:00"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Math 216: Spring 2025",
+    "section": "",
+    "text": "Welcome to the world of statistics!"
+  }
+]
