@@ -165,7 +165,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li>
 <a href="#rmarkdown" id="toc-rmarkdown" class="nav-link" data-scroll-target="#rmarkdown">RMarkdown</a>
   <ul class="collapse">
-<li><a href="#understanding-r-markdown-documents" id="toc-understanding-r-markdown-documents" class="nav-link" data-scroll-target="#understanding-r-markdown-documents">Understanding R Markdown Documents</a></li>
+<li><a href="#rmarkdown-interface-components" id="toc-rmarkdown-interface-components" class="nav-link" data-scroll-target="#rmarkdown-interface-components">RMarkdown Interface Components</a></li>
+  <li><a href="#understanding-r-markdown-documents" id="toc-understanding-r-markdown-documents" class="nav-link" data-scroll-target="#understanding-r-markdown-documents">Understanding R Markdown Documents</a></li>
   <li>
 <a href="#managing-.rmd-files-and-setting-the-working-directory" id="toc-managing-.rmd-files-and-setting-the-working-directory" class="nav-link" data-scroll-target="#managing-.rmd-files-and-setting-the-working-directory">Managing .Rmd Files and Setting the Working Directory</a>
   <ul class="collapse">
@@ -417,7 +418,68 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </section></section><section id="rmarkdown" class="level1"><h1>RMarkdown</h1>
 <p>RMarkdown is a powerful tool for combining narrative text and executable R code into a single document, which can then be rendered into various formats including HTML, PDF, and Word documents. It’s especially valuable in academic, scientific, and data analysis settings for creating reproducible data analysis scripts and reports.</p>
-<section id="understanding-r-markdown-documents" class="level2"><h2 class="anchored" data-anchor-id="understanding-r-markdown-documents">Understanding R Markdown Documents</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure"><p><img src="images/Rmarkdown.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<section id="rmarkdown-interface-components" class="level2"><h2 class="anchored" data-anchor-id="rmarkdown-interface-components">RMarkdown Interface Components</h2>
+<p>RStudio’s interface for working with RMarkdown documents contains four key panes:</p>
+<ol type="1">
+<li><p><strong>Source Editor (Left Pane)</strong><br>
+Primary workspace for writing <code>.Rmd</code> files with integrated code chunks and narrative text. Features syntax highlighting, chunk controls (run individual code blocks), and document structure navigation.</p></li>
+<li>
+<p><strong>Environment/History (Top-Right Pane)</strong></p>
+<ul>
+<li>
+<em>Environment</em>: Lists active datasets, variables, and functions<br>
+</li>
+<li>
+<em>History</em>: Tracks all executed commands<br>
+</li>
+<li>
+<em>Connections</em>: Manages database links (when used)<br>
+</li>
+<li>
+<em>Git</em>: Version control integration (when configured)</li>
+</ul>
+</li>
+<li>
+<p><strong>Console/Terminal (Bottom-Left Pane)</strong></p>
+<ul>
+<li>
+<em>Console</em>: Direct R code execution environment showing raw output<br>
+</li>
+<li>
+<em>Terminal</em>: System-level command line access<br>
+</li>
+<li>
+<em>Background Jobs</em>: Monitor long-running processes</li>
+</ul>
+</li>
+<li>
+<p><strong>Viewer/Help (Bottom-Right Pane)</strong></p>
+<ul>
+<li>
+<em>Viewer</em>: Preview rendered documents (HTML/PDF/Word)<br>
+</li>
+<li>
+<em>Help</em>: Access function documentation<br>
+</li>
+<li>
+<em>Files</em>: Navigate project directory structure<br>
+</li>
+<li>
+<em>Plots</em>: Display graphical output<br>
+</li>
+<li>
+<em>Packages</em>: Manage installed R packages</li>
+</ul>
+</li>
+</ol></section><section id="understanding-r-markdown-documents" class="level2"><h2 class="anchored" data-anchor-id="understanding-r-markdown-documents">Understanding R Markdown Documents</h2>
 <p>R Markdown allows you to integrate code and text in the same document, facilitating reproducible research and interactive data analysis reports. Here’s a quick overview:</p>
 </section><section id="managing-.rmd-files-and-setting-the-working-directory" class="level2"><h2 class="anchored" data-anchor-id="managing-.rmd-files-and-setting-the-working-directory">Managing .Rmd Files and Setting the Working Directory</h2>
 <section id="downloading-and-organizing-.rmd-files" class="level3"><h3 class="anchored" data-anchor-id="downloading-and-organizing-.rmd-files">Downloading and Organizing .Rmd Files</h3>
@@ -433,13 +495,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>
 <strong>Create a Course Folder</strong>:
 <ul>
-<li>Create a new folder named <code>math214</code> in a suitable location on your computer or within your OneDrive account.</li>
+<li>Create a new folder named <code>math216</code> in a suitable location on your computer or within your OneDrive account.</li>
 </ul>
 </li>
 <li>
 <strong>Organize Files</strong>:
 <ul>
-<li>Move the downloaded .Rmd file into the <code>math214</code> folder to keep your course materials organized.</li>
+<li>Move the downloaded .Rmd file into the <code>math216</code> folder to keep your course materials organized.</li>
 </ul>
 </li>
 </ol></section></section></section><section id="installing-packages" class="level1"><h1>Installing Packages</h1>

@@ -35,6 +35,13 @@
     "text": "On Mac\n\n\nDownload R:\n\nNavigate to CRAN and choose the version for macOS.\nOpen the downloaded .pkg file to start the installation.\n\n\n\n\n\nCRAN mirror\nDownload Latest R\nExecutable File in Downloads Folder\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDownload RStudio:\n\nVisit RStudio Download page and select RStudio for macOS.\nOpen the downloaded .dmg file and drag RStudio to your Applications folder.\n\n\n\n\n\nDownload Latest RStudio\nExecutable File in Downloads Folder"
   },
   {
+    "objectID": "RandRStudio.html#rmarkdown-interface-components",
+    "href": "RandRStudio.html#rmarkdown-interface-components",
+    "title": "Setting Up R and RStudio",
+    "section": "RMarkdown Interface Components",
+    "text": "RMarkdown Interface Components\nRStudio’s interface for working with RMarkdown documents contains four key panes:\n\nSource Editor (Left Pane)\nPrimary workspace for writing .Rmd files with integrated code chunks and narrative text. Features syntax highlighting, chunk controls (run individual code blocks), and document structure navigation.\n\nEnvironment/History (Top-Right Pane)\n\n\nEnvironment: Lists active datasets, variables, and functions\n\n\nHistory: Tracks all executed commands\n\n\nConnections: Manages database links (when used)\n\n\nGit: Version control integration (when configured)\n\n\n\nConsole/Terminal (Bottom-Left Pane)\n\n\nConsole: Direct R code execution environment showing raw output\n\n\nTerminal: System-level command line access\n\n\nBackground Jobs: Monitor long-running processes\n\n\n\nViewer/Help (Bottom-Right Pane)\n\n\nViewer: Preview rendered documents (HTML/PDF/Word)\n\n\nHelp: Access function documentation\n\n\nFiles: Navigate project directory structure\n\n\nPlots: Display graphical output\n\n\nPackages: Manage installed R packages"
+  },
+  {
     "objectID": "RandRStudio.html#understanding-r-markdown-documents",
     "href": "RandRStudio.html#understanding-r-markdown-documents",
     "title": "Setting Up R and RStudio",
@@ -46,7 +53,7 @@
     "href": "RandRStudio.html#managing-.rmd-files-and-setting-the-working-directory",
     "title": "Setting Up R and RStudio",
     "section": "Managing .Rmd Files and Setting the Working Directory",
-    "text": "Managing .Rmd Files and Setting the Working Directory\nDownloading and Organizing .Rmd Files\nTo effectively manage your course materials in RStudio, follow these steps:\n\n\nDownload .Rmd File:\n\nNavigate to MyClasses and locate the desired .Rmd file for your course.\nDownload the file to your local machine.\n\n\n\nCreate a Course Folder:\n\nCreate a new folder named math214 in a suitable location on your computer or within your OneDrive account.\n\n\n\nOrganize Files:\n\nMove the downloaded .Rmd file into the math214 folder to keep your course materials organized."
+    "text": "Managing .Rmd Files and Setting the Working Directory\nDownloading and Organizing .Rmd Files\nTo effectively manage your course materials in RStudio, follow these steps:\n\n\nDownload .Rmd File:\n\nNavigate to MyClasses and locate the desired .Rmd file for your course.\nDownload the file to your local machine.\n\n\n\nCreate a Course Folder:\n\nCreate a new folder named math216 in a suitable location on your computer or within your OneDrive account.\n\n\n\nOrganize Files:\n\nMove the downloaded .Rmd file into the math216 folder to keep your course materials organized."
   },
   {
     "objectID": "RandRStudio.html#text-formatting-in-r-markdown",
