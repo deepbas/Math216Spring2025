@@ -1,0 +1,77 @@
+---
+title: "Activity 1"
+subtitle: "MATH 216: Statistical Thinking"
+format: html
+---
+
+```{r setup, include=FALSE}
+library(openintro)
+library(dplyr)
+library(knitr)
+data(hsb2)
+```
+
+# High School Student Analysis Quiz
+
+## Dataset Description
+
+The **High School and Beyond (hsb2)** dataset contains information about 200 high school students, including demographic details and academic performance. This dataset is commonly used in statistics education to explore relationships between socioeconomic factors and test scores.
+
+**Key Variables**:
+
+- `ID`: Student identifier (unique number)
+- `Gender`: Self-reported gender (Male/Female)
+- `Race`: Ethnicity (White/Black/Asian/Other)
+- `SES`: Socioeconomic status (Low/Middle/High)
+- `Program`: Enrollment track (General/Vocational/Academic)
+- `Reading`, `Math`, `Science`: Standardized test scores (0-100)
+
+## Data Preview
+
+```{r}
+#| echo: false
+#| warning: false
+hsb2 %>%
+  head() %>%
+  kable(format = "html", caption = "First 6 observations from hsb2 dataset")
+```
+
+## Questions
+
+### 1. Variable Classification  
+
+Classify these variables as **qualitative** (categorical) or **quantitative** (numerical): 
+
+- Gender  
+- Math Score  
+- SES (Socioeconomic Status)  
+- Program  
+- Science Score  
+
+*For two of your choices, explain why they belong to that category.*  
+
+\vspace*{0.5in}
+
+
+### 2. Gender Variable Manipulation  
+
+Suppose researchers want to analyze gender differences in math performance: 
+
+- What is the *current variable type* of `Gender`?  
+
+- How could you convert `Gender` to a numeric format? What values would you assign? 
+
+\vspace*{0.5in}
+
+
+### 3. Critical Thinking  
+
+If `Gender` is coded as 0 (Male) and 1 (Female):  
+
+- Could you calculate an "average gender"? Explain why this is or isn’t meaningful.  
+
+\vspace*{0.5in}
+
+
+- Why might statisticians prefer to keep `Gender` as a categorical variable?  
+

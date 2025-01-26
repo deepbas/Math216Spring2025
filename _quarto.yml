@@ -13,9 +13,9 @@ website:
       - text: "About"
         href: about.html
       - text: "Lecture Slides"
-        # menu:
-        #   - text: "Lecture 1"
-        #     href: Day1.html 
+        menu:
+          - text: "Lecture 1"
+            href: Day1.html
         #     target: "_blank"
         #   - text: "Lecture 2"
         #     href: Day2.html
@@ -135,7 +135,13 @@ website:
           #   href: Day35.html
           #   target: "_blank"
 
-
+      - text: "Activities"
+        menu:
+          - text: "Activity 1"
+            href: Activity1.html
+        #     target: "_blank"
+        #   - text: "Lecture 2"
+        #     href: Day2.html
 
       - text: "Tutorials"
         menu:
@@ -159,8 +165,8 @@ format:
     fontsize: 1.1em
     code-overflow: wrap
     theme:
-      light: [theme-light.scss]
-      dark: [darkly]
+      light: minty
+      dark: darkly
     css: styles.css
     toc: true
     page-layout: full

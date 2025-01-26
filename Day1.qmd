@@ -48,7 +48,6 @@ yt <- 0
 ::: left
 ::: bq
 ::: incremental
-- First year at Salisbury
 - Research in Statistical Computation and Applied Statistics
 - Avid learner and traveler
 :::
@@ -77,26 +76,7 @@ yt <- 0
 :::
 :::
 
-::: centered-content
-## Tell Me About Yourself!
 
-::: row
-::: left
-<br>
-
-::: bqt
-- Your name?
-- Gender Pronouns?
-- Favorite Summer Memory?
-:::
-:::
-
-::: right
-<iframe src="https://giphy.com/embed/Tq8B3WOqXToBlrqClZ" width="3000" height="280" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-<p><a href="https://giphy.com/gifs/new-post-creative-Tq8B3WOqXToBlrqClZ">via GIPHY</a></p>
-:::
-:::
-:::
 
 ::: centered-content
 ## Class Pipelines
@@ -105,8 +85,9 @@ yt <- 0
 
 ::: bql
 - Most of the course information and schedule will be posted in [MyClasses](https://salisbury.instructure.com/courses/67043)
+- Bookmark the class helper webpage [https://math216-spring25.netlify.app/](https://math216-spring25.netlify.app/)
 - Homework will be posted but not collected
-- Labs most Tuesdays; lab reports due in [MyClasses](https://salisbury.instructure.com/courses/67043) a week from the lab date
+- Labs most Thursdays; lab reports due in [MyClasses](https://salisbury.instructure.com/courses/70757) a week from the lab date
 - Quizzes every Friday in-person; includes HW, lectures, labs
 :::
 :::
@@ -118,7 +99,7 @@ yt <- 0
 ::: incremental
 - Before class:
   - Read assigned topics from textbook
-  - Work on homework/lab reports, come with questions
+  - Work on homework/lab, come with questions
 - During class:
   - Mini lectures
   - Class activities
@@ -179,12 +160,13 @@ Data is stored and presented in a dataset that comprises variables measured on u
 :::
 
 ::: centered-content
-### `Gpa_IQ` Dataset 
+### An Example: High School Student Analysis
 
 ::: scrollable
 ```{r, echo=FALSE}
 library(openintro)
-knitr::kable(head(gpa_iq), format = "html")
+data(hsb2)
+hsb2 %>% head() %>% knitr::kable(format = "html")
 ```
 :::
 
@@ -197,37 +179,33 @@ Each row = unit & Each column = variable.
 > Variables are classified as either **qualitative** or **quantitative:**
 
 ::: cle2
-- A **qualitative variable** divides the cases into groups (e.g., gender, country, state).
-- A **quantitative variable** measures a numerical quantity for each case (e.g., age, height, sleep hours, blood pressure).
+- A **qualitative variable** categorizes cases (e.g., diabetic status: yes/no, type of diabetes)
+- A **quantitative variable** records numerical measurements (e.g., blood glucose levels, BMI, HbA1c %)
 :::
 :::
+
+
+## Diabetes Prevalence
+
+<a href="https://www.statista.com/chart/18160/us-states-with-highest-diabetes-rates/" title="Infographic: Where Diabetes is Most Prevalent in the U.S. | Statista"><img src="https://cdn.statcdn.com/Infographic/images/normal/18160.jpeg" alt="Infographic: Where Diabetes is Most Prevalent in the U.S. | Statista" width="100%" height="auto" style="width: 100%; height: auto !important; max-width:960px;-ms-interpolation-mode: bicubic;"/></a> 
 
 ::: centered-content
-## Kidney Cancer
+## Diabetes Analysis
 
-> Counties with the highest kidney cancer rates.
-
-<center><img src="images/kidneycancermap.png" width="65%" height="65%"/><br> <a>Source: Gelman et. al. Bayesian Data Analysis, CRC Press, 2004</a></center>
-:::
-
-::: centered-content
-## Kidney Cancer
-
-> If the cases in the kidney cancer dataset are people, then the measured variable is qualitative.
+> If cases are individual patients:
 
 ::: green-h
-We categorize each person as either having kidney cancer or not, which is qualitative.
-:::
+Patient diabetic status (yes/no) is qualitative classification
 :::
 
-::: centered-content
-## Kidney Cancer
+<br>
 
-> If the cases in the kidney cancer dataset are counties, then the measured variable is quantitative.
+> If cases are US states:
 
 ::: green-h
-Data collected at the county level is aggregated across all people living in the county. We then get rates of cancer, which are numbers (quantitative).
+Diabetes prevalence rates (%) are quantitative measurements
 :::
+
 :::
 
 ::: centered-content
@@ -257,11 +235,17 @@ Can convert quantitative variables into qualitative groups.
 
 ::: right
 
-::: lqt
-::: font80
-- Install R and RStudio on your machine
-- Make a course folder called 'math216' on your local computer
-- You will keep all of your class materials in this folder 
+::: cle6
+::: font60
+
+We will have interactive elements in every class that could be:
+
+- Think-pair-share
+- Quiz
+- Interactive Data Exploration
+- Group Activities with Real Data
+
+This is the time for you to gauge your understanding of the concepts and have fun with the content. These may be collected for attendance! Please bring your charged laptop to every class.
 :::
 :::
 :::

@@ -150,7 +150,6 @@ Bastola
 <div class="bq">
 <div>
 <ul>
-<li class="fragment">First year at Salisbury</li>
 <li class="fragment">Research in Statistical Computation and Applied Statistics</li>
 <li class="fragment">Avid learner and traveler</li>
 </ul>
@@ -184,36 +183,15 @@ Bastola
 </div>
 </div>
 </section>
-<section id="tell-me-about-yourself" class="slide level2 centered-content">
-<h2>Tell Me About Yourself!</h2>
-<div class="row">
-<div class="left">
-<p><br></p>
-<div class="bqt">
-<ul>
-<li>Your name?</li>
-<li>Gender Pronouns?</li>
-<li>Favorite Summer Memory?</li>
-</ul>
-</div>
-</div>
-<div class="right">
-<iframe src="https://giphy.com/embed/Tq8B3WOqXToBlrqClZ" width="3000" height="280" frameborder="0" class="giphy-embed" allowfullscreen="">
-</iframe>
-<p>
-<a href="https://giphy.com/gifs/new-post-creative-Tq8B3WOqXToBlrqClZ">via GIPHY</a>
-</p>
-</div>
-</div>
-</section>
 <section id="class-pipelines" class="slide level2 centered-content">
 <h2>Class Pipelines</h2>
 <p><br></p>
 <div class="bql">
 <ul>
 <li>Most of the course information and schedule will be posted in <a href="https://salisbury.instructure.com/courses/67043">MyClasses</a></li>
+<li>Bookmark the class helper webpage <a href="https://math216-spring25.netlify.app/">https://math216-spring25.netlify.app/</a></li>
 <li>Homework will be posted but not collected</li>
-<li>Labs most Tuesdays; lab reports due in <a href="https://salisbury.instructure.com/courses/67043">MyClasses</a> a week from the lab date</li>
+<li>Labs most Thursdays; lab reports due in <a href="https://salisbury.instructure.com/courses/70757">MyClasses</a> a week from the lab date</li>
 <li>Quizzes every Friday in-person; includes HW, lectures, labs</li>
 </ul>
 </div>
@@ -226,7 +204,7 @@ Bastola
 <li class="fragment">Before class:
 <ul>
 <li class="fragment">Read assigned topics from textbook</li>
-<li class="fragment">Work on homework/lab reports, come with questions</li>
+<li class="fragment">Work on homework/lab, come with questions</li>
 </ul></li>
 <li class="fragment">During class:
 <ul>
@@ -278,63 +256,105 @@ Bastola
 </ul>
 </div>
 </section>
-<section id="gpa_iq-dataset" class="centered-content">
-<h3><code>Gpa_IQ</code> Dataset</h3>
+<section id="an-example-high-school-student-analysis" class="centered-content">
+<h3>An Example: High School Student Analysis</h3>
 <div class="scrollable">
 <div class="cell">
 <div class="cell-output-display">
 <table class="caption-top" data-quarto-postprocess="true">
 <thead>
 <tr class="header">
-<th style="text-align: right;" data-quarto-table-cell-role="th">obs</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">gpa</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">iq</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">gender</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">concept</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">id</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">gender</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">race</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">ses</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">schtyp</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">prog</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">read</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">write</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">math</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">science</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">socst</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">7.940</td>
-<td style="text-align: right;">111</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">67</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">8.292</td>
-<td style="text-align: right;">107</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">43</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">4.643</td>
-<td style="text-align: right;">100</td>
-<td style="text-align: right;">2</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: left;">male</td>
+<td style="text-align: left;">white</td>
+<td style="text-align: left;">low</td>
+<td style="text-align: left;">public</td>
+<td style="text-align: left;">general</td>
+<td style="text-align: right;">57</td>
 <td style="text-align: right;">52</td>
+<td style="text-align: right;">41</td>
+<td style="text-align: right;">47</td>
+<td style="text-align: right;">57</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">7.470</td>
-<td style="text-align: right;">107</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">66</td>
+<td style="text-align: right;">121</td>
+<td style="text-align: left;">female</td>
+<td style="text-align: left;">white</td>
+<td style="text-align: left;">middle</td>
+<td style="text-align: left;">public</td>
+<td style="text-align: left;">vocational</td>
+<td style="text-align: right;">68</td>
+<td style="text-align: right;">59</td>
+<td style="text-align: right;">53</td>
+<td style="text-align: right;">63</td>
+<td style="text-align: right;">61</td>
 </tr>
 <tr class="odd">
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">8.882</td>
-<td style="text-align: right;">114</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: right;">86</td>
+<td style="text-align: left;">male</td>
+<td style="text-align: left;">white</td>
+<td style="text-align: left;">high</td>
+<td style="text-align: left;">public</td>
+<td style="text-align: left;">general</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: right;">33</td>
+<td style="text-align: right;">54</td>
 <td style="text-align: right;">58</td>
+<td style="text-align: right;">31</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">7.585</td>
-<td style="text-align: right;">115</td>
-<td style="text-align: right;">2</td>
+<td style="text-align: right;">141</td>
+<td style="text-align: left;">male</td>
+<td style="text-align: left;">white</td>
+<td style="text-align: left;">high</td>
+<td style="text-align: left;">public</td>
+<td style="text-align: left;">vocational</td>
+<td style="text-align: right;">63</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: right;">47</td>
+<td style="text-align: right;">53</td>
+<td style="text-align: right;">56</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">172</td>
+<td style="text-align: left;">male</td>
+<td style="text-align: left;">white</td>
+<td style="text-align: left;">middle</td>
+<td style="text-align: left;">public</td>
+<td style="text-align: left;">academic</td>
+<td style="text-align: right;">47</td>
+<td style="text-align: right;">52</td>
+<td style="text-align: right;">57</td>
+<td style="text-align: right;">53</td>
+<td style="text-align: right;">61</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">113</td>
+<td style="text-align: left;">male</td>
+<td style="text-align: left;">white</td>
+<td style="text-align: left;">middle</td>
+<td style="text-align: left;">public</td>
+<td style="text-align: left;">academic</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: right;">52</td>
 <td style="text-align: right;">51</td>
+<td style="text-align: right;">63</td>
+<td style="text-align: right;">61</td>
 </tr>
 </tbody>
 </table>
@@ -352,36 +372,29 @@ Bastola
 </blockquote>
 <div class="cle2">
 <ul>
-<li>A <strong>qualitative variable</strong> divides the cases into groups (e.g., gender, country, state).</li>
-<li>A <strong>quantitative variable</strong> measures a numerical quantity for each case (e.g., age, height, sleep hours, blood pressure).</li>
+<li>A <strong>qualitative variable</strong> categorizes cases (e.g., diabetic status: yes/no, type of diabetes)</li>
+<li>A <strong>quantitative variable</strong> records numerical measurements (e.g., blood glucose levels, BMI, HbA1c %)</li>
 </ul>
 </div>
 </section>
-<section id="kidney-cancer" class="slide level2 centered-content">
-<h2>Kidney Cancer</h2>
-<blockquote>
-<p>Counties with the highest kidney cancer rates.</p>
-</blockquote>
-<center>
-<img src="images/kidneycancermap.png" width="65%" height="65%"><br> <a>Source: Gelman et. al.&nbsp;Bayesian Data Analysis, CRC Press, 2004</a>
-</center>
+<section id="diabetes-prevalence" class="slide level2">
+<h2>Diabetes Prevalence</h2>
+<p><a href="https://www.statista.com/chart/18160/us-states-with-highest-diabetes-rates/" title="Infographic: Where Diabetes is Most Prevalent in the U.S. | Statista"><img src="https://cdn.statcdn.com/Infographic/images/normal/18160.jpeg" alt="Infographic: Where Diabetes is Most Prevalent in the U.S. | Statista" width="100%" height="auto" style="width: 100%; height: auto !important; max-width:960px;-ms-interpolation-mode: bicubic;"></a></p>
 </section>
-<section id="kidney-cancer-1" class="slide level2 centered-content">
-<h2>Kidney Cancer</h2>
+<section id="diabetes-analysis" class="slide level2 centered-content">
+<h2>Diabetes Analysis</h2>
 <blockquote>
-<p>If the cases in the kidney cancer dataset are people, then the measured variable is qualitative.</p>
+<p>If cases are individual patients:</p>
 </blockquote>
 <div class="green-h">
-<p>We categorize each person as either having kidney cancer or not, which is qualitative.</p>
+<p>Patient diabetic status (yes/no) is qualitative classification</p>
 </div>
-</section>
-<section id="kidney-cancer-2" class="slide level2 centered-content">
-<h2>Kidney Cancer</h2>
+<p><br></p>
 <blockquote>
-<p>If the cases in the kidney cancer dataset are counties, then the measured variable is quantitative.</p>
+<p>If cases are US states:</p>
 </blockquote>
 <div class="green-h">
-<p>Data collected at the county level is aggregated across all people living in the county. We then get rates of cancer, which are numbers (quantitative).</p>
+<p>Diabetes prevalence rates (%) are quantitative measurements</p>
 </div>
 </section>
 <section id="variable-manipulations" class="slide level2 centered-content">
@@ -407,18 +420,21 @@ Bastola
 <p><img data-src="https://media.giphy.com/media/RKApDdwsQ6jkwd6RNn/giphy.gif"></p>
 </div>
 <div class="right">
-<div class="lqt">
-<div class="font80">
+<div class="cle6">
+<div class="font60">
+<p>We will have interactive elements in every class that could be:</p>
 <ul>
-<li>Install R and RStudio on your machine</li>
-<li>Make a course folder called ‘math216’ on your local computer</li>
-<li>You will keep all of your class materials in this folder</li>
+<li>Think-pair-share</li>
+<li>Quiz</li>
+<li>Interactive Data Exploration</li>
+<li>Group Activities with Real Data</li>
 </ul>
+<p>This is the time for you to gauge your understanding of the concepts and have fun with the content. These may be collected for attendance! Please bring your charged laptop to every class.</p>
 </div>
 </div>
 </div>
 </div>
-<p></p><div class="countdown" id="timer_b966cafd" data-update-every="1" tabindex="0" style="top:0;right:0;padding:3px 4px;font-size:1em;"> <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div> <code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code> </div><p></p>
+<p></p><div class="countdown" id="timer_7d922536" data-update-every="1" tabindex="0" style="top:0;right:0;padding:3px 4px;font-size:1em;"> <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div> <code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code> </div><p></p>
 
 
 </section>
