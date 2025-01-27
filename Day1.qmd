@@ -118,6 +118,7 @@ Statistics is the study of data and the uncertainties surrounding them. We will 
 
 ::: lqt
 Science of collecting, describing, analyzing, and making decisions based on data:
+
 - Sampling
 - Exploratory Data Analysis
 - Inference
@@ -214,7 +215,7 @@ Diabetes prevalence rates (%) are quantitative measurements
 ::: bq
 Can use numbers to code categories of qualitative variables.
 
-- e.g., Gender (1 for male and 2 for female).
+- e.g., Gender (0 for male and 1 for female).
 :::
 
 <br>

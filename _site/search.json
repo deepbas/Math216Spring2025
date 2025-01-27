@@ -1,47 +1,5 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "Welcome to the captivating world of statistical thinking! This course will provide you with a solid foundation in statistical theory while taking you on a journey through the practical aspects of the subject. Along the way, you’ll gain experience with statistical software, learn to interpret and effectively communicate statistical findings, and explore a range of topics in descriptive and inferential data analysis and both parametric and non-parametric statistical inference. Some of the areas we’ll delve into include probability, normal distribution, sampling distributions, confidence intervals, hypothesis testing and simple linear regression.\nAt the heart of this course is the ability to interpret results and grasp underlying concepts, rather than merely obtaining numerical outcomes. By engaging with a diverse set of problems, you’ll become well-versed in statistical methodologies. However, it’s crucial to remember that a deep understanding of the concepts is the key to drawing meaningful conclusions.\n\n\n\n\nMaster the basic principles of data analysis, including the production and application of data in studies and experiments.\nApply principles of inference to construct confidence intervals and conduct hypothesis tests effectively.\nCritically evaluate statistical arguments and methodologies in published research.\nCompare and differentiate between parametric and non-parametric methods in statistical analysis.\nUtilize software R to conduct data analysis, create graphs, and perform basic statistical tests."
-  },
-  {
-    "objectID": "about.html#learning-objectives",
-    "href": "about.html#learning-objectives",
-    "title": "About",
-    "section": "",
-    "text": "Master the basic principles of data analysis, including the production and application of data in studies and experiments.\nApply principles of inference to construct confidence intervals and conduct hypothesis tests effectively.\nCritically evaluate statistical arguments and methodologies in published research.\nCompare and differentiate between parametric and non-parametric methods in statistical analysis.\nUtilize software R to conduct data analysis, create graphs, and perform basic statistical tests."
-  },
-  {
-    "objectID": "Activity1.html",
-    "href": "Activity1.html",
-    "title": "Activity 1",
-    "section": "",
-    "text": "The High School and Beyond (hsb2) dataset contains information about 200 high school students, including demographic details and academic performance. This dataset is commonly used in statistics education to explore relationships between socioeconomic factors and test scores.\nKey Variables:\n\n\nID: Student identifier (unique number)\n\nGender: Self-reported gender (Male/Female)\n\nRace: Ethnicity (White/Black/Asian/Other)\n\nSES: Socioeconomic status (Low/Middle/High)\n\nProgram: Enrollment track (General/Vocational/Academic)\n\nReading, Math, Science: Standardized test scores (0-100)\n\n\n\n\nFirst 6 observations from hsb2 dataset\n\nid\ngender\nrace\nses\nschtyp\nprog\nread\nwrite\nmath\nscience\nsocst\n\n\n\n70\nmale\nwhite\nlow\npublic\ngeneral\n57\n52\n41\n47\n57\n\n\n121\nfemale\nwhite\nmiddle\npublic\nvocational\n68\n59\n53\n63\n61\n\n\n86\nmale\nwhite\nhigh\npublic\ngeneral\n44\n33\n54\n58\n31\n\n\n141\nmale\nwhite\nhigh\npublic\nvocational\n63\n44\n47\n53\n56\n\n\n172\nmale\nwhite\nmiddle\npublic\nacademic\n47\n52\n57\n53\n61\n\n\n113\nmale\nwhite\nmiddle\npublic\nacademic\n44\n52\n51\n63\n61\n\n\n\n\n\n\n\nClassify these variables as qualitative (categorical) or quantitative (numerical):\n\nGender\n\nMath Score\n\nSES (Socioeconomic Status)\n\nProgram\n\nScience Score\n\nFor two of your choices, explain why they belong to that category.\n\nSuppose researchers want to analyze gender differences in math performance:\n\nWhat is the current variable type of Gender?\nHow could you convert Gender to a numeric format? What values would you assign?\n\nIf Gender is coded as 0 (Male) and 1 (Female):\n\nCould you calculate an “average gender”? Explain why this is or isn’t meaningful.\n\n\nWhy might statisticians prefer to keep Gender as a categorical variable?"
-  },
-  {
-    "objectID": "Activity1.html#dataset-description",
-    "href": "Activity1.html#dataset-description",
-    "title": "Activity 1",
-    "section": "",
-    "text": "The High School and Beyond (hsb2) dataset contains information about 200 high school students, including demographic details and academic performance. This dataset is commonly used in statistics education to explore relationships between socioeconomic factors and test scores.\nKey Variables:\n\n\nID: Student identifier (unique number)\n\nGender: Self-reported gender (Male/Female)\n\nRace: Ethnicity (White/Black/Asian/Other)\n\nSES: Socioeconomic status (Low/Middle/High)\n\nProgram: Enrollment track (General/Vocational/Academic)\n\nReading, Math, Science: Standardized test scores (0-100)"
-  },
-  {
-    "objectID": "Activity1.html#data-preview",
-    "href": "Activity1.html#data-preview",
-    "title": "Activity 1",
-    "section": "",
-    "text": "First 6 observations from hsb2 dataset\n\nid\ngender\nrace\nses\nschtyp\nprog\nread\nwrite\nmath\nscience\nsocst\n\n\n\n70\nmale\nwhite\nlow\npublic\ngeneral\n57\n52\n41\n47\n57\n\n\n121\nfemale\nwhite\nmiddle\npublic\nvocational\n68\n59\n53\n63\n61\n\n\n86\nmale\nwhite\nhigh\npublic\ngeneral\n44\n33\n54\n58\n31\n\n\n141\nmale\nwhite\nhigh\npublic\nvocational\n63\n44\n47\n53\n56\n\n\n172\nmale\nwhite\nmiddle\npublic\nacademic\n47\n52\n57\n53\n61\n\n\n113\nmale\nwhite\nmiddle\npublic\nacademic\n44\n52\n51\n63\n61"
-  },
-  {
-    "objectID": "Activity1.html#questions",
-    "href": "Activity1.html#questions",
-    "title": "Activity 1",
-    "section": "",
-    "text": "Classify these variables as qualitative (categorical) or quantitative (numerical):\n\nGender\n\nMath Score\n\nSES (Socioeconomic Status)\n\nProgram\n\nScience Score\n\nFor two of your choices, explain why they belong to that category.\n\nSuppose researchers want to analyze gender differences in math performance:\n\nWhat is the current variable type of Gender?\nHow could you convert Gender to a numeric format? What values would you assign?\n\nIf Gender is coded as 0 (Male) and 1 (Female):\n\nCould you calculate an “average gender”? Explain why this is or isn’t meaningful.\n\n\nWhy might statisticians prefer to keep Gender as a categorical variable?"
-  },
-  {
     "objectID": "Day1.html#about-me",
     "href": "Day1.html#about-me",
     "title": "Day 1",
@@ -109,7 +67,7 @@
     "href": "Day1.html#variable-manipulations",
     "title": "Day 1",
     "section": "Variable Manipulations",
-    "text": "Variable Manipulations\n\nCan use numbers to code categories of qualitative variables.\n\ne.g., Gender (1 for male and 2 for female).\n\n\n\n\nCan convert quantitative variables into qualitative groups.\n\ne.g., Income (0-50000 as Low, 50000+ as High)."
+    "text": "Variable Manipulations\n\nCan use numbers to code categories of qualitative variables.\n\ne.g., Gender (0 for male and 1 for female).\n\n\n\n\nCan convert quantitative variables into qualitative groups.\n\ne.g., Income (0-50000 as Low, 50000+ as High)."
   },
   {
     "objectID": "Day1.html#group-activity-1",
@@ -203,6 +161,55 @@
     "text": "Conclusion: Statistical Thinking!\n\nStatistical thinking involves applying rational thought and the science of statistics to critically assess data and inferences. Fundamental to the thought process is that variation exists in populations of data."
   },
   {
+    "objectID": "Activity1.html",
+    "href": "Activity1.html",
+    "title": "Activity 1",
+    "section": "",
+    "text": "The High School and Beyond (hsb2) dataset contains information about 200 high school students, including demographic details and academic performance. This dataset is commonly used in statistics education to explore relationships between socioeconomic factors and test scores.\nKey Variables:\n\n\nID: Student identifier (unique number)\n\nGender: Self-reported gender (Male/Female)\n\nRace: Ethnicity (White/Black/Asian/Other)\n\nSES: Socioeconomic status (Low/Middle/High)\n\nProgram: Enrollment track (General/Vocational/Academic)\n\nReading, Math, Science: Standardized test scores (0-100)\n\n\n\n\nFirst 6 observations from hsb2 dataset\n\nid\ngender\nrace\nses\nschtyp\nprog\nread\nwrite\nmath\nscience\nsocst\n\n\n\n70\nmale\nwhite\nlow\npublic\ngeneral\n57\n52\n41\n47\n57\n\n\n121\nfemale\nwhite\nmiddle\npublic\nvocational\n68\n59\n53\n63\n61\n\n\n86\nmale\nwhite\nhigh\npublic\ngeneral\n44\n33\n54\n58\n31\n\n\n141\nmale\nwhite\nhigh\npublic\nvocational\n63\n44\n47\n53\n56\n\n\n172\nmale\nwhite\nmiddle\npublic\nacademic\n47\n52\n57\n53\n61\n\n\n113\nmale\nwhite\nmiddle\npublic\nacademic\n44\n52\n51\n63\n61\n\n\n\n\n\n\n\nClassify these variables as qualitative (categorical) or quantitative (numerical):\n\nGender\n\nMath Score\n\nSES (Socioeconomic Status)\n\nProgram\n\nScience Score\n\nFor two of your choices, explain why they belong to that category.\n\nSuppose researchers want to analyze gender differences in math performance:\n\nWhat is the current variable type of Gender?\nHow could you convert Gender to a numeric format? What values would you assign?\n\nIf Gender is coded as 0 (Male) and 1 (Female):\n\nCould you calculate an “average gender”? Explain why this is or isn’t meaningful.\n\n\nWhy might statisticians prefer to keep Gender as a categorical variable?"
+  },
+  {
+    "objectID": "Activity1.html#dataset-description",
+    "href": "Activity1.html#dataset-description",
+    "title": "Activity 1",
+    "section": "",
+    "text": "The High School and Beyond (hsb2) dataset contains information about 200 high school students, including demographic details and academic performance. This dataset is commonly used in statistics education to explore relationships between socioeconomic factors and test scores.\nKey Variables:\n\n\nID: Student identifier (unique number)\n\nGender: Self-reported gender (Male/Female)\n\nRace: Ethnicity (White/Black/Asian/Other)\n\nSES: Socioeconomic status (Low/Middle/High)\n\nProgram: Enrollment track (General/Vocational/Academic)\n\nReading, Math, Science: Standardized test scores (0-100)"
+  },
+  {
+    "objectID": "Activity1.html#data-preview",
+    "href": "Activity1.html#data-preview",
+    "title": "Activity 1",
+    "section": "",
+    "text": "First 6 observations from hsb2 dataset\n\nid\ngender\nrace\nses\nschtyp\nprog\nread\nwrite\nmath\nscience\nsocst\n\n\n\n70\nmale\nwhite\nlow\npublic\ngeneral\n57\n52\n41\n47\n57\n\n\n121\nfemale\nwhite\nmiddle\npublic\nvocational\n68\n59\n53\n63\n61\n\n\n86\nmale\nwhite\nhigh\npublic\ngeneral\n44\n33\n54\n58\n31\n\n\n141\nmale\nwhite\nhigh\npublic\nvocational\n63\n44\n47\n53\n56\n\n\n172\nmale\nwhite\nmiddle\npublic\nacademic\n47\n52\n57\n53\n61\n\n\n113\nmale\nwhite\nmiddle\npublic\nacademic\n44\n52\n51\n63\n61"
+  },
+  {
+    "objectID": "Activity1.html#questions",
+    "href": "Activity1.html#questions",
+    "title": "Activity 1",
+    "section": "",
+    "text": "Classify these variables as qualitative (categorical) or quantitative (numerical):\n\nGender\n\nMath Score\n\nSES (Socioeconomic Status)\n\nProgram\n\nScience Score\n\nFor two of your choices, explain why they belong to that category.\n\nSuppose researchers want to analyze gender differences in math performance:\n\nWhat is the current variable type of Gender?\nHow could you convert Gender to a numeric format? What values would you assign?\n\nIf Gender is coded as 0 (Male) and 1 (Female):\n\nCould you calculate an “average gender”? Explain why this is or isn’t meaningful.\n\n\nWhy might statisticians prefer to keep Gender as a categorical variable?"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Math 216: Spring 2025",
+    "section": "",
+    "text": "Welcome to the world of statistics!"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Welcome to the captivating world of statistical thinking! This course will provide you with a solid foundation in statistical theory while taking you on a journey through the practical aspects of the subject. Along the way, you’ll gain experience with statistical software, learn to interpret and effectively communicate statistical findings, and explore a range of topics in descriptive and inferential data analysis and both parametric and non-parametric statistical inference. Some of the areas we’ll delve into include probability, normal distribution, sampling distributions, confidence intervals, hypothesis testing and simple linear regression.\nAt the heart of this course is the ability to interpret results and grasp underlying concepts, rather than merely obtaining numerical outcomes. By engaging with a diverse set of problems, you’ll become well-versed in statistical methodologies. However, it’s crucial to remember that a deep understanding of the concepts is the key to drawing meaningful conclusions.\n\n\n\n\nMaster the basic principles of data analysis, including the production and application of data in studies and experiments.\nApply principles of inference to construct confidence intervals and conduct hypothesis tests effectively.\nCritically evaluate statistical arguments and methodologies in published research.\nCompare and differentiate between parametric and non-parametric methods in statistical analysis.\nUtilize software R to conduct data analysis, create graphs, and perform basic statistical tests."
+  },
+  {
+    "objectID": "about.html#learning-objectives",
+    "href": "about.html#learning-objectives",
+    "title": "About",
+    "section": "",
+    "text": "Master the basic principles of data analysis, including the production and application of data in studies and experiments.\nApply principles of inference to construct confidence intervals and conduct hypothesis tests effectively.\nCritically evaluate statistical arguments and methodologies in published research.\nCompare and differentiate between parametric and non-parametric methods in statistical analysis.\nUtilize software R to conduct data analysis, create graphs, and perform basic statistical tests."
+  },
+  {
     "objectID": "RandRStudio.html",
     "href": "RandRStudio.html",
     "title": "Setting Up R and RStudio",
@@ -257,12 +264,5 @@
     "title": "Setting Up R and RStudio",
     "section": "R Code Chunk Options",
     "text": "R Code Chunk Options\nBefore diving into data loading, let’s understand important R chunk options:\n\n\neval: Use eval=FALSE to prevent code from running but still display it.\n\necho: With echo=FALSE, the code is run but not displayed in the document.\n\ninclude: include=FALSE runs the code and hides both the code and output from the final output.\n\nExample to demonstrate:\n\n\n\n\n\n\n\n\n\n# This code will run, and both code and output will appear in the document.\nsummary(cars)\n\n     speed           dist       \n Min.   : 4.0   Min.   :  2.00  \n 1st Qu.:12.0   1st Qu.: 26.00  \n Median :15.0   Median : 36.00  \n Mean   :15.4   Mean   : 42.98  \n 3rd Qu.:19.0   3rd Qu.: 56.00  \n Max.   :25.0   Max.   :120.00  \n\n\nSetting the Working Directory\nIt’s crucial to set the working directory in R to the folder where your course files are stored. This can be done in several ways:\n\n\nUsing RStudio:\n\nIn RStudio, you can set the working directory through the menu by navigating to Session &gt; Set Working Directory &gt; Choose Directory... and selecting your math216 folder.\n\n\n\nUsing R Script:\n\nYou can also set the working directory directly in an R script using the setwd() function. Place the following line of code at the beginning of your script:\n\nsetwd(\"~/math216\")\nReplace \"~/math216\" with the actual path to your course folder.\n\n\nUsing R Console:\n\nYou can manually set the working directory in the R console with the same command:\n\nsetwd(\"~/math216\")"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Math 216: Spring 2025",
-    "section": "",
-    "text": "Welcome to the world of statistics!"
   }
 ]
