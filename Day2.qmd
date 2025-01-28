@@ -49,10 +49,11 @@ yt <- 0
 :::
 :::
 
-::: centered-content
+
 ## Sampling and Inference ([Source](https://scholarworks.wm.edu/cgi/viewcontent.cgi?article=3030&context=vimsarticles))
 
 ::: {style="text-align: center;"}
+::: font70
 ![](images/bluecrab.png){width="70%" height="60%"}
 :::
 :::
@@ -61,7 +62,7 @@ yt <- 0
 ## Blue Crab in Maryland Coastal Bays 
 
 ::: cle8
-::: font90
+::: font70
 **Population**
 
 - All blue crabs in the Maryland Coastal Bays (MCB).
@@ -90,8 +91,8 @@ yt <- 0
 :::
 :::
 
-::: centered-content
-# Sampling Bias
+
+## Sampling Bias
 
 ::: bq
 - Sampling bias occurs when the method of selecting a sample causes the sample to differ from the population in some relevant way.
@@ -99,12 +100,12 @@ yt <- 0
 :::
 
 To eliminate sampling bias, always take a <span class="bold-text">RANDOM SAMPLE!</span>
-:::
 
-::: middle-align-xy
-# Bias in Data
 
-> Even with a random sample, data can still be biased, especially when collected on humans.
+
+## Bias in Data
+
+Even with a random sample, data can still be biased, especially when collected on humans.
 
 ::: lqt
 Some forms of bias to watch out for in data collection:
@@ -114,10 +115,10 @@ Some forms of bias to watch out for in data collection:
 - Context.
 - Non-response bias.
 :::
-:::
+
 
 ::: centered-content
-### Question Wording
+## Question Wording
 
 ::: green-h
 A random sample was asked: “Should there be a tax cut, or should money be used to fund new government programs?”
@@ -129,7 +130,7 @@ A random sample was asked: “Should there be a tax cut, or should money be used
 :::
 
 ::: centered-content
-### Question Wording
+## Question Wording
 
 ::: green-h
 A different random sample was asked: “Should there be a tax cut, or should money be spent on programs for education, the environment, health care, crime-fighting, and military defense?”
@@ -160,6 +161,7 @@ A different random sample was asked: “Should there be a tax cut, or should mon
 ::: centered-content
 ## Identified Sources of Bias in `Swedish Study`
 
+::: font80
 ::: bql
 `Political Bias:` The study experimentally primes the political affiliations of the respondents before asking questions about corruption. This bias arises when people's political leanings affect their perception and reporting of corruption levels.
 :::
@@ -170,6 +172,8 @@ A different random sample was asked: “Should there be a tax cut, or should mon
 `Sensitivity Bias:` Questions about one's experiences with corruption are sensitive in nature and may result in biased responses due to fear of retribution or social stigma.
 :::
 :::
+:::
+
 
 ::: centered-content
 ## Context
@@ -206,8 +210,35 @@ $$95\% \text{ said yes}$$
 :::
 :::
 
+
+## <i class="fa fa-pencil-square-o" style="font-size:48px;color:purple"> Think-Pair-Share </i> {background="#ffdf9e"}
+
+::: row
+::: left
+![](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExaHM2Z2sxZnN3MDB2ZWd5bWp0czJtMmo0ZTcxbzByMmt3dGNweTFncSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/SOb4AcaDitenU4XKdC/giphy.gif)
+:::
+
+::: right
+
+::: cle6
+::: font60
+
+
+1. **Think:** Reflect on a real-world example where sampling bias might occur (e.g., political polls, health surveys).
+2. **Pair:** Discuss their example with a partner and identify potential sources of bias.
+3. **Share:** Share their findings with the class and propose ways to mitigate the bias.
+
+
+:::
+:::
+:::
+:::
+
+`r countdown(minutes = 5, seconds = 00, top = 0 , right = 0, color_background = "inherit", padding = "3px 4px", font_size = "1em")`
+
+
 ::: centered-content
-### Experiment vs. Observational Study
+## Experiment vs. Observational Study
 
 ::: lqt
 An [observational study]{.bold-text} is a study in which the researcher does not actively control the value of any variable but simply observes the values as they naturally exist.

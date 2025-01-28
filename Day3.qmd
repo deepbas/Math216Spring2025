@@ -1,0 +1,304 @@
+---
+title: "Day 3"
+title-slide-attributes:
+  data-background-image: images/lake.jpg
+  data-background-size: contain
+  data-background-opacity: "0.5"
+subtitle: "Math 216: Statistical Thinking"
+author: "Bastola"
+format:
+  revealjs:
+    html-math-method: mathjax
+    mathjax-url: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/MathJax.js"
+    theme: [default, scss/main.scss]
+    slide-number: true
+    preview-links: auto
+    history: true
+    chalkboard: 
+      src: drawings.json
+    transition: slide
+    background-transition: fade    
+    touch: false
+    controls: true
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+options(htmltools.preserve.raw = FALSE)
+options(ggrepel.max.overlaps = Inf)
+
+
+# load necessary packages
+library(tidyverse)
+library(countdown)
+library(mosaic)
+library(ggthemes)
+library(forcats)
+library(flipbookr)
+library(patchwork)
+
+
+yt <- 0
+
+cell_phone_data <- data.frame(
+  Type = c("Android", "iPhone", "Blackberry", "Non Smartphone", "No Cell Phone"),
+  Frequency = c(458, 437, 141, 924, 293)
+)
+
+data <- data.frame(
+  Gender = c("Female", "Male"),
+  In_a_relationship = c(32, 10),
+  Its_complicated = c(12, 7),
+  Single = c(63, 45)
+)
+
+# read.csv("https://raw.githubusercontent.com/deepbas/statdatasets/main/APM_DougEvansCases.csv")
+survey <- read.csv("https://raw.githubusercontent.com/deepbas/statdatasets/main/StudentSurvey.csv")
+# renderthis::to_pdf(from = "Day4.html", complex_slides = TRUE, partial_slides = TRUE)
+```
+
+
+## Descriptive Statistics
+
+::: bqt
+- **Summarize and visualize** data to make sense of it.
+- **Descriptive statistics** (or **exploratory data analysis (EDA)**) involves summarizing and visualizing variables and their relationships.
+- The methods depend on the type of variable(s) being analyzed (qualitative or quantitative).
+:::
+
+## One Qualitative Variable
+
+::: green-h
+A random sample of US adults in 2012 were surveyed regarding the type of cell phone owned.
+:::
+
+<center>
+<img src="images/cellphone.png" width="70%" height="70%"> <br>
+<a>Android? iPhone? Blackberry? Non-smartphone? No cell phone?</a>
+</center>
+
+## Frequency Table
+
+::: font50
+A frequency table shows the number of cases or counts that fall in each category:
+
+::: row
+::: left
+::: table-colored
+| Subset of Raw Data | Device Type             |
+|--------------------|-------------------------|
+| Case 1             | Android                 |
+| Case 2             | none                    |
+| Case 3             | none                    |
+| Case 4             | iPhone                  |
+| Case 5             | Non Smartphone          |
+| Case 6             | iPhone                  |
+| Case 7             | Blackberry              |
+| Case 8             | Non Smartphone          |
+| Case 9             | Android                 |
+| Case 10            | Android                 |
+| ...                | (for 2253 cases ...)    |
+:::
+:::
+
+::: right
+::: table-colored
+| Cell Phone Type  | Frequency |
+|------------------|-----------|
+| Android          | 458       |
+| iPhone           | 437       |
+| Blackberry       | 141       |
+| Non Smartphone   | 924       |
+| No Cell Phone    | 293       |
+| **Total**        | **2253**  |
+:::
+:::
+:::
+:::
+
+## Proportion
+
+The proportion in a category is found by:
+$$
+\text{proportion} = \frac{\text{number in category}}{\text{total sample size}}
+$$
+
+::: lqt
+- **Population proportion (parameter):** $p$
+- **Sample proportion (statistic):** $\hat{p}$ ("p-hat")
+:::
+
+## What proportion of adults sampled do not own a cell phone?
+
+::: table-colored
+| Cell Phone Type  | Frequency | Proportion |
+|------------------|-----------|------------|
+| Android          | 458       | 0.203      |
+| iPhone           | 437       | 0.194      |
+| Blackberry       | 141       | 0.063      |
+| Non Smartphone   | 924       | 0.410      |
+| No Cell Phone    | 293       | 0.130      |
+| **Total**        | **2253**  | **1.000**  |
+:::
+
+## Bar Chart
+
+In a barplot, the height of the bar corresponds to the number of cases falling in each category.
+
+```{r, echo=FALSE, fig.height=5, out.width="50%", fig.align='center'}
+ggplot(cell_phone_data, aes(x = Type, y = Frequency)) +
+  geom_col(fill = c("darkblue", "red", "green", "orange", "purple")) +
+  labs(x = "Cell Phone Type", y = "Frequency") +
+  ggtitle("Cell Phone Usage") +
+  theme(axis.text.x = element_text(size = 6))
+```
+
+## Two Qualitative Variables
+
+::: font80
+Look at the relationship between two qualitative variables:
+
+- **Relationship status**
+- **Gender**
+
+::: table-colored
+|                  | Female | Male | Total |
+|------------------|--------|------|-------|
+| In a Relationship | 32     | 10   | 42    |
+| It's Complicated | 12     | 7    | 19    |
+| Single           | 63     | 45   | 108   |
+| **Total**        | **107**| **62**| **169**|
+:::
+:::
+
+
+## Relationship Status and Gender
+
+::: eqt
+
+**Proportion of students in a relationship that are female?**
+
+```{r}
+prop.relation.female <- 32/42
+round(prop.relation.female, 2)
+```
+
+**Proportion of students in a relationship that are male?**
+
+```{r}
+prop.relation.male <- 10/42
+round(prop.relation.male, 2)
+```
+
+:::
+
+## Difference in Proportions
+
+::: bql
+::: font80
+A difference in proportions is a difference in proportions for one qualitative variable calculated for different levels of the other qualitative variable.
+
+**Example:** Difference in proportions of male and female that are in a relationship:
+$$
+\hat{p}_F - \hat{p}_M = \frac{32}{107} - \frac{10}{62} = 0.14
+$$
+
+```{r}
+prop.female <- 32/107
+prop.male <- 10/62
+prop.diff <- prop.female - prop.male
+round(prop.diff, 2)
+```
+:::
+:::
+
+## Student Survey
+
+Dataset on 362 responses to a student survey given at one college.
+
+::: font50
+```{r, echo=FALSE}
+knitr::kable(survey |> select(-c(4,5,6, 13,14, 15, 18)))
+```
+:::
+
+
+## Distribution
+
+> In the given dataset, there are multiple variables (such as Gender, Smoke, Exercise, Height, Weight, etc.) for different students across various academic years.
+
+Knowing the distribution of each variable can help us identify relationships, trends, and potential anomalies in the data.
+
+## Distribution
+
+::: green-h
+"The distribution of the variable Y" describes its **center**, **variability**, and **shape** using both numbers and graphics.
+:::
+
+
+```{r echo=FALSE, fig.align='center'}
+library(tidyverse)
+# Load the MASS package
+library(MASS)
+
+# Load the crabs dataset
+data(crabs)
+
+ggplot(crabs, aes(x = CL)) + 
+  geom_histogram(binwidth = 5, col = "gold", fill = "lightblue") + 
+  labs(title = "Distribution of Carpace length") +
+  theme_minimal()
+```
+
+
+
+## Center: Mean or Average
+
+::: bqt
+- **Mean:** Average value in a sample or population.
+  - Sample mean: $\bar{y} = \dfrac{\sum_{i=1}^n y_i}{n}$
+  - Population mean: $\mu$
+:::
+
+```{r}
+mean(survey$Pulse)
+```
+
+::: green-h
+The mean pulse rate for this sample of students is $\bar{y} = 69.6$ beats per minute.
+:::
+
+## Center: Median
+
+::: bql
+- **Median:** The middle value when the data are ordered.
+  - Sample median: $m$
+  - Population median: $M$
+:::
+
+```{r}
+median(survey$Pulse)
+```
+
+::: green-h
+The median pulse rate for this sample of students is $m = 70$ beats per minute.
+:::
+
+## Variability: Standard Deviation
+
+::: bq
+::: font80
+
+- **Standard Deviation (SD):** Average deviation from the center in a sample or population.
+  - Sample SD: $s = \sqrt{ \dfrac{\sum_{i=1}^n (y_i - \overline{y})^2}{n-1}}$
+  - Population SD: $\sigma$
+:::
+
+```{r}
+sd(survey$Pulse)
+```
+
+::: green-h
+The SD of pulse rates for this sample of students is $s = 12.2$ beats per minute. The "average" deviation of individual pulse rates around the mean value is about 12.2 beats per minute.
+:::
+:::

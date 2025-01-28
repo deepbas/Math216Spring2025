@@ -84,11 +84,13 @@ yt <- 0
 <br>
 
 ::: bql
+::: font80
 - Most of the course information and schedule will be posted in [MyClasses](https://salisbury.instructure.com/courses/67043)
 - Bookmark the class helper webpage [https://math216-spring25.netlify.app/](https://math216-spring25.netlify.app/)
 - Homework will be posted but not collected
 - Labs most Thursdays; lab reports due in [MyClasses](https://salisbury.instructure.com/courses/70757) a week from the lab date
 - Quizzes every Friday in-person; includes HW, lectures, labs
+:::
 :::
 :::
 
@@ -113,8 +115,8 @@ yt <- 0
 Statistics is the study of data and the uncertainties surrounding them. We will take a more conceptual route to statistics in this course.
 :::
 
-::: centered-content
-### What and Why of Statistics?
+
+## What and Why of Statistics?
 
 ::: lqt
 Science of collecting, describing, analyzing, and making decisions based on data:
@@ -127,7 +129,7 @@ Science of collecting, describing, analyzing, and making decisions based on data
 ::: green-h
 Allows us to make informed decisions in the face of uncertainty and lets us take an unbiased, evidence-based viewpoint.
 :::
-:::
+
 
 ## Statistical Computation
 
@@ -144,7 +146,7 @@ Allows us to make informed decisions in the face of uncertainty and lets us take
 [RMarkdown Documentation](https://rmarkdown.rstudio.com/)
 :::
 
-::: centered-content
+
 ## Data: Units and Variables
 
 ::: bqt
@@ -154,16 +156,18 @@ An experimental (or observational) unit is an object (e.g., person, thing, trans
 :::
 
 ::: cle6
+::: font80
 Data is stored and presented in a dataset that comprises variables measured on units.
 
 - A **variable** is any characteristic that is recorded for each unit.
 :::
 :::
 
-::: centered-content
-### An Example: High School Student Analysis
 
-::: scrollable
+
+## An Example: High School Student Analysis
+
+::: font60
 ```{r, echo=FALSE}
 library(openintro)
 data(hsb2)
@@ -172,7 +176,7 @@ hsb2 %>% head() %>% knitr::kable(format = "html")
 :::
 
 Each row = unit & Each column = variable.
-:::
+
 
 ::: centered-content
 ## Qualitative Versus Quantitative
@@ -188,7 +192,9 @@ Each row = unit & Each column = variable.
 
 ## Diabetes Prevalence
 
+::: font80
 <a href="https://www.statista.com/chart/18160/us-states-with-highest-diabetes-rates/" title="Infographic: Where Diabetes is Most Prevalent in the U.S. | Statista"><img src="https://cdn.statcdn.com/Infographic/images/normal/18160.jpeg" alt="Infographic: Where Diabetes is Most Prevalent in the U.S. | Statista" width="100%" height="auto" style="width: 100%; height: auto !important; max-width:960px;-ms-interpolation-mode: bicubic;"/></a> 
+:::
 
 ::: centered-content
 ## Diabetes Analysis

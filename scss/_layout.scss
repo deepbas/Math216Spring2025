@@ -214,4 +214,75 @@ table {
   color: white;
 }
 
+// Scrollable containers for code and tables
+.scrollable-content {
+  overflow: auto;
+  max-height: 100vh;
+  max-width: 100%;
+  padding: 0.5em;
+  border: 1px solid $border-color;
+  border-radius: 15px;
+  box-shadow: 0 0 8px $highlight-color;
+  background-color: $blockquote-bg;
+  margin-bottom: 1em;
+
+  pre {
+    margin: 0;
+    white-space: pre;
+  }
+}
+
+// Specific table scrolling container
+.scrollable-table-container {
+  overflow-x: auto;
+  overflow-y: auto;
+  max-height: 400px;
+  max-width: 100%;
+  margin-bottom: 1em;
+  border: 1px solid $border-color;
+  border-radius: 15px;
+
+  table {
+    min-width: 100%;
+    margin: 0;
+    
+    td, th {
+      white-space: nowrap;
+      padding: 0.5em 1em;
+    }
+  }
+}
+
+// Enhanced code output scrolling
+.r-code-output {
+  overflow: auto;
+  max-height: 500px;
+  background-color: $highlighted-code-bg;
+  border-radius: 5px;
+  padding: 0.5em;
+  box-shadow: 0 0 8px rgba(0,0,0,0.07);
+
+  pre {
+    margin: 0;
+    overflow-x: auto;
+    code {
+      background-color: transparent;
+      padding: 0;
+    }
+  }
+}
+
+// Slide-level scrolling fallback
+.reveal .slides {
+  section {
+    overflow-y: auto !important;
+    overflow-x: auto !important;
+    height: 60vh;
+    padding: 10px;
+    box-sizing: border-box;
+    
+  }
+}
+
+
 

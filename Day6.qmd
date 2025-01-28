@@ -1,0 +1,293 @@
+---
+title: "Day 6"
+title-slide-attributes:
+  data-background-image: images/lake.jpg
+  data-background-size: contain
+  data-background-opacity: "0.5"
+subtitle: "Math 216: Statistical Thinking"
+author: "Bastola"
+format:
+  revealjs:
+    html-math-method: mathjax
+    mathjax-url: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/MathJax.js" 
+    theme: [default, scss/main.scss]
+    slide-number: true
+    preview-links: auto
+    history: true
+    chalkboard: 
+      src: drawings.json
+    transition: slide
+    background-transition: fade    
+    touch: false
+    controls: true
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+options(htmltools.preserve.raw = FALSE)
+options(ggrepel.max.overlaps = Inf)
+
+# Load necessary packages
+library(tidyverse)
+library(mosaic)
+library(ggthemes)
+library(patchwork)
+library(Lock5Data)
+
+# Set ggplot theme
+theme_set(theme_tufte(base_size = 10))
+```
+
+## Key Probability Concepts Recap
+
+::: cle3
+::: font70
+
+
+**Probability** is defined as the long-run proportion of times an event occurs after many repeated experiments.
+
+1. **Events and Sample Spaces**
+   - An **event** is a specific outcome or a set of outcomes of a random experiment.
+   - The **sample space** (S) is the set of all possible outcomes of an experiment.
+
+2. **Union and Intersection Rules**
+   - **Union** of events (A $\cup$ B): Event occurs if either event A or event B (or both) occur.
+   - **Intersection** of events (A $\cap$ B): Event occurs only if both event A and event B occur simultaneously.
+
+
+:::
+:::
+
+## Complementary Events
+
+::: cle6
+::: font70
+
+
+The **complement of an event $A$, denoted as $A^c$**, includes all sample points not in $A$. It represents the event that $A$ does NOT occur.
+
+1. **Rule of Complements**
+   - The probabilities of an event and its complement always sum to 1:
+     $$P(A)+P(A^c)=1$$
+     This implies:
+     $$P(A^c)=1-P(A)$$
+
+
+:::
+:::
+
+## Calculating $P(A)$ for Coin Tosses
+
+::: cle12
+::: font60
+
+
+1. **Experiment: Tossing Coins**
+   - Event $A$: Observing at least one head.
+
+2. **Two Coin Tosses**
+   - Possible outcomes: $HT$, $TH$, $HH$, $TT$.
+   - $A = \{HT, TH, HH\}$:
+     $$P(A) = P(HT) + P(TH) + P(HH) = \frac{3}{4}$$
+   - Or by complement, $A^c = \{TT\}$:
+     $$P(A) = 1 - P(A^c) = 1 - \frac{1}{4} = \frac{3}{4}$$
+
+
+:::
+:::
+
+## Calculating $P(A)$ for Coin Tosses (Continued)
+
+::: cle8
+::: font60
+
+
+1. **Experiment: Tossing Coins**
+   - Event $A$: Observing at least one head.
+   $$P(A) = 1 - P(A^c) = 1 - \frac{1}{4} = \frac{3}{4}$$
+
+2. **Ten Coin Tosses**
+   - For $n = 10$, $A$ includes all outcomes except all tails:
+     $$P(A) = 1 - P(A^c) = 1 - \left(\frac{1}{2}\right)^{10}$$
+     Simplifying, we find:
+     $$P(A) = 1 - \frac{1}{1024}$$
+
+
+:::
+:::
+
+## Additive Rule
+
+::: cle14
+::: font60
+
+
+- **Additive Rule**:
+  - For any two events $A$ and $B$, the probability of their union is:
+    $$P(A \cup B)=P(A)+P(B)-P(A \cap B)$$
+  - This formula accounts for overlapping outcomes, ensuring they are not double-counted.
+
+:::
+:::
+
+
+## Hospital Admission Probabilities
+
+::: cle13
+::: font60
+
+::: row
+::: left
+
+- **Patient Admissions**:
+  - $A$: Admitted for surgical treatment.
+  - $B$: Admitted for obstetrics.
+  - Probabilities:
+    - $P(A) = 12\%$
+    - $P(B) = 16\%$
+    - $P(A \cap B) = 2\%$
+
+:::
+
+::: right
+
+- **Calculating $P(A \cup B)$**:
+  - Using the formula:
+    $$P(A \cup B) = P(A) + P(B) - P(A \cap B)$$
+  - Calculation:
+    $$P(A \cup B) = 12\% + 16\% - 2\% = 26\%$$
+
+:::
+:::
+
+- The probability that a new patient is admitted for surgery, obstetrics, or both is **26%**.
+
+:::
+:::
+
+
+## Mutually Exclusive Events
+
+::: cle7
+::: font60
+
+
+- Events $A$ and $B$ are **mutually exclusive** if:
+  - $A \cap B = \{\} = \emptyset \qquad \qquad$ (Indicates no overlap in outcomes between $A$ and $B$.)
+  - $P(A \cap B) = 0$
+
+- **Probability of Union** for mutually exclusive events $A$ and $B$:
+    - $P(A \cup B) = P(A) + P(B)$
+    
+:::
+:::
+
+
+## Mutually Exclusive Events: Example
+
+    Find the probability of observing at least one head when tossing two balanced coins?
+
+::: cle10
+::: font60
+
+
+::: row
+::: left
+
+- **Defining Events**
+  - $A$: Observing at least one head.
+  - $B$: Observing exactly one head = $\{HT, TH\}$
+  - $C$: Observing exactly two heads = $\{HH\}$
+  - $A = B \cup C$
+  - $B \cap C = \emptyset$ (B and C are mutually exclusive).
+
+:::
+
+::: right
+
+- **Calculating Probability**
+  - Since $B$ and $C$ are mutually exclusive:
+    - $P(A) = P(B \cup C) = P(B) + P(C)$
+  - Calculation:
+    - $P(A) = \frac{2}{4} + \frac{1}{4} = \frac{3}{4}$
+
+:::
+:::
+
+:::
+:::
+
+
+## Conditional Probability
+
+::: cle7
+::: font70
+
+
+- **Unconditional vs. Conditional Probability**
+  - Unconditional probability refers to the likelihood of an event without any prior conditions. For example, observing an even number on a fair die ($P(A) = \frac{1}{2}$).
+  - Conditional probability adjusts probabilities based on additional known conditions. 
+    - **Formula for Conditional Probability**: $$P(A \mid B) = \frac{P(A \cap B)}{P(B)}$$, assuming $P(B) \neq 0$.
+:::
+:::
+
+
+## Conditional Probability in Dice Throws {.font80}
+
+::: cle6
+::: font80
+
+
+  - Consider the event $A$ (observing an even number) and $B$ (result less than or equal to $3$) on a die throw.
+  - Unconditional sample space: $\{1, 2, 3, 4, 5, 6\}$
+  - Conditioned on $B$, sample space reduces to: $\{1, 2, 3\}$
+  - Intersection of $A$ and $B$: $A \cap B = \{2\}$
+  - Probability of $A$ given $B$: 
+    $$P(A \mid B) = \frac{P(A \cap B)}{P(B)} = \frac{\frac{1}{6}}{\frac{1}{2}} = \frac{1}{3}$$
+  - **Key Takeaway:** Conditional probability reflects how probabilities change when the available information restricts the sample space.
+    
+
+:::
+:::
+
+## Exercise: Ethical Dilemma in Business
+
+::: font50
+> To develop programs for business travelers staying at convention hotels, Hyatt Hotels Corp. commissioned a study of executives who play golf. The study revealed that $55 \%$ of the executives admitted that they had cheated at golf. Also, $20 \%$ of the executives admitted that they had cheated at golf, and had lied in business. Given that an executive had cheated at golf, what is the probability that the executive also had lied in business?
+:::
+
+## Exercise: Cigarette Smoking $\&$ Cancer 
+
+::: font50
+> Many medical researchers have conducted experiments to examine the relationship between cigarette smoking and cancer. Consider an individual randomly selected from the adult male population. Let $A$ represent the event that the individual smokes, and let $A^c$ denote the complement of $A$ (the event that the individual does not smoke). Similarly, let $B$ represent the event that the individual develops cancer, and let $B^c$ be the complement of that event. Then the four sample points associated with the experiment are shown in the following figure, and their probabilities for a certain section of the United States are given in the following table. Use these sample point probabilities to examine the relationship between smoking and cancer.  
+:::
+
+::: row
+::: left
+![Sample Points](images/venn_smoke_cancer.png)
+:::
+
+::: right
+
+![Probabilities](images/2waytable_SC.png)
+:::
+:::
+
+## Exercise: Cigarette Smoking $\&$ Cancer 
+
+::: font80
+a. Given a person is a smoker, what is the probability of having cancer?
+
+<br>
+
+b. Given a person is a smoker, what is the probability of not having cancer?
+
+<br>
+
+c. Given a person is not a smoker, what is the probability of having cancer?
+
+<br>
+
+d. Given a person is not a smoker, what is the probability of not having cancer?
+
+:::

@@ -1,0 +1,504 @@
+---
+title: "Day 4"
+title-slide-attributes:
+  data-background-image: images/lake.jpg
+  data-background-size: contain
+  data-background-opacity: "0.5"
+subtitle: "Math 216: Statistical Thinking"
+author: "Bastola"
+format:
+  revealjs:
+    html-math-method: mathjax
+    mathjax-url: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/MathJax.js" 
+    theme: [default, scss/main.scss]
+    slide-number: true
+    preview-links: auto
+    history: true
+    chalkboard: 
+      src: drawings.json
+    transition: slide
+    background-transition: fade    
+    touch: false
+    controls: true
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+options(htmltools.preserve.raw = FALSE)
+
+# Load necessary packages
+library(tidyverse)
+library(countdown)
+library(ggthemes)
+library(patchwork)
+library(Lock5Data)
+
+# Set ggplot theme
+theme_set(theme_tufte(base_size = 10))
+
+# Load dataset
+survey <- read.csv("https://raw.githubusercontent.com/deepbas/statdatasets/main/StudentSurvey.csv")
+survey <- survey[survey$Year != "", ]
+survey$Year <- factor(survey$Year, levels = c("FirstYear", "Sophomore", "Junior", "Senior"))
+```
+
+## Recap: Student Survey 
+
+Dataset on 362 responses to a student survey given at one college.
+
+::: font50
+
+```{r, echo=FALSE}
+library(kableExtra)
+knitr::kable(head(survey |> select(-c(4,5,6,7,8,11,12, 13,14,16, 18)), 20)) 
+```
+
+:::
+
+## Histogram
+
+::: font80
+::: panel-tabset
+
+### Plot
+
+```{r, echo=FALSE, fig.align='center'}
+ggplot(survey, aes(x = Pulse)) +
+  geom_histogram(binwidth = 5, col = "gold", fill = "maroon") +
+  labs(
+    title = "Histogram of pulse rates",
+    x = "Pulse",
+    y = "Count"
+  )
+```
+
+### Code
+
+```{r, eval=FALSE, fig.align='center'}
+ggplot(survey, aes(x = Pulse)) +
+  geom_histogram(binwidth = 5, col = "gold", fill = "maroon") +
+  labs(
+    title = "Histogram of pulse rates",
+    x = "Pulse",
+    y = "Count"
+  )
+```
+
+:::
+:::
+
+## Histogram: Shape
+
+::: bqt
+- **Histogram:** Aggregates values into bins and counts how many cases fall into each bin.
+- Pulse rates are symmetrically distributed around a rate of about 70 beats per minute.
+- **Symmetric distributions** are "centered" around a mean and median that are roughly the same in value.
+:::
+
+## Shape and Stats
+
+::: cle6
+- Mean and standard deviation are good summary stats of a symmetric distribution.
+- Similar variation to the left and right of the mean so one measure of SD is fine.
+
+```{r}
+survey %>% summarize(mean = mean(Pulse), sd = sd(Pulse))
+```
+:::
+
+## Shape: Data Distribution
+
+::: cle7
+If a distribution of data is **approximately bell-shaped**, about 95% of the data should fall within two standard deviations of the sample mean.
+
+- For a sample: 95% of values between $\bar{y} - 2s$ and $\bar{y} + 2s$
+- For a population: 95% of values between $\mu - 2\sigma$ and $\mu + 2\sigma$
+:::
+
+
+## <i class="fa fa-pencil-square-o" style="font-size:48px;color:purple"> Think-Pair-Share</i> {background="#ffdf9e"}
+
+::: row
+::: left
+![](https://media.giphy.com/media/RKApDdwsQ6jkwd6RNn/giphy.gif)
+:::
+
+::: right
+
+::: cle14
+::: font80
+  - **Objective:** Understand symmetric distributions through real-world examples.  
+  - **Instructions:** Think of an example, discuss with a partner, and share with the class.  
+
+:::
+:::
+:::
+:::
+
+`r countdown(minutes = 4, seconds = 00, top = 0 , right = 0, color_background = "inherit", padding = "3px 4px", font_size = "1em")`
+
+
+## Bell-shaped Distribution 
+
+::: panel-tabset
+
+### Plot
+
+```{r, echo=FALSE}
+ggplot(data = survey, aes(x = MathSAT)) +
+  geom_histogram(bins = 12, col = "gold", fill = "maroon") +
+  labs(title = "Distribution of Math SAT Scores")
+```
+
+### Quiz
+
+The standard deviation for math SAT scores is closest to
+
+(a) 100  
+(b) 75  
+(c) 200  
+(d) 25
+
+:::
+
+
+
+## <i class="fa fa-pencil-square-o" style="font-size:48px;color:purple"> Quiz</i> {background="#ffdf9e"}
+
+::: row
+::: left
+![](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExa2ZkaHo5MG0yMnowaGVuZGIwaWRpNHB2bWtwcXIwYjVsZzFyZDBxeiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8gNQZ9IpkcdiAjfOgN/giphy.gif)
+:::
+
+::: right
+
+::: cle14
+::: font80
+  - **Objective:** Assess understanding of z-scores.  
+  - **Instructions:** Answer the quiz question.  
+
+:::
+:::
+:::
+:::
+
+`r countdown(minutes = 2, seconds = 00, top = 0 , right = 0, color_background = "inherit", padding = "3px 4px", font_size = "1em")`
+
+
+
+## Standardizing Data: Z-score
+
+::: cle10
+::: font80
+
+The z-score of a data value, x, tells us how many standard deviations the value is above or below the mean:
+
+$$ z = \dfrac{x - \text{mean}}{\text{SD}} $$
+
+- E.g., if a value $x$ has $z = -1.5$, then the value $x$ is 1.5 standard deviations below the mean.
+
+If we standardize all values in a bell-shaped distribution, 95% of all z-scores fall between -2 and 2.
+
+:::
+:::
+
+## Shape: Left Skew & Right Skew (Histograms)
+
+::: font50
+::: row
+::: left
+
+```{r, echo=FALSE}
+ggplot(data = survey, aes(x = GPA)) + 
+  geom_histogram(fill = "steelblue", color = "black") +
+  labs(title = "Histogram of GPA")
+```
+
+```{r}
+mean(survey$GPA, na.rm = TRUE)
+median(survey$GPA, na.rm = TRUE)
+```
+
+:::
+
+::: right
+
+```{r, echo=FALSE}
+ggplot(data = survey, aes(x = Exercise)) + 
+  geom_histogram(fill = "steelblue", color = "black") +
+  labs(title = "Histogram of Exercise")
+```
+
+```{r}
+mean(survey$Exercise, na.rm = TRUE)
+median(survey$Exercise, na.rm = TRUE)
+```
+
+:::
+:::
+:::
+
+## Shape: Left Skew & Right Skew (Boxplots)
+
+::: font50
+::: row
+::: left
+
+```{r, echo=FALSE}
+ggplot(data = survey, aes(x = 1, y = GPA)) + 
+  geom_boxplot(fill = "maroon", col = "black") +
+  labs(x = "", y = "GPA", title = "Boxplot of GPA") + coord_flip()
+```
+
+```{r}
+mean(survey$GPA, na.rm = TRUE)
+median(survey$GPA, na.rm = TRUE)
+```
+
+:::
+
+::: right
+
+```{r, echo=FALSE}
+ggplot(data = survey, aes(x = 1, y = Exercise)) + 
+  geom_boxplot(fill = "maroon", col = "black") +
+  labs(x = "", y = "Exercise", title = "Boxplot of Exercise") + coord_flip()
+```
+
+```{r}
+mean(survey$Exercise, na.rm = TRUE)
+median(survey$Exercise, na.rm = TRUE)
+```
+
+:::
+:::
+:::
+
+## Shape: Boxplots
+
+::: cle6
+::: font90
+
+A graphical representation of the distribution of a dataset, showing the median, quartiles, and outliers.
+
+- **Box:** Represents the interquartile range (IQR) between the 1st quartile (Q1) and the 3rd quartile (Q3).
+- **Median:** The middle value of the dataset, represented by a line inside the box.
+- **Whiskers:** Extend from the box to the minimum and maximum data points within 1.5 times the IQR.
+- **Outliers:** Data points outside of the whiskers, often represented as individual points.
+
+:::
+:::
+
+## Shape: Boxplots
+
+::: cle12
+::: font90
+[Symmetry:]{.bold-text} If the median is roughly centered within the box, and the whiskers are of similar length, the distribution is likely symmetric.
+
+[Skewness:]{.bold-text}
+
+- **Left-skewed:** The median is closer to the upper quartile (Q3), and the left whisker is longer than the right whisker.
+- **Right-skewed:** The median is closer to the lower quartile (Q1), and the right whisker is longer than the left whisker.
+
+:::
+:::
+
+## Elements of a Box Plot: Inner Fences
+
+::: cle13
+::: font70
+**Lower Inner Fence**: 
+$$ \text{Lower inner fence} = Q_L - 1.5 \times \text{IQR} $$
+
+**Upper Inner Fence**:
+$$ \text{Upper inner fence} = Q_U + 1.5 \times \text{IQR} $$
+
+Inner fences are critical for identifying what is typically considered potential mild outliers. These are points that are unusual but not extreme. The 1.5 multiplier stretches beyond the box enough to capture data variability while excluding more extreme values.
+:::
+:::
+
+
+## Outliers
+
+::: cle9
+::: font80
+
+- **Mild Outliers** fall between the inner and outer fences 
+- **Extreme Outliers** fall beyond the outer fences.
+
+Differentiating between mild and extreme outliers is crucial for accurate data analysis, as it helps in determining whether to include or exclude certain data points in statistical calculations. 
+:::
+:::
+
+## Adding a Qualitative Variable: Stats
+
+::: font70
+::: out-t
+Use `group_by()` and `summarise()` to get summary statistics using `dplyr` package to compare distributions across different levels of a qualitative variable.
+:::
+
+```{r}
+survey %>%
+  group_by(Smoke) %>%
+  summarise(Min = min(Pulse),
+            Q1 = quantile(Pulse, 0.25),
+            Median = median(Pulse),
+            Mean = mean(Pulse),
+            Q3 = quantile(Pulse, 0.75),
+            Max = max(Pulse),
+            SD = sd(Pulse),
+            N = n()) %>% 
+  knitr::kable(caption = "Summary Stats of Smoke Categories")
+```
+
+Smokers have a slightly higher mean pulse rate than non-smokers (71.8 vs. 69.3).
+
+:::
+
+## Side-by-side Histogram
+
+::: panel-tabset
+
+### Plot
+
+```{r, echo=FALSE}
+ggplot(survey, aes(x = Pulse)) + 
+  geom_histogram(binwidth = 4, fill = "maroon", col = "gold") +
+  facet_wrap(~Smoke)
+```
+
+### Code
+
+```{r, eval=FALSE}
+ggplot(survey, aes(x = Pulse)) + 
+  geom_histogram(binwidth = 4, fill = "maroon", col = "gold") +
+  facet_wrap(~Smoke)
+```
+
+:::
+
+## Side-by-side Boxplot
+
+::: panel-tabset
+
+### Plot
+
+```{r, echo=FALSE}
+ggplot(survey, aes(x = Smoke, y = Pulse)) +
+  geom_boxplot(fill = c("maroon", "purple"), col = "darkgreen") +
+  labs(x = "Smoking Status", y = "Pulse Rate")
+```
+
+### Code
+
+```{r, eval=FALSE}
+ggplot(survey, aes(x = Smoke, y = Pulse)) +
+  geom_boxplot(fill = c("maroon", "purple"), col = "darkgreen") +
+  labs(x = "Smoking Status", y = "Pulse Rate")
+```
+
+:::
+
+## Stacked Bar Graph 
+
+::: panel-tabset
+
+### Plot
+
+```{r, echo=FALSE}
+ggplot(survey, aes(x = Year, fill = Gender)) + 
+  geom_bar(position = "fill") + 
+  scale_fill_manual(values = c("maroon", "gold")) +
+  labs(title = "Proportional Distribution by Year and Gender", 
+       y = "proportion", 
+       x = "year", 
+       fill = "Gender")
+```
+
+### Code
+
+```{r, eval=FALSE}
+ggplot(survey, aes(x = Year, fill = Gender)) + 
+  geom_bar(position = "fill") + 
+  scale_fill_manual(values = c("maroon", "gold")) +
+  labs(title = "Proportional Distribution by Year and Gender", 
+       y = "proportion", 
+       x = "year", 
+       fill = "Gender")
+```
+
+:::
+
+## Stacked Bar Graph (Counts)
+
+::: panel-tabset
+
+### Plot
+
+```{r, echo=FALSE}
+ggplot(survey, aes(x = Year, fill = Gender)) + 
+  geom_bar(position = "stack") + 
+  scale_fill_manual(values = c("maroon", "gold")) +
+  labs(title = "Proportional Distribution by Year and Gender", 
+       y = "proportion", 
+       x = "year", 
+       fill = "Gender")
+```
+
+### Code
+
+```{r, eval=FALSE}
+ggplot(survey, aes(x = Year, fill = Gender)) + 
+  geom_bar(position = "stack") + 
+  scale_fill_manual(values = c("maroon", "gold")) +
+  labs(title = "Proportional Distribution by Year and Gender", 
+       y = "proportion", 
+       x = "year", 
+       fill = "Gender")
+```
+
+:::
+
+
+## <i class="fa fa-pencil-square-o" style="font-size:48px;color:purple"> Interactive Data Exploration</i> {background="#ffdf9e"}
+
+::: row
+::: left
+![](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdDFwMW9zZDYxODJoM3JrODgydHhpMDQxeWlwdWtxamZqNzJnaXhsNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ww9Z3l8wl4szKyRIro/giphy.gif)
+:::
+
+::: right
+
+::: cle14
+::: font80
+  - **Objective:** Explore data distributions interactively.  
+  - **Instructions:** Use the provided tool to adjust variables and observe changes.  
+
+:::
+:::
+:::
+:::
+
+`r countdown(minutes = 2, seconds = 00, top = 0 , right = 0, color_background = "inherit", padding = "3px 4px", font_size = "1em")`
+
+## <i class="fa fa-pencil-square-o" style="font-size:48px;color:purple"> Group Activities with Real Data</i> {background="#ffdf9e"}
+
+::: row
+::: left
+![](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdWk5OHRjdGpyZnlhcDAzemR1YmxsMmtubmUydnFmYTcyYmU2c2pwMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/54BB7UhX573Qhh8k1l/giphy.gif)
+:::
+
+::: right
+
+::: cle14
+::: font80
+  - **Objective:** Analyze and interpret real-world data.  
+  - **Instructions:** Work in groups to analyze the dataset and present your findings.  
+
+:::
+:::
+:::
+:::
+
+`r countdown(minutes = 2, seconds = 00, top = 0 , right = 0, color_background = "inherit", padding = "3px 4px", font_size = "1em")`
+

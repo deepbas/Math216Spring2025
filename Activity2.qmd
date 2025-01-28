@@ -1,0 +1,72 @@
+---
+title: "Activity 2"
+subtitle: "MATH 216: Statistical Thinking"
+format: html
+---
+
+```{r setup, include=FALSE}
+library(openintro)
+library(dplyr)
+library(knitr)
+data(hsb2)
+```
+
+### **Activity 1: Think-Pair-Share**
+
+1. **Think:** Reflect on a real-world example where sampling bias might occur (e.g., political polls, health surveys).
+2. **Pair:** Discuss their example with a partner and identify potential sources of bias.
+3. **Share:** Share their findings with the class and propose ways to mitigate the bias.
+
+
+### **Activity 2: Live Quizzes**
+
+
+1. **Question:** "How might the wording of a survey question about climate change influence responses?"
+2. **Options:**  
+   - A) It has no effect.  
+   - B) It can lead to overestimation of public concern.  
+   - C) It can lead to underestimation of public concern.  
+   - D) It can polarize responses.  
+
+
+
+### **Activity 3: Interactive Data Exploration**
+
+::: scrollable
+
+```{r echo=FALSE}
+library(tidyverse)
+# Load the MASS package
+library(MASS)
+
+# Load the crabs dataset
+data(crabs)
+
+# Display the first few rows of the dataset
+crabs %>% head() %>%  knitr::kable()
+```
+
+:::
+
+```{r echo=FALSE}
+ggplot(crabs, aes(x = CL, fill = sex)) + 
+  geom_histogram(binwidth = 5) + 
+  facet_wrap(~sex) + 
+  scale_fill_manual(values = c("maroon", "gold")) +
+  labs(title = "Carpace lengtgh for Male and Female Leptograpsus Crabs") +
+  theme_minimal()
+```
+
+1. **Question:** Describe what the above plots show.
+
+
+
+### **Activity 4: Live Quizzes**
+
+1. **Question:** "Experiment or Observational Study? To examine whether farm-grown salmon contain more omega-3 oils if water is more acidic, we collect samples of salmon and water from multiple fish farms to see if the two variables are related."
+
+2. **Options:**  
+   - A) Experiment.  
+   - B) Observational Study.  
+   - C) Not enough information.  
+
