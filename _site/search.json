@@ -91,18 +91,18 @@
     "text": "Sampling and Inference (Source)"
   },
   {
-    "objectID": "Day2.html#section",
-    "href": "Day2.html#section",
+    "objectID": "Day2.html#blue-crab-in-maryland-coastal-bays",
+    "href": "Day2.html#blue-crab-in-maryland-coastal-bays",
     "title": "Day 2",
-    "section": "",
-    "text": "Population\n\nAll blue crabs in the Maryland Coastal Bays (MCB).\nIncludes sub-estuaries: Assawoman Bay, St. Martin River, Isle of Wight, Sinepuxent Bay, Newport Bay, Chincoteague Bay.\n\nSample\n\nBlue crabs collected from 20 sites within MCB.\nSample period: April - December, 2014-2016.\nMethod: Trawl surveys."
+    "section": "Blue Crab in Maryland Coastal Bays",
+    "text": "Blue Crab in Maryland Coastal Bays\n\n\nPopulation\n\nAll blue crabs in the Maryland Coastal Bays (MCB).\nIncludes sub-estuaries: Assawoman Bay, St. Martin River, Isle of Wight, Sinepuxent Bay, Newport Bay, Chincoteague Bay.\n\nSample\n\nBlue crabs collected from 20 sites within MCB.\nSample period: April - December, 2014-2016.\nMethod: Trawl surveys."
   },
   {
-    "objectID": "Day2.html#section-1",
-    "href": "Day2.html#section-1",
+    "objectID": "Day2.html#blue-crab-in-maryland-coastal-bays-1",
+    "href": "Day2.html#blue-crab-in-maryland-coastal-bays-1",
     "title": "Day 2",
-    "section": "",
-    "text": "Variables\n\nPrimary Variable: Carapace width, sex, maturity status, molt stage.\n\nInference\n\nPopulation structure of blue crabs in MCB.\nSeasonal variations: size distribution, molt cycles, reproductive patterns."
+    "section": "Blue Crab in Maryland Coastal Bays",
+    "text": "Blue Crab in Maryland Coastal Bays\n\n\nVariables\n\nPrimary Variable: Carapace width, sex, maturity status, molt stage.\n\nInference\n\nPopulation structure of blue crabs in MCB.\nSeasonal variations: size distribution, molt cycles, reproductive patterns."
   },
   {
     "objectID": "Day2.html#question-order",
@@ -123,7 +123,7 @@
     "href": "Day2.html#identified-sources-of-bias-in-swedish-study",
     "title": "Day 2",
     "section": "Identified Sources of Bias in Swedish Study",
-    "text": "Identified Sources of Bias in Swedish Study\n\nPolitical Bias: The study experimentally primes the political affiliations of the respondents before asking questions about corruption. This bias arises when people’s political leanings affect their perception and reporting of corruption levels.\n\n\nSensitivity Bias: Questions about one’s experiences with corruption are sensitive in nature and may result in biased responses due to fear of retribution or social stigma."
+    "text": "Identified Sources of Bias in Swedish Study\n\nPolitical Bias: The study experimentally primes the political affiliations of the respondents before asking questions about corruption. This bias arises when people’s political leanings affect their perception and reporting of corruption levels.\n\n\n\nSensitivity Bias: Questions about one’s experiences with corruption are sensitive in nature and may result in biased responses due to fear of retribution or social stigma."
   },
   {
     "objectID": "Day2.html#context",
@@ -145,20 +145,6 @@
     "title": "Day 2",
     "section": "Non-response Bias",
     "text": "Non-response Bias\n\nWhen respondents are either unable or unwilling to respond to your survey, this results in non-response bias.\n\n\n\nSurvey targeted to the wrong audience.\nThere is general unwillingness due to polar opposite opinions.\nThe survey did not reach the right respondent.\n\ne.g., A survey asking teenagers about the best cigarette brands."
-  },
-  {
-    "objectID": "Day2.html#experiment-or-observational-study",
-    "href": "Day2.html#experiment-or-observational-study",
-    "title": "Day 2",
-    "section": "Experiment or Observational Study?",
-    "text": "Experiment or Observational Study?\n\nTo examine whether farm-grown salmon contain more omega-3 oils if water is more acidic, we collect samples of salmon and water from multiple fish farms to see if the two variables are related.\n\n\n\nClick for answer\n\nThis is an observational study because the researchers do not actively manipulate or control the acidity of the water; they simply observe the naturally occurring conditions at each fish farm."
-  },
-  {
-    "objectID": "Day2.html#conclusion-statistical-thinking",
-    "href": "Day2.html#conclusion-statistical-thinking",
-    "title": "Day 2",
-    "section": "Conclusion: Statistical Thinking!",
-    "text": "Conclusion: Statistical Thinking!\n\nStatistical thinking involves applying rational thought and the science of statistics to critically assess data and inferences. Fundamental to the thought process is that variation exists in populations of data."
   },
   {
     "objectID": "Activity1.html",

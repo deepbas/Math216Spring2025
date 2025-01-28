@@ -16,9 +16,9 @@ website:
         menu:
           - text: "Lecture 1"
             href: Day1.html
-        #     target: "_blank"
-        #   - text: "Lecture 2"
-        #     href: Day2.html
+            target: "_blank"
+          - text: "Lecture 2"
+            href: Day2.html
         #     target: "_blank"
         #   - text: "Lecture 3"
         #     href: Day3.html
@@ -137,9 +137,35 @@ website:
 
       - text: "Activities"
         menu:
-          - text: "Activity 1"
-            href: Activity1.html
-        #     target: "_blank"
+             - text: "Activity 1"
+               href: Activity1.html
+           # - text: "Activity 1"
+           #  href: Activity1.html
+           # - text: "Activity 1"
+           #  href: Activity1.html
+           # - text: "Activity 1"
+           #  href: Activity1.html
+           # - text: "Activity 1"
+           #  href: Activity1.html
+           # - text: "Activity 1"
+           #  href: Activity1.html
+           # - text: "Activity 1"
+           #  href: Activity1.html
+           # - text: "Activity 1"
+           #  href: Activity1.html
+           # - text: "Activity 1"
+           #  href: Activity1.html
+           # - text: "Activity 1"
+           #  href: Activity1.html
+           # - text: "Activity 1"
+           #  href: Activity1.html
+           # - text: "Activity 1"
+           #  href: Activity1.html
+           # - text: "Activity 1"
+           #  href: Activity1.html
+           # - text: "Activity 1"
+           #  href: Activity1.html
+         #     target: "_blank"
         #   - text: "Lecture 2"
         #     href: Day2.html
 

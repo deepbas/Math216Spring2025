@@ -58,7 +58,7 @@ yt <- 0
 :::
 
 
-##
+## Blue Crab in Maryland Coastal Bays 
 
 ::: cle8
 ::: font90
@@ -75,7 +75,7 @@ yt <- 0
 :::
 :::
 
-##
+## Blue Crab in Maryland Coastal Bays 
 
 ::: cle3
 ::: font90
@@ -160,11 +160,13 @@ A different random sample was asked: “Should there be a tax cut, or should mon
 ::: centered-content
 ## Identified Sources of Bias in `Swedish Study`
 
-::: bqt
+::: bql
 `Political Bias:` The study experimentally primes the political affiliations of the respondents before asking questions about corruption. This bias arises when people's political leanings affect their perception and reporting of corruption levels.
 :::
 
-::: bqt
+<br>
+
+::: bql
 `Sensitivity Bias:` Questions about one's experiences with corruption are sensitive in nature and may result in biased responses due to fear of retribution or social stigma.
 :::
 :::
@@ -211,28 +213,10 @@ $$95\% \text{ said yes}$$
 An [observational study]{.bold-text} is a study in which the researcher does not actively control the value of any variable but simply observes the values as they naturally exist.
 :::
 
+<br>
+
 ::: lqt
 An [experiment]{.bold-text} is a study in which the researcher actively controls one or more of the explanatory variables.
 :::
 :::
 
-::: centered-content
-## Experiment or Observational Study?
-
-::: bq
-To examine whether farm-grown salmon contain more omega-3 oils if water is more acidic, we collect samples of salmon and water from multiple fish farms to see if the two variables are related.
-:::
-
-<details>
-<summary class="answer">Click for answer</summary>
-This is an observational study because the researchers do not actively manipulate or control the acidity of the water; they simply observe the naturally occurring conditions at each fish farm.
-</details>
-:::
-
-::: centered-content
-## Conclusion: Statistical Thinking!
-
-::: green-h
-**Statistical thinking** involves applying rational thought and the science of statistics to critically assess data and inferences. Fundamental to the thought process is that variation exists in populations of data.
-:::
-:::
