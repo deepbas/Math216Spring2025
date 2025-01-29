@@ -14,11 +14,11 @@ data(hsb2)
 ### **Activity 1: Think-Pair-Share**
 
 1. **Think:** Reflect on a real-world example where sampling bias might occur (e.g., political polls, health surveys).
-2. **Pair:** Discuss their example with a partner and identify potential sources of bias.
-3. **Share:** Share their findings with the class and propose ways to mitigate the bias.
+2. **Pair:** Discuss your example with a partner and identify potential sources of bias.
+3. **Share:** Share your findings with the class and propose ways to mitigate the bias.
 
 
-### **Activity 2: Live Quizzes**
+### **Activity 2: Live Quiz**
 
 
 1. **Question:** "How might the wording of a survey question about climate change influence responses?"
@@ -57,13 +57,14 @@ ggplot(crabs, aes(x = CL, fill = sex)) +
   theme_minimal()
 ```
 
-1. **Question:** Describe what the above plots show.
+1. **Question:** What do you see on the above plots? .
 
 
 
-### **Activity 4: Live Quizzes**
 
-1. **Question:** "Experiment or Observational Study? To examine whether farm-grown salmon contain more omega-3 oils if water is more acidic, we collect samples of salmon and water from multiple fish farms to see if the two variables are related."
+### **Activity 4: Quiz**
+
+1. **Question:** "Experiment or Observational Study? To examine whether farm-grown salmon contain more omega-3 oils if water is more acidic, we collect samples of salmon and water from multiple fish farms to see if the two variables are related." Explain
 
 2. **Options:**  
    - A) Experiment.  
