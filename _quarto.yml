@@ -141,7 +141,7 @@ website:
             href: Activity1.html
           - text: "Activity 2"
             href: Activity2.html
-           - text: "Activity 3"
+          - text: "Activity 3"
             href: Activity3.html
            # - text: "Activity 1"
            #  href: Activity1.html

@@ -1,143 +1,94 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "Welcome to the captivating world of statistical thinking! This course will provide you with a solid foundation in statistical theory while taking you on a journey through the practical aspects of the subject. Along the way, you’ll gain experience with statistical software, learn to interpret and effectively communicate statistical findings, and explore a range of topics in descriptive and inferential data analysis and both parametric and non-parametric statistical inference. Some of the areas we’ll delve into include probability, normal distribution, sampling distributions, confidence intervals, hypothesis testing and simple linear regression.\nAt the heart of this course is the ability to interpret results and grasp underlying concepts, rather than merely obtaining numerical outcomes. By engaging with a diverse set of problems, you’ll become well-versed in statistical methodologies. However, it’s crucial to remember that a deep understanding of the concepts is the key to drawing meaningful conclusions.\n\n\n\n\nMaster the basic principles of data analysis, including the production and application of data in studies and experiments.\nApply principles of inference to construct confidence intervals and conduct hypothesis tests effectively.\nCritically evaluate statistical arguments and methodologies in published research.\nCompare and differentiate between parametric and non-parametric methods in statistical analysis.\nUtilize software R to conduct data analysis, create graphs, and perform basic statistical tests."
+    "objectID": "Day1.html#about-me",
+    "href": "Day1.html#about-me",
+    "title": "Day 1",
+    "section": "About Me",
+    "text": "About Me\n\n\n\n\n\nResearch in Statistical Computation and Applied Statistics\nAvid learner and traveler"
   },
   {
-    "objectID": "about.html#learning-objectives",
-    "href": "about.html#learning-objectives",
-    "title": "About",
-    "section": "",
-    "text": "Master the basic principles of data analysis, including the production and application of data in studies and experiments.\nApply principles of inference to construct confidence intervals and conduct hypothesis tests effectively.\nCritically evaluate statistical arguments and methodologies in published research.\nCompare and differentiate between parametric and non-parametric methods in statistical analysis.\nUtilize software R to conduct data analysis, create graphs, and perform basic statistical tests."
+    "objectID": "Day1.html#active-participation",
+    "href": "Day1.html#active-participation",
+    "title": "Day 1",
+    "section": "Active Participation",
+    "text": "Active Participation\n\n\n\nEngage Actively\n\nTake lecture notes\nFollow class handouts\n\nAsk Questions\n\nEvery question is valuable; we’re learning together\n\nGain Conceptual Understanding\n\nTo be able to apply the knowledge; understanding the concepts is key"
   },
   {
-    "objectID": "Activity1.html",
-    "href": "Activity1.html",
-    "title": "Activity 1",
-    "section": "",
-    "text": "The High School and Beyond (hsb2) dataset contains information about 200 high school students, including demographic details and academic performance. This dataset is commonly used in statistics education to explore relationships between socioeconomic factors and test scores.\nKey Variables:\n\n\nID: Student identifier (unique number)\n\nGender: Self-reported gender (Male/Female)\n\nRace: Ethnicity (White/Black/Asian/Other)\n\nSES: Socioeconomic status (Low/Middle/High)\n\nProgram: Enrollment track (General/Vocational/Academic)\n\nReading, Math, Science: Standardized test scores (0-100)\n\n\n\n\nFirst 6 observations from hsb2 dataset\n\nid\ngender\nrace\nses\nschtyp\nprog\nread\nwrite\nmath\nscience\nsocst\n\n\n\n70\nmale\nwhite\nlow\npublic\ngeneral\n57\n52\n41\n47\n57\n\n\n121\nfemale\nwhite\nmiddle\npublic\nvocational\n68\n59\n53\n63\n61\n\n\n86\nmale\nwhite\nhigh\npublic\ngeneral\n44\n33\n54\n58\n31\n\n\n141\nmale\nwhite\nhigh\npublic\nvocational\n63\n44\n47\n53\n56\n\n\n172\nmale\nwhite\nmiddle\npublic\nacademic\n47\n52\n57\n53\n61\n\n\n113\nmale\nwhite\nmiddle\npublic\nacademic\n44\n52\n51\n63\n61\n\n\n\n\n\n\n\nClassify these variables as qualitative (categorical) or quantitative (numerical):\n\nGender\n\nMath Score\n\nSES (Socioeconomic Status)\n\nProgram\n\nScience Score\n\nFor two of your choices, explain why they belong to that category.\n\nSuppose researchers want to analyze gender differences in math performance:\n\nWhat is the current variable type of Gender?\nHow could you convert Gender to a numeric format? What values would you assign?\n\nIf Gender is coded as 0 (Male) and 1 (Female):\n\nCould you calculate an “average gender”? Explain why this is or isn’t meaningful.\n\n\nWhy might statisticians prefer to keep Gender as a categorical variable?"
+    "objectID": "Day1.html#class-pipelines",
+    "href": "Day1.html#class-pipelines",
+    "title": "Day 1",
+    "section": "Class Pipelines",
+    "text": "Class Pipelines\n\n\n\n\nMost of the course information and schedule will be posted in MyClasses\nBookmark the class helper webpage https://math216-spring25.netlify.app/\nHomework will be posted but not collected\nLabs most Thursdays; lab reports due in MyClasses a week from the lab date\nQuizzes every Friday in-person; includes HW, lectures, labs"
   },
   {
-    "objectID": "Activity1.html#dataset-description",
-    "href": "Activity1.html#dataset-description",
-    "title": "Activity 1",
-    "section": "",
-    "text": "The High School and Beyond (hsb2) dataset contains information about 200 high school students, including demographic details and academic performance. This dataset is commonly used in statistics education to explore relationships between socioeconomic factors and test scores.\nKey Variables:\n\n\nID: Student identifier (unique number)\n\nGender: Self-reported gender (Male/Female)\n\nRace: Ethnicity (White/Black/Asian/Other)\n\nSES: Socioeconomic status (Low/Middle/High)\n\nProgram: Enrollment track (General/Vocational/Academic)\n\nReading, Math, Science: Standardized test scores (0-100)"
+    "objectID": "Day1.html#what-will-a-typical-dayweek-look-like",
+    "href": "Day1.html#what-will-a-typical-dayweek-look-like",
+    "title": "Day 1",
+    "section": "What Will a Typical Day/Week Look Like?",
+    "text": "What Will a Typical Day/Week Look Like?\n\n\n\nBefore class:\n\nRead assigned topics from textbook\nWork on homework/lab, come with questions\n\nDuring class:\n\nMini lectures\nClass activities"
   },
   {
-    "objectID": "Activity1.html#data-preview",
-    "href": "Activity1.html#data-preview",
-    "title": "Activity 1",
-    "section": "",
-    "text": "First 6 observations from hsb2 dataset\n\nid\ngender\nrace\nses\nschtyp\nprog\nread\nwrite\nmath\nscience\nsocst\n\n\n\n70\nmale\nwhite\nlow\npublic\ngeneral\n57\n52\n41\n47\n57\n\n\n121\nfemale\nwhite\nmiddle\npublic\nvocational\n68\n59\n53\n63\n61\n\n\n86\nmale\nwhite\nhigh\npublic\ngeneral\n44\n33\n54\n58\n31\n\n\n141\nmale\nwhite\nhigh\npublic\nvocational\n63\n44\n47\n53\n56\n\n\n172\nmale\nwhite\nmiddle\npublic\nacademic\n47\n52\n57\n53\n61\n\n\n113\nmale\nwhite\nmiddle\npublic\nacademic\n44\n52\n51\n63\n61"
+    "objectID": "Day1.html#what-and-why-of-statistics",
+    "href": "Day1.html#what-and-why-of-statistics",
+    "title": "Day 1",
+    "section": "What and Why of Statistics?",
+    "text": "What and Why of Statistics?\n\nScience of collecting, describing, analyzing, and making decisions based on data:\n\nSampling\nExploratory Data Analysis\nInference\n\n\n\nAllows us to make informed decisions in the face of uncertainty and lets us take an unbiased, evidence-based viewpoint."
   },
   {
-    "objectID": "Activity1.html#questions",
-    "href": "Activity1.html#questions",
-    "title": "Activity 1",
-    "section": "",
-    "text": "Classify these variables as qualitative (categorical) or quantitative (numerical):\n\nGender\n\nMath Score\n\nSES (Socioeconomic Status)\n\nProgram\n\nScience Score\n\nFor two of your choices, explain why they belong to that category.\n\nSuppose researchers want to analyze gender differences in math performance:\n\nWhat is the current variable type of Gender?\nHow could you convert Gender to a numeric format? What values would you assign?\n\nIf Gender is coded as 0 (Male) and 1 (Female):\n\nCould you calculate an “average gender”? Explain why this is or isn’t meaningful.\n\n\nWhy might statisticians prefer to keep Gender as a categorical variable?"
+    "objectID": "Day1.html#statistical-computation",
+    "href": "Day1.html#statistical-computation",
+    "title": "Day 1",
+    "section": "Statistical Computation",
+    "text": "Statistical Computation\n \n\n\nStatistical computing software called R\nRStudio/Posit provides a user-friendly interface to R\nR Markdown is a platform in Posit to write your codes and results\n\n\n\nRMarkdown Documentation"
   },
   {
-    "objectID": "Activity2.html",
-    "href": "Activity2.html",
-    "title": "Activity 2",
-    "section": "",
-    "text": "Activity 1: Think-Pair-Share\n\n\nThink: Reflect on a real-world example where sampling bias might occur (e.g., political polls, health surveys).\n\nPair: Discuss your example with a partner and identify potential sources of bias.\n\nShare: Share your findings with the class and propose ways to mitigate the bias.\nActivity 2: Live Quiz\n\n\nQuestion: “How might the wording of a survey question about climate change influence responses?”\n\nOptions:\n\n\nIt has no effect.\n\n\n\nIt can lead to overestimation of public concern.\n\n\n\nIt can lead to underestimation of public concern.\n\n\n\nIt can polarize responses.\n\n\n\nActivity 3: Interactive Data Exploration\n\n\n\n\n\nsp\nsex\nindex\nFL\nRW\nCL\nCW\nBD\n\n\n\nB\nM\n1\n8.1\n6.7\n16.1\n19.0\n7.0\n\n\nB\nM\n2\n8.8\n7.7\n18.1\n20.8\n7.4\n\n\nB\nM\n3\n9.2\n7.8\n19.0\n22.4\n7.7\n\n\nB\nM\n4\n9.6\n7.9\n20.1\n23.1\n8.2\n\n\nB\nM\n5\n9.8\n8.0\n20.3\n23.0\n8.2\n\n\nB\nM\n6\n10.8\n9.0\n23.0\n26.5\n9.8\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuestion: What do you see on the above plots? .\nActivity 4: Quiz\n\nQuestion: “Experiment or Observational Study? To examine whether farm-grown salmon contain more omega-3 oils if water is more acidic, we collect samples of salmon and water from multiple fish farms to see if the two variables are related.” Explain\n\nOptions:\n\n\nExperiment.\n\n\n\nObservational Study.\n\n\n\nNot enough information."
+    "objectID": "Day1.html#data-units-and-variables",
+    "href": "Day1.html#data-units-and-variables",
+    "title": "Day 1",
+    "section": "Data: Units and Variables",
+    "text": "Data: Units and Variables\n\nExperimental (or Observational) Unit\nAn experimental (or observational) unit is an object (e.g., person, thing, transaction, or event) about which we collect data.\n\n\n\nData is stored and presented in a dataset that comprises variables measured on units.\n\nA variable is any characteristic that is recorded for each unit."
   },
   {
-    "objectID": "Day6.html#key-probability-concepts-recap",
-    "href": "Day6.html#key-probability-concepts-recap",
-    "title": "Day 6",
-    "section": "Key Probability Concepts Recap",
-    "text": "Key Probability Concepts Recap\n\n\nProbability is defined as the long-run proportion of times an event occurs after many repeated experiments.\n\nEvents and Sample Spaces\n\nAn event is a specific outcome or a set of outcomes of a random experiment.\nThe sample space (S) is the set of all possible outcomes of an experiment.\n\nUnion and Intersection Rules\n\nUnion of events (A \\(\\cup\\) B): Event occurs if either event A or event B (or both) occur.\nIntersection of events (A \\(\\cap\\) B): Event occurs only if both event A and event B occur simultaneously."
+    "objectID": "Day1.html#an-example-high-school-student-analysis",
+    "href": "Day1.html#an-example-high-school-student-analysis",
+    "title": "Day 1",
+    "section": "An Example: High School Student Analysis",
+    "text": "An Example: High School Student Analysis\n\n\n\n\n\n\nid\ngender\nrace\nses\nschtyp\nprog\nread\nwrite\nmath\nscience\nsocst\n\n\n\n\n70\nmale\nwhite\nlow\npublic\ngeneral\n57\n52\n41\n47\n57\n\n\n121\nfemale\nwhite\nmiddle\npublic\nvocational\n68\n59\n53\n63\n61\n\n\n86\nmale\nwhite\nhigh\npublic\ngeneral\n44\n33\n54\n58\n31\n\n\n141\nmale\nwhite\nhigh\npublic\nvocational\n63\n44\n47\n53\n56\n\n\n172\nmale\nwhite\nmiddle\npublic\nacademic\n47\n52\n57\n53\n61\n\n\n113\nmale\nwhite\nmiddle\npublic\nacademic\n44\n52\n51\n63\n61\n\n\n\n\n\n\n\n\nEach row = unit & Each column = variable."
   },
   {
-    "objectID": "Day6.html#complementary-events",
-    "href": "Day6.html#complementary-events",
-    "title": "Day 6",
-    "section": "Complementary Events",
-    "text": "Complementary Events\n\n\nThe complement of an event \\(A\\), denoted as \\(A^c\\), includes all sample points not in \\(A\\). It represents the event that \\(A\\) does NOT occur.\n\nRule of Complements\n\nThe probabilities of an event and its complement always sum to 1: \\[P(A)+P(A^c)=1\\] This implies: \\[P(A^c)=1-P(A)\\]"
+    "objectID": "Day1.html#qualitative-versus-quantitative",
+    "href": "Day1.html#qualitative-versus-quantitative",
+    "title": "Day 1",
+    "section": "Qualitative Versus Quantitative",
+    "text": "Qualitative Versus Quantitative\n\nVariables are classified as either qualitative or quantitative:\n\n\n\nA qualitative variable categorizes cases (e.g., diabetic status: yes/no, type of diabetes)\nA quantitative variable records numerical measurements (e.g., blood glucose levels, BMI, HbA1c %)"
   },
   {
-    "objectID": "Day6.html#calculating-pa-for-coin-tosses",
-    "href": "Day6.html#calculating-pa-for-coin-tosses",
-    "title": "Day 6",
-    "section": "Calculating \\(P(A)\\) for Coin Tosses",
-    "text": "Calculating \\(P(A)\\) for Coin Tosses\n\n\n\nExperiment: Tossing Coins\n\nEvent \\(A\\): Observing at least one head.\n\nTwo Coin Tosses\n\nPossible outcomes: \\(HT\\), \\(TH\\), \\(HH\\), \\(TT\\).\n\\(A = \\{HT, TH, HH\\}\\): \\[P(A) = P(HT) + P(TH) + P(HH) = \\frac{3}{4}\\]\nOr by complement, \\(A^c = \\{TT\\}\\): \\[P(A) = 1 - P(A^c) = 1 - \\frac{1}{4} = \\frac{3}{4}\\]"
+    "objectID": "Day1.html#diabetes-prevalence",
+    "href": "Day1.html#diabetes-prevalence",
+    "title": "Day 1",
+    "section": "Diabetes Prevalence",
+    "text": "Diabetes Prevalence"
   },
   {
-    "objectID": "Day6.html#calculating-pa-for-coin-tosses-continued",
-    "href": "Day6.html#calculating-pa-for-coin-tosses-continued",
-    "title": "Day 6",
-    "section": "Calculating \\(P(A)\\) for Coin Tosses (Continued)",
-    "text": "Calculating \\(P(A)\\) for Coin Tosses (Continued)\n\n\n\nExperiment: Tossing Coins\n\nEvent \\(A\\): Observing at least one head. \\[P(A) = 1 - P(A^c) = 1 - \\frac{1}{4} = \\frac{3}{4}\\]\n\nTen Coin Tosses\n\nFor \\(n = 10\\), \\(A\\) includes all outcomes except all tails: \\[P(A) = 1 - P(A^c) = 1 - \\left(\\frac{1}{2}\\right)^{10}\\] Simplifying, we find: \\[P(A) = 1 - \\frac{1}{1024}\\]"
+    "objectID": "Day1.html#diabetes-analysis",
+    "href": "Day1.html#diabetes-analysis",
+    "title": "Day 1",
+    "section": "Diabetes Analysis",
+    "text": "Diabetes Analysis\n\nIf cases are individual patients:\n\n\nPatient diabetic status (yes/no) is qualitative classification\n\n\n\nIf cases are US states:\n\n\nDiabetes prevalence rates (%) are quantitative measurements"
   },
   {
-    "objectID": "Day6.html#additive-rule",
-    "href": "Day6.html#additive-rule",
-    "title": "Day 6",
-    "section": "Additive Rule",
-    "text": "Additive Rule\n\n\n\nAdditive Rule:\n\nFor any two events \\(A\\) and \\(B\\), the probability of their union is: \\[P(A \\cup B)=P(A)+P(B)-P(A \\cap B)\\]\nThis formula accounts for overlapping outcomes, ensuring they are not double-counted."
+    "objectID": "Day1.html#variable-manipulations",
+    "href": "Day1.html#variable-manipulations",
+    "title": "Day 1",
+    "section": "Variable Manipulations",
+    "text": "Variable Manipulations\n\nCan use numbers to code categories of qualitative variables.\n\ne.g., Gender (0 for male and 1 for female).\n\n\n\n\nCan convert quantitative variables into qualitative groups.\n\ne.g., Income (0-50000 as Low, 50000+ as High)."
   },
   {
-    "objectID": "Day6.html#hospital-admission-probabilities",
-    "href": "Day6.html#hospital-admission-probabilities",
-    "title": "Day 6",
-    "section": "Hospital Admission Probabilities",
-    "text": "Hospital Admission Probabilities\n\n\n\n\n\nPatient Admissions:\n\n\\(A\\): Admitted for surgical treatment.\n\\(B\\): Admitted for obstetrics.\nProbabilities:\n\n\\(P(A) = 12\\%\\)\n\\(P(B) = 16\\%\\)\n\\(P(A \\cap B) = 2\\%\\)\n\n\n\n\n\n\nCalculating \\(P(A \\cup B)\\):\n\nUsing the formula: \\[P(A \\cup B) = P(A) + P(B) - P(A \\cap B)\\]\nCalculation: \\[P(A \\cup B) = 12\\% + 16\\% - 2\\% = 26\\%\\]\n\n\n\n\n\nThe probability that a new patient is admitted for surgery, obstetrics, or both is 26%."
-  },
-  {
-    "objectID": "Day6.html#mutually-exclusive-events",
-    "href": "Day6.html#mutually-exclusive-events",
-    "title": "Day 6",
-    "section": "Mutually Exclusive Events",
-    "text": "Mutually Exclusive Events\n\n\n\nEvents \\(A\\) and \\(B\\) are mutually exclusive if:\n\n\\(A \\cap B = \\{\\} = \\emptyset \\qquad \\qquad\\) (Indicates no overlap in outcomes between \\(A\\) and \\(B\\).)\n\\(P(A \\cap B) = 0\\)\n\nProbability of Union for mutually exclusive events \\(A\\) and \\(B\\):\n\n\\(P(A \\cup B) = P(A) + P(B)\\)"
-  },
-  {
-    "objectID": "Day6.html#mutually-exclusive-events-example",
-    "href": "Day6.html#mutually-exclusive-events-example",
-    "title": "Day 6",
-    "section": "Mutually Exclusive Events: Example",
-    "text": "Mutually Exclusive Events: Example\nFind the probability of observing at least one head when tossing two balanced coins?\n\n\n\n\n\nDefining Events\n\n\\(A\\): Observing at least one head.\n\\(B\\): Observing exactly one head = \\(\\{HT, TH\\}\\)\n\\(C\\): Observing exactly two heads = \\(\\{HH\\}\\)\n\\(A = B \\cup C\\)\n\\(B \\cap C = \\emptyset\\) (B and C are mutually exclusive).\n\n\n\n\n\nCalculating Probability\n\nSince \\(B\\) and \\(C\\) are mutually exclusive:\n\n\\(P(A) = P(B \\cup C) = P(B) + P(C)\\)\n\nCalculation:\n\n\\(P(A) = \\frac{2}{4} + \\frac{1}{4} = \\frac{3}{4}\\)"
-  },
-  {
-    "objectID": "Day6.html#conditional-probability",
-    "href": "Day6.html#conditional-probability",
-    "title": "Day 6",
-    "section": "Conditional Probability",
-    "text": "Conditional Probability\n\n\n\nUnconditional vs. Conditional Probability\n\nUnconditional probability refers to the likelihood of an event without any prior conditions. For example, observing an even number on a fair die (\\(P(A) = \\frac{1}{2}\\)).\nConditional probability adjusts probabilities based on additional known conditions.\n\nFormula for Conditional Probability: \\[P(A \\mid B) = \\frac{P(A \\cap B)}{P(B)}\\], assuming \\(P(B) \\neq 0\\)."
-  },
-  {
-    "objectID": "Day6.html#conditional-probability-in-dice-throws",
-    "href": "Day6.html#conditional-probability-in-dice-throws",
-    "title": "Day 6",
-    "section": "Conditional Probability in Dice Throws",
-    "text": "Conditional Probability in Dice Throws\n\n\n\nConsider the event \\(A\\) (observing an even number) and \\(B\\) (result less than or equal to \\(3\\)) on a die throw.\nUnconditional sample space: \\(\\{1, 2, 3, 4, 5, 6\\}\\)\nConditioned on \\(B\\), sample space reduces to: \\(\\{1, 2, 3\\}\\)\nIntersection of \\(A\\) and \\(B\\): \\(A \\cap B = \\{2\\}\\)\nProbability of \\(A\\) given \\(B\\): \\[P(A \\mid B) = \\frac{P(A \\cap B)}{P(B)} = \\frac{\\frac{1}{6}}{\\frac{1}{2}} = \\frac{1}{3}\\]\nKey Takeaway: Conditional probability reflects how probabilities change when the available information restricts the sample space."
-  },
-  {
-    "objectID": "Day6.html#exercise-ethical-dilemma-in-business",
-    "href": "Day6.html#exercise-ethical-dilemma-in-business",
-    "title": "Day 6",
-    "section": "Exercise: Ethical Dilemma in Business",
-    "text": "Exercise: Ethical Dilemma in Business\n\n\nTo develop programs for business travelers staying at convention hotels, Hyatt Hotels Corp. commissioned a study of executives who play golf. The study revealed that \\(55 \\%\\) of the executives admitted that they had cheated at golf. Also, \\(20 \\%\\) of the executives admitted that they had cheated at golf, and had lied in business. Given that an executive had cheated at golf, what is the probability that the executive also had lied in business?"
-  },
-  {
-    "objectID": "Day6.html#exercise-cigarette-smoking-cancer",
-    "href": "Day6.html#exercise-cigarette-smoking-cancer",
-    "title": "Day 6",
-    "section": "Exercise: Cigarette Smoking \\(\\&\\) Cancer",
-    "text": "Exercise: Cigarette Smoking \\(\\&\\) Cancer\n\n\nMany medical researchers have conducted experiments to examine the relationship between cigarette smoking and cancer. Consider an individual randomly selected from the adult male population. Let \\(A\\) represent the event that the individual smokes, and let \\(A^c\\) denote the complement of \\(A\\) (the event that the individual does not smoke). Similarly, let \\(B\\) represent the event that the individual develops cancer, and let \\(B^c\\) be the complement of that event. Then the four sample points associated with the experiment are shown in the following figure, and their probabilities for a certain section of the United States are given in the following table. Use these sample point probabilities to examine the relationship between smoking and cancer.\n\n\n\n\n\n\n\nSample Points\n\n\n\n\n\n\n\nProbabilities"
-  },
-  {
-    "objectID": "Day6.html#exercise-cigarette-smoking-cancer-1",
-    "href": "Day6.html#exercise-cigarette-smoking-cancer-1",
-    "title": "Day 6",
-    "section": "Exercise: Cigarette Smoking \\(\\&\\) Cancer",
-    "text": "Exercise: Cigarette Smoking \\(\\&\\) Cancer\n\n\nGiven a person is a smoker, what is the probability of having cancer?\n\n\n\nGiven a person is a smoker, what is the probability of not having cancer?\n\n\n\nGiven a person is not a smoker, what is the probability of having cancer?\n\n\n\nGiven a person is not a smoker, what is the probability of not having cancer?"
+    "objectID": "Day1.html#group-activity-1",
+    "href": "Day1.html#group-activity-1",
+    "title": "Day 1",
+    "section": " Group Activity 1",
+    "text": "Group Activity 1\n\n\n\n\n\n\n\nWe will have interactive elements in every class that could be:\n\nThink-pair-share\nQuiz\nInteractive Data Exploration\nGroup Activities with Real Data\n\nThis is the time for you to gauge your understanding of the concepts and have fun with the content. These may be collected for attendance! Please bring your charged laptop to every class.\n\n\n\n\n −+ 10:00"
   },
   {
     "objectID": "Day3.html#descriptive-statistics",
@@ -243,6 +194,251 @@
     "title": "Day 3",
     "section": "Variability: Standard Deviation",
     "text": "Variability: Standard Deviation\n\n\n\nStandard Deviation (SD): Average deviation from the center in a sample or population.\n\nSample SD: \\(s = \\sqrt{ \\dfrac{\\sum_{i=1}^n (y_i - \\overline{y})^2}{n-1}}\\)\nPopulation SD: \\(\\sigma\\)\n\n\n\n\nsd(survey$Pulse)\n\n[1] 12.20514\n\n\n\nThe SD of pulse rates for this sample of students is \\(s = 12.2\\) beats per minute. The “average” deviation of individual pulse rates around the mean value is about 12.2 beats per minute."
+  },
+  {
+    "objectID": "Day6.html#key-probability-concepts-recap",
+    "href": "Day6.html#key-probability-concepts-recap",
+    "title": "Day 6",
+    "section": "Key Probability Concepts Recap",
+    "text": "Key Probability Concepts Recap\n\n\nProbability is defined as the long-run proportion of times an event occurs after many repeated experiments.\n\nEvents and Sample Spaces\n\nAn event is a specific outcome or a set of outcomes of a random experiment.\nThe sample space (S) is the set of all possible outcomes of an experiment.\n\nUnion and Intersection Rules\n\nUnion of events (A \\(\\cup\\) B): Event occurs if either event A or event B (or both) occur.\nIntersection of events (A \\(\\cap\\) B): Event occurs only if both event A and event B occur simultaneously."
+  },
+  {
+    "objectID": "Day6.html#complementary-events",
+    "href": "Day6.html#complementary-events",
+    "title": "Day 6",
+    "section": "Complementary Events",
+    "text": "Complementary Events\n\n\nThe complement of an event \\(A\\), denoted as \\(A^c\\), includes all sample points not in \\(A\\). It represents the event that \\(A\\) does NOT occur.\n\nRule of Complements\n\nThe probabilities of an event and its complement always sum to 1: \\[P(A)+P(A^c)=1\\] This implies: \\[P(A^c)=1-P(A)\\]"
+  },
+  {
+    "objectID": "Day6.html#calculating-pa-for-coin-tosses",
+    "href": "Day6.html#calculating-pa-for-coin-tosses",
+    "title": "Day 6",
+    "section": "Calculating \\(P(A)\\) for Coin Tosses",
+    "text": "Calculating \\(P(A)\\) for Coin Tosses\n\n\n\nExperiment: Tossing Coins\n\nEvent \\(A\\): Observing at least one head.\n\nTwo Coin Tosses\n\nPossible outcomes: \\(HT\\), \\(TH\\), \\(HH\\), \\(TT\\).\n\\(A = \\{HT, TH, HH\\}\\): \\[P(A) = P(HT) + P(TH) + P(HH) = \\frac{3}{4}\\]\nOr by complement, \\(A^c = \\{TT\\}\\): \\[P(A) = 1 - P(A^c) = 1 - \\frac{1}{4} = \\frac{3}{4}\\]"
+  },
+  {
+    "objectID": "Day6.html#calculating-pa-for-coin-tosses-continued",
+    "href": "Day6.html#calculating-pa-for-coin-tosses-continued",
+    "title": "Day 6",
+    "section": "Calculating \\(P(A)\\) for Coin Tosses (Continued)",
+    "text": "Calculating \\(P(A)\\) for Coin Tosses (Continued)\n\n\n\nExperiment: Tossing Coins\n\nEvent \\(A\\): Observing at least one head. \\[P(A) = 1 - P(A^c) = 1 - \\frac{1}{4} = \\frac{3}{4}\\]\n\nTen Coin Tosses\n\nFor \\(n = 10\\), \\(A\\) includes all outcomes except all tails: \\[P(A) = 1 - P(A^c) = 1 - \\left(\\frac{1}{2}\\right)^{10}\\] Simplifying, we find: \\[P(A) = 1 - \\frac{1}{1024}\\]"
+  },
+  {
+    "objectID": "Day6.html#additive-rule",
+    "href": "Day6.html#additive-rule",
+    "title": "Day 6",
+    "section": "Additive Rule",
+    "text": "Additive Rule\n\n\n\nAdditive Rule:\n\nFor any two events \\(A\\) and \\(B\\), the probability of their union is: \\[P(A \\cup B)=P(A)+P(B)-P(A \\cap B)\\]\nThis formula accounts for overlapping outcomes, ensuring they are not double-counted."
+  },
+  {
+    "objectID": "Day6.html#hospital-admission-probabilities",
+    "href": "Day6.html#hospital-admission-probabilities",
+    "title": "Day 6",
+    "section": "Hospital Admission Probabilities",
+    "text": "Hospital Admission Probabilities\n\n\n\n\n\nPatient Admissions:\n\n\\(A\\): Admitted for surgical treatment.\n\\(B\\): Admitted for obstetrics.\nProbabilities:\n\n\\(P(A) = 12\\%\\)\n\\(P(B) = 16\\%\\)\n\\(P(A \\cap B) = 2\\%\\)\n\n\n\n\n\n\nCalculating \\(P(A \\cup B)\\):\n\nUsing the formula: \\[P(A \\cup B) = P(A) + P(B) - P(A \\cap B)\\]\nCalculation: \\[P(A \\cup B) = 12\\% + 16\\% - 2\\% = 26\\%\\]\n\n\n\n\n\nThe probability that a new patient is admitted for surgery, obstetrics, or both is 26%."
+  },
+  {
+    "objectID": "Day6.html#mutually-exclusive-events",
+    "href": "Day6.html#mutually-exclusive-events",
+    "title": "Day 6",
+    "section": "Mutually Exclusive Events",
+    "text": "Mutually Exclusive Events\n\n\n\nEvents \\(A\\) and \\(B\\) are mutually exclusive if:\n\n\\(A \\cap B = \\{\\} = \\emptyset \\qquad \\qquad\\) (Indicates no overlap in outcomes between \\(A\\) and \\(B\\).)\n\\(P(A \\cap B) = 0\\)\n\nProbability of Union for mutually exclusive events \\(A\\) and \\(B\\):\n\n\\(P(A \\cup B) = P(A) + P(B)\\)"
+  },
+  {
+    "objectID": "Day6.html#mutually-exclusive-events-example",
+    "href": "Day6.html#mutually-exclusive-events-example",
+    "title": "Day 6",
+    "section": "Mutually Exclusive Events: Example",
+    "text": "Mutually Exclusive Events: Example\nFind the probability of observing at least one head when tossing two balanced coins?\n\n\n\n\n\nDefining Events\n\n\\(A\\): Observing at least one head.\n\\(B\\): Observing exactly one head = \\(\\{HT, TH\\}\\)\n\\(C\\): Observing exactly two heads = \\(\\{HH\\}\\)\n\\(A = B \\cup C\\)\n\\(B \\cap C = \\emptyset\\) (B and C are mutually exclusive).\n\n\n\n\n\nCalculating Probability\n\nSince \\(B\\) and \\(C\\) are mutually exclusive:\n\n\\(P(A) = P(B \\cup C) = P(B) + P(C)\\)\n\nCalculation:\n\n\\(P(A) = \\frac{2}{4} + \\frac{1}{4} = \\frac{3}{4}\\)"
+  },
+  {
+    "objectID": "Day6.html#conditional-probability",
+    "href": "Day6.html#conditional-probability",
+    "title": "Day 6",
+    "section": "Conditional Probability",
+    "text": "Conditional Probability\n\n\n\nUnconditional vs. Conditional Probability\n\nUnconditional probability refers to the likelihood of an event without any prior conditions. For example, observing an even number on a fair die (\\(P(A) = \\frac{1}{2}\\)).\nConditional probability adjusts probabilities based on additional known conditions.\n\nFormula for Conditional Probability: \\[P(A \\mid B) = \\frac{P(A \\cap B)}{P(B)}\\], assuming \\(P(B) \\neq 0\\)."
+  },
+  {
+    "objectID": "Day6.html#conditional-probability-in-dice-throws",
+    "href": "Day6.html#conditional-probability-in-dice-throws",
+    "title": "Day 6",
+    "section": "Conditional Probability in Dice Throws",
+    "text": "Conditional Probability in Dice Throws\n\n\n\nConsider the event \\(A\\) (observing an even number) and \\(B\\) (result less than or equal to \\(3\\)) on a die throw.\nUnconditional sample space: \\(\\{1, 2, 3, 4, 5, 6\\}\\)\nConditioned on \\(B\\), sample space reduces to: \\(\\{1, 2, 3\\}\\)\nIntersection of \\(A\\) and \\(B\\): \\(A \\cap B = \\{2\\}\\)\nProbability of \\(A\\) given \\(B\\): \\[P(A \\mid B) = \\frac{P(A \\cap B)}{P(B)} = \\frac{\\frac{1}{6}}{\\frac{1}{2}} = \\frac{1}{3}\\]\nKey Takeaway: Conditional probability reflects how probabilities change when the available information restricts the sample space."
+  },
+  {
+    "objectID": "Day6.html#exercise-ethical-dilemma-in-business",
+    "href": "Day6.html#exercise-ethical-dilemma-in-business",
+    "title": "Day 6",
+    "section": "Exercise: Ethical Dilemma in Business",
+    "text": "Exercise: Ethical Dilemma in Business\n\n\nTo develop programs for business travelers staying at convention hotels, Hyatt Hotels Corp. commissioned a study of executives who play golf. The study revealed that \\(55 \\%\\) of the executives admitted that they had cheated at golf. Also, \\(20 \\%\\) of the executives admitted that they had cheated at golf, and had lied in business. Given that an executive had cheated at golf, what is the probability that the executive also had lied in business?"
+  },
+  {
+    "objectID": "Day6.html#exercise-cigarette-smoking-cancer",
+    "href": "Day6.html#exercise-cigarette-smoking-cancer",
+    "title": "Day 6",
+    "section": "Exercise: Cigarette Smoking \\(\\&\\) Cancer",
+    "text": "Exercise: Cigarette Smoking \\(\\&\\) Cancer\n\n\nMany medical researchers have conducted experiments to examine the relationship between cigarette smoking and cancer. Consider an individual randomly selected from the adult male population. Let \\(A\\) represent the event that the individual smokes, and let \\(A^c\\) denote the complement of \\(A\\) (the event that the individual does not smoke). Similarly, let \\(B\\) represent the event that the individual develops cancer, and let \\(B^c\\) be the complement of that event. Then the four sample points associated with the experiment are shown in the following figure, and their probabilities for a certain section of the United States are given in the following table. Use these sample point probabilities to examine the relationship between smoking and cancer.\n\n\n\n\n\n\n\nSample Points\n\n\n\n\n\n\n\nProbabilities"
+  },
+  {
+    "objectID": "Day6.html#exercise-cigarette-smoking-cancer-1",
+    "href": "Day6.html#exercise-cigarette-smoking-cancer-1",
+    "title": "Day 6",
+    "section": "Exercise: Cigarette Smoking \\(\\&\\) Cancer",
+    "text": "Exercise: Cigarette Smoking \\(\\&\\) Cancer\n\n\nGiven a person is a smoker, what is the probability of having cancer?\n\n\n\nGiven a person is a smoker, what is the probability of not having cancer?\n\n\n\nGiven a person is not a smoker, what is the probability of having cancer?\n\n\n\nGiven a person is not a smoker, what is the probability of not having cancer?"
+  },
+  {
+    "objectID": "Day5.html#introduction-to-probability",
+    "href": "Day5.html#introduction-to-probability",
+    "title": "Day 5",
+    "section": "Introduction to Probability",
+    "text": "Introduction to Probability\n\n\n\nExperiment: Any act of observation with uncertain outcomes (e.g., tossing a coin).\nObservation: The result of an experiment (e.g., heads or tails).\n\nMathematical Representation\n\nLet \\(E\\) represent an experiment.\nAn outcome of \\(E\\) is an element of the sample space \\(S\\).\nProbability of an event \\(A\\) is denoted by \\(P(A)\\)."
+  },
+  {
+    "objectID": "Day5.html#what-is-probability",
+    "href": "Day5.html#what-is-probability",
+    "title": "Day 5",
+    "section": "What is Probability?",
+    "text": "What is Probability?\n\n\n\n\n\nProbability is a measure of how likely an event is to occur.\nThink of it as the “chance” or “likelihood” of something happening.\nExample: The chance of rain tomorrow, the likelihood of rolling a 6 on a die.\n\n\n\n\n\n\n\n\nPhoto by Matthew Henry on Unsplash"
+  },
+  {
+    "objectID": "Day5.html#definitions",
+    "href": "Day5.html#definitions",
+    "title": "Day 5",
+    "section": "Definitions",
+    "text": "Definitions\n\n\nSample Point\n\nDefinition: The most basic outcome of an experiment.\nExample: In a coin toss, each toss that results in H (Head) or T (Tail).\n\nSample Space\n\nDefinition: Collection of all possible outcomes (sample points) of an experiment.\nExample: In a coin toss, the sample space is \\(S = \\{H, T\\}\\)."
+  },
+  {
+    "objectID": "Day5.html#venn-diagram",
+    "href": "Day5.html#venn-diagram",
+    "title": "Day 5",
+    "section": "Venn Diagram",
+    "text": "Venn Diagram\n\n\n\nSample Space (S): Represented as a closed figure in the diagram.\nSample Points: Each possible outcome shown as a solid dot within the figure.\n\nExample: Coin Toss\n\nVenn Diagram: Circle labeled S containing two points labeled H (Head) and T (Tail).\nRepresentation: Helps visualize all possible outcomes in a single view."
+  },
+  {
+    "objectID": "Day5.html#tree-diagram",
+    "href": "Day5.html#tree-diagram",
+    "title": "Day 5",
+    "section": "Tree Diagram",
+    "text": "Tree Diagram\n\nTree diagram of a coin toss"
+  },
+  {
+    "objectID": "Day5.html#experiments-and-their-sample-spaces",
+    "href": "Day5.html#experiments-and-their-sample-spaces",
+    "title": "Day 5",
+    "section": "Experiments and Their Sample Spaces",
+    "text": "Experiments and Their Sample Spaces\n\n\nExperiment: Tossing a Coin\n\nSample Space (S): \\[S = \\{H, T\\}\\]\n\nExperiment: Rolling a Die\n\nSample Space (S): \\[S = \\{1, 2, 3, 4, 5, 6\\}\\]\n\nExperiment: Tossing Two Coins\n\nSample Space (S): \\[S = \\{HH, HT, TH, TT\\}\\]"
+  },
+  {
+    "objectID": "Day5.html#defining-probability",
+    "href": "Day5.html#defining-probability",
+    "title": "Day 5",
+    "section": "Defining Probability",
+    "text": "Defining Probability\n\n\nProbability of a Sample Point: Number between 0 and 1 indicating likelihood of the outcome.\nRules of Probability\n\nRange of Probabilities:\n\nEach probability \\(p_i\\) must satisfy: \\[0 \\leq p_i \\leq 1\\]\n\nSum of Probabilities:\n\nThe total probability across all sample points must sum to 1: \\[\\sum_{\\text{all } i} p_i = 1\\]"
+  },
+  {
+    "objectID": "Day5.html#example-calculating-winning-probability-in-a-dice-game",
+    "href": "Day5.html#example-calculating-winning-probability-in-a-dice-game",
+    "title": "Day 5",
+    "section": "Example: Calculating Winning Probability in a Dice Game",
+    "text": "Example: Calculating Winning Probability in a Dice Game\n\n\n\n\n\nExperiment: Tossing a fair die.\nWinning Condition: If the up face is an even number (2, 4, 6), you win $1.\nLosing Condition: If the up face is odd (1, 3, 5), you lose $1.\n\nSample Space and Probabilities\n\nSample Space (S): \\[S = \\{1, 2, 3, 4, 5, 6\\}\\]\nUniform Probabilities: \\[p_1 = p_2 = p_3 = \\cdots = p_6 = \\frac{1}{6}\\]\n\n\n\nCalculation of Winning Probability\n\nEvent of Winning: \\[\\text{Winning} = \\{2, 4, 6\\}\\]\nProbability of Winning: \\[\\text{Prob of Winning} = p_2 + p_4 + p_6 = \\frac{1}{6} + \\frac{1}{6} + \\frac{1}{6} = \\frac{3}{6} = \\frac{1}{2}\\]"
+  },
+  {
+    "objectID": "Day5.html#event-definition",
+    "href": "Day5.html#event-definition",
+    "title": "Day 5",
+    "section": "Event Definition",
+    "text": "Event Definition\n\nDefinition of an Event\n\nEvent (A): A collection of sample points.\nExample: Rolling an even number on a die.\n\nProbability of an Event\n\nCalculation: Sum of probabilities of all sample points in the event."
+  },
+  {
+    "objectID": "Day5.html#steps-for-calculating-event-probabilities",
+    "href": "Day5.html#steps-for-calculating-event-probabilities",
+    "title": "Day 5",
+    "section": "Steps for Calculating Event Probabilities",
+    "text": "Steps for Calculating Event Probabilities\n\n\n\n\n\nDefine the Experiment: Describe the observation process.\nList Sample Points: Identify possible outcomes.\nAssign Probabilities: Allocate probability to each sample point.\nIdentify Event’s Sample Points: Determine which sample points are part of the event.\nCalculate Event Probability: Sum the probabilities of the event’s sample points.\n\n\n\nExample\n\nExperiment: Tossing a coin twice.\nSample Points: {HH, HT, TH, TT}\nEvent: Getting at least one head.\nCalculation: Probability(HH) + Probability(HT) + Probability(TH)"
+  },
+  {
+    "objectID": "Day5.html#compound-events-unions",
+    "href": "Day5.html#compound-events-unions",
+    "title": "Day 5",
+    "section": "Compound Events: Unions",
+    "text": "Compound Events: Unions\n\n\nDefinition: Union of two events \\(A\\) and \\(B\\) (\\(A \\cup B\\))\nOccurs If: Either event \\(A\\), event \\(B\\), or both happen.\nComposition: Includes all sample points in \\(A\\), \\(B\\), or both. \\[A \\cup B = \\{x : x \\in A \\text{ or } x \\in B\\}\\]"
+  },
+  {
+    "objectID": "Day5.html#compound-events-intersections",
+    "href": "Day5.html#compound-events-intersections",
+    "title": "Day 5",
+    "section": "Compound Events: Intersections",
+    "text": "Compound Events: Intersections\n\n\nDefinition: Intersection of two events \\(A\\) and \\(B\\) (\\(A \\cap B\\))\nOccurs If: Both event \\(A\\) and event \\(B\\) happen.\nComposition: Includes all sample points that are in both \\(A\\) and \\(B\\). \\[A \\cap B = \\{x : x \\in A \\text{ and } x \\in B\\}\\]"
+  },
+  {
+    "objectID": "Day5.html#example-calculating-unions-and-intersections-in-a-die-toss",
+    "href": "Day5.html#example-calculating-unions-and-intersections-in-a-die-toss",
+    "title": "Day 5",
+    "section": "Example: Calculating Unions and Intersections in a Die-Toss",
+    "text": "Example: Calculating Unions and Intersections in a Die-Toss\n\n\n\n\n\nEvent A: Toss an even number. \\[A = \\{2, 4, 6\\}\\]\nEvent B: Toss a number less than or equal to 3. \\[B = \\{1, 2, 3\\}\\]\nSample Space (S): \\[S = \\{1, 2, 3, 4, 5, 6\\}\\]\n\n\n\n\nUnion (\\(A \\cup B\\)): \\[A \\cup B = \\{1, 2, 3, 4, 6\\}\\]\nIntersection (\\(A \\cap B\\)): \\[A \\cap B = \\{2\\}\\]\nProbability of Union (\\(P(A \\cup B)\\)): \\[P(A \\cup B) = \\frac{5}{6}\\]\nProbability of Intersection (\\(P(A \\cap B)\\)): \\[P(A \\cap B) = \\frac{1}{6}\\]"
+  },
+  {
+    "objectID": "Activity1.html",
+    "href": "Activity1.html",
+    "title": "Activity 1",
+    "section": "",
+    "text": "The High School and Beyond (hsb2) dataset contains information about 200 high school students, including demographic details and academic performance. This dataset is commonly used in statistics education to explore relationships between socioeconomic factors and test scores.\nKey Variables:\n\n\nID: Student identifier (unique number)\n\nGender: Self-reported gender (Male/Female)\n\nRace: Ethnicity (White/Black/Asian/Other)\n\nSES: Socioeconomic status (Low/Middle/High)\n\nProgram: Enrollment track (General/Vocational/Academic)\n\nReading, Math, Science: Standardized test scores (0-100)\n\n\n\n\nFirst 6 observations from hsb2 dataset\n\nid\ngender\nrace\nses\nschtyp\nprog\nread\nwrite\nmath\nscience\nsocst\n\n\n\n70\nmale\nwhite\nlow\npublic\ngeneral\n57\n52\n41\n47\n57\n\n\n121\nfemale\nwhite\nmiddle\npublic\nvocational\n68\n59\n53\n63\n61\n\n\n86\nmale\nwhite\nhigh\npublic\ngeneral\n44\n33\n54\n58\n31\n\n\n141\nmale\nwhite\nhigh\npublic\nvocational\n63\n44\n47\n53\n56\n\n\n172\nmale\nwhite\nmiddle\npublic\nacademic\n47\n52\n57\n53\n61\n\n\n113\nmale\nwhite\nmiddle\npublic\nacademic\n44\n52\n51\n63\n61\n\n\n\n\n\n\n\nClassify these variables as qualitative (categorical) or quantitative (numerical):\n\nGender\n\nMath Score\n\nSES (Socioeconomic Status)\n\nProgram\n\nScience Score\n\nFor two of your choices, explain why they belong to that category.\n\nSuppose researchers want to analyze gender differences in math performance:\n\nWhat is the current variable type of Gender?\nHow could you convert Gender to a numeric format? What values would you assign?\n\nIf Gender is coded as 0 (Male) and 1 (Female):\n\nCould you calculate an “average gender”? Explain why this is or isn’t meaningful.\n\n\nWhy might statisticians prefer to keep Gender as a categorical variable?"
+  },
+  {
+    "objectID": "Activity1.html#dataset-description",
+    "href": "Activity1.html#dataset-description",
+    "title": "Activity 1",
+    "section": "",
+    "text": "The High School and Beyond (hsb2) dataset contains information about 200 high school students, including demographic details and academic performance. This dataset is commonly used in statistics education to explore relationships between socioeconomic factors and test scores.\nKey Variables:\n\n\nID: Student identifier (unique number)\n\nGender: Self-reported gender (Male/Female)\n\nRace: Ethnicity (White/Black/Asian/Other)\n\nSES: Socioeconomic status (Low/Middle/High)\n\nProgram: Enrollment track (General/Vocational/Academic)\n\nReading, Math, Science: Standardized test scores (0-100)"
+  },
+  {
+    "objectID": "Activity1.html#data-preview",
+    "href": "Activity1.html#data-preview",
+    "title": "Activity 1",
+    "section": "",
+    "text": "First 6 observations from hsb2 dataset\n\nid\ngender\nrace\nses\nschtyp\nprog\nread\nwrite\nmath\nscience\nsocst\n\n\n\n70\nmale\nwhite\nlow\npublic\ngeneral\n57\n52\n41\n47\n57\n\n\n121\nfemale\nwhite\nmiddle\npublic\nvocational\n68\n59\n53\n63\n61\n\n\n86\nmale\nwhite\nhigh\npublic\ngeneral\n44\n33\n54\n58\n31\n\n\n141\nmale\nwhite\nhigh\npublic\nvocational\n63\n44\n47\n53\n56\n\n\n172\nmale\nwhite\nmiddle\npublic\nacademic\n47\n52\n57\n53\n61\n\n\n113\nmale\nwhite\nmiddle\npublic\nacademic\n44\n52\n51\n63\n61"
+  },
+  {
+    "objectID": "Activity1.html#questions",
+    "href": "Activity1.html#questions",
+    "title": "Activity 1",
+    "section": "",
+    "text": "Classify these variables as qualitative (categorical) or quantitative (numerical):\n\nGender\n\nMath Score\n\nSES (Socioeconomic Status)\n\nProgram\n\nScience Score\n\nFor two of your choices, explain why they belong to that category.\n\nSuppose researchers want to analyze gender differences in math performance:\n\nWhat is the current variable type of Gender?\nHow could you convert Gender to a numeric format? What values would you assign?\n\nIf Gender is coded as 0 (Male) and 1 (Female):\n\nCould you calculate an “average gender”? Explain why this is or isn’t meaningful.\n\n\nWhy might statisticians prefer to keep Gender as a categorical variable?"
+  },
+  {
+    "objectID": "Activity2.html",
+    "href": "Activity2.html",
+    "title": "Activity 2",
+    "section": "",
+    "text": "Activity 1: Think-Pair-Share\n\n\nThink: Reflect on a real-world example where sampling bias might occur (e.g., political polls, health surveys).\n\nPair: Discuss your example with a partner and identify potential sources of bias.\n\nShare: Share your findings with the class and propose ways to mitigate the bias.\nActivity 2: Live Quiz\n\n\nQuestion: “How might the wording of a survey question about climate change influence responses?”\n\nOptions:\n\n\nIt has no effect.\n\n\n\nIt can lead to overestimation of public concern.\n\n\n\nIt can lead to underestimation of public concern.\n\n\n\nIt can polarize responses.\n\n\n\nActivity 3: Interactive Data Exploration\n\n\n\n\n\nsp\nsex\nindex\nFL\nRW\nCL\nCW\nBD\n\n\n\nB\nM\n1\n8.1\n6.7\n16.1\n19.0\n7.0\n\n\nB\nM\n2\n8.8\n7.7\n18.1\n20.8\n7.4\n\n\nB\nM\n3\n9.2\n7.8\n19.0\n22.4\n7.7\n\n\nB\nM\n4\n9.6\n7.9\n20.1\n23.1\n8.2\n\n\nB\nM\n5\n9.8\n8.0\n20.3\n23.0\n8.2\n\n\nB\nM\n6\n10.8\n9.0\n23.0\n26.5\n9.8\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuestion: What do you see on the above plots? .\nActivity 4: Quiz\n\nQuestion: “Experiment or Observational Study? To examine whether farm-grown salmon contain more omega-3 oils if water is more acidic, we collect samples of salmon and water from multiple fish farms to see if the two variables are related.” Explain\n\nOptions:\n\n\nExperiment.\n\n\n\nObservational Study.\n\n\n\nNot enough information."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Math 216: Spring 2025",
+    "section": "",
+    "text": "Welcome to the world of statistics!"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Welcome to the captivating world of statistical thinking! This course will provide you with a solid foundation in statistical theory while taking you on a journey through the practical aspects of the subject. Along the way, you’ll gain experience with statistical software, learn to interpret and effectively communicate statistical findings, and explore a range of topics in descriptive and inferential data analysis and both parametric and non-parametric statistical inference. Some of the areas we’ll delve into include probability, normal distribution, sampling distributions, confidence intervals, hypothesis testing and simple linear regression.\nAt the heart of this course is the ability to interpret results and grasp underlying concepts, rather than merely obtaining numerical outcomes. By engaging with a diverse set of problems, you’ll become well-versed in statistical methodologies. However, it’s crucial to remember that a deep understanding of the concepts is the key to drawing meaningful conclusions.\n\n\n\n\nMaster the basic principles of data analysis, including the production and application of data in studies and experiments.\nApply principles of inference to construct confidence intervals and conduct hypothesis tests effectively.\nCritically evaluate statistical arguments and methodologies in published research.\nCompare and differentiate between parametric and non-parametric methods in statistical analysis.\nUtilize software R to conduct data analysis, create graphs, and perform basic statistical tests."
+  },
+  {
+    "objectID": "about.html#learning-objectives",
+    "href": "about.html#learning-objectives",
+    "title": "About",
+    "section": "",
+    "text": "Master the basic principles of data analysis, including the production and application of data in studies and experiments.\nApply principles of inference to construct confidence intervals and conduct hypothesis tests effectively.\nCritically evaluate statistical arguments and methodologies in published research.\nCompare and differentiate between parametric and non-parametric methods in statistical analysis.\nUtilize software R to conduct data analysis, create graphs, and perform basic statistical tests."
+  },
+  {
+    "objectID": "Activity3.html",
+    "href": "Activity3.html",
+    "title": "Activity 3",
+    "section": "",
+    "text": "1. Think-Pair-Share Activity\nThink-Pair-Share: Calculating Descriptive Statistics\n\n\nThink: Calculate the mean, median, and standard deviation for the following dataset by hand:\nPulse Rates: [68, 72, 70, 65, 74, 69, 71, 67, 73, 70]\n\nPair: Discuss your calculations with a partner. Compare your results and resolve any discrepancies.\nShare: Share your findings with the class. Be prepared to explain your calculations.\n\n2. Quiz\nQuiz: Proportions and Frequency Tables\n\n\nQuestion: In the cell phone dataset, what proportion of adults own an iPhone?\n\nA). 0.194\nB). 0.203\nC). 0.063\nD). 0.410\n\n\nQuestion: What is the difference in proportions between females and males who are in a relationship?\n\nA). 0.14\nB). 0.10\nC). 0.05\nD). 0.20\n3. Case Studies and Problem-Solving\nObjective: Apply statistical concepts to solve real-world problems.\nCase Study: Health Data Analysis\n\n\nScenario: A health study collected data on smoking habits and pulse rates. The dataset is provided below:\nSmoker: [Yes, No, No, Yes, No, Yes, No, No, Yes, No]  \nPulse: [72, 68, 70, 75, 69, 74, 67, 71, 73, 70]  \n\n\nTask:\n\nCalculate the mean and median pulse rates for smokers and non-smokers separately.\n\nCompare the variability (standard deviation) of pulse rates between the two groups.\n\nDiscuss whether smoking appears to have an effect on pulse rates.\n\n\nSubmit: Write a brief report summarizing your findings."
   },
   {
     "objectID": "Day4.html#recap-student-survey",
@@ -399,97 +595,6 @@
     "text": "Group Activities with Real Data\n\n\n\n\n\n\n\n\nObjective: Analyze and interpret real-world data.\n\nInstructions: Work in groups to analyze the dataset and present your findings.\n\n\n\n\n\n\n−+\n02:00"
   },
   {
-    "objectID": "Day1.html#about-me",
-    "href": "Day1.html#about-me",
-    "title": "Day 1",
-    "section": "About Me",
-    "text": "About Me\n\n\n\n\n\nResearch in Statistical Computation and Applied Statistics\nAvid learner and traveler"
-  },
-  {
-    "objectID": "Day1.html#active-participation",
-    "href": "Day1.html#active-participation",
-    "title": "Day 1",
-    "section": "Active Participation",
-    "text": "Active Participation\n\n\n\nEngage Actively\n\nTake lecture notes\nFollow class handouts\n\nAsk Questions\n\nEvery question is valuable; we’re learning together\n\nGain Conceptual Understanding\n\nTo be able to apply the knowledge; understanding the concepts is key"
-  },
-  {
-    "objectID": "Day1.html#class-pipelines",
-    "href": "Day1.html#class-pipelines",
-    "title": "Day 1",
-    "section": "Class Pipelines",
-    "text": "Class Pipelines\n\n\n\n\nMost of the course information and schedule will be posted in MyClasses\nBookmark the class helper webpage https://math216-spring25.netlify.app/\nHomework will be posted but not collected\nLabs most Thursdays; lab reports due in MyClasses a week from the lab date\nQuizzes every Friday in-person; includes HW, lectures, labs"
-  },
-  {
-    "objectID": "Day1.html#what-will-a-typical-dayweek-look-like",
-    "href": "Day1.html#what-will-a-typical-dayweek-look-like",
-    "title": "Day 1",
-    "section": "What Will a Typical Day/Week Look Like?",
-    "text": "What Will a Typical Day/Week Look Like?\n\n\n\nBefore class:\n\nRead assigned topics from textbook\nWork on homework/lab, come with questions\n\nDuring class:\n\nMini lectures\nClass activities"
-  },
-  {
-    "objectID": "Day1.html#what-and-why-of-statistics",
-    "href": "Day1.html#what-and-why-of-statistics",
-    "title": "Day 1",
-    "section": "What and Why of Statistics?",
-    "text": "What and Why of Statistics?\n\nScience of collecting, describing, analyzing, and making decisions based on data:\n\nSampling\nExploratory Data Analysis\nInference\n\n\n\nAllows us to make informed decisions in the face of uncertainty and lets us take an unbiased, evidence-based viewpoint."
-  },
-  {
-    "objectID": "Day1.html#statistical-computation",
-    "href": "Day1.html#statistical-computation",
-    "title": "Day 1",
-    "section": "Statistical Computation",
-    "text": "Statistical Computation\n \n\n\nStatistical computing software called R\nRStudio/Posit provides a user-friendly interface to R\nR Markdown is a platform in Posit to write your codes and results\n\n\n\nRMarkdown Documentation"
-  },
-  {
-    "objectID": "Day1.html#data-units-and-variables",
-    "href": "Day1.html#data-units-and-variables",
-    "title": "Day 1",
-    "section": "Data: Units and Variables",
-    "text": "Data: Units and Variables\n\nExperimental (or Observational) Unit\nAn experimental (or observational) unit is an object (e.g., person, thing, transaction, or event) about which we collect data.\n\n\n\nData is stored and presented in a dataset that comprises variables measured on units.\n\nA variable is any characteristic that is recorded for each unit."
-  },
-  {
-    "objectID": "Day1.html#an-example-high-school-student-analysis",
-    "href": "Day1.html#an-example-high-school-student-analysis",
-    "title": "Day 1",
-    "section": "An Example: High School Student Analysis",
-    "text": "An Example: High School Student Analysis\n\n\n\n\n\n\nid\ngender\nrace\nses\nschtyp\nprog\nread\nwrite\nmath\nscience\nsocst\n\n\n\n\n70\nmale\nwhite\nlow\npublic\ngeneral\n57\n52\n41\n47\n57\n\n\n121\nfemale\nwhite\nmiddle\npublic\nvocational\n68\n59\n53\n63\n61\n\n\n86\nmale\nwhite\nhigh\npublic\ngeneral\n44\n33\n54\n58\n31\n\n\n141\nmale\nwhite\nhigh\npublic\nvocational\n63\n44\n47\n53\n56\n\n\n172\nmale\nwhite\nmiddle\npublic\nacademic\n47\n52\n57\n53\n61\n\n\n113\nmale\nwhite\nmiddle\npublic\nacademic\n44\n52\n51\n63\n61\n\n\n\n\n\n\n\n\nEach row = unit & Each column = variable."
-  },
-  {
-    "objectID": "Day1.html#qualitative-versus-quantitative",
-    "href": "Day1.html#qualitative-versus-quantitative",
-    "title": "Day 1",
-    "section": "Qualitative Versus Quantitative",
-    "text": "Qualitative Versus Quantitative\n\nVariables are classified as either qualitative or quantitative:\n\n\n\nA qualitative variable categorizes cases (e.g., diabetic status: yes/no, type of diabetes)\nA quantitative variable records numerical measurements (e.g., blood glucose levels, BMI, HbA1c %)"
-  },
-  {
-    "objectID": "Day1.html#diabetes-prevalence",
-    "href": "Day1.html#diabetes-prevalence",
-    "title": "Day 1",
-    "section": "Diabetes Prevalence",
-    "text": "Diabetes Prevalence"
-  },
-  {
-    "objectID": "Day1.html#diabetes-analysis",
-    "href": "Day1.html#diabetes-analysis",
-    "title": "Day 1",
-    "section": "Diabetes Analysis",
-    "text": "Diabetes Analysis\n\nIf cases are individual patients:\n\n\nPatient diabetic status (yes/no) is qualitative classification\n\n\n\nIf cases are US states:\n\n\nDiabetes prevalence rates (%) are quantitative measurements"
-  },
-  {
-    "objectID": "Day1.html#variable-manipulations",
-    "href": "Day1.html#variable-manipulations",
-    "title": "Day 1",
-    "section": "Variable Manipulations",
-    "text": "Variable Manipulations\n\nCan use numbers to code categories of qualitative variables.\n\ne.g., Gender (0 for male and 1 for female).\n\n\n\n\nCan convert quantitative variables into qualitative groups.\n\ne.g., Income (0-50000 as Low, 50000+ as High)."
-  },
-  {
-    "objectID": "Day1.html#group-activity-1",
-    "href": "Day1.html#group-activity-1",
-    "title": "Day 1",
-    "section": " Group Activity 1",
-    "text": "Group Activity 1\n\n\n\n\n\n\n\nWe will have interactive elements in every class that could be:\n\nThink-pair-share\nQuiz\nInteractive Data Exploration\nGroup Activities with Real Data\n\nThis is the time for you to gauge your understanding of the concepts and have fun with the content. These may be collected for attendance! Please bring your charged laptop to every class.\n\n\n\n\n −+ 10:00"
-  },
-  {
     "objectID": "Day2.html#sampling-and-inference",
     "href": "Day2.html#sampling-and-inference",
     "title": "Day 2",
@@ -602,97 +707,6 @@
     "text": "Experiment vs. Observational Study\n\nAn observational study is a study in which the researcher does not actively control the value of any variable but simply observes the values as they naturally exist.\n\n\n\nAn experiment is a study in which the researcher actively controls one or more of the explanatory variables."
   },
   {
-    "objectID": "Day5.html#introduction-to-probability",
-    "href": "Day5.html#introduction-to-probability",
-    "title": "Day 5",
-    "section": "Introduction to Probability",
-    "text": "Introduction to Probability\n\n\n\nExperiment: Any act of observation with uncertain outcomes (e.g., tossing a coin).\nObservation: The result of an experiment (e.g., heads or tails).\n\nMathematical Representation\n\nLet \\(E\\) represent an experiment.\nAn outcome of \\(E\\) is an element of the sample space \\(S\\).\nProbability of an event \\(A\\) is denoted by \\(P(A)\\)."
-  },
-  {
-    "objectID": "Day5.html#what-is-probability",
-    "href": "Day5.html#what-is-probability",
-    "title": "Day 5",
-    "section": "What is Probability?",
-    "text": "What is Probability?\n\n\n\n\n\nProbability is a measure of how likely an event is to occur.\nThink of it as the “chance” or “likelihood” of something happening.\nExample: The chance of rain tomorrow, the likelihood of rolling a 6 on a die.\n\n\n\n\n\n\n\n\nPhoto by Matthew Henry on Unsplash"
-  },
-  {
-    "objectID": "Day5.html#definitions",
-    "href": "Day5.html#definitions",
-    "title": "Day 5",
-    "section": "Definitions",
-    "text": "Definitions\n\n\nSample Point\n\nDefinition: The most basic outcome of an experiment.\nExample: In a coin toss, each toss that results in H (Head) or T (Tail).\n\nSample Space\n\nDefinition: Collection of all possible outcomes (sample points) of an experiment.\nExample: In a coin toss, the sample space is \\(S = \\{H, T\\}\\)."
-  },
-  {
-    "objectID": "Day5.html#venn-diagram",
-    "href": "Day5.html#venn-diagram",
-    "title": "Day 5",
-    "section": "Venn Diagram",
-    "text": "Venn Diagram\n\n\n\nSample Space (S): Represented as a closed figure in the diagram.\nSample Points: Each possible outcome shown as a solid dot within the figure.\n\nExample: Coin Toss\n\nVenn Diagram: Circle labeled S containing two points labeled H (Head) and T (Tail).\nRepresentation: Helps visualize all possible outcomes in a single view."
-  },
-  {
-    "objectID": "Day5.html#tree-diagram",
-    "href": "Day5.html#tree-diagram",
-    "title": "Day 5",
-    "section": "Tree Diagram",
-    "text": "Tree Diagram\n\nTree diagram of a coin toss"
-  },
-  {
-    "objectID": "Day5.html#experiments-and-their-sample-spaces",
-    "href": "Day5.html#experiments-and-their-sample-spaces",
-    "title": "Day 5",
-    "section": "Experiments and Their Sample Spaces",
-    "text": "Experiments and Their Sample Spaces\n\n\nExperiment: Tossing a Coin\n\nSample Space (S): \\[S = \\{H, T\\}\\]\n\nExperiment: Rolling a Die\n\nSample Space (S): \\[S = \\{1, 2, 3, 4, 5, 6\\}\\]\n\nExperiment: Tossing Two Coins\n\nSample Space (S): \\[S = \\{HH, HT, TH, TT\\}\\]"
-  },
-  {
-    "objectID": "Day5.html#defining-probability",
-    "href": "Day5.html#defining-probability",
-    "title": "Day 5",
-    "section": "Defining Probability",
-    "text": "Defining Probability\n\n\nProbability of a Sample Point: Number between 0 and 1 indicating likelihood of the outcome.\nRules of Probability\n\nRange of Probabilities:\n\nEach probability \\(p_i\\) must satisfy: \\[0 \\leq p_i \\leq 1\\]\n\nSum of Probabilities:\n\nThe total probability across all sample points must sum to 1: \\[\\sum_{\\text{all } i} p_i = 1\\]"
-  },
-  {
-    "objectID": "Day5.html#example-calculating-winning-probability-in-a-dice-game",
-    "href": "Day5.html#example-calculating-winning-probability-in-a-dice-game",
-    "title": "Day 5",
-    "section": "Example: Calculating Winning Probability in a Dice Game",
-    "text": "Example: Calculating Winning Probability in a Dice Game\n\n\n\n\n\nExperiment: Tossing a fair die.\nWinning Condition: If the up face is an even number (2, 4, 6), you win $1.\nLosing Condition: If the up face is odd (1, 3, 5), you lose $1.\n\nSample Space and Probabilities\n\nSample Space (S): \\[S = \\{1, 2, 3, 4, 5, 6\\}\\]\nUniform Probabilities: \\[p_1 = p_2 = p_3 = \\cdots = p_6 = \\frac{1}{6}\\]\n\n\n\nCalculation of Winning Probability\n\nEvent of Winning: \\[\\text{Winning} = \\{2, 4, 6\\}\\]\nProbability of Winning: \\[\\text{Prob of Winning} = p_2 + p_4 + p_6 = \\frac{1}{6} + \\frac{1}{6} + \\frac{1}{6} = \\frac{3}{6} = \\frac{1}{2}\\]"
-  },
-  {
-    "objectID": "Day5.html#event-definition",
-    "href": "Day5.html#event-definition",
-    "title": "Day 5",
-    "section": "Event Definition",
-    "text": "Event Definition\n\nDefinition of an Event\n\nEvent (A): A collection of sample points.\nExample: Rolling an even number on a die.\n\nProbability of an Event\n\nCalculation: Sum of probabilities of all sample points in the event."
-  },
-  {
-    "objectID": "Day5.html#steps-for-calculating-event-probabilities",
-    "href": "Day5.html#steps-for-calculating-event-probabilities",
-    "title": "Day 5",
-    "section": "Steps for Calculating Event Probabilities",
-    "text": "Steps for Calculating Event Probabilities\n\n\n\n\n\nDefine the Experiment: Describe the observation process.\nList Sample Points: Identify possible outcomes.\nAssign Probabilities: Allocate probability to each sample point.\nIdentify Event’s Sample Points: Determine which sample points are part of the event.\nCalculate Event Probability: Sum the probabilities of the event’s sample points.\n\n\n\nExample\n\nExperiment: Tossing a coin twice.\nSample Points: {HH, HT, TH, TT}\nEvent: Getting at least one head.\nCalculation: Probability(HH) + Probability(HT) + Probability(TH)"
-  },
-  {
-    "objectID": "Day5.html#compound-events-unions",
-    "href": "Day5.html#compound-events-unions",
-    "title": "Day 5",
-    "section": "Compound Events: Unions",
-    "text": "Compound Events: Unions\n\n\nDefinition: Union of two events \\(A\\) and \\(B\\) (\\(A \\cup B\\))\nOccurs If: Either event \\(A\\), event \\(B\\), or both happen.\nComposition: Includes all sample points in \\(A\\), \\(B\\), or both. \\[A \\cup B = \\{x : x \\in A \\text{ or } x \\in B\\}\\]"
-  },
-  {
-    "objectID": "Day5.html#compound-events-intersections",
-    "href": "Day5.html#compound-events-intersections",
-    "title": "Day 5",
-    "section": "Compound Events: Intersections",
-    "text": "Compound Events: Intersections\n\n\nDefinition: Intersection of two events \\(A\\) and \\(B\\) (\\(A \\cap B\\))\nOccurs If: Both event \\(A\\) and event \\(B\\) happen.\nComposition: Includes all sample points that are in both \\(A\\) and \\(B\\). \\[A \\cap B = \\{x : x \\in A \\text{ and } x \\in B\\}\\]"
-  },
-  {
-    "objectID": "Day5.html#example-calculating-unions-and-intersections-in-a-die-toss",
-    "href": "Day5.html#example-calculating-unions-and-intersections-in-a-die-toss",
-    "title": "Day 5",
-    "section": "Example: Calculating Unions and Intersections in a Die-Toss",
-    "text": "Example: Calculating Unions and Intersections in a Die-Toss\n\n\n\n\n\nEvent A: Toss an even number. \\[A = \\{2, 4, 6\\}\\]\nEvent B: Toss a number less than or equal to 3. \\[B = \\{1, 2, 3\\}\\]\nSample Space (S): \\[S = \\{1, 2, 3, 4, 5, 6\\}\\]\n\n\n\n\nUnion (\\(A \\cup B\\)): \\[A \\cup B = \\{1, 2, 3, 4, 6\\}\\]\nIntersection (\\(A \\cap B\\)): \\[A \\cap B = \\{2\\}\\]\nProbability of Union (\\(P(A \\cup B)\\)): \\[P(A \\cup B) = \\frac{5}{6}\\]\nProbability of Intersection (\\(P(A \\cap B)\\)): \\[P(A \\cap B) = \\frac{1}{6}\\]"
-  },
-  {
     "objectID": "RandRStudio.html",
     "href": "RandRStudio.html",
     "title": "Setting Up R and RStudio",
@@ -747,19 +761,5 @@
     "title": "Setting Up R and RStudio",
     "section": "R Code Chunk Options",
     "text": "R Code Chunk Options\nBefore diving into data loading, let’s understand important R chunk options:\n\n\neval: Use eval=FALSE to prevent code from running but still display it.\n\necho: With echo=FALSE, the code is run but not displayed in the document.\n\ninclude: include=FALSE runs the code and hides both the code and output from the final output.\n\nExample to demonstrate:\n\n\n\n\n\n\n\n\n\n# This code will run, and both code and output will appear in the document.\nsummary(cars)\n\n     speed           dist       \n Min.   : 4.0   Min.   :  2.00  \n 1st Qu.:12.0   1st Qu.: 26.00  \n Median :15.0   Median : 36.00  \n Mean   :15.4   Mean   : 42.98  \n 3rd Qu.:19.0   3rd Qu.: 56.00  \n Max.   :25.0   Max.   :120.00  \n\n\nSetting the Working Directory\nIt’s crucial to set the working directory in R to the folder where your course files are stored. This can be done in several ways:\n\n\nUsing RStudio:\n\nIn RStudio, you can set the working directory through the menu by navigating to Session &gt; Set Working Directory &gt; Choose Directory... and selecting your math216 folder.\n\n\n\nUsing R Script:\n\nYou can also set the working directory directly in an R script using the setwd() function. Place the following line of code at the beginning of your script:\n\nsetwd(\"~/math216\")\nReplace \"~/math216\" with the actual path to your course folder.\n\n\nUsing R Console:\n\nYou can manually set the working directory in the R console with the same command:\n\nsetwd(\"~/math216\")"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Math 216: Spring 2025",
-    "section": "",
-    "text": "Welcome to the world of statistics!"
-  },
-  {
-    "objectID": "Activity3.html",
-    "href": "Activity3.html",
-    "title": "Activity 3",
-    "section": "",
-    "text": "1. Think-Pair-Share Activity\nThink-Pair-Share: Calculating Descriptive Statistics\n\n\nThink: Calculate the mean, median, and standard deviation for the following dataset by hand:\nPulse Rates: [68, 72, 70, 65, 74, 69, 71, 67, 73, 70]\n\nPair: Discuss your calculations with a partner. Compare your results and resolve any discrepancies.\nShare: Share your findings with the class. Be prepared to explain your calculations.\n\n2. Quiz\nQuiz: Proportions and Frequency Tables\n\n\nQuestion: In the cell phone dataset, what proportion of adults own an iPhone?\n\nA). 0.194\nB). 0.203\nC). 0.063\nD). 0.410\n\n\nQuestion: What is the difference in proportions between females and males who are in a relationship?\n\nA). 0.14\nB). 0.10\nC). 0.05\nD). 0.20\n3. Case Studies and Problem-Solving\nObjective: Apply statistical concepts to solve real-world problems.\nCase Study: Health Data Analysis\n\n\nScenario: A health study collected data on smoking habits and pulse rates. The dataset is provided below:\nSmoker: [Yes, No, No, Yes, No, Yes, No, No, Yes, No]  \nPulse: [72, 68, 70, 75, 69, 74, 67, 71, 73, 70]  \n\n\nTask:\n\nCalculate the mean and median pulse rates for smokers and non-smokers separately.\n\nCompare the variability (standard deviation) of pulse rates between the two groups.\n\nDiscuss whether smoking appears to have an effect on pulse rates.\n\n\nSubmit: Write a brief report summarizing your findings."
   }
 ]
