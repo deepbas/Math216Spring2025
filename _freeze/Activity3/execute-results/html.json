@@ -1,0 +1,15 @@
+{
+  "hash": "f01b60757c14cc910c3ea83bdcf7ed42",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Activity 3\"\nsubtitle: \"MATH 216: Statistical Thinking\"\nformat: html\n---\n\n\n\n\n#### **1. Think-Pair-Share Activity**\n\n### Think-Pair-Share: Calculating Descriptive Statistics\n\n1. **Think:** Calculate the mean, median, and standard deviation for the following dataset by hand:\n\n   ```\n   Pulse Rates: [68, 72, 70, 65, 74, 69, 71, 67, 73, 70]\n   ```\n\n2. **Pair:** Discuss your calculations with a partner. Compare your results and resolve any discrepancies.\n\n3. **Share:** Share your findings with the class. Be prepared to explain your calculations.\n\n\\vspace*{1.5in}\n\n#### **2. Quiz**\n\n\n### Quiz: Proportions and Frequency Tables\n\n1. **Question:** In the cell phone dataset, what proportion of adults own an iPhone?  \n\nA). 0.194  \nB). 0.203  \nC). 0.063  \nD). 0.410  \n\n2. **Question:** What is the difference in proportions between females and males who are in a relationship? \n\nA). 0.14  \nB). 0.10  \nC). 0.05  \nD). 0.20  \n\n\n\n\n#### **3. Case Studies and Problem-Solving**\n\n**Objective:** Apply statistical concepts to solve real-world problems.\n\n\n### Case Study: Health Data Analysis\n\n1. **Scenario:** A health study collected data on smoking habits and pulse rates. The dataset is provided below:  \n   ```\n   Smoker: [Yes, No, No, Yes, No, Yes, No, No, Yes, No]  \n   Pulse: [72, 68, 70, 75, 69, 74, 67, 71, 73, 70]  \n   ```\n\n2. **Task:**  \n\n   - Calculate the mean and median pulse rates for smokers and non-smokers separately.  \n   - Compare the variability (standard deviation) of pulse rates between the two groups.  \n   - Discuss whether smoking appears to have an effect on pulse rates.\n\n3. **Submit:** Write a brief report summarizing your findings.\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

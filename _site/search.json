@@ -754,5 +754,12 @@
     "title": "Math 216: Spring 2025",
     "section": "",
     "text": "Welcome to the world of statistics!"
+  },
+  {
+    "objectID": "Activity3.html",
+    "href": "Activity3.html",
+    "title": "Activity 3",
+    "section": "",
+    "text": "1. Think-Pair-Share Activity\nThink-Pair-Share: Calculating Descriptive Statistics\n\n\nThink: Calculate the mean, median, and standard deviation for the following dataset by hand:\nPulse Rates: [68, 72, 70, 65, 74, 69, 71, 67, 73, 70]\n\nPair: Discuss your calculations with a partner. Compare your results and resolve any discrepancies.\nShare: Share your findings with the class. Be prepared to explain your calculations.\n\n2. Quiz\nQuiz: Proportions and Frequency Tables\n\n\nQuestion: In the cell phone dataset, what proportion of adults own an iPhone?\n\nA). 0.194\nB). 0.203\nC). 0.063\nD). 0.410\n\n\nQuestion: What is the difference in proportions between females and males who are in a relationship?\n\nA). 0.14\nB). 0.10\nC). 0.05\nD). 0.20\n3. Case Studies and Problem-Solving\nObjective: Apply statistical concepts to solve real-world problems.\nCase Study: Health Data Analysis\n\n\nScenario: A health study collected data on smoking habits and pulse rates. The dataset is provided below:\nSmoker: [Yes, No, No, Yes, No, Yes, No, No, Yes, No]  \nPulse: [72, 68, 70, 75, 69, 74, 67, 71, 73, 70]  \n\n\nTask:\n\nCalculate the mean and median pulse rates for smokers and non-smokers separately.\n\nCompare the variability (standard deviation) of pulse rates between the two groups.\n\nDiscuss whether smoking appears to have an effect on pulse rates.\n\n\nSubmit: Write a brief report summarizing your findings."
   }
 ]
