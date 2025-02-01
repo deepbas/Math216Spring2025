@@ -284,5 +284,15 @@ table {
   }
 }
 
-
+.name {
+  font-family: 'Monaco', 'Consolas', 'Courier New', monospace;
+  background-color: #e8f5e9; // Mild green (non-transparent version)
+  color: #4169e1; // Royal blue
+  font-size: 1.2rem;
+  padding: 0.2rem 0.2rem;
+  border-radius: 6px;
+  margin: 0rem 0;
+  border-left: 4px solid #4169e1; // Accent border
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
 

@@ -45,14 +45,16 @@ yt <- 0
 
 ## Introduction to Probability
 
-
 ::: cle6
-::: font80
+::: font60
 
 - **Experiment**: Any act of observation with uncertain outcomes (e.g., tossing a coin).
 - **Observation**: The result of an experiment (e.g., heads or tails).
+- **Probability**: A measure of how likely an event is to occur, often thought of as "chance" or "likelihood."
+  - Example: The chance of rain tomorrow, the likelihood of rolling a 6 on a die.
 
-### Mathematical Representation
+
+### Mathematical Representation {.name}
 
 - Let $E$ represent an experiment.
 - An outcome of $E$ is an element of the sample space $S$.
@@ -61,129 +63,114 @@ yt <- 0
 :::
 :::
 
----
 
-## What is Probability?
-
-::: row
-::: left
-
-::: cle6
-::: font70
-
-- **Probability** is a measure of how likely an event is to occur.
-- Think of it as the "chance" or "likelihood" of something happening.
-- Example: The chance of rain tomorrow, the likelihood of rolling a 6 on a die.
-
-:::
-:::
-
-:::
-
-::: right
-
-![Photo by <a href="https://unsplash.com/@matthewhenry?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Matthew Henry</a> on <a href="https://unsplash.com/photos/man-using-umbrella-crossing-the-street-during-daytime-Ix1TiS-E17E?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-      ](images/rain_probability.jpg)
-
-:::
-:::
-
-
-## Definitions
+## Key Definitions
 
 ::: cle15
-::: font80
+::: font60
 
-### Sample Point
+### Sample Point {.name}
+
 - **Definition**: The most basic outcome of an experiment.
 - **Example**: In a coin toss, each toss that results in H (Head) or T (Tail).
 
-### Sample Space
+### Sample Space {.name}
+
 - **Definition**: Collection of all possible outcomes (sample points) of an experiment.
 - **Example**: In a coin toss, the sample space is $S = \{H, T\}$.
 
+### Event {.name}
+
+- **Definition**: A collection of sample points.
+- **Example**: Rolling an even number on a die.
 
 :::
 :::
 
 
 
-## Venn Diagram 
+## Visualizing Probability
 
 ::: cle6
 ::: font70
 
+### Venn Diagram {.name}
+
 - **Sample Space (S)**: Represented as a closed figure in the diagram.
 - **Sample Points**: Each possible outcome shown as a solid dot within the figure.
-
-**Example: Coin Toss**
-
-- **Venn Diagram**: Circle labeled S containing two points labeled H (Head) and T (Tail).
-- **Representation**: Helps visualize all possible outcomes in a single view.
-
+- **Example: Coin Toss**
+  - **Venn Diagram**: Circle labeled S containing two points labeled H (Head) and T (Tail).
+  - **Representation**: Helps visualize all possible outcomes in a single view.
 
 :::
 :::
-
-
 
 ## Tree Diagram
+
+- **Example**: Tree diagram of a coin toss.
 
 ![Tree diagram of a coin toss](images/coin_tree.png)
 
 
 
 
-
-## Experiments and Their Sample Spaces
+## Experiments and Sample Spaces
 
 ::: cle15
 ::: font50
 
 **Experiment: Tossing a Coin**
-
 - **Sample Space (S)**: 
   $$S = \{H, T\}$$
 
 **Experiment: Rolling a Die**
-
 - **Sample Space (S)**: 
   $$S = \{1, 2, 3, 4, 5, 6\}$$
 
 **Experiment: Tossing Two Coins**
-
 - **Sample Space (S)**: 
   $$S = \{HH, HT, TH, TT\}$$
 
-
 :::
 :::
 
-
-
-## Defining Probability
+## Probability Rules and Calculations
 
 ::: cle14
-::: font70
+::: font60
 
-**Probability of a Sample Point**: Number between 0 and 1 indicating likelihood of the outcome.
+### Probability of a Sample Point {.name}
 
-Rules of Probability
+- A number between 0 and 1 indicating the likelihood of the outcome.
+
+### Rules of Probability {.name}
 
 1. **Range of Probabilities**:
    - Each probability $p_i$ must satisfy:
      $$0 \leq p_i \leq 1$$
-
 2. **Sum of Probabilities**:
    - The total probability across all sample points must sum to 1:
      $$\sum_{\text{all } i} p_i = 1$$
 
+:::
+:::
+
+## Steps for Calculating Event Probabilities
+
+::: cle14
+::: font70
+
+1. **Define the Experiment**: Describe the observation process.
+2. **List Sample Points**: Identify possible outcomes.
+3. **Assign Probabilities**: Allocate probability to each sample point.
+4. **Identify Event's Sample Points**: Determine which sample points are part of the event.
+5. **Calculate Event Probability**: Sum the probabilities of the event's sample points.
 
 :::
 :::
 
 
-## Example: Calculating Winning Probability in a Dice Game
+## Probability in a Dice Game
 
 ::: cle13
 ::: font50
@@ -195,7 +182,7 @@ Rules of Probability
 - **Winning Condition**: If the up face is an even number (2, 4, 6), you win $1.
 - **Losing Condition**: If the up face is odd (1, 3, 5), you lose $1.
 
-Sample Space and Probabilities
+Sample Space and Probabilities 
 
 - **Sample Space (S)**:
   $$S = \{1, 2, 3, 4, 5, 6\}$$
@@ -206,7 +193,9 @@ Sample Space and Probabilities
 
 ::: right
 
-Calculation of Winning Probability
+::: name
+Calculation of Winning Probability 
+:::
 
 - **Event of Winning**:
   $$\text{Winning} = \{2, 4, 6\}$$
@@ -218,87 +207,31 @@ Calculation of Winning Probability
 :::
 :::
 
----
 
-## Event Definition 
-
-::: cle3
-
-Definition of an Event
-
-- **Event (A)**: A collection of sample points.
-- **Example**: Rolling an even number on a die.
-
-Probability of an Event
-
-- **Calculation**: Sum of probabilities of all sample points in the event.
-
-
-:::
-
----
-
-## Steps for Calculating Event Probabilities
-
-::: cle12
-::: font60
-::: row
-::: left
-
-1. **Define the Experiment**: Describe the observation process.
-2. **List Sample Points**: Identify possible outcomes.
-3. **Assign Probabilities**: Allocate probability to each sample point.
-4. **Identify Event's Sample Points**: Determine which sample points are part of the event.
-5. **Calculate Event Probability**: Sum the probabilities of the event's sample points.
-
-:::
-
-::: right
-
-**Example**
-
-- **Experiment**: Tossing a coin twice.
-- **Sample Points**: {HH, HT, TH, TT}
-- **Event**: Getting at least one head.
-- **Calculation**: Probability(HH) + Probability(HT) + Probability(TH)
-
-:::
-:::
-:::
-:::
-
----
-
-## Compound Events: Unions 
+## Compound Events
 
 ::: cle8
+::: font70
 
+### Unions
 - **Definition**: Union of two events $A$ and $B$ ($A \cup B$)
 - **Occurs If**: Either event $A$, event $B$, or both happen.
 - **Composition**: Includes all sample points in $A$, $B$, or both.
   $$A \cup B = \{x : x \in A \text{ or } x \in B\}$$
 
-
-:::
-
----
-
-## Compound Events: Intersections
-
-::: cle9
+### Intersections
 - **Definition**: Intersection of two events $A$ and $B$ ($A \cap B$)
 - **Occurs If**: Both event $A$ and event $B$ happen.
 - **Composition**: Includes all sample points that are in both $A$ and $B$.
   $$A \cap B = \{x : x \in A \text{ and } x \in B\}$$
 
-
+:::
 :::
 
----
 
 ## Example: Calculating Unions and Intersections in a Die-Toss
 
-::: font70
+::: font60
 ::: cle10
 
 ::: row
@@ -328,4 +261,3 @@ Probability of an Event
 :::
 :::
 :::
-

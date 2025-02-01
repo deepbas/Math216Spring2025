@@ -96,7 +96,7 @@ The **complement of an event $A$, denoted as $A^c$**, includes all sample points
 :::
 :::
 
-## Calculating $P(A)$ for Coin Tosses (Continued)
+## Calculating $P(A)$ for Coin Tosses 
 
 ::: cle8
 ::: font60

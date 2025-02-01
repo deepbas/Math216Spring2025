@@ -120,7 +120,7 @@ If a distribution of data is **approximately bell-shaped**, about 95% of the dat
 
 ::: row
 ::: left
-![](https://media.giphy.com/media/RKApDdwsQ6jkwd6RNn/giphy.gif)
+![](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExaHM2Z2sxZnN3MDB2ZWd5bWp0czJtMmo0ZTcxbzByMmt3dGNweTFncSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/SOb4AcaDitenU4XKdC/giphy.gif)
 :::
 
 ::: right
@@ -140,17 +140,18 @@ If a distribution of data is **approximately bell-shaped**, about 95% of the dat
 
 ## Bell-shaped Distribution 
 
-::: panel-tabset
+::: row
+::: left
 
-### Plot
-
-```{r, echo=FALSE}
+```{r, echo=FALSE, fig.height=6}
 ggplot(data = survey, aes(x = MathSAT)) +
   geom_histogram(bins = 12, col = "gold", fill = "maroon") +
   labs(title = "Distribution of Math SAT Scores")
 ```
 
-### Quiz
+:::
+
+::: right
 
 The standard deviation for math SAT scores is closest to
 
@@ -159,6 +160,7 @@ The standard deviation for math SAT scores is closest to
 (c) 200  
 (d) 25
 
+:::
 :::
 
 
@@ -277,7 +279,7 @@ median(survey$Exercise, na.rm = TRUE)
 ## Shape: Boxplots
 
 ::: cle6
-::: font90
+::: font70
 
 A graphical representation of the distribution of a dataset, showing the median, quartiles, and outliers.
 
@@ -292,7 +294,7 @@ A graphical representation of the distribution of a dataset, showing the median,
 ## Shape: Boxplots
 
 ::: cle12
-::: font90
+::: font70
 [Symmetry:]{.bold-text} If the median is roughly centered within the box, and the whiskers are of similar length, the distribution is likely symmetric.
 
 [Skewness:]{.bold-text}
@@ -318,17 +320,6 @@ Inner fences are critical for identifying what is typically considered potential
 :::
 
 
-## Outliers
-
-::: cle9
-::: font80
-
-- **Mild Outliers** fall between the inner and outer fences 
-- **Extreme Outliers** fall beyond the outer fences.
-
-Differentiating between mild and extreme outliers is crucial for accurate data analysis, as it helps in determining whether to include or exclude certain data points in statistical calculations. 
-:::
-:::
 
 ## Adding a Qualitative Variable: Stats
 
@@ -459,6 +450,7 @@ ggplot(survey, aes(x = Year, fill = Gender)) +
 
 :::
 
+<!--
 
 ## <i class="fa fa-pencil-square-o" style="font-size:48px;color:purple"> Interactive Data Exploration</i> {background="#ffdf9e"}
 
@@ -501,4 +493,7 @@ ggplot(survey, aes(x = Year, fill = Gender)) +
 :::
 
 `r countdown(minutes = 2, seconds = 00, top = 0 , right = 0, color_background = "inherit", padding = "3px 4px", font_size = "1em")`
+
+-->
+
 

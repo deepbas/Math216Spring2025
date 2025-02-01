@@ -291,7 +291,7 @@
     "href": "Day5.html#introduction-to-probability",
     "title": "Day 5",
     "section": "Introduction to Probability",
-    "text": "Introduction to Probability\n\n\n\nExperiment: Any act of observation with uncertain outcomes (e.g., tossing a coin).\nObservation: The result of an experiment (e.g., heads or tails).\n\nMathematical Representation\n\nLet \\(E\\) represent an experiment.\nAn outcome of \\(E\\) is an element of the sample space \\(S\\).\nProbability of an event \\(A\\) is denoted by \\(P(A)\\)."
+    "text": "Introduction to Probability\n\n\n\nExperiment: Any act of observation with uncertain outcomes (e.g., tossing a coin).\nObservation: The result of an experiment (e.g., heads or tails).\nProbability: A measure of how likely an event is to occur, often thought of as “chance” or “likelihood.”\n\nExample: The chance of rain tomorrow, the likelihood of rolling a 6 on a die.\n\n\nMathematical Representation\n\nLet \\(E\\) represent an experiment.\nAn outcome of \\(E\\) is an element of the sample space \\(S\\).\nProbability of an event \\(A\\) is denoted by \\(P(A)\\)."
   },
   {
     "objectID": "Day5.html#what-is-probability",
@@ -319,7 +319,7 @@
     "href": "Day5.html#tree-diagram",
     "title": "Day 5",
     "section": "Tree Diagram",
-    "text": "Tree Diagram\n\nTree diagram of a coin toss"
+    "text": "Tree Diagram\n\nExample: Tree diagram of a coin toss.\n\n\nTree diagram of a coin toss"
   },
   {
     "objectID": "Day5.html#experiments-and-their-sample-spaces",
@@ -354,7 +354,7 @@
     "href": "Day5.html#steps-for-calculating-event-probabilities",
     "title": "Day 5",
     "section": "Steps for Calculating Event Probabilities",
-    "text": "Steps for Calculating Event Probabilities\n\n\n\n\n\nDefine the Experiment: Describe the observation process.\nList Sample Points: Identify possible outcomes.\nAssign Probabilities: Allocate probability to each sample point.\nIdentify Event’s Sample Points: Determine which sample points are part of the event.\nCalculate Event Probability: Sum the probabilities of the event’s sample points.\n\n\n\nExample\n\nExperiment: Tossing a coin twice.\nSample Points: {HH, HT, TH, TT}\nEvent: Getting at least one head.\nCalculation: Probability(HH) + Probability(HT) + Probability(TH)"
+    "text": "Steps for Calculating Event Probabilities\n\n\n\nDefine the Experiment: Describe the observation process.\nList Sample Points: Identify possible outcomes.\nAssign Probabilities: Allocate probability to each sample point.\nIdentify Event’s Sample Points: Determine which sample points are part of the event.\nCalculate Event Probability: Sum the probabilities of the event’s sample points."
   },
   {
     "objectID": "Day5.html#compound-events-unions",
@@ -487,7 +487,7 @@
     "href": "Day4.html#bell-shaped-distribution",
     "title": "Day 4",
     "section": "Bell-shaped Distribution",
-    "text": "Bell-shaped Distribution\n\nPlotQuiz\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe standard deviation for math SAT scores is closest to\n\n100\n\n75\n\n200\n\n25"
+    "text": "Bell-shaped Distribution\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe standard deviation for math SAT scores is closest to\n\n100\n\n75\n\n200\n\n25"
   },
   {
     "objectID": "Day4.html#quiz-1",
@@ -761,5 +761,61 @@
     "title": "Setting Up R and RStudio",
     "section": "R Code Chunk Options",
     "text": "R Code Chunk Options\nBefore diving into data loading, let’s understand important R chunk options:\n\n\neval: Use eval=FALSE to prevent code from running but still display it.\n\necho: With echo=FALSE, the code is run but not displayed in the document.\n\ninclude: include=FALSE runs the code and hides both the code and output from the final output.\n\nExample to demonstrate:\n\n\n\n\n\n\n\n\n\n# This code will run, and both code and output will appear in the document.\nsummary(cars)\n\n     speed           dist       \n Min.   : 4.0   Min.   :  2.00  \n 1st Qu.:12.0   1st Qu.: 26.00  \n Median :15.0   Median : 36.00  \n Mean   :15.4   Mean   : 42.98  \n 3rd Qu.:19.0   3rd Qu.: 56.00  \n Max.   :25.0   Max.   :120.00  \n\n\nSetting the Working Directory\nIt’s crucial to set the working directory in R to the folder where your course files are stored. This can be done in several ways:\n\n\nUsing RStudio:\n\nIn RStudio, you can set the working directory through the menu by navigating to Session &gt; Set Working Directory &gt; Choose Directory... and selecting your math216 folder.\n\n\n\nUsing R Script:\n\nYou can also set the working directory directly in an R script using the setwd() function. Place the following line of code at the beginning of your script:\n\nsetwd(\"~/math216\")\nReplace \"~/math216\" with the actual path to your course folder.\n\n\nUsing R Console:\n\nYou can manually set the working directory in the R console with the same command:\n\nsetwd(\"~/math216\")"
+  },
+  {
+    "objectID": "Day4.html#quiz",
+    "href": "Day4.html#quiz",
+    "title": "Day 4",
+    "section": " Quiz",
+    "text": "Quiz\n\n\n\n\n\n\n\n\nObjective: Assess understanding of z-scores.\n\nInstructions: Answer the quiz question.\n\n\n\n\n\n\n−+\n02:00"
+  },
+  {
+    "objectID": "Day5.html#experiments-and-sample-spaces",
+    "href": "Day5.html#experiments-and-sample-spaces",
+    "title": "Day 5",
+    "section": "Experiments and Sample Spaces",
+    "text": "Experiments and Sample Spaces\n\n\nExperiment: Tossing a Coin - Sample Space (S): \\[S = \\{H, T\\}\\]\nExperiment: Rolling a Die - Sample Space (S): \\[S = \\{1, 2, 3, 4, 5, 6\\}\\]\nExperiment: Tossing Two Coins - Sample Space (S): \\[S = \\{HH, HT, TH, TT\\}\\]"
+  },
+  {
+    "objectID": "Day5.html#probability-in-a-dice-game",
+    "href": "Day5.html#probability-in-a-dice-game",
+    "title": "Day 5",
+    "section": "Probability in a Dice Game",
+    "text": "Probability in a Dice Game\n\n\n\n\n\nExperiment: Tossing a fair die.\nWinning Condition: If the up face is an even number (2, 4, 6), you win $1.\nLosing Condition: If the up face is odd (1, 3, 5), you lose $1.\n\nSample Space and Probabilities\n\nSample Space (S): \\[S = \\{1, 2, 3, 4, 5, 6\\}\\]\nUniform Probabilities: \\[p_1 = p_2 = p_3 = \\cdots = p_6 = \\frac{1}{6}\\]\n\n\n\n\nCalculation of Winning Probability\n\n\nEvent of Winning: \\[\\text{Winning} = \\{2, 4, 6\\}\\]\nProbability of Winning: \\[\\text{Prob of Winning} = p_2 + p_4 + p_6 = \\frac{1}{6} + \\frac{1}{6} + \\frac{1}{6} = \\frac{3}{6} = \\frac{1}{2}\\]"
+  },
+  {
+    "objectID": "Day5.html#compound-events",
+    "href": "Day5.html#compound-events",
+    "title": "Day 5",
+    "section": "Compound Events",
+    "text": "Compound Events\n\n\nUnions\n\nDefinition: Union of two events \\(A\\) and \\(B\\) (\\(A \\cup B\\))\nOccurs If: Either event \\(A\\), event \\(B\\), or both happen.\nComposition: Includes all sample points in \\(A\\), \\(B\\), or both. \\[A \\cup B = \\{x : x \\in A \\text{ or } x \\in B\\}\\]\n\nIntersections\n\nDefinition: Intersection of two events \\(A\\) and \\(B\\) (\\(A \\cap B\\))\nOccurs If: Both event \\(A\\) and event \\(B\\) happen.\nComposition: Includes all sample points that are in both \\(A\\) and \\(B\\). \\[A \\cap B = \\{x : x \\in A \\text{ and } x \\in B\\}\\]"
+  },
+  {
+    "objectID": "Day5.html#probability-in-a-dice-game-1",
+    "href": "Day5.html#probability-in-a-dice-game-1",
+    "title": "Day 5",
+    "section": "Probability in a Dice Game",
+    "text": "Probability in a Dice Game\n\n\n\n\n\nExperiment: Tossing a fair die.\nWinning Condition: If the up face is an even number (2, 4, 6), you win $1.\nLosing Condition: If the up face is odd (1, 3, 5), you lose $1.\n\nSample Space and Probabilities\n\nSample Space (S): \\[S = \\{1, 2, 3, 4, 5, 6\\}\\]\nUniform Probabilities: \\[p_1 = p_2 = p_3 = \\cdots = p_6 = \\frac{1}{6}\\]\n\n\n\nCalculation of Winning Probability\n\nEvent of Winning: \\[\\text{Winning} = \\{2, 4, 6\\}\\]\nProbability of Winning: \\[\\text{Prob of Winning} = p_2 + p_4 + p_6 = \\frac{1}{6} + \\frac{1}{6} + \\frac{1}{6} = \\frac{3}{6} = \\frac{1}{2}\\]"
+  },
+  {
+    "objectID": "Day5.html#probability-rules-and-calculations",
+    "href": "Day5.html#probability-rules-and-calculations",
+    "title": "Day 5",
+    "section": "Probability Rules and Calculations",
+    "text": "Probability Rules and Calculations\n\n\nProbability of a Sample Point\n\nA number between 0 and 1 indicating the likelihood of the outcome.\n\nRules of Probability\n\nRange of Probabilities:\n\nEach probability \\(p_i\\) must satisfy: \\[0 \\leq p_i \\leq 1\\]\n\nSum of Probabilities:\n\nThe total probability across all sample points must sum to 1: \\[\\sum_{\\text{all } i} p_i = 1\\]"
+  },
+  {
+    "objectID": "Day5.html#key-definitions",
+    "href": "Day5.html#key-definitions",
+    "title": "Day 5",
+    "section": "Key Definitions",
+    "text": "Key Definitions\n\n\nSample Point\n\nDefinition: The most basic outcome of an experiment.\nExample: In a coin toss, each toss that results in H (Head) or T (Tail).\n\nSample Space\n\nDefinition: Collection of all possible outcomes (sample points) of an experiment.\nExample: In a coin toss, the sample space is \\(S = \\{H, T\\}\\).\n\nEvent\n\nDefinition: A collection of sample points.\nExample: Rolling an even number on a die."
+  },
+  {
+    "objectID": "Day5.html#visualizing-probability",
+    "href": "Day5.html#visualizing-probability",
+    "title": "Day 5",
+    "section": "Visualizing Probability",
+    "text": "Visualizing Probability\n\n\nVenn Diagram\n\nSample Space (S): Represented as a closed figure in the diagram.\nSample Points: Each possible outcome shown as a solid dot within the figure.\nExample: Coin Toss\n\nVenn Diagram: Circle labeled S containing two points labeled H (Head) and T (Tail).\nRepresentation: Helps visualize all possible outcomes in a single view."
   }
 ]
