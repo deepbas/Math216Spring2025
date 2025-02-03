@@ -165,6 +165,24 @@ The standard deviation for math SAT scores is closest to
 
 
 
+
+## Standardizing Data: Z-score
+
+::: cle10
+::: font80
+
+The z-score of a data value, x, tells us how many standard deviations the value is above or below the mean:
+
+$$ z = \dfrac{x - \text{mean}}{\text{SD}} $$
+
+- E.g., if a value $x$ has $z = -1.5$, then the value $x$ is 1.5 standard deviations below the mean.
+
+If we standardize all values in a bell-shaped distribution, 95% of all z-scores fall between -2 and 2.
+
+:::
+:::
+
+
 ## <i class="fa fa-pencil-square-o" style="font-size:48px;color:purple"> Quiz</i> {background="#ffdf9e"}
 
 ::: row
@@ -188,21 +206,6 @@ The standard deviation for math SAT scores is closest to
 
 
 
-## Standardizing Data: Z-score
-
-::: cle10
-::: font80
-
-The z-score of a data value, x, tells us how many standard deviations the value is above or below the mean:
-
-$$ z = \dfrac{x - \text{mean}}{\text{SD}} $$
-
-- E.g., if a value $x$ has $z = -1.5$, then the value $x$ is 1.5 standard deviations below the mean.
-
-If we standardize all values in a bell-shaped distribution, 95% of all z-scores fall between -2 and 2.
-
-:::
-:::
 
 ## Shape: Left Skew & Right Skew (Histograms)
 
