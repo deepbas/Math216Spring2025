@@ -1,0 +1,72 @@
+---
+title: "Activity 5"
+subtitle: "MATH 216: Statistical Thinking"
+format: html
+echo: false
+---
+
+```{r setup, include=FALSE}
+library(openintro)
+library(dplyr)
+library(knitr)
+library(ggplot2)
+```
+
+## Activity 1: Think-Pair-Share
+
+1. **Think**: Individually, list the sample space for the experiment of rolling a die and tossing a coin simultaneously.
+2. **Pair**: Discuss with a partner to compare and refine their sample spaces.
+3. **Share**: Share their combined sample space with the class and explain how they arrived at it.
+
+<!--
+
+**Example**: 
+
+- **Sample Space for Die Roll and Coin Toss**: 
+
+  $$S = \{(1, H), (1, T), (2, H), (2, T), \dots, (6, H), (6, T)\}$$
+
+-->
+
+
+## Activity 2: Quiz
+
+1. **Question**: What is the probability of rolling a 2 on a fair six-sided die?
+
+A) 1/6
+B) 1/3
+C) 1/2
+D) 1/1
+
+
+## Activity 4: Group Activities with Real Data
+
+1. **Dataset**: You are given a dataset of 200 die roll outcomes
+2. **Task**: 
+   - Calculate the probability of rolling an even number.
+   - Create a histogram of the die roll outcomes.
+3. **Discussion**: Compare the empirical probability with the theoretical probability.
+
+
+```{r}
+# Load necessary library
+library(ggplot2)
+library(dplyr)
+
+# Create a data frame
+die_roll_data <- data.frame(
+  outcome = sample(1:6, 200, replace = TRUE)
+)
+
+# Calculate the probability of rolling an even number
+even_probability <- mean(die_roll_data$outcome %% 2 == 0)
+
+die_roll_data %>% group_by(outcome) %>% summarize(Count = n()) %>% knitr::kable()
+
+# Create a histogram
+ggplot(die_roll_data, aes(x = outcome)) +
+  geom_histogram(binwidth = 1, fill = "blue", color = "black") +
+  scale_x_continuous(breaks = c(1:6)) +
+  labs(title = "Histogram of Die Roll Outcomes", x = "Outcome", y = "Frequency")
+```
+

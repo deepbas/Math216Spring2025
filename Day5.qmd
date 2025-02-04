@@ -54,7 +54,8 @@ yt <- 0
   - Example: The chance of rain tomorrow, the likelihood of rolling a 6 on a die.
 
 
-### Mathematical Representation {.name}
+
+**Mathematical Representation**
 
 - Let $E$ represent an experiment.
 - An outcome of $E$ is an element of the sample space $S$.
@@ -66,26 +67,36 @@ yt <- 0
 
 ## Key Definitions
 
-::: cle15
+
 ::: font60
 
-### Sample Point {.name}
+::: name 
+Sample Point
 
 - **Definition**: The most basic outcome of an experiment.
 - **Example**: In a coin toss, each toss that results in H (Head) or T (Tail).
+:::
 
-### Sample Space {.name}
+<br>
+
+::: name 
+Sample Space 
 
 - **Definition**: Collection of all possible outcomes (sample points) of an experiment.
 - **Example**: In a coin toss, the sample space is $S = \{H, T\}$.
+:::
 
-### Event {.name}
+<br>
+
+::: name 
+Event
 
 - **Definition**: A collection of sample points.
 - **Example**: Rolling an even number on a die.
+:::
 
 :::
-:::
+
 
 
 
@@ -94,7 +105,7 @@ yt <- 0
 ::: cle6
 ::: font70
 
-### Venn Diagram {.name}
+ **Venn Diagram**
 
 - **Sample Space (S)**: Represented as a closed figure in the diagram.
 - **Sample Points**: Each possible outcome shown as a solid dot within the figure.
@@ -116,8 +127,7 @@ yt <- 0
 
 ## Experiments and Sample Spaces
 
-::: cle15
-::: font50
+::: name
 
 **Experiment: Tossing a Coin**
 - **Sample Space (S)**: 
@@ -131,7 +141,7 @@ yt <- 0
 - **Sample Space (S)**: 
   $$S = \{HH, HT, TH, TT\}$$
 
-:::
+
 :::
 
 ## Probability Rules and Calculations
@@ -139,11 +149,10 @@ yt <- 0
 ::: cle14
 ::: font60
 
-### Probability of a Sample Point {.name}
-
+Probability of a Sample Point 
 - A number between 0 and 1 indicating the likelihood of the outcome.
 
-### Rules of Probability {.name}
+Rules of Probability 
 
 1. **Range of Probabilities**:
    - Each probability $p_i$ must satisfy:
@@ -210,16 +219,24 @@ Calculation of Winning Probability
 
 ## Compound Events
 
-::: cle8
-::: font70
+::: name
+::: font80
 
-### Unions
+Unions
+
 - **Definition**: Union of two events $A$ and $B$ ($A \cup B$)
 - **Occurs If**: Either event $A$, event $B$, or both happen.
 - **Composition**: Includes all sample points in $A$, $B$, or both.
   $$A \cup B = \{x : x \in A \text{ or } x \in B\}$$
+:::
+:::
 
-### Intersections
+<br>
+
+::: name
+::: font80
+Intersections
+
 - **Definition**: Intersection of two events $A$ and $B$ ($A \cap B$)
 - **Occurs If**: Both event $A$ and event $B$ happen.
 - **Composition**: Includes all sample points that are in both $A$ and $B$.
@@ -232,7 +249,7 @@ Calculation of Winning Probability
 ## Example: Calculating Unions and Intersections in a Die-Toss
 
 ::: font60
-::: cle10
+::: name
 
 ::: row
 ::: left

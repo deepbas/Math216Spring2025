@@ -1,5 +1,292 @@
 [
   {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Welcome to the captivating world of statistical thinking! This course will provide you with a solid foundation in statistical theory while taking you on a journey through the practical aspects of the subject. Along the way, you’ll gain experience with statistical software, learn to interpret and effectively communicate statistical findings, and explore a range of topics in descriptive and inferential data analysis and both parametric and non-parametric statistical inference. Some of the areas we’ll delve into include probability, normal distribution, sampling distributions, confidence intervals, hypothesis testing and simple linear regression.\nAt the heart of this course is the ability to interpret results and grasp underlying concepts, rather than merely obtaining numerical outcomes. By engaging with a diverse set of problems, you’ll become well-versed in statistical methodologies. However, it’s crucial to remember that a deep understanding of the concepts is the key to drawing meaningful conclusions.\n\n\n\n\nMaster the basic principles of data analysis, including the production and application of data in studies and experiments.\nApply principles of inference to construct confidence intervals and conduct hypothesis tests effectively.\nCritically evaluate statistical arguments and methodologies in published research.\nCompare and differentiate between parametric and non-parametric methods in statistical analysis.\nUtilize software R to conduct data analysis, create graphs, and perform basic statistical tests."
+  },
+  {
+    "objectID": "about.html#learning-objectives",
+    "href": "about.html#learning-objectives",
+    "title": "About",
+    "section": "",
+    "text": "Master the basic principles of data analysis, including the production and application of data in studies and experiments.\nApply principles of inference to construct confidence intervals and conduct hypothesis tests effectively.\nCritically evaluate statistical arguments and methodologies in published research.\nCompare and differentiate between parametric and non-parametric methods in statistical analysis.\nUtilize software R to conduct data analysis, create graphs, and perform basic statistical tests."
+  },
+  {
+    "objectID": "Activity4.html",
+    "href": "Activity4.html",
+    "title": "Activity 4",
+    "section": "",
+    "text": "1. Think-Pair-Share\nInstructions:\n\nThink: Take 2 minutes to identify a real-world example of a symmetric distribution (e.g., heights of people, test scores). Write down your example.\nPair: Turn to a partner and discuss your examples. Compare and contrast the examples you both came up with.\nShare: Be prepared to share your findings with the class. Highlight why your example fits the concept of a symmetric distribution.\n2. Quiz\nInstructions:\nAnswer the following question individually:\n\n\n“If a student’s GPA has a z-score of 2, what does this mean?”\n\n\nThe GPA is 2 points above the mean.\n\n\n\nThe GPA is 2 standard deviations above the mean.\n\n\n\nThe GPA is 2 standard deviations below the mean.\n\n\n\nThe GPA is 2 points below the mean.\n\n\n\n\nDiscussion: After answering, discuss with a partner why you chose your answer. Be ready to explain your reasoning to the class.\n3. Case Studies and Problem-Solving\nInstructions:\n\n\nCase Study: Use the graphical and numerical summaries of Student Survey Dataset to compare the GPA of students for different Year.\n\n\n\n\n\n\n\n\n\n\nSummary Statistics of GPA for all Years\n\nYear\nmean\nsd\nn\n\n\n\nFirstYear\n3.070759\n0.4702584\n79\n\n\nJunior\n3.273636\n0.3688057\n33\n\n\nSenior\n3.171667\n0.3754274\n36\n\n\nSophomore\n3.173224\n0.3690737\n183\n\n\n\n\n\n\n\nTasks:\n\nInterpret the results: Do Junior Students have higher GPAs on average? What might explain this result?\nDiscuss potential biases or limitations in the dataset.\n\n\nReflect: Write a short paragraph summarizing your findings and share it with the class."
+  },
+  {
+    "objectID": "Activity1.html",
+    "href": "Activity1.html",
+    "title": "Activity 1",
+    "section": "",
+    "text": "The High School and Beyond (hsb2) dataset contains information about 200 high school students, including demographic details and academic performance. This dataset is commonly used in statistics education to explore relationships between socioeconomic factors and test scores.\nKey Variables:\n\n\nID: Student identifier (unique number)\n\nGender: Self-reported gender (Male/Female)\n\nRace: Ethnicity (White/Black/Asian/Other)\n\nSES: Socioeconomic status (Low/Middle/High)\n\nProgram: Enrollment track (General/Vocational/Academic)\n\nReading, Math, Science: Standardized test scores (0-100)\n\n\n\n\nFirst 6 observations from hsb2 dataset\n\nid\ngender\nrace\nses\nschtyp\nprog\nread\nwrite\nmath\nscience\nsocst\n\n\n\n70\nmale\nwhite\nlow\npublic\ngeneral\n57\n52\n41\n47\n57\n\n\n121\nfemale\nwhite\nmiddle\npublic\nvocational\n68\n59\n53\n63\n61\n\n\n86\nmale\nwhite\nhigh\npublic\ngeneral\n44\n33\n54\n58\n31\n\n\n141\nmale\nwhite\nhigh\npublic\nvocational\n63\n44\n47\n53\n56\n\n\n172\nmale\nwhite\nmiddle\npublic\nacademic\n47\n52\n57\n53\n61\n\n\n113\nmale\nwhite\nmiddle\npublic\nacademic\n44\n52\n51\n63\n61\n\n\n\n\n\n\n\nClassify these variables as qualitative (categorical) or quantitative (numerical):\n\nGender\n\nMath Score\n\nSES (Socioeconomic Status)\n\nProgram\n\nScience Score\n\nFor two of your choices, explain why they belong to that category.\n\nSuppose researchers want to analyze gender differences in math performance:\n\nWhat is the current variable type of Gender?\nHow could you convert Gender to a numeric format? What values would you assign?\n\nIf Gender is coded as 0 (Male) and 1 (Female):\n\nCould you calculate an “average gender”? Explain why this is or isn’t meaningful.\n\n\nWhy might statisticians prefer to keep Gender as a categorical variable?"
+  },
+  {
+    "objectID": "Activity1.html#dataset-description",
+    "href": "Activity1.html#dataset-description",
+    "title": "Activity 1",
+    "section": "",
+    "text": "The High School and Beyond (hsb2) dataset contains information about 200 high school students, including demographic details and academic performance. This dataset is commonly used in statistics education to explore relationships between socioeconomic factors and test scores.\nKey Variables:\n\n\nID: Student identifier (unique number)\n\nGender: Self-reported gender (Male/Female)\n\nRace: Ethnicity (White/Black/Asian/Other)\n\nSES: Socioeconomic status (Low/Middle/High)\n\nProgram: Enrollment track (General/Vocational/Academic)\n\nReading, Math, Science: Standardized test scores (0-100)"
+  },
+  {
+    "objectID": "Activity1.html#data-preview",
+    "href": "Activity1.html#data-preview",
+    "title": "Activity 1",
+    "section": "",
+    "text": "First 6 observations from hsb2 dataset\n\nid\ngender\nrace\nses\nschtyp\nprog\nread\nwrite\nmath\nscience\nsocst\n\n\n\n70\nmale\nwhite\nlow\npublic\ngeneral\n57\n52\n41\n47\n57\n\n\n121\nfemale\nwhite\nmiddle\npublic\nvocational\n68\n59\n53\n63\n61\n\n\n86\nmale\nwhite\nhigh\npublic\ngeneral\n44\n33\n54\n58\n31\n\n\n141\nmale\nwhite\nhigh\npublic\nvocational\n63\n44\n47\n53\n56\n\n\n172\nmale\nwhite\nmiddle\npublic\nacademic\n47\n52\n57\n53\n61\n\n\n113\nmale\nwhite\nmiddle\npublic\nacademic\n44\n52\n51\n63\n61"
+  },
+  {
+    "objectID": "Activity1.html#questions",
+    "href": "Activity1.html#questions",
+    "title": "Activity 1",
+    "section": "",
+    "text": "Classify these variables as qualitative (categorical) or quantitative (numerical):\n\nGender\n\nMath Score\n\nSES (Socioeconomic Status)\n\nProgram\n\nScience Score\n\nFor two of your choices, explain why they belong to that category.\n\nSuppose researchers want to analyze gender differences in math performance:\n\nWhat is the current variable type of Gender?\nHow could you convert Gender to a numeric format? What values would you assign?\n\nIf Gender is coded as 0 (Male) and 1 (Female):\n\nCould you calculate an “average gender”? Explain why this is or isn’t meaningful.\n\n\nWhy might statisticians prefer to keep Gender as a categorical variable?"
+  },
+  {
+    "objectID": "RandRStudio.html",
+    "href": "RandRStudio.html",
+    "title": "Setting Up R and RStudio",
+    "section": "",
+    "text": "This lab tutorial will guide you through installing R and RStudio on your computer, managing packages, and loading data into R. This setup is essential for performing all kinds of data analysis tasks in R."
+  },
+  {
+    "objectID": "RandRStudio.html#on-windows",
+    "href": "RandRStudio.html#on-windows",
+    "title": "Setting Up R and RStudio",
+    "section": "On Windows",
+    "text": "On Windows\n\n\nDownload R:\n\nVisit CRAN and download the latest version of R for Windows.\nRun the downloaded .exe file and follow the installation instructions.\n\n\n\n\n\nCRAN mirror\nDownload Latest R\nExecutable File in Downloads Folder\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDownload RStudio:\n\nGo to the RStudio Download page and download the free version of RStudio Desktop for Windows.\nInstall it by running the downloaded .exe file.\n\n\n\n\n\nDownload Latest RStudio\nExecutable File in Downloads Folder"
+  },
+  {
+    "objectID": "RandRStudio.html#on-mac",
+    "href": "RandRStudio.html#on-mac",
+    "title": "Setting Up R and RStudio",
+    "section": "On Mac",
+    "text": "On Mac\n\n\nDownload R:\n\nNavigate to CRAN and choose the version for macOS.\nOpen the downloaded .pkg file to start the installation.\n\n\n\n\n\nCRAN mirror\nDownload Latest R\nExecutable File in Downloads Folder\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDownload RStudio:\n\nVisit RStudio Download page and select RStudio for macOS.\nOpen the downloaded .dmg file and drag RStudio to your Applications folder.\n\n\n\n\n\nDownload Latest RStudio\nExecutable File in Downloads Folder"
+  },
+  {
+    "objectID": "RandRStudio.html#rmarkdown-interface-components",
+    "href": "RandRStudio.html#rmarkdown-interface-components",
+    "title": "Setting Up R and RStudio",
+    "section": "RMarkdown Interface Components",
+    "text": "RMarkdown Interface Components\nRStudio’s interface for working with RMarkdown documents contains four key panes:\n\nSource Editor (Left Pane)\nPrimary workspace for writing .Rmd files with integrated code chunks and narrative text. Features syntax highlighting, chunk controls (run individual code blocks), and document structure navigation.\n\nEnvironment/History (Top-Right Pane)\n\n\nEnvironment: Lists active datasets, variables, and functions\n\n\nHistory: Tracks all executed commands\n\n\nConnections: Manages database links (when used)\n\n\nGit: Version control integration (when configured)\n\n\n\nConsole/Terminal (Bottom-Left Pane)\n\n\nConsole: Direct R code execution environment showing raw output\n\n\nTerminal: System-level command line access\n\n\nBackground Jobs: Monitor long-running processes\n\n\n\nViewer/Help (Bottom-Right Pane)\n\n\nViewer: Preview rendered documents (HTML/PDF/Word)\n\n\nHelp: Access function documentation\n\n\nFiles: Navigate project directory structure\n\n\nPlots: Display graphical output\n\n\nPackages: Manage installed R packages"
+  },
+  {
+    "objectID": "RandRStudio.html#understanding-r-markdown-documents",
+    "href": "RandRStudio.html#understanding-r-markdown-documents",
+    "title": "Setting Up R and RStudio",
+    "section": "Understanding R Markdown Documents",
+    "text": "Understanding R Markdown Documents\nR Markdown allows you to integrate code and text in the same document, facilitating reproducible research and interactive data analysis reports. Here’s a quick overview:"
+  },
+  {
+    "objectID": "RandRStudio.html#managing-.rmd-files-and-setting-the-working-directory",
+    "href": "RandRStudio.html#managing-.rmd-files-and-setting-the-working-directory",
+    "title": "Setting Up R and RStudio",
+    "section": "Managing .Rmd Files and Setting the Working Directory",
+    "text": "Managing .Rmd Files and Setting the Working Directory\nDownloading and Organizing .Rmd Files\nTo effectively manage your course materials in RStudio, follow these steps:\n\n\nDownload .Rmd File:\n\nNavigate to MyClasses and locate the desired .Rmd file for your course.\nDownload the file to your local machine.\n\n\n\nCreate a Course Folder:\n\nCreate a new folder named math216 in a suitable location on your computer or within your OneDrive account.\n\n\n\nOrganize Files:\n\nMove the downloaded .Rmd file into the math216 folder to keep your course materials organized."
+  },
+  {
+    "objectID": "RandRStudio.html#text-formatting-in-r-markdown",
+    "href": "RandRStudio.html#text-formatting-in-r-markdown",
+    "title": "Setting Up R and RStudio",
+    "section": "Text Formatting in R Markdown",
+    "text": "Text Formatting in R Markdown\nMarkdown is a lightweight markup language that allows you to add formatting elements using plain text. Here’s how you can use different Markdown syntax to format text within your R Markdown documents.\nHeaders\nCreate headers by prefixing the text with one or more hash symbols (#). The number of # symbols before the text determines the level of the header.\n# Header 1\n## Header 2\n### Header 3\nLists\nYou can create bulleted or numbered lists:\n\n\nUnordered Lists (bullets):\n\n- Item 1\n- Item 2\n  - Subitem 1\n  - Subitem 2\n\n\nOrdered Lists:\n\n1. First item\n2. Second item\n   1. Subitem 1\n   2. Subitem 2\nLinks\nInclude hyperlinks using the format [link text](URL):\n[Visit Canvas](https://salisbury.instructure.com/courses/71470)\nEmphasis\nItalicize or bold text using asterisks or underscores:\n\n\nItalic: *Italic* or _Italic_\n\n\nBold: **Bold** or __Bold__\n\nImages\nEmbed images using the format ![Alt text](image_URL \"Optional Title\"):\n![Example Image](path_to_image.jpg \"This is an image\")\nBlockquotes\nCreate blockquotes with &gt;:\n&gt; This is a blockquote.\nCode\nDisplay inline code with backticks and code blocks with triple backticks:\n\nInline code: `code`\n\nCode block:\n\n\n\n\n\n\n\n\n\n\n\n[1] -5\n\n\nHorizontal Rules\nInsert a horizontal line with three or more hyphens:\n---\nCombining Markdown with R Code\nMarkdown can be interleaved with executable R code chunks:\n\n# Calculate the sum of numbers from 1 to 10\nsum(1:10)\n\n[1] 55"
+  },
+  {
+    "objectID": "RandRStudio.html#r-code-chunk-options",
+    "href": "RandRStudio.html#r-code-chunk-options",
+    "title": "Setting Up R and RStudio",
+    "section": "R Code Chunk Options",
+    "text": "R Code Chunk Options\nBefore diving into data loading, let’s understand important R chunk options:\n\n\neval: Use eval=FALSE to prevent code from running but still display it.\n\necho: With echo=FALSE, the code is run but not displayed in the document.\n\ninclude: include=FALSE runs the code and hides both the code and output from the final output.\n\nExample to demonstrate:\n\n\n\n\n\n\n\n\n\n# This code will run, and both code and output will appear in the document.\nsummary(cars)\n\n     speed           dist       \n Min.   : 4.0   Min.   :  2.00  \n 1st Qu.:12.0   1st Qu.: 26.00  \n Median :15.0   Median : 36.00  \n Mean   :15.4   Mean   : 42.98  \n 3rd Qu.:19.0   3rd Qu.: 56.00  \n Max.   :25.0   Max.   :120.00  \n\n\nSetting the Working Directory\nIt’s crucial to set the working directory in R to the folder where your course files are stored. This can be done in several ways:\n\n\nUsing RStudio:\n\nIn RStudio, you can set the working directory through the menu by navigating to Session &gt; Set Working Directory &gt; Choose Directory... and selecting your math216 folder.\n\n\n\nUsing R Script:\n\nYou can also set the working directory directly in an R script using the setwd() function. Place the following line of code at the beginning of your script:\n\nsetwd(\"~/math216\")\nReplace \"~/math216\" with the actual path to your course folder.\n\n\nUsing R Console:\n\nYou can manually set the working directory in the R console with the same command:\n\nsetwd(\"~/math216\")"
+  },
+  {
+    "objectID": "Day5.html#introduction-to-probability",
+    "href": "Day5.html#introduction-to-probability",
+    "title": "Day 5",
+    "section": "Introduction to Probability",
+    "text": "Introduction to Probability\n\n\n\nExperiment: Any act of observation with uncertain outcomes (e.g., tossing a coin).\nObservation: The result of an experiment (e.g., heads or tails).\nProbability: A measure of how likely an event is to occur, often thought of as “chance” or “likelihood.”\n\nExample: The chance of rain tomorrow, the likelihood of rolling a 6 on a die.\n\n\nMathematical Representation\n\nLet \\(E\\) represent an experiment.\nAn outcome of \\(E\\) is an element of the sample space \\(S\\).\nProbability of an event \\(A\\) is denoted by \\(P(A)\\)."
+  },
+  {
+    "objectID": "Day5.html#key-definitions",
+    "href": "Day5.html#key-definitions",
+    "title": "Day 5",
+    "section": "Key Definitions",
+    "text": "Key Definitions\n\n\nSample Point\n\nDefinition: The most basic outcome of an experiment.\nExample: In a coin toss, each toss that results in H (Head) or T (Tail).\n\n\n\n\nSample Space\n\nDefinition: Collection of all possible outcomes (sample points) of an experiment.\nExample: In a coin toss, the sample space is \\(S = \\{H, T\\}\\).\n\n\n\n\nEvent\n\nDefinition: A collection of sample points.\nExample: Rolling an even number on a die."
+  },
+  {
+    "objectID": "Day5.html#visualizing-probability",
+    "href": "Day5.html#visualizing-probability",
+    "title": "Day 5",
+    "section": "Visualizing Probability",
+    "text": "Visualizing Probability\n\n\nVenn Diagram\n\nSample Space (S): Represented as a closed figure in the diagram.\nSample Points: Each possible outcome shown as a solid dot within the figure.\nExample: Coin Toss\n\nVenn Diagram: Circle labeled S containing two points labeled H (Head) and T (Tail).\nRepresentation: Helps visualize all possible outcomes in a single view."
+  },
+  {
+    "objectID": "Day5.html#tree-diagram",
+    "href": "Day5.html#tree-diagram",
+    "title": "Day 5",
+    "section": "Tree Diagram",
+    "text": "Tree Diagram\n\nExample: Tree diagram of a coin toss.\n\n\nTree diagram of a coin toss"
+  },
+  {
+    "objectID": "Day5.html#experiments-and-sample-spaces",
+    "href": "Day5.html#experiments-and-sample-spaces",
+    "title": "Day 5",
+    "section": "Experiments and Sample Spaces",
+    "text": "Experiments and Sample Spaces\n\nExperiment: Tossing a Coin - Sample Space (S): \\[S = \\{H, T\\}\\]\nExperiment: Rolling a Die - Sample Space (S): \\[S = \\{1, 2, 3, 4, 5, 6\\}\\]\nExperiment: Tossing Two Coins - Sample Space (S): \\[S = \\{HH, HT, TH, TT\\}\\]"
+  },
+  {
+    "objectID": "Day5.html#probability-rules-and-calculations",
+    "href": "Day5.html#probability-rules-and-calculations",
+    "title": "Day 5",
+    "section": "Probability Rules and Calculations",
+    "text": "Probability Rules and Calculations\n\n\nProbability of a Sample Point - A number between 0 and 1 indicating the likelihood of the outcome.\nRules of Probability\n\nRange of Probabilities:\n\nEach probability \\(p_i\\) must satisfy: \\[0 \\leq p_i \\leq 1\\]\n\nSum of Probabilities:\n\nThe total probability across all sample points must sum to 1: \\[\\sum_{\\text{all } i} p_i = 1\\]"
+  },
+  {
+    "objectID": "Day5.html#steps-for-calculating-event-probabilities",
+    "href": "Day5.html#steps-for-calculating-event-probabilities",
+    "title": "Day 5",
+    "section": "Steps for Calculating Event Probabilities",
+    "text": "Steps for Calculating Event Probabilities\n\n\n\nDefine the Experiment: Describe the observation process.\nList Sample Points: Identify possible outcomes.\nAssign Probabilities: Allocate probability to each sample point.\nIdentify Event’s Sample Points: Determine which sample points are part of the event.\nCalculate Event Probability: Sum the probabilities of the event’s sample points."
+  },
+  {
+    "objectID": "Day5.html#probability-in-a-dice-game",
+    "href": "Day5.html#probability-in-a-dice-game",
+    "title": "Day 5",
+    "section": "Probability in a Dice Game",
+    "text": "Probability in a Dice Game\n\n\n\n\n\nExperiment: Tossing a fair die.\nWinning Condition: If the up face is an even number (2, 4, 6), you win $1.\nLosing Condition: If the up face is odd (1, 3, 5), you lose $1.\n\nSample Space and Probabilities\n\nSample Space (S): \\[S = \\{1, 2, 3, 4, 5, 6\\}\\]\nUniform Probabilities: \\[p_1 = p_2 = p_3 = \\cdots = p_6 = \\frac{1}{6}\\]\n\n\n\n\nCalculation of Winning Probability\n\n\nEvent of Winning: \\[\\text{Winning} = \\{2, 4, 6\\}\\]\nProbability of Winning: \\[\\text{Prob of Winning} = p_2 + p_4 + p_6 = \\frac{1}{6} + \\frac{1}{6} + \\frac{1}{6} = \\frac{3}{6} = \\frac{1}{2}\\]"
+  },
+  {
+    "objectID": "Day5.html#compound-events",
+    "href": "Day5.html#compound-events",
+    "title": "Day 5",
+    "section": "Compound Events",
+    "text": "Compound Events\n\n\nUnions\n\nDefinition: Union of two events \\(A\\) and \\(B\\) (\\(A \\cup B\\))\nOccurs If: Either event \\(A\\), event \\(B\\), or both happen.\nComposition: Includes all sample points in \\(A\\), \\(B\\), or both. \\[A \\cup B = \\{x : x \\in A \\text{ or } x \\in B\\}\\]\n\n\n\n\n\n\nIntersections\n\nDefinition: Intersection of two events \\(A\\) and \\(B\\) (\\(A \\cap B\\))\nOccurs If: Both event \\(A\\) and event \\(B\\) happen.\nComposition: Includes all sample points that are in both \\(A\\) and \\(B\\). \\[A \\cap B = \\{x : x \\in A \\text{ and } x \\in B\\}\\]"
+  },
+  {
+    "objectID": "Day5.html#example-calculating-unions-and-intersections-in-a-die-toss",
+    "href": "Day5.html#example-calculating-unions-and-intersections-in-a-die-toss",
+    "title": "Day 5",
+    "section": "Example: Calculating Unions and Intersections in a Die-Toss",
+    "text": "Example: Calculating Unions and Intersections in a Die-Toss\n\n\n\n\n\nEvent A: Toss an even number. \\[A = \\{2, 4, 6\\}\\]\nEvent B: Toss a number less than or equal to 3. \\[B = \\{1, 2, 3\\}\\]\nSample Space (S): \\[S = \\{1, 2, 3, 4, 5, 6\\}\\]\n\n\n\n\nUnion (\\(A \\cup B\\)): \\[A \\cup B = \\{1, 2, 3, 4, 6\\}\\]\nIntersection (\\(A \\cap B\\)): \\[A \\cap B = \\{2\\}\\]\nProbability of Union (\\(P(A \\cup B)\\)): \\[P(A \\cup B) = \\frac{5}{6}\\]\nProbability of Intersection (\\(P(A \\cap B)\\)): \\[P(A \\cap B) = \\frac{1}{6}\\]"
+  },
+  {
+    "objectID": "Day2.html#sampling-and-inference",
+    "href": "Day2.html#sampling-and-inference",
+    "title": "Day 2",
+    "section": "Sampling and Inference",
+    "text": "Sampling and Inference\n\n\nA population includes all individuals or objects of interest.\nA sample is all the cases that we have collected data on (a subset of the population).\nStatistical inference is the process of using data from a sample to gain information about the population."
+  },
+  {
+    "objectID": "Day2.html#sampling-and-inference-source",
+    "href": "Day2.html#sampling-and-inference-source",
+    "title": "Day 2",
+    "section": "Sampling and Inference (Source)",
+    "text": "Sampling and Inference (Source)"
+  },
+  {
+    "objectID": "Day2.html#blue-crab-in-maryland-coastal-bays",
+    "href": "Day2.html#blue-crab-in-maryland-coastal-bays",
+    "title": "Day 2",
+    "section": "Blue Crab in Maryland Coastal Bays",
+    "text": "Blue Crab in Maryland Coastal Bays\n\n\nPopulation\n\nAll blue crabs in the Maryland Coastal Bays (MCB).\nIncludes sub-estuaries: Assawoman Bay, St. Martin River, Isle of Wight, Sinepuxent Bay, Newport Bay, Chincoteague Bay.\n\nSample\n\nBlue crabs collected from 20 sites within MCB.\nSample period: April - December, 2014-2016.\nMethod: Trawl surveys."
+  },
+  {
+    "objectID": "Day2.html#blue-crab-in-maryland-coastal-bays-1",
+    "href": "Day2.html#blue-crab-in-maryland-coastal-bays-1",
+    "title": "Day 2",
+    "section": "Blue Crab in Maryland Coastal Bays",
+    "text": "Blue Crab in Maryland Coastal Bays\n\n\nVariables\n\nPrimary Variable: Carapace width, sex, maturity status, molt stage.\n\nInference\n\nPopulation structure of blue crabs in MCB.\nSeasonal variations: size distribution, molt cycles, reproductive patterns."
+  },
+  {
+    "objectID": "Day2.html#sampling-bias",
+    "href": "Day2.html#sampling-bias",
+    "title": "Day 2",
+    "section": "Sampling Bias",
+    "text": "Sampling Bias\n\n\nSampling bias occurs when the method of selecting a sample causes the sample to differ from the population in some relevant way.\nIf sampling bias exists, we cannot trust generalizations from the sample to the population.\n\n\nTo eliminate sampling bias, always take a RANDOM SAMPLE!"
+  },
+  {
+    "objectID": "Day2.html#bias-in-data",
+    "href": "Day2.html#bias-in-data",
+    "title": "Day 2",
+    "section": "Bias in Data",
+    "text": "Bias in Data\nEven with a random sample, data can still be biased, especially when collected on humans.\n\nSome forms of bias to watch out for in data collection:\n\nQuestion wording.\nQuestion order.\nContext.\nNon-response bias."
+  },
+  {
+    "objectID": "Day2.html#question-wording",
+    "href": "Day2.html#question-wording",
+    "title": "Day 2",
+    "section": "Question Wording",
+    "text": "Question Wording\n\nA random sample was asked: “Should there be a tax cut, or should money be used to fund new government programs?”\n\n\n\n\nTax Cut\nPrograms\n\n\n\n\n60%\n40%"
+  },
+  {
+    "objectID": "Day2.html#question-wording-1",
+    "href": "Day2.html#question-wording-1",
+    "title": "Day 2",
+    "section": "Question Wording",
+    "text": "Question Wording\n\nA different random sample was asked: “Should there be a tax cut, or should money be spent on programs for education, the environment, health care, crime-fighting, and military defense?”\n\n\n\n\nTax Cut\nPrograms\n\n\n\n\n22%\n78%"
+  },
+  {
+    "objectID": "Day2.html#question-order",
+    "href": "Day2.html#question-order",
+    "title": "Day 2",
+    "section": "Question Order",
+    "text": "Question Order\n\n\nDepending on the order of questions, we can see either greater or lesser differences in responses.\nRespondents tend to provide answers consistent with their prior responses."
+  },
+  {
+    "objectID": "Day2.html#swedish-study-response-bias",
+    "href": "Day2.html#swedish-study-response-bias",
+    "title": "Day 2",
+    "section": "Swedish Study: Response Bias",
+    "text": "Swedish Study: Response Bias"
+  },
+  {
+    "objectID": "Day2.html#identified-sources-of-bias-in-swedish-study",
+    "href": "Day2.html#identified-sources-of-bias-in-swedish-study",
+    "title": "Day 2",
+    "section": "Identified Sources of Bias in Swedish Study",
+    "text": "Identified Sources of Bias in Swedish Study\n\n\nPolitical Bias: The study experimentally primes the political affiliations of the respondents before asking questions about corruption. This bias arises when people’s political leanings affect their perception and reporting of corruption levels.\n\n\n\nSensitivity Bias: Questions about one’s experiences with corruption are sensitive in nature and may result in biased responses due to fear of retribution or social stigma."
+  },
+  {
+    "objectID": "Day2.html#context",
+    "href": "Day2.html#context",
+    "title": "Day 2",
+    "section": "Context",
+    "text": "Context\n\nAnn Landers column asked readers “If you had it to do over again, would you have children?”\nThe first request for data contained a letter from a young couple which listed worries about parenting and various reasons not to have kids.\n\\[30\\% \\text{ said yes}\\]"
+  },
+  {
+    "objectID": "Day2.html#context-1",
+    "href": "Day2.html#context-1",
+    "title": "Day 2",
+    "section": "Context",
+    "text": "Context\n\nThe second request for data was in response to this number, in which Ann wrote how she was “stunned, disturbed, and just plain flummoxed.”\n\\[95\\% \\text{ said yes}\\]"
+  },
+  {
+    "objectID": "Day2.html#non-response-bias",
+    "href": "Day2.html#non-response-bias",
+    "title": "Day 2",
+    "section": "Non-response Bias",
+    "text": "Non-response Bias\n\nWhen respondents are either unable or unwilling to respond to your survey, this results in non-response bias.\n\n\n\nSurvey targeted to the wrong audience.\nThere is general unwillingness due to polar opposite opinions.\nThe survey did not reach the right respondent.\n\ne.g., A survey asking teenagers about the best cigarette brands."
+  },
+  {
+    "objectID": "Day2.html#think-pair-share",
+    "href": "Day2.html#think-pair-share",
+    "title": "Day 2",
+    "section": " Think-Pair-Share ",
+    "text": "Think-Pair-Share \n\n\n\n\n\n\n\n\nThink: Reflect on a real-world example where sampling bias might occur (e.g., political polls, health surveys).\nPair: Discuss their example with a partner and identify potential sources of bias.\nShare: Share their findings with the class and propose ways to mitigate the bias.\n\n\n\n\n\n\n−+\n05:00"
+  },
+  {
+    "objectID": "Day2.html#experiment-vs.-observational-study",
+    "href": "Day2.html#experiment-vs.-observational-study",
+    "title": "Day 2",
+    "section": "Experiment vs. Observational Study",
+    "text": "Experiment vs. Observational Study\n\nAn observational study is a study in which the researcher does not actively control the value of any variable but simply observes the values as they naturally exist.\n\n\n\nAn experiment is a study in which the researcher actively controls one or more of the explanatory variables."
+  },
+  {
     "objectID": "Day1.html#about-me",
     "href": "Day1.html#about-me",
     "title": "Day 1",
@@ -89,342 +376,6 @@
     "title": "Day 1",
     "section": " Group Activity 1",
     "text": "Group Activity 1\n\n\n\n\n\n\n\nWe will have interactive elements in every class that could be:\n\nThink-pair-share\nQuiz\nInteractive Data Exploration\nGroup Activities with Real Data\n\nThis is the time for you to gauge your understanding of the concepts and have fun with the content. These may be collected for attendance! Please bring your charged laptop to every class.\n\n\n\n\n −+ 10:00"
-  },
-  {
-    "objectID": "Day3.html#descriptive-statistics",
-    "href": "Day3.html#descriptive-statistics",
-    "title": "Day 3",
-    "section": "Descriptive Statistics",
-    "text": "Descriptive Statistics\n\n\nSummarize and visualize data to make sense of it.\nDescriptive statistics (or exploratory data analysis (EDA)) involves summarizing and visualizing variables and their relationships.\nThe methods depend on the type of variable(s) being analyzed (qualitative or quantitative)."
-  },
-  {
-    "objectID": "Day3.html#one-qualitative-variable",
-    "href": "Day3.html#one-qualitative-variable",
-    "title": "Day 3",
-    "section": "One Qualitative Variable",
-    "text": "One Qualitative Variable\n\nA random sample of US adults in 2012 were surveyed regarding the type of cell phone owned.\n\n\n  Android? iPhone? Blackberry? Non-smartphone? No cell phone?"
-  },
-  {
-    "objectID": "Day3.html#frequency-table",
-    "href": "Day3.html#frequency-table",
-    "title": "Day 3",
-    "section": "Frequency Table",
-    "text": "Frequency Table\n\nA frequency table shows the number of cases or counts that fall in each category:\n\n\n\n\n\n\nSubset of Raw Data\nDevice Type\n\n\n\n\nCase 1\nAndroid\n\n\nCase 2\nnone\n\n\nCase 3\nnone\n\n\nCase 4\niPhone\n\n\nCase 5\nNon Smartphone\n\n\nCase 6\niPhone\n\n\nCase 7\nBlackberry\n\n\nCase 8\nNon Smartphone\n\n\nCase 9\nAndroid\n\n\nCase 10\nAndroid\n\n\n…\n(for 2253 cases …)\n\n\n\n\n\n\n\n\n\n\nCell Phone Type\nFrequency\n\n\n\n\nAndroid\n458\n\n\niPhone\n437\n\n\nBlackberry\n141\n\n\nNon Smartphone\n924\n\n\nNo Cell Phone\n293\n\n\nTotal\n2253"
-  },
-  {
-    "objectID": "Day3.html#proportion",
-    "href": "Day3.html#proportion",
-    "title": "Day 3",
-    "section": "Proportion",
-    "text": "Proportion\nThe proportion in a category is found by: \\[\n\\text{proportion} = \\frac{\\text{number in category}}{\\text{total sample size}}\n\\]\n\n\nPopulation proportion (parameter): \\(p\\)\nSample proportion (statistic): \\(\\hat{p}\\) (“p-hat”)"
-  },
-  {
-    "objectID": "Day3.html#what-proportion-of-adults-sampled-do-not-own-a-cell-phone",
-    "href": "Day3.html#what-proportion-of-adults-sampled-do-not-own-a-cell-phone",
-    "title": "Day 3",
-    "section": "What proportion of adults sampled do not own a cell phone?",
-    "text": "What proportion of adults sampled do not own a cell phone?\n\n\n\n\nCell Phone Type\nFrequency\nProportion\n\n\n\n\nAndroid\n458\n0.203\n\n\niPhone\n437\n0.194\n\n\nBlackberry\n141\n0.063\n\n\nNon Smartphone\n924\n0.410\n\n\nNo Cell Phone\n293\n0.130\n\n\nTotal\n2253\n1.000"
-  },
-  {
-    "objectID": "Day3.html#bar-chart",
-    "href": "Day3.html#bar-chart",
-    "title": "Day 3",
-    "section": "Bar Chart",
-    "text": "Bar Chart\nIn a barplot, the height of the bar corresponds to the number of cases falling in each category."
-  },
-  {
-    "objectID": "Day3.html#two-qualitative-variables",
-    "href": "Day3.html#two-qualitative-variables",
-    "title": "Day 3",
-    "section": "Two Qualitative Variables",
-    "text": "Two Qualitative Variables\n\nLook at the relationship between two qualitative variables:\n\nRelationship status\nGender\n\n\n\n\n\n\nFemale\nMale\nTotal\n\n\n\n\nIn a Relationship\n32\n10\n42\n\n\nIt’s Complicated\n12\n7\n19\n\n\nSingle\n63\n45\n108\n\n\nTotal\n107\n62\n169"
-  },
-  {
-    "objectID": "Day3.html#relationship-status-and-gender",
-    "href": "Day3.html#relationship-status-and-gender",
-    "title": "Day 3",
-    "section": "Relationship Status and Gender",
-    "text": "Relationship Status and Gender\n\nProportion of students in a relationship that are female?\n\nprop.relation.female &lt;- 32/42\nround(prop.relation.female, 2)\n\n[1] 0.76\n\n\nProportion of students in a relationship that are male?\n\nprop.relation.male &lt;- 10/42\nround(prop.relation.male, 2)\n\n[1] 0.24"
-  },
-  {
-    "objectID": "Day3.html#difference-in-proportions",
-    "href": "Day3.html#difference-in-proportions",
-    "title": "Day 3",
-    "section": "Difference in Proportions",
-    "text": "Difference in Proportions\n\n\nA difference in proportions is a difference in proportions for one qualitative variable calculated for different levels of the other qualitative variable.\nExample: Difference in proportions of male and female that are in a relationship: \\[\n\\hat{p}_F - \\hat{p}_M = \\frac{32}{107} - \\frac{10}{62} = 0.14\n\\]\n\nprop.female &lt;- 32/107\nprop.male &lt;- 10/62\nprop.diff &lt;- prop.female - prop.male\nround(prop.diff, 2)\n\n[1] 0.14"
-  },
-  {
-    "objectID": "Day3.html#student-survey",
-    "href": "Day3.html#student-survey",
-    "title": "Day 3",
-    "section": "Student Survey",
-    "text": "Student Survey\nDataset on 362 responses to a student survey given at one college.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nYear\nGender\nSmoke\nExercise\nTV\nHeight\nWeight\nSiblings\nBirthOrder\nGPA\nPulse\n\n\n\n\nSenior\nM\nNo\n10.0\n1\n71\n180\n4\n4\n3.13\n54\n\n\nSophomore\nF\nYes\n4.0\n7\n66\n120\n2\n2\n2.50\n66\n\n\nFirstYear\nM\nNo\n14.0\n5\n72\n208\n2\n1\n2.55\n130\n\n\nJunior\nM\nNo\n3.0\n1\n63\n110\n1\n1\n3.10\n78\n\n\nSophomore\nF\nNo\n3.0\n3\n65\n150\n1\n1\n2.70\n40\n\n\nSophomore\nF\nNo\n5.0\n4\n65\n114\n2\n2\n3.20\n80\n\n\nFirstYear\nF\nNo\n10.0\n10\n66\n128\n1\n1\n2.77\n94\n\n\nSophomore\nM\nNo\n13.0\n8\n74\n235\n1\n1\n3.30\n77\n\n\nJunior\nF\nNo\n3.0\n6\n61\nNA\n2\n2\n2.80\n60\n\n\nFirstYear\nF\nNo\n12.0\n1\n60\n115\n7\n8\n3.70\n94\n\n\nSophomore\nF\nNo\n12.0\n6\n65\n140\n1\n2\n2.09\n63\n\n\nFirstYear\nM\nNo\n10.0\n5\n63\n200\n2\n2\nNA\n72\n\n\nSophomore\nM\nNo\n12.0\n8\n68\n162\n3\nNA\n2.90\n54\n\n\nJunior\nF\nNo\n6.0\n1\n68\n135\n2\n3\n3.08\n66\n\n\nFirstYear\nM\nNo\n9.0\n5\n68\n193\n1\n1\nNA\n72\n\n\nFirstYear\nF\nNo\n10.0\n2\n63\n110\n1\n2\n3.86\n59\n\n\nFirstYear\nF\nNo\n3.0\n15\n63\n99\n2\n1\n3.00\n88\n\n\nSophomore\nM\nNo\n7.0\n3\n72\n165\n2\n1\n3.00\n59\n\n\nSophomore\nF\nNo\n2.0\n1\n62\n120\n1\n1\n3.35\n64\n\n\nSophomore\nF\nNo\n14.0\n2\n67\n154\n1\n2\n3.30\n72\n\n\nSophomore\nF\nNo\n10.0\n5\n65\n110\n1\n2\n3.40\n74\n\n\nSophomore\nF\nNo\n14.0\n2\n68\n145\n8\n8\n2.90\n70\n\n\nFirstYear\nM\nNo\n20.0\n20\n73\n195\n3\n4\n3.50\n58\n\n\nSophomore\nM\nNo\n7.0\n10\n74\n200\n1\n2\n3.00\n48\n\n\nSophomore\nM\nNo\n12.0\n3\n70\n167\n1\n2\n3.30\n74\n\n\nSophomore\nM\nNo\n10.0\n5\n71\n175\n3\n2\n3.70\n60\n\n\nSophomore\nF\nNo\n6.0\n8\n67\n155\n1\n1\n3.48\n74\n\n\nJunior\nM\nNo\n14.0\n2\n74\n185\n1\n2\n3.40\n70\n\n\nFirstYear\nM\nNo\n12.0\n6\n68\n190\n1\n1\n2.50\n74\n\n\nSenior\nM\nNo\n10.0\n4\n72\n165\n1\n2\n3.30\n60\n\n\nJunior\nM\nNo\n8.0\n8\n62\n175\n2\n3\n3.50\n55\n\n\nSophomore\nF\nNo\n0.0\n2\n66\n126\n5\n6\n3.79\n82\n\n\nFirstYear\nM\nNo\n10.0\n20\n70\n187\n3\n2\n3.30\n68\n\n\nSenior\nM\nNo\n6.0\n10\n72\n170\n2\n2\n2.90\n83\n\n\nFirstYear\nF\nNo\n5.0\n2\n67\n158\n4\n2\n2.68\n53\n\n\nSophomore\nF\nNo\n24.0\n5\n62\n119\n1\n2\n3.28\n72\n\n\nFirstYear\nM\nNo\n2.0\n5\n73\n205\n1\n1\n3.51\n86\n\n\nSophomore\nF\nNo\n10.0\n5\n67\n129\n1\n1\n2.60\n67\n\n\nSophomore\nF\nNo\n6.0\n5\n67\n145\n0\n1\n3.85\n89\n\n\nJunior\nF\nNo\n5.0\n5\n64\n130\n0\nNA\n2.40\n48\n\n\nSenior\nM\nNo\n5.0\n5\n72\n215\n3\n1\n3.40\n64\n\n\nSophomore\nF\nNo\n12.0\n4\n64\n135\n2\n3\n2.40\n73\n\n\nSophomore\nF\nNo\n2.0\n5\n70\n145\n0\n1\n3.00\n80\n\n\nFirstYear\nF\nNo\n7.0\n8\n60\n98\n2\n2\n3.10\n85\n\n\nFirstYear\nM\nNo\n15.0\n2\n71\n150\n1\n1\n2.94\n60\n\n\nJunior\nM\nNo\n5.0\n14\n73\n159\n1\n1\n3.31\n61\n\n\nSenior\nM\nNo\n7.0\n20\n72\n174\n1\n2\n3.30\n80\n\n\nSophomore\nM\nNo\n15.0\n20\n74\n160\n1\n2\n2.90\n70\n\n\nSenior\nM\nNo\n8.0\n10\n70\n165\n1\n2\n3.40\n61\n\n\nSophomore\nF\nNo\n14.0\n3\n69\n161\n1\n2\n3.16\n58\n\n\nFirstYear\nM\nNo\n14.0\n1\n68\n160\n2\n1\nNA\n42\n\n\nSenior\nF\nNo\n4.0\n14\n64\n130\n2\n2\n3.84\n88\n\n\nJunior\nM\nNo\n15.0\n0\n72\n175\n2\n1\n3.60\n68\n\n\nSenior\nM\nNo\n4.0\n20\n70\n255\n2\n2\n2.36\n68\n\n\nJunior\nM\nNo\n15.0\n2\n65\n160\n4\n4\n2.90\n35\n\n\nFirstYear\nM\nNo\n3.0\n6\n72\n160\n0\n1\n3.00\n90\n\n\nJunior\nF\nNo\n3.0\n15\n63\n95\n0\n1\n3.30\n88\n\n\nSophomore\nF\nNo\n15.0\n3\n64\n115\n2\n2\n3.70\n67\n\n\nSophomore\nF\nNo\n20.0\n2\n64\n120\n1\n1\n2.90\n71\n\n\nFirstYear\nF\nNo\n3.0\n1\n65\n135\n2\n3\n3.60\n68\n\n\nSophomore\nM\nNo\n6.0\n7\n73\n180\n1\n2\n3.56\n73\n\n\nSenior\nM\nNo\n12.0\n7\n71\n155\n0\n1\n3.70\n55\n\n\nFirstYear\nF\nNo\n4.0\n3\n66\n110\n2\n1\n4.00\n78\n\n\nFirstYear\nM\nNo\n20.0\n12\n73\n215\n2\n3\n3.40\n96\n\n\nFirstYear\nM\nNo\n15.0\n6\n70\n175\n2\n3\nNA\n63\n\n\nSophomore\nF\nNo\n10.0\n3\n65\n140\n3\n4\n3.30\n73\n\n\nFirstYear\nM\nNo\n10.0\n20\n72\n195\n2\n2\n3.10\n60\n\n\nSophomore\nM\nNo\n4.0\n8\n73\n185\n2\n1\n2.50\n80\n\n\nSophomore\nM\nNo\n9.0\n0\n70\n185\n2\n1\n3.20\n96\n\n\nSenior\nM\nNo\n12.0\n12\n79\n209\n1\n1\n3.10\n49\n\n\nSenior\nF\nNo\n2.0\n6\n67\n145\n3\n2\n3.50\n62\n\n\nSophomore\nF\nNo\n15.0\n4\n66\n140\n1\n1\n3.00\n68\n\n\nFirstYear\nF\nNo\n10.0\n4\n66\n146\n1\n2\n3.25\n52\n\n\nFirstYear\nF\nNo\n7.0\n6\n68\n130\n2\n1\n2.40\n71\n\n\nSophomore\nF\nNo\n3.0\n5\n67\n140\n1\n2\n3.22\n72\n\n\nFirstYear\nF\nNo\n4.0\n3\n66\n130\n1\n1\nNA\n65\n\n\nFirstYear\nF\nNo\n15.0\n3\n66\n140\n1\n1\nNA\n90\n\n\nSophomore\nF\nNo\n8.0\n8\n65\n160\n3\n3\n3.64\n77\n\n\nSophomore\nF\nNo\n5.0\n8\n66\n120\n1\n1\n3.50\n68\n\n\nSophomore\nM\nNo\n10.0\n20\n76\n150\n1\n1\n2.50\n60\n\n\nSophomore\nM\nNo\n15.0\n5\n69\n155\n1\n1\n3.40\n65\n\n\nFirstYear\nF\nNo\n4.0\n4\n64\n128\n3\n1\nNA\n60\n\n\nFirstYear\nF\nNo\n5.0\n4\n64\n143\n2\n2\n3.25\n84\n\n\nJunior\nF\nNo\n6.0\n3\n65\n155\n2\n1\n3.70\n80\n\n\nFirstYear\nF\nNo\n18.0\n2\n67\n119\n2\n1\n2.10\n66\n\n\nSophomore\nF\nNo\n16.0\n4\n66\n138\n1\n2\n2.80\n70\n\n\nSenior\nM\nNo\n4.0\n5\n72\n240\n1\n1\n3.49\n70\n\n\nFirstYear\nF\nNo\n3.0\n2\n65\n160\n1\n1\n3.83\n72\n\n\nFirstYear\nM\nNo\n20.0\n3\n69\n191\n3\n1\nNA\n66\n\n\nFirstYear\nM\nNo\n5.0\n8\n69\n165\n5\n4\n2.70\n69\n\n\nSophomore\nM\nNo\n10.0\n6\n73\n200\n2\n3\n2.80\n89\n\n\nFirstYear\nF\nNo\n2.0\n4\n62\n125\n1\n1\n3.13\n79\n\n\nSophomore\nF\nNo\n4.0\n5\n69\n140\n2\n3\n3.62\n98\n\n\nSophomore\nM\nNo\n14.0\n5\n73\n206\n1\n1\n2.00\n48\n\n\nFirstYear\nM\nNo\n7.0\n5\n76\n275\n1\n2\n3.60\n71\n\n\nSophomore\nM\nNo\n12.0\n8\n70\n142\n1\n2\n4.00\n51\n\n\nSophomore\nF\nNo\n14.0\n2\n67\n140\n6\n7\n3.10\n67\n\n\nSophomore\nM\nNo\n3.0\n10\n68\n145\n5\n6\n2.60\n66\n\n\nSophomore\nM\nNo\n5.0\n4\n72\n128\n1\n1\n3.70\n66\n\n\nFirstYear\nM\nNo\n15.0\n5\n74\n165\n1\n1\n3.57\n60\n\n\nSenior\nF\nNo\n5.0\n20\n62\n140\n1\n1\n2.90\n77\n\n\nSophomore\nF\nNo\n4.0\n14\n69\n130\n1\n2\n3.15\n80\n\n\nFirstYear\nM\nNo\n8.0\n2\n70\n170\n3\n2\n3.88\n70\n\n\nSophomore\nM\nNo\n14.0\n4\n69\n160\n2\n2\n3.50\n65\n\n\nSophomore\nM\nNo\n5.0\n8\n72\n165\n2\n2\n2.80\n57\n\n\n\nF\nNo\n12.0\n7\n78\n145\n1\n1\nNA\n37\n\n\nSophomore\nM\nNo\n15.0\n5\n67\n155\n1\n2\n2.90\n84\n\n\nSophomore\nM\nNo\n3.0\n3\n73\n155\n3\n2\n3.21\n56\n\n\nSophomore\nF\nNo\n12.0\n1\n63\n113\n1\n2\n3.50\n69\n\n\nSophomore\nM\nNo\n12.0\n5\n70\n155\n1\n2\n3.33\n62\n\n\nSophomore\nM\nNo\n6.0\n20\nNA\n173\n1\n1\n3.00\n79\n\n\nSophomore\nM\nNo\n2.0\n8\n65\n195\n2\n1\n3.50\n55\n\n\nSophomore\nF\nNo\n3.0\n3\n73\n120\n1\n1\n3.95\n89\n\n\nFirstYear\nM\nNo\n24.0\n6\n78\n225\n2\n1\n2.10\n78\n\n\nFirstYear\nF\nNo\n3.0\n1\n65\n160\n1\n2\n3.00\n83\n\n\nSophomore\nF\nNo\n6.0\n1\n63\n120\n2\n1\n3.00\n58\n\n\nSophomore\nF\nNo\n12.0\n10\n68\n138\n1\n2\n3.75\n77\n\n\nSophomore\nM\nNo\n18.0\n3\n72\n260\n2\n3\n2.50\n50\n\n\nSophomore\nM\nNo\n2.0\n7\n70\n150\n2\n3\n3.40\n87\n\n\nFirstYear\nF\nNo\n12.0\n3\n67\n135\n3\n4\n3.40\n74\n\n\nSophomore\nF\nNo\n5.0\n10\n72\n165\n1\n1\n3.14\n76\n\n\nFirstYear\nM\nNo\n3.0\n3\n68\n142\n3\n4\n2.60\n50\n\n\nSophomore\nM\nNo\n3.0\n3\n78\n210\n6\n5\n3.40\n70\n\n\nSophomore\nM\nNo\n21.0\n25\n69\n171\n1\n1\n2.70\n84\n\n\nSophomore\nF\nNo\n12.0\n2\n80\n150\n4\n1\n3.15\n68\n\n\nSophomore\nM\nNo\n3.0\n15\n71\n188\n3\n1\n2.20\n66\n\n\nSophomore\nM\nNo\n20.0\n6\n70\n195\n0\n1\n3.50\n76\n\n\nFirstYear\nM\nNo\n8.0\n13\n75\n230\n2\n1\n2.90\n65\n\n\nSophomore\nF\nNo\n2.0\n3\n64\n140\n2\n3\n2.50\n65\n\n\nSophomore\nM\nNo\n15.0\n2\n78\n200\n1\n1\n3.50\n68\n\n\nSenior\nF\nNo\n6.0\n5\n68\n140\n0\n1\n3.60\n78\n\n\nFirstYear\nF\nNo\n2.0\n1\n69\n180\n5\n3\n3.10\n74\n\n\nSophomore\nF\nNo\n1.0\n4\n63\n160\n1\n1\n3.00\n76\n\n\nSophomore\nF\nNo\n13.0\n5\n64\n135\n3\n2\n3.00\n79\n\n\nSophomore\nF\nNo\n12.0\n10\n63\n140\n2\n3\n3.80\n81\n\n\nSophomore\nF\nNo\n10.0\n4\n72\n155\n2\n1\n3.15\n56\n\n\nSophomore\nM\nNo\n10.0\n3\n63\n235\n5\n3\n2.75\n48\n\n\nFirstYear\nF\nNo\n10.0\n2\n63\n140\n3\n2\n2.80\n68\n\n\nSophomore\nF\nNo\n3.0\n4\n68\n130\n2\n3\n3.00\n62\n\n\nJunior\nF\nNo\n2.0\n3\n67\n125\n5\n4\n3.10\n70\n\n\nFirstYear\nM\nNo\n10.0\n3\n71\n222\n1\n1\n2.27\n46\n\n\nFirstYear\nF\nNo\n4.0\n3\n65\n128\n3\n1\n2.80\n88\n\n\nFirstYear\nM\nNo\n8.0\n2\n72\n183\n2\n2\n3.02\n68\n\n\nJunior\nM\nNo\n18.0\n20\n75\n175\n0\n1\n2.93\n74\n\n\nFirstYear\nF\nNo\n5.0\n3\n59\n125\n1\n1\n3.20\n88\n\n\nSophomore\nF\nNo\n4.0\n4\n69\n156\n1\n1\n3.00\n67\n\n\nFirstYear\nF\nNo\n20.0\n3\n63\n145\n3\n4\n3.00\n61\n\n\nSophomore\nM\nNo\n14.0\n4\n74\n195\n4\n2\n2.70\n62\n\n\nSophomore\nM\nNo\n8.0\n13\n70\n185\n2\n1\n3.20\n69\n\n\nFirstYear\nF\nNo\n4.0\n5\n64\n150\n1\n1\n2.90\n59\n\n\nSophomore\nF\nNo\n5.0\n5\n67\n140\n0\nNA\n3.00\n79\n\n\nFirstYear\nM\nNo\n14.0\n4\n66\n150\n1\n1\n2.72\n56\n\n\nFirstYear\nF\nNo\n4.0\n3\n67\n150\n0\n1\n3.30\n85\n\n\nSophomore\nM\nNo\n4.0\n10\n73\n220\n1\n2\nNA\n72\n\n\nSenior\nM\nNo\n15.0\n10\n71\n195\n2\n3\n2.22\n69\n\n\nSophomore\nF\nNo\n12.0\n7\n66\n140\n1\n2\n3.26\n61\n\n\nFirstYear\nF\nNo\n10.0\n10\n68\n135\n2\n3\n3.50\n95\n\n\nSophomore\nF\nNo\n6.0\n3\n67\n138\n1\n1\n3.10\n58\n\n\nSenior\nF\nNo\n12.0\n5\n69\n170\n2\n3\n3.30\n57\n\n\nSophomore\nF\nNo\n10.0\n2\n66\n145\n1\n1\n3.29\n80\n\n\nFirstYear\nM\nNo\n14.0\n5\n68\n135\n2\n3\nNA\n60\n\n\nFirstYear\nF\nNo\n5.0\n4\n68\n140\n0\n1\n3.69\n69\n\n\nSophomore\nM\nNo\n18.0\n5\n71\n155\n2\n2\n2.65\n73\n\n\nSenior\nM\nNo\n10.0\n10\n70\n155\n1\n2\n3.25\n62\n\n\nSophomore\nM\nNo\n8.0\n2\n66\n155\n1\n1\n2.80\n64\n\n\nSophomore\nF\nNo\n8.0\n10\n65\n135\n2\n3\n3.36\n86\n\n\nJunior\nM\nNo\n3.0\n15\n70\n165\n1\n1\n2.97\n73\n\n\nFirstYear\nM\nNo\n5.0\n20\n71\n160\n2\n1\n3.31\n71\n\n\nSophomore\nM\nNo\n4.0\n21\n71\n175\n1\n1\n3.05\n72\n\n\nSophomore\nM\nNo\n8.0\n10\n70\n183\n3\n2\n2.20\n84\n\n\nSophomore\nF\nNo\n3.0\n10\n65\n140\n2\n3\n3.30\n120\n\n\nSophomore\nF\nNo\n12.0\n4\n67\n140\n1\n1\n3.45\n77\n\n\nJunior\nF\nNo\n5.0\n10\n61\n110\n2\n2\n3.83\n80\n\n\nSophomore\nF\nNo\n5.0\n3\n68\n125\n0\n1\n3.00\n80\n\n\nSenior\nF\nNo\n15.0\n2\n65\n125\n2\n2\n3.35\n54\n\n\nFirstYear\nM\nNo\n10.0\n7\n70\n180\n2\n3\n2.40\n54\n\n\nSophomore\nM\nNo\n10.0\n10\n72\n195\n2\n3\n3.10\n78\n\n\nSophomore\nF\nNo\n10.0\n6\n66\n128\n3\n3\n3.40\n72\n\n\nFirstYear\nM\nNo\n14.0\n2\n71\n172\n1\n1\n2.82\n78\n\n\nSophomore\nF\nNo\n6.0\n4\n64\n150\n1\n1\n2.90\n69\n\n\nSophomore\nM\nNo\n4.0\n27\n73\n188\n1\n1\n3.40\n80\n\n\nSophomore\nF\nNo\n14.0\n2\n60\n110\n2\n1\n3.20\n76\n\n\nSophomore\nF\nNo\n5.0\n15\n64\n125\n1\n1\n3.20\n74\n\n\nSophomore\nF\nNo\n16.0\n10\n65\n135\n3\n1\n3.80\n70\n\n\nFirstYear\nF\nNo\n14.0\n3\n65\n130\n2\n2\n3.57\n72\n\n\nSophomore\nM\nNo\n10.0\n10\n73\n230\n2\n2\n3.33\n60\n\n\nSophomore\nM\nNo\n11.0\n10\n69\n198\n1\n2\n2.90\n71\n\n\nSophomore\nF\nNo\n4.0\n10\n66\n127\n1\n2\n3.20\n70\n\n\nSophomore\nM\nNo\n12.0\n5\n66\n150\n1\n2\n3.10\n53\n\n\nSophomore\nM\nNo\n5.0\n4\n73\n175\n3\n1\n3.25\n70\n\n\nJunior\nM\nNo\n8.0\n14\n71\n160\n3\n4\n3.40\n75\n\n\nJunior\nF\nNo\n8.0\n6\n65\n140\n2\n3\n3.80\n84\n\n\nSophomore\nM\nNo\n3.0\n5\n75\n200\n1\n1\n3.38\n66\n\n\nSophomore\nF\nNo\n8.0\n2\n63\n130\n1\n1\n3.88\n72\n\n\nSophomore\nM\nNo\n20.0\n14\n74\n210\n3\n3\n2.75\n70\n\n\nSophomore\nM\nNo\n10.0\n5\n70\n210\n2\n2\n2.90\n49\n\n\nSophomore\nF\nNo\n3.0\n3\n63\n145\n4\n5\n3.60\n81\n\n\nSophomore\nM\nNo\n4.0\n6\n75\n156\n3\n1\n2.80\n77\n\n\nFirstYear\nM\nNo\n8.0\n10\n71\n207\n0\n1\n2.20\n72\n\n\nFirstYear\nF\nNo\n15.0\n5\n68\n150\n1\n2\nNA\n38\n\n\nSophomore\nF\nNo\n14.0\n10\n68\n137\n2\n2\n3.30\n60\n\n\nFirstYear\nM\nNo\n14.0\n2\n72\n153\n2\n3\n2.85\n64\n\n\nJunior\nF\nNo\n12.0\n5\n63\n175\n2\n3\n3.37\n65\n\n\nSophomore\nF\nNo\n6.0\n2\n65\n136\n3\n1\n3.50\n72\n\n\nSophomore\nF\nNo\n3.0\n10\n65\n104\n2\n2\n3.55\n54\n\n\nFirstYear\nF\nNo\n12.0\n3\n67\n122\n3\n4\n3.20\n82\n\n\nSophomore\nM\nNo\n5.0\n40\n72\n192\n1\n1\n2.47\n82\n\n\nFirstYear\nM\nNo\n8.0\n10\n71\n218\n1\n2\n2.72\n62\n\n\nSophomore\nM\nNo\n1.0\n14\n68\n170\n4\n5\n3.40\n52\n\n\nFirstYear\nM\nNo\n10.0\n4\n72\n220\n2\n2\nNA\n66\n\n\nSophomore\nF\nNo\n7.0\n2\n64\n150\n1\n1\n3.40\n55\n\n\nSenior\nM\nNo\n5.0\n7\n71\n135\n4\n3\n3.10\n63\n\n\nSenior\nF\nNo\n10.0\n2\n62\n155\n1\n1\n3.10\n78\n\n\nSophomore\nF\nNo\n12.0\n5\n65\n135\n1\n1\n2.94\n65\n\n\nSophomore\nM\nNo\n15.0\n15\n68\n140\n1\n2\n3.00\n64\n\n\nFirstYear\nF\nNo\n10.0\n5\n67\n120\n1\n1\nNA\n70\n\n\nSophomore\nF\nNo\n7.0\n12\n68\n135\n3\n1\n3.60\n70\n\n\nSophomore\nF\nNo\nNA\n4\n64\n135\n1\n1\n3.60\n65\n\n\nSophomore\nM\nNo\n15.0\n0\n72\n165\n2\n1\n3.50\n71\n\n\nJunior\nM\nNo\n10.0\n15\n71\n180\n1\n2\n3.40\n54\n\n\nSophomore\nM\nNo\n15.0\n0\n72\n165\n2\n1\n3.50\n71\n\n\nSophomore\nM\nNo\n12.0\n6\n72\n175\n2\n2\n3.00\n54\n\n\nSophomore\nM\nNo\n10.0\n5\n71\n200\n1\n2\n2.75\n70\n\n\nSophomore\nM\nNo\n12.0\n10\n71\n138\n0\n1\n3.56\n65\n\n\nSenior\nM\nNo\n5.0\n3\n71\n265\n1\n1\n2.70\n82\n\n\nSophomore\nF\nNo\n14.0\n16\n61\n105\n1\n2\n3.68\n63\n\n\nSophomore\nF\nNo\n3.0\n9\n68\n130\n3\n3\n3.50\n71\n\n\nSophomore\nM\nNo\n12.0\n2\n70\n165\n1\n1\n3.50\n75\n\n\nSophomore\nF\nNo\n15.0\n5\n67\n145\n1\n2\n3.40\n60\n\n\nFirstYear\nF\nNo\n3.0\n6\n64\n138\n1\n1\n2.60\n54\n\n\nSophomore\nF\nNo\n25.0\n12\n71\n193\n2\n2\n3.25\n68\n\n\nSophomore\nM\nNo\n5.0\n1\n71\n170\n1\n1\n3.30\n70\n\n\nSophomore\nM\nNo\n6.0\n0\n69\n155\n1\n1\n3.20\n90\n\n\nSophomore\nM\nNo\n27.0\n2\n70\n155\n1\n1\n2.90\n72\n\n\nJunior\nF\nNo\n8.0\n10\n65\n140\n2\n1\n3.85\n41\n\n\nSophomore\nF\nNo\n3.0\n1\n65\n130\n1\n1\n3.40\n80\n\n\nSophomore\nM\nNo\n17.0\n14\n72\n180\n3\n3\n3.40\n68\n\n\nFirstYear\nM\nNo\n40.0\n2\n67\n140\n2\n2\nNA\n64\n\n\nSophomore\nM\nNo\n5.0\n10\n74\n210\n1\n2\n2.70\n78\n\n\nSophomore\nM\nNo\n0.0\n7\nNA\n150\n0\n1\n3.81\n65\n\n\nSophomore\nF\nNo\n27.0\n2\n62\n115\n1\n2\n3.40\n64\n\n\nSophomore\nM\nNo\n3.0\n5\n75\n225\n3\n1\n3.23\n78\n\n\nFirstYear\nM\nNo\n3.0\n7\n67\n170\n2\n3\n3.10\n42\n\n\nSophomore\nF\nNo\n11.0\n20\n63\n120\n0\n1\n2.89\n60\n\n\nSenior\nM\nNo\n2.0\n4\n71\n170\n1\n1\n2.81\n59\n\n\nSophomore\nF\nNo\n9.0\n1\n63\n130\n2\n3\n3.00\n54\n\n\nFirstYear\nM\nNo\n12.0\n8\n70\n182\n1\n2\n3.77\n70\n\n\nSophomore\nM\nNo\n15.0\n2\n67\n138\n1\n2\n3.30\n52\n\n\nSophomore\nM\nNo\n2.0\n5\n74\n180\n2\n1\n3.00\n88\n\n\nSophomore\nM\nNo\n20.0\n6\n69\n230\n0\n1\n2.90\n60\n\n\nJunior\nM\nNo\n12.0\n5\n70\n222\n2\n1\n3.50\n66\n\n\nFirstYear\nM\nNo\n5.0\n2\n70\n145\n4\n4\n3.60\n55\n\n\nSophomore\nM\nNo\n10.0\n4\n70\n150\n1\n1\n3.70\n74\n\n\nSenior\nM\nNo\n2.0\n2\n68\n190\n0\n1\n3.20\n59\n\n\nSophomore\nM\nNo\n12.0\n20\n76\n195\n3\n1\n2.87\n84\n\n\nSophomore\nF\nNo\n5.0\n2\n59\n115\n1\n2\n3.30\n68\n\n\nJunior\nF\nNo\n3.0\n1\n66\n140\n1\n2\n3.30\n74\n\n\nSophomore\nM\nNo\n12.0\n10\n68\n155\n1\n1\n3.45\n58\n\n\nSophomore\nM\nNo\n8.0\n3\n72\n150\n2\n1\n3.10\n62\n\n\nSophomore\nM\nNo\n8.0\n4\n69\n155\n2\n1\n3.71\n84\n\n\nSophomore\nM\nNo\n5.0\n3\nNA\n130\n2\n1\n3.30\n72\n\n\nFirstYear\nM\nNo\n6.0\n14\n75\n210\n3\n2\n3.30\n52\n\n\n\nF\nNo\n8.0\n10\n63\n105\n3\n1\nNA\n80\n\n\nJunior\nM\nNo\n10.0\n10\n71\n192\n1\n1\n3.73\n68\n\n\nFirstYear\nF\nNo\n18.0\n3\n72\n220\n3\n4\n3.13\n71\n\n\nJunior\nF\nNo\n12.0\n0\n64\n134\n1\n2\n3.89\n55\n\n\nSophomore\nM\nNo\n10.0\n5\n68\n160\n1\n1\n3.05\n68\n\n\nJunior\nM\nNo\n10.0\n5\n68\n135\n1\n1\n3.20\n61\n\n\nSophomore\nM\nNo\n5.0\n2\n67\n140\n1\n1\n3.25\n80\n\n\nSophomore\nF\nNo\n7.0\n2\n66\n135\n0\n1\n2.90\n66\n\n\nFirstYear\nM\nNo\n3.0\n5\n74\n145\n1\n2\n3.00\n70\n\n\nFirstYear\nF\nNo\n7.0\n4\n64\n140\n2\n1\n3.50\n78\n\n\nSophomore\nF\nNo\n3.0\n2\nNA\nNA\n2\n2\n3.50\n88\n\n\nSophomore\nF\nNo\n4.0\n3\n65\n138\n2\n2\n3.60\n72\n\n\nFirstYear\nF\nNo\n8.0\n4\n64\nNA\n2\n2\n3.40\n65\n\n\nSophomore\nF\nNo\n7.0\n5\n64\n130\n2\n2\n3.25\n63\n\n\nSenior\nM\nNo\n7.0\n9\n72\n210\n2\n2\n2.70\n70\n\n\nSenior\nM\nNo\n3.0\n1\n69\n233\n1\n1\n3.78\n72\n\n\nFirstYear\nF\nNo\n7.0\n7\n70\n180\n6\n7\n4.00\n63\n\n\nFirstYear\nM\nNo\n14.0\n6\n67\n185\n1\n1\n3.00\n68\n\n\nSophomore\nM\nNo\n5.0\n6\n76\n189\n3\n2\n3.30\n64\n\n\nFirstYear\nF\nNo\n14.0\n5\n66\n127\n1\n1\n2.80\n64\n\n\nSenior\nM\nNo\n5.0\n4\n63\n135\n1\n1\n2.50\n60\n\n\nSophomore\nF\nNo\n5.0\n5\n66\n140\n0\n1\n3.50\n68\n\n\nSophomore\nF\nNo\n2.0\n20\n68\n162\n2\n1\n2.80\n70\n\n\nSophomore\nF\nNo\n1.0\n3\n67\n215\n0\n1\n3.40\n63\n\n\nSenior\nM\nNo\n15.0\n5\n73\n200\n2\n1\n3.00\n57\n\n\nSophomore\nF\nNo\n5.0\n1\n62\n120\n1\n1\n3.27\n84\n\n\nFirstYear\nM\nNo\n5.0\n2\n67\n165\n3\n4\n3.50\n74\n\n\nFirstYear\nM\nNo\n15.0\n14\n71\n175\n2\n3\n3.00\n61\n\n\nSophomore\nF\nNo\n5.0\n3\n66\n160\n2\n1\n3.60\n78\n\n\nSophomore\nM\nNo\n20.0\n0\n68\n145\n1\n2\n3.25\n65\n\n\nJunior\nF\nNo\n3.0\n5\n60\n180\n3\n4\n3.00\n68\n\n\nFirstYear\nF\nNo\n7.0\n0\n71\n170\n1\n1\n2.75\n76\n\n\nSophomore\nM\nNo\n20.0\n10\n75\n235\n2\n1\n2.90\n54\n\n\nSophomore\nF\nNo\n10.0\n10\n65\n155\n1\n1\n3.00\n56\n\n\nSenior\nM\nNo\n6.0\n15\n65\n140\n3\n3\n3.00\n88\n\n\nSophomore\nF\nNo\n6.0\n1\n66\n145\n2\n2\n2.90\n77\n\n\nFirstYear\nM\nNo\n10.0\n3\n71\n175\n2\n2\n3.36\n52\n\n\nSophomore\nM\nNo\n9.0\n6\n76\n210\n2\n2\n3.25\n62\n\n\nFirstYear\nF\nNo\n1.5\n20\n67\n130\n1\n1\n3.50\n80\n\n\nSophomore\nM\nNo\n20.0\n28\n72\n195\n1\n1\n2.76\n60\n\n\nSophomore\nM\nNo\n8.0\n3\n67\n165\n1\n2\nNA\n67\n\n\nSophomore\nM\nNo\n21.0\n1\n73\n180\n6\n3\n2.75\n51\n\n\nSophomore\nF\nNo\n10.0\n5\n60\n145\n1\n2\n3.25\n81\n\n\nSophomore\nM\nNo\n8.0\n12\n70\n163\n2\n1\n3.00\n62\n\n\nJunior\nM\nNo\n10.0\n1\n75\n160\n1\n2\n2.80\n84\n\n\nJunior\nF\nNo\n18.0\n7\n67\n150\n1\n1\n3.40\n75\n\n\nSophomore\nM\nNo\n15.0\n6\n71\n170\n3\n1\n3.25\n60\n\n\nSophomore\nF\nNo\n8.0\n5\nNA\n110\n3\n3\n3.50\n76\n\n\nSenior\nM\nNo\n6.0\n2\n66\n170\n1\n2\n3.05\n65\n\n\nSophomore\nM\nNo\n12.0\n3\n69\n145\n2\n2\n3.18\n65\n\n\nFirstYear\nF\nNo\n10.0\n4\n69\n160\n1\n2\n3.00\n64\n\n\nJunior\nF\nNo\n7.0\n4\n63\n130\n1\n1\n2.23\n75\n\n\nSophomore\nF\nNo\n5.0\n5\n65\n155\n1\n1\n3.40\n93\n\n\nFirstYear\nF\nNo\n6.0\n4\n65\nNA\n1\n2\n3.30\n75\n\n\nSenior\nM\nNo\n5.0\n5\n72\n160\n2\n3\n3.43\n82\n\n\nSophomore\nF\nNo\n5.0\n5\n66\n151\n1\n1\n3.88\n80\n\n\nSophomore\nM\nNo\n30.0\n10\n74\n180\n1\n1\n3.45\n69\n\n\nSenior\nF\nNo\n5.0\n4\n64\n130\n2\n3\n3.00\n85\n\n\nJunior\nM\nYes\n12.0\n5\n75\n185\n1\n2\n3.00\n76\n\n\nSenior\nM\nYes\n0.0\n1\n73\n198\n1\n1\n3.18\n76\n\n\nFirstYear\nM\nYes\n12.0\n5\n72\n175\n2\n3\n2.20\n65\n\n\nSenior\nF\nYes\n0.0\n14\n67\n123\n1\n1\n3.29\n67\n\n\nJunior\nF\nYes\n15.0\n10\n64\n145\n1\n1\n3.50\n64\n\n\nFirstYear\nM\nYes\n18.0\n15\n67\n190\n0\n1\n2.80\n71\n\n\nSophomore\nF\nYes\n12.0\n5\n65\n130\n2\n3\n2.90\n65\n\n\nSophomore\nM\nYes\n2.0\n3\n70\n185\n4\n3\n3.50\n83\n\n\nFirstYear\nM\nYes\n12.0\n20\n68\n165\n1\n1\n2.50\n65\n\n\nSophomore\nM\nYes\n3.0\n5\n70\n165\n3\n2\n3.25\n77\n\n\nJunior\nM\nYes\n3.0\n3\n67\n150\n2\n2\n2.90\n66\n\n\nFirstYear\nM\nYes\n4.0\n3\n72\n160\n1\n2\n3.66\n62\n\n\nJunior\nF\nYes\n12.0\n2\n64\n142\n3\n3\n3.01\n58\n\n\nFirstYear\nM\nYes\n25.0\n5\n72\n165\n1\n1\n2.25\n48\n\n\nJunior\nM\nYes\n3.0\n4\n75\n175\n0\n1\n3.20\n61\n\n\nSophomore\nM\nYes\n6.0\n6\n69\n175\n2\n1\n3.35\n50\n\n\nSophomore\nF\nYes\n7.0\n8\n68\n190\n1\n1\n3.00\n72\n\n\nSophomore\nM\nYes\n7.0\n2\n72\n180\n2\n2\n3.00\n74\n\n\nSophomore\nM\nYes\n6.0\n2\n74\n185\n1\n2\n3.48\n80\n\n\nSophomore\nM\nYes\n6.0\n2\nNA\nNA\n1\n1\n2.88\n90\n\n\nSophomore\nF\nYes\n13.0\n4\n64\n135\n3\n2\n2.60\n72\n\n\nSophomore\nM\nYes\n25.0\n8\n73\n195\n1\n1\n2.75\n64\n\n\nSenior\nM\nYes\n8.0\n12\n71\n175\n0\n1\n3.30\n72\n\n\nSophomore\nM\nYes\n5.0\n5\n70\n165\n1\n1\n3.25\n70\n\n\nFirstYear\nM\nYes\n11.0\n6\n68\n135\n1\n1\n3.30\n84\n\n\nSophomore\nF\nYes\n18.0\n5\n69\n140\n1\n1\n3.20\n87\n\n\nSophomore\nM\nYes\n10.0\nNA\nNA\n182\n2\n1\n2.60\n60\n\n\nFirstYear\nM\nYes\n6.0\n14\n72\n155\n1\n2\n3.00\n60\n\n\nFirstYear\nF\nYes\n2.0\n1\n68\n180\n2\n3\n3.25\n80\n\n\nSenior\nM\nYes\n5.0\n25\n69\n170\n1\n1\n3.30\n70\n\n\nSophomore\nF\nYes\n5.0\n3\n66\n135\n3\n2\n3.25\n78\n\n\nFirstYear\nM\nYes\n6.0\n25\n72\n165\n2\n1\n2.83\n75\n\n\nSophomore\nF\nYes\n10.0\n10\n65\n137\n0\n1\n3.30\n42\n\n\nSophomore\nM\nYes\n4.0\n1\n70\n147\n2\n2\n3.60\n80\n\n\nSenior\nF\nYes\n5.0\n4\n66\n150\n1\n2\n3.70\n72\n\n\nJunior\nF\nYes\n17.0\n2\n67\n155\n2\n1\n2.83\n96\n\n\nSophomore\nM\nYes\n7.0\n10\n71\n160\n2\n3\n3.30\n95\n\n\nSophomore\nF\nYes\n2.0\n0\n83\n130\n1\n1\n3.44\n80\n\n\nSophomore\nM\nYes\n8.0\n10\n61\n180\n2\n1\n3.00\n74\n\n\nSophomore\nF\nYes\n1.0\n1\n65\n150\n2\n2\n3.27\n78\n\n\nFirstYear\nM\nYes\n14.0\n5\n77\n205\n2\n2\n2.30\n72\n\n\nSophomore\nF\nYes\n12.0\n5\n60\n115\n0\n1\n2.60\n91"
-  },
-  {
-    "objectID": "Day3.html#distribution",
-    "href": "Day3.html#distribution",
-    "title": "Day 3",
-    "section": "Distribution",
-    "text": "Distribution\n\nIn the given dataset, there are multiple variables (such as Gender, Smoke, Exercise, Height, Weight, etc.) for different students across various academic years.\n\nKnowing the distribution of each variable can help us identify relationships, trends, and potential anomalies in the data."
-  },
-  {
-    "objectID": "Day3.html#distribution-1",
-    "href": "Day3.html#distribution-1",
-    "title": "Day 3",
-    "section": "Distribution",
-    "text": "Distribution\n\n“The distribution of the variable Y” describes its center, variability, and shape using both numbers and graphics."
-  },
-  {
-    "objectID": "Day3.html#center-mean-or-average",
-    "href": "Day3.html#center-mean-or-average",
-    "title": "Day 3",
-    "section": "Center: Mean or Average",
-    "text": "Center: Mean or Average\n\n\nMean: Average value in a sample or population.\n\nSample mean: \\(\\bar{y} = \\dfrac{\\sum_{i=1}^n y_i}{n}\\)\nPopulation mean: \\(\\mu\\)\n\n\n\n\nmean(survey$Pulse)\n\n[1] 69.57459\n\n\n\nThe mean pulse rate for this sample of students is \\(\\bar{y} = 69.6\\) beats per minute."
-  },
-  {
-    "objectID": "Day3.html#center-median",
-    "href": "Day3.html#center-median",
-    "title": "Day 3",
-    "section": "Center: Median",
-    "text": "Center: Median\n\n\nMedian: The middle value when the data are ordered.\n\nSample median: \\(m\\)\nPopulation median: \\(M\\)\n\n\n\n\nmedian(survey$Pulse)\n\n[1] 70\n\n\n\nThe median pulse rate for this sample of students is \\(m = 70\\) beats per minute."
-  },
-  {
-    "objectID": "Day3.html#variability-standard-deviation",
-    "href": "Day3.html#variability-standard-deviation",
-    "title": "Day 3",
-    "section": "Variability: Standard Deviation",
-    "text": "Variability: Standard Deviation\n\n\n\nStandard Deviation (SD): Average deviation from the center in a sample or population.\n\nSample SD: \\(s = \\sqrt{ \\dfrac{\\sum_{i=1}^n (y_i - \\overline{y})^2}{n-1}}\\)\nPopulation SD: \\(\\sigma\\)\n\n\n\n\nsd(survey$Pulse)\n\n[1] 12.20514\n\n\n\nThe SD of pulse rates for this sample of students is \\(s = 12.2\\) beats per minute. The “average” deviation of individual pulse rates around the mean value is about 12.2 beats per minute."
-  },
-  {
-    "objectID": "Day6.html#key-probability-concepts-recap",
-    "href": "Day6.html#key-probability-concepts-recap",
-    "title": "Day 6",
-    "section": "Key Probability Concepts Recap",
-    "text": "Key Probability Concepts Recap\n\n\nProbability is defined as the long-run proportion of times an event occurs after many repeated experiments.\n\nEvents and Sample Spaces\n\nAn event is a specific outcome or a set of outcomes of a random experiment.\nThe sample space (S) is the set of all possible outcomes of an experiment.\n\nUnion and Intersection Rules\n\nUnion of events (A \\(\\cup\\) B): Event occurs if either event A or event B (or both) occur.\nIntersection of events (A \\(\\cap\\) B): Event occurs only if both event A and event B occur simultaneously."
-  },
-  {
-    "objectID": "Day6.html#complementary-events",
-    "href": "Day6.html#complementary-events",
-    "title": "Day 6",
-    "section": "Complementary Events",
-    "text": "Complementary Events\n\n\nThe complement of an event \\(A\\), denoted as \\(A^c\\), includes all sample points not in \\(A\\). It represents the event that \\(A\\) does NOT occur.\n\nRule of Complements\n\nThe probabilities of an event and its complement always sum to 1: \\[P(A)+P(A^c)=1\\] This implies: \\[P(A^c)=1-P(A)\\]"
-  },
-  {
-    "objectID": "Day6.html#calculating-pa-for-coin-tosses",
-    "href": "Day6.html#calculating-pa-for-coin-tosses",
-    "title": "Day 6",
-    "section": "Calculating \\(P(A)\\) for Coin Tosses",
-    "text": "Calculating \\(P(A)\\) for Coin Tosses\n\n\n\nExperiment: Tossing Coins\n\nEvent \\(A\\): Observing at least one head.\n\nTwo Coin Tosses\n\nPossible outcomes: \\(HT\\), \\(TH\\), \\(HH\\), \\(TT\\).\n\\(A = \\{HT, TH, HH\\}\\): \\[P(A) = P(HT) + P(TH) + P(HH) = \\frac{3}{4}\\]\nOr by complement, \\(A^c = \\{TT\\}\\): \\[P(A) = 1 - P(A^c) = 1 - \\frac{1}{4} = \\frac{3}{4}\\]"
-  },
-  {
-    "objectID": "Day6.html#calculating-pa-for-coin-tosses-continued",
-    "href": "Day6.html#calculating-pa-for-coin-tosses-continued",
-    "title": "Day 6",
-    "section": "Calculating \\(P(A)\\) for Coin Tosses (Continued)",
-    "text": "Calculating \\(P(A)\\) for Coin Tosses (Continued)\n\n\n\nExperiment: Tossing Coins\n\nEvent \\(A\\): Observing at least one head. \\[P(A) = 1 - P(A^c) = 1 - \\frac{1}{4} = \\frac{3}{4}\\]\n\nTen Coin Tosses\n\nFor \\(n = 10\\), \\(A\\) includes all outcomes except all tails: \\[P(A) = 1 - P(A^c) = 1 - \\left(\\frac{1}{2}\\right)^{10}\\] Simplifying, we find: \\[P(A) = 1 - \\frac{1}{1024}\\]"
-  },
-  {
-    "objectID": "Day6.html#additive-rule",
-    "href": "Day6.html#additive-rule",
-    "title": "Day 6",
-    "section": "Additive Rule",
-    "text": "Additive Rule\n\n\n\nAdditive Rule:\n\nFor any two events \\(A\\) and \\(B\\), the probability of their union is: \\[P(A \\cup B)=P(A)+P(B)-P(A \\cap B)\\]\nThis formula accounts for overlapping outcomes, ensuring they are not double-counted."
-  },
-  {
-    "objectID": "Day6.html#hospital-admission-probabilities",
-    "href": "Day6.html#hospital-admission-probabilities",
-    "title": "Day 6",
-    "section": "Hospital Admission Probabilities",
-    "text": "Hospital Admission Probabilities\n\n\n\n\n\nPatient Admissions:\n\n\\(A\\): Admitted for surgical treatment.\n\\(B\\): Admitted for obstetrics.\nProbabilities:\n\n\\(P(A) = 12\\%\\)\n\\(P(B) = 16\\%\\)\n\\(P(A \\cap B) = 2\\%\\)\n\n\n\n\n\n\nCalculating \\(P(A \\cup B)\\):\n\nUsing the formula: \\[P(A \\cup B) = P(A) + P(B) - P(A \\cap B)\\]\nCalculation: \\[P(A \\cup B) = 12\\% + 16\\% - 2\\% = 26\\%\\]\n\n\n\n\n\nThe probability that a new patient is admitted for surgery, obstetrics, or both is 26%."
-  },
-  {
-    "objectID": "Day6.html#mutually-exclusive-events",
-    "href": "Day6.html#mutually-exclusive-events",
-    "title": "Day 6",
-    "section": "Mutually Exclusive Events",
-    "text": "Mutually Exclusive Events\n\n\n\nEvents \\(A\\) and \\(B\\) are mutually exclusive if:\n\n\\(A \\cap B = \\{\\} = \\emptyset \\qquad \\qquad\\) (Indicates no overlap in outcomes between \\(A\\) and \\(B\\).)\n\\(P(A \\cap B) = 0\\)\n\nProbability of Union for mutually exclusive events \\(A\\) and \\(B\\):\n\n\\(P(A \\cup B) = P(A) + P(B)\\)"
-  },
-  {
-    "objectID": "Day6.html#mutually-exclusive-events-example",
-    "href": "Day6.html#mutually-exclusive-events-example",
-    "title": "Day 6",
-    "section": "Mutually Exclusive Events: Example",
-    "text": "Mutually Exclusive Events: Example\nFind the probability of observing at least one head when tossing two balanced coins?\n\n\n\n\n\nDefining Events\n\n\\(A\\): Observing at least one head.\n\\(B\\): Observing exactly one head = \\(\\{HT, TH\\}\\)\n\\(C\\): Observing exactly two heads = \\(\\{HH\\}\\)\n\\(A = B \\cup C\\)\n\\(B \\cap C = \\emptyset\\) (B and C are mutually exclusive).\n\n\n\n\n\nCalculating Probability\n\nSince \\(B\\) and \\(C\\) are mutually exclusive:\n\n\\(P(A) = P(B \\cup C) = P(B) + P(C)\\)\n\nCalculation:\n\n\\(P(A) = \\frac{2}{4} + \\frac{1}{4} = \\frac{3}{4}\\)"
-  },
-  {
-    "objectID": "Day6.html#conditional-probability",
-    "href": "Day6.html#conditional-probability",
-    "title": "Day 6",
-    "section": "Conditional Probability",
-    "text": "Conditional Probability\n\n\n\nUnconditional vs. Conditional Probability\n\nUnconditional probability refers to the likelihood of an event without any prior conditions. For example, observing an even number on a fair die (\\(P(A) = \\frac{1}{2}\\)).\nConditional probability adjusts probabilities based on additional known conditions.\n\nFormula for Conditional Probability: \\[P(A \\mid B) = \\frac{P(A \\cap B)}{P(B)}\\], assuming \\(P(B) \\neq 0\\)."
-  },
-  {
-    "objectID": "Day6.html#conditional-probability-in-dice-throws",
-    "href": "Day6.html#conditional-probability-in-dice-throws",
-    "title": "Day 6",
-    "section": "Conditional Probability in Dice Throws",
-    "text": "Conditional Probability in Dice Throws\n\n\n\nConsider the event \\(A\\) (observing an even number) and \\(B\\) (result less than or equal to \\(3\\)) on a die throw.\nUnconditional sample space: \\(\\{1, 2, 3, 4, 5, 6\\}\\)\nConditioned on \\(B\\), sample space reduces to: \\(\\{1, 2, 3\\}\\)\nIntersection of \\(A\\) and \\(B\\): \\(A \\cap B = \\{2\\}\\)\nProbability of \\(A\\) given \\(B\\): \\[P(A \\mid B) = \\frac{P(A \\cap B)}{P(B)} = \\frac{\\frac{1}{6}}{\\frac{1}{2}} = \\frac{1}{3}\\]\nKey Takeaway: Conditional probability reflects how probabilities change when the available information restricts the sample space."
-  },
-  {
-    "objectID": "Day6.html#exercise-ethical-dilemma-in-business",
-    "href": "Day6.html#exercise-ethical-dilemma-in-business",
-    "title": "Day 6",
-    "section": "Exercise: Ethical Dilemma in Business",
-    "text": "Exercise: Ethical Dilemma in Business\n\n\nTo develop programs for business travelers staying at convention hotels, Hyatt Hotels Corp. commissioned a study of executives who play golf. The study revealed that \\(55 \\%\\) of the executives admitted that they had cheated at golf. Also, \\(20 \\%\\) of the executives admitted that they had cheated at golf, and had lied in business. Given that an executive had cheated at golf, what is the probability that the executive also had lied in business?"
-  },
-  {
-    "objectID": "Day6.html#exercise-cigarette-smoking-cancer",
-    "href": "Day6.html#exercise-cigarette-smoking-cancer",
-    "title": "Day 6",
-    "section": "Exercise: Cigarette Smoking \\(\\&\\) Cancer",
-    "text": "Exercise: Cigarette Smoking \\(\\&\\) Cancer\n\n\nMany medical researchers have conducted experiments to examine the relationship between cigarette smoking and cancer. Consider an individual randomly selected from the adult male population. Let \\(A\\) represent the event that the individual smokes, and let \\(A^c\\) denote the complement of \\(A\\) (the event that the individual does not smoke). Similarly, let \\(B\\) represent the event that the individual develops cancer, and let \\(B^c\\) be the complement of that event. Then the four sample points associated with the experiment are shown in the following figure, and their probabilities for a certain section of the United States are given in the following table. Use these sample point probabilities to examine the relationship between smoking and cancer.\n\n\n\n\n\n\n\nSample Points\n\n\n\n\n\n\n\nProbabilities"
-  },
-  {
-    "objectID": "Day6.html#exercise-cigarette-smoking-cancer-1",
-    "href": "Day6.html#exercise-cigarette-smoking-cancer-1",
-    "title": "Day 6",
-    "section": "Exercise: Cigarette Smoking \\(\\&\\) Cancer",
-    "text": "Exercise: Cigarette Smoking \\(\\&\\) Cancer\n\n\nGiven a person is a smoker, what is the probability of having cancer?\n\n\n\nGiven a person is a smoker, what is the probability of not having cancer?\n\n\n\nGiven a person is not a smoker, what is the probability of having cancer?\n\n\n\nGiven a person is not a smoker, what is the probability of not having cancer?"
-  },
-  {
-    "objectID": "Day5.html#introduction-to-probability",
-    "href": "Day5.html#introduction-to-probability",
-    "title": "Day 5",
-    "section": "Introduction to Probability",
-    "text": "Introduction to Probability\n\n\n\nExperiment: Any act of observation with uncertain outcomes (e.g., tossing a coin).\nObservation: The result of an experiment (e.g., heads or tails).\nProbability: A measure of how likely an event is to occur, often thought of as “chance” or “likelihood.”\n\nExample: The chance of rain tomorrow, the likelihood of rolling a 6 on a die.\n\n\nMathematical Representation\n\nLet \\(E\\) represent an experiment.\nAn outcome of \\(E\\) is an element of the sample space \\(S\\).\nProbability of an event \\(A\\) is denoted by \\(P(A)\\)."
-  },
-  {
-    "objectID": "Day5.html#key-definitions",
-    "href": "Day5.html#key-definitions",
-    "title": "Day 5",
-    "section": "Key Definitions",
-    "text": "Key Definitions\n\n\nSample Point\n\nDefinition: The most basic outcome of an experiment.\nExample: In a coin toss, each toss that results in H (Head) or T (Tail).\n\nSample Space\n\nDefinition: Collection of all possible outcomes (sample points) of an experiment.\nExample: In a coin toss, the sample space is \\(S = \\{H, T\\}\\).\n\nEvent\n\nDefinition: A collection of sample points.\nExample: Rolling an even number on a die."
-  },
-  {
-    "objectID": "Day5.html#visualizing-probability",
-    "href": "Day5.html#visualizing-probability",
-    "title": "Day 5",
-    "section": "Visualizing Probability",
-    "text": "Visualizing Probability\n\n\nVenn Diagram\n\nSample Space (S): Represented as a closed figure in the diagram.\nSample Points: Each possible outcome shown as a solid dot within the figure.\nExample: Coin Toss\n\nVenn Diagram: Circle labeled S containing two points labeled H (Head) and T (Tail).\nRepresentation: Helps visualize all possible outcomes in a single view."
-  },
-  {
-    "objectID": "Day5.html#tree-diagram",
-    "href": "Day5.html#tree-diagram",
-    "title": "Day 5",
-    "section": "Tree Diagram",
-    "text": "Tree Diagram\n\nExample: Tree diagram of a coin toss.\n\n\nTree diagram of a coin toss"
-  },
-  {
-    "objectID": "Day5.html#experiments-and-sample-spaces",
-    "href": "Day5.html#experiments-and-sample-spaces",
-    "title": "Day 5",
-    "section": "Experiments and Sample Spaces",
-    "text": "Experiments and Sample Spaces\n\n\nExperiment: Tossing a Coin - Sample Space (S): \\[S = \\{H, T\\}\\]\nExperiment: Rolling a Die - Sample Space (S): \\[S = \\{1, 2, 3, 4, 5, 6\\}\\]\nExperiment: Tossing Two Coins - Sample Space (S): \\[S = \\{HH, HT, TH, TT\\}\\]"
-  },
-  {
-    "objectID": "Day5.html#probability-rules-and-calculations",
-    "href": "Day5.html#probability-rules-and-calculations",
-    "title": "Day 5",
-    "section": "Probability Rules and Calculations",
-    "text": "Probability Rules and Calculations\n\n\nProbability of a Sample Point\n\nA number between 0 and 1 indicating the likelihood of the outcome.\n\nRules of Probability\n\nRange of Probabilities:\n\nEach probability \\(p_i\\) must satisfy: \\[0 \\leq p_i \\leq 1\\]\n\nSum of Probabilities:\n\nThe total probability across all sample points must sum to 1: \\[\\sum_{\\text{all } i} p_i = 1\\]"
-  },
-  {
-    "objectID": "Day5.html#steps-for-calculating-event-probabilities",
-    "href": "Day5.html#steps-for-calculating-event-probabilities",
-    "title": "Day 5",
-    "section": "Steps for Calculating Event Probabilities",
-    "text": "Steps for Calculating Event Probabilities\n\n\n\nDefine the Experiment: Describe the observation process.\nList Sample Points: Identify possible outcomes.\nAssign Probabilities: Allocate probability to each sample point.\nIdentify Event’s Sample Points: Determine which sample points are part of the event.\nCalculate Event Probability: Sum the probabilities of the event’s sample points."
-  },
-  {
-    "objectID": "Day5.html#probability-in-a-dice-game",
-    "href": "Day5.html#probability-in-a-dice-game",
-    "title": "Day 5",
-    "section": "Probability in a Dice Game",
-    "text": "Probability in a Dice Game\n\n\n\n\n\nExperiment: Tossing a fair die.\nWinning Condition: If the up face is an even number (2, 4, 6), you win $1.\nLosing Condition: If the up face is odd (1, 3, 5), you lose $1.\n\nSample Space and Probabilities\n\nSample Space (S): \\[S = \\{1, 2, 3, 4, 5, 6\\}\\]\nUniform Probabilities: \\[p_1 = p_2 = p_3 = \\cdots = p_6 = \\frac{1}{6}\\]\n\n\n\n\nCalculation of Winning Probability\n\n\nEvent of Winning: \\[\\text{Winning} = \\{2, 4, 6\\}\\]\nProbability of Winning: \\[\\text{Prob of Winning} = p_2 + p_4 + p_6 = \\frac{1}{6} + \\frac{1}{6} + \\frac{1}{6} = \\frac{3}{6} = \\frac{1}{2}\\]"
-  },
-  {
-    "objectID": "Day5.html#compound-events",
-    "href": "Day5.html#compound-events",
-    "title": "Day 5",
-    "section": "Compound Events",
-    "text": "Compound Events\n\n\nUnions\n\nDefinition: Union of two events \\(A\\) and \\(B\\) (\\(A \\cup B\\))\nOccurs If: Either event \\(A\\), event \\(B\\), or both happen.\nComposition: Includes all sample points in \\(A\\), \\(B\\), or both. \\[A \\cup B = \\{x : x \\in A \\text{ or } x \\in B\\}\\]\n\nIntersections\n\nDefinition: Intersection of two events \\(A\\) and \\(B\\) (\\(A \\cap B\\))\nOccurs If: Both event \\(A\\) and event \\(B\\) happen.\nComposition: Includes all sample points that are in both \\(A\\) and \\(B\\). \\[A \\cap B = \\{x : x \\in A \\text{ and } x \\in B\\}\\]"
-  },
-  {
-    "objectID": "Day5.html#example-calculating-unions-and-intersections-in-a-die-toss",
-    "href": "Day5.html#example-calculating-unions-and-intersections-in-a-die-toss",
-    "title": "Day 5",
-    "section": "Example: Calculating Unions and Intersections in a Die-Toss",
-    "text": "Example: Calculating Unions and Intersections in a Die-Toss\n\n\n\n\n\nEvent A: Toss an even number. \\[A = \\{2, 4, 6\\}\\]\nEvent B: Toss a number less than or equal to 3. \\[B = \\{1, 2, 3\\}\\]\nSample Space (S): \\[S = \\{1, 2, 3, 4, 5, 6\\}\\]\n\n\n\n\nUnion (\\(A \\cup B\\)): \\[A \\cup B = \\{1, 2, 3, 4, 6\\}\\]\nIntersection (\\(A \\cap B\\)): \\[A \\cap B = \\{2\\}\\]\nProbability of Union (\\(P(A \\cup B)\\)): \\[P(A \\cup B) = \\frac{5}{6}\\]\nProbability of Intersection (\\(P(A \\cap B)\\)): \\[P(A \\cap B) = \\frac{1}{6}\\]"
-  },
-  {
-    "objectID": "Activity1.html",
-    "href": "Activity1.html",
-    "title": "Activity 1",
-    "section": "",
-    "text": "The High School and Beyond (hsb2) dataset contains information about 200 high school students, including demographic details and academic performance. This dataset is commonly used in statistics education to explore relationships between socioeconomic factors and test scores.\nKey Variables:\n\n\nID: Student identifier (unique number)\n\nGender: Self-reported gender (Male/Female)\n\nRace: Ethnicity (White/Black/Asian/Other)\n\nSES: Socioeconomic status (Low/Middle/High)\n\nProgram: Enrollment track (General/Vocational/Academic)\n\nReading, Math, Science: Standardized test scores (0-100)\n\n\n\n\nFirst 6 observations from hsb2 dataset\n\nid\ngender\nrace\nses\nschtyp\nprog\nread\nwrite\nmath\nscience\nsocst\n\n\n\n70\nmale\nwhite\nlow\npublic\ngeneral\n57\n52\n41\n47\n57\n\n\n121\nfemale\nwhite\nmiddle\npublic\nvocational\n68\n59\n53\n63\n61\n\n\n86\nmale\nwhite\nhigh\npublic\ngeneral\n44\n33\n54\n58\n31\n\n\n141\nmale\nwhite\nhigh\npublic\nvocational\n63\n44\n47\n53\n56\n\n\n172\nmale\nwhite\nmiddle\npublic\nacademic\n47\n52\n57\n53\n61\n\n\n113\nmale\nwhite\nmiddle\npublic\nacademic\n44\n52\n51\n63\n61\n\n\n\n\n\n\n\nClassify these variables as qualitative (categorical) or quantitative (numerical):\n\nGender\n\nMath Score\n\nSES (Socioeconomic Status)\n\nProgram\n\nScience Score\n\nFor two of your choices, explain why they belong to that category.\n\nSuppose researchers want to analyze gender differences in math performance:\n\nWhat is the current variable type of Gender?\nHow could you convert Gender to a numeric format? What values would you assign?\n\nIf Gender is coded as 0 (Male) and 1 (Female):\n\nCould you calculate an “average gender”? Explain why this is or isn’t meaningful.\n\n\nWhy might statisticians prefer to keep Gender as a categorical variable?"
-  },
-  {
-    "objectID": "Activity1.html#dataset-description",
-    "href": "Activity1.html#dataset-description",
-    "title": "Activity 1",
-    "section": "",
-    "text": "The High School and Beyond (hsb2) dataset contains information about 200 high school students, including demographic details and academic performance. This dataset is commonly used in statistics education to explore relationships between socioeconomic factors and test scores.\nKey Variables:\n\n\nID: Student identifier (unique number)\n\nGender: Self-reported gender (Male/Female)\n\nRace: Ethnicity (White/Black/Asian/Other)\n\nSES: Socioeconomic status (Low/Middle/High)\n\nProgram: Enrollment track (General/Vocational/Academic)\n\nReading, Math, Science: Standardized test scores (0-100)"
-  },
-  {
-    "objectID": "Activity1.html#data-preview",
-    "href": "Activity1.html#data-preview",
-    "title": "Activity 1",
-    "section": "",
-    "text": "First 6 observations from hsb2 dataset\n\nid\ngender\nrace\nses\nschtyp\nprog\nread\nwrite\nmath\nscience\nsocst\n\n\n\n70\nmale\nwhite\nlow\npublic\ngeneral\n57\n52\n41\n47\n57\n\n\n121\nfemale\nwhite\nmiddle\npublic\nvocational\n68\n59\n53\n63\n61\n\n\n86\nmale\nwhite\nhigh\npublic\ngeneral\n44\n33\n54\n58\n31\n\n\n141\nmale\nwhite\nhigh\npublic\nvocational\n63\n44\n47\n53\n56\n\n\n172\nmale\nwhite\nmiddle\npublic\nacademic\n47\n52\n57\n53\n61\n\n\n113\nmale\nwhite\nmiddle\npublic\nacademic\n44\n52\n51\n63\n61"
-  },
-  {
-    "objectID": "Activity1.html#questions",
-    "href": "Activity1.html#questions",
-    "title": "Activity 1",
-    "section": "",
-    "text": "Classify these variables as qualitative (categorical) or quantitative (numerical):\n\nGender\n\nMath Score\n\nSES (Socioeconomic Status)\n\nProgram\n\nScience Score\n\nFor two of your choices, explain why they belong to that category.\n\nSuppose researchers want to analyze gender differences in math performance:\n\nWhat is the current variable type of Gender?\nHow could you convert Gender to a numeric format? What values would you assign?\n\nIf Gender is coded as 0 (Male) and 1 (Female):\n\nCould you calculate an “average gender”? Explain why this is or isn’t meaningful.\n\n\nWhy might statisticians prefer to keep Gender as a categorical variable?"
-  },
-  {
-    "objectID": "Activity2.html",
-    "href": "Activity2.html",
-    "title": "Activity 2",
-    "section": "",
-    "text": "Activity 1: Think-Pair-Share\n\n\nThink: Reflect on a real-world example where sampling bias might occur (e.g., political polls, health surveys).\n\nPair: Discuss your example with a partner and identify potential sources of bias.\n\nShare: Share your findings with the class and propose ways to mitigate the bias.\nActivity 2: Live Quiz\n\n\nQuestion: “How might the wording of a survey question about climate change influence responses?”\n\nOptions:\n\n\nIt has no effect.\n\n\n\nIt can lead to overestimation of public concern.\n\n\n\nIt can lead to underestimation of public concern.\n\n\n\nIt can polarize responses.\n\n\n\nActivity 3: Interactive Data Exploration\n\n\n\n\n\nsp\nsex\nindex\nFL\nRW\nCL\nCW\nBD\n\n\n\nB\nM\n1\n8.1\n6.7\n16.1\n19.0\n7.0\n\n\nB\nM\n2\n8.8\n7.7\n18.1\n20.8\n7.4\n\n\nB\nM\n3\n9.2\n7.8\n19.0\n22.4\n7.7\n\n\nB\nM\n4\n9.6\n7.9\n20.1\n23.1\n8.2\n\n\nB\nM\n5\n9.8\n8.0\n20.3\n23.0\n8.2\n\n\nB\nM\n6\n10.8\n9.0\n23.0\n26.5\n9.8\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuestion: What do you see on the above plots? .\nActivity 4: Quiz\n\nQuestion: “Experiment or Observational Study? To examine whether farm-grown salmon contain more omega-3 oils if water is more acidic, we collect samples of salmon and water from multiple fish farms to see if the two variables are related.” Explain\n\nOptions:\n\n\nExperiment.\n\n\n\nObservational Study.\n\n\n\nNot enough information."
-  },
-  {
-    "objectID": "Activity4.html",
-    "href": "Activity4.html",
-    "title": "Activity 4",
-    "section": "",
-    "text": "1. Think-Pair-Share\nInstructions:\n\nThink: Take 2 minutes to identify a real-world example of a symmetric distribution (e.g., heights of people, test scores). Write down your example.\nPair: Turn to a partner and discuss your examples. Compare and contrast the examples you both came up with.\nShare: Be prepared to share your findings with the class. Highlight why your example fits the concept of a symmetric distribution.\n2. Quiz\nInstructions:\nAnswer the following question individually:\n\n\n“If a student’s GPA has a z-score of 2, what does this mean?”\n\n\nThe GPA is 2 points above the mean.\n\n\n\nThe GPA is 2 standard deviations above the mean.\n\n\n\nThe GPA is 2 standard deviations below the mean.\n\n\n\nThe GPA is 2 points below the mean.\n\n\n\n\nDiscussion: After answering, discuss with a partner why you chose your answer. Be ready to explain your reasoning to the class.\n3. Case Studies and Problem-Solving\nInstructions:\n\n\nCase Study: Use the graphical and numerical summaries of Student Survey Dataset to compare the GPA of students for different Year.\n\n\n\n\n\n\n\n\n\n\nSummary Statistics of GPA for all Years\n\nYear\nmean\nsd\nn\n\n\n\nFirstYear\n3.070759\n0.4702584\n79\n\n\nJunior\n3.273636\n0.3688057\n33\n\n\nSenior\n3.171667\n0.3754274\n36\n\n\nSophomore\n3.173224\n0.3690737\n183\n\n\n\n\n\n\n\nTasks:\n\nInterpret the results: Do Junior Students have higher GPAs on average? What might explain this result?\nDiscuss potential biases or limitations in the dataset.\n\n\nReflect: Write a short paragraph summarizing your findings and share it with the class."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Math 216: Spring 2025",
-    "section": "",
-    "text": "Welcome to the world of statistics!"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "Welcome to the captivating world of statistical thinking! This course will provide you with a solid foundation in statistical theory while taking you on a journey through the practical aspects of the subject. Along the way, you’ll gain experience with statistical software, learn to interpret and effectively communicate statistical findings, and explore a range of topics in descriptive and inferential data analysis and both parametric and non-parametric statistical inference. Some of the areas we’ll delve into include probability, normal distribution, sampling distributions, confidence intervals, hypothesis testing and simple linear regression.\nAt the heart of this course is the ability to interpret results and grasp underlying concepts, rather than merely obtaining numerical outcomes. By engaging with a diverse set of problems, you’ll become well-versed in statistical methodologies. However, it’s crucial to remember that a deep understanding of the concepts is the key to drawing meaningful conclusions.\n\n\n\n\nMaster the basic principles of data analysis, including the production and application of data in studies and experiments.\nApply principles of inference to construct confidence intervals and conduct hypothesis tests effectively.\nCritically evaluate statistical arguments and methodologies in published research.\nCompare and differentiate between parametric and non-parametric methods in statistical analysis.\nUtilize software R to conduct data analysis, create graphs, and perform basic statistical tests."
-  },
-  {
-    "objectID": "about.html#learning-objectives",
-    "href": "about.html#learning-objectives",
-    "title": "About",
-    "section": "",
-    "text": "Master the basic principles of data analysis, including the production and application of data in studies and experiments.\nApply principles of inference to construct confidence intervals and conduct hypothesis tests effectively.\nCritically evaluate statistical arguments and methodologies in published research.\nCompare and differentiate between parametric and non-parametric methods in statistical analysis.\nUtilize software R to conduct data analysis, create graphs, and perform basic statistical tests."
-  },
-  {
-    "objectID": "Activity3.html",
-    "href": "Activity3.html",
-    "title": "Activity 3",
-    "section": "",
-    "text": "1. Think-Pair-Share Activity\nThink-Pair-Share: Calculating Descriptive Statistics\n\n\nThink: Calculate the mean, median, and standard deviation for the following dataset by hand:\nPulse Rates: [68, 72, 70, 65, 74, 69, 71, 67, 73, 70]\n\nPair: Discuss your calculations with a partner. Compare your results and resolve any discrepancies.\nShare: Share your findings with the class. Be prepared to explain your calculations.\n\n2. Quiz\nQuiz: Proportions and Frequency Tables\n\n\nQuestion: In the cell phone dataset, what proportion of adults own an iPhone?\n\nA). 0.194\nB). 0.203\nC). 0.063\nD). 0.410\n\n\nQuestion: What is the difference in proportions between females and males who are in a relationship?\n\nA). 0.14\nB). 0.10\nC). 0.05\nD). 0.20\n3. Case Studies and Problem-Solving\nObjective: Apply statistical concepts to solve real-world problems.\nCase Study: Health Data Analysis\n\n\nScenario: A health study collected data on smoking habits and pulse rates. The dataset is provided below:\nSmoker: [Yes, No, No, Yes, No, Yes, No, No, Yes, No]  \nPulse: [72, 68, 70, 75, 69, 74, 67, 71, 73, 70]  \n\n\nTask:\n\nCalculate the mean and median pulse rates for smokers and non-smokers separately.\n\nCompare the variability (standard deviation) of pulse rates between the two groups.\n\nDiscuss whether smoking appears to have an effect on pulse rates.\n\n\nSubmit: Write a brief report summarizing your findings."
   },
   {
     "objectID": "Day4.html#recap-student-survey",
@@ -560,171 +511,248 @@
     "text": "Stacked Bar Graph (Counts)\n\nPlotCode\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nggplot(survey, aes(x = Year, fill = Gender)) + \n  geom_bar(position = \"stack\") + \n  scale_fill_manual(values = c(\"maroon\", \"gold\")) +\n  labs(title = \"Proportional Distribution by Year and Gender\", \n       y = \"proportion\", \n       x = \"year\", \n       fill = \"Gender\")"
   },
   {
-    "objectID": "Day2.html#sampling-and-inference",
-    "href": "Day2.html#sampling-and-inference",
-    "title": "Day 2",
-    "section": "Sampling and Inference",
-    "text": "Sampling and Inference\n\n\nA population includes all individuals or objects of interest.\nA sample is all the cases that we have collected data on (a subset of the population).\nStatistical inference is the process of using data from a sample to gain information about the population."
+    "objectID": "Day3.html#descriptive-statistics",
+    "href": "Day3.html#descriptive-statistics",
+    "title": "Day 3",
+    "section": "Descriptive Statistics",
+    "text": "Descriptive Statistics\n\n\nSummarize and visualize data to make sense of it.\nDescriptive statistics (or exploratory data analysis (EDA)) involves summarizing and visualizing variables and their relationships.\nThe methods depend on the type of variable(s) being analyzed (qualitative or quantitative)."
   },
   {
-    "objectID": "Day2.html#sampling-and-inference-source",
-    "href": "Day2.html#sampling-and-inference-source",
-    "title": "Day 2",
-    "section": "Sampling and Inference (Source)",
-    "text": "Sampling and Inference (Source)"
+    "objectID": "Day3.html#one-qualitative-variable",
+    "href": "Day3.html#one-qualitative-variable",
+    "title": "Day 3",
+    "section": "One Qualitative Variable",
+    "text": "One Qualitative Variable\n\nA random sample of US adults in 2012 were surveyed regarding the type of cell phone owned.\n\n\n  Android? iPhone? Blackberry? Non-smartphone? No cell phone?"
   },
   {
-    "objectID": "Day2.html#blue-crab-in-maryland-coastal-bays",
-    "href": "Day2.html#blue-crab-in-maryland-coastal-bays",
-    "title": "Day 2",
-    "section": "Blue Crab in Maryland Coastal Bays",
-    "text": "Blue Crab in Maryland Coastal Bays\n\n\nPopulation\n\nAll blue crabs in the Maryland Coastal Bays (MCB).\nIncludes sub-estuaries: Assawoman Bay, St. Martin River, Isle of Wight, Sinepuxent Bay, Newport Bay, Chincoteague Bay.\n\nSample\n\nBlue crabs collected from 20 sites within MCB.\nSample period: April - December, 2014-2016.\nMethod: Trawl surveys."
+    "objectID": "Day3.html#frequency-table",
+    "href": "Day3.html#frequency-table",
+    "title": "Day 3",
+    "section": "Frequency Table",
+    "text": "Frequency Table\n\nA frequency table shows the number of cases or counts that fall in each category:\n\n\n\n\n\n\nSubset of Raw Data\nDevice Type\n\n\n\n\nCase 1\nAndroid\n\n\nCase 2\nnone\n\n\nCase 3\nnone\n\n\nCase 4\niPhone\n\n\nCase 5\nNon Smartphone\n\n\nCase 6\niPhone\n\n\nCase 7\nBlackberry\n\n\nCase 8\nNon Smartphone\n\n\nCase 9\nAndroid\n\n\nCase 10\nAndroid\n\n\n…\n(for 2253 cases …)\n\n\n\n\n\n\n\n\n\n\nCell Phone Type\nFrequency\n\n\n\n\nAndroid\n458\n\n\niPhone\n437\n\n\nBlackberry\n141\n\n\nNon Smartphone\n924\n\n\nNo Cell Phone\n293\n\n\nTotal\n2253"
   },
   {
-    "objectID": "Day2.html#blue-crab-in-maryland-coastal-bays-1",
-    "href": "Day2.html#blue-crab-in-maryland-coastal-bays-1",
-    "title": "Day 2",
-    "section": "Blue Crab in Maryland Coastal Bays",
-    "text": "Blue Crab in Maryland Coastal Bays\n\n\nVariables\n\nPrimary Variable: Carapace width, sex, maturity status, molt stage.\n\nInference\n\nPopulation structure of blue crabs in MCB.\nSeasonal variations: size distribution, molt cycles, reproductive patterns."
+    "objectID": "Day3.html#proportion",
+    "href": "Day3.html#proportion",
+    "title": "Day 3",
+    "section": "Proportion",
+    "text": "Proportion\nThe proportion in a category is found by: \\[\n\\text{proportion} = \\frac{\\text{number in category}}{\\text{total sample size}}\n\\]\n\n\nPopulation proportion (parameter): \\(p\\)\nSample proportion (statistic): \\(\\hat{p}\\) (“p-hat”)"
   },
   {
-    "objectID": "Day2.html#sampling-bias",
-    "href": "Day2.html#sampling-bias",
-    "title": "Day 2",
-    "section": "Sampling Bias",
-    "text": "Sampling Bias\n\n\nSampling bias occurs when the method of selecting a sample causes the sample to differ from the population in some relevant way.\nIf sampling bias exists, we cannot trust generalizations from the sample to the population.\n\n\nTo eliminate sampling bias, always take a RANDOM SAMPLE!"
+    "objectID": "Day3.html#what-proportion-of-adults-sampled-do-not-own-a-cell-phone",
+    "href": "Day3.html#what-proportion-of-adults-sampled-do-not-own-a-cell-phone",
+    "title": "Day 3",
+    "section": "What proportion of adults sampled do not own a cell phone?",
+    "text": "What proportion of adults sampled do not own a cell phone?\n\n\n\n\nCell Phone Type\nFrequency\nProportion\n\n\n\n\nAndroid\n458\n0.203\n\n\niPhone\n437\n0.194\n\n\nBlackberry\n141\n0.063\n\n\nNon Smartphone\n924\n0.410\n\n\nNo Cell Phone\n293\n0.130\n\n\nTotal\n2253\n1.000"
   },
   {
-    "objectID": "Day2.html#bias-in-data",
-    "href": "Day2.html#bias-in-data",
-    "title": "Day 2",
-    "section": "Bias in Data",
-    "text": "Bias in Data\nEven with a random sample, data can still be biased, especially when collected on humans.\n\nSome forms of bias to watch out for in data collection:\n\nQuestion wording.\nQuestion order.\nContext.\nNon-response bias."
+    "objectID": "Day3.html#bar-chart",
+    "href": "Day3.html#bar-chart",
+    "title": "Day 3",
+    "section": "Bar Chart",
+    "text": "Bar Chart\nIn a barplot, the height of the bar corresponds to the number of cases falling in each category."
   },
   {
-    "objectID": "Day2.html#question-wording",
-    "href": "Day2.html#question-wording",
-    "title": "Day 2",
-    "section": "Question Wording",
-    "text": "Question Wording\n\nA random sample was asked: “Should there be a tax cut, or should money be used to fund new government programs?”\n\n\n\n\nTax Cut\nPrograms\n\n\n\n\n60%\n40%"
+    "objectID": "Day3.html#two-qualitative-variables",
+    "href": "Day3.html#two-qualitative-variables",
+    "title": "Day 3",
+    "section": "Two Qualitative Variables",
+    "text": "Two Qualitative Variables\n\nLook at the relationship between two qualitative variables:\n\nRelationship status\nGender\n\n\n\n\n\n\nFemale\nMale\nTotal\n\n\n\n\nIn a Relationship\n32\n10\n42\n\n\nIt’s Complicated\n12\n7\n19\n\n\nSingle\n63\n45\n108\n\n\nTotal\n107\n62\n169"
   },
   {
-    "objectID": "Day2.html#question-wording-1",
-    "href": "Day2.html#question-wording-1",
-    "title": "Day 2",
-    "section": "Question Wording",
-    "text": "Question Wording\n\nA different random sample was asked: “Should there be a tax cut, or should money be spent on programs for education, the environment, health care, crime-fighting, and military defense?”\n\n\n\n\nTax Cut\nPrograms\n\n\n\n\n22%\n78%"
+    "objectID": "Day3.html#relationship-status-and-gender",
+    "href": "Day3.html#relationship-status-and-gender",
+    "title": "Day 3",
+    "section": "Relationship Status and Gender",
+    "text": "Relationship Status and Gender\n\nProportion of students in a relationship that are female?\n\nprop.relation.female &lt;- 32/42\nround(prop.relation.female, 2)\n\n[1] 0.76\n\n\nProportion of students in a relationship that are male?\n\nprop.relation.male &lt;- 10/42\nround(prop.relation.male, 2)\n\n[1] 0.24"
   },
   {
-    "objectID": "Day2.html#question-order",
-    "href": "Day2.html#question-order",
-    "title": "Day 2",
-    "section": "Question Order",
-    "text": "Question Order\n\n\nDepending on the order of questions, we can see either greater or lesser differences in responses.\nRespondents tend to provide answers consistent with their prior responses."
+    "objectID": "Day3.html#difference-in-proportions",
+    "href": "Day3.html#difference-in-proportions",
+    "title": "Day 3",
+    "section": "Difference in Proportions",
+    "text": "Difference in Proportions\n\n\nA difference in proportions is a difference in proportions for one qualitative variable calculated for different levels of the other qualitative variable.\nExample: Difference in proportions of male and female that are in a relationship: \\[\n\\hat{p}_F - \\hat{p}_M = \\frac{32}{107} - \\frac{10}{62} = 0.14\n\\]\n\nprop.female &lt;- 32/107\nprop.male &lt;- 10/62\nprop.diff &lt;- prop.female - prop.male\nround(prop.diff, 2)\n\n[1] 0.14"
   },
   {
-    "objectID": "Day2.html#swedish-study-response-bias",
-    "href": "Day2.html#swedish-study-response-bias",
-    "title": "Day 2",
-    "section": "Swedish Study: Response Bias",
-    "text": "Swedish Study: Response Bias"
+    "objectID": "Day3.html#student-survey",
+    "href": "Day3.html#student-survey",
+    "title": "Day 3",
+    "section": "Student Survey",
+    "text": "Student Survey\nDataset on 362 responses to a student survey given at one college.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nYear\nGender\nSmoke\nExercise\nTV\nHeight\nWeight\nSiblings\nBirthOrder\nGPA\nPulse\n\n\n\n\nSenior\nM\nNo\n10.0\n1\n71\n180\n4\n4\n3.13\n54\n\n\nSophomore\nF\nYes\n4.0\n7\n66\n120\n2\n2\n2.50\n66\n\n\nFirstYear\nM\nNo\n14.0\n5\n72\n208\n2\n1\n2.55\n130\n\n\nJunior\nM\nNo\n3.0\n1\n63\n110\n1\n1\n3.10\n78\n\n\nSophomore\nF\nNo\n3.0\n3\n65\n150\n1\n1\n2.70\n40\n\n\nSophomore\nF\nNo\n5.0\n4\n65\n114\n2\n2\n3.20\n80\n\n\nFirstYear\nF\nNo\n10.0\n10\n66\n128\n1\n1\n2.77\n94\n\n\nSophomore\nM\nNo\n13.0\n8\n74\n235\n1\n1\n3.30\n77\n\n\nJunior\nF\nNo\n3.0\n6\n61\nNA\n2\n2\n2.80\n60\n\n\nFirstYear\nF\nNo\n12.0\n1\n60\n115\n7\n8\n3.70\n94\n\n\nSophomore\nF\nNo\n12.0\n6\n65\n140\n1\n2\n2.09\n63\n\n\nFirstYear\nM\nNo\n10.0\n5\n63\n200\n2\n2\nNA\n72\n\n\nSophomore\nM\nNo\n12.0\n8\n68\n162\n3\nNA\n2.90\n54\n\n\nJunior\nF\nNo\n6.0\n1\n68\n135\n2\n3\n3.08\n66\n\n\nFirstYear\nM\nNo\n9.0\n5\n68\n193\n1\n1\nNA\n72\n\n\nFirstYear\nF\nNo\n10.0\n2\n63\n110\n1\n2\n3.86\n59\n\n\nFirstYear\nF\nNo\n3.0\n15\n63\n99\n2\n1\n3.00\n88\n\n\nSophomore\nM\nNo\n7.0\n3\n72\n165\n2\n1\n3.00\n59\n\n\nSophomore\nF\nNo\n2.0\n1\n62\n120\n1\n1\n3.35\n64\n\n\nSophomore\nF\nNo\n14.0\n2\n67\n154\n1\n2\n3.30\n72\n\n\nSophomore\nF\nNo\n10.0\n5\n65\n110\n1\n2\n3.40\n74\n\n\nSophomore\nF\nNo\n14.0\n2\n68\n145\n8\n8\n2.90\n70\n\n\nFirstYear\nM\nNo\n20.0\n20\n73\n195\n3\n4\n3.50\n58\n\n\nSophomore\nM\nNo\n7.0\n10\n74\n200\n1\n2\n3.00\n48\n\n\nSophomore\nM\nNo\n12.0\n3\n70\n167\n1\n2\n3.30\n74\n\n\nSophomore\nM\nNo\n10.0\n5\n71\n175\n3\n2\n3.70\n60\n\n\nSophomore\nF\nNo\n6.0\n8\n67\n155\n1\n1\n3.48\n74\n\n\nJunior\nM\nNo\n14.0\n2\n74\n185\n1\n2\n3.40\n70\n\n\nFirstYear\nM\nNo\n12.0\n6\n68\n190\n1\n1\n2.50\n74\n\n\nSenior\nM\nNo\n10.0\n4\n72\n165\n1\n2\n3.30\n60\n\n\nJunior\nM\nNo\n8.0\n8\n62\n175\n2\n3\n3.50\n55\n\n\nSophomore\nF\nNo\n0.0\n2\n66\n126\n5\n6\n3.79\n82\n\n\nFirstYear\nM\nNo\n10.0\n20\n70\n187\n3\n2\n3.30\n68\n\n\nSenior\nM\nNo\n6.0\n10\n72\n170\n2\n2\n2.90\n83\n\n\nFirstYear\nF\nNo\n5.0\n2\n67\n158\n4\n2\n2.68\n53\n\n\nSophomore\nF\nNo\n24.0\n5\n62\n119\n1\n2\n3.28\n72\n\n\nFirstYear\nM\nNo\n2.0\n5\n73\n205\n1\n1\n3.51\n86\n\n\nSophomore\nF\nNo\n10.0\n5\n67\n129\n1\n1\n2.60\n67\n\n\nSophomore\nF\nNo\n6.0\n5\n67\n145\n0\n1\n3.85\n89\n\n\nJunior\nF\nNo\n5.0\n5\n64\n130\n0\nNA\n2.40\n48\n\n\nSenior\nM\nNo\n5.0\n5\n72\n215\n3\n1\n3.40\n64\n\n\nSophomore\nF\nNo\n12.0\n4\n64\n135\n2\n3\n2.40\n73\n\n\nSophomore\nF\nNo\n2.0\n5\n70\n145\n0\n1\n3.00\n80\n\n\nFirstYear\nF\nNo\n7.0\n8\n60\n98\n2\n2\n3.10\n85\n\n\nFirstYear\nM\nNo\n15.0\n2\n71\n150\n1\n1\n2.94\n60\n\n\nJunior\nM\nNo\n5.0\n14\n73\n159\n1\n1\n3.31\n61\n\n\nSenior\nM\nNo\n7.0\n20\n72\n174\n1\n2\n3.30\n80\n\n\nSophomore\nM\nNo\n15.0\n20\n74\n160\n1\n2\n2.90\n70\n\n\nSenior\nM\nNo\n8.0\n10\n70\n165\n1\n2\n3.40\n61\n\n\nSophomore\nF\nNo\n14.0\n3\n69\n161\n1\n2\n3.16\n58\n\n\nFirstYear\nM\nNo\n14.0\n1\n68\n160\n2\n1\nNA\n42\n\n\nSenior\nF\nNo\n4.0\n14\n64\n130\n2\n2\n3.84\n88\n\n\nJunior\nM\nNo\n15.0\n0\n72\n175\n2\n1\n3.60\n68\n\n\nSenior\nM\nNo\n4.0\n20\n70\n255\n2\n2\n2.36\n68\n\n\nJunior\nM\nNo\n15.0\n2\n65\n160\n4\n4\n2.90\n35\n\n\nFirstYear\nM\nNo\n3.0\n6\n72\n160\n0\n1\n3.00\n90\n\n\nJunior\nF\nNo\n3.0\n15\n63\n95\n0\n1\n3.30\n88\n\n\nSophomore\nF\nNo\n15.0\n3\n64\n115\n2\n2\n3.70\n67\n\n\nSophomore\nF\nNo\n20.0\n2\n64\n120\n1\n1\n2.90\n71\n\n\nFirstYear\nF\nNo\n3.0\n1\n65\n135\n2\n3\n3.60\n68\n\n\nSophomore\nM\nNo\n6.0\n7\n73\n180\n1\n2\n3.56\n73\n\n\nSenior\nM\nNo\n12.0\n7\n71\n155\n0\n1\n3.70\n55\n\n\nFirstYear\nF\nNo\n4.0\n3\n66\n110\n2\n1\n4.00\n78\n\n\nFirstYear\nM\nNo\n20.0\n12\n73\n215\n2\n3\n3.40\n96\n\n\nFirstYear\nM\nNo\n15.0\n6\n70\n175\n2\n3\nNA\n63\n\n\nSophomore\nF\nNo\n10.0\n3\n65\n140\n3\n4\n3.30\n73\n\n\nFirstYear\nM\nNo\n10.0\n20\n72\n195\n2\n2\n3.10\n60\n\n\nSophomore\nM\nNo\n4.0\n8\n73\n185\n2\n1\n2.50\n80\n\n\nSophomore\nM\nNo\n9.0\n0\n70\n185\n2\n1\n3.20\n96\n\n\nSenior\nM\nNo\n12.0\n12\n79\n209\n1\n1\n3.10\n49\n\n\nSenior\nF\nNo\n2.0\n6\n67\n145\n3\n2\n3.50\n62\n\n\nSophomore\nF\nNo\n15.0\n4\n66\n140\n1\n1\n3.00\n68\n\n\nFirstYear\nF\nNo\n10.0\n4\n66\n146\n1\n2\n3.25\n52\n\n\nFirstYear\nF\nNo\n7.0\n6\n68\n130\n2\n1\n2.40\n71\n\n\nSophomore\nF\nNo\n3.0\n5\n67\n140\n1\n2\n3.22\n72\n\n\nFirstYear\nF\nNo\n4.0\n3\n66\n130\n1\n1\nNA\n65\n\n\nFirstYear\nF\nNo\n15.0\n3\n66\n140\n1\n1\nNA\n90\n\n\nSophomore\nF\nNo\n8.0\n8\n65\n160\n3\n3\n3.64\n77\n\n\nSophomore\nF\nNo\n5.0\n8\n66\n120\n1\n1\n3.50\n68\n\n\nSophomore\nM\nNo\n10.0\n20\n76\n150\n1\n1\n2.50\n60\n\n\nSophomore\nM\nNo\n15.0\n5\n69\n155\n1\n1\n3.40\n65\n\n\nFirstYear\nF\nNo\n4.0\n4\n64\n128\n3\n1\nNA\n60\n\n\nFirstYear\nF\nNo\n5.0\n4\n64\n143\n2\n2\n3.25\n84\n\n\nJunior\nF\nNo\n6.0\n3\n65\n155\n2\n1\n3.70\n80\n\n\nFirstYear\nF\nNo\n18.0\n2\n67\n119\n2\n1\n2.10\n66\n\n\nSophomore\nF\nNo\n16.0\n4\n66\n138\n1\n2\n2.80\n70\n\n\nSenior\nM\nNo\n4.0\n5\n72\n240\n1\n1\n3.49\n70\n\n\nFirstYear\nF\nNo\n3.0\n2\n65\n160\n1\n1\n3.83\n72\n\n\nFirstYear\nM\nNo\n20.0\n3\n69\n191\n3\n1\nNA\n66\n\n\nFirstYear\nM\nNo\n5.0\n8\n69\n165\n5\n4\n2.70\n69\n\n\nSophomore\nM\nNo\n10.0\n6\n73\n200\n2\n3\n2.80\n89\n\n\nFirstYear\nF\nNo\n2.0\n4\n62\n125\n1\n1\n3.13\n79\n\n\nSophomore\nF\nNo\n4.0\n5\n69\n140\n2\n3\n3.62\n98\n\n\nSophomore\nM\nNo\n14.0\n5\n73\n206\n1\n1\n2.00\n48\n\n\nFirstYear\nM\nNo\n7.0\n5\n76\n275\n1\n2\n3.60\n71\n\n\nSophomore\nM\nNo\n12.0\n8\n70\n142\n1\n2\n4.00\n51\n\n\nSophomore\nF\nNo\n14.0\n2\n67\n140\n6\n7\n3.10\n67\n\n\nSophomore\nM\nNo\n3.0\n10\n68\n145\n5\n6\n2.60\n66\n\n\nSophomore\nM\nNo\n5.0\n4\n72\n128\n1\n1\n3.70\n66\n\n\nFirstYear\nM\nNo\n15.0\n5\n74\n165\n1\n1\n3.57\n60\n\n\nSenior\nF\nNo\n5.0\n20\n62\n140\n1\n1\n2.90\n77\n\n\nSophomore\nF\nNo\n4.0\n14\n69\n130\n1\n2\n3.15\n80\n\n\nFirstYear\nM\nNo\n8.0\n2\n70\n170\n3\n2\n3.88\n70\n\n\nSophomore\nM\nNo\n14.0\n4\n69\n160\n2\n2\n3.50\n65\n\n\nSophomore\nM\nNo\n5.0\n8\n72\n165\n2\n2\n2.80\n57\n\n\n\nF\nNo\n12.0\n7\n78\n145\n1\n1\nNA\n37\n\n\nSophomore\nM\nNo\n15.0\n5\n67\n155\n1\n2\n2.90\n84\n\n\nSophomore\nM\nNo\n3.0\n3\n73\n155\n3\n2\n3.21\n56\n\n\nSophomore\nF\nNo\n12.0\n1\n63\n113\n1\n2\n3.50\n69\n\n\nSophomore\nM\nNo\n12.0\n5\n70\n155\n1\n2\n3.33\n62\n\n\nSophomore\nM\nNo\n6.0\n20\nNA\n173\n1\n1\n3.00\n79\n\n\nSophomore\nM\nNo\n2.0\n8\n65\n195\n2\n1\n3.50\n55\n\n\nSophomore\nF\nNo\n3.0\n3\n73\n120\n1\n1\n3.95\n89\n\n\nFirstYear\nM\nNo\n24.0\n6\n78\n225\n2\n1\n2.10\n78\n\n\nFirstYear\nF\nNo\n3.0\n1\n65\n160\n1\n2\n3.00\n83\n\n\nSophomore\nF\nNo\n6.0\n1\n63\n120\n2\n1\n3.00\n58\n\n\nSophomore\nF\nNo\n12.0\n10\n68\n138\n1\n2\n3.75\n77\n\n\nSophomore\nM\nNo\n18.0\n3\n72\n260\n2\n3\n2.50\n50\n\n\nSophomore\nM\nNo\n2.0\n7\n70\n150\n2\n3\n3.40\n87\n\n\nFirstYear\nF\nNo\n12.0\n3\n67\n135\n3\n4\n3.40\n74\n\n\nSophomore\nF\nNo\n5.0\n10\n72\n165\n1\n1\n3.14\n76\n\n\nFirstYear\nM\nNo\n3.0\n3\n68\n142\n3\n4\n2.60\n50\n\n\nSophomore\nM\nNo\n3.0\n3\n78\n210\n6\n5\n3.40\n70\n\n\nSophomore\nM\nNo\n21.0\n25\n69\n171\n1\n1\n2.70\n84\n\n\nSophomore\nF\nNo\n12.0\n2\n80\n150\n4\n1\n3.15\n68\n\n\nSophomore\nM\nNo\n3.0\n15\n71\n188\n3\n1\n2.20\n66\n\n\nSophomore\nM\nNo\n20.0\n6\n70\n195\n0\n1\n3.50\n76\n\n\nFirstYear\nM\nNo\n8.0\n13\n75\n230\n2\n1\n2.90\n65\n\n\nSophomore\nF\nNo\n2.0\n3\n64\n140\n2\n3\n2.50\n65\n\n\nSophomore\nM\nNo\n15.0\n2\n78\n200\n1\n1\n3.50\n68\n\n\nSenior\nF\nNo\n6.0\n5\n68\n140\n0\n1\n3.60\n78\n\n\nFirstYear\nF\nNo\n2.0\n1\n69\n180\n5\n3\n3.10\n74\n\n\nSophomore\nF\nNo\n1.0\n4\n63\n160\n1\n1\n3.00\n76\n\n\nSophomore\nF\nNo\n13.0\n5\n64\n135\n3\n2\n3.00\n79\n\n\nSophomore\nF\nNo\n12.0\n10\n63\n140\n2\n3\n3.80\n81\n\n\nSophomore\nF\nNo\n10.0\n4\n72\n155\n2\n1\n3.15\n56\n\n\nSophomore\nM\nNo\n10.0\n3\n63\n235\n5\n3\n2.75\n48\n\n\nFirstYear\nF\nNo\n10.0\n2\n63\n140\n3\n2\n2.80\n68\n\n\nSophomore\nF\nNo\n3.0\n4\n68\n130\n2\n3\n3.00\n62\n\n\nJunior\nF\nNo\n2.0\n3\n67\n125\n5\n4\n3.10\n70\n\n\nFirstYear\nM\nNo\n10.0\n3\n71\n222\n1\n1\n2.27\n46\n\n\nFirstYear\nF\nNo\n4.0\n3\n65\n128\n3\n1\n2.80\n88\n\n\nFirstYear\nM\nNo\n8.0\n2\n72\n183\n2\n2\n3.02\n68\n\n\nJunior\nM\nNo\n18.0\n20\n75\n175\n0\n1\n2.93\n74\n\n\nFirstYear\nF\nNo\n5.0\n3\n59\n125\n1\n1\n3.20\n88\n\n\nSophomore\nF\nNo\n4.0\n4\n69\n156\n1\n1\n3.00\n67\n\n\nFirstYear\nF\nNo\n20.0\n3\n63\n145\n3\n4\n3.00\n61\n\n\nSophomore\nM\nNo\n14.0\n4\n74\n195\n4\n2\n2.70\n62\n\n\nSophomore\nM\nNo\n8.0\n13\n70\n185\n2\n1\n3.20\n69\n\n\nFirstYear\nF\nNo\n4.0\n5\n64\n150\n1\n1\n2.90\n59\n\n\nSophomore\nF\nNo\n5.0\n5\n67\n140\n0\nNA\n3.00\n79\n\n\nFirstYear\nM\nNo\n14.0\n4\n66\n150\n1\n1\n2.72\n56\n\n\nFirstYear\nF\nNo\n4.0\n3\n67\n150\n0\n1\n3.30\n85\n\n\nSophomore\nM\nNo\n4.0\n10\n73\n220\n1\n2\nNA\n72\n\n\nSenior\nM\nNo\n15.0\n10\n71\n195\n2\n3\n2.22\n69\n\n\nSophomore\nF\nNo\n12.0\n7\n66\n140\n1\n2\n3.26\n61\n\n\nFirstYear\nF\nNo\n10.0\n10\n68\n135\n2\n3\n3.50\n95\n\n\nSophomore\nF\nNo\n6.0\n3\n67\n138\n1\n1\n3.10\n58\n\n\nSenior\nF\nNo\n12.0\n5\n69\n170\n2\n3\n3.30\n57\n\n\nSophomore\nF\nNo\n10.0\n2\n66\n145\n1\n1\n3.29\n80\n\n\nFirstYear\nM\nNo\n14.0\n5\n68\n135\n2\n3\nNA\n60\n\n\nFirstYear\nF\nNo\n5.0\n4\n68\n140\n0\n1\n3.69\n69\n\n\nSophomore\nM\nNo\n18.0\n5\n71\n155\n2\n2\n2.65\n73\n\n\nSenior\nM\nNo\n10.0\n10\n70\n155\n1\n2\n3.25\n62\n\n\nSophomore\nM\nNo\n8.0\n2\n66\n155\n1\n1\n2.80\n64\n\n\nSophomore\nF\nNo\n8.0\n10\n65\n135\n2\n3\n3.36\n86\n\n\nJunior\nM\nNo\n3.0\n15\n70\n165\n1\n1\n2.97\n73\n\n\nFirstYear\nM\nNo\n5.0\n20\n71\n160\n2\n1\n3.31\n71\n\n\nSophomore\nM\nNo\n4.0\n21\n71\n175\n1\n1\n3.05\n72\n\n\nSophomore\nM\nNo\n8.0\n10\n70\n183\n3\n2\n2.20\n84\n\n\nSophomore\nF\nNo\n3.0\n10\n65\n140\n2\n3\n3.30\n120\n\n\nSophomore\nF\nNo\n12.0\n4\n67\n140\n1\n1\n3.45\n77\n\n\nJunior\nF\nNo\n5.0\n10\n61\n110\n2\n2\n3.83\n80\n\n\nSophomore\nF\nNo\n5.0\n3\n68\n125\n0\n1\n3.00\n80\n\n\nSenior\nF\nNo\n15.0\n2\n65\n125\n2\n2\n3.35\n54\n\n\nFirstYear\nM\nNo\n10.0\n7\n70\n180\n2\n3\n2.40\n54\n\n\nSophomore\nM\nNo\n10.0\n10\n72\n195\n2\n3\n3.10\n78\n\n\nSophomore\nF\nNo\n10.0\n6\n66\n128\n3\n3\n3.40\n72\n\n\nFirstYear\nM\nNo\n14.0\n2\n71\n172\n1\n1\n2.82\n78\n\n\nSophomore\nF\nNo\n6.0\n4\n64\n150\n1\n1\n2.90\n69\n\n\nSophomore\nM\nNo\n4.0\n27\n73\n188\n1\n1\n3.40\n80\n\n\nSophomore\nF\nNo\n14.0\n2\n60\n110\n2\n1\n3.20\n76\n\n\nSophomore\nF\nNo\n5.0\n15\n64\n125\n1\n1\n3.20\n74\n\n\nSophomore\nF\nNo\n16.0\n10\n65\n135\n3\n1\n3.80\n70\n\n\nFirstYear\nF\nNo\n14.0\n3\n65\n130\n2\n2\n3.57\n72\n\n\nSophomore\nM\nNo\n10.0\n10\n73\n230\n2\n2\n3.33\n60\n\n\nSophomore\nM\nNo\n11.0\n10\n69\n198\n1\n2\n2.90\n71\n\n\nSophomore\nF\nNo\n4.0\n10\n66\n127\n1\n2\n3.20\n70\n\n\nSophomore\nM\nNo\n12.0\n5\n66\n150\n1\n2\n3.10\n53\n\n\nSophomore\nM\nNo\n5.0\n4\n73\n175\n3\n1\n3.25\n70\n\n\nJunior\nM\nNo\n8.0\n14\n71\n160\n3\n4\n3.40\n75\n\n\nJunior\nF\nNo\n8.0\n6\n65\n140\n2\n3\n3.80\n84\n\n\nSophomore\nM\nNo\n3.0\n5\n75\n200\n1\n1\n3.38\n66\n\n\nSophomore\nF\nNo\n8.0\n2\n63\n130\n1\n1\n3.88\n72\n\n\nSophomore\nM\nNo\n20.0\n14\n74\n210\n3\n3\n2.75\n70\n\n\nSophomore\nM\nNo\n10.0\n5\n70\n210\n2\n2\n2.90\n49\n\n\nSophomore\nF\nNo\n3.0\n3\n63\n145\n4\n5\n3.60\n81\n\n\nSophomore\nM\nNo\n4.0\n6\n75\n156\n3\n1\n2.80\n77\n\n\nFirstYear\nM\nNo\n8.0\n10\n71\n207\n0\n1\n2.20\n72\n\n\nFirstYear\nF\nNo\n15.0\n5\n68\n150\n1\n2\nNA\n38\n\n\nSophomore\nF\nNo\n14.0\n10\n68\n137\n2\n2\n3.30\n60\n\n\nFirstYear\nM\nNo\n14.0\n2\n72\n153\n2\n3\n2.85\n64\n\n\nJunior\nF\nNo\n12.0\n5\n63\n175\n2\n3\n3.37\n65\n\n\nSophomore\nF\nNo\n6.0\n2\n65\n136\n3\n1\n3.50\n72\n\n\nSophomore\nF\nNo\n3.0\n10\n65\n104\n2\n2\n3.55\n54\n\n\nFirstYear\nF\nNo\n12.0\n3\n67\n122\n3\n4\n3.20\n82\n\n\nSophomore\nM\nNo\n5.0\n40\n72\n192\n1\n1\n2.47\n82\n\n\nFirstYear\nM\nNo\n8.0\n10\n71\n218\n1\n2\n2.72\n62\n\n\nSophomore\nM\nNo\n1.0\n14\n68\n170\n4\n5\n3.40\n52\n\n\nFirstYear\nM\nNo\n10.0\n4\n72\n220\n2\n2\nNA\n66\n\n\nSophomore\nF\nNo\n7.0\n2\n64\n150\n1\n1\n3.40\n55\n\n\nSenior\nM\nNo\n5.0\n7\n71\n135\n4\n3\n3.10\n63\n\n\nSenior\nF\nNo\n10.0\n2\n62\n155\n1\n1\n3.10\n78\n\n\nSophomore\nF\nNo\n12.0\n5\n65\n135\n1\n1\n2.94\n65\n\n\nSophomore\nM\nNo\n15.0\n15\n68\n140\n1\n2\n3.00\n64\n\n\nFirstYear\nF\nNo\n10.0\n5\n67\n120\n1\n1\nNA\n70\n\n\nSophomore\nF\nNo\n7.0\n12\n68\n135\n3\n1\n3.60\n70\n\n\nSophomore\nF\nNo\nNA\n4\n64\n135\n1\n1\n3.60\n65\n\n\nSophomore\nM\nNo\n15.0\n0\n72\n165\n2\n1\n3.50\n71\n\n\nJunior\nM\nNo\n10.0\n15\n71\n180\n1\n2\n3.40\n54\n\n\nSophomore\nM\nNo\n15.0\n0\n72\n165\n2\n1\n3.50\n71\n\n\nSophomore\nM\nNo\n12.0\n6\n72\n175\n2\n2\n3.00\n54\n\n\nSophomore\nM\nNo\n10.0\n5\n71\n200\n1\n2\n2.75\n70\n\n\nSophomore\nM\nNo\n12.0\n10\n71\n138\n0\n1\n3.56\n65\n\n\nSenior\nM\nNo\n5.0\n3\n71\n265\n1\n1\n2.70\n82\n\n\nSophomore\nF\nNo\n14.0\n16\n61\n105\n1\n2\n3.68\n63\n\n\nSophomore\nF\nNo\n3.0\n9\n68\n130\n3\n3\n3.50\n71\n\n\nSophomore\nM\nNo\n12.0\n2\n70\n165\n1\n1\n3.50\n75\n\n\nSophomore\nF\nNo\n15.0\n5\n67\n145\n1\n2\n3.40\n60\n\n\nFirstYear\nF\nNo\n3.0\n6\n64\n138\n1\n1\n2.60\n54\n\n\nSophomore\nF\nNo\n25.0\n12\n71\n193\n2\n2\n3.25\n68\n\n\nSophomore\nM\nNo\n5.0\n1\n71\n170\n1\n1\n3.30\n70\n\n\nSophomore\nM\nNo\n6.0\n0\n69\n155\n1\n1\n3.20\n90\n\n\nSophomore\nM\nNo\n27.0\n2\n70\n155\n1\n1\n2.90\n72\n\n\nJunior\nF\nNo\n8.0\n10\n65\n140\n2\n1\n3.85\n41\n\n\nSophomore\nF\nNo\n3.0\n1\n65\n130\n1\n1\n3.40\n80\n\n\nSophomore\nM\nNo\n17.0\n14\n72\n180\n3\n3\n3.40\n68\n\n\nFirstYear\nM\nNo\n40.0\n2\n67\n140\n2\n2\nNA\n64\n\n\nSophomore\nM\nNo\n5.0\n10\n74\n210\n1\n2\n2.70\n78\n\n\nSophomore\nM\nNo\n0.0\n7\nNA\n150\n0\n1\n3.81\n65\n\n\nSophomore\nF\nNo\n27.0\n2\n62\n115\n1\n2\n3.40\n64\n\n\nSophomore\nM\nNo\n3.0\n5\n75\n225\n3\n1\n3.23\n78\n\n\nFirstYear\nM\nNo\n3.0\n7\n67\n170\n2\n3\n3.10\n42\n\n\nSophomore\nF\nNo\n11.0\n20\n63\n120\n0\n1\n2.89\n60\n\n\nSenior\nM\nNo\n2.0\n4\n71\n170\n1\n1\n2.81\n59\n\n\nSophomore\nF\nNo\n9.0\n1\n63\n130\n2\n3\n3.00\n54\n\n\nFirstYear\nM\nNo\n12.0\n8\n70\n182\n1\n2\n3.77\n70\n\n\nSophomore\nM\nNo\n15.0\n2\n67\n138\n1\n2\n3.30\n52\n\n\nSophomore\nM\nNo\n2.0\n5\n74\n180\n2\n1\n3.00\n88\n\n\nSophomore\nM\nNo\n20.0\n6\n69\n230\n0\n1\n2.90\n60\n\n\nJunior\nM\nNo\n12.0\n5\n70\n222\n2\n1\n3.50\n66\n\n\nFirstYear\nM\nNo\n5.0\n2\n70\n145\n4\n4\n3.60\n55\n\n\nSophomore\nM\nNo\n10.0\n4\n70\n150\n1\n1\n3.70\n74\n\n\nSenior\nM\nNo\n2.0\n2\n68\n190\n0\n1\n3.20\n59\n\n\nSophomore\nM\nNo\n12.0\n20\n76\n195\n3\n1\n2.87\n84\n\n\nSophomore\nF\nNo\n5.0\n2\n59\n115\n1\n2\n3.30\n68\n\n\nJunior\nF\nNo\n3.0\n1\n66\n140\n1\n2\n3.30\n74\n\n\nSophomore\nM\nNo\n12.0\n10\n68\n155\n1\n1\n3.45\n58\n\n\nSophomore\nM\nNo\n8.0\n3\n72\n150\n2\n1\n3.10\n62\n\n\nSophomore\nM\nNo\n8.0\n4\n69\n155\n2\n1\n3.71\n84\n\n\nSophomore\nM\nNo\n5.0\n3\nNA\n130\n2\n1\n3.30\n72\n\n\nFirstYear\nM\nNo\n6.0\n14\n75\n210\n3\n2\n3.30\n52\n\n\n\nF\nNo\n8.0\n10\n63\n105\n3\n1\nNA\n80\n\n\nJunior\nM\nNo\n10.0\n10\n71\n192\n1\n1\n3.73\n68\n\n\nFirstYear\nF\nNo\n18.0\n3\n72\n220\n3\n4\n3.13\n71\n\n\nJunior\nF\nNo\n12.0\n0\n64\n134\n1\n2\n3.89\n55\n\n\nSophomore\nM\nNo\n10.0\n5\n68\n160\n1\n1\n3.05\n68\n\n\nJunior\nM\nNo\n10.0\n5\n68\n135\n1\n1\n3.20\n61\n\n\nSophomore\nM\nNo\n5.0\n2\n67\n140\n1\n1\n3.25\n80\n\n\nSophomore\nF\nNo\n7.0\n2\n66\n135\n0\n1\n2.90\n66\n\n\nFirstYear\nM\nNo\n3.0\n5\n74\n145\n1\n2\n3.00\n70\n\n\nFirstYear\nF\nNo\n7.0\n4\n64\n140\n2\n1\n3.50\n78\n\n\nSophomore\nF\nNo\n3.0\n2\nNA\nNA\n2\n2\n3.50\n88\n\n\nSophomore\nF\nNo\n4.0\n3\n65\n138\n2\n2\n3.60\n72\n\n\nFirstYear\nF\nNo\n8.0\n4\n64\nNA\n2\n2\n3.40\n65\n\n\nSophomore\nF\nNo\n7.0\n5\n64\n130\n2\n2\n3.25\n63\n\n\nSenior\nM\nNo\n7.0\n9\n72\n210\n2\n2\n2.70\n70\n\n\nSenior\nM\nNo\n3.0\n1\n69\n233\n1\n1\n3.78\n72\n\n\nFirstYear\nF\nNo\n7.0\n7\n70\n180\n6\n7\n4.00\n63\n\n\nFirstYear\nM\nNo\n14.0\n6\n67\n185\n1\n1\n3.00\n68\n\n\nSophomore\nM\nNo\n5.0\n6\n76\n189\n3\n2\n3.30\n64\n\n\nFirstYear\nF\nNo\n14.0\n5\n66\n127\n1\n1\n2.80\n64\n\n\nSenior\nM\nNo\n5.0\n4\n63\n135\n1\n1\n2.50\n60\n\n\nSophomore\nF\nNo\n5.0\n5\n66\n140\n0\n1\n3.50\n68\n\n\nSophomore\nF\nNo\n2.0\n20\n68\n162\n2\n1\n2.80\n70\n\n\nSophomore\nF\nNo\n1.0\n3\n67\n215\n0\n1\n3.40\n63\n\n\nSenior\nM\nNo\n15.0\n5\n73\n200\n2\n1\n3.00\n57\n\n\nSophomore\nF\nNo\n5.0\n1\n62\n120\n1\n1\n3.27\n84\n\n\nFirstYear\nM\nNo\n5.0\n2\n67\n165\n3\n4\n3.50\n74\n\n\nFirstYear\nM\nNo\n15.0\n14\n71\n175\n2\n3\n3.00\n61\n\n\nSophomore\nF\nNo\n5.0\n3\n66\n160\n2\n1\n3.60\n78\n\n\nSophomore\nM\nNo\n20.0\n0\n68\n145\n1\n2\n3.25\n65\n\n\nJunior\nF\nNo\n3.0\n5\n60\n180\n3\n4\n3.00\n68\n\n\nFirstYear\nF\nNo\n7.0\n0\n71\n170\n1\n1\n2.75\n76\n\n\nSophomore\nM\nNo\n20.0\n10\n75\n235\n2\n1\n2.90\n54\n\n\nSophomore\nF\nNo\n10.0\n10\n65\n155\n1\n1\n3.00\n56\n\n\nSenior\nM\nNo\n6.0\n15\n65\n140\n3\n3\n3.00\n88\n\n\nSophomore\nF\nNo\n6.0\n1\n66\n145\n2\n2\n2.90\n77\n\n\nFirstYear\nM\nNo\n10.0\n3\n71\n175\n2\n2\n3.36\n52\n\n\nSophomore\nM\nNo\n9.0\n6\n76\n210\n2\n2\n3.25\n62\n\n\nFirstYear\nF\nNo\n1.5\n20\n67\n130\n1\n1\n3.50\n80\n\n\nSophomore\nM\nNo\n20.0\n28\n72\n195\n1\n1\n2.76\n60\n\n\nSophomore\nM\nNo\n8.0\n3\n67\n165\n1\n2\nNA\n67\n\n\nSophomore\nM\nNo\n21.0\n1\n73\n180\n6\n3\n2.75\n51\n\n\nSophomore\nF\nNo\n10.0\n5\n60\n145\n1\n2\n3.25\n81\n\n\nSophomore\nM\nNo\n8.0\n12\n70\n163\n2\n1\n3.00\n62\n\n\nJunior\nM\nNo\n10.0\n1\n75\n160\n1\n2\n2.80\n84\n\n\nJunior\nF\nNo\n18.0\n7\n67\n150\n1\n1\n3.40\n75\n\n\nSophomore\nM\nNo\n15.0\n6\n71\n170\n3\n1\n3.25\n60\n\n\nSophomore\nF\nNo\n8.0\n5\nNA\n110\n3\n3\n3.50\n76\n\n\nSenior\nM\nNo\n6.0\n2\n66\n170\n1\n2\n3.05\n65\n\n\nSophomore\nM\nNo\n12.0\n3\n69\n145\n2\n2\n3.18\n65\n\n\nFirstYear\nF\nNo\n10.0\n4\n69\n160\n1\n2\n3.00\n64\n\n\nJunior\nF\nNo\n7.0\n4\n63\n130\n1\n1\n2.23\n75\n\n\nSophomore\nF\nNo\n5.0\n5\n65\n155\n1\n1\n3.40\n93\n\n\nFirstYear\nF\nNo\n6.0\n4\n65\nNA\n1\n2\n3.30\n75\n\n\nSenior\nM\nNo\n5.0\n5\n72\n160\n2\n3\n3.43\n82\n\n\nSophomore\nF\nNo\n5.0\n5\n66\n151\n1\n1\n3.88\n80\n\n\nSophomore\nM\nNo\n30.0\n10\n74\n180\n1\n1\n3.45\n69\n\n\nSenior\nF\nNo\n5.0\n4\n64\n130\n2\n3\n3.00\n85\n\n\nJunior\nM\nYes\n12.0\n5\n75\n185\n1\n2\n3.00\n76\n\n\nSenior\nM\nYes\n0.0\n1\n73\n198\n1\n1\n3.18\n76\n\n\nFirstYear\nM\nYes\n12.0\n5\n72\n175\n2\n3\n2.20\n65\n\n\nSenior\nF\nYes\n0.0\n14\n67\n123\n1\n1\n3.29\n67\n\n\nJunior\nF\nYes\n15.0\n10\n64\n145\n1\n1\n3.50\n64\n\n\nFirstYear\nM\nYes\n18.0\n15\n67\n190\n0\n1\n2.80\n71\n\n\nSophomore\nF\nYes\n12.0\n5\n65\n130\n2\n3\n2.90\n65\n\n\nSophomore\nM\nYes\n2.0\n3\n70\n185\n4\n3\n3.50\n83\n\n\nFirstYear\nM\nYes\n12.0\n20\n68\n165\n1\n1\n2.50\n65\n\n\nSophomore\nM\nYes\n3.0\n5\n70\n165\n3\n2\n3.25\n77\n\n\nJunior\nM\nYes\n3.0\n3\n67\n150\n2\n2\n2.90\n66\n\n\nFirstYear\nM\nYes\n4.0\n3\n72\n160\n1\n2\n3.66\n62\n\n\nJunior\nF\nYes\n12.0\n2\n64\n142\n3\n3\n3.01\n58\n\n\nFirstYear\nM\nYes\n25.0\n5\n72\n165\n1\n1\n2.25\n48\n\n\nJunior\nM\nYes\n3.0\n4\n75\n175\n0\n1\n3.20\n61\n\n\nSophomore\nM\nYes\n6.0\n6\n69\n175\n2\n1\n3.35\n50\n\n\nSophomore\nF\nYes\n7.0\n8\n68\n190\n1\n1\n3.00\n72\n\n\nSophomore\nM\nYes\n7.0\n2\n72\n180\n2\n2\n3.00\n74\n\n\nSophomore\nM\nYes\n6.0\n2\n74\n185\n1\n2\n3.48\n80\n\n\nSophomore\nM\nYes\n6.0\n2\nNA\nNA\n1\n1\n2.88\n90\n\n\nSophomore\nF\nYes\n13.0\n4\n64\n135\n3\n2\n2.60\n72\n\n\nSophomore\nM\nYes\n25.0\n8\n73\n195\n1\n1\n2.75\n64\n\n\nSenior\nM\nYes\n8.0\n12\n71\n175\n0\n1\n3.30\n72\n\n\nSophomore\nM\nYes\n5.0\n5\n70\n165\n1\n1\n3.25\n70\n\n\nFirstYear\nM\nYes\n11.0\n6\n68\n135\n1\n1\n3.30\n84\n\n\nSophomore\nF\nYes\n18.0\n5\n69\n140\n1\n1\n3.20\n87\n\n\nSophomore\nM\nYes\n10.0\nNA\nNA\n182\n2\n1\n2.60\n60\n\n\nFirstYear\nM\nYes\n6.0\n14\n72\n155\n1\n2\n3.00\n60\n\n\nFirstYear\nF\nYes\n2.0\n1\n68\n180\n2\n3\n3.25\n80\n\n\nSenior\nM\nYes\n5.0\n25\n69\n170\n1\n1\n3.30\n70\n\n\nSophomore\nF\nYes\n5.0\n3\n66\n135\n3\n2\n3.25\n78\n\n\nFirstYear\nM\nYes\n6.0\n25\n72\n165\n2\n1\n2.83\n75\n\n\nSophomore\nF\nYes\n10.0\n10\n65\n137\n0\n1\n3.30\n42\n\n\nSophomore\nM\nYes\n4.0\n1\n70\n147\n2\n2\n3.60\n80\n\n\nSenior\nF\nYes\n5.0\n4\n66\n150\n1\n2\n3.70\n72\n\n\nJunior\nF\nYes\n17.0\n2\n67\n155\n2\n1\n2.83\n96\n\n\nSophomore\nM\nYes\n7.0\n10\n71\n160\n2\n3\n3.30\n95\n\n\nSophomore\nF\nYes\n2.0\n0\n83\n130\n1\n1\n3.44\n80\n\n\nSophomore\nM\nYes\n8.0\n10\n61\n180\n2\n1\n3.00\n74\n\n\nSophomore\nF\nYes\n1.0\n1\n65\n150\n2\n2\n3.27\n78\n\n\nFirstYear\nM\nYes\n14.0\n5\n77\n205\n2\n2\n2.30\n72\n\n\nSophomore\nF\nYes\n12.0\n5\n60\n115\n0\n1\n2.60\n91"
   },
   {
-    "objectID": "Day2.html#identified-sources-of-bias-in-swedish-study",
-    "href": "Day2.html#identified-sources-of-bias-in-swedish-study",
-    "title": "Day 2",
-    "section": "Identified Sources of Bias in Swedish Study",
-    "text": "Identified Sources of Bias in Swedish Study\n\n\nPolitical Bias: The study experimentally primes the political affiliations of the respondents before asking questions about corruption. This bias arises when people’s political leanings affect their perception and reporting of corruption levels.\n\n\n\nSensitivity Bias: Questions about one’s experiences with corruption are sensitive in nature and may result in biased responses due to fear of retribution or social stigma."
+    "objectID": "Day3.html#distribution",
+    "href": "Day3.html#distribution",
+    "title": "Day 3",
+    "section": "Distribution",
+    "text": "Distribution\n\nIn the given dataset, there are multiple variables (such as Gender, Smoke, Exercise, Height, Weight, etc.) for different students across various academic years.\n\nKnowing the distribution of each variable can help us identify relationships, trends, and potential anomalies in the data."
   },
   {
-    "objectID": "Day2.html#context",
-    "href": "Day2.html#context",
-    "title": "Day 2",
-    "section": "Context",
-    "text": "Context\n\nAnn Landers column asked readers “If you had it to do over again, would you have children?”\nThe first request for data contained a letter from a young couple which listed worries about parenting and various reasons not to have kids.\n\\[30\\% \\text{ said yes}\\]"
+    "objectID": "Day3.html#distribution-1",
+    "href": "Day3.html#distribution-1",
+    "title": "Day 3",
+    "section": "Distribution",
+    "text": "Distribution\n\n“The distribution of the variable Y” describes its center, variability, and shape using both numbers and graphics."
   },
   {
-    "objectID": "Day2.html#context-1",
-    "href": "Day2.html#context-1",
-    "title": "Day 2",
-    "section": "Context",
-    "text": "Context\n\nThe second request for data was in response to this number, in which Ann wrote how she was “stunned, disturbed, and just plain flummoxed.”\n\\[95\\% \\text{ said yes}\\]"
+    "objectID": "Day3.html#center-mean-or-average",
+    "href": "Day3.html#center-mean-or-average",
+    "title": "Day 3",
+    "section": "Center: Mean or Average",
+    "text": "Center: Mean or Average\n\n\nMean: Average value in a sample or population.\n\nSample mean: \\(\\bar{y} = \\dfrac{\\sum_{i=1}^n y_i}{n}\\)\nPopulation mean: \\(\\mu\\)\n\n\n\n\nmean(survey$Pulse)\n\n[1] 69.57459\n\n\n\nThe mean pulse rate for this sample of students is \\(\\bar{y} = 69.6\\) beats per minute."
   },
   {
-    "objectID": "Day2.html#non-response-bias",
-    "href": "Day2.html#non-response-bias",
-    "title": "Day 2",
-    "section": "Non-response Bias",
-    "text": "Non-response Bias\n\nWhen respondents are either unable or unwilling to respond to your survey, this results in non-response bias.\n\n\n\nSurvey targeted to the wrong audience.\nThere is general unwillingness due to polar opposite opinions.\nThe survey did not reach the right respondent.\n\ne.g., A survey asking teenagers about the best cigarette brands."
+    "objectID": "Day3.html#center-median",
+    "href": "Day3.html#center-median",
+    "title": "Day 3",
+    "section": "Center: Median",
+    "text": "Center: Median\n\n\nMedian: The middle value when the data are ordered.\n\nSample median: \\(m\\)\nPopulation median: \\(M\\)\n\n\n\n\nmedian(survey$Pulse)\n\n[1] 70\n\n\n\nThe median pulse rate for this sample of students is \\(m = 70\\) beats per minute."
   },
   {
-    "objectID": "Day2.html#think-pair-share",
-    "href": "Day2.html#think-pair-share",
-    "title": "Day 2",
-    "section": " Think-Pair-Share ",
-    "text": "Think-Pair-Share \n\n\n\n\n\n\n\n\nThink: Reflect on a real-world example where sampling bias might occur (e.g., political polls, health surveys).\nPair: Discuss their example with a partner and identify potential sources of bias.\nShare: Share their findings with the class and propose ways to mitigate the bias.\n\n\n\n\n\n\n−+\n05:00"
+    "objectID": "Day3.html#variability-standard-deviation",
+    "href": "Day3.html#variability-standard-deviation",
+    "title": "Day 3",
+    "section": "Variability: Standard Deviation",
+    "text": "Variability: Standard Deviation\n\n\n\nStandard Deviation (SD): Average deviation from the center in a sample or population.\n\nSample SD: \\(s = \\sqrt{ \\dfrac{\\sum_{i=1}^n (y_i - \\overline{y})^2}{n-1}}\\)\nPopulation SD: \\(\\sigma\\)\n\n\n\n\nsd(survey$Pulse)\n\n[1] 12.20514\n\n\n\nThe SD of pulse rates for this sample of students is \\(s = 12.2\\) beats per minute. The “average” deviation of individual pulse rates around the mean value is about 12.2 beats per minute."
   },
   {
-    "objectID": "Day2.html#experiment-vs.-observational-study",
-    "href": "Day2.html#experiment-vs.-observational-study",
-    "title": "Day 2",
-    "section": "Experiment vs. Observational Study",
-    "text": "Experiment vs. Observational Study\n\nAn observational study is a study in which the researcher does not actively control the value of any variable but simply observes the values as they naturally exist.\n\n\n\nAn experiment is a study in which the researcher actively controls one or more of the explanatory variables."
+    "objectID": "Day6.html#key-probability-concepts-recap",
+    "href": "Day6.html#key-probability-concepts-recap",
+    "title": "Day 6",
+    "section": "Key Probability Concepts Recap",
+    "text": "Key Probability Concepts Recap\n\n\nProbability is defined as the long-run proportion of times an event occurs after many repeated experiments.\n\nEvents and Sample Spaces\n\nAn event is a specific outcome or a set of outcomes of a random experiment.\nThe sample space (S) is the set of all possible outcomes of an experiment.\n\nUnion and Intersection Rules\n\nUnion of events (A \\(\\cup\\) B): Event occurs if either event A or event B (or both) occur.\nIntersection of events (A \\(\\cap\\) B): Event occurs only if both event A and event B occur simultaneously."
   },
   {
-    "objectID": "RandRStudio.html",
-    "href": "RandRStudio.html",
-    "title": "Setting Up R and RStudio",
+    "objectID": "Day6.html#complementary-events",
+    "href": "Day6.html#complementary-events",
+    "title": "Day 6",
+    "section": "Complementary Events",
+    "text": "Complementary Events\n\n\nThe complement of an event \\(A\\), denoted as \\(A^c\\), includes all sample points not in \\(A\\). It represents the event that \\(A\\) does NOT occur.\n\nRule of Complements\n\nThe probabilities of an event and its complement always sum to 1: \\[P(A)+P(A^c)=1\\] This implies: \\[P(A^c)=1-P(A)\\]"
+  },
+  {
+    "objectID": "Day6.html#calculating-pa-for-coin-tosses",
+    "href": "Day6.html#calculating-pa-for-coin-tosses",
+    "title": "Day 6",
+    "section": "Calculating \\(P(A)\\) for Coin Tosses",
+    "text": "Calculating \\(P(A)\\) for Coin Tosses\n\n\n\nExperiment: Tossing Coins\n\nEvent \\(A\\): Observing at least one head.\n\nTwo Coin Tosses\n\nPossible outcomes: \\(HT\\), \\(TH\\), \\(HH\\), \\(TT\\).\n\\(A = \\{HT, TH, HH\\}\\): \\[P(A) = P(HT) + P(TH) + P(HH) = \\frac{3}{4}\\]\nOr by complement, \\(A^c = \\{TT\\}\\): \\[P(A) = 1 - P(A^c) = 1 - \\frac{1}{4} = \\frac{3}{4}\\]"
+  },
+  {
+    "objectID": "Day6.html#calculating-pa-for-coin-tosses-1",
+    "href": "Day6.html#calculating-pa-for-coin-tosses-1",
+    "title": "Day 6",
+    "section": "Calculating \\(P(A)\\) for Coin Tosses",
+    "text": "Calculating \\(P(A)\\) for Coin Tosses\n\n\n\nExperiment: Tossing Coins\n\nEvent \\(A\\): Observing at least one head. \\[P(A) = 1 - P(A^c) = 1 - \\frac{1}{4} = \\frac{3}{4}\\]\n\nTen Coin Tosses\n\nFor \\(n = 10\\), \\(A\\) includes all outcomes except all tails: \\[P(A) = 1 - P(A^c) = 1 - \\left(\\frac{1}{2}\\right)^{10}\\] Simplifying, we find: \\[P(A) = 1 - \\frac{1}{1024}\\]"
+  },
+  {
+    "objectID": "Day6.html#additive-rule",
+    "href": "Day6.html#additive-rule",
+    "title": "Day 6",
+    "section": "Additive Rule",
+    "text": "Additive Rule\n\n\n\nAdditive Rule:\n\nFor any two events \\(A\\) and \\(B\\), the probability of their union is: \\[P(A \\cup B)=P(A)+P(B)-P(A \\cap B)\\]\nThis formula accounts for overlapping outcomes, ensuring they are not double-counted."
+  },
+  {
+    "objectID": "Day6.html#hospital-admission-probabilities",
+    "href": "Day6.html#hospital-admission-probabilities",
+    "title": "Day 6",
+    "section": "Hospital Admission Probabilities",
+    "text": "Hospital Admission Probabilities\n\n\n\n\n\nPatient Admissions:\n\n\\(A\\): Admitted for surgical treatment.\n\\(B\\): Admitted for obstetrics.\nProbabilities:\n\n\\(P(A) = 12\\%\\)\n\\(P(B) = 16\\%\\)\n\\(P(A \\cap B) = 2\\%\\)\n\n\n\n\n\n\nCalculating \\(P(A \\cup B)\\):\n\nUsing the formula: \\[P(A \\cup B) = P(A) + P(B) - P(A \\cap B)\\]\nCalculation: \\[P(A \\cup B) = 12\\% + 16\\% - 2\\% = 26\\%\\]\n\n\n\n\n\nThe probability that a new patient is admitted for surgery, obstetrics, or both is 26%."
+  },
+  {
+    "objectID": "Day6.html#mutually-exclusive-events",
+    "href": "Day6.html#mutually-exclusive-events",
+    "title": "Day 6",
+    "section": "Mutually Exclusive Events",
+    "text": "Mutually Exclusive Events\n\n\n\nEvents \\(A\\) and \\(B\\) are mutually exclusive if:\n\n\\(A \\cap B = \\{\\} = \\emptyset \\qquad \\qquad\\) (Indicates no overlap in outcomes between \\(A\\) and \\(B\\).)\n\\(P(A \\cap B) = 0\\)\n\nProbability of Union for mutually exclusive events \\(A\\) and \\(B\\):\n\n\\(P(A \\cup B) = P(A) + P(B)\\)"
+  },
+  {
+    "objectID": "Day6.html#mutually-exclusive-events-example",
+    "href": "Day6.html#mutually-exclusive-events-example",
+    "title": "Day 6",
+    "section": "Mutually Exclusive Events: Example",
+    "text": "Mutually Exclusive Events: Example\nFind the probability of observing at least one head when tossing two balanced coins?\n\n\n\n\n\nDefining Events\n\n\\(A\\): Observing at least one head.\n\\(B\\): Observing exactly one head = \\(\\{HT, TH\\}\\)\n\\(C\\): Observing exactly two heads = \\(\\{HH\\}\\)\n\\(A = B \\cup C\\)\n\\(B \\cap C = \\emptyset\\) (B and C are mutually exclusive).\n\n\n\n\n\nCalculating Probability\n\nSince \\(B\\) and \\(C\\) are mutually exclusive:\n\n\\(P(A) = P(B \\cup C) = P(B) + P(C)\\)\n\nCalculation:\n\n\\(P(A) = \\frac{2}{4} + \\frac{1}{4} = \\frac{3}{4}\\)"
+  },
+  {
+    "objectID": "Day6.html#conditional-probability",
+    "href": "Day6.html#conditional-probability",
+    "title": "Day 6",
+    "section": "Conditional Probability",
+    "text": "Conditional Probability\n\n\n\nUnconditional vs. Conditional Probability\n\nUnconditional probability refers to the likelihood of an event without any prior conditions. For example, observing an even number on a fair die (\\(P(A) = \\frac{1}{2}\\)).\nConditional probability adjusts probabilities based on additional known conditions.\n\nFormula for Conditional Probability: \\[P(A \\mid B) = \\frac{P(A \\cap B)}{P(B)}\\], assuming \\(P(B) \\neq 0\\)."
+  },
+  {
+    "objectID": "Day6.html#conditional-probability-in-dice-throws",
+    "href": "Day6.html#conditional-probability-in-dice-throws",
+    "title": "Day 6",
+    "section": "Conditional Probability in Dice Throws",
+    "text": "Conditional Probability in Dice Throws\n\n\n\nConsider the event \\(A\\) (observing an even number) and \\(B\\) (result less than or equal to \\(3\\)) on a die throw.\nUnconditional sample space: \\(\\{1, 2, 3, 4, 5, 6\\}\\)\nConditioned on \\(B\\), sample space reduces to: \\(\\{1, 2, 3\\}\\)\nIntersection of \\(A\\) and \\(B\\): \\(A \\cap B = \\{2\\}\\)\nProbability of \\(A\\) given \\(B\\): \\[P(A \\mid B) = \\frac{P(A \\cap B)}{P(B)} = \\frac{\\frac{1}{6}}{\\frac{1}{2}} = \\frac{1}{3}\\]\nKey Takeaway: Conditional probability reflects how probabilities change when the available information restricts the sample space."
+  },
+  {
+    "objectID": "Day6.html#exercise-ethical-dilemma-in-business",
+    "href": "Day6.html#exercise-ethical-dilemma-in-business",
+    "title": "Day 6",
+    "section": "Exercise: Ethical Dilemma in Business",
+    "text": "Exercise: Ethical Dilemma in Business\n\n\nTo develop programs for business travelers staying at convention hotels, Hyatt Hotels Corp. commissioned a study of executives who play golf. The study revealed that \\(55 \\%\\) of the executives admitted that they had cheated at golf. Also, \\(20 \\%\\) of the executives admitted that they had cheated at golf, and had lied in business. Given that an executive had cheated at golf, what is the probability that the executive also had lied in business?"
+  },
+  {
+    "objectID": "Day6.html#exercise-cigarette-smoking-cancer",
+    "href": "Day6.html#exercise-cigarette-smoking-cancer",
+    "title": "Day 6",
+    "section": "Exercise: Cigarette Smoking \\(\\&\\) Cancer",
+    "text": "Exercise: Cigarette Smoking \\(\\&\\) Cancer\n\n\nMany medical researchers have conducted experiments to examine the relationship between cigarette smoking and cancer. Consider an individual randomly selected from the adult male population. Let \\(A\\) represent the event that the individual smokes, and let \\(A^c\\) denote the complement of \\(A\\) (the event that the individual does not smoke). Similarly, let \\(B\\) represent the event that the individual develops cancer, and let \\(B^c\\) be the complement of that event. Then the four sample points associated with the experiment are shown in the following figure, and their probabilities for a certain section of the United States are given in the following table. Use these sample point probabilities to examine the relationship between smoking and cancer.\n\n\n\n\n\n\n\nSample Points\n\n\n\n\n\n\n\nProbabilities"
+  },
+  {
+    "objectID": "Day6.html#exercise-cigarette-smoking-cancer-1",
+    "href": "Day6.html#exercise-cigarette-smoking-cancer-1",
+    "title": "Day 6",
+    "section": "Exercise: Cigarette Smoking \\(\\&\\) Cancer",
+    "text": "Exercise: Cigarette Smoking \\(\\&\\) Cancer\n\n\nGiven a person is a smoker, what is the probability of having cancer?\n\n\n\nGiven a person is a smoker, what is the probability of not having cancer?\n\n\n\nGiven a person is not a smoker, what is the probability of having cancer?\n\n\n\nGiven a person is not a smoker, what is the probability of not having cancer?"
+  },
+  {
+    "objectID": "Activity2.html",
+    "href": "Activity2.html",
+    "title": "Activity 2",
     "section": "",
-    "text": "This lab tutorial will guide you through installing R and RStudio on your computer, managing packages, and loading data into R. This setup is essential for performing all kinds of data analysis tasks in R."
+    "text": "Activity 1: Think-Pair-Share\n\n\nThink: Reflect on a real-world example where sampling bias might occur (e.g., political polls, health surveys).\n\nPair: Discuss your example with a partner and identify potential sources of bias.\n\nShare: Share your findings with the class and propose ways to mitigate the bias.\nActivity 2: Live Quiz\n\n\nQuestion: “How might the wording of a survey question about climate change influence responses?”\n\nOptions:\n\n\nIt has no effect.\n\n\n\nIt can lead to overestimation of public concern.\n\n\n\nIt can lead to underestimation of public concern.\n\n\n\nIt can polarize responses.\n\n\n\nActivity 3: Interactive Data Exploration\n\n\n\n\n\nsp\nsex\nindex\nFL\nRW\nCL\nCW\nBD\n\n\n\nB\nM\n1\n8.1\n6.7\n16.1\n19.0\n7.0\n\n\nB\nM\n2\n8.8\n7.7\n18.1\n20.8\n7.4\n\n\nB\nM\n3\n9.2\n7.8\n19.0\n22.4\n7.7\n\n\nB\nM\n4\n9.6\n7.9\n20.1\n23.1\n8.2\n\n\nB\nM\n5\n9.8\n8.0\n20.3\n23.0\n8.2\n\n\nB\nM\n6\n10.8\n9.0\n23.0\n26.5\n9.8\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuestion: What do you see on the above plots? .\nActivity 4: Quiz\n\nQuestion: “Experiment or Observational Study? To examine whether farm-grown salmon contain more omega-3 oils if water is more acidic, we collect samples of salmon and water from multiple fish farms to see if the two variables are related.” Explain\n\nOptions:\n\n\nExperiment.\n\n\n\nObservational Study.\n\n\n\nNot enough information."
   },
   {
-    "objectID": "RandRStudio.html#on-windows",
-    "href": "RandRStudio.html#on-windows",
-    "title": "Setting Up R and RStudio",
-    "section": "On Windows",
-    "text": "On Windows\n\n\nDownload R:\n\nVisit CRAN and download the latest version of R for Windows.\nRun the downloaded .exe file and follow the installation instructions.\n\n\n\n\n\nCRAN mirror\nDownload Latest R\nExecutable File in Downloads Folder\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDownload RStudio:\n\nGo to the RStudio Download page and download the free version of RStudio Desktop for Windows.\nInstall it by running the downloaded .exe file.\n\n\n\n\n\nDownload Latest RStudio\nExecutable File in Downloads Folder"
+    "objectID": "Activity3.html",
+    "href": "Activity3.html",
+    "title": "Activity 3",
+    "section": "",
+    "text": "1. Think-Pair-Share Activity\nThink-Pair-Share: Calculating Descriptive Statistics\n\n\nThink: Calculate the mean, median, and standard deviation for the following dataset by hand:\nPulse Rates: [68, 72, 70, 65, 74, 69, 71, 67, 73, 70]\n\nPair: Discuss your calculations with a partner. Compare your results and resolve any discrepancies.\nShare: Share your findings with the class. Be prepared to explain your calculations.\n\n2. Quiz\nQuiz: Proportions and Frequency Tables\n\n\nQuestion: In the cell phone dataset, what proportion of adults own an iPhone?\n\nA). 0.194\nB). 0.203\nC). 0.063\nD). 0.410\n\n\nQuestion: What is the difference in proportions between females and males who are in a relationship?\n\nA). 0.14\nB). 0.10\nC). 0.05\nD). 0.20\n3. Case Studies and Problem-Solving\nObjective: Apply statistical concepts to solve real-world problems.\nCase Study: Health Data Analysis\n\n\nScenario: A health study collected data on smoking habits and pulse rates. The dataset is provided below:\nSmoker: [Yes, No, No, Yes, No, Yes, No, No, Yes, No]  \nPulse: [72, 68, 70, 75, 69, 74, 67, 71, 73, 70]  \n\n\nTask:\n\nCalculate the mean and median pulse rates for smokers and non-smokers separately.\n\nCompare the variability (standard deviation) of pulse rates between the two groups.\n\nDiscuss whether smoking appears to have an effect on pulse rates.\n\n\nSubmit: Write a brief report summarizing your findings."
   },
   {
-    "objectID": "RandRStudio.html#on-mac",
-    "href": "RandRStudio.html#on-mac",
-    "title": "Setting Up R and RStudio",
-    "section": "On Mac",
-    "text": "On Mac\n\n\nDownload R:\n\nNavigate to CRAN and choose the version for macOS.\nOpen the downloaded .pkg file to start the installation.\n\n\n\n\n\nCRAN mirror\nDownload Latest R\nExecutable File in Downloads Folder\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDownload RStudio:\n\nVisit RStudio Download page and select RStudio for macOS.\nOpen the downloaded .dmg file and drag RStudio to your Applications folder.\n\n\n\n\n\nDownload Latest RStudio\nExecutable File in Downloads Folder"
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Math 216: Spring 2025",
+    "section": "",
+    "text": "Welcome to the world of statistics!"
   },
   {
-    "objectID": "RandRStudio.html#rmarkdown-interface-components",
-    "href": "RandRStudio.html#rmarkdown-interface-components",
-    "title": "Setting Up R and RStudio",
-    "section": "RMarkdown Interface Components",
-    "text": "RMarkdown Interface Components\nRStudio’s interface for working with RMarkdown documents contains four key panes:\n\nSource Editor (Left Pane)\nPrimary workspace for writing .Rmd files with integrated code chunks and narrative text. Features syntax highlighting, chunk controls (run individual code blocks), and document structure navigation.\n\nEnvironment/History (Top-Right Pane)\n\n\nEnvironment: Lists active datasets, variables, and functions\n\n\nHistory: Tracks all executed commands\n\n\nConnections: Manages database links (when used)\n\n\nGit: Version control integration (when configured)\n\n\n\nConsole/Terminal (Bottom-Left Pane)\n\n\nConsole: Direct R code execution environment showing raw output\n\n\nTerminal: System-level command line access\n\n\nBackground Jobs: Monitor long-running processes\n\n\n\nViewer/Help (Bottom-Right Pane)\n\n\nViewer: Preview rendered documents (HTML/PDF/Word)\n\n\nHelp: Access function documentation\n\n\nFiles: Navigate project directory structure\n\n\nPlots: Display graphical output\n\n\nPackages: Manage installed R packages"
+    "objectID": "Activity5.html",
+    "href": "Activity5.html",
+    "title": "Activity 5",
+    "section": "",
+    "text": "Think: Individually, list the sample space for the experiment of rolling a die and tossing a coin simultaneously.\n\nPair: Discuss with a partner to compare and refine their sample spaces.\n\nShare: Share their combined sample space with the class and explain how they arrived at it."
   },
   {
-    "objectID": "RandRStudio.html#understanding-r-markdown-documents",
-    "href": "RandRStudio.html#understanding-r-markdown-documents",
-    "title": "Setting Up R and RStudio",
-    "section": "Understanding R Markdown Documents",
-    "text": "Understanding R Markdown Documents\nR Markdown allows you to integrate code and text in the same document, facilitating reproducible research and interactive data analysis reports. Here’s a quick overview:"
+    "objectID": "Activity5.html#activity-1-think-pair-share",
+    "href": "Activity5.html#activity-1-think-pair-share",
+    "title": "Activity 5",
+    "section": "",
+    "text": "Think: Individually, list the sample space for the experiment of rolling a die and tossing a coin simultaneously.\n\nPair: Discuss with a partner to compare and refine their sample spaces.\n\nShare: Share their combined sample space with the class and explain how they arrived at it."
   },
   {
-    "objectID": "RandRStudio.html#managing-.rmd-files-and-setting-the-working-directory",
-    "href": "RandRStudio.html#managing-.rmd-files-and-setting-the-working-directory",
-    "title": "Setting Up R and RStudio",
-    "section": "Managing .Rmd Files and Setting the Working Directory",
-    "text": "Managing .Rmd Files and Setting the Working Directory\nDownloading and Organizing .Rmd Files\nTo effectively manage your course materials in RStudio, follow these steps:\n\n\nDownload .Rmd File:\n\nNavigate to MyClasses and locate the desired .Rmd file for your course.\nDownload the file to your local machine.\n\n\n\nCreate a Course Folder:\n\nCreate a new folder named math216 in a suitable location on your computer or within your OneDrive account.\n\n\n\nOrganize Files:\n\nMove the downloaded .Rmd file into the math216 folder to keep your course materials organized."
+    "objectID": "Activity5.html#activity-2-quiz",
+    "href": "Activity5.html#activity-2-quiz",
+    "title": "Activity 5",
+    "section": "Activity 2: Quiz",
+    "text": "Activity 2: Quiz\n\n\nQuestion: What is the probability of rolling a 2 on a fair six-sided die?\n\n\n1/6\n1/3\n1/2\n1/1"
   },
   {
-    "objectID": "RandRStudio.html#text-formatting-in-r-markdown",
-    "href": "RandRStudio.html#text-formatting-in-r-markdown",
-    "title": "Setting Up R and RStudio",
-    "section": "Text Formatting in R Markdown",
-    "text": "Text Formatting in R Markdown\nMarkdown is a lightweight markup language that allows you to add formatting elements using plain text. Here’s how you can use different Markdown syntax to format text within your R Markdown documents.\nHeaders\nCreate headers by prefixing the text with one or more hash symbols (#). The number of # symbols before the text determines the level of the header.\n# Header 1\n## Header 2\n### Header 3\nLists\nYou can create bulleted or numbered lists:\n\n\nUnordered Lists (bullets):\n\n- Item 1\n- Item 2\n  - Subitem 1\n  - Subitem 2\n\n\nOrdered Lists:\n\n1. First item\n2. Second item\n   1. Subitem 1\n   2. Subitem 2\nLinks\nInclude hyperlinks using the format [link text](URL):\n[Visit Canvas](https://salisbury.instructure.com/courses/71470)\nEmphasis\nItalicize or bold text using asterisks or underscores:\n\n\nItalic: *Italic* or _Italic_\n\n\nBold: **Bold** or __Bold__\n\nImages\nEmbed images using the format ![Alt text](image_URL \"Optional Title\"):\n![Example Image](path_to_image.jpg \"This is an image\")\nBlockquotes\nCreate blockquotes with &gt;:\n&gt; This is a blockquote.\nCode\nDisplay inline code with backticks and code blocks with triple backticks:\n\nInline code: `code`\n\nCode block:\n\n\n\n\n\n\n\n\n\n\n\n[1] -5\n\n\nHorizontal Rules\nInsert a horizontal line with three or more hyphens:\n---\nCombining Markdown with R Code\nMarkdown can be interleaved with executable R code chunks:\n\n# Calculate the sum of numbers from 1 to 10\nsum(1:10)\n\n[1] 55"
-  },
-  {
-    "objectID": "RandRStudio.html#r-code-chunk-options",
-    "href": "RandRStudio.html#r-code-chunk-options",
-    "title": "Setting Up R and RStudio",
-    "section": "R Code Chunk Options",
-    "text": "R Code Chunk Options\nBefore diving into data loading, let’s understand important R chunk options:\n\n\neval: Use eval=FALSE to prevent code from running but still display it.\n\necho: With echo=FALSE, the code is run but not displayed in the document.\n\ninclude: include=FALSE runs the code and hides both the code and output from the final output.\n\nExample to demonstrate:\n\n\n\n\n\n\n\n\n\n# This code will run, and both code and output will appear in the document.\nsummary(cars)\n\n     speed           dist       \n Min.   : 4.0   Min.   :  2.00  \n 1st Qu.:12.0   1st Qu.: 26.00  \n Median :15.0   Median : 36.00  \n Mean   :15.4   Mean   : 42.98  \n 3rd Qu.:19.0   3rd Qu.: 56.00  \n Max.   :25.0   Max.   :120.00  \n\n\nSetting the Working Directory\nIt’s crucial to set the working directory in R to the folder where your course files are stored. This can be done in several ways:\n\n\nUsing RStudio:\n\nIn RStudio, you can set the working directory through the menu by navigating to Session &gt; Set Working Directory &gt; Choose Directory... and selecting your math216 folder.\n\n\n\nUsing R Script:\n\nYou can also set the working directory directly in an R script using the setwd() function. Place the following line of code at the beginning of your script:\n\nsetwd(\"~/math216\")\nReplace \"~/math216\" with the actual path to your course folder.\n\n\nUsing R Console:\n\nYou can manually set the working directory in the R console with the same command:\n\nsetwd(\"~/math216\")"
+    "objectID": "Activity5.html#activity-4-group-activities-with-real-data",
+    "href": "Activity5.html#activity-4-group-activities-with-real-data",
+    "title": "Activity 5",
+    "section": "Activity 4: Group Activities with Real Data",
+    "text": "Activity 4: Group Activities with Real Data\n\n\nDataset: You are given a dataset of 200 die roll outcomes\n\nTask:\n\nCalculate the probability of rolling an even number.\nCreate a histogram of the die roll outcomes.\n\n\n\nDiscussion: Compare the empirical probability with the theoretical probability.\n\n\n\n\n\noutcome\nCount\n\n\n\n1\n23\n\n\n2\n34\n\n\n3\n32\n\n\n4\n39\n\n\n5\n29\n\n\n6\n43"
   }
 ]

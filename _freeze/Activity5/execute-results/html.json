@@ -1,0 +1,17 @@
+{
+  "hash": "a59fedd3f1ab25d482e8898037e53668",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Activity 5\"\nsubtitle: \"MATH 216: Statistical Thinking\"\nformat: html\necho: false\n---\n\n\n\n## Activity 1: Think-Pair-Share\n\n1. **Think**: Individually, list the sample space for the experiment of rolling a die and tossing a coin simultaneously.\n2. **Pair**: Discuss with a partner to compare and refine their sample spaces.\n3. **Share**: Share their combined sample space with the class and explain how they arrived at it.\n\n<!--\n\n**Example**: \n\n- **Sample Space for Die Roll and Coin Toss**: \n\n  $$S = \\{(1, H), (1, T), (2, H), (2, T), \\dots, (6, H), (6, T)\\}$$\n\n-->\n\n\n## Activity 2: Quiz\n\n1. **Question**: What is the probability of rolling a 2 on a fair six-sided die?\n\nA) 1/6\nB) 1/3\nC) 1/2\nD) 1/1\n\n\n## Activity 4: Group Activities with Real Data\n\n1. **Dataset**: You are given a dataset of 200 die roll outcomes\n2. **Task**: \n   - Calculate the probability of rolling an even number.\n   - Create a histogram of the die roll outcomes.\n3. **Discussion**: Compare the empirical probability with the theoretical probability.\n\n\n::: {.cell}\n::: {.cell-output-display}\n\n\n| outcome| Count|\n|-------:|-----:|\n|       1|    23|\n|       2|    34|\n|       3|    32|\n|       4|    39|\n|       5|    29|\n|       6|    43|\n\n\n:::\n\n::: {.cell-output-display}\n![](Activity5_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n\n",
+    "supporting": [
+      "Activity5_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
