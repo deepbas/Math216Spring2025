@@ -79,7 +79,7 @@ The **complement of an event $A$, denoted as $A^c$**, includes all sample points
 ## Calculating $P(A)$ for Coin Tosses
 
 ::: cle12
-::: font60
+::: font50
 
 
 1. **Experiment: Tossing Coins**
@@ -168,8 +168,7 @@ The **complement of an event $A$, denoted as $A^c$**, includes all sample points
 
 ## Mutually Exclusive Events
 
-::: cle7
-::: font60
+::: name
 
 
 - Events $A$ and $B$ are **mutually exclusive** if:
@@ -179,7 +178,6 @@ The **complement of an event $A$, denoted as $A^c$**, includes all sample points
 - **Probability of Union** for mutually exclusive events $A$ and $B$:
     - $P(A \cup B) = P(A) + P(B)$
     
-:::
 :::
 
 
@@ -250,11 +248,7 @@ The **complement of an event $A$, denoted as $A^c$**, includes all sample points
 :::
 :::
 
-## Exercise: Ethical Dilemma in Business
 
-::: font50
-> To develop programs for business travelers staying at convention hotels, Hyatt Hotels Corp. commissioned a study of executives who play golf. The study revealed that $55 \%$ of the executives admitted that they had cheated at golf. Also, $20 \%$ of the executives admitted that they had cheated at golf, and had lied in business. Given that an executive had cheated at golf, what is the probability that the executive also had lied in business?
-:::
 
 ## Exercise: Cigarette Smoking $\&$ Cancer 
 
@@ -273,21 +267,3 @@ The **complement of an event $A$, denoted as $A^c$**, includes all sample points
 :::
 :::
 
-## Exercise: Cigarette Smoking $\&$ Cancer 
-
-::: font80
-a. Given a person is a smoker, what is the probability of having cancer?
-
-<br>
-
-b. Given a person is a smoker, what is the probability of not having cancer?
-
-<br>
-
-c. Given a person is not a smoker, what is the probability of having cancer?
-
-<br>
-
-d. Given a person is not a smoker, what is the probability of not having cancer?
-
-:::

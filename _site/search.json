@@ -662,7 +662,7 @@
     "href": "Day6.html#mutually-exclusive-events",
     "title": "Day 6",
     "section": "Mutually Exclusive Events",
-    "text": "Mutually Exclusive Events\n\n\n\nEvents \\(A\\) and \\(B\\) are mutually exclusive if:\n\n\\(A \\cap B = \\{\\} = \\emptyset \\qquad \\qquad\\) (Indicates no overlap in outcomes between \\(A\\) and \\(B\\).)\n\\(P(A \\cap B) = 0\\)\n\nProbability of Union for mutually exclusive events \\(A\\) and \\(B\\):\n\n\\(P(A \\cup B) = P(A) + P(B)\\)"
+    "text": "Mutually Exclusive Events\n\n\nEvents \\(A\\) and \\(B\\) are mutually exclusive if:\n\n\\(A \\cap B = \\{\\} = \\emptyset \\qquad \\qquad\\) (Indicates no overlap in outcomes between \\(A\\) and \\(B\\).)\n\\(P(A \\cap B) = 0\\)\n\nProbability of Union for mutually exclusive events \\(A\\) and \\(B\\):\n\n\\(P(A \\cup B) = P(A) + P(B)\\)"
   },
   {
     "objectID": "Day6.html#mutually-exclusive-events-example",
