@@ -15,8 +15,6 @@ library(ggplot2)
 
 ### **1. Think-Pair-Share**
 
-**Instructions:**  
-
 1. **Think:** Take 2 minutes to identify a real-world example of a symmetric distribution (e.g., heights of people, test scores). Write down your example. 
 
 2. **Pair:** Turn to a partner and discuss your examples. Compare and contrast the examples you both came up with.  
@@ -26,8 +24,6 @@ library(ggplot2)
 \vspace*{1in}
 
 ### **2. Quiz**
-
-**Instructions:**  
 
 Answer the following question individually: 
 
@@ -44,8 +40,6 @@ Answer the following question individually:
 
 
 ### **3. Case Studies and Problem-Solving**
-
-**Instructions:**  
 
 1. **Case Study:** Use the graphical and numerical summaries of **Student Survey Dataset** to compare the GPA of students for different Year.  
 
@@ -69,7 +63,6 @@ survey %>%
 2. **Tasks:**  
 
    - Interpret the results: Do Junior Students have higher GPAs on average? What might explain this result?  
-   
    - Discuss potential biases or limitations in the dataset.  
 
 

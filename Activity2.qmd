@@ -22,11 +22,11 @@ data(hsb2)
 
 
 1. **Question:** "How might the wording of a survey question about climate change influence responses?"
-2. **Options:**  
-   - A) It has no effect.  
-   - B) It can lead to overestimation of public concern.  
-   - C) It can lead to underestimation of public concern.  
-   - D) It can polarize responses.  
+
+A) It has no effect.  
+B) It can lead to overestimation of public concern.  
+C) It can lead to underestimation of public concern.  
+D) It can polarize responses.  
 
 
 
@@ -66,8 +66,7 @@ ggplot(crabs, aes(x = CL, fill = sex)) +
 
 1. **Question:** "Experiment or Observational Study? To examine whether farm-grown salmon contain more omega-3 oils if water is more acidic, we collect samples of salmon and water from multiple fish farms to see if the two variables are related." Explain
 
-2. **Options:**  
-   - A) Experiment.  
-   - B) Observational Study.  
-   - C) Not enough information.  
+A) Experiment.  
+B) Observational Study.  
+C) Not enough information.  
 

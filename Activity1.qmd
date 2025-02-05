@@ -11,9 +11,9 @@ library(knitr)
 data(hsb2)
 ```
 
-# High School Student Analysis Quiz
+## High School Student Analysis Quiz
 
-## Dataset Description
+### Dataset Description
 
 The **High School and Beyond (hsb2)** dataset contains information about 200 high school students, including demographic details and academic performance. This dataset is commonly used in statistics education to explore relationships between socioeconomic factors and test scores.
 
