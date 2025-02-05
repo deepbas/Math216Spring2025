@@ -137,14 +137,14 @@
     "href": "Day5.html#experiments-and-sample-spaces",
     "title": "Day 5",
     "section": "Experiments and Sample Spaces",
-    "text": "Experiments and Sample Spaces\n\nExperiment: Tossing a Coin - Sample Space (S): \\[S = \\{H, T\\}\\]\nExperiment: Rolling a Die - Sample Space (S): \\[S = \\{1, 2, 3, 4, 5, 6\\}\\]\nExperiment: Tossing Two Coins - Sample Space (S): \\[S = \\{HH, HT, TH, TT\\}\\]"
+    "text": "Experiments and Sample Spaces\n\nExperiment: Tossing a Coin\n\nSample Space (S): \\[S = \\{H, T\\}\\]\n\nExperiment: Rolling a Die\n\nSample Space (S): \\[S = \\{1, 2, 3, 4, 5, 6\\}\\]\n\nExperiment: Tossing Two Coins\n\nSample Space (S): \\[S = \\{HH, HT, TH, TT\\}\\]"
   },
   {
     "objectID": "Day5.html#probability-rules-and-calculations",
     "href": "Day5.html#probability-rules-and-calculations",
     "title": "Day 5",
     "section": "Probability Rules and Calculations",
-    "text": "Probability Rules and Calculations\n\n\nProbability of a Sample Point - A number between 0 and 1 indicating the likelihood of the outcome.\nRules of Probability\n\nRange of Probabilities:\n\nEach probability \\(p_i\\) must satisfy: \\[0 \\leq p_i \\leq 1\\]\n\nSum of Probabilities:\n\nThe total probability across all sample points must sum to 1: \\[\\sum_{\\text{all } i} p_i = 1\\]"
+    "text": "Probability Rules and Calculations\n\n\nProbability of a Sample Point\n\nA number between 0 and 1 indicating the likelihood of the outcome.\n\nRules of Probability\n\nRange of Probabilities:\n\nEach probability \\(p_i\\) must satisfy: \\[0 \\leq p_i \\leq 1\\]\n\nSum of Probabilities:\n\nThe total probability across all sample points must sum to 1: \\[\\sum_{\\text{all } i} p_i = 1\\]"
   },
   {
     "objectID": "Day5.html#steps-for-calculating-event-probabilities",
@@ -158,7 +158,7 @@
     "href": "Day5.html#probability-in-a-dice-game",
     "title": "Day 5",
     "section": "Probability in a Dice Game",
-    "text": "Probability in a Dice Game\n\n\n\n\n\nExperiment: Tossing a fair die.\nWinning Condition: If the up face is an even number (2, 4, 6), you win $1.\nLosing Condition: If the up face is odd (1, 3, 5), you lose $1.\n\nSample Space and Probabilities\n\nSample Space (S): \\[S = \\{1, 2, 3, 4, 5, 6\\}\\]\nUniform Probabilities: \\[p_1 = p_2 = p_3 = \\cdots = p_6 = \\frac{1}{6}\\]\n\n\n\n\nCalculation of Winning Probability\n\n\nEvent of Winning: \\[\\text{Winning} = \\{2, 4, 6\\}\\]\nProbability of Winning: \\[\\text{Prob of Winning} = p_2 + p_4 + p_6 = \\frac{1}{6} + \\frac{1}{6} + \\frac{1}{6} = \\frac{3}{6} = \\frac{1}{2}\\]"
+    "text": "Probability in a Dice Game\n\n\n\n\n\nExperiment: Tossing a fair die.\nWinning Condition: If the up face is an even number (2, 4, 6), you win $1.\nLosing Condition: If the up face is odd (1, 3, 5), you lose $1.\n\nSample Space and Probabilities\n\nSample Space (S): \\[S = \\{1, 2, 3, 4, 5, 6\\}\\]\nUniform Probabilities: \\[p_1 = p_2 = p_3 = \\cdots = p_6 = \\frac{1}{6}\\]\n\n\n\n\nCalculation of Winning Probability\n\n\nEvent of Winning:\n\\[\\text{Winning} = \\{2, 4, 6\\}\\]\nProbability of Winning:\n\\[\\text{Prob of Winning} = p_2 + p_4 + p_6 = \\frac{1}{6} + \\frac{1}{6} + \\frac{1}{6} = \\frac{3}{6} = \\frac{1}{2}\\]"
   },
   {
     "objectID": "Day5.html#compound-events",

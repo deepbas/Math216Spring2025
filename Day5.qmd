@@ -130,14 +130,17 @@ Event
 ::: name
 
 **Experiment: Tossing a Coin**
+
 - **Sample Space (S)**: 
   $$S = \{H, T\}$$
 
 **Experiment: Rolling a Die**
+
 - **Sample Space (S)**: 
   $$S = \{1, 2, 3, 4, 5, 6\}$$
 
 **Experiment: Tossing Two Coins**
+
 - **Sample Space (S)**: 
   $$S = \{HH, HT, TH, TT\}$$
 
@@ -150,14 +153,17 @@ Event
 ::: font60
 
 Probability of a Sample Point 
+
 - A number between 0 and 1 indicating the likelihood of the outcome.
 
 Rules of Probability 
 
 1. **Range of Probabilities**:
+
    - Each probability $p_i$ must satisfy:
      $$0 \leq p_i \leq 1$$
 2. **Sum of Probabilities**:
+
    - The total probability across all sample points must sum to 1:
      $$\sum_{\text{all } i} p_i = 1$$
 
@@ -207,8 +213,11 @@ Calculation of Winning Probability
 :::
 
 - **Event of Winning**:
+
   $$\text{Winning} = \{2, 4, 6\}$$
+  
 - **Probability of Winning**:
+
   $$\text{Prob of Winning} = p_2 + p_4 + p_6 = \frac{1}{6} + \frac{1}{6} + \frac{1}{6} = \frac{3}{6} = \frac{1}{2}$$
 
 :::
