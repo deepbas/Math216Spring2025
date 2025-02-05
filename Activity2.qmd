@@ -18,7 +18,7 @@ data(hsb2)
 3. **Share:** Share your findings with the class and propose ways to mitigate the bias.
 
 
-### **Activity 2: Live Quiz**
+### **Activity 2: Quiz**
 
 
 1. **Question:** "How might the wording of a survey question about climate change influence responses?"
