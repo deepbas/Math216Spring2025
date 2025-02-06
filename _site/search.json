@@ -1,292 +1,5 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "Welcome to the captivating world of statistical thinking! This course will provide you with a solid foundation in statistical theory while taking you on a journey through the practical aspects of the subject. Along the way, you’ll gain experience with statistical software, learn to interpret and effectively communicate statistical findings, and explore a range of topics in descriptive and inferential data analysis and both parametric and non-parametric statistical inference. Some of the areas we’ll delve into include probability, normal distribution, sampling distributions, confidence intervals, hypothesis testing and simple linear regression.\nAt the heart of this course is the ability to interpret results and grasp underlying concepts, rather than merely obtaining numerical outcomes. By engaging with a diverse set of problems, you’ll become well-versed in statistical methodologies. However, it’s crucial to remember that a deep understanding of the concepts is the key to drawing meaningful conclusions.\n\n\n\n\nMaster the basic principles of data analysis, including the production and application of data in studies and experiments.\nApply principles of inference to construct confidence intervals and conduct hypothesis tests effectively.\nCritically evaluate statistical arguments and methodologies in published research.\nCompare and differentiate between parametric and non-parametric methods in statistical analysis.\nUtilize software R to conduct data analysis, create graphs, and perform basic statistical tests."
-  },
-  {
-    "objectID": "about.html#learning-objectives",
-    "href": "about.html#learning-objectives",
-    "title": "About",
-    "section": "",
-    "text": "Master the basic principles of data analysis, including the production and application of data in studies and experiments.\nApply principles of inference to construct confidence intervals and conduct hypothesis tests effectively.\nCritically evaluate statistical arguments and methodologies in published research.\nCompare and differentiate between parametric and non-parametric methods in statistical analysis.\nUtilize software R to conduct data analysis, create graphs, and perform basic statistical tests."
-  },
-  {
-    "objectID": "Activity4.html",
-    "href": "Activity4.html",
-    "title": "Activity 4",
-    "section": "",
-    "text": "1. Think-Pair-Share\n\nThink: Take 2 minutes to identify a real-world example of a symmetric distribution (e.g., heights of people, test scores). Write down your example.\nPair: Turn to a partner and discuss your examples. Compare and contrast the examples you both came up with.\nShare: Be prepared to share your findings with the class. Highlight why your example fits the concept of a symmetric distribution.\n2. Quiz\nAnswer the following question individually:\n\n\n“If a student’s GPA has a z-score of 2, what does this mean?”\n\n\nThe GPA is 2 points above the mean.\n\n\n\nThe GPA is 2 standard deviations above the mean.\n\n\n\nThe GPA is 2 standard deviations below the mean.\n\n\n\nThe GPA is 2 points below the mean.\n\n\n\n\nDiscussion: After answering, discuss with a partner why you chose your answer. Be ready to explain your reasoning to the class.\n3. Case Studies and Problem-Solving\n\n\nCase Study: Use the graphical and numerical summaries of Student Survey Dataset to compare the GPA of students for different Year.\n\n\n\n\n\n\n\n\n\n\nSummary Statistics of GPA for all Years\n\nYear\nmean\nsd\nn\n\n\n\nFirstYear\n3.070759\n0.4702584\n79\n\n\nJunior\n3.273636\n0.3688057\n33\n\n\nSenior\n3.171667\n0.3754274\n36\n\n\nSophomore\n3.173224\n0.3690737\n183\n\n\n\n\n\n\n\nTasks:\n\nInterpret the results: Do Junior Students have higher GPAs on average? What might explain this result?\n\nDiscuss potential biases or limitations in the dataset.\n\n\nReflect: Write a short paragraph summarizing your findings and share it with the class."
-  },
-  {
-    "objectID": "Activity1.html",
-    "href": "Activity1.html",
-    "title": "Activity 1",
-    "section": "",
-    "text": "The High School and Beyond (hsb2) dataset contains information about 200 high school students, including demographic details and academic performance. This dataset is commonly used in statistics education to explore relationships between socioeconomic factors and test scores.\nKey Variables:\n\n\nID: Student identifier (unique number)\n\nGender: Self-reported gender (Male/Female)\n\nRace: Ethnicity (White/Black/Asian/Other)\n\nSES: Socioeconomic status (Low/Middle/High)\n\nProgram: Enrollment track (General/Vocational/Academic)\n\nReading, Math, Science: Standardized test scores (0-100)\n\n\n\n\nFirst 6 observations from hsb2 dataset\n\nid\ngender\nrace\nses\nschtyp\nprog\nread\nwrite\nmath\nscience\nsocst\n\n\n\n70\nmale\nwhite\nlow\npublic\ngeneral\n57\n52\n41\n47\n57\n\n\n121\nfemale\nwhite\nmiddle\npublic\nvocational\n68\n59\n53\n63\n61\n\n\n86\nmale\nwhite\nhigh\npublic\ngeneral\n44\n33\n54\n58\n31\n\n\n141\nmale\nwhite\nhigh\npublic\nvocational\n63\n44\n47\n53\n56\n\n\n172\nmale\nwhite\nmiddle\npublic\nacademic\n47\n52\n57\n53\n61\n\n\n113\nmale\nwhite\nmiddle\npublic\nacademic\n44\n52\n51\n63\n61\n\n\n\n\n\n\n\nClassify these variables as qualitative (categorical) or quantitative (numerical):\n\nGender\n\nMath Score\n\nSES (Socioeconomic Status)\n\nProgram\n\nScience Score\n\nFor two of your choices, explain why they belong to that category.\n\nSuppose researchers want to analyze gender differences in math performance:\n\nWhat is the current variable type of Gender?\nHow could you convert Gender to a numeric format? What values would you assign?\n\nIf Gender is coded as 0 (Male) and 1 (Female):\n\nCould you calculate an “average gender”? Explain why this is or isn’t meaningful.\n\n\nWhy might statisticians prefer to keep Gender as a categorical variable?"
-  },
-  {
-    "objectID": "Activity1.html#dataset-description",
-    "href": "Activity1.html#dataset-description",
-    "title": "Activity 1",
-    "section": "",
-    "text": "The High School and Beyond (hsb2) dataset contains information about 200 high school students, including demographic details and academic performance. This dataset is commonly used in statistics education to explore relationships between socioeconomic factors and test scores.\nKey Variables:\n\n\nID: Student identifier (unique number)\n\nGender: Self-reported gender (Male/Female)\n\nRace: Ethnicity (White/Black/Asian/Other)\n\nSES: Socioeconomic status (Low/Middle/High)\n\nProgram: Enrollment track (General/Vocational/Academic)\n\nReading, Math, Science: Standardized test scores (0-100)"
-  },
-  {
-    "objectID": "Activity1.html#data-preview",
-    "href": "Activity1.html#data-preview",
-    "title": "Activity 1",
-    "section": "",
-    "text": "First 6 observations from hsb2 dataset\n\nid\ngender\nrace\nses\nschtyp\nprog\nread\nwrite\nmath\nscience\nsocst\n\n\n\n70\nmale\nwhite\nlow\npublic\ngeneral\n57\n52\n41\n47\n57\n\n\n121\nfemale\nwhite\nmiddle\npublic\nvocational\n68\n59\n53\n63\n61\n\n\n86\nmale\nwhite\nhigh\npublic\ngeneral\n44\n33\n54\n58\n31\n\n\n141\nmale\nwhite\nhigh\npublic\nvocational\n63\n44\n47\n53\n56\n\n\n172\nmale\nwhite\nmiddle\npublic\nacademic\n47\n52\n57\n53\n61\n\n\n113\nmale\nwhite\nmiddle\npublic\nacademic\n44\n52\n51\n63\n61"
-  },
-  {
-    "objectID": "Activity1.html#questions",
-    "href": "Activity1.html#questions",
-    "title": "Activity 1",
-    "section": "",
-    "text": "Classify these variables as qualitative (categorical) or quantitative (numerical):\n\nGender\n\nMath Score\n\nSES (Socioeconomic Status)\n\nProgram\n\nScience Score\n\nFor two of your choices, explain why they belong to that category.\n\nSuppose researchers want to analyze gender differences in math performance:\n\nWhat is the current variable type of Gender?\nHow could you convert Gender to a numeric format? What values would you assign?\n\nIf Gender is coded as 0 (Male) and 1 (Female):\n\nCould you calculate an “average gender”? Explain why this is or isn’t meaningful.\n\n\nWhy might statisticians prefer to keep Gender as a categorical variable?"
-  },
-  {
-    "objectID": "RandRStudio.html",
-    "href": "RandRStudio.html",
-    "title": "Setting Up R and RStudio",
-    "section": "",
-    "text": "This lab tutorial will guide you through installing R and RStudio on your computer, managing packages, and loading data into R. This setup is essential for performing all kinds of data analysis tasks in R."
-  },
-  {
-    "objectID": "RandRStudio.html#on-windows",
-    "href": "RandRStudio.html#on-windows",
-    "title": "Setting Up R and RStudio",
-    "section": "On Windows",
-    "text": "On Windows\n\n\nDownload R:\n\nVisit CRAN and download the latest version of R for Windows.\nRun the downloaded .exe file and follow the installation instructions.\n\n\n\n\n\nCRAN mirror\nDownload Latest R\nExecutable File in Downloads Folder\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDownload RStudio:\n\nGo to the RStudio Download page and download the free version of RStudio Desktop for Windows.\nInstall it by running the downloaded .exe file.\n\n\n\n\n\nDownload Latest RStudio\nExecutable File in Downloads Folder"
-  },
-  {
-    "objectID": "RandRStudio.html#on-mac",
-    "href": "RandRStudio.html#on-mac",
-    "title": "Setting Up R and RStudio",
-    "section": "On Mac",
-    "text": "On Mac\n\n\nDownload R:\n\nNavigate to CRAN and choose the version for macOS.\nOpen the downloaded .pkg file to start the installation.\n\n\n\n\n\nCRAN mirror\nDownload Latest R\nExecutable File in Downloads Folder\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDownload RStudio:\n\nVisit RStudio Download page and select RStudio for macOS.\nOpen the downloaded .dmg file and drag RStudio to your Applications folder.\n\n\n\n\n\nDownload Latest RStudio\nExecutable File in Downloads Folder"
-  },
-  {
-    "objectID": "RandRStudio.html#rmarkdown-interface-components",
-    "href": "RandRStudio.html#rmarkdown-interface-components",
-    "title": "Setting Up R and RStudio",
-    "section": "RMarkdown Interface Components",
-    "text": "RMarkdown Interface Components\nRStudio’s interface for working with RMarkdown documents contains four key panes:\n\nSource Editor (Left Pane)\nPrimary workspace for writing .Rmd files with integrated code chunks and narrative text. Features syntax highlighting, chunk controls (run individual code blocks), and document structure navigation.\n\nEnvironment/History (Top-Right Pane)\n\n\nEnvironment: Lists active datasets, variables, and functions\n\n\nHistory: Tracks all executed commands\n\n\nConnections: Manages database links (when used)\n\n\nGit: Version control integration (when configured)\n\n\n\nConsole/Terminal (Bottom-Left Pane)\n\n\nConsole: Direct R code execution environment showing raw output\n\n\nTerminal: System-level command line access\n\n\nBackground Jobs: Monitor long-running processes\n\n\n\nViewer/Help (Bottom-Right Pane)\n\n\nViewer: Preview rendered documents (HTML/PDF/Word)\n\n\nHelp: Access function documentation\n\n\nFiles: Navigate project directory structure\n\n\nPlots: Display graphical output\n\n\nPackages: Manage installed R packages"
-  },
-  {
-    "objectID": "RandRStudio.html#understanding-r-markdown-documents",
-    "href": "RandRStudio.html#understanding-r-markdown-documents",
-    "title": "Setting Up R and RStudio",
-    "section": "Understanding R Markdown Documents",
-    "text": "Understanding R Markdown Documents\nR Markdown allows you to integrate code and text in the same document, facilitating reproducible research and interactive data analysis reports. Here’s a quick overview:"
-  },
-  {
-    "objectID": "RandRStudio.html#managing-.rmd-files-and-setting-the-working-directory",
-    "href": "RandRStudio.html#managing-.rmd-files-and-setting-the-working-directory",
-    "title": "Setting Up R and RStudio",
-    "section": "Managing .Rmd Files and Setting the Working Directory",
-    "text": "Managing .Rmd Files and Setting the Working Directory\nDownloading and Organizing .Rmd Files\nTo effectively manage your course materials in RStudio, follow these steps:\n\n\nDownload .Rmd File:\n\nNavigate to MyClasses and locate the desired .Rmd file for your course.\nDownload the file to your local machine.\n\n\n\nCreate a Course Folder:\n\nCreate a new folder named math216 in a suitable location on your computer or within your OneDrive account.\n\n\n\nOrganize Files:\n\nMove the downloaded .Rmd file into the math216 folder to keep your course materials organized."
-  },
-  {
-    "objectID": "RandRStudio.html#text-formatting-in-r-markdown",
-    "href": "RandRStudio.html#text-formatting-in-r-markdown",
-    "title": "Setting Up R and RStudio",
-    "section": "Text Formatting in R Markdown",
-    "text": "Text Formatting in R Markdown\nMarkdown is a lightweight markup language that allows you to add formatting elements using plain text. Here’s how you can use different Markdown syntax to format text within your R Markdown documents.\nHeaders\nCreate headers by prefixing the text with one or more hash symbols (#). The number of # symbols before the text determines the level of the header.\n# Header 1\n## Header 2\n### Header 3\nLists\nYou can create bulleted or numbered lists:\n\n\nUnordered Lists (bullets):\n\n- Item 1\n- Item 2\n  - Subitem 1\n  - Subitem 2\n\n\nOrdered Lists:\n\n1. First item\n2. Second item\n   1. Subitem 1\n   2. Subitem 2\nLinks\nInclude hyperlinks using the format [link text](URL):\n[Visit Canvas](https://salisbury.instructure.com/courses/71470)\nEmphasis\nItalicize or bold text using asterisks or underscores:\n\n\nItalic: *Italic* or _Italic_\n\n\nBold: **Bold** or __Bold__\n\nImages\nEmbed images using the format ![Alt text](image_URL \"Optional Title\"):\n![Example Image](path_to_image.jpg \"This is an image\")\nBlockquotes\nCreate blockquotes with &gt;:\n&gt; This is a blockquote.\nCode\nDisplay inline code with backticks and code blocks with triple backticks:\n\nInline code: `code`\n\nCode block:\n\n\n\n\n\n\n\n\n\n\n\n[1] -5\n\n\nHorizontal Rules\nInsert a horizontal line with three or more hyphens:\n---\nCombining Markdown with R Code\nMarkdown can be interleaved with executable R code chunks:\n\n# Calculate the sum of numbers from 1 to 10\nsum(1:10)\n\n[1] 55"
-  },
-  {
-    "objectID": "RandRStudio.html#r-code-chunk-options",
-    "href": "RandRStudio.html#r-code-chunk-options",
-    "title": "Setting Up R and RStudio",
-    "section": "R Code Chunk Options",
-    "text": "R Code Chunk Options\nBefore diving into data loading, let’s understand important R chunk options:\n\n\neval: Use eval=FALSE to prevent code from running but still display it.\n\necho: With echo=FALSE, the code is run but not displayed in the document.\n\ninclude: include=FALSE runs the code and hides both the code and output from the final output.\n\nExample to demonstrate:\n\n\n\n\n\n\n\n\n\n# This code will run, and both code and output will appear in the document.\nsummary(cars)\n\n     speed           dist       \n Min.   : 4.0   Min.   :  2.00  \n 1st Qu.:12.0   1st Qu.: 26.00  \n Median :15.0   Median : 36.00  \n Mean   :15.4   Mean   : 42.98  \n 3rd Qu.:19.0   3rd Qu.: 56.00  \n Max.   :25.0   Max.   :120.00  \n\n\nSetting the Working Directory\nIt’s crucial to set the working directory in R to the folder where your course files are stored. This can be done in several ways:\n\n\nUsing RStudio:\n\nIn RStudio, you can set the working directory through the menu by navigating to Session &gt; Set Working Directory &gt; Choose Directory... and selecting your math216 folder.\n\n\n\nUsing R Script:\n\nYou can also set the working directory directly in an R script using the setwd() function. Place the following line of code at the beginning of your script:\n\nsetwd(\"~/math216\")\nReplace \"~/math216\" with the actual path to your course folder.\n\n\nUsing R Console:\n\nYou can manually set the working directory in the R console with the same command:\n\nsetwd(\"~/math216\")"
-  },
-  {
-    "objectID": "Day5.html#introduction-to-probability",
-    "href": "Day5.html#introduction-to-probability",
-    "title": "Day 5",
-    "section": "Introduction to Probability",
-    "text": "Introduction to Probability\n\n\n\nExperiment: Any act of observation with uncertain outcomes (e.g., tossing a coin).\nObservation: The result of an experiment (e.g., heads or tails).\nProbability: A measure of how likely an event is to occur, often thought of as “chance” or “likelihood.”\n\nExample: The chance of rain tomorrow, the likelihood of rolling a 6 on a die.\n\n\nMathematical Representation\n\nLet \\(E\\) represent an experiment.\nAn outcome of \\(E\\) is an element of the sample space \\(S\\).\nProbability of an event \\(A\\) is denoted by \\(P(A)\\)."
-  },
-  {
-    "objectID": "Day5.html#key-definitions",
-    "href": "Day5.html#key-definitions",
-    "title": "Day 5",
-    "section": "Key Definitions",
-    "text": "Key Definitions\n\n\nSample Point\n\nDefinition: The most basic outcome of an experiment.\nExample: In a coin toss, each toss that results in H (Head) or T (Tail).\n\n\n\n\nSample Space\n\nDefinition: Collection of all possible outcomes (sample points) of an experiment.\nExample: In a coin toss, the sample space is \\(S = \\{H, T\\}\\).\n\n\n\n\nEvent\n\nDefinition: A collection of sample points.\nExample: Rolling an even number on a die."
-  },
-  {
-    "objectID": "Day5.html#visualizing-probability",
-    "href": "Day5.html#visualizing-probability",
-    "title": "Day 5",
-    "section": "Visualizing Probability",
-    "text": "Visualizing Probability\n\n\nVenn Diagram\n\nSample Space (S): Represented as a closed figure in the diagram.\nSample Points: Each possible outcome shown as a solid dot within the figure.\nExample: Coin Toss\n\nVenn Diagram: Circle labeled S containing two points labeled H (Head) and T (Tail).\nRepresentation: Helps visualize all possible outcomes in a single view."
-  },
-  {
-    "objectID": "Day5.html#tree-diagram",
-    "href": "Day5.html#tree-diagram",
-    "title": "Day 5",
-    "section": "Tree Diagram",
-    "text": "Tree Diagram\n\nExample: Tree diagram of a coin toss.\n\n\nTree diagram of a coin toss"
-  },
-  {
-    "objectID": "Day5.html#experiments-and-sample-spaces",
-    "href": "Day5.html#experiments-and-sample-spaces",
-    "title": "Day 5",
-    "section": "Experiments and Sample Spaces",
-    "text": "Experiments and Sample Spaces\n\nExperiment: Tossing a Coin\n\nSample Space (S): \\[S = \\{H, T\\}\\]\n\nExperiment: Rolling a Die\n\nSample Space (S): \\[S = \\{1, 2, 3, 4, 5, 6\\}\\]\n\nExperiment: Tossing Two Coins\n\nSample Space (S): \\[S = \\{HH, HT, TH, TT\\}\\]"
-  },
-  {
-    "objectID": "Day5.html#probability-rules-and-calculations",
-    "href": "Day5.html#probability-rules-and-calculations",
-    "title": "Day 5",
-    "section": "Probability Rules and Calculations",
-    "text": "Probability Rules and Calculations\n\n\nProbability of a Sample Point\n\nA number between 0 and 1 indicating the likelihood of the outcome.\n\nRules of Probability\n\nRange of Probabilities:\n\nEach probability \\(p_i\\) must satisfy: \\[0 \\leq p_i \\leq 1\\]\n\nSum of Probabilities:\n\nThe total probability across all sample points must sum to 1: \\[\\sum_{\\text{all } i} p_i = 1\\]"
-  },
-  {
-    "objectID": "Day5.html#steps-for-calculating-event-probabilities",
-    "href": "Day5.html#steps-for-calculating-event-probabilities",
-    "title": "Day 5",
-    "section": "Steps for Calculating Event Probabilities",
-    "text": "Steps for Calculating Event Probabilities\n\n\n\nDefine the Experiment: Describe the observation process.\nList Sample Points: Identify possible outcomes.\nAssign Probabilities: Allocate probability to each sample point.\nIdentify Event’s Sample Points: Determine which sample points are part of the event.\nCalculate Event Probability: Sum the probabilities of the event’s sample points."
-  },
-  {
-    "objectID": "Day5.html#probability-in-a-dice-game",
-    "href": "Day5.html#probability-in-a-dice-game",
-    "title": "Day 5",
-    "section": "Probability in a Dice Game",
-    "text": "Probability in a Dice Game\n\n\n\n\n\nExperiment: Tossing a fair die.\nWinning Condition: If the up face is an even number (2, 4, 6), you win $1.\nLosing Condition: If the up face is odd (1, 3, 5), you lose $1.\n\nSample Space and Probabilities\n\nSample Space (S): \\[S = \\{1, 2, 3, 4, 5, 6\\}\\]\nUniform Probabilities: \\[p_1 = p_2 = p_3 = \\cdots = p_6 = \\frac{1}{6}\\]\n\n\n\n\nCalculation of Winning Probability\n\n\nEvent of Winning:\n\\[\\text{Winning} = \\{2, 4, 6\\}\\]\nProbability of Winning:\n\\[\\text{Prob of Winning} = p_2 + p_4 + p_6 = \\frac{1}{6} + \\frac{1}{6} + \\frac{1}{6} = \\frac{3}{6} = \\frac{1}{2}\\]"
-  },
-  {
-    "objectID": "Day5.html#compound-events",
-    "href": "Day5.html#compound-events",
-    "title": "Day 5",
-    "section": "Compound Events",
-    "text": "Compound Events\n\n\nUnions\n\nDefinition: Union of two events \\(A\\) and \\(B\\) (\\(A \\cup B\\))\nOccurs If: Either event \\(A\\), event \\(B\\), or both happen.\nComposition: Includes all sample points in \\(A\\), \\(B\\), or both. \\[A \\cup B = \\{x : x \\in A \\text{ or } x \\in B\\}\\]\n\n\n\n\n\n\nIntersections\n\nDefinition: Intersection of two events \\(A\\) and \\(B\\) (\\(A \\cap B\\))\nOccurs If: Both event \\(A\\) and event \\(B\\) happen.\nComposition: Includes all sample points that are in both \\(A\\) and \\(B\\). \\[A \\cap B = \\{x : x \\in A \\text{ and } x \\in B\\}\\]"
-  },
-  {
-    "objectID": "Day5.html#example-calculating-unions-and-intersections-in-a-die-toss",
-    "href": "Day5.html#example-calculating-unions-and-intersections-in-a-die-toss",
-    "title": "Day 5",
-    "section": "Example: Calculating Unions and Intersections in a Die-Toss",
-    "text": "Example: Calculating Unions and Intersections in a Die-Toss\n\n\n\n\n\nEvent A: Toss an even number. \\[A = \\{2, 4, 6\\}\\]\nEvent B: Toss a number less than or equal to 3. \\[B = \\{1, 2, 3\\}\\]\nSample Space (S): \\[S = \\{1, 2, 3, 4, 5, 6\\}\\]\n\n\n\n\nUnion (\\(A \\cup B\\)): \\[A \\cup B = \\{1, 2, 3, 4, 6\\}\\]\nIntersection (\\(A \\cap B\\)): \\[A \\cap B = \\{2\\}\\]\nProbability of Union (\\(P(A \\cup B)\\)): \\[P(A \\cup B) = \\frac{5}{6}\\]\nProbability of Intersection (\\(P(A \\cap B)\\)): \\[P(A \\cap B) = \\frac{1}{6}\\]"
-  },
-  {
-    "objectID": "Day2.html#sampling-and-inference",
-    "href": "Day2.html#sampling-and-inference",
-    "title": "Day 2",
-    "section": "Sampling and Inference",
-    "text": "Sampling and Inference\n\n\nA population includes all individuals or objects of interest.\nA sample is all the cases that we have collected data on (a subset of the population).\nStatistical inference is the process of using data from a sample to gain information about the population."
-  },
-  {
-    "objectID": "Day2.html#sampling-and-inference-source",
-    "href": "Day2.html#sampling-and-inference-source",
-    "title": "Day 2",
-    "section": "Sampling and Inference (Source)",
-    "text": "Sampling and Inference (Source)"
-  },
-  {
-    "objectID": "Day2.html#blue-crab-in-maryland-coastal-bays",
-    "href": "Day2.html#blue-crab-in-maryland-coastal-bays",
-    "title": "Day 2",
-    "section": "Blue Crab in Maryland Coastal Bays",
-    "text": "Blue Crab in Maryland Coastal Bays\n\n\nPopulation\n\nAll blue crabs in the Maryland Coastal Bays (MCB).\nIncludes sub-estuaries: Assawoman Bay, St. Martin River, Isle of Wight, Sinepuxent Bay, Newport Bay, Chincoteague Bay.\n\nSample\n\nBlue crabs collected from 20 sites within MCB.\nSample period: April - December, 2014-2016.\nMethod: Trawl surveys."
-  },
-  {
-    "objectID": "Day2.html#blue-crab-in-maryland-coastal-bays-1",
-    "href": "Day2.html#blue-crab-in-maryland-coastal-bays-1",
-    "title": "Day 2",
-    "section": "Blue Crab in Maryland Coastal Bays",
-    "text": "Blue Crab in Maryland Coastal Bays\n\n\nVariables\n\nPrimary Variable: Carapace width, sex, maturity status, molt stage.\n\nInference\n\nPopulation structure of blue crabs in MCB.\nSeasonal variations: size distribution, molt cycles, reproductive patterns."
-  },
-  {
-    "objectID": "Day2.html#sampling-bias",
-    "href": "Day2.html#sampling-bias",
-    "title": "Day 2",
-    "section": "Sampling Bias",
-    "text": "Sampling Bias\n\n\nSampling bias occurs when the method of selecting a sample causes the sample to differ from the population in some relevant way.\nIf sampling bias exists, we cannot trust generalizations from the sample to the population.\n\n\nTo eliminate sampling bias, always take a RANDOM SAMPLE!"
-  },
-  {
-    "objectID": "Day2.html#bias-in-data",
-    "href": "Day2.html#bias-in-data",
-    "title": "Day 2",
-    "section": "Bias in Data",
-    "text": "Bias in Data\nEven with a random sample, data can still be biased, especially when collected on humans.\n\nSome forms of bias to watch out for in data collection:\n\nQuestion wording.\nQuestion order.\nContext.\nNon-response bias."
-  },
-  {
-    "objectID": "Day2.html#question-wording",
-    "href": "Day2.html#question-wording",
-    "title": "Day 2",
-    "section": "Question Wording",
-    "text": "Question Wording\n\nA random sample was asked: “Should there be a tax cut, or should money be used to fund new government programs?”\n\n\n\n\nTax Cut\nPrograms\n\n\n\n\n60%\n40%"
-  },
-  {
-    "objectID": "Day2.html#question-wording-1",
-    "href": "Day2.html#question-wording-1",
-    "title": "Day 2",
-    "section": "Question Wording",
-    "text": "Question Wording\n\nA different random sample was asked: “Should there be a tax cut, or should money be spent on programs for education, the environment, health care, crime-fighting, and military defense?”\n\n\n\n\nTax Cut\nPrograms\n\n\n\n\n22%\n78%"
-  },
-  {
-    "objectID": "Day2.html#question-order",
-    "href": "Day2.html#question-order",
-    "title": "Day 2",
-    "section": "Question Order",
-    "text": "Question Order\n\n\nDepending on the order of questions, we can see either greater or lesser differences in responses.\nRespondents tend to provide answers consistent with their prior responses."
-  },
-  {
-    "objectID": "Day2.html#swedish-study-response-bias",
-    "href": "Day2.html#swedish-study-response-bias",
-    "title": "Day 2",
-    "section": "Swedish Study: Response Bias",
-    "text": "Swedish Study: Response Bias"
-  },
-  {
-    "objectID": "Day2.html#identified-sources-of-bias-in-swedish-study",
-    "href": "Day2.html#identified-sources-of-bias-in-swedish-study",
-    "title": "Day 2",
-    "section": "Identified Sources of Bias in Swedish Study",
-    "text": "Identified Sources of Bias in Swedish Study\n\n\nPolitical Bias: The study experimentally primes the political affiliations of the respondents before asking questions about corruption. This bias arises when people’s political leanings affect their perception and reporting of corruption levels.\n\n\n\nSensitivity Bias: Questions about one’s experiences with corruption are sensitive in nature and may result in biased responses due to fear of retribution or social stigma."
-  },
-  {
-    "objectID": "Day2.html#context",
-    "href": "Day2.html#context",
-    "title": "Day 2",
-    "section": "Context",
-    "text": "Context\n\nAnn Landers column asked readers “If you had it to do over again, would you have children?”\nThe first request for data contained a letter from a young couple which listed worries about parenting and various reasons not to have kids.\n\\[30\\% \\text{ said yes}\\]"
-  },
-  {
-    "objectID": "Day2.html#context-1",
-    "href": "Day2.html#context-1",
-    "title": "Day 2",
-    "section": "Context",
-    "text": "Context\n\nThe second request for data was in response to this number, in which Ann wrote how she was “stunned, disturbed, and just plain flummoxed.”\n\\[95\\% \\text{ said yes}\\]"
-  },
-  {
-    "objectID": "Day2.html#non-response-bias",
-    "href": "Day2.html#non-response-bias",
-    "title": "Day 2",
-    "section": "Non-response Bias",
-    "text": "Non-response Bias\n\nWhen respondents are either unable or unwilling to respond to your survey, this results in non-response bias.\n\n\n\nSurvey targeted to the wrong audience.\nThere is general unwillingness due to polar opposite opinions.\nThe survey did not reach the right respondent.\n\ne.g., A survey asking teenagers about the best cigarette brands."
-  },
-  {
-    "objectID": "Day2.html#think-pair-share",
-    "href": "Day2.html#think-pair-share",
-    "title": "Day 2",
-    "section": " Think-Pair-Share ",
-    "text": "Think-Pair-Share \n\n\n\n\n\n\n\n\nThink: Reflect on a real-world example where sampling bias might occur (e.g., political polls, health surveys).\nPair: Discuss their example with a partner and identify potential sources of bias.\nShare: Share their findings with the class and propose ways to mitigate the bias.\n\n\n\n\n\n\n−+\n05:00"
-  },
-  {
-    "objectID": "Day2.html#experiment-vs.-observational-study",
-    "href": "Day2.html#experiment-vs.-observational-study",
-    "title": "Day 2",
-    "section": "Experiment vs. Observational Study",
-    "text": "Experiment vs. Observational Study\n\nAn observational study is a study in which the researcher does not actively control the value of any variable but simply observes the values as they naturally exist.\n\n\n\nAn experiment is a study in which the researcher actively controls one or more of the explanatory variables."
-  },
-  {
     "objectID": "Day1.html#about-me",
     "href": "Day1.html#about-me",
     "title": "Day 1",
@@ -376,139 +89,6 @@
     "title": "Day 1",
     "section": " Group Activity 1",
     "text": "Group Activity 1\n\n\n\n\n\n\n\nWe will have interactive elements in every class that could be:\n\nThink-pair-share\nQuiz\nInteractive Data Exploration\nGroup Activities with Real Data\n\nThis is the time for you to gauge your understanding of the concepts and have fun with the content. These may be collected for attendance! Please bring your charged laptop to every class.\n\n\n\n\n −+ 10:00"
-  },
-  {
-    "objectID": "Day4.html#recap-student-survey",
-    "href": "Day4.html#recap-student-survey",
-    "title": "Day 4",
-    "section": "Recap: Student Survey",
-    "text": "Recap: Student Survey\nDataset on 362 responses to a student survey given at one college.\n\n\n\n\n\n\nYear\nGender\nSmoke\nHeight\nWeight\nSAT\nPulse\n\n\n\n\nSenior\nM\nNo\n71\n180\n1210\n54\n\n\nSophomore\nF\nYes\n66\n120\n1150\n66\n\n\nFirstYear\nM\nNo\n72\n208\n1110\n130\n\n\nJunior\nM\nNo\n63\n110\n1120\n78\n\n\nSophomore\nF\nNo\n65\n150\n1170\n40\n\n\nSophomore\nF\nNo\n65\n114\n1150\n80\n\n\nFirstYear\nF\nNo\n66\n128\n1320\n94\n\n\nSophomore\nM\nNo\n74\n235\n1370\n77\n\n\nJunior\nF\nNo\n61\nNA\n1100\n60\n\n\nFirstYear\nF\nNo\n60\n115\n1370\n94\n\n\nSophomore\nF\nNo\n65\n140\n1170\n63\n\n\nFirstYear\nM\nNo\n63\n200\n1180\n72\n\n\nSophomore\nM\nNo\n68\n162\n1150\n54\n\n\nJunior\nF\nNo\n68\n135\n1300\n66\n\n\nFirstYear\nM\nNo\n68\n193\n1350\n72\n\n\nFirstYear\nF\nNo\n63\n110\n1200\n59\n\n\nFirstYear\nF\nNo\n63\n99\n1200\n88\n\n\nSophomore\nM\nNo\n72\n165\n1350\n59\n\n\nSophomore\nF\nNo\n62\n120\n1410\n64\n\n\nSophomore\nF\nNo\n67\n154\n1000\n72"
-  },
-  {
-    "objectID": "Day4.html#histogram",
-    "href": "Day4.html#histogram",
-    "title": "Day 4",
-    "section": "Histogram",
-    "text": "Histogram\n\n\nPlotCode\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nggplot(survey, aes(x = Pulse)) +\n  geom_histogram(binwidth = 5, col = \"gold\", fill = \"maroon\") +\n  labs(\n    title = \"Histogram of pulse rates\",\n    x = \"Pulse\",\n    y = \"Count\"\n  )"
-  },
-  {
-    "objectID": "Day4.html#histogram-shape",
-    "href": "Day4.html#histogram-shape",
-    "title": "Day 4",
-    "section": "Histogram: Shape",
-    "text": "Histogram: Shape\n\n\nHistogram: Aggregates values into bins and counts how many cases fall into each bin.\nPulse rates are symmetrically distributed around a rate of about 70 beats per minute.\nSymmetric distributions are “centered” around a mean and median that are roughly the same in value."
-  },
-  {
-    "objectID": "Day4.html#shape-and-stats",
-    "href": "Day4.html#shape-and-stats",
-    "title": "Day 4",
-    "section": "Shape and Stats",
-    "text": "Shape and Stats\n\n\nMean and standard deviation are good summary stats of a symmetric distribution.\nSimilar variation to the left and right of the mean so one measure of SD is fine.\n\n\nsurvey %&gt;% summarize(mean = mean(Pulse), sd = sd(Pulse))\n\n      mean       sd\n1 69.63611 12.10508"
-  },
-  {
-    "objectID": "Day4.html#shape-data-distribution",
-    "href": "Day4.html#shape-data-distribution",
-    "title": "Day 4",
-    "section": "Shape: Data Distribution",
-    "text": "Shape: Data Distribution\n\nIf a distribution of data is approximately bell-shaped, about 95% of the data should fall within two standard deviations of the sample mean.\n\nFor a sample: 95% of values between \\(\\bar{y} - 2s\\) and \\(\\bar{y} + 2s\\)\nFor a population: 95% of values between \\(\\mu - 2\\sigma\\) and \\(\\mu + 2\\sigma\\)"
-  },
-  {
-    "objectID": "Day4.html#think-pair-share",
-    "href": "Day4.html#think-pair-share",
-    "title": "Day 4",
-    "section": " Think-Pair-Share",
-    "text": "Think-Pair-Share\n\n\n\n\n\n\n\n\nObjective: Understand symmetric distributions through real-world examples.\n\nInstructions: Think of an example, discuss with a partner, and share with the class.\n\n\n\n\n\n\n−+\n04:00"
-  },
-  {
-    "objectID": "Day4.html#bell-shaped-distribution",
-    "href": "Day4.html#bell-shaped-distribution",
-    "title": "Day 4",
-    "section": "Bell-shaped Distribution",
-    "text": "Bell-shaped Distribution\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe standard deviation for math SAT scores is closest to\n\n100\n\n75\n\n200\n\n25"
-  },
-  {
-    "objectID": "Day4.html#standardizing-data-z-score",
-    "href": "Day4.html#standardizing-data-z-score",
-    "title": "Day 4",
-    "section": "Standardizing Data: Z-score",
-    "text": "Standardizing Data: Z-score\n\n\nThe z-score of a data value, x, tells us how many standard deviations the value is above or below the mean:\n\\[ z = \\dfrac{x - \\text{mean}}{\\text{SD}} \\]\n\nE.g., if a value \\(x\\) has \\(z = -1.5\\), then the value \\(x\\) is 1.5 standard deviations below the mean.\n\nIf we standardize all values in a bell-shaped distribution, 95% of all z-scores fall between -2 and 2."
-  },
-  {
-    "objectID": "Day4.html#quiz",
-    "href": "Day4.html#quiz",
-    "title": "Day 4",
-    "section": " Quiz",
-    "text": "Quiz\n\n\n\n\n\n\n\n\nObjective: Assess understanding of z-scores.\n\nInstructions: Answer the quiz question.\n\n\n\n\n\n\n−+\n02:00"
-  },
-  {
-    "objectID": "Day4.html#shape-left-skew-right-skew-histograms",
-    "href": "Day4.html#shape-left-skew-right-skew-histograms",
-    "title": "Day 4",
-    "section": "Shape: Left Skew & Right Skew (Histograms)",
-    "text": "Shape: Left Skew & Right Skew (Histograms)\n\n\n\n\n\n\n\n\n\n\n\n\n\nmean(survey$GPA, na.rm = TRUE)\n\n[1] 3.157942\n\nmedian(survey$GPA, na.rm = TRUE)\n\n[1] 3.2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nmean(survey$Exercise, na.rm = TRUE)\n\n[1] 9.048747\n\nmedian(survey$Exercise, na.rm = TRUE)\n\n[1] 8"
-  },
-  {
-    "objectID": "Day4.html#shape-left-skew-right-skew-boxplots",
-    "href": "Day4.html#shape-left-skew-right-skew-boxplots",
-    "title": "Day 4",
-    "section": "Shape: Left Skew & Right Skew (Boxplots)",
-    "text": "Shape: Left Skew & Right Skew (Boxplots)\n\n\n\n\n\n\n\n\n\n\n\n\n\nmean(survey$GPA, na.rm = TRUE)\n\n[1] 3.157942\n\nmedian(survey$GPA, na.rm = TRUE)\n\n[1] 3.2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nmean(survey$Exercise, na.rm = TRUE)\n\n[1] 9.048747\n\nmedian(survey$Exercise, na.rm = TRUE)\n\n[1] 8"
-  },
-  {
-    "objectID": "Day4.html#shape-boxplots",
-    "href": "Day4.html#shape-boxplots",
-    "title": "Day 4",
-    "section": "Shape: Boxplots",
-    "text": "Shape: Boxplots\n\n\nA graphical representation of the distribution of a dataset, showing the median, quartiles, and outliers.\n\nBox: Represents the interquartile range (IQR) between the 1st quartile (Q1) and the 3rd quartile (Q3).\nMedian: The middle value of the dataset, represented by a line inside the box.\nWhiskers: Extend from the box to the minimum and maximum data points within 1.5 times the IQR.\nOutliers: Data points outside of the whiskers, often represented as individual points."
-  },
-  {
-    "objectID": "Day4.html#shape-boxplots-1",
-    "href": "Day4.html#shape-boxplots-1",
-    "title": "Day 4",
-    "section": "Shape: Boxplots",
-    "text": "Shape: Boxplots\n\n\nSymmetry: If the median is roughly centered within the box, and the whiskers are of similar length, the distribution is likely symmetric.\nSkewness:\n\nLeft-skewed: The median is closer to the upper quartile (Q3), and the left whisker is longer than the right whisker.\nRight-skewed: The median is closer to the lower quartile (Q1), and the right whisker is longer than the left whisker."
-  },
-  {
-    "objectID": "Day4.html#elements-of-a-box-plot-inner-fences",
-    "href": "Day4.html#elements-of-a-box-plot-inner-fences",
-    "title": "Day 4",
-    "section": "Elements of a Box Plot: Inner Fences",
-    "text": "Elements of a Box Plot: Inner Fences\n\n\nLower Inner Fence: \\[ \\text{Lower inner fence} = Q_L - 1.5 \\times \\text{IQR} \\]\nUpper Inner Fence: \\[ \\text{Upper inner fence} = Q_U + 1.5 \\times \\text{IQR} \\]\nInner fences are critical for identifying what is typically considered potential mild outliers. These are points that are unusual but not extreme. The 1.5 multiplier stretches beyond the box enough to capture data variability while excluding more extreme values."
-  },
-  {
-    "objectID": "Day4.html#adding-a-qualitative-variable-stats",
-    "href": "Day4.html#adding-a-qualitative-variable-stats",
-    "title": "Day 4",
-    "section": "Adding a Qualitative Variable: Stats",
-    "text": "Adding a Qualitative Variable: Stats\n\n\nUse group_by() and summarise() to get summary statistics using dplyr package to compare distributions across different levels of a qualitative variable.\n\n\nsurvey %&gt;%\n  group_by(Smoke) %&gt;%\n  summarise(Min = min(Pulse),\n            Q1 = quantile(Pulse, 0.25),\n            Median = median(Pulse),\n            Mean = mean(Pulse),\n            Q3 = quantile(Pulse, 0.75),\n            Max = max(Pulse),\n            SD = sd(Pulse),\n            N = n()) %&gt;% \n  knitr::kable(caption = \"Summary Stats of Smoke Categories\")\n\n\nSummary Stats of Smoke Categories\n\n\nSmoke\nMin\nQ1\nMedian\nMean\nQ3\nMax\nSD\nN\n\n\n\n\nNo\n35\n61\n69\n69.34069\n77\n130\n12.14980\n317\n\n\nYes\n42\n65\n72\n71.81395\n79\n96\n11.67671\n43\n\n\n\n\n\nSmokers have a slightly higher mean pulse rate than non-smokers (71.8 vs. 69.3)."
-  },
-  {
-    "objectID": "Day4.html#side-by-side-histogram",
-    "href": "Day4.html#side-by-side-histogram",
-    "title": "Day 4",
-    "section": "Side-by-side Histogram",
-    "text": "Side-by-side Histogram\n\nPlotCode\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nggplot(survey, aes(x = Pulse)) + \n  geom_histogram(binwidth = 4, fill = \"maroon\", col = \"gold\") +\n  facet_wrap(~Smoke)"
-  },
-  {
-    "objectID": "Day4.html#side-by-side-boxplot",
-    "href": "Day4.html#side-by-side-boxplot",
-    "title": "Day 4",
-    "section": "Side-by-side Boxplot",
-    "text": "Side-by-side Boxplot\n\nPlotCode\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nggplot(survey, aes(x = Smoke, y = Pulse)) +\n  geom_boxplot(fill = c(\"maroon\", \"purple\"), col = \"darkgreen\") +\n  labs(x = \"Smoking Status\", y = \"Pulse Rate\")"
-  },
-  {
-    "objectID": "Day4.html#stacked-bar-graph",
-    "href": "Day4.html#stacked-bar-graph",
-    "title": "Day 4",
-    "section": "Stacked Bar Graph",
-    "text": "Stacked Bar Graph\n\nPlotCode\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nggplot(survey, aes(x = Year, fill = Gender)) + \n  geom_bar(position = \"fill\") + \n  scale_fill_manual(values = c(\"maroon\", \"gold\")) +\n  labs(title = \"Proportional Distribution by Year and Gender\", \n       y = \"proportion\", \n       x = \"year\", \n       fill = \"Gender\")"
-  },
-  {
-    "objectID": "Day4.html#stacked-bar-graph-counts",
-    "href": "Day4.html#stacked-bar-graph-counts",
-    "title": "Day 4",
-    "section": "Stacked Bar Graph (Counts)",
-    "text": "Stacked Bar Graph (Counts)\n\nPlotCode\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nggplot(survey, aes(x = Year, fill = Gender)) + \n  geom_bar(position = \"stack\") + \n  scale_fill_manual(values = c(\"maroon\", \"gold\")) +\n  labs(title = \"Proportional Distribution by Year and Gender\", \n       y = \"proportion\", \n       x = \"year\", \n       fill = \"Gender\")"
   },
   {
     "objectID": "Day3.html#descriptive-statistics",
@@ -700,6 +280,104 @@
     "text": "Exercise: Cigarette Smoking \\(\\&\\) Cancer\n\n\nGiven a person is a smoker, what is the probability of having cancer?\n\n\n\nGiven a person is a smoker, what is the probability of not having cancer?\n\n\n\nGiven a person is not a smoker, what is the probability of having cancer?\n\n\n\nGiven a person is not a smoker, what is the probability of not having cancer?"
   },
   {
+    "objectID": "Day5.html#introduction-to-probability",
+    "href": "Day5.html#introduction-to-probability",
+    "title": "Day 5",
+    "section": "Introduction to Probability",
+    "text": "Introduction to Probability\n\n\n\nExperiment: Any act of observation with uncertain outcomes (e.g., tossing a coin).\nObservation: The result of an experiment (e.g., heads or tails).\nProbability: A measure of how likely an event is to occur, often thought of as “chance” or “likelihood.”\n\nExample: The chance of rain tomorrow, the likelihood of rolling a 6 on a die.\n\n\nMathematical Representation\n\nLet \\(E\\) represent an experiment.\nAn outcome of \\(E\\) is an element of the sample space \\(S\\).\nProbability of an event \\(A\\) is denoted by \\(P(A)\\)."
+  },
+  {
+    "objectID": "Day5.html#key-definitions",
+    "href": "Day5.html#key-definitions",
+    "title": "Day 5",
+    "section": "Key Definitions",
+    "text": "Key Definitions\n\n\nSample Point\n\nDefinition: The most basic outcome of an experiment.\nExample: In a coin toss, each toss that results in H (Head) or T (Tail).\n\n\n\n\nSample Space\n\nDefinition: Collection of all possible outcomes (sample points) of an experiment.\nExample: In a coin toss, the sample space is \\(S = \\{H, T\\}\\).\n\n\n\n\nEvent\n\nDefinition: A collection of sample points.\nExample: Rolling an even number on a die."
+  },
+  {
+    "objectID": "Day5.html#visualizing-probability",
+    "href": "Day5.html#visualizing-probability",
+    "title": "Day 5",
+    "section": "Visualizing Probability",
+    "text": "Visualizing Probability\n\n\nVenn Diagram\n\nSample Space (S): Represented as a closed figure in the diagram.\nSample Points: Each possible outcome shown as a solid dot within the figure.\nExample: Coin Toss\n\nVenn Diagram: Circle labeled S containing two points labeled H (Head) and T (Tail).\nRepresentation: Helps visualize all possible outcomes in a single view."
+  },
+  {
+    "objectID": "Day5.html#tree-diagram",
+    "href": "Day5.html#tree-diagram",
+    "title": "Day 5",
+    "section": "Tree Diagram",
+    "text": "Tree Diagram\n\nExample: Tree diagram of a coin toss.\n\n\nTree diagram of a coin toss"
+  },
+  {
+    "objectID": "Day5.html#experiments-and-sample-spaces",
+    "href": "Day5.html#experiments-and-sample-spaces",
+    "title": "Day 5",
+    "section": "Experiments and Sample Spaces",
+    "text": "Experiments and Sample Spaces\n\nExperiment: Tossing a Coin\n\nSample Space (S): \\[S = \\{H, T\\}\\]\n\nExperiment: Rolling a Die\n\nSample Space (S): \\[S = \\{1, 2, 3, 4, 5, 6\\}\\]\n\nExperiment: Tossing Two Coins\n\nSample Space (S): \\[S = \\{HH, HT, TH, TT\\}\\]"
+  },
+  {
+    "objectID": "Day5.html#probability-rules-and-calculations",
+    "href": "Day5.html#probability-rules-and-calculations",
+    "title": "Day 5",
+    "section": "Probability Rules and Calculations",
+    "text": "Probability Rules and Calculations\n\n\nProbability of a Sample Point\n\nA number between 0 and 1 indicating the likelihood of the outcome.\n\nRules of Probability\n\nRange of Probabilities:\n\nEach probability \\(p_i\\) must satisfy: \\[0 \\leq p_i \\leq 1\\]\n\nSum of Probabilities:\n\nThe total probability across all sample points must sum to 1: \\[\\sum_{\\text{all } i} p_i = 1\\]"
+  },
+  {
+    "objectID": "Day5.html#steps-for-calculating-event-probabilities",
+    "href": "Day5.html#steps-for-calculating-event-probabilities",
+    "title": "Day 5",
+    "section": "Steps for Calculating Event Probabilities",
+    "text": "Steps for Calculating Event Probabilities\n\n\n\nDefine the Experiment: Describe the observation process.\nList Sample Points: Identify possible outcomes.\nAssign Probabilities: Allocate probability to each sample point.\nIdentify Event’s Sample Points: Determine which sample points are part of the event.\nCalculate Event Probability: Sum the probabilities of the event’s sample points."
+  },
+  {
+    "objectID": "Day5.html#probability-in-a-dice-game",
+    "href": "Day5.html#probability-in-a-dice-game",
+    "title": "Day 5",
+    "section": "Probability in a Dice Game",
+    "text": "Probability in a Dice Game\n\n\n\n\n\nExperiment: Tossing a fair die.\nWinning Condition: If the up face is an even number (2, 4, 6), you win $1.\nLosing Condition: If the up face is odd (1, 3, 5), you lose $1.\n\nSample Space and Probabilities\n\nSample Space (S): \\[S = \\{1, 2, 3, 4, 5, 6\\}\\]\nUniform Probabilities: \\[p_1 = p_2 = p_3 = \\cdots = p_6 = \\frac{1}{6}\\]\n\n\n\n\nCalculation of Winning Probability\n\n\nEvent of Winning:\n\\[\\text{Winning} = \\{2, 4, 6\\}\\]\nProbability of Winning:\n\\[\\text{Prob of Winning} = p_2 + p_4 + p_6 = \\frac{1}{6} + \\frac{1}{6} + \\frac{1}{6} = \\frac{3}{6} = \\frac{1}{2}\\]"
+  },
+  {
+    "objectID": "Day5.html#compound-events",
+    "href": "Day5.html#compound-events",
+    "title": "Day 5",
+    "section": "Compound Events",
+    "text": "Compound Events\n\n\nUnions\n\nDefinition: Union of two events \\(A\\) and \\(B\\) (\\(A \\cup B\\))\nOccurs If: Either event \\(A\\), event \\(B\\), or both happen.\nComposition: Includes all sample points in \\(A\\), \\(B\\), or both. \\[A \\cup B = \\{x : x \\in A \\text{ or } x \\in B\\}\\]\n\n\n\n\n\n\nIntersections\n\nDefinition: Intersection of two events \\(A\\) and \\(B\\) (\\(A \\cap B\\))\nOccurs If: Both event \\(A\\) and event \\(B\\) happen.\nComposition: Includes all sample points that are in both \\(A\\) and \\(B\\). \\[A \\cap B = \\{x : x \\in A \\text{ and } x \\in B\\}\\]"
+  },
+  {
+    "objectID": "Day5.html#example-calculating-unions-and-intersections-in-a-die-toss",
+    "href": "Day5.html#example-calculating-unions-and-intersections-in-a-die-toss",
+    "title": "Day 5",
+    "section": "Example: Calculating Unions and Intersections in a Die-Toss",
+    "text": "Example: Calculating Unions and Intersections in a Die-Toss\n\n\n\n\n\nEvent A: Toss an even number. \\[A = \\{2, 4, 6\\}\\]\nEvent B: Toss a number less than or equal to 3. \\[B = \\{1, 2, 3\\}\\]\nSample Space (S): \\[S = \\{1, 2, 3, 4, 5, 6\\}\\]\n\n\n\n\nUnion (\\(A \\cup B\\)): \\[A \\cup B = \\{1, 2, 3, 4, 6\\}\\]\nIntersection (\\(A \\cap B\\)): \\[A \\cap B = \\{2\\}\\]\nProbability of Union (\\(P(A \\cup B)\\)): \\[P(A \\cup B) = \\frac{5}{6}\\]\nProbability of Intersection (\\(P(A \\cap B)\\)): \\[P(A \\cap B) = \\frac{1}{6}\\]"
+  },
+  {
+    "objectID": "Activity1.html",
+    "href": "Activity1.html",
+    "title": "Activity 1",
+    "section": "",
+    "text": "The High School and Beyond (hsb2) dataset contains information about 200 high school students, including demographic details and academic performance. This dataset is commonly used in statistics education to explore relationships between socioeconomic factors and test scores.\nKey Variables:\n\n\nID: Student identifier (unique number)\n\nGender: Self-reported gender (Male/Female)\n\nRace: Ethnicity (White/Black/Asian/Other)\n\nSES: Socioeconomic status (Low/Middle/High)\n\nProgram: Enrollment track (General/Vocational/Academic)\n\nReading, Math, Science: Standardized test scores (0-100)\n\n\n\n\nFirst 6 observations from hsb2 dataset\n\nid\ngender\nrace\nses\nschtyp\nprog\nread\nwrite\nmath\nscience\nsocst\n\n\n\n70\nmale\nwhite\nlow\npublic\ngeneral\n57\n52\n41\n47\n57\n\n\n121\nfemale\nwhite\nmiddle\npublic\nvocational\n68\n59\n53\n63\n61\n\n\n86\nmale\nwhite\nhigh\npublic\ngeneral\n44\n33\n54\n58\n31\n\n\n141\nmale\nwhite\nhigh\npublic\nvocational\n63\n44\n47\n53\n56\n\n\n172\nmale\nwhite\nmiddle\npublic\nacademic\n47\n52\n57\n53\n61\n\n\n113\nmale\nwhite\nmiddle\npublic\nacademic\n44\n52\n51\n63\n61\n\n\n\n\n\n\n\nClassify these variables as qualitative (categorical) or quantitative (numerical):\n\nGender\n\nMath Score\n\nSES (Socioeconomic Status)\n\nProgram\n\nScience Score\n\nFor two of your choices, explain why they belong to that category.\n\nSuppose researchers want to analyze gender differences in math performance:\n\nWhat is the current variable type of Gender?\nHow could you convert Gender to a numeric format? What values would you assign?\n\nIf Gender is coded as 0 (Male) and 1 (Female):\n\nCould you calculate an “average gender”? Explain why this is or isn’t meaningful.\n\n\nWhy might statisticians prefer to keep Gender as a categorical variable?"
+  },
+  {
+    "objectID": "Activity1.html#dataset-description",
+    "href": "Activity1.html#dataset-description",
+    "title": "Activity 1",
+    "section": "",
+    "text": "The High School and Beyond (hsb2) dataset contains information about 200 high school students, including demographic details and academic performance. This dataset is commonly used in statistics education to explore relationships between socioeconomic factors and test scores.\nKey Variables:\n\n\nID: Student identifier (unique number)\n\nGender: Self-reported gender (Male/Female)\n\nRace: Ethnicity (White/Black/Asian/Other)\n\nSES: Socioeconomic status (Low/Middle/High)\n\nProgram: Enrollment track (General/Vocational/Academic)\n\nReading, Math, Science: Standardized test scores (0-100)"
+  },
+  {
+    "objectID": "Activity1.html#data-preview",
+    "href": "Activity1.html#data-preview",
+    "title": "Activity 1",
+    "section": "",
+    "text": "First 6 observations from hsb2 dataset\n\nid\ngender\nrace\nses\nschtyp\nprog\nread\nwrite\nmath\nscience\nsocst\n\n\n\n70\nmale\nwhite\nlow\npublic\ngeneral\n57\n52\n41\n47\n57\n\n\n121\nfemale\nwhite\nmiddle\npublic\nvocational\n68\n59\n53\n63\n61\n\n\n86\nmale\nwhite\nhigh\npublic\ngeneral\n44\n33\n54\n58\n31\n\n\n141\nmale\nwhite\nhigh\npublic\nvocational\n63\n44\n47\n53\n56\n\n\n172\nmale\nwhite\nmiddle\npublic\nacademic\n47\n52\n57\n53\n61\n\n\n113\nmale\nwhite\nmiddle\npublic\nacademic\n44\n52\n51\n63\n61"
+  },
+  {
+    "objectID": "Activity1.html#questions",
+    "href": "Activity1.html#questions",
+    "title": "Activity 1",
+    "section": "",
+    "text": "Classify these variables as qualitative (categorical) or quantitative (numerical):\n\nGender\n\nMath Score\n\nSES (Socioeconomic Status)\n\nProgram\n\nScience Score\n\nFor two of your choices, explain why they belong to that category.\n\nSuppose researchers want to analyze gender differences in math performance:\n\nWhat is the current variable type of Gender?\nHow could you convert Gender to a numeric format? What values would you assign?\n\nIf Gender is coded as 0 (Male) and 1 (Female):\n\nCould you calculate an “average gender”? Explain why this is or isn’t meaningful.\n\n\nWhy might statisticians prefer to keep Gender as a categorical variable?"
+  },
+  {
     "objectID": "Activity2.html",
     "href": "Activity2.html",
     "title": "Activity 2",
@@ -707,11 +385,18 @@
     "text": "Activity 1: Think-Pair-Share\n\n\nThink: Reflect on a real-world example where sampling bias might occur (e.g., political polls, health surveys).\n\nPair: Discuss your example with a partner and identify potential sources of bias.\n\nShare: Share your findings with the class and propose ways to mitigate the bias.\nActivity 2: Live Quiz\n\n\nQuestion: “How might the wording of a survey question about climate change influence responses?”\n\nOptions:\n\n\nIt has no effect.\n\n\n\nIt can lead to overestimation of public concern.\n\n\n\nIt can lead to underestimation of public concern.\n\n\n\nIt can polarize responses.\n\n\n\nActivity 3: Interactive Data Exploration\n\n\n\n\n\nsp\nsex\nindex\nFL\nRW\nCL\nCW\nBD\n\n\n\nB\nM\n1\n8.1\n6.7\n16.1\n19.0\n7.0\n\n\nB\nM\n2\n8.8\n7.7\n18.1\n20.8\n7.4\n\n\nB\nM\n3\n9.2\n7.8\n19.0\n22.4\n7.7\n\n\nB\nM\n4\n9.6\n7.9\n20.1\n23.1\n8.2\n\n\nB\nM\n5\n9.8\n8.0\n20.3\n23.0\n8.2\n\n\nB\nM\n6\n10.8\n9.0\n23.0\n26.5\n9.8\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuestion: What do you see on the above plots? .\nActivity 4: Quiz\n\nQuestion: “Experiment or Observational Study? To examine whether farm-grown salmon contain more omega-3 oils if water is more acidic, we collect samples of salmon and water from multiple fish farms to see if the two variables are related.” Explain\n\nOptions:\n\n\nExperiment.\n\n\n\nObservational Study.\n\n\n\nNot enough information."
   },
   {
-    "objectID": "Activity3.html",
-    "href": "Activity3.html",
-    "title": "Activity 3",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "1. Think-Pair-Share Activity\nThink-Pair-Share: Calculating Descriptive Statistics\n\n\nThink: Calculate the mean, median, and standard deviation for the following dataset by hand:\nPulse Rates: [68, 72, 70, 65, 74, 69, 71, 67, 73, 70]\n\nPair: Discuss your calculations with a partner. Compare your results and resolve any discrepancies.\nShare: Share your findings with the class. Be prepared to explain your calculations.\n\n2. Quiz\nQuiz: Proportions and Frequency Tables\n\n\nQuestion: In the cell phone dataset, what proportion of adults own an iPhone?\n\nA). 0.194\nB). 0.203\nC). 0.063\nD). 0.410\n\n\nQuestion: What is the difference in proportions between females and males who are in a relationship?\n\nA). 0.14\nB). 0.10\nC). 0.05\nD). 0.20\n3. Case Studies and Problem-Solving\nObjective: Apply statistical concepts to solve real-world problems.\nCase Study: Health Data Analysis\n\n\nScenario: A health study collected data on smoking habits and pulse rates. The dataset is provided below:\nSmoker: [Yes, No, No, Yes, No, Yes, No, No, Yes, No]  \nPulse: [72, 68, 70, 75, 69, 74, 67, 71, 73, 70]  \n\n\nTask:\n\nCalculate the mean and median pulse rates for smokers and non-smokers separately.\n\nCompare the variability (standard deviation) of pulse rates between the two groups.\n\nDiscuss whether smoking appears to have an effect on pulse rates.\n\n\nSubmit: Write a brief report summarizing your findings."
+    "text": "Welcome to the captivating world of statistical thinking! This course will provide you with a solid foundation in statistical theory while taking you on a journey through the practical aspects of the subject. Along the way, you’ll gain experience with statistical software, learn to interpret and effectively communicate statistical findings, and explore a range of topics in descriptive and inferential data analysis and both parametric and non-parametric statistical inference. Some of the areas we’ll delve into include probability, normal distribution, sampling distributions, confidence intervals, hypothesis testing and simple linear regression.\nAt the heart of this course is the ability to interpret results and grasp underlying concepts, rather than merely obtaining numerical outcomes. By engaging with a diverse set of problems, you’ll become well-versed in statistical methodologies. However, it’s crucial to remember that a deep understanding of the concepts is the key to drawing meaningful conclusions.\n\n\n\n\nMaster the basic principles of data analysis, including the production and application of data in studies and experiments.\nApply principles of inference to construct confidence intervals and conduct hypothesis tests effectively.\nCritically evaluate statistical arguments and methodologies in published research.\nCompare and differentiate between parametric and non-parametric methods in statistical analysis.\nUtilize software R to conduct data analysis, create graphs, and perform basic statistical tests."
+  },
+  {
+    "objectID": "about.html#learning-objectives",
+    "href": "about.html#learning-objectives",
+    "title": "About",
+    "section": "",
+    "text": "Master the basic principles of data analysis, including the production and application of data in studies and experiments.\nApply principles of inference to construct confidence intervals and conduct hypothesis tests effectively.\nCritically evaluate statistical arguments and methodologies in published research.\nCompare and differentiate between parametric and non-parametric methods in statistical analysis.\nUtilize software R to conduct data analysis, create graphs, and perform basic statistical tests."
   },
   {
     "objectID": "index.html",
@@ -721,18 +406,25 @@
     "text": "Welcome to the world of statistics!"
   },
   {
+    "objectID": "Activity4.html",
+    "href": "Activity4.html",
+    "title": "Activity 4",
+    "section": "",
+    "text": "1. Think-Pair-Share\n\nThink: Take 2 minutes to identify a real-world example of a symmetric distribution (e.g., heights of people, test scores). Write down your example.\nPair: Turn to a partner and discuss your examples. Compare and contrast the examples you both came up with.\nShare: Be prepared to share your findings with the class. Highlight why your example fits the concept of a symmetric distribution.\n2. Quiz\nAnswer the following question individually:\n\n\n“If a student’s GPA has a z-score of 2, what does this mean?”\n\n\nThe GPA is 2 points above the mean.\n\n\n\nThe GPA is 2 standard deviations above the mean.\n\n\n\nThe GPA is 2 standard deviations below the mean.\n\n\n\nThe GPA is 2 points below the mean.\n\n\n\n\nDiscussion: After answering, discuss with a partner why you chose your answer. Be ready to explain your reasoning to the class.\n3. Case Studies and Problem-Solving\n\n\nCase Study: Use the graphical and numerical summaries of Student Survey Dataset to compare the GPA of students for different Year.\n\n\n\n\n\n\n\n\n\n\nSummary Statistics of GPA for all Years\n\nYear\nmean\nsd\nn\n\n\n\nFirstYear\n3.070759\n0.4702584\n79\n\n\nJunior\n3.273636\n0.3688057\n33\n\n\nSenior\n3.171667\n0.3754274\n36\n\n\nSophomore\n3.173224\n0.3690737\n183\n\n\n\n\n\n\n\nTasks:\n\nInterpret the results: Do Junior Students have higher GPAs on average? What might explain this result?\n\nDiscuss potential biases or limitations in the dataset.\n\n\nReflect: Write a short paragraph summarizing your findings and share it with the class."
+  },
+  {
     "objectID": "Activity5.html",
     "href": "Activity5.html",
     "title": "Activity 5",
     "section": "",
-    "text": "Think: Individually, list the sample space for the experiment of rolling a die and tossing a coin simultaneously.\n\nPair: Discuss with a partner to compare and refine their sample spaces.\n\nShare: Share their combined sample space with the class and explain how they arrived at it."
+    "text": "Think: Individually, list the sample space for the experiment of rolling a die and tossing a coin simultaneously.\n\nPair: Discuss with a partner to compare and refine their sample spaces.\n\nShare: Share your combined sample space with the class and explain how you arrived at it."
   },
   {
     "objectID": "Activity5.html#activity-1-think-pair-share",
     "href": "Activity5.html#activity-1-think-pair-share",
     "title": "Activity 5",
     "section": "",
-    "text": "Think: Individually, list the sample space for the experiment of rolling a die and tossing a coin simultaneously.\n\nPair: Discuss with a partner to compare and refine their sample spaces.\n\nShare: Share their combined sample space with the class and explain how they arrived at it."
+    "text": "Think: Individually, list the sample space for the experiment of rolling a die and tossing a coin simultaneously.\n\nPair: Discuss with a partner to compare and refine their sample spaces.\n\nShare: Share your combined sample space with the class and explain how you arrived at it."
   },
   {
     "objectID": "Activity5.html#activity-2-quiz",
@@ -746,6 +438,314 @@
     "href": "Activity5.html#activity-4-group-activities-with-real-data",
     "title": "Activity 5",
     "section": "Activity 4: Group Activities with Real Data",
-    "text": "Activity 4: Group Activities with Real Data\n\n\nDataset: You are given a dataset of 200 die roll outcomes\n\nTask:\n\nCalculate the probability of rolling an even number.\nCreate a histogram of the die roll outcomes.\n\n\n\nDiscussion: Compare the empirical probability with the theoretical probability.\n\n\n\n\n\noutcome\nCount\n\n\n\n1\n23\n\n\n2\n34\n\n\n3\n32\n\n\n4\n39\n\n\n5\n29\n\n\n6\n43"
+    "text": "Activity 4: Group Activities with Real Data\n\n\nDataset: You are given a dataset of 200 die roll outcomes\n\nTask:\n\nCalculate the probability of rolling an even number.\nCreate a histogram of the die roll outcomes.\n\n\n\nDiscussion: Compare the empirical probability with the theoretical probability.\n\n\n\n\n\noutcome\nCount\n\n\n\n1\n32\n\n\n2\n37\n\n\n3\n31\n\n\n4\n32\n\n\n5\n36\n\n\n6\n32"
+  },
+  {
+    "objectID": "Activity3.html",
+    "href": "Activity3.html",
+    "title": "Activity 3",
+    "section": "",
+    "text": "1. Think-Pair-Share Activity\nThink-Pair-Share: Calculating Descriptive Statistics\n\n\nThink: Calculate the mean, median, and standard deviation for the following dataset by hand:\nPulse Rates: [68, 72, 70, 65, 74, 69, 71, 67, 73, 70]\n\nPair: Discuss your calculations with a partner. Compare your results and resolve any discrepancies.\nShare: Share your findings with the class. Be prepared to explain your calculations.\n\n2. Quiz\nQuiz: Proportions and Frequency Tables\n\n\nQuestion: In the cell phone dataset, what proportion of adults own an iPhone?\n\nA). 0.194\nB). 0.203\nC). 0.063\nD). 0.410\n\n\nQuestion: What is the difference in proportions between females and males who are in a relationship?\n\nA). 0.14\nB). 0.10\nC). 0.05\nD). 0.20\n3. Case Studies and Problem-Solving\nObjective: Apply statistical concepts to solve real-world problems.\nCase Study: Health Data Analysis\n\n\nScenario: A health study collected data on smoking habits and pulse rates. The dataset is provided below:\nSmoker: [Yes, No, No, Yes, No, Yes, No, No, Yes, No]  \nPulse: [72, 68, 70, 75, 69, 74, 67, 71, 73, 70]  \n\n\nTask:\n\nCalculate the mean and median pulse rates for smokers and non-smokers separately.\n\nCompare the variability (standard deviation) of pulse rates between the two groups.\n\nDiscuss whether smoking appears to have an effect on pulse rates.\n\n\nSubmit: Write a brief report summarizing your findings."
+  },
+  {
+    "objectID": "Day4.html#recap-student-survey",
+    "href": "Day4.html#recap-student-survey",
+    "title": "Day 4",
+    "section": "Recap: Student Survey",
+    "text": "Recap: Student Survey\nDataset on 362 responses to a student survey given at one college.\n\n\n\n\n\n\nYear\nGender\nSmoke\nHeight\nWeight\nSAT\nPulse\n\n\n\n\nSenior\nM\nNo\n71\n180\n1210\n54\n\n\nSophomore\nF\nYes\n66\n120\n1150\n66\n\n\nFirstYear\nM\nNo\n72\n208\n1110\n130\n\n\nJunior\nM\nNo\n63\n110\n1120\n78\n\n\nSophomore\nF\nNo\n65\n150\n1170\n40\n\n\nSophomore\nF\nNo\n65\n114\n1150\n80\n\n\nFirstYear\nF\nNo\n66\n128\n1320\n94\n\n\nSophomore\nM\nNo\n74\n235\n1370\n77\n\n\nJunior\nF\nNo\n61\nNA\n1100\n60\n\n\nFirstYear\nF\nNo\n60\n115\n1370\n94\n\n\nSophomore\nF\nNo\n65\n140\n1170\n63\n\n\nFirstYear\nM\nNo\n63\n200\n1180\n72\n\n\nSophomore\nM\nNo\n68\n162\n1150\n54\n\n\nJunior\nF\nNo\n68\n135\n1300\n66\n\n\nFirstYear\nM\nNo\n68\n193\n1350\n72\n\n\nFirstYear\nF\nNo\n63\n110\n1200\n59\n\n\nFirstYear\nF\nNo\n63\n99\n1200\n88\n\n\nSophomore\nM\nNo\n72\n165\n1350\n59\n\n\nSophomore\nF\nNo\n62\n120\n1410\n64\n\n\nSophomore\nF\nNo\n67\n154\n1000\n72"
+  },
+  {
+    "objectID": "Day4.html#histogram",
+    "href": "Day4.html#histogram",
+    "title": "Day 4",
+    "section": "Histogram",
+    "text": "Histogram\n\n\nPlotCode\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nggplot(survey, aes(x = Pulse)) +\n  geom_histogram(binwidth = 5, col = \"gold\", fill = \"maroon\") +\n  labs(\n    title = \"Histogram of pulse rates\",\n    x = \"Pulse\",\n    y = \"Count\"\n  )"
+  },
+  {
+    "objectID": "Day4.html#histogram-shape",
+    "href": "Day4.html#histogram-shape",
+    "title": "Day 4",
+    "section": "Histogram: Shape",
+    "text": "Histogram: Shape\n\n\nHistogram: Aggregates values into bins and counts how many cases fall into each bin.\nPulse rates are symmetrically distributed around a rate of about 70 beats per minute.\nSymmetric distributions are “centered” around a mean and median that are roughly the same in value."
+  },
+  {
+    "objectID": "Day4.html#shape-and-stats",
+    "href": "Day4.html#shape-and-stats",
+    "title": "Day 4",
+    "section": "Shape and Stats",
+    "text": "Shape and Stats\n\n\nMean and standard deviation are good summary stats of a symmetric distribution.\nSimilar variation to the left and right of the mean so one measure of SD is fine.\n\n\nsurvey %&gt;% summarize(mean = mean(Pulse), sd = sd(Pulse))\n\n      mean       sd\n1 69.63611 12.10508"
+  },
+  {
+    "objectID": "Day4.html#shape-data-distribution",
+    "href": "Day4.html#shape-data-distribution",
+    "title": "Day 4",
+    "section": "Shape: Data Distribution",
+    "text": "Shape: Data Distribution\n\nIf a distribution of data is approximately bell-shaped, about 95% of the data should fall within two standard deviations of the sample mean.\n\nFor a sample: 95% of values between \\(\\bar{y} - 2s\\) and \\(\\bar{y} + 2s\\)\nFor a population: 95% of values between \\(\\mu - 2\\sigma\\) and \\(\\mu + 2\\sigma\\)"
+  },
+  {
+    "objectID": "Day4.html#think-pair-share",
+    "href": "Day4.html#think-pair-share",
+    "title": "Day 4",
+    "section": " Think-Pair-Share",
+    "text": "Think-Pair-Share\n\n\n\n\n\n\n\n\nObjective: Understand symmetric distributions through real-world examples.\n\nInstructions: Think of an example, discuss with a partner, and share with the class.\n\n\n\n\n\n\n−+\n04:00"
+  },
+  {
+    "objectID": "Day4.html#bell-shaped-distribution",
+    "href": "Day4.html#bell-shaped-distribution",
+    "title": "Day 4",
+    "section": "Bell-shaped Distribution",
+    "text": "Bell-shaped Distribution\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe standard deviation for math SAT scores is closest to\n\n100\n\n75\n\n200\n\n25"
+  },
+  {
+    "objectID": "Day4.html#standardizing-data-z-score",
+    "href": "Day4.html#standardizing-data-z-score",
+    "title": "Day 4",
+    "section": "Standardizing Data: Z-score",
+    "text": "Standardizing Data: Z-score\n\n\nThe z-score of a data value, x, tells us how many standard deviations the value is above or below the mean:\n\\[ z = \\dfrac{x - \\text{mean}}{\\text{SD}} \\]\n\nE.g., if a value \\(x\\) has \\(z = -1.5\\), then the value \\(x\\) is 1.5 standard deviations below the mean.\n\nIf we standardize all values in a bell-shaped distribution, 95% of all z-scores fall between -2 and 2."
+  },
+  {
+    "objectID": "Day4.html#quiz",
+    "href": "Day4.html#quiz",
+    "title": "Day 4",
+    "section": " Quiz",
+    "text": "Quiz\n\n\n\n\n\n\n\n\nObjective: Assess understanding of z-scores.\n\nInstructions: Answer the quiz question.\n\n\n\n\n\n\n−+\n02:00"
+  },
+  {
+    "objectID": "Day4.html#shape-left-skew-right-skew-histograms",
+    "href": "Day4.html#shape-left-skew-right-skew-histograms",
+    "title": "Day 4",
+    "section": "Shape: Left Skew & Right Skew (Histograms)",
+    "text": "Shape: Left Skew & Right Skew (Histograms)\n\n\n\n\n\n\n\n\n\n\n\n\n\nmean(survey$GPA, na.rm = TRUE)\n\n[1] 3.157942\n\nmedian(survey$GPA, na.rm = TRUE)\n\n[1] 3.2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nmean(survey$Exercise, na.rm = TRUE)\n\n[1] 9.048747\n\nmedian(survey$Exercise, na.rm = TRUE)\n\n[1] 8"
+  },
+  {
+    "objectID": "Day4.html#shape-left-skew-right-skew-boxplots",
+    "href": "Day4.html#shape-left-skew-right-skew-boxplots",
+    "title": "Day 4",
+    "section": "Shape: Left Skew & Right Skew (Boxplots)",
+    "text": "Shape: Left Skew & Right Skew (Boxplots)\n\n\n\n\n\n\n\n\n\n\n\n\n\nmean(survey$GPA, na.rm = TRUE)\n\n[1] 3.157942\n\nmedian(survey$GPA, na.rm = TRUE)\n\n[1] 3.2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nmean(survey$Exercise, na.rm = TRUE)\n\n[1] 9.048747\n\nmedian(survey$Exercise, na.rm = TRUE)\n\n[1] 8"
+  },
+  {
+    "objectID": "Day4.html#shape-boxplots",
+    "href": "Day4.html#shape-boxplots",
+    "title": "Day 4",
+    "section": "Shape: Boxplots",
+    "text": "Shape: Boxplots\n\n\nA graphical representation of the distribution of a dataset, showing the median, quartiles, and outliers.\n\nBox: Represents the interquartile range (IQR) between the 1st quartile (Q1) and the 3rd quartile (Q3).\nMedian: The middle value of the dataset, represented by a line inside the box.\nWhiskers: Extend from the box to the minimum and maximum data points within 1.5 times the IQR.\nOutliers: Data points outside of the whiskers, often represented as individual points."
+  },
+  {
+    "objectID": "Day4.html#shape-boxplots-1",
+    "href": "Day4.html#shape-boxplots-1",
+    "title": "Day 4",
+    "section": "Shape: Boxplots",
+    "text": "Shape: Boxplots\n\n\nSymmetry: If the median is roughly centered within the box, and the whiskers are of similar length, the distribution is likely symmetric.\nSkewness:\n\nLeft-skewed: The median is closer to the upper quartile (Q3), and the left whisker is longer than the right whisker.\nRight-skewed: The median is closer to the lower quartile (Q1), and the right whisker is longer than the left whisker."
+  },
+  {
+    "objectID": "Day4.html#elements-of-a-box-plot-inner-fences",
+    "href": "Day4.html#elements-of-a-box-plot-inner-fences",
+    "title": "Day 4",
+    "section": "Elements of a Box Plot: Inner Fences",
+    "text": "Elements of a Box Plot: Inner Fences\n\n\nLower Inner Fence: \\[ \\text{Lower inner fence} = Q_L - 1.5 \\times \\text{IQR} \\]\nUpper Inner Fence: \\[ \\text{Upper inner fence} = Q_U + 1.5 \\times \\text{IQR} \\]\nInner fences are critical for identifying what is typically considered potential mild outliers. These are points that are unusual but not extreme. The 1.5 multiplier stretches beyond the box enough to capture data variability while excluding more extreme values."
+  },
+  {
+    "objectID": "Day4.html#adding-a-qualitative-variable-stats",
+    "href": "Day4.html#adding-a-qualitative-variable-stats",
+    "title": "Day 4",
+    "section": "Adding a Qualitative Variable: Stats",
+    "text": "Adding a Qualitative Variable: Stats\n\n\nUse group_by() and summarise() to get summary statistics using dplyr package to compare distributions across different levels of a qualitative variable.\n\n\nsurvey %&gt;%\n  group_by(Smoke) %&gt;%\n  summarise(Min = min(Pulse),\n            Q1 = quantile(Pulse, 0.25),\n            Median = median(Pulse),\n            Mean = mean(Pulse),\n            Q3 = quantile(Pulse, 0.75),\n            Max = max(Pulse),\n            SD = sd(Pulse),\n            N = n()) %&gt;% \n  knitr::kable(caption = \"Summary Stats of Smoke Categories\")\n\n\nSummary Stats of Smoke Categories\n\n\nSmoke\nMin\nQ1\nMedian\nMean\nQ3\nMax\nSD\nN\n\n\n\n\nNo\n35\n61\n69\n69.34069\n77\n130\n12.14980\n317\n\n\nYes\n42\n65\n72\n71.81395\n79\n96\n11.67671\n43\n\n\n\n\n\nSmokers have a slightly higher mean pulse rate than non-smokers (71.8 vs. 69.3)."
+  },
+  {
+    "objectID": "Day4.html#side-by-side-histogram",
+    "href": "Day4.html#side-by-side-histogram",
+    "title": "Day 4",
+    "section": "Side-by-side Histogram",
+    "text": "Side-by-side Histogram\n\nPlotCode\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nggplot(survey, aes(x = Pulse)) + \n  geom_histogram(binwidth = 4, fill = \"maroon\", col = \"gold\") +\n  facet_wrap(~Smoke)"
+  },
+  {
+    "objectID": "Day4.html#side-by-side-boxplot",
+    "href": "Day4.html#side-by-side-boxplot",
+    "title": "Day 4",
+    "section": "Side-by-side Boxplot",
+    "text": "Side-by-side Boxplot\n\nPlotCode\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nggplot(survey, aes(x = Smoke, y = Pulse)) +\n  geom_boxplot(fill = c(\"maroon\", \"purple\"), col = \"darkgreen\") +\n  labs(x = \"Smoking Status\", y = \"Pulse Rate\")"
+  },
+  {
+    "objectID": "Day4.html#stacked-bar-graph",
+    "href": "Day4.html#stacked-bar-graph",
+    "title": "Day 4",
+    "section": "Stacked Bar Graph",
+    "text": "Stacked Bar Graph\n\nPlotCode\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nggplot(survey, aes(x = Year, fill = Gender)) + \n  geom_bar(position = \"fill\") + \n  scale_fill_manual(values = c(\"maroon\", \"gold\")) +\n  labs(title = \"Proportional Distribution by Year and Gender\", \n       y = \"proportion\", \n       x = \"year\", \n       fill = \"Gender\")"
+  },
+  {
+    "objectID": "Day4.html#stacked-bar-graph-counts",
+    "href": "Day4.html#stacked-bar-graph-counts",
+    "title": "Day 4",
+    "section": "Stacked Bar Graph (Counts)",
+    "text": "Stacked Bar Graph (Counts)\n\nPlotCode\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nggplot(survey, aes(x = Year, fill = Gender)) + \n  geom_bar(position = \"stack\") + \n  scale_fill_manual(values = c(\"maroon\", \"gold\")) +\n  labs(title = \"Proportional Distribution by Year and Gender\", \n       y = \"proportion\", \n       x = \"year\", \n       fill = \"Gender\")"
+  },
+  {
+    "objectID": "Day2.html#sampling-and-inference",
+    "href": "Day2.html#sampling-and-inference",
+    "title": "Day 2",
+    "section": "Sampling and Inference",
+    "text": "Sampling and Inference\n\n\nA population includes all individuals or objects of interest.\nA sample is all the cases that we have collected data on (a subset of the population).\nStatistical inference is the process of using data from a sample to gain information about the population."
+  },
+  {
+    "objectID": "Day2.html#sampling-and-inference-source",
+    "href": "Day2.html#sampling-and-inference-source",
+    "title": "Day 2",
+    "section": "Sampling and Inference (Source)",
+    "text": "Sampling and Inference (Source)"
+  },
+  {
+    "objectID": "Day2.html#blue-crab-in-maryland-coastal-bays",
+    "href": "Day2.html#blue-crab-in-maryland-coastal-bays",
+    "title": "Day 2",
+    "section": "Blue Crab in Maryland Coastal Bays",
+    "text": "Blue Crab in Maryland Coastal Bays\n\n\nPopulation\n\nAll blue crabs in the Maryland Coastal Bays (MCB).\nIncludes sub-estuaries: Assawoman Bay, St. Martin River, Isle of Wight, Sinepuxent Bay, Newport Bay, Chincoteague Bay.\n\nSample\n\nBlue crabs collected from 20 sites within MCB.\nSample period: April - December, 2014-2016.\nMethod: Trawl surveys."
+  },
+  {
+    "objectID": "Day2.html#blue-crab-in-maryland-coastal-bays-1",
+    "href": "Day2.html#blue-crab-in-maryland-coastal-bays-1",
+    "title": "Day 2",
+    "section": "Blue Crab in Maryland Coastal Bays",
+    "text": "Blue Crab in Maryland Coastal Bays\n\n\nVariables\n\nPrimary Variable: Carapace width, sex, maturity status, molt stage.\n\nInference\n\nPopulation structure of blue crabs in MCB.\nSeasonal variations: size distribution, molt cycles, reproductive patterns."
+  },
+  {
+    "objectID": "Day2.html#sampling-bias",
+    "href": "Day2.html#sampling-bias",
+    "title": "Day 2",
+    "section": "Sampling Bias",
+    "text": "Sampling Bias\n\n\nSampling bias occurs when the method of selecting a sample causes the sample to differ from the population in some relevant way.\nIf sampling bias exists, we cannot trust generalizations from the sample to the population.\n\n\nTo eliminate sampling bias, always take a RANDOM SAMPLE!"
+  },
+  {
+    "objectID": "Day2.html#bias-in-data",
+    "href": "Day2.html#bias-in-data",
+    "title": "Day 2",
+    "section": "Bias in Data",
+    "text": "Bias in Data\nEven with a random sample, data can still be biased, especially when collected on humans.\n\nSome forms of bias to watch out for in data collection:\n\nQuestion wording.\nQuestion order.\nContext.\nNon-response bias."
+  },
+  {
+    "objectID": "Day2.html#question-wording",
+    "href": "Day2.html#question-wording",
+    "title": "Day 2",
+    "section": "Question Wording",
+    "text": "Question Wording\n\nA random sample was asked: “Should there be a tax cut, or should money be used to fund new government programs?”\n\n\n\n\nTax Cut\nPrograms\n\n\n\n\n60%\n40%"
+  },
+  {
+    "objectID": "Day2.html#question-wording-1",
+    "href": "Day2.html#question-wording-1",
+    "title": "Day 2",
+    "section": "Question Wording",
+    "text": "Question Wording\n\nA different random sample was asked: “Should there be a tax cut, or should money be spent on programs for education, the environment, health care, crime-fighting, and military defense?”\n\n\n\n\nTax Cut\nPrograms\n\n\n\n\n22%\n78%"
+  },
+  {
+    "objectID": "Day2.html#question-order",
+    "href": "Day2.html#question-order",
+    "title": "Day 2",
+    "section": "Question Order",
+    "text": "Question Order\n\n\nDepending on the order of questions, we can see either greater or lesser differences in responses.\nRespondents tend to provide answers consistent with their prior responses."
+  },
+  {
+    "objectID": "Day2.html#swedish-study-response-bias",
+    "href": "Day2.html#swedish-study-response-bias",
+    "title": "Day 2",
+    "section": "Swedish Study: Response Bias",
+    "text": "Swedish Study: Response Bias"
+  },
+  {
+    "objectID": "Day2.html#identified-sources-of-bias-in-swedish-study",
+    "href": "Day2.html#identified-sources-of-bias-in-swedish-study",
+    "title": "Day 2",
+    "section": "Identified Sources of Bias in Swedish Study",
+    "text": "Identified Sources of Bias in Swedish Study\n\n\nPolitical Bias: The study experimentally primes the political affiliations of the respondents before asking questions about corruption. This bias arises when people’s political leanings affect their perception and reporting of corruption levels.\n\n\n\nSensitivity Bias: Questions about one’s experiences with corruption are sensitive in nature and may result in biased responses due to fear of retribution or social stigma."
+  },
+  {
+    "objectID": "Day2.html#context",
+    "href": "Day2.html#context",
+    "title": "Day 2",
+    "section": "Context",
+    "text": "Context\n\nAnn Landers column asked readers “If you had it to do over again, would you have children?”\nThe first request for data contained a letter from a young couple which listed worries about parenting and various reasons not to have kids.\n\\[30\\% \\text{ said yes}\\]"
+  },
+  {
+    "objectID": "Day2.html#context-1",
+    "href": "Day2.html#context-1",
+    "title": "Day 2",
+    "section": "Context",
+    "text": "Context\n\nThe second request for data was in response to this number, in which Ann wrote how she was “stunned, disturbed, and just plain flummoxed.”\n\\[95\\% \\text{ said yes}\\]"
+  },
+  {
+    "objectID": "Day2.html#non-response-bias",
+    "href": "Day2.html#non-response-bias",
+    "title": "Day 2",
+    "section": "Non-response Bias",
+    "text": "Non-response Bias\n\nWhen respondents are either unable or unwilling to respond to your survey, this results in non-response bias.\n\n\n\nSurvey targeted to the wrong audience.\nThere is general unwillingness due to polar opposite opinions.\nThe survey did not reach the right respondent.\n\ne.g., A survey asking teenagers about the best cigarette brands."
+  },
+  {
+    "objectID": "Day2.html#think-pair-share",
+    "href": "Day2.html#think-pair-share",
+    "title": "Day 2",
+    "section": " Think-Pair-Share ",
+    "text": "Think-Pair-Share \n\n\n\n\n\n\n\n\nThink: Reflect on a real-world example where sampling bias might occur (e.g., political polls, health surveys).\nPair: Discuss their example with a partner and identify potential sources of bias.\nShare: Share their findings with the class and propose ways to mitigate the bias.\n\n\n\n\n\n\n−+\n05:00"
+  },
+  {
+    "objectID": "Day2.html#experiment-vs.-observational-study",
+    "href": "Day2.html#experiment-vs.-observational-study",
+    "title": "Day 2",
+    "section": "Experiment vs. Observational Study",
+    "text": "Experiment vs. Observational Study\n\nAn observational study is a study in which the researcher does not actively control the value of any variable but simply observes the values as they naturally exist.\n\n\n\nAn experiment is a study in which the researcher actively controls one or more of the explanatory variables."
+  },
+  {
+    "objectID": "RandRStudio.html",
+    "href": "RandRStudio.html",
+    "title": "Setting Up R and RStudio",
+    "section": "",
+    "text": "This lab tutorial will guide you through installing R and RStudio on your computer, managing packages, and loading data into R. This setup is essential for performing all kinds of data analysis tasks in R."
+  },
+  {
+    "objectID": "RandRStudio.html#on-windows",
+    "href": "RandRStudio.html#on-windows",
+    "title": "Setting Up R and RStudio",
+    "section": "On Windows",
+    "text": "On Windows\n\n\nDownload R:\n\nVisit CRAN and download the latest version of R for Windows.\nRun the downloaded .exe file and follow the installation instructions.\n\n\n\n\n\nCRAN mirror\nDownload Latest R\nExecutable File in Downloads Folder\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDownload RStudio:\n\nGo to the RStudio Download page and download the free version of RStudio Desktop for Windows.\nInstall it by running the downloaded .exe file.\n\n\n\n\n\nDownload Latest RStudio\nExecutable File in Downloads Folder"
+  },
+  {
+    "objectID": "RandRStudio.html#on-mac",
+    "href": "RandRStudio.html#on-mac",
+    "title": "Setting Up R and RStudio",
+    "section": "On Mac",
+    "text": "On Mac\n\n\nDownload R:\n\nNavigate to CRAN and choose the version for macOS.\nOpen the downloaded .pkg file to start the installation.\n\n\n\n\n\nCRAN mirror\nDownload Latest R\nExecutable File in Downloads Folder\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDownload RStudio:\n\nVisit RStudio Download page and select RStudio for macOS.\nOpen the downloaded .dmg file and drag RStudio to your Applications folder.\n\n\n\n\n\nDownload Latest RStudio\nExecutable File in Downloads Folder"
+  },
+  {
+    "objectID": "RandRStudio.html#rmarkdown-interface-components",
+    "href": "RandRStudio.html#rmarkdown-interface-components",
+    "title": "Setting Up R and RStudio",
+    "section": "RMarkdown Interface Components",
+    "text": "RMarkdown Interface Components\nRStudio’s interface for working with RMarkdown documents contains four key panes:\n\nSource Editor (Left Pane)\nPrimary workspace for writing .Rmd files with integrated code chunks and narrative text. Features syntax highlighting, chunk controls (run individual code blocks), and document structure navigation.\n\nEnvironment/History (Top-Right Pane)\n\n\nEnvironment: Lists active datasets, variables, and functions\n\n\nHistory: Tracks all executed commands\n\n\nConnections: Manages database links (when used)\n\n\nGit: Version control integration (when configured)\n\n\n\nConsole/Terminal (Bottom-Left Pane)\n\n\nConsole: Direct R code execution environment showing raw output\n\n\nTerminal: System-level command line access\n\n\nBackground Jobs: Monitor long-running processes\n\n\n\nViewer/Help (Bottom-Right Pane)\n\n\nViewer: Preview rendered documents (HTML/PDF/Word)\n\n\nHelp: Access function documentation\n\n\nFiles: Navigate project directory structure\n\n\nPlots: Display graphical output\n\n\nPackages: Manage installed R packages"
+  },
+  {
+    "objectID": "RandRStudio.html#understanding-r-markdown-documents",
+    "href": "RandRStudio.html#understanding-r-markdown-documents",
+    "title": "Setting Up R and RStudio",
+    "section": "Understanding R Markdown Documents",
+    "text": "Understanding R Markdown Documents\nR Markdown allows you to integrate code and text in the same document, facilitating reproducible research and interactive data analysis reports. Here’s a quick overview:"
+  },
+  {
+    "objectID": "RandRStudio.html#managing-.rmd-files-and-setting-the-working-directory",
+    "href": "RandRStudio.html#managing-.rmd-files-and-setting-the-working-directory",
+    "title": "Setting Up R and RStudio",
+    "section": "Managing .Rmd Files and Setting the Working Directory",
+    "text": "Managing .Rmd Files and Setting the Working Directory\nDownloading and Organizing .Rmd Files\nTo effectively manage your course materials in RStudio, follow these steps:\n\n\nDownload .Rmd File:\n\nNavigate to MyClasses and locate the desired .Rmd file for your course.\nDownload the file to your local machine.\n\n\n\nCreate a Course Folder:\n\nCreate a new folder named math216 in a suitable location on your computer or within your OneDrive account.\n\n\n\nOrganize Files:\n\nMove the downloaded .Rmd file into the math216 folder to keep your course materials organized."
+  },
+  {
+    "objectID": "RandRStudio.html#text-formatting-in-r-markdown",
+    "href": "RandRStudio.html#text-formatting-in-r-markdown",
+    "title": "Setting Up R and RStudio",
+    "section": "Text Formatting in R Markdown",
+    "text": "Text Formatting in R Markdown\nMarkdown is a lightweight markup language that allows you to add formatting elements using plain text. Here’s how you can use different Markdown syntax to format text within your R Markdown documents.\nHeaders\nCreate headers by prefixing the text with one or more hash symbols (#). The number of # symbols before the text determines the level of the header.\n# Header 1\n## Header 2\n### Header 3\nLists\nYou can create bulleted or numbered lists:\n\n\nUnordered Lists (bullets):\n\n- Item 1\n- Item 2\n  - Subitem 1\n  - Subitem 2\n\n\nOrdered Lists:\n\n1. First item\n2. Second item\n   1. Subitem 1\n   2. Subitem 2\nLinks\nInclude hyperlinks using the format [link text](URL):\n[Visit Canvas](https://salisbury.instructure.com/courses/71470)\nEmphasis\nItalicize or bold text using asterisks or underscores:\n\n\nItalic: *Italic* or _Italic_\n\n\nBold: **Bold** or __Bold__\n\nImages\nEmbed images using the format ![Alt text](image_URL \"Optional Title\"):\n![Example Image](path_to_image.jpg \"This is an image\")\nBlockquotes\nCreate blockquotes with &gt;:\n&gt; This is a blockquote.\nCode\nDisplay inline code with backticks and code blocks with triple backticks:\n\nInline code: `code`\n\nCode block:\n\n\n\n\n\n\n\n\n\n\n\n[1] -5\n\n\nHorizontal Rules\nInsert a horizontal line with three or more hyphens:\n---\nCombining Markdown with R Code\nMarkdown can be interleaved with executable R code chunks:\n\n# Calculate the sum of numbers from 1 to 10\nsum(1:10)\n\n[1] 55"
+  },
+  {
+    "objectID": "RandRStudio.html#r-code-chunk-options",
+    "href": "RandRStudio.html#r-code-chunk-options",
+    "title": "Setting Up R and RStudio",
+    "section": "R Code Chunk Options",
+    "text": "R Code Chunk Options\nBefore diving into data loading, let’s understand important R chunk options:\n\n\neval: Use eval=FALSE to prevent code from running but still display it.\n\necho: With echo=FALSE, the code is run but not displayed in the document.\n\ninclude: include=FALSE runs the code and hides both the code and output from the final output.\n\nExample to demonstrate:\n\n\n\n\n\n\n\n\n\n# This code will run, and both code and output will appear in the document.\nsummary(cars)\n\n     speed           dist       \n Min.   : 4.0   Min.   :  2.00  \n 1st Qu.:12.0   1st Qu.: 26.00  \n Median :15.0   Median : 36.00  \n Mean   :15.4   Mean   : 42.98  \n 3rd Qu.:19.0   3rd Qu.: 56.00  \n Max.   :25.0   Max.   :120.00  \n\n\nSetting the Working Directory\nIt’s crucial to set the working directory in R to the folder where your course files are stored. This can be done in several ways:\n\n\nUsing RStudio:\n\nIn RStudio, you can set the working directory through the menu by navigating to Session &gt; Set Working Directory &gt; Choose Directory... and selecting your math216 folder.\n\n\n\nUsing R Script:\n\nYou can also set the working directory directly in an R script using the setwd() function. Place the following line of code at the beginning of your script:\n\nsetwd(\"~/math216\")\nReplace \"~/math216\" with the actual path to your course folder.\n\n\nUsing R Console:\n\nYou can manually set the working directory in the R console with the same command:\n\nsetwd(\"~/math216\")"
   }
 ]

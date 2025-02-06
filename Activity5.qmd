@@ -16,7 +16,7 @@ library(ggplot2)
 
 1. **Think**: Individually, list the sample space for the experiment of rolling a die and tossing a coin simultaneously.
 2. **Pair**: Discuss with a partner to compare and refine their sample spaces.
-3. **Share**: Share their combined sample space with the class and explain how they arrived at it.
+3. **Share**: Share your combined sample space with the class and explain how you arrived at it.
 
 <!--
 
