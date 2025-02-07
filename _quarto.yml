@@ -29,9 +29,9 @@ website:
           - text: "Lecture 5"
             href: Day5.html
             target: "_blank"
-        #   - text: "Lecture 6"
-        #     href: Day6.html
-        #     target: "_blank"
+          - text: "Lecture 6"
+            href: Day6.html
+            target: "_blank"
         #   - text: "Lecture 7"
         #     href: Day7.html
         #     target: "_blank"
@@ -147,8 +147,8 @@ website:
             href: Activity4.html
           - text: "Activity 5"
             href: Activity5.html
-           # - text: "Activity 1"
-           #  href: Activity1.html
+          - text: "Activity 6"
+            href: Activity6.html
            # - text: "Activity 1"
            #  href: Activity1.html
            # - text: "Activity 1"

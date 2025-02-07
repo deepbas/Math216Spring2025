@@ -1,0 +1,59 @@
+---
+title: "Activity 6"
+subtitle: "MATH 216: Statistical Thinking"
+format: html
+echo: false
+---
+
+```{r setup, include=FALSE}
+library(openintro)
+library(dplyr)
+library(knitr)
+library(ggplot2)
+```
+
+
+## 1. Quiz
+
+- If $P(A) = 0.3$, what is $P(A^c)$?  
+
+a) 0.3  
+b) 0.7  
+c) 0.5  
+d) 0.1  
+
+## 2. Case Studies and Problem-Solving
+
+To develop programs for business travelers staying at convention hotels, Hyatt Hotels Corp. commissioned a study of executives who play golf. The study revealed that $55 \%$ of the executives admitted that they had cheated at golf. Also, $20 \%$ of the executives admitted that they had cheated at golf, and had lied in business. Given that an executive had cheated at golf, what is the probability that the executive also had lied in business? 
+
+
+1. Calculate the conditional probability that an executive lied in business given they cheated at golf.  
+2. Discuss the ethical implications of the findings.  
+3. Propose strategies for businesses to address such ethical dilemmas.  
+
+- $P(\text{Cheated at golf}) = 0.55$  
+- $P(\text{Cheated at golf and lied in business}) = 0.20$  
+
+ 
+Given that an executive cheated at golf, what is the probability that they also lied in business?
+
+
+### 3. Cigarette smoking and cancer
+
+Many medical researchers have conducted experiments to examine the relationship between cigarette smoking and cancer. Consider an individual randomly selected from the adult male population. Let $A$ represent the event that the individual smokes, and let $A^c$ denote the complement of $A$ (the event that the individual does not smoke). Similarly, let $B$ represent the event that the individual develops cancer, and let $B^c$ be the complement of that event. Then the four sample points associated with the experiment are shown in the following figure, and their probabilities for a certain section of the United States are given in the table (Refer to the sides). Use these sample point probabilities to examine the relationship between smoking and cancer.  
+
+
+a. Given a person is a smoker, what is the probability of having cancer?
+
+<br>
+
+b. Given a person is a smoker, what is the probability of not having cancer?
+
+<br>
+
+c. Given a person is not a smoker, what is the probability of having cancer?
+
+<br>
+
+d. Given a person is not a smoker, what is the probability of not having cancer?
+

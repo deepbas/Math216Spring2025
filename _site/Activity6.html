@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="generator" content="quarto-99.9.9">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-
-<title>Math 216: Spring 2025 – Math 216: Statistical Thinking</title>
+<title>Activity 6 – Math 216: Statistical Thinking</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,7 +18,6 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 </style>
-
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
@@ -40,8 +36,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-9e2db6d60132874137d35cd80df6d385.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-c2299866e9c1ed9e4d64cbb04b200562.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<script id="quarto-search-options" type="application/json">{
+<link href="site_libs/bootstrap/bootstrap-dark-c2299866e9c1ed9e4d64cbb04b200562.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark"><script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
@@ -67,18 +62,37 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
-}</script>
-
-
-<link rel="stylesheet" href="styles.css">
+}</script><script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script><script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script><link rel="stylesheet" href="styles.css">
 </head>
-
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
+  <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg " data-bs-theme="dark"><div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Math 216</span>
@@ -90,8 +104,8 @@ ul.task-list li input[type="checkbox"] {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+<li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -102,8 +116,8 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-lecture-slides" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Lecture Slides</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-lecture-slides">    
-        <li>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-lecture-slides">
+<li>
     <a class="dropdown-item" href="./Day1.html" target="_blank">
  <span class="dropdown-text">Lecture 1</span></a>
   </li>  
@@ -128,13 +142,13 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">Lecture 6</span></a>
   </li>  
     </ul>
-  </li>
+</li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-activities" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Activities</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-activities">    
-        <li>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-activities">
+<li>
     <a class="dropdown-item" href="./Activity1.html">
  <span class="dropdown-text">Activity 1</span></a>
   </li>  
@@ -159,44 +173,49 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">Activity 6</span></a>
   </li>  
     </ul>
-  </li>
+</li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-tutorials" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Tutorials</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-tutorials">    
-        <li>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-tutorials">
+<li>
     <a class="dropdown-item" href="./RandRStudio.html">
  <span class="dropdown-text">R and RStudio</span></a>
   </li>  
     </ul>
-  </li>
+</li>
 </ul>
-          </div> <!-- /navcollapse -->
+</div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
-    </nav>
-</header>
-<!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+    </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
+   
+  <ul>
+<li><a href="#quiz" id="toc-quiz" class="nav-link active" data-scroll-target="#quiz">1. Quiz</a></li>
+  <li>
+<a href="#case-studies-and-problem-solving" id="toc-case-studies-and-problem-solving" class="nav-link" data-scroll-target="#case-studies-and-problem-solving">2. Case Studies and Problem-Solving</a>
+  <ul class="collapse">
+<li><a href="#cigarette-smoking-and-cancer" id="toc-cigarette-smoking-and-cancer" class="nav-link" data-scroll-target="#cigarette-smoking-and-cancer">3. Cigarette smoking and cancer</a></li>
+  </ul>
+</li>
+  </ul></nav>
     </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Math 216: Spring 2025</h1>
+<main class="content column-page-left" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
+<h1 class="title">Activity 6</h1>
+<p class="subtitle lead">MATH 216: Statistical Thinking</p>
 </div>
 
 
 
-<div class="quarto-title-meta column-page">
+<div class="quarto-title-meta column-page-left">
 
     
   
@@ -205,16 +224,54 @@ ul.task-list li input[type="checkbox"] {
   
 
 
-</header>
+</header><section id="quiz" class="level2"><h2 class="anchored" data-anchor-id="quiz">1. Quiz</h2>
+<ul>
+<li>If <span class="math inline">\(P(A) = 0.3\)</span>, what is <span class="math inline">\(P(A^c)\)</span>?</li>
+</ul>
+<ol type="a">
+<li>0.3<br>
+</li>
+<li>0.7<br>
+</li>
+<li>0.5<br>
+</li>
+<li>0.1</li>
+</ol></section><section id="case-studies-and-problem-solving" class="level2"><h2 class="anchored" data-anchor-id="case-studies-and-problem-solving">2. Case Studies and Problem-Solving</h2>
+<p>To develop programs for business travelers staying at convention hotels, Hyatt Hotels Corp.&nbsp;commissioned a study of executives who play golf. The study revealed that <span class="math inline">\(55 \%\)</span> of the executives admitted that they had cheated at golf. Also, <span class="math inline">\(20 \%\)</span> of the executives admitted that they had cheated at golf, and had lied in business. Given that an executive had cheated at golf, what is the probability that the executive also had lied in business?</p>
+<ol type="1">
+<li>Calculate the conditional probability that an executive lied in business given they cheated at golf.<br>
+</li>
+<li>Discuss the ethical implications of the findings.<br>
+</li>
+<li>Propose strategies for businesses to address such ethical dilemmas.</li>
+</ol>
+<ul>
+<li>
+<span class="math inline">\(P(\text{Cheated at golf}) = 0.55\)</span><br>
+</li>
+<li><span class="math inline">\(P(\text{Cheated at golf and lied in business}) = 0.20\)</span></li>
+</ul>
+<p>Given that an executive cheated at golf, what is the probability that they also lied in business?</p>
+<section id="cigarette-smoking-and-cancer" class="level3"><h3 class="anchored" data-anchor-id="cigarette-smoking-and-cancer">3. Cigarette smoking and cancer</h3>
+<p>Many medical researchers have conducted experiments to examine the relationship between cigarette smoking and cancer. Consider an individual randomly selected from the adult male population. Let <span class="math inline">\(A\)</span> represent the event that the individual smokes, and let <span class="math inline">\(A^c\)</span> denote the complement of <span class="math inline">\(A\)</span> (the event that the individual does not smoke). Similarly, let <span class="math inline">\(B\)</span> represent the event that the individual develops cancer, and let <span class="math inline">\(B^c\)</span> be the complement of that event. Then the four sample points associated with the experiment are shown in the following figure, and their probabilities for a certain section of the United States are given in the table (Refer to the sides). Use these sample point probabilities to examine the relationship between smoking and cancer.</p>
+<ol type="a">
+<li>Given a person is a smoker, what is the probability of having cancer?</li>
+</ol>
+<p><br></p>
+<ol start="2" type="a">
+<li>Given a person is a smoker, what is the probability of not having cancer?</li>
+</ol>
+<p><br></p>
+<ol start="3" type="a">
+<li>Given a person is not a smoker, what is the probability of having cancer?</li>
+</ol>
+<p><br></p>
+<ol start="4" type="a">
+<li>Given a person is not a smoker, what is the probability of not having cancer?</li>
+</ol>
 
 
-<p>Welcome to the world of statistics!</p>
-<p><img src="images/statistics.jpg" alt="Credit: Freepik" style="width: 100%;"></p>
-
-
-
-</main> <!-- /main -->
-<script id="quarto-html-after-body" type="application/javascript">
+</section></section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -776,7 +833,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-
 
 
 
