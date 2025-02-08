@@ -1,0 +1,66 @@
+---
+title: "Activity 7"
+subtitle: "MATH 216: Statistical Thinking"
+format: html
+echo: false
+---
+
+```{r setup, include=FALSE}
+library(openintro)
+library(dplyr)
+library(knitr)
+library(ggplot2)
+```
+
+## Activity 1: Think-Pair-Share
+
+Suppose that two balls are to be selected at random, without replacement, from a box containing $r$ red balls and $b$ blue balls. What is the probability that the first ball will be red and the second ball will be blue? What is the probability that the second ball will be blue?
+
+**Prompt**: Suppose that two balls are to be selected at random, without replacement, from a box containing $r$ red balls and $b$ blue balls. What is the probability that the first ball will be red and the second ball will be blue? What is the probability that the second ball will be blue?
+
+1. **Think**: Individually, calculate the probability that the first ball drawn is red and the second is blue from a box containing $r$ red balls and $b$ blue balls (Example 1).
+2. **Pair**: Discuss your calculations with a partner and compare results.
+3. **Share**: Share your insights with the class, focusing on how the multiplicative rule applies to this scenario.
+
+
+## Activity 2: Quiz
+
+Suppose you have two mutually exclusive and exhaustive events $B$ and $B^c$. If $P(B) = 0.6$, $P(A|B) = 0.7$, and $P(A|B^c) = 0.3$, what is $P(A)$?
+
+
+## Activity 3: Problem-Solving
+
+**Prompt**: Consider the experiment of tossing a fair die, and let
+
+$$A= \{\text{Observe an even number.}\}$$
+$$B= \{\text{Observe a number less than or equal to 4.}\}$$
+
+Are $A$ and $B$ independent events?
+
+
+
+## Activity 4: Problem-Solving
+
+**Prompt**: The American Association for Marriage and Family Therapy (AAMFT) found that $25 \%$ of divorced couples are classified as "fiery foes" (i.e., they communicate through their children and are hostile toward each other).
+
+a. What is the probability that in a sample of 2 divorced couples, both are classified as "fiery foes"?
+
+b. What is the probability that in a sample of 10 divorced couples, all 10 are classified as "fiery foes"?
+
+
+
+## Activity 5: Case Studies and Problem-Solving
+
+**Case Study**: (Test for a Disease) Consider a certain disease that the chance of a randomly selected individual having this disease is $r_1$ (this can be estimated from the historical data). Suppose there is a medical test for this disease. If a person has the disease, there is a probability of $r_2$ that the test will give a positive response. If a person does not have the disease, there is a probability of $r_3$ that the test will give a positive response. Suppose you take the test. What is the probability that you get a positive response but in fact, you do not have the disease? Derive the formula, then compute the results for the following sets of values of parameters.
+
+
+Consider a medical test for a disease with the following parameters: $r_1=0.01$, $r_2=0.99$, $r_3=0.01$. 
+
+1. Derive the formula for the probability of a false positive.
+
+2. Compute the results for the given parameters.
+
+3. If you take the test and get a positive response. You believe the result is not accurate, and test again and still get a positive response, what is the probability that in fact you do not have the disease?
+
+
+

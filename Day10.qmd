@@ -1,0 +1,191 @@
+---
+title: "Day 10"
+title-slide-attributes:
+  data-background-image: images/lake.jpg
+  data-background-size: contain
+  data-background-opacity: "0.5"
+subtitle: "Math 216: Statistical Thinking"
+author: "Bastola"
+format:
+  revealjs:
+    html-math-method: mathjax
+    mathjax-url: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/MathJax.js" 
+    theme: [default, scss/main.scss]
+    slide-number: true
+    preview-links: auto
+    history: true
+    chalkboard: 
+      src: drawings.json
+    transition: slide
+    background-transition: fade    
+    touch: false
+    controls: true
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+options(htmltools.preserve.raw = FALSE)
+options(ggrepel.max.overlaps = Inf)
+
+
+# load necessary packages
+library(tidyverse)
+library(countdown)
+library(mosaic)
+library(ggthemes)
+library(forcats)
+library(patchwork)
+library(Lock5Data)
+library(plotly)
+
+# Set ggplot theme
+theme_set(theme_tufte(base_size = 10))
+
+yt <- 0
+```
+
+
+
+
+## Introduction to Poisson Random Variables {.font90}
+
+<br>
+<br>
+
+::: {.callout-note title="Definition"}
+
+A **Poisson Random Variable** is typically used to model the number of times an event occurs in a fixed interval of time or space. It is defined by the parameter $\lambda$ (lambda), which represents the average number of events in the given interval. This distribution is particularly useful for modeling the frequency of rare events over a fixed period or in a specified area.
+
+
+:::
+
+
+
+## Introduction to Poisson Random Variables {.font80}
+
+<br>
+
+::: cle6
+
+- **Discrete Outcomes**: Counts of events (0, 1, 2, ...).
+- **Rate of Occurrence**: Governed by $\lambda$, which is both the mean and the variance of the distribution.
+- **Independence**: The occurrence of one event does not affect the probability of another event occurring in the same interval.
+
+:::
+
+
+
+## Probability Distribution, Mean, and Variance of Poisson Random Variables {.font70}
+
+
+::: cle7
+- **Formula for Probability**:
+
+\begin{align*}
+p(x)&=\frac{\lambda^x e^{-\lambda}}{x!}\quad(x=0,1,2,\ldots)
+\end{align*}
+
+- **Mean and Variance**:
+  - **Mean ($\mu$)**: $\mu=\lambda$
+  - **Variance ($\sigma^2$)**: $\sigma^2=\lambda$
+
+
+:::
+
+##
+
+```{=html}
+<iframe width="1380" height="900" src="https://www.geogebra.org/m/mehn8u8s" title="Webpage example"></iframe>
+```
+
+
+
+## Example 1: Traffic Monitoring
+
+::: cle8
+::: font80
+
+- **Scenario**: Observing traffic accidents at a busy intersection where the average is 3 accidents per month.
+- **Question**: What is the probability of observing exactly 5 accidents in one month?
+
+
+<details><summary>**Solution**:</summary>
+
+Using $\lambda=3$,
+  $$p(5)=\frac{3^5 e^{-3}}{5!}\approx0.1008$$
+</details>
+
+:::
+:::
+
+## Example 2: Quality Control in Manufacturing {.font80}
+
+::: cle9
+
+- **Scenario**: Inspecting new automobiles for surface defects, with an average of 2 defects per vehicle.
+- **Question**: What is the probability of finding no defects on a newly inspected vehicle?
+
+<details><summary>**Solution**:</summary>
+
+Using $\lambda=2$,
+  $$p(0)=\frac{2^0 e^{-2}}{0!}=e^{-2}\approx0.1353$$
+</details>
+
+:::
+
+
+## Example 3: Ecological Research
+
+::: hljs
+::: font80
+
+**Scenario**: Weekly sightings of blue whales are recorded, with an average of 2.6 sightings.
+
+**a.** Find the mean and standard deviation.
+
+<br>
+<br>
+
+
+**b.** Probability of exactly five sightings:
+
+<br>
+<br>
+
+
+**c.** Probability of fewer than two sightings:
+
+<br>
+
+:::
+:::
+
+
+
+## Poisson Distribution Functions in R {.font60}
+
+::: cle11
+
+The `dpois` function calculates the probability mass function of the Poisson distribution, useful for finding \(P(X = x)\).
+
+- **Syntax**: `dpois(x, lambda)`
+- **Example**: Calculate $P(X = 3)$ for $\lambda = 2.2$
+
+```{r dpois_example}
+probability_exactly_3 <- dpois(3, lambda = 2.2)
+probability_exactly_3
+```
+
+
+The `ppois` function computes the cumulative probability $P(X \leq x)$ of the Poisson distribution.
+
+- **Syntax**: `ppois(q, lambda)`
+- **Example**: Calculate $P(X \leq 3)$ for $\lambda=2.2$
+
+```{r}
+probability_up_to_3 <- ppois(3, lambda = 2.2)
+probability_up_to_3
+```
+
+:::
+

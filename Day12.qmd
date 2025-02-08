@@ -1,0 +1,455 @@
+---
+title: "Day 12"
+title-slide-attributes:
+  data-background-image: images/lake.jpg
+  data-background-size: contain
+  data-background-opacity: "0.5"
+subtitle: "Math 216: Statistical Thinking"
+author: "Bastola"
+format:
+  revealjs:
+    html-math-method: mathjax
+    mathjax-url: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/MathJax.js" 
+    theme: [default, scss/main.scss]
+    slide-number: true
+    preview-links: auto
+    history: true
+    chalkboard: 
+      src: drawings.json
+    transition: slide
+    background-transition: fade    
+    touch: false
+    controls: true
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+options(htmltools.preserve.raw = FALSE)
+options(ggrepel.max.overlaps = Inf)
+
+
+# load necessary packages
+library(tidyverse)
+library(countdown)
+library(mosaic)
+library(ggthemes)
+library(forcats)
+library(patchwork)
+library(Lock5Data)
+library(plotly)
+
+# Set ggplot theme
+theme_set(theme_tufte(base_size = 10))
+yt <- 0
+#<iframe width="1380" height="900" src="https://www.geogebra.org/m/mehn8u8s"></iframe>
+#::: {.callout-note title="Definition"}
+```
+
+
+
+
+
+## The Normal Distribution {.font80}
+
+
+::: cle2
+::: font80
+
+The Normal Distribution is a continuous probability distribution that is symmetrical around its mean, represented by $\mu$. This distribution is crucial in statistics and is often used to represent real-world variables.
+
+$$
+f(x)=\frac{1}{\sigma \sqrt{2 \pi}} \exp \left(-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2\right)
+$$
+
+- $\mu=$ Mean (average, expected value)
+- $\sigma=$ Standard deviation
+- $\pi \approx 3.141592653589$
+- $e \approx 2.71828$
+
+:::
+:::
+
+
+## Applications of the Normal Distribution {.font80}
+
+
+::: cle10
+::: font80
+
+Many real-world phenomena are well approximated by the normal distribution. For example:
+
+- Measurement errors, e.g., blood pressure readings.
+- Yearly rainfall amounts in certain regions.
+
+These applications underscore the normal distribution's role in statistical inference and various practical scenarios.
+
+
+:::
+:::
+
+
+## Applications of the Normal Distribution {.font80}
+
+
+::: cle9
+::: font80
+
+To determine if data approximates a normal distribution, one can compare the sample's frequency distribution against the theoretical normal curve:
+
+- Graphical methods: Q-Q plots, histograms.
+- Statistical tests: Shapiro-Wilk test, Anderson-Darling test.
+
+:::
+:::
+
+
+## The Standard Normal Distribution {.font80}
+
+
+::: cle7
+::: font80
+
+A special case of the normal distribution is the standard normal distribution, where $\mu=0$ and $\sigma=1$. It is used extensively to simplify problems in statistics.
+
+$$
+f(z)=\frac{1}{\sqrt{2 \pi}} \exp \left(-\frac{1}{2} z^2\right)
+$$
+
+- Denoted as $Z$ for a standard normal variable.
+
+:::
+:::
+
+
+## The Standard Normal Distribution {.font70}
+
+
+::: cle13
+::: font80
+
+The probability that a normal random variable falls between two values is the area under the curve between those values. This area can be computed using:
+
+- Z-tables for the standard normal distribution.
+- Software functions, e.g., `pnorm` in R 
+
+:::
+:::
+
+```{r, echo=FALSE, fig.align='center'}
+library(ggplot2)
+
+ggplot(data = data.frame(x = c(-4, 4)), aes(x)) + 
+  stat_function(fun = dnorm, args = list(mean = 0, sd = 1)) +
+  xlab("z") + ylab("f(z)") + 
+  theme(plot.title = element_text(hjust = 0.5),
+        axis.text.y = element_blank(),
+        axis.ticks.y = element_blank(),
+        axis.line = element_line(colour = "black"))
+
+```
+
+##  {.font70}
+
+> Example 1: Find the probability that the standard normal random variable $z$ is less than 1.28 ; that is, find $P(z<1.28)$
+
+::: row
+::: left
+
+```{r, echo=FALSE}
+library(ggplot2)
+
+ggplot(data = data.frame(x = c(-4, 4)), aes(x)) + 
+  stat_function(fun = dnorm, args = list(mean = 0, sd = 1)) +
+  xlab("z") + ylab("f(z)") + 
+  theme(plot.title = element_text(hjust = 0.5),
+        axis.text.y = element_blank(),
+        axis.ticks.y = element_blank(),
+        axis.line = element_line(colour = "black"))
+
+```
+
+
+:::
+
+
+::: right
+
+
+:::
+:::
+
+
+
+##  {.font70}
+
+> Example 2: Find the probability that the standard normal random variable $z$ is exceeds 1.64 ; that is, find $P(z>1.64)$
+
+::: row
+::: left
+
+```{r, echo=FALSE}
+library(ggplot2)
+
+ggplot(data = data.frame(x = c(-4, 4)), aes(x)) + 
+  stat_function(fun = dnorm, args = list(mean = 0, sd = 1)) +
+  xlab("z") + ylab("f(z)") + 
+  theme(plot.title = element_text(hjust = 0.5),
+        axis.text.y = element_blank(),
+        axis.ticks.y = element_blank(),
+        axis.line = element_line(colour = "black"))
+
+```
+
+
+:::
+
+
+::: right
+
+
+:::
+:::
+
+
+##  {.font70}
+
+> Example 3: Find the probability that the standard normal random variable $z$ less than -1.64 ; that is, find $P(z<-1.64)$
+
+
+::: row
+::: left
+
+```{r, echo=FALSE}
+library(ggplot2)
+
+ggplot(data = data.frame(x = c(-4, 4)), aes(x)) + 
+  stat_function(fun = dnorm, args = list(mean = 0, sd = 1)) +
+  xlab("z") + ylab("f(z)") + 
+  theme(plot.title = element_text(hjust = 0.5),
+        axis.text.y = element_blank(),
+        axis.ticks.y = element_blank(),
+        axis.line = element_line(colour = "black"))
+
+```
+
+
+:::
+
+
+::: right
+
+
+:::
+:::
+
+
+
+##  {.font70}
+
+> Example 4: Find the probability that the standard normal random variable $z$ exceeds -1.28 ; that is, find $P(z>-1.28)$
+
+
+
+
+::: row
+::: left
+
+```{r, echo=FALSE}
+library(ggplot2)
+
+ggplot(data = data.frame(x = c(-4, 4)), aes(x)) + 
+  stat_function(fun = dnorm, args = list(mean = 0, sd = 1)) +
+  xlab("z") + ylab("f(z)") + 
+  theme(plot.title = element_text(hjust = 0.5),
+        axis.text.y = element_blank(),
+        axis.ticks.y = element_blank(),
+        axis.line = element_line(colour = "black"))
+
+```
+
+
+:::
+
+
+::: right
+
+
+:::
+:::
+
+
+##  {.font70}
+
+> Example 5: Find the probability that the standard normal random variable $z$ lies between -1.64 and 1.28 ; that is, find $P(-1.64<z<1.28)$
+
+
+::: row
+::: left
+
+```{r, echo=FALSE}
+library(ggplot2)
+
+ggplot(data = data.frame(x = c(-4, 4)), aes(x)) + 
+  stat_function(fun = dnorm, args = list(mean = 0, sd = 1)) +
+  xlab("z") + ylab("f(z)") + 
+  theme(plot.title = element_text(hjust = 0.5),
+        axis.text.y = element_blank(),
+        axis.ticks.y = element_blank(),
+        axis.line = element_line(colour = "black"))
+
+```
+
+
+:::
+
+
+::: right
+
+
+:::
+:::
+
+
+##  {.font70}
+
+> Example 6: Find the probability that the standard normal random variable $z$ exceeds 1.96 in absolute value; that is, find $P(|z|>1.96)$
+
+
+::: row
+::: left
+
+```{r, echo=FALSE}
+library(ggplot2)
+
+ggplot(data = data.frame(x = c(-4, 4)), aes(x)) + 
+  stat_function(fun = dnorm, args = list(mean = 0, sd = 1)) +
+  xlab("z") + ylab("f(z)") + 
+  theme(plot.title = element_text(hjust = 0.5),
+        axis.text.y = element_blank(),
+        axis.ticks.y = element_blank(),
+        axis.line = element_line(colour = "black"))
+```
+
+
+:::
+
+
+::: right
+
+:::
+:::
+
+
+## Converting Normal Variable to Standard Normal and Its Applications {.font60}
+
+::: cle15
+To utilize the standard normal distribution effectively in statistical calculations, we convert a normal random variable $x$ with any mean $\mu$ and standard deviation $\sigma$ to a standard normal variable $z$. This conversion simplifies the calculation of probabilities and other statistical measures.
+
+### Z-score
+
+$$
+Z = \frac{x - \mu}{\sigma}
+$$
+
+
+
+### Example:
+To find the probability of $x$ being less than a particular value $x_0$, use:
+$$
+P(x \leq x_0) = P\left(Z \leq \frac{x_0 - \mu}{\sigma}\right)
+$$
+
+:::
+
+
+
+##  {.font80}
+
+> Example 7: Assume that the length of time, x , between charges of a cellular phone is normally distributed with a mean of 10 hours and a standard deviation of 1.5 hours. Find the probability that the cell phone will last between 8 and 12 hours between charges.
+
+::: row
+::: left
+
+```{r, echo=FALSE}
+library(ggplot2)
+
+ggplot(data = data.frame(x = c(-4, 4)), aes(x)) + 
+  stat_function(fun = dnorm, args = list(mean = 0, sd = 1)) +
+  xlab("z") + ylab("f(z)") + 
+  theme(plot.title = element_text(hjust = 0.5),
+        axis.text.y = element_blank(),
+        axis.ticks.y = element_blank(),
+        axis.line = element_line(colour = "black"))
+```
+
+
+:::
+
+
+::: right
+
+
+:::
+:::
+
+
+
+##  {.font80}
+
+> Example 8: Suppose the scores $x$ on a college entrance examination are normally distributed with a mean of 550 and a standard deviation of 100 . A certain prestigious university will consider for admission only those applicants whose scores exceed the 90th percentile of the distribution. Find the minimum score an applicant must achieve in order to receive consideration for admission to the university.
+
+::: row
+::: left
+
+```{r, echo=FALSE}
+library(ggplot2)
+
+ggplot(data = data.frame(x = c(-4, 4)), aes(x)) + 
+  stat_function(fun = dnorm, args = list(mean = 0, sd = 1)) +
+  xlab("z") + ylab("f(z)") + 
+  theme(plot.title = element_text(hjust = 0.5),
+        axis.text.y = element_blank(),
+        axis.ticks.y = element_blank(),
+        axis.line = element_line(colour = "black"))
+```
+
+
+:::
+
+
+::: right
+
+
+:::
+:::
+
+
+##  {.font80}
+
+> Example 9: Find $z_0$ such that $P\left(-z_0 \leq z \leq z_0\right)=0.95$
+
+::: row
+::: left
+
+```{r, echo=FALSE}
+library(ggplot2)
+
+ggplot(data = data.frame(x = c(-4, 4)), aes(x)) + 
+  stat_function(fun = dnorm, args = list(mean = 0, sd = 1)) +
+  xlab("z") + ylab("f(z)") + 
+  theme(plot.title = element_text(hjust = 0.5),
+        axis.text.y = element_blank(),
+        axis.ticks.y = element_blank(),
+        axis.line = element_line(colour = "black"))
+```
+
+
+:::
+
+
+::: right
+
+
+:::
+:::
+

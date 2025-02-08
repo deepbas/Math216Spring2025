@@ -1,0 +1,166 @@
+---
+title: "Day 16"
+title-slide-attributes:
+  data-background-image: images/lake.jpg
+  data-background-size: contain
+  data-background-opacity: "0.5"
+subtitle: "Math 216: Statistical Thinking"
+author: "Bastola"
+format:
+  revealjs:
+    html-math-method: mathjax
+    mathjax-url: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/MathJax.js" 
+    theme: [default, scss/main.scss]
+    slide-number: true
+    preview-links: auto
+    history: true
+    chalkboard: 
+      src: drawings.json
+    transition: slide
+    background-transition: fade    
+    touch: false
+    controls: true
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+options(htmltools.preserve.raw = FALSE)
+options(ggrepel.max.overlaps = Inf)
+
+
+# load necessary packages
+library(tidyverse)
+library(countdown)
+library(mosaic)
+library(ggthemes)
+library(forcats)
+library(patchwork)
+library(Lock5Data)
+library(plotly)
+
+# Set ggplot theme
+theme_set(theme_tufte(base_size = 10))
+yt <- 0
+#<iframe width="1380" height="900" src="https://www.geogebra.org/m/mehn8u8s"></iframe>
+#::: {.callout-note title="Definition"}
+```
+
+
+## The Concept of a Sampling Distribution {.font80}
+
+::: cle1
+- **Background**: Traditionally, the exact probability distribution of a population is unknown, and we rely on sample data to make inferences.
+- **Definitions**:
+  - **Parameter**: A fixed, often unknown characteristic of a population.
+  - **Statistic**: A characteristic of a sample, used as an estimate of the population parameter.
+:::
+
+## Calculating Sample Statistics {.font80}
+
+::: cle2
+- **Point Estimators**:
+  - Sample mean ($\bar{x}$): $\bar{x}=\frac{\sum x_i}{n}$
+  - Sample variance ($s^2$): $s^2=\frac{\sum(x_i-\bar{x})^2}{n-1}$
+- **Usage**: These estimators help approximate the population mean ($\mu$) and variance ($\sigma^2$).
+:::
+
+## Unbiasedness and Minimum Variance {.font80}
+
+::: cle3
+- **Unbiased Estimators**: An estimator is unbiased if it consistently represents the population parameter across different samples.
+- **Minimum Variance**: Among unbiased estimators, preference is given to those with smaller variances, as they tend to produce more reliable estimates.
+:::
+
+## Comparing Sampling Distributions {.font80}
+
+::: row
+::: left
+
+![](images/unbiased_estimators.png)
+
+:::
+
+::: right
+
+:::
+:::
+
+## List of relevant parameters {.font80}
+
+
+![](images/parameter_list.png)
+
+
+
+## {.font60}
+
+> Example 1: Suppose two statistics, $A$ and $B$, exist to estimate the same population parameter $\theta$ (theta). (Note that $\theta$ could be any parameter: $\mu, \sigma^2$, etc.) Suppose the two statistics have sampling distributions as shown in the following figure. On the basis of these sampling distributions, which statistic is more attractive as an estimator of $\theta$ ?
+
+![](images/unbiasedness.png)
+
+
+
+## Standard Error and Estimation Error {.font80}
+
+::: cle4
+- **Standard Error**: The standard deviation of the sampling distribution, providing a measure of the spread of the estimates.
+- **Estimation Error**: Reflects how much an estimate derived from a sample statistic is expected to differ from the actual population parameter.
+:::
+
+## Comparing Sampling Distributions {.font80}
+
+::: cle5
+- **Visual Example**: Two sampling distributions for statistics A and B might show different spreads (standard deviations), indicating the reliability of the estimates.
+- **Selection Criterion**: Statistic with a smaller standard error is preferred as it is likely to be closer to the population parameter.
+:::
+
+## Practical Implications {.font80}
+
+::: cle6
+- **Inference**: Sampling distributions allow us to make educated guesses about population parameters.
+- **Application**: Essential in fields like epidemiology, economics, and quality control where population parameters are not directly observable.
+:::
+
+
+## {.font60}
+
+> Example 2: The rolling machine of a steel manufacturer produces sheets of steel of varying thickness. The thickness of a steel sheet follows a uniform distribution with values between 150 and 200 millimeters. Suppose we perform the following experiment over and over again: Randomly sample 11 steel sheets from the production line and record the thickness x of each. Calculate the two sample statistics:
+
+$$
+\bar{x}=\text { Sample mean }=\sum x / 11
+$$
+
+$M=$ Median = Sixth sample measurement when the 11 thicknesses 1 are arranged in ascending order
+Obtain approximations to the sampling distributions of $\bar{x}$ and $M$.
+Since we know that it is uniform distribution, the mean is 175 mm . But let's assume that we don't know that and just use the sampling to approximate the parameter.
+
+##
+
+![](images/example6.1.png)
+
+## Which one is better? {.font80}
+
+
+![](images/mean_median6.1.png)
+
+
+## <i class="fa fa-pencil-square-o" style="font-size:48px;color:purple"> Group Activity `r (yt <- yt + 1)`</i> {background="#ffdf9e"}
+
+::: row
+::: left
+![](https://media.giphy.com/media/RKApDdwsQ6jkwd6RNn/giphy.gif)
+:::
+
+::: right
+
+<br>
+
+::: lqt
+
+Say hi to your group members and discuss which distribution is better and why. 
+
+:::
+:::
+:::
+
+`r countdown(minutes = 5, seconds = 00, top = 0 , right = 0, color_background = "inherit", padding = "3px 4px", font_size = "1em")`

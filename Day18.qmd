@@ -1,0 +1,151 @@
+---
+title: "Day 18"
+title-slide-attributes:
+  data-background-image: images/lake.jpg
+  data-background-size: contain
+  data-background-opacity: "0.5"
+subtitle: "Math 216: Statistical Thinking"
+author: "Bastola"
+format:
+  revealjs:
+    html-math-method: mathjax
+    mathjax-url: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/MathJax.js" 
+    theme: [default, scss/main.scss]
+    slide-number: true
+    preview-links: auto
+    history: true
+    chalkboard: 
+      src: drawings.json
+    transition: slide
+    background-transition: fade    
+    touch: false
+    controls: true
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+options(htmltools.preserve.raw = FALSE)
+options(ggrepel.max.overlaps = Inf)
+
+
+# load necessary packages
+library(tidyverse)
+library(countdown)
+library(mosaic)
+library(ggthemes)
+library(forcats)
+library(patchwork)
+library(Lock5Data)
+library(plotly)
+
+# Set ggplot theme
+theme_set(theme_tufte(base_size = 10))
+yt <- 0
+#<iframe width="1380" height="900" src="https://www.geogebra.org/m/mehn8u8s"></iframe>
+#::: {.callout-note title="Definition"}
+```
+
+
+
+## Sampling Distributions using Proportions {.font80}
+
+
+::: cle13
+
+- **Objective:** Understand how the sample proportion $\hat{p}$ estimates the population proportion $p$.
+- **Context:** Whether estimating voter preferences, customer behaviors, or biological occurrences, knowing how to infer population characteristics from sample data is crucial.
+:::
+
+
+## Motivation and Real-World Examples {.font80}
+
+::: cle10
+- **Voter Preference:** Estimate the proportion of voters in favor of a new bill.
+- **Customer Behavior:** Understand the percentage of customers using store credit cards.
+- **Conservation Efforts:** Track the fraction of endangered species born in captivity.
+:::
+
+
+## <i class="fa fa-pencil-square-o" style="font-size:48px;color:purple"> Group Activity `r (yt <- yt + 1)`</i> {background="#ffdf9e"}
+
+::: row
+::: left
+![](https://media.giphy.com/media/RKApDdwsQ6jkwd6RNn/giphy.gif)
+:::
+
+::: right
+
+::: font80
+::: cle13
+- **Task:** In groups of two- three, discuss why it's important to estimate these proportions accurately.
+- **Question:** What might be some implications of inaccurate estimates in these scenarios?
+:::
+:::
+
+:::
+:::
+
+`r countdown(minutes = 5, seconds = 00, top = 0 , right = 0, color_background = "inherit", padding = "3px 4px", font_size = "1em")`
+
+
+## {.font50}
+
+> Example 1: (Example 6.5 - Textbook) A study of city voters is taken to determine whether they are in favor of a certain candidate for mayor. We assume that $60 \%$ of all the city's voters favor the candidate. Suppose we will randomly sample 100 voters and ask each if he or she is or is not in favor of the candidate. We want to study the sampling distribution of $\hat{p}$, the sample proportion of voters in favor of the candidate. What properties do you observe?
+
+<center>
+    <img src="images/table_6.5.png" width="50%" alt="Descriptive Alt Text">
+</center>
+
+
+## Sampling distribution for $\hat{p}$ {.font80}
+
+![](images/hist6.5.png)
+
+## Properties of Sampling Distribution of $\hat{p}$ {.font80}
+
+::: cle13
+1. **Mean of $\hat{p}$**
+   - The mean equals the population proportion $p$.
+   - $\hat{p}$ is an unbiased estimator of $p$.
+   $$ E(\hat{p}) = \mu_{\hat{p}} = p $$
+
+2. **Standard Deviation of $\hat{p}$**
+   - The variability of $\hat{p}$ decreases as sample size $n$ increases.
+   $$ \sigma_{\hat{p}} = \sqrt{\frac{p(1-p)}{n}} $$
+:::
+
+
+## Central Limit Theorem for $\hat{p}$ {.font80}
+
+::: cle13
+- **Approximately Normal:** For large samples, $\hat{p}$'s distribution is nearly normal.
+- **Rule of Thumb:**
+  - Consider large if $np \geq 15$ and $n(1-p) \geq 15$.
+  $$ n \cdot \hat{p} \geq 15 \quad \text{and} \quad n(1-\hat{p}) \geq 15 $$
+:::
+
+
+## {.font80}
+
+<iframe width="1280" height="900" src="https://shinylive.io/r/app/#h=0&code=NobwRAdghgtgpmAXGKAHVA6ASmANGAYwHsIAXOMpMAGwEsAjAJykYE8AKAZwAtaJWAlAB0IdJiw4BzSampFSAJmGiGzNl179S3OPE7KRAYgAEAETgAzPnGMBVAJIiArrWMAeALTGL1FwBMABShJOHYRY2NtXRsAXmMePlYo+DCwHyhSalYhMAFcYxNbTj5JSJ1jAHJ0zNYKsujvIkZjACEieU5SZlRwyNpMuCCIOGpUgMYiVCbSWhJjAGVYWRKzWk7GBicZufnaGCdqDKacvN7ivzh6FgAZKFYiLbCICIjzy5YhkaeXl846C8Y9ggqEeOU4S2ocF2AC84Dl8jlFjBZDYYXC8MYYHxjHEAIwABnyMCgAA8ccYAKz4wnGABuUF8sWMBPxp2eP3i-zggOBoLAXScgwmU0Y2wg8OMOQAKoxBcZUMLprNnkQLPEnAQCHBOJxtRKsc84jTiWS8flOnBUOT8Rh8bj8vTGdaMBS2RzObQAUCQaRUhAnDAkSjOBKcgA5AP0bnGVXxCHayJEYx+ZgAd0Q+uxeONpPJLJpjrl2dZuF6PygBDFLS2pBIqRTUFTATkpFDYFMadW602YpOZeMbpexL4n1G-YisnkAHktj7UuDkXQIJJTGtSM35H32RFlDuRAYICZzFZhvFubTo3JJLQCCJdYwL81PN4nBBK8r2HwffkHqQfQJjBAXoTCwOAKxmC9jDgEkFW1Yo5gsJpjBCYZmBmZdkwyKBjCuXU-BjZ4nHvYwvy2TgY2aC4LCgA5SBDdkUO5DI4FMLD3C8RgwPfC92CA7dMQyDYSXYRh6D4IgYE-XlSAAEn9QN43IgAqEjpJkhcUTRfJ7VUn0ZIFIVJiVEg8klfj3WMN8iGoclSNkjTIS0nDWAmVNySlLBbAAUV3YwAF9fOA4xQIgAF5RbVT+loBksmMVN+m4ZNLBo6hSEw0goF6X89IckpV06Dc0ufTjQu5QreP7Pw2OfRi0JYrD2AAgo7F1epjE48DaEgxDmj4KKGWMKBQvVehdQAR0FMh0uw2qMmVfsNPY9qiFTABZMCIE4dgqoy3yIngIaAH1FufA6IC4JY9viPxjqWJbOD8C7kSu-tpEnX0dqgDALGYFINNMqBtXYU042egCAGpx2QuAJMO3hOiISRfvYQGttYckMAwC5Nv6VhMdMsTNvJABmGkrGoGy4jBcgRnoRkJWIORmipsA6YrABrE5jEh8zodh7HilIDhGaQlnOL8CVilhPMIahkJYdpJdQhJPhyEYLVUDSuIztu5F8hF5nJTASRrOxiYJYxJWhdQJkciqng4At81aGlvFZd5+WYEOxXrGB1XuQ1rXMQ23WrXB67Q-16zRaNk3qDNogneMK3WBt8k7fkcgk6lplcXd91Pe9pW-bIAPLSDnXFq8B7I+MA30+N02KHNiUU7Tlm-Ezx3JZd3P845Q5RvYGYBgboMl1KfKuh7ZUYzVKIFnjYxxiM0V5rwKGORBxEl5XkVewxdGWfMHGha5nn3SGiB5GY1JyBJVsMRByulnyI-jBpQeRnJVAoAtVJ1pDRxBKCYr5Hovz1sYAALKZHILw2zzFMMAjEoDQpcBuhpfIMDYG8wshEWkAArIiQcPC4hdFHJmDdxY91dsYAAbL5AKvQgq2FQDtGw70CI4RrHMAgdACCc3ZEQUa544BeQvGQKSekGxNhbPkPiPxspbHUhCPKa5CpLRKgCcqCiOSfSWrNcgrEMqNQiCYLym0nCcW8JxHg00SLkSIo7KCFZEozHgG1egPDnhrDrvw9m3deYnQ4itQBm1tpYSuvtEOwTg5DSeqgKJEdYkPQSUkuWMgWwRIyt9X6oR-r5FRsDck-1+4Fxhl7eGtYkawBRkDd+mMBa43xvkQm5E4ik3yOTSmRsLS03phieuLM2YCPPpvPmXsmlC3YEMo21CMQ5xltzcZhcfbDBLmrQO5IIGoAoTHHIccE5JzbrbMA9sdDZ17ksi+FlVnFxVqXdW5dtkxLuuHGumC67R0NgcpuEAW6W2sNbU5ndSBZxoX3ZZuCJlF19g8zZzztavORMYauGDX5fMoSzQ5zdE6tyBanEFXdLm0LzlCvBg8toj0hGPVRGEp4bC8WKOebVx42D3sZcUG9oVb1pYudlio14kAlO-HIJ9BbZFyOSiyV8b7kDvtBR++Rn7It2cYd+n8oBRh6b-f+OQwnIPyKg8BqqsGwLAPAjEiIkExBAQ8NBHyMXYIRDyvBhDiHklIeQzF+ywDzOdrQhh-YmHshDX5EQRhgqvjamgZYBA5rCs2poVgABBdA7AXDmlEYwZQYA-IAF0gA"></iframe>
+
+
+
+
+## {.font60}
+
+> Example 2: The soft-drink cups at a certain fast-food restaurant have tickets attached to them. Customers peel off the tickets to see whether they win a prize. The proportion of tickets that are winners is $p=0.25$. A total of $n=70$ people purchase soft drinks between noon and 1:00 p.m. on a certain day. Let $\hat{p}$ be the proportion that win a prize. Find the mean and standard deviation of $\hat{p}$.
+
+
+
+## {.font60}
+
+> Example 3: According to a Harris poll taken in September 2013, chocolate is the favorite ice cream flavor for $27 \%$ of Americans. If a sample of 100 Americans is taken, what is the probability that the sample proportion of those who prefer chocolate is greater than 0.30?
+
+
+## {.font60}
+
+> Example 4: In the 2012 U.S. presidential election, $51 \%$ of voters voted for Barack Obama. If a sample of 75 voters were polled, would it be unusual if less than $40 \%$ of them had voted for Barack Obama?
+
+
+##

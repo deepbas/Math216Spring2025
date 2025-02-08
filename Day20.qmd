@@ -1,0 +1,151 @@
+---
+title: "Day 20"
+title-slide-attributes:
+  data-background-image: images/lake.jpg
+  data-background-size: contain
+  data-background-opacity: "0.5"
+subtitle: "Math 216: Statistical Thinking"
+author: "Bastola"
+format:
+  revealjs:
+    html-math-method: mathjax
+    mathjax-url: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/MathJax.js" 
+    theme: [default, scss/main.scss]
+    slide-number: true
+    preview-links: auto
+    history: true
+    chalkboard: 
+      src: drawings.json
+    transition: slide
+    background-transition: fade    
+    touch: false
+    controls: true
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+options(htmltools.preserve.raw = FALSE)
+options(ggrepel.max.overlaps = Inf)
+
+
+# load necessary packages
+library(tidyverse)
+library(countdown)
+library(mosaic)
+library(ggthemes)
+library(forcats)
+library(patchwork)
+library(Lock5Data)
+library(plotly)
+
+# Set ggplot theme
+theme_set(theme_tufte(base_size = 10))
+yt <- 0
+#<iframe width="1380" height="900" src="https://www.geogebra.org/m/mehn8u8s"></iframe>
+#::: {.callout-note title="Definition"}
+```
+
+
+## Introduction to Small Samples and the t-Statistic {.font80}
+
+::: cle6
+- **Small Samples**: In research, we sometimes only have access to a small number of observations, which limits the effectiveness of the Central Limit Theorem.
+- **Need for a Different Approach**: Traditional z-statistics assume a large sample size to normalize sample means, which is not feasible with small samples. This session introduces the student's t-statistic, a better-suited approach for such scenarios.
+:::
+
+## Challenges with Small Samples {.font70}
+
+::: cle13
+- **Normality Assumption**: For samples smaller than 30, the distribution of the population must be approximately normal for the sample mean $\bar{x}$ to be considered normally distributed. For example, if you're studying the heights of a rare species of plant, and can only find a few samples, the underlying distribution of these heights must be normal for standard approaches to work.
+- **Standard Deviation Issues**: When using the sample standard deviation $s$ in place of the population standard deviation $\sigma$, the estimate becomes less reliable with smaller samples. Consider a scenario where you measure the amount of a chemical in water samples from different locations. With only a few samples, the variability in your measurements could significantly affect the reliability of your estimates, leading to potentially misleading conclusions.
+:::
+
+## Introducing the Student's t-Statistic {.font80}
+
+::: cle14
+Given the issues identified with small samples, the Student's t-statistic offers a refined method for estimating population parameters:
+$$
+T = \frac{\bar{x} - \mu}{s / \sqrt{n}}
+$$
+This formula adjusts for the additional uncertainty inherent in small samples.
+:::
+
+## Comparison with the z-Statistic {.font80}
+
+::: cle10
+The t-statistic is analogous to the z-statistic used for larger samples, where the population standard deviation $\sigma$ is known or the sample is large enough ($n \geq 30$) for reliable approximation:
+$$
+Z = \frac{\bar{x} - \mu}{\sigma / \sqrt{n}}
+$$
+:::
+
+## Why Use the t-Distribution? {.font80}
+
+::: cle11
+- **Degrees of Freedom**: The shape of the t-distribution and its variability depend on the degrees of freedom (df = $n-1$), which adjusts as the sample size changes. This flexibility makes it particularly useful for small sample sizes.
+:::
+
+##
+
+<img src="images/Day20-1.png" style="display: block; margin: auto;" width="80%"  loading="lazy" decoding="async">
+
+##
+
+<img src="images/Day20-2.png" style="display: block; margin: auto;" width="80%"  loading="lazy" decoding="async">
+
+
+##
+
+<img src="images/Day20-3.png" style="display: block; margin: auto;" width="80%"  loading="lazy" decoding="async">
+
+
+<img src="images/Day20-4.png" style="display: block; margin: auto;" width="80%"  loading="lazy" decoding="async">
+
+
+
+
+## {.font60}
+
+
+> Example 1: Consider the pharmaceutical company that desires an estimateof the mean increase in blood pressure of patients who take a new drug. The blood pressure increases (measured in points) for the n $=6$ patients in the human testing phase are shown in the following. Use this information to construct a $95 \%$ confidence interval for $\mu$, the mean increase in blood pressure associated with the new drug for all patients in the population.
+
+\begin{align*}
+\begin{array}{llllll}
+1.7 & 3.0 & 0.8 & 3.4 & 2.7 & 2.1
+\end{array}
+\end{align*}
+
+(From R/hand calculation, $\bar{x}=2.283, s=0.950$ )
+
+
+##
+
+
+
+
+## {.font60}
+
+> Example 2: Some quality control experiments require destructive sampling (i.e., the test to determine whether the item is defective destroys the item) in order to measure a particular characteristic of the product. The cost of destructive sampling often dictates small samples. Suppose a manufacturer of printers for personal computers wishes to estimate the mean number of characters printed before the printhead fails. The printer manufacturer tests $n=15$ printheads and records the number of characters printed until failure for each. These 15 measurements (in millions of characters) are listed in the following table.
+
+<img src="images/Day20-5.png" style="display: block; margin: auto;" width="80%"  loading="lazy" decoding="async">
+
+(From R/hand calculation, $\bar{x}=1.23867, s=0.19316$ )
+
+a. Form a $99 \%$ confidence interval for the mean number of characters printed before the printhead fails. Interpret the result.
+
+## {.font60}
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+b. What assumption is required for the interval you found in part a to be valid? Is that assumption reasonably satisfied?
+
+
+
+##

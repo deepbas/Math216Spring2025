@@ -768,5 +768,124 @@
     "title": "Activity 5",
     "section": "Activity 4: Group Activities with Real Data",
     "text": "Activity 4: Group Activities with Real Data\n\n\nDataset: You are given a dataset of 200 die roll outcomes\n\nTask:\n\nCalculate the probability of rolling an even number.\nCreate a histogram of the die roll outcomes.\n\n\n\nDiscussion: Compare the empirical probability with the theoretical probability.\n\n\n\n\n\noutcome\nCount\n\n\n\n1\n32\n\n\n2\n37\n\n\n3\n31\n\n\n4\n32\n\n\n5\n36\n\n\n6\n32"
+  },
+  {
+    "objectID": "Day7.html#the-multiplicative-rule",
+    "href": "Day7.html#the-multiplicative-rule",
+    "title": "Day 7",
+    "section": "The Multiplicative Rule",
+    "text": "The Multiplicative Rule\n\n\n\nThe probability of the intersection of two events, \\(A\\) and \\(B\\), can be calculated using the multiplicative rule. This rule uses conditional probabilities:\n\\[\nP(A \\cap B) = P(A) \\cdot P(B|A)\n\\]\nAlternatively:\n\\[\nP(A \\cap B) = P(B) \\cdot P(A|B)\n\\]\nInterpretation: The rule helps us understand how the occurrence of one event influences the probability of another."
+  },
+  {
+    "objectID": "Day7.html#law-of-total-probability",
+    "href": "Day7.html#law-of-total-probability",
+    "title": "Day 7",
+    "section": "Law of Total Probability",
+    "text": "Law of Total Probability\n\n\n\nThe law of total probability allows us to calculate the probability of an event by considering all possible scenarios. For two mutually exclusive and exhaustive events \\(B\\) and \\(B^c\\):\n\\[\nP(A) = P(B) \\cdot P(A|B) + P(B^c) \\cdot P(A|B^c)\n\\]\nApplication: This is particularly useful when dealing with partitioned sample spaces."
+  },
+  {
+    "objectID": "Day7.html#section",
+    "href": "Day7.html#section",
+    "title": "Day 7",
+    "section": "",
+    "text": "Example: Consider the experiment of tossing a fair die, and let \\[A= \\{\\text{Observe an even number.}\\}\\] \\[B= \\{\\text{Observe a number less than or equal to 4.}\\}\\] Are \\(A\\) and \\(B\\) independent events?"
+  },
+  {
+    "objectID": "Day7.html#independence-in-probability",
+    "href": "Day7.html#independence-in-probability",
+    "title": "Day 7",
+    "section": "Independence in Probability",
+    "text": "Independence in Probability\n\n\n\nSpecial case where knowledge of one event doesn’t affect another’s probability:\n\\[\nP(A|B) = P(A) \\quad \\text{and} \\quad P(B|A) = P(B)\n\\]\nSimplified Intersection Rule:\n\\[\nP(A \\cap B) = P(A) \\cdot P(B)\n\\]\nCaution: Independence requires mathematical proof, not visual intuition from Venn diagrams"
+  },
+  {
+    "objectID": "Day7.html#section-1",
+    "href": "Day7.html#section-1",
+    "title": "Day 7",
+    "section": "",
+    "text": "Example 3: The American Association for Marriage and Family Therapy (AAMFT) found that \\(25 \\%\\) of divorced couples are classified as “fiery foes” (i.e., they communicate through their children and are hostile toward each other).\n\n\nWhat is the probability that in a sample of 2 divorced couples, both are classified as “fiery foes”?\n\n\n\nWhat is the probability that in a sample of 10 divorced couples, all 10 are classified as “fiery foes”?"
+  },
+  {
+    "objectID": "Day7.html#section-2",
+    "href": "Day7.html#section-2",
+    "title": "Day 7",
+    "section": "",
+    "text": "Example 4: (Test for a Disease) Consider a certain disease that the chance of a randomly selected individual having this disease is \\(r_1\\) (this can be estimated from the historical data). Suppose there is a medical test for this disease. If a person has the disease, there is a probability of \\(r_2\\) that the test will give a positive response. If a person does not have the disease, there is a probability of \\(r_3\\) that the test will give a positive response. Suppose you take the test. What is the probability that you get a positive response but in fact, you do not have the disease? Derive the formula, then compute the results for the following sets of values of paameters.\n\n\n\\(r_1=0.0001, r_2=0.99, r_3=0.01\\)\n\\(r_1=0.01, r_2=0.99, r_3=0.01\\)\n\\(r_1=0.01, r_2=0.9999, r_3=0.0001\\)"
+  },
+  {
+    "objectID": "Day7.html#bayess-rule-and-its-foundation",
+    "href": "Day7.html#bayess-rule-and-its-foundation",
+    "title": "Day 7",
+    "section": "Bayes’s Rule and Its Foundation",
+    "text": "Bayes’s Rule and Its Foundation\n\n\n\nRecall the multiplicative rule:\n\\[\nP(A \\cap B) = P(A) \\cdot P(B|A) = P(B) \\cdot P(A|B)\n\\]\nRearranging gives Bayes’s Rule:\n\\[\nP(A|B) = \\frac{P(A) \\cdot P(B|A)}{P(B)}\n\\]\nIncorporating the law of total probability:\n\\[\nP(A|B) = \\frac{P(A) \\cdot P(B|A)}{P(A) \\cdot P(B|A) + P(A^c) \\cdot P(B|A^c)}\n\\]"
+  },
+  {
+    "objectID": "Day7.html#bayes-rule-example",
+    "href": "Day7.html#bayes-rule-example",
+    "title": "Day 7",
+    "section": "Bayes Rule Example",
+    "text": "Bayes Rule Example\n\n\n\nScenario: Estimating the likelihood of liver disease in a patient who is an alcoholic.\nDefine Events:\n\n\\(A\\): Patient has liver disease.\n\\(B\\): Patient is an alcoholic.\n\nProbabilities:\n\n\\(P(A) = 0.10\\) (10% of patients have liver disease)\n\\(P(B) = 0.05\\) (5% of patients are alcoholics)"
+  },
+  {
+    "objectID": "Day7.html#application-of-bayess-rule",
+    "href": "Day7.html#application-of-bayess-rule",
+    "title": "Day 7",
+    "section": "Application of Bayes’s Rule",
+    "text": "Application of Bayes’s Rule\n\n\n\nGiven: You need to find \\(P(A | B)\\), the probability of liver disease if the patient is an alcoholic.\nAvailable Data: \\(P(B | A) = 0.07\\) (7% of those with liver disease are alcoholics)\nBayes’s Rule Calculation:\n\\[P(A | B) = P(A) \\cdot \\frac{P(B | A)}{P(B)} = 0.10 \\cdot \\frac{0.07}{0.05} = 0.14\\]\nInterpretation: A patient who is an alcoholic has a 14% chance of having liver disease, higher than the general clinic population."
+  },
+  {
+    "objectID": "Day7.html#section-3",
+    "href": "Day7.html#section-3",
+    "title": "Day 7",
+    "section": "",
+    "text": "Example 4: (Test for a Disease) Consider a certain disease that the chance of a randomly selected individual having this disease is \\(r_1\\) (this can be estimated from the historical data). Suppose there is a medical test for this disease. If a person has the disease, there is a probability of \\(r_2\\) that the test will give a positive response. If a person does not have the disease, there is a probability of \\(r_3\\) that the test will give a positive response. Suppose you take the test. What is the probability that you get a positive response but in fact, you do not have the disease? Derive the formula, then compute the results for the following sets of values of paameters.\n\n\n\\(r_1=0.0001, r_2=0.99, r_3=0.01\\)\n\\(r_1=0.01, r_2=0.99, r_3=0.01\\)\n\\(r_1=0.01, r_2=0.9999, r_3=0.0001\\)"
+  },
+  {
+    "objectID": "Day7.html#section-5",
+    "href": "Day7.html#section-5",
+    "title": "Day 7",
+    "section": "",
+    "text": "Example 5: (Test for a Disease 2) Consider the previous example with \\(r_1=0.01, r_2=0.99, r_3=0.01\\) If you take the test and get a positive response. You believe the result is not accurate, and test again and still get a positive response, what is the probability that in fact you do not have the disease?"
+  },
+  {
+    "objectID": "Day7.html#key-takeaways",
+    "href": "Day7.html#key-takeaways",
+    "title": "Day 7",
+    "section": "Key Takeaways",
+    "text": "Key Takeaways\n\n\n\nMultiplicative Rule: Helps calculate joint probabilities using conditional probabilities.\nLaw of Total Probability: Useful for partitioning sample spaces.\nIndependence: Events are independent if the occurrence of one does not affect the other.\nBayes’s Rule: Updates probabilities based on new information."
+  },
+  {
+    "objectID": "Day7.html#section-4",
+    "href": "Day7.html#section-4",
+    "title": "Day 7",
+    "section": "",
+    "text": "Example 5: (Test for a Disease 2) Consider the previous example with \\(r_1=0.01, r_2=0.99, r_3=0.01\\) If you take the test and get a positive response. You believe the result is not accurate, and test again and still get a positive response, what is the probability that in fact you do not have the disease?"
+  },
+  {
+    "objectID": "Day7.html#bayess-rule-inverting-probabilities",
+    "href": "Day7.html#bayess-rule-inverting-probabilities",
+    "title": "Day 7",
+    "section": "Bayes’s Rule: Inverting Probabilities",
+    "text": "Bayes’s Rule: Inverting Probabilities\n\n\n\nDerived from multiplicative rule symmetry:\n\\[\nP(A|B) = \\frac{P(A) \\cdot P(B|A)}{P(B)}\n\\]\nEnhanced with total probability law:\n\\[\nP(A|B) = \\frac{P(A)P(B|A)}{P(A)P(B|A) + P(A^c)P(B|A^c)}\n\\]\nEnables belief updating with new evidence"
+  },
+  {
+    "objectID": "Day7.html#clinical-diagnostic-example",
+    "href": "Day7.html#clinical-diagnostic-example",
+    "title": "Day 7",
+    "section": "Clinical Diagnostic Example",
+    "text": "Clinical Diagnostic Example\n\n\n\nPractical Context: Assessing liver disease risk in alcoholic patients\nEvent Definitions:\n\n\\(A\\): Liver disease (\\(P(A) = 0.10\\))\n\\(B\\): Alcoholism (\\(P(B) = 0.05\\))\n\nClinical Data: \\(P(B|A) = 0.07\\) (Alcoholism rate among liver disease patients)"
+  },
+  {
+    "objectID": "Day7.html#bayesian-analysis-in-practice",
+    "href": "Day7.html#bayesian-analysis-in-practice",
+    "title": "Day 7",
+    "section": "Bayesian Analysis in Practice",
+    "text": "Bayesian Analysis in Practice\n\n\n\nObjective: Calculate \\(P(A | B)\\) - disease probability given alcoholism\nBayesian Calculation:\n\\[P(A | B) = \\frac{P(A)P(B|A)}{P(B)} = \\frac{0.10 \\cdot 0.07}{0.05} = 0.14\\]\nInterpretation: Alcoholism doubles disease risk compared to baseline (10% → 14%)"
+  },
+  {
+    "objectID": "Day7.html#core-concepts-recap",
+    "href": "Day7.html#core-concepts-recap",
+    "title": "Day 7",
+    "section": "Core Concepts Recap",
+    "text": "Core Concepts Recap\n\n\n\nMultiplicative Rule: Joint probabilities through conditioning\n\nIndependence: When information becomes irrelevant\n\nTotal Probability: Divide-and-conquer strategy\n\nBayesian Inference: Evidence-driven probability updating"
   }
 ]

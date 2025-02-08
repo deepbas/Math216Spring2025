@@ -1,0 +1,322 @@
+---
+title: "Day 9"
+title-slide-attributes:
+  data-background-image: images/lake.jpg
+  data-background-size: contain
+  data-background-opacity: "0.5"
+subtitle: "Math 216: Statistical Thinking"
+author: "Bastola"
+format:
+  revealjs:
+    html-math-method: mathjax
+    mathjax-url: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/MathJax.js" 
+    theme: [default, scss/main.scss]
+    slide-number: true
+    preview-links: auto
+    history: true
+    chalkboard: 
+      src: drawings.json
+    transition: slide
+    background-transition: fade    
+    touch: false
+    controls: true
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+options(htmltools.preserve.raw = FALSE)
+options(ggrepel.max.overlaps = Inf)
+
+
+# load necessary packages
+library(tidyverse)
+library(countdown)
+library(mosaic)
+library(ggthemes)
+library(forcats)
+library(patchwork)
+library(Lock5Data)
+library(plotly)
+
+# Set ggplot theme
+theme_set(theme_tufte(base_size = 10))
+
+yt <- 0
+```
+
+
+
+## 
+
+
+
+![](images/prob_chebyshev.png)
+
+
+
+
+##
+::: font50
+> Example 1: Medical research has shown that a certain type of chemotherapy is successful $70 \%$ of the time when used to treat skin cancer. Suppose five skin cancer patients are treated with this type of chemotherapy, and let $x$ equal the number of successful cures out of the five. The probability distribution for the number of successful cures out of five is given in the following table:
+
+| $x$   | 0     | 1     | 2     | 3     | 4     | 5     |
+|-------|-------|-------|-------|-------|-------|-------|
+| $p(x)$ | 0.002 | 0.029 | 0.132 | 0.309 | 0.360 | 0.168 |
+
+<br>
+
+a. Find $\mu$
+
+<br>
+
+b. Find $\sigma$
+
+<br>
+
+c. Use Chebyshev's rule to approximate the probability that $x$ falls into the interval $\mu \pm 2 \sigma$
+
+
+:::
+
+
+
+## Introduction to Binomial Random Variables{.font80}
+
+::: cle5
+::: font80
+
+- **Context of Binomial Experiments**:
+  - Used to model situations with two distinct outcomes.
+  - Example: Flipping a coin results in either a Head (Success, $S$) or Tail (Failure, $F$).
+
+#### Two Possible Outcomes:
+- **Success** $(S)$
+- **Failure** $(F)$
+
+#### Consistent Probability:
+- Probability of success $(p)$
+- Probability of failure $(q = 1 - p)$
+
+
+:::
+:::
+
+## Characteristics of Binomial Experiments{.font80}
+
+::: cle6
+::: font80
+
+- **Essential Features**:
+  - **Fixed Number of Trials** $(n)$: Each experiment consists of $n$ identical and independent trials.
+  - **Stable Probabilities**: The probability of success $(p)$ and failure $(q = 1 - p)$ remains constant across trials.
+
+### Key Points:
+- **Independence of Trials**: Each trial's outcome does not influence another.
+- **Identical Trials**: All trials follow the same probability model.
+
+:::
+:::
+
+## The Binomial Random Variable
+
+::: cle7
+::: font80
+
+- **Defining the Variable**:
+  - A binomial random variable $X$ counts the number of successes in $n$ trials.
+  - Notation: $X \sim \operatorname{Bin}(n, p)$, where $p$ is the probability of a success on any given trial.
+
+### Understanding $X$:
+- Represents the sum of successes in the experiment.
+- Can take values from 0 (no success) to $n$ (all successes).
+
+:::
+:::
+
+## The Binomial Probability Formula
+
+::: cle8
+::: font70
+
+- **Calculating Probabilities**:
+  - The probability of exactly $x$ successes in $n$ trials is given by the binomial formula:
+
+$$
+P(x) = \binom{n}{x} p^x q^{n-x}, \quad x = 0, 1, 2, \ldots, n
+$$
+
+### Components:
+- **$\binom{n}{x}$**: The number of ways to choose $x$ successes from $n$ trials.
+- **$p^x$**: The probability of $x$ successes.
+- **$q^{n-x}$**: The probability of $n-x$ failures.
+
+
+:::
+:::
+
+
+##
+
+::: font50
+> Example 2: The Heart Association claims that only 10\% of U.S. adults over 30 years of age meet the minimum requirements established by the President's Council on Fitness, Sports, and Nutrition. Suppose four adults are randomly selected and each is given the fitness test. Let $X$ represent the number of the four adults who pass the fitness test. Is $X$ a binomial random variable? Why? What is the probability of $X=3$ ?
+
+:::
+
+
+
+##
+
+::: font50
+> Example 3: Refer to Example 2. Use the formula for a binomial random variable to find the probability distribution of $x$, where $x$ is the number of adults who pass the fitness test.
+
+\begin{align*}
+\begin{aligned}
+& p(0)=\frac{4!}{0!(4-0)!}(.1)^0(.9)^{4-0}=\frac{4 \cdot 3 \cdot 2 \cdot 1}{(1)(4 \cdot 3 \cdot 2 \cdot 1)}(.1)^0(.9)^4=1(.1)^0(.9)^4=.6561 \\
+& p(1)=\frac{4!}{1!(4-1)!}(.1)^1(.9)^{4-1}=\frac{4 \cdot 3 \cdot 2 \cdot 1}{(1)(3 \cdot 2 \cdot 1)}(.1)^1(.9)^3=4(.1)(.9)^3=.2916 \\
+& p(2)=\frac{4!}{2!(4-2)!}(.1)^2(.9)^{4-2}=\frac{4 \cdot 3 \cdot 2 \cdot 1}{(2 \cdot 1)(2 \cdot 1)}(.1)^2(.9)^2=6(.1)^2(.9)^2=.0486 \\
+& p(3)=\frac{4!}{3!(4-3)!}(.1)^3(.9)^{4-3}=\frac{4 \cdot 3 \cdot 2 \cdot 1}{(3 \cdot 2 \cdot 1)(1)}(.1)^3(.9)^1=4(.1)^3(.9)=.0036 \\
+& p(4)=\frac{4!}{4!(4-4)!}(.1)^4(.9)^{4-4}=\frac{4 \cdot 3 \cdot 2 \cdot 1}{(4 \cdot 3 \cdot 2 \cdot 1)(1)}(.1)^4(.9)^0=1(.1)^4(.9)=.0001
+\end{aligned}
+\end{align*}
+
+Based on the above result, what is $P(X<3), P(X \geq 2), P(1 \leq X<3)$?
+
+:::
+
+
+
+##
+
+```{r, echo=FALSE}
+library(ggplot2)
+
+# Define the parameters
+n <- 30
+p_values <- c(0.1, 0.5, 0.9)
+
+# Create a data frame to hold the values
+data_list <- lapply(p_values, function(p) {
+  data.frame(
+    x = 0:n,
+    fx = dbinom(0:n, size = n, prob = p),
+    p = as.factor(p)
+  )
+})
+
+# Combine the data frames
+data <- do.call(rbind, data_list)
+
+# Plot using ggplot2
+ggplot(data, aes(x = x, y = fx, fill = p)) +
+  geom_bar(stat = "identity", position = position_dodge(), color = "black") +
+  scale_fill_manual(values = c("red", "green", "blue")) +
+  labs(title = "Binomial Distributions Bin[30, p] for p = 0.1, 0.5, 0.9",
+       x = "Number of successes (x)",
+       y = "Probability (f(x))",
+       fill = "Probability of success (p)") +
+theme(legend.position = "bottom", 
+plot.title = element_text(hjust = 0.5))
+
+```
+
+
+##
+
+```{=html}
+<iframe width="1380" height="900" src="https://www.geogebra.org/m/hMuamz5w" title="Webpage example"></iframe>
+```
+
+
+
+## Observations on Binomial Distributions{.font80}
+
+::: cle3
+::: font80
+
+1. **Unimodal Distribution**:
+   - Regardless of the value of $p$, the distribution exhibits a single peak.
+
+2. **Skewness Based on \( p \)**:
+   - **Right Skew** \(p < 0.5\): The distribution skews to the right, indicating more low-value outcomes.
+   - **Symmetry** \(p = 0.5\): The distribution is symmetric, with equal probabilities on both sides of the mean.
+   - **Left Skew** \(p > 0.5\): The distribution skews to the left, indicating more high-value outcomes.
+
+:::
+:::
+
+##
+
+```{r, echo=FALSE}
+library(ggplot2)
+library(gridExtra)
+
+# Define the parameters and create data frames
+params <- list(
+  list(n = 4, p = 0.1, xlim = 5),
+  list(n = 40, p = 0.1, xlim = 24),
+  list(n = 400, p = 0.1, xlim = 80)
+)
+
+plot_list <- lapply(params, function(param) {
+  data_frame <- data.frame(
+    x = 0:param$n,
+    fx = dbinom(0:param$n, size = param$n, prob = param$p)
+  )
+  
+  # Generate plot for each parameter set
+  p <- ggplot(data_frame, aes(x = x, y = fx)) +
+    geom_bar(stat = "identity", fill = "red", color = "black") +
+    scale_x_continuous(breaks = seq(0, param$n, by = max(1, param$n / 10)),
+                       limits = c(0, param$xlim)) +  # Set x-axis to 120% of n
+    labs(title = paste("Bin[", param$n, ",", param$p, "]", sep = ""),
+         x = "Number of successes (x)",
+         y = "Probability") +
+    theme_minimal()
+  
+  return(p)
+})
+
+# Arrange the plots with grid.arrange()
+grid.arrange(grobs = plot_list, ncol = 3)
+
+```
+
+
+::: green-h
+As $n$ increases, the binomial distribution approximates a bell-shaped curve.
+:::
+
+
+## Statistics of Binomial Distribution
+
+::: cle9
+::: font70
+
+::: row
+::: left
+**Statistical Properties**:
+
+- **Mean ($\mu$):** $\mu = np$
+- **Variance ($\sigma^2$):** $\sigma^2 = np(1-p)$
+- **Standard Deviation ($\sigma$):** $\sigma = \sqrt{np(1-p)}$
+:::
+
+::: right
+**Insights**:
+
+- The mean indicates the expected number of successes.
+- Variance and standard deviation provide insight into the spread of the distribution around the mean.
+:::
+:::
+
+:::
+:::
+
+##
+
+::: font60
+> Example 4: What is the mean, variance, and standard deviation of $Bin[4,0.1], Bin[40,0.1], Bin[400,0.1]$?
+:::
+
+##
+

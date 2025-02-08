@@ -1,0 +1,194 @@
+---
+title: "Day 11"
+title-slide-attributes:
+  data-background-image: images/lake.jpg
+  data-background-size: contain
+  data-background-opacity: "0.5"
+subtitle: "Math 216: Statistical Thinking"
+author: "Bastola"
+format:
+  revealjs:
+    html-math-method: mathjax
+    mathjax-url: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/MathJax.js" 
+    theme: [default, scss/main.scss]
+    slide-number: true
+    preview-links: auto
+    history: true
+    chalkboard: 
+      src: drawings.json
+    transition: slide
+    background-transition: fade    
+    touch: false
+    controls: true
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+options(htmltools.preserve.raw = FALSE)
+options(ggrepel.max.overlaps = Inf)
+
+
+# load necessary packages
+library(tidyverse)
+library(countdown)
+library(mosaic)
+library(ggthemes)
+library(forcats)
+library(patchwork)
+library(Lock5Data)
+library(plotly)
+
+# Set ggplot theme
+theme_set(theme_tufte(base_size = 10))
+yt <- 0
+#<iframe width="1380" height="900" src="https://www.geogebra.org/m/mehn8u8s"></iframe>
+#::: {.callout-note title="Definition"}
+```
+
+
+
+
+## Introduction to Continuous Probability Distributions
+
+::: cle10
+::: font70
+
+Continuous random variables are the backbone of modeling real-world phenomena where outcomes can take any value within a range. Unlike discrete variables, which deal with countable outcomes, continuous variables are described by smooth curves called **Probability Density Functions (PDFs)**.
+
+- **Key Features of PDFs**:
+  - **Area as Probability**: The probability that $X$ falls between $a$ and $b$ is the area under the PDF curve between these points.
+  - **Non-negativity**: $f(x) \geq 0$ for all $x$.
+  - **Total Probability**: The integral of $f(x)$ over its entire range equals 1, representing certainty.
+  - **Zero Probability at a Point**: For continuous variables, $P(X = a) = 0$ for any specific value $a$. Probabilities are only meaningful over intervals.
+
+:::
+:::
+
+
+
+## Visualizing Continuous Distributions
+
+::: row
+::: left
+
+![](images/continuous_pdf.png)
+
+:::
+
+::: right
+
+::: font60
+::: cle6
+
+- **Interpreting the Curve**:  
+  The shape of the PDF reflects how probabilities are distributed. A tall, narrow peak indicates values are concentrated around a specific point, while a flat curve suggests more variability.
+
+- **Calculating Probabilities**:  
+  To find $P(a \leq X \leq b)$, compute the area under the curve between $a$ and $b$. This is the essence of continuous probability!
+
+:::
+:::
+:::
+:::
+
+
+
+## The Uniform Distribution: Simplicity with Power
+
+::: {.callout-note title="Definition"}
+
+The **uniform distribution** models scenarios where every outcome in a range is equally likely. It’s the simplest continuous distribution, yet it’s incredibly useful in practice.
+
+- **PDF**: $f(x) = \frac{1}{b-a}$ for $x \in [a, b]$.
+- **Graphical Representation**: A flat rectangle, reflecting equal probability density across the range.
+
+:::
+
+
+## Visualizing and Calculating Probabilities {.font80}
+
+::: row
+::: left
+
+![](images/uniform_pdf.png)
+
+:::
+
+::: right
+
+Why Use the Uniform Distribution?
+
+::: font80
+::: cle11
+
+- **Equal Likelihood**:  
+  It’s ideal for modeling fair processes, such as random number generation or selecting a random time within a fixed interval.
+
+- **Easy Calculations**:  
+  Probabilities are straightforward to compute. For example, $P(c \leq X \leq d) = (d-c) \times \frac{1}{b-a}$.
+
+:::
+:::
+:::
+:::
+
+
+
+## Statistical Measures of the Uniform Distribution
+
+::: font80
+::: cle13
+
+- **Mean and Median**:  
+  Both are located at the center of the interval: $\mu = \frac{a+b}{2}$.
+
+- **Variance**:  
+  The spread of the distribution is $\sigma^2 = \frac{(b-a)^2}{12}$. A wider range leads to greater variability.
+
+:::
+:::
+
+---
+
+## Real-World Applications
+
+::: font80
+::: cle15
+
+- **Simulations**:  
+  Used in computer algorithms to generate random numbers for simulations and modeling.
+
+- **Quality Control**:  
+  Helps predict the likelihood of defects when manufacturing tolerances are uniformly distributed.
+
+- **Everyday Scenarios**:  
+  From predicting wait times for public transportation to modeling the lifespan of products, the uniform distribution is a versatile tool.
+
+:::
+:::
+
+---
+
+## 
+
+::: font60
+
+> Example 1: An unprincipled used-car dealer sells a car to an unsuspecting buyer, even though the dealer knows that the car will have a major breakdown within the next 6 months. The dealer provides a warranty of 45 days on all cars sold. Let $x$ represent the length of time until the breakdown occurs. Assume that x is a uniform random variable with values between 0 and 6 months.
+
+a. Calculate and interpret the mean and standard deviation of $X$.
+
+:::
+
+##
+
+::: font60
+
+b. Graph the probability distribution of $X$ , and show the mean on the horizontal axis. Also show one and two-standard-deviation intervals around the mean.
+
+::: custom-space
+:::
+
+c. Calculate the probability that the breakdown occurs while the car is still under warranty.
+
+:::
+

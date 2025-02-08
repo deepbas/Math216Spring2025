@@ -1,0 +1,174 @@
+---
+title: "Day 7"
+title-slide-attributes:
+  data-background-image: images/lake.jpg
+  data-background-size: contain
+  data-background-opacity: "0.5"
+subtitle: "Math 216: Statistical Thinking"
+author: "Bastola"
+format:
+  revealjs:
+    html-math-method: mathjax
+    mathjax-url: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/MathJax.js" 
+    theme: [default, scss/main.scss]
+    slide-number: true
+    preview-links: auto
+    history: true
+    chalkboard: 
+      src: drawings.json
+    transition: slide
+    background-transition: fade    
+    touch: false
+    controls: true
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+options(htmltools.preserve.raw = FALSE)
+options(ggrepel.max.overlaps = Inf)
+
+
+# load necessary packages
+library(tidyverse)
+library(countdown)
+library(mosaic)
+library(ggthemes)
+library(forcats)
+library(patchwork)
+library(Lock5Data)
+library(plotly)
+
+# Set ggplot theme
+theme_set(theme_tufte(base_size = 10))
+
+yt <- 0
+```
+
+
+## The Multiplicative Rule
+
+::: cle6
+::: font70
+
+- The probability of the intersection of two events, $A$ and $B$, can be calculated using the **multiplicative rule**. This rule uses conditional probabilities:
+  
+  $$
+  P(A \cap B) = P(A) \cdot P(B|A)
+  $$
+  
+  Alternatively:
+  
+  $$
+  P(A \cap B) = P(B) \cdot P(A|B)
+  $$
+
+- **Interpretation**: The rule helps us understand how the occurrence of one event influences the probability of another.
+
+:::
+:::
+
+
+## Law of Total Probability
+
+::: cle8
+::: font70
+
+- The **law of total probability** allows us to calculate the probability of an event by considering all possible scenarios. For two mutually exclusive and exhaustive events $B$ and $B^c$:
+  
+  $$
+  P(A) = P(B) \cdot P(A|B) + P(B^c) \cdot P(A|B^c)
+  $$
+
+- **Application**: This is particularly useful when dealing with partitioned sample spaces.
+:::
+:::
+
+
+
+## Independence in Probability
+
+::: cle9
+::: font70
+- Special case where knowledge of one event doesn't affect another's probability:
+  
+  $$
+  P(A|B) = P(A) \quad \text{and} \quad P(B|A) = P(B)
+  $$
+
+- **Simplified Intersection Rule**:
+  
+  $$
+  P(A \cap B) = P(A) \cdot P(B)
+  $$
+
+- **Caution**: Independence requires mathematical proof, not visual intuition from Venn diagrams
+
+:::
+:::
+
+
+## Bayes's Rule: Inverting Probabilities
+
+::: cle12
+::: font70
+
+- Derived from multiplicative rule symmetry:
+  
+  $$
+  P(A|B) = \frac{P(A) \cdot P(B|A)}{P(B)}
+  $$
+
+- Enhanced with total probability law:
+  
+  $$
+  P(A|B) = \frac{P(A)P(B|A)}{P(A)P(B|A) + P(A^c)P(B|A^c)}
+  $$
+
+- Enables belief updating with new evidence
+
+:::
+:::
+
+
+## Clinical Diagnostic Example
+
+::: cle6
+::: font70
+
+- **Practical Context**: Assessing liver disease risk in alcoholic patients
+- **Event Definitions**:
+  - $A$: Liver disease ($P(A) = 0.10$)
+  - $B$: Alcoholism ($P(B) = 0.05$)
+- **Clinical Data**: $P(B|A) = 0.07$ (Alcoholism rate among liver disease patients)
+
+:::
+:::
+
+
+## Bayesian Analysis in Practice
+
+::: fsp
+::: font70
+
+- **Objective**: Calculate $P(A | B)$ - disease probability given alcoholism
+- **Bayesian Calculation**:
+  
+  $$P(A | B) = \frac{P(A)P(B|A)}{P(B)} = \frac{0.10 \cdot 0.07}{0.05} = 0.14$$
+
+- **Interpretation**: Alcoholism doubles disease risk compared to baseline (10% → 14%)
+
+:::
+:::
+
+
+
+## Core Concepts Recap
+
+::: cle6
+::: font80
+1. **Multiplicative Rule**: Joint probabilities through conditioning  
+2. **Independence**: When information becomes irrelevant  
+3. **Total Probability**: Divide-and-conquer strategy  
+4. **Bayesian Inference**: Evidence-driven probability updating
+:::
+:::
