@@ -1,0 +1,73 @@
+---
+title: "Activity 8"
+subtitle: "MATH 216: Statistical Thinking"
+format: html
+echo: false
+---
+
+```{r setup, include=FALSE}
+library(openintro)
+library(dplyr)
+library(knitr)
+library(ggplot2)
+```
+
+### Activity 1: Tossing Two Coins
+
+**Prompt**: Consider the experiment of tossing two coins, and let $x$ be the number of heads observed. Find the probability associated with each value of the random variable $x$, assuming that the two coins are fair.
+
+1. List all possible outcomes of tossing two coins.
+2. Assign probabilities to each outcome.
+3. Create a probability distribution table for $x$.
+
+
+
+### Activity 2: Discrete Probability Distribution
+
+**Prompt**: The random variable $x$ has the discrete probability distribution shown here:
+
+| $x$ | -2 | -1 | 0 | 1 | 2 |
+| :--- | ---: | ---: | ---: | ---: | ---: |
+| $p(x)$ | .10 | .15 | .40 | .30 | .05 |
+
+
+1. Find $P(X \leq 0)$.
+2. Find $P(X > -1)$.
+3. Find $P(-1 \leq X < 1)$.
+4. Find $P(-1 \leq X \leq 1)$.
+
+---
+
+### Activity 3: Drought Probability
+
+**Prompt**:  A drought is a period of abnormal dry weather that causes serious problems in the farming industry of the region. University of Arizona researchers used historical annual data to study the severity of droughts in Texas (Journal of Hydrologic Engineering, Sept./Oct. 2003). The researchers showed that the distribution of $x$, the number of consecutive years that must be sampled until a dry (drought) year is observed, can be modeled using the formula:
+
+$$
+p(x) = (0.3)(0.7)^{x-1}, \quad x = 1, 2, 3, \ldots
+$$
+
+
+1. Find the probability that exactly 3 years must be sampled before a drought year occurs.
+2. What is the probability that NO more than 2 years must be sampled?
+
+
+### Activity 4: Expected Value
+
+**Prompt**: Suppose you work for an insurance company and you sell a $\$10,000$ one-year term insurance policy at an annual premium of $\$290$. Actuarial tables show that the probability of death during the next year for a person of your customer's age, sex, health, etc., is $0.001$. What is the expected gain (amount of money made by the company) for a policy of this type?
+
+
+
+
+### Activity 5: Variance and Standard Deviation
+
+**Prompt**: For the insurance policy in **Activity 4**, calculate:
+
+1. The variance of the gain.
+2. The standard deviation of the gain.
+
+**Formulas**:
+
+- Variance: $\sigma^2 = \sum (x_i - \mu)^2 p(x_i)$
+- Standard Deviation: $\sigma = \sqrt{\sigma^2}$
+
+

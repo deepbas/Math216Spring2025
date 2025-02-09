@@ -120,7 +120,7 @@ c. Use Chebyshev's rule to approximate the probability that $x$ falls into the i
 ## The Binomial Random Variable
 
 ::: cle7
-::: font80
+::: font70
 
 - **Defining the Variable**:
   - A binomial random variable $X$ counts the number of successes in $n$ trials.
@@ -136,7 +136,7 @@ c. Use Chebyshev's rule to approximate the probability that $x$ falls into the i
 ## The Binomial Probability Formula
 
 ::: cle8
-::: font70
+::: font60
 
 - **Calculating Probabilities**:
   - The probability of exactly $x$ successes in $n$ trials is given by the binomial formula:
