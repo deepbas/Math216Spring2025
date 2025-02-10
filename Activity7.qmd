@@ -18,7 +18,7 @@ Suppose that two balls are to be selected at random, without replacement, from a
 
 **Prompt**: Suppose that two balls are to be selected at random, without replacement, from a box containing $r$ red balls and $b$ blue balls. What is the probability that the first ball will be red and the second ball will be blue? What is the probability that the second ball will be blue?
 
-1. **Think**: Individually, calculate the probability that the first ball drawn is red and the second is blue from a box containing $r$ red balls and $b$ blue balls (Example 1).
+1. **Think**: Individually, calculate the probability that the first ball drawn is red and the second is blue from a box containing $r$ red balls and $b$ blue balls.
 2. **Pair**: Discuss your calculations with a partner and compare results.
 3. **Share**: Share your insights with the class, focusing on how the multiplicative rule applies to this scenario.
 
@@ -56,11 +56,13 @@ b. What is the probability that in a sample of 10 divorced couples, all 10 are c
 
 Consider a medical test for a disease with the following parameters: $r_1=0.01$, $r_2=0.99$, $r_3=0.01$. 
 
-1. Derive the formula for the probability of a false positive.
+Consider a medical test for a disease with the following parameters: $r_1=0.01$, $r_2=0.99$, $r_3=0.01$. 
 
-2. Compute the results for the given parameters.
+1. Given you tested positive, what is the probability that you do not have that disease?
 
-3. If you take the test and get a positive response. You believe the result is not accurate, and test again and still get a positive response, what is the probability that in fact you do not have the disease?
+
+2. If you take the test and get a positive response. You believe the result is not accurate, and test again and still get a positive response, what is the probability that in fact you do not have the disease?
+
 
 
 
