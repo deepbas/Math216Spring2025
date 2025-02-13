@@ -12,7 +12,7 @@ library(knitr)
 library(ggplot2)
 ```
 
-## Activity 1: Discrete Probability Calculations
+## Activity 1: Probability Calculations
 
 **Prompt**: Medical research has shown that a certain type of chemotherapy is successful $70 \%$ of the time when used to treat skin cancer. Suppose five skin cancer patients are treated with this type of chemotherapy, and let $x$ equal the number of successful cures out of the five. The probability distribution for the number of successful cures out of five is given in the following table:
 
@@ -35,7 +35,7 @@ c. Use Chebyshev's rule to approximate the probability that $x$ falls into the i
 
 \vspace*{1in}
 
-## Activity 2: Calculation of Probability
+## Activity 2: Probability Calculations
 
 
 **Prompt**: Calculate $P(x=2)$ for $X \sim \operatorname{Bin}(5, 0.3)$ using the binomial formula:
@@ -47,13 +47,16 @@ c. Use Chebyshev's rule to approximate the probability that $x$ falls into the i
 \vspace*{2in}
 
 
-## Activity 3: Calaulations of Probability
+## Activity 3: Probability Calculations
 
 **Prompt**: The Heart Association claims that only 10\% of U.S. adults over 30 years of age meet the minimum requirements established by the President's Council on Fitness, Sports, and Nutrition. Suppose four adults are randomly selected and each is given the fitness test. Let $X$ represent the number of the four adults who pass the fitness test. Is $X$ a binomial random variable? Why? What is the probability of $X=3$ ?
 
 \vspace*{2in}
 
 
-## Activity 4: Calculations of Probability
+## Activity 4: Probability Calculations
 
 **Prompt**: What is the mean, variance, and standard deviation of $\textbf{Bin}[4,0.1]$ , $\textbf{Bin}[40,0.1]$,  and $\textbf{Bin}[400,0.1]$?
+
+
+

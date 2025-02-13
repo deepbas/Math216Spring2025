@@ -1169,32 +1169,32 @@
     "text": "Prompt: Medical research has shown that a certain type of chemotherapy is successful \\(70 \\%\\) of the time when used to treat skin cancer. Suppose five skin cancer patients are treated with this type of chemotherapy, and let \\(x\\) equal the number of successful cures out of the five. The probability distribution for the number of successful cures out of five is given in the following table:\n\n\n\\(x\\)\n0\n1\n2\n3\n4\n5\n\n\n\\(p(x)\\)\n0.002\n0.029\n0.132\n0.309\n0.360\n0.168\n\n\n\nFind \\(\\mu\\)\n\n\n\nFind \\(\\sigma\\)\n\n\n\nUse Chebyshev’s rule to approximate the probability that \\(x\\) falls into the interval \\(\\mu \\pm 2 \\sigma\\)"
   },
   {
-    "objectID": "Activity9.html#activity-1-discrete-probability-calculations",
-    "href": "Activity9.html#activity-1-discrete-probability-calculations",
+    "objectID": "Activity9.html#activity-1-probability-calculations",
+    "href": "Activity9.html#activity-1-probability-calculations",
     "title": "Activity 9",
     "section": "",
     "text": "Prompt: Medical research has shown that a certain type of chemotherapy is successful \\(70 \\%\\) of the time when used to treat skin cancer. Suppose five skin cancer patients are treated with this type of chemotherapy, and let \\(x\\) equal the number of successful cures out of the five. The probability distribution for the number of successful cures out of five is given in the following table:\n\n\n\\(x\\)\n0\n1\n2\n3\n4\n5\n\n\n\\(p(x)\\)\n0.002\n0.029\n0.132\n0.309\n0.360\n0.168\n\n\n\nFind \\(\\mu\\)\n\n\n\nFind \\(\\sigma\\)\n\n\n\nUse Chebyshev’s rule to approximate the probability that \\(x\\) falls into the interval \\(\\mu \\pm 2 \\sigma\\)"
   },
   {
-    "objectID": "Activity9.html#activity-2-calculation-of-probability",
-    "href": "Activity9.html#activity-2-calculation-of-probability",
+    "objectID": "Activity9.html#activity-2-probability-calculations",
+    "href": "Activity9.html#activity-2-probability-calculations",
     "title": "Activity 9",
-    "section": "Activity 2: Calculation of Probability",
-    "text": "Activity 2: Calculation of Probability\nPrompt: Calculate \\(P(x=2)\\) for \\(X \\sim \\operatorname{Bin}(5, 0.3)\\) using the binomial formula:\n\\[\n  P(x) = \\binom{n}{x} p^x q^{n-x}\n  \\]"
+    "section": "Activity 2: Probability Calculations",
+    "text": "Activity 2: Probability Calculations\nPrompt: Calculate \\(P(x=2)\\) for \\(X \\sim \\operatorname{Bin}(5, 0.3)\\) using the binomial formula:\n\\[\n  P(x) = \\binom{n}{x} p^x q^{n-x}\n  \\]"
   },
   {
-    "objectID": "Activity9.html#activity-3-calaulations-of-probability",
-    "href": "Activity9.html#activity-3-calaulations-of-probability",
+    "objectID": "Activity9.html#activity-3-probability-calculations",
+    "href": "Activity9.html#activity-3-probability-calculations",
     "title": "Activity 9",
-    "section": "Activity 3: Calaulations of Probability",
-    "text": "Activity 3: Calaulations of Probability\nPrompt: The Heart Association claims that only 10% of U.S. adults over 30 years of age meet the minimum requirements established by the President’s Council on Fitness, Sports, and Nutrition. Suppose four adults are randomly selected and each is given the fitness test. Let \\(X\\) represent the number of the four adults who pass the fitness test. Is \\(X\\) a binomial random variable? Why? What is the probability of \\(X=3\\) ?"
+    "section": "Activity 3: Probability Calculations",
+    "text": "Activity 3: Probability Calculations\nPrompt: The Heart Association claims that only 10% of U.S. adults over 30 years of age meet the minimum requirements established by the President’s Council on Fitness, Sports, and Nutrition. Suppose four adults are randomly selected and each is given the fitness test. Let \\(X\\) represent the number of the four adults who pass the fitness test. Is \\(X\\) a binomial random variable? Why? What is the probability of \\(X=3\\) ?"
   },
   {
-    "objectID": "Activity9.html#activity-4-calculations-of-probability",
-    "href": "Activity9.html#activity-4-calculations-of-probability",
+    "objectID": "Activity9.html#activity-4-probability-calculations",
+    "href": "Activity9.html#activity-4-probability-calculations",
     "title": "Activity 9",
-    "section": "Activity 4: Calculations of Probability",
-    "text": "Activity 4: Calculations of Probability\nPrompt: What is the mean, variance, and standard deviation of \\(\\textbf{Bin}[4,0.1]\\) , \\(\\textbf{Bin}[40,0.1]\\), and \\(\\textbf{Bin}[400,0.1]\\)?"
+    "section": "Activity 4: Probability Calculations",
+    "text": "Activity 4: Probability Calculations\nPrompt: What is the mean, variance, and standard deviation of \\(\\textbf{Bin}[4,0.1]\\) , \\(\\textbf{Bin}[40,0.1]\\), and \\(\\textbf{Bin}[400,0.1]\\)?"
   },
   {
     "objectID": "Activity11.html",
