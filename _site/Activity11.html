@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<meta name="generator" content="quarto-99.9.9">
+<meta name="generator" content="quarto-1.5.56">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <title>Activity 11 – Math 216: Statistical Thinking</title>
 <style>
@@ -25,18 +25,17 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-494121dfa8658343c03537e94414993d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-a0649ace7b9e9e15dfb5fe311d767a49.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-9e2db6d60132874137d35cd80df6d385.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-c2299866e9c1ed9e4d64cbb04b200562.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark"><script id="quarto-search-options" type="application/json">{
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark"><script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
@@ -62,7 +61,32 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
-}</script><link rel="stylesheet" href="styles.css">
+}</script><script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script><script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script><link rel="stylesheet" href="styles.css">
 </head>
 <body class="nav-fixed">
 
@@ -124,6 +148,10 @@ ul.task-list li input[type="checkbox"] {
     <a class="dropdown-item" href="./Day8.html" target="_blank">
  <span class="dropdown-text">Lecture 8</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./Day9.html" target="_blank">
+ <span class="dropdown-text">Lecture 9</span></a>
+  </li>  
     </ul>
 </li>
   <li class="nav-item dropdown ">
@@ -163,6 +191,10 @@ ul.task-list li input[type="checkbox"] {
     <a class="dropdown-item" href="./Activity8.html">
  <span class="dropdown-text">Activity 8</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./Activity9.html">
+ <span class="dropdown-text">Activity 9</span></a>
+  </li>  
     </ul>
 </li>
   <li class="nav-item dropdown ">
@@ -185,18 +217,25 @@ ul.task-list li input[type="checkbox"] {
     </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
+   
+  <ul>
+<li><a href="#activity-1-discrete-probability-calculations" id="toc-activity-1-discrete-probability-calculations" class="nav-link active" data-scroll-target="#activity-1-discrete-probability-calculations">Activity 1: Discrete Probability Calculations</a></li>
+  <li><a href="#activity-2-calculation-of-probability" id="toc-activity-2-calculation-of-probability" class="nav-link" data-scroll-target="#activity-2-calculation-of-probability">Activity 2: Calculation of Probability</a></li>
+  <li><a href="#activity-3-calaulations-of-probability" id="toc-activity-3-calaulations-of-probability" class="nav-link" data-scroll-target="#activity-3-calaulations-of-probability">Activity 3: Calaulations of Probability</a></li>
+  <li><a href="#activity-4-calculations-of-probability" id="toc-activity-4-calculations-of-probability" class="nav-link" data-scroll-target="#activity-4-calculations-of-probability">Activity 4: Calculations of Probability</a></li>
+  </ul></nav>
     </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
+<main class="content column-page-left" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
 <h1 class="title">Activity 11</h1>
 <p class="subtitle lead">MATH 216: Statistical Thinking</p>
 </div>
 
 
 
-<div class="quarto-title-meta column-page">
+<div class="quarto-title-meta column-page-left">
 
     
   
@@ -205,10 +244,51 @@ ul.task-list li input[type="checkbox"] {
   
 
 
-</header>
+</header><section id="activity-1-discrete-probability-calculations" class="level2"><h2 class="anchored" data-anchor-id="activity-1-discrete-probability-calculations">Activity 1: Discrete Probability Calculations</h2>
+<p><strong>Prompt</strong>: Medical research has shown that a certain type of chemotherapy is successful <span class="math inline">\(70 \%\)</span> of the time when used to treat skin cancer. Suppose five skin cancer patients are treated with this type of chemotherapy, and let <span class="math inline">\(x\)</span> equal the number of successful cures out of the five. The probability distribution for the number of successful cures out of five is given in the following table:</p>
+<table class="caption-top table">
+<thead><tr class="header">
+<th><span class="math inline">\(x\)</span></th>
+<th>0</th>
+<th>1</th>
+<th>2</th>
+<th>3</th>
+<th>4</th>
+<th>5</th>
+</tr></thead>
+<tbody><tr class="odd">
+<td><span class="math inline">\(p(x)\)</span></td>
+<td>0.002</td>
+<td>0.029</td>
+<td>0.132</td>
+<td>0.309</td>
+<td>0.360</td>
+<td>0.168</td>
+</tr></tbody>
+</table>
+<ol type="a">
+<li>Find <span class="math inline">\(\mu\)</span>
+</li>
+</ol>
+<ol start="2" type="a">
+<li>Find <span class="math inline">\(\sigma\)</span>
+</li>
+</ol>
+<ol start="3" type="a">
+<li>Use Chebyshev’s rule to approximate the probability that <span class="math inline">\(x\)</span> falls into the interval <span class="math inline">\(\mu \pm 2 \sigma\)</span>
+</li>
+</ol></section><section id="activity-2-calculation-of-probability" class="level2"><h2 class="anchored" data-anchor-id="activity-2-calculation-of-probability">Activity 2: Calculation of Probability</h2>
+<p><strong>Prompt</strong>: Calculate <span class="math inline">\(P(x=2)\)</span> for <span class="math inline">\(X \sim \operatorname{Bin}(5, 0.3)\)</span> using the binomial formula:</p>
+<p><span class="math display">\[
+  P(x) = \binom{n}{x} p^x q^{n-x}
+  \]</span></p>
+</section><section id="activity-3-calaulations-of-probability" class="level2"><h2 class="anchored" data-anchor-id="activity-3-calaulations-of-probability">Activity 3: Calaulations of Probability</h2>
+<p><strong>Prompt</strong>: The Heart Association claims that only 10% of U.S. adults over 30 years of age meet the minimum requirements established by the President’s Council on Fitness, Sports, and Nutrition. Suppose four adults are randomly selected and each is given the fitness test. Let <span class="math inline">\(X\)</span> represent the number of the four adults who pass the fitness test. Is <span class="math inline">\(X\)</span> a binomial random variable? Why? What is the probability of <span class="math inline">\(X=3\)</span> ?</p>
+</section><section id="activity-4-calculations-of-probability" class="level2"><h2 class="anchored" data-anchor-id="activity-4-calculations-of-probability">Activity 4: Calculations of Probability</h2>
+<p><strong>Prompt</strong>: What is the mean, variance, and standard deviation of <span class="math inline">\(\textbf{Bin}[4,0.1]\)</span> , <span class="math inline">\(\textbf{Bin}[40,0.1]\)</span>, and <span class="math inline">\(\textbf{Bin}[400,0.1]\)</span>?</p>
 
 
-</main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+</section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -434,6 +514,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -544,6 +626,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
+      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {

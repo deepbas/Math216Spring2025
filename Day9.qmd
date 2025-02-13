@@ -53,47 +53,23 @@ yt <- 0
 ![](images/prob_chebyshev.png)
 
 
-
-
-##
-::: font50
-> Example 1: Medical research has shown that a certain type of chemotherapy is successful $70 \%$ of the time when used to treat skin cancer. Suppose five skin cancer patients are treated with this type of chemotherapy, and let $x$ equal the number of successful cures out of the five. The probability distribution for the number of successful cures out of five is given in the following table:
-
-| $x$   | 0     | 1     | 2     | 3     | 4     | 5     |
-|-------|-------|-------|-------|-------|-------|-------|
-| $p(x)$ | 0.002 | 0.029 | 0.132 | 0.309 | 0.360 | 0.168 |
-
-<br>
-
-a. Find $\mu$
-
-<br>
-
-b. Find $\sigma$
-
-<br>
-
-c. Use Chebyshev's rule to approximate the probability that $x$ falls into the interval $\mu \pm 2 \sigma$
-
-
-:::
-
-
-
 ## Introduction to Binomial Random Variables{.font80}
 
-::: cle5
+::: cle6
 ::: font80
 
 - **Context of Binomial Experiments**:
+
   - Used to model situations with two distinct outcomes.
   - Example: Flipping a coin results in either a Head (Success, $S$) or Tail (Failure, $F$).
 
 #### Two Possible Outcomes:
+
 - **Success** $(S)$
 - **Failure** $(F)$
 
 #### Consistent Probability:
+
 - Probability of success $(p)$
 - Probability of failure $(q = 1 - p)$
 
@@ -103,14 +79,16 @@ c. Use Chebyshev's rule to approximate the probability that $x$ falls into the i
 
 ## Characteristics of Binomial Experiments{.font80}
 
-::: cle6
+::: cle8
 ::: font80
 
 - **Essential Features**:
+
   - **Fixed Number of Trials** $(n)$: Each experiment consists of $n$ identical and independent trials.
   - **Stable Probabilities**: The probability of success $(p)$ and failure $(q = 1 - p)$ remains constant across trials.
 
 ### Key Points:
+
 - **Independence of Trials**: Each trial's outcome does not influence another.
 - **Identical Trials**: All trials follow the same probability model.
 
@@ -136,7 +114,7 @@ c. Use Chebyshev's rule to approximate the probability that $x$ falls into the i
 ## The Binomial Probability Formula
 
 ::: cle8
-::: font60
+::: font70
 
 - **Calculating Probabilities**:
   - The probability of exactly $x$ successes in $n$ trials is given by the binomial formula:
@@ -155,19 +133,11 @@ $$
 :::
 
 
-##
-
-::: font50
-> Example 2: The Heart Association claims that only 10\% of U.S. adults over 30 years of age meet the minimum requirements established by the President's Council on Fitness, Sports, and Nutrition. Suppose four adults are randomly selected and each is given the fitness test. Let $X$ represent the number of the four adults who pass the fitness test. Is $X$ a binomial random variable? Why? What is the probability of $X=3$ ?
-
-:::
-
-
 
 ##
 
 ::: font50
-> Example 3: Refer to Example 2. Use the formula for a binomial random variable to find the probability distribution of $x$, where $x$ is the number of adults who pass the fitness test.
+> Refer to Activity 3. Use the formula for a binomial random variable to find the probability distribution of $x$, where $x$ is the number of adults who pass the fitness test.
 
 \begin{align*}
 \begin{aligned}
@@ -312,11 +282,5 @@ As $n$ increases, the binomial distribution approximates a bell-shaped curve.
 :::
 :::
 
-##
 
-::: font60
-> Example 4: What is the mean, variance, and standard deviation of $Bin[4,0.1], Bin[40,0.1], Bin[400,0.1]$?
-:::
-
-##
 

@@ -21,7 +21,6 @@ library(ggplot2)
 3. Create a probability distribution table for $x$.
 
 
-
 ### Activity 2: Discrete Probability Distribution
 
 **Prompt**: The random variable $x$ has the discrete probability distribution shown here:
