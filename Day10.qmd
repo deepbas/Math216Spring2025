@@ -100,7 +100,7 @@ p(x)&=\frac{\lambda^x e^{-\lambda}}{x!}\quad(x=0,1,2,\ldots)
 
 
 
-## Example 1: Traffic Monitoring
+## Traffic Monitoring
 
 ::: cle8
 ::: font80
@@ -118,7 +118,7 @@ Using $\lambda=3$,
 :::
 :::
 
-## Example 2: Quality Control in Manufacturing {.font80}
+## Quality Control in Manufacturing {.font80}
 
 ::: cle9
 
@@ -133,32 +133,6 @@ Using $\lambda=2$,
 
 :::
 
-
-## Example 3: Ecological Research
-
-::: hljs
-::: font80
-
-**Scenario**: Weekly sightings of blue whales are recorded, with an average of 2.6 sightings.
-
-**a.** Find the mean and standard deviation.
-
-<br>
-<br>
-
-
-**b.** Probability of exactly five sightings:
-
-<br>
-<br>
-
-
-**c.** Probability of fewer than two sightings:
-
-<br>
-
-:::
-:::
 
 
 
@@ -176,6 +150,11 @@ probability_exactly_3 <- dpois(3, lambda = 2.2)
 probability_exactly_3
 ```
 
+:::
+
+## Poisson Distribution Functions in R {.font60}
+
+::: cle13
 
 The `ppois` function computes the cumulative probability $P(X \leq x)$ of the Poisson distribution.
 
