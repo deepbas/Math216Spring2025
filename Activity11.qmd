@@ -14,3 +14,76 @@ library(ggplot2)
 
 
 
+## Activity 1: Think-Pair-Share
+
+1. **Think:** Reflect on the following question:  
+
+   - *Why is the probability of a continuous random variable taking on a specific value always zero?*  
+   - *How does the area under the PDF curve relate to probability?*
+
+2. **Pair:** Discuss your thoughts with a partner and come up with a joint explanation.
+
+3. **Share:** Share your insights with the class, focusing on how the properties of PDFs differ from those of discrete probability mass functions.
+
+
+## Activity 2: Quiz
+
+- **Question:** Suppose $X$ is uniformly distributed between $a = 2$ and $b = 8$.  
+
+  - What is the probability that $X$ falls between 3 and 5?  
+  - Calculate the mean and variance of $X$.
+
+**Instructions:** Use the formula for the uniform distribution: 
+
+- $P(c \leq X \leq d) = \frac{d-c}{b-a}$  
+- $\mu = \frac{a+b}{2}$  
+- $\sigma^2 = \frac{(b-a)^2}{12}$
+
+
+## Activity 3: Data Exploration
+
+```{r}
+library(ggplot2)
+
+# Generate uniform distribution data
+set.seed(123)  # For reproducibility
+a <- 0
+b <- 6
+x <- runif(1000, a, b)
+
+# Create a data frame
+data <- data.frame(x = x)
+
+# Plot using ggplot2
+ggplot(data, aes(x = x)) +
+  geom_histogram(aes(y = after_stat(density)), bins = 30, fill = "lightblue", color = "black") +
+  geom_function(fun = dunif, args = list(min = a, max = b), color = "red", linewidth = 1.5) +
+  labs(
+    title = "Uniform Distribution PDF",
+    x = "X",
+    y = "Density"
+  ) +
+  theme_minimal()
+```
+
+**Task:** 
+
+- Modify the values of $a$ and $b$ to see how the distribution changes.  
+- Calculate the mean and variance of the generated data and compare them to the theoretical values.
+
+
+## Activity 4: Probability Calculations
+
+**Prompt:** An unprincipled used-car dealer sells a car to an unsuspecting buyer, even though the dealer knows that the car will have a major breakdown within the next 6 months. The dealer provides a warranty of 45 days on all cars sold. Let $x$ represent the length of time until the breakdown occurs. Assume that x is a uniform random variable with values between 0 and 6 months.
+
+a. Calculate and interpret the mean and standard deviation of $X$.
+
+
+b. Graph the probability distribution of $X$ , and show the mean on the horizontal axis. Also show one and two-standard-deviation intervals around the mean.
+
+
+c. Calculate the probability that the breakdown occurs while the car is still under warranty.
+
+
+
+

@@ -214,15 +214,15 @@ To find <span class="math inline">\(P(a \leq X \leq b)\)</span>, compute the are
 <li><p><strong>Equal Likelihood</strong>:<br>
 It’s ideal for modeling fair processes, such as random number generation or selecting a random time within a fixed interval.</p></li>
 <li><p><strong>Easy Calculations</strong>:<br>
-Probabilities are straightforward to compute. For example, <span class="math inline">\(P(c \leq X \leq d) = (d-c) \times \frac{1}{b-a}\)</span>.</p></li>
+Probabilities are straightforward to compute. For example, <span class="math inline">\(P(a \leq X \leq b) = (b-c) \times \frac{1}{d-c}\)</span>.</p></li>
 </ul>
 </div>
 </div>
 </div>
 </div>
 </section>
-<section id="statistical-measures-of-the-uniform-distribution" class="slide level2">
-<h2>Statistical Measures of the Uniform Distribution</h2>
+<section id="statistical-measures-of-unifab" class="slide level2">
+<h2>Statistical Measures of <span class="math inline">\(Unif(a,b)\)</span></h2>
 <div class="font80">
 <div class="cle13">
 <ul>
@@ -230,21 +230,6 @@ Probabilities are straightforward to compute. For example, <span class="math inl
 Both are located at the center of the interval: <span class="math inline">\(\mu = \frac{a+b}{2}\)</span>.</p></li>
 <li><p><strong>Variance</strong>:<br>
 The spread of the distribution is <span class="math inline">\(\sigma^2 = \frac{(b-a)^2}{12}\)</span>. A wider range leads to greater variability.</p></li>
-</ul>
-</div>
-</div>
-</section>
-<section id="real-world-applications" class="slide level2">
-<h2>Real-World Applications</h2>
-<div class="font80">
-<div class="cle15">
-<ul>
-<li><p><strong>Simulations</strong>:<br>
-Used in computer algorithms to generate random numbers for simulations and modeling.</p></li>
-<li><p><strong>Quality Control</strong>:<br>
-Helps predict the likelihood of defects when manufacturing tolerances are uniformly distributed.</p></li>
-<li><p><strong>Everyday Scenarios</strong>:<br>
-From predicting wait times for public transportation to modeling the lifespan of products, the uniform distribution is a versatile tool.</p></li>
 </ul>
 </div>
 </div>
@@ -273,9 +258,78 @@ From predicting wait times for public transportation to modeling the lifespan of
 <li>Calculate the probability that the breakdown occurs while the car is still under warranty.</li>
 </ol>
 </div>
-
-
 </section>
+<section id="the-normal-distribution" class="slide level2 font80">
+<h2>The Normal Distribution</h2>
+<div class="cle2">
+<div class="font80">
+<p>The Normal Distribution is a continuous probability distribution that is symmetrical around its mean, represented by <span class="math inline">\(\mu\)</span>. This distribution is crucial in statistics and is often used to represent real-world variables.</p>
+<p><span class="math display">\[
+f(x)=\frac{1}{\sigma \sqrt{2 \pi}} \exp \left(-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2\right)
+\]</span></p>
+<ul>
+<li><span class="math inline">\(\mu=\)</span> Mean (average, expected value)</li>
+<li><span class="math inline">\(\sigma=\)</span> Standard deviation</li>
+<li><span class="math inline">\(\pi \approx 3.141592653589\)</span></li>
+<li><span class="math inline">\(e \approx 2.71828\)</span></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="applications-of-the-normal-distribution" class="slide level2 font80">
+<h2>Applications of the Normal Distribution</h2>
+<div class="cle10">
+<div class="font80">
+<p>Many real-world phenomena are well approximated by the normal distribution. For example:</p>
+<ul>
+<li>Measurement errors, e.g., blood pressure readings.</li>
+<li>Yearly rainfall amounts in certain regions.</li>
+</ul>
+<p>These applications underscore the normal distribution’s role in statistical inference and various practical scenarios.</p>
+</div>
+</div>
+</section>
+<section id="applications-of-the-normal-distribution-1" class="slide level2 font80">
+<h2>Applications of the Normal Distribution</h2>
+<div class="cle9">
+<div class="font80">
+<p>To determine if data approximates a normal distribution, one can compare the sample’s frequency distribution against the theoretical normal curve:</p>
+<ul>
+<li>Graphical methods: Q-Q plots, histograms.</li>
+<li>Statistical tests: Shapiro-Wilk test, Anderson-Darling test.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="the-standard-normal-distribution" class="slide level2 font80">
+<h2>The Standard Normal Distribution</h2>
+<div class="cle7">
+<div class="font80">
+<p>A special case of the normal distribution is the standard normal distribution, where <span class="math inline">\(\mu=0\)</span> and <span class="math inline">\(\sigma=1\)</span>. It is used extensively to simplify problems in statistics.</p>
+<p><span class="math display">\[
+f(z)=\frac{1}{\sqrt{2 \pi}} \exp \left(-\frac{1}{2} z^2\right)
+\]</span></p>
+<ul>
+<li>Denoted as <span class="math inline">\(Z\)</span> for a standard normal variable.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="the-standard-normal-distribution-1" class="slide level2 font70">
+<h2>The Standard Normal Distribution</h2>
+<div class="cle13">
+<div class="font80">
+<p>The probability that a normal random variable falls between two values is the area under the curve between those values. This area can be computed using:</p>
+<ul>
+<li>Z-tables for the standard normal distribution.</li>
+<li>Software functions, e.g., <code>pnorm</code> in R</li>
+</ul>
+</div>
+</div>
+
+
+
+<img data-src="Day11_files/figure-revealjs/unnamed-chunk-1-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">

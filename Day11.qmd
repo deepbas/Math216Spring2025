@@ -46,8 +46,6 @@ yt <- 0
 ```
 
 
-
-
 ## Introduction to Continuous Probability Distributions
 
 ::: cle10
@@ -125,7 +123,7 @@ Why Use the Uniform Distribution?
   It’s ideal for modeling fair processes, such as random number generation or selecting a random time within a fixed interval.
 
 - **Easy Calculations**:  
-  Probabilities are straightforward to compute. For example, $P(c \leq X \leq d) = (d-c) \times \frac{1}{b-a}$.
+  Probabilities are straightforward to compute. For example, $P(a \leq X \leq b) = (b-c) \times \frac{1}{d-c}$.
 
 :::
 :::
@@ -134,7 +132,7 @@ Why Use the Uniform Distribution?
 
 
 
-## Statistical Measures of the Uniform Distribution
+## Statistical Measures of $Unif(a,b)$
 
 ::: font80
 ::: cle13
@@ -148,26 +146,8 @@ Why Use the Uniform Distribution?
 :::
 :::
 
----
 
-## Real-World Applications
 
-::: font80
-::: cle15
-
-- **Simulations**:  
-  Used in computer algorithms to generate random numbers for simulations and modeling.
-
-- **Quality Control**:  
-  Helps predict the likelihood of defects when manufacturing tolerances are uniformly distributed.
-
-- **Everyday Scenarios**:  
-  From predicting wait times for public transportation to modeling the lifespan of products, the uniform distribution is a versatile tool.
-
-:::
-:::
-
----
 
 ## 
 
@@ -191,4 +171,107 @@ b. Graph the probability distribution of $X$ , and show the mean on the horizont
 c. Calculate the probability that the breakdown occurs while the car is still under warranty.
 
 :::
+
+
+
+
+## The Normal Distribution {.font80}
+
+
+::: cle2
+::: font80
+
+The Normal Distribution is a continuous probability distribution that is symmetrical around its mean, represented by $\mu$. This distribution is crucial in statistics and is often used to represent real-world variables.
+
+$$
+f(x)=\frac{1}{\sigma \sqrt{2 \pi}} \exp \left(-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2\right)
+$$
+
+- $\mu=$ Mean (average, expected value)
+- $\sigma=$ Standard deviation
+- $\pi \approx 3.141592653589$
+- $e \approx 2.71828$
+
+:::
+:::
+
+
+## Applications of the Normal Distribution {.font80}
+
+
+::: cle10
+::: font80
+
+Many real-world phenomena are well approximated by the normal distribution. For example:
+
+- Measurement errors, e.g., blood pressure readings.
+- Yearly rainfall amounts in certain regions.
+
+These applications underscore the normal distribution's role in statistical inference and various practical scenarios.
+
+
+:::
+:::
+
+
+## Applications of the Normal Distribution {.font80}
+
+
+::: cle9
+::: font80
+
+To determine if data approximates a normal distribution, one can compare the sample's frequency distribution against the theoretical normal curve:
+
+- Graphical methods: Q-Q plots, histograms.
+- Statistical tests: Shapiro-Wilk test, Anderson-Darling test.
+
+:::
+:::
+
+
+## The Standard Normal Distribution {.font80}
+
+
+::: cle7
+::: font80
+
+A special case of the normal distribution is the standard normal distribution, where $\mu=0$ and $\sigma=1$. It is used extensively to simplify problems in statistics.
+
+$$
+f(z)=\frac{1}{\sqrt{2 \pi}} \exp \left(-\frac{1}{2} z^2\right)
+$$
+
+- Denoted as $Z$ for a standard normal variable.
+
+:::
+:::
+
+
+## The Standard Normal Distribution {.font70}
+
+
+::: cle13
+::: font80
+
+The probability that a normal random variable falls between two values is the area under the curve between those values. This area can be computed using:
+
+- Z-tables for the standard normal distribution.
+- Software functions, e.g., `pnorm` in R 
+
+:::
+:::
+
+```{r, echo=FALSE, fig.align='center'}
+library(ggplot2)
+
+ggplot(data = data.frame(x = c(-4, 4)), aes(x)) + 
+  stat_function(fun = dnorm, args = list(mean = 0, sd = 1)) +
+  xlab("z") + ylab("f(z)") + 
+  theme(plot.title = element_text(hjust = 0.5),
+        axis.text.y = element_blank(),
+        axis.ticks.y = element_blank(),
+        axis.line = element_line(colour = "black"))
+
+```
+
 

@@ -399,41 +399,6 @@
     "text": "Example 2: A manufacturer of microwave ovens is trying to determine the length of warranty period it should attach to its magnetron tube, the most critical component in the oven. Preliminary testing has shown that the length of life (in years), \\(x\\), of a magnetron tube has an exponential probability distribution with \\(\\theta=6.25\\).\n\n\nFind the mean and standard deviation of \\(x\\).\nSuppose a warranty period of five years is attached to the magnetron tube. What fraction of tubes must the manufacturer plan to replace, assuming that the exponential model with \\(\\theta=6.25\\) is correct?\nWhat should the warranty period be if the manufacturer wants to replace only \\(27.5 \\%\\) of the tubes?"
   },
   {
-    "objectID": "Day12.html#the-normal-distribution",
-    "href": "Day12.html#the-normal-distribution",
-    "title": "Day 12",
-    "section": "The Normal Distribution",
-    "text": "The Normal Distribution\n\n\nThe Normal Distribution is a continuous probability distribution that is symmetrical around its mean, represented by \\(\\mu\\). This distribution is crucial in statistics and is often used to represent real-world variables.\n\\[\nf(x)=\\frac{1}{\\sigma \\sqrt{2 \\pi}} \\exp \\left(-\\frac{1}{2}\\left(\\frac{x-\\mu}{\\sigma}\\right)^2\\right)\n\\]\n\n\\(\\mu=\\) Mean (average, expected value)\n\\(\\sigma=\\) Standard deviation\n\\(\\pi \\approx 3.141592653589\\)\n\\(e \\approx 2.71828\\)"
-  },
-  {
-    "objectID": "Day12.html#applications-of-the-normal-distribution",
-    "href": "Day12.html#applications-of-the-normal-distribution",
-    "title": "Day 12",
-    "section": "Applications of the Normal Distribution",
-    "text": "Applications of the Normal Distribution\n\n\nMany real-world phenomena are well approximated by the normal distribution. For example:\n\nMeasurement errors, e.g., blood pressure readings.\nYearly rainfall amounts in certain regions.\n\nThese applications underscore the normal distribution’s role in statistical inference and various practical scenarios."
-  },
-  {
-    "objectID": "Day12.html#applications-of-the-normal-distribution-1",
-    "href": "Day12.html#applications-of-the-normal-distribution-1",
-    "title": "Day 12",
-    "section": "Applications of the Normal Distribution",
-    "text": "Applications of the Normal Distribution\n\n\nTo determine if data approximates a normal distribution, one can compare the sample’s frequency distribution against the theoretical normal curve:\n\nGraphical methods: Q-Q plots, histograms.\nStatistical tests: Shapiro-Wilk test, Anderson-Darling test."
-  },
-  {
-    "objectID": "Day12.html#the-standard-normal-distribution",
-    "href": "Day12.html#the-standard-normal-distribution",
-    "title": "Day 12",
-    "section": "The Standard Normal Distribution",
-    "text": "The Standard Normal Distribution\n\n\nA special case of the normal distribution is the standard normal distribution, where \\(\\mu=0\\) and \\(\\sigma=1\\). It is used extensively to simplify problems in statistics.\n\\[\nf(z)=\\frac{1}{\\sqrt{2 \\pi}} \\exp \\left(-\\frac{1}{2} z^2\\right)\n\\]\n\nDenoted as \\(Z\\) for a standard normal variable."
-  },
-  {
-    "objectID": "Day12.html#the-standard-normal-distribution-1",
-    "href": "Day12.html#the-standard-normal-distribution-1",
-    "title": "Day 12",
-    "section": "The Standard Normal Distribution",
-    "text": "The Standard Normal Distribution\n\n\nThe probability that a normal random variable falls between two values is the area under the curve between those values. This area can be computed using:\n\nZ-tables for the standard normal distribution.\nSoftware functions, e.g., pnorm in R"
-  },
-  {
     "objectID": "Day12.html#section",
     "href": "Day12.html#section",
     "title": "Day 12",
@@ -529,21 +494,14 @@
     "href": "Day11.html#visualizing-and-calculating-probabilities",
     "title": "Day 11",
     "section": "Visualizing and Calculating Probabilities",
-    "text": "Visualizing and Calculating Probabilities\n\n\n\n\n\nWhy Use the Uniform Distribution?\n\n\n\nEqual Likelihood:\nIt’s ideal for modeling fair processes, such as random number generation or selecting a random time within a fixed interval.\nEasy Calculations:\nProbabilities are straightforward to compute. For example, \\(P(c \\leq X \\leq d) = (d-c) \\times \\frac{1}{b-a}\\)."
+    "text": "Visualizing and Calculating Probabilities\n\n\n\n\n\nWhy Use the Uniform Distribution?\n\n\n\nEqual Likelihood:\nIt’s ideal for modeling fair processes, such as random number generation or selecting a random time within a fixed interval.\nEasy Calculations:\nProbabilities are straightforward to compute. For example, \\(P(a \\leq X \\leq b) = (b-c) \\times \\frac{1}{d-c}\\)."
   },
   {
-    "objectID": "Day11.html#statistical-measures-of-the-uniform-distribution",
-    "href": "Day11.html#statistical-measures-of-the-uniform-distribution",
+    "objectID": "Day11.html#statistical-measures-of-unifab",
+    "href": "Day11.html#statistical-measures-of-unifab",
     "title": "Day 11",
-    "section": "Statistical Measures of the Uniform Distribution",
-    "text": "Statistical Measures of the Uniform Distribution\n\n\n\nMean and Median:\nBoth are located at the center of the interval: \\(\\mu = \\frac{a+b}{2}\\).\nVariance:\nThe spread of the distribution is \\(\\sigma^2 = \\frac{(b-a)^2}{12}\\). A wider range leads to greater variability."
-  },
-  {
-    "objectID": "Day11.html#real-world-applications",
-    "href": "Day11.html#real-world-applications",
-    "title": "Day 11",
-    "section": "Real-World Applications",
-    "text": "Real-World Applications\n\n\n\nSimulations:\nUsed in computer algorithms to generate random numbers for simulations and modeling.\nQuality Control:\nHelps predict the likelihood of defects when manufacturing tolerances are uniformly distributed.\nEveryday Scenarios:\nFrom predicting wait times for public transportation to modeling the lifespan of products, the uniform distribution is a versatile tool."
+    "section": "Statistical Measures of \\(Unif(a,b)\\)",
+    "text": "Statistical Measures of \\(Unif(a,b)\\)\n\n\n\nMean and Median:\nBoth are located at the center of the interval: \\(\\mu = \\frac{a+b}{2}\\).\nVariance:\nThe spread of the distribution is \\(\\sigma^2 = \\frac{(b-a)^2}{12}\\). A wider range leads to greater variability."
   },
   {
     "objectID": "Day11.html#section",
@@ -558,6 +516,41 @@
     "title": "Day 11",
     "section": "",
     "text": "Graph the probability distribution of \\(X\\) , and show the mean on the horizontal axis. Also show one and two-standard-deviation intervals around the mean.\n\n\n\n\n\nCalculate the probability that the breakdown occurs while the car is still under warranty."
+  },
+  {
+    "objectID": "Day11.html#the-normal-distribution",
+    "href": "Day11.html#the-normal-distribution",
+    "title": "Day 11",
+    "section": "The Normal Distribution",
+    "text": "The Normal Distribution\n\n\nThe Normal Distribution is a continuous probability distribution that is symmetrical around its mean, represented by \\(\\mu\\). This distribution is crucial in statistics and is often used to represent real-world variables.\n\\[\nf(x)=\\frac{1}{\\sigma \\sqrt{2 \\pi}} \\exp \\left(-\\frac{1}{2}\\left(\\frac{x-\\mu}{\\sigma}\\right)^2\\right)\n\\]\n\n\\(\\mu=\\) Mean (average, expected value)\n\\(\\sigma=\\) Standard deviation\n\\(\\pi \\approx 3.141592653589\\)\n\\(e \\approx 2.71828\\)"
+  },
+  {
+    "objectID": "Day11.html#applications-of-the-normal-distribution",
+    "href": "Day11.html#applications-of-the-normal-distribution",
+    "title": "Day 11",
+    "section": "Applications of the Normal Distribution",
+    "text": "Applications of the Normal Distribution\n\n\nMany real-world phenomena are well approximated by the normal distribution. For example:\n\nMeasurement errors, e.g., blood pressure readings.\nYearly rainfall amounts in certain regions.\n\nThese applications underscore the normal distribution’s role in statistical inference and various practical scenarios."
+  },
+  {
+    "objectID": "Day11.html#applications-of-the-normal-distribution-1",
+    "href": "Day11.html#applications-of-the-normal-distribution-1",
+    "title": "Day 11",
+    "section": "Applications of the Normal Distribution",
+    "text": "Applications of the Normal Distribution\n\n\nTo determine if data approximates a normal distribution, one can compare the sample’s frequency distribution against the theoretical normal curve:\n\nGraphical methods: Q-Q plots, histograms.\nStatistical tests: Shapiro-Wilk test, Anderson-Darling test."
+  },
+  {
+    "objectID": "Day11.html#the-standard-normal-distribution",
+    "href": "Day11.html#the-standard-normal-distribution",
+    "title": "Day 11",
+    "section": "The Standard Normal Distribution",
+    "text": "The Standard Normal Distribution\n\n\nA special case of the normal distribution is the standard normal distribution, where \\(\\mu=0\\) and \\(\\sigma=1\\). It is used extensively to simplify problems in statistics.\n\\[\nf(z)=\\frac{1}{\\sqrt{2 \\pi}} \\exp \\left(-\\frac{1}{2} z^2\\right)\n\\]\n\nDenoted as \\(Z\\) for a standard normal variable."
+  },
+  {
+    "objectID": "Day11.html#the-standard-normal-distribution-1",
+    "href": "Day11.html#the-standard-normal-distribution-1",
+    "title": "Day 11",
+    "section": "The Standard Normal Distribution",
+    "text": "The Standard Normal Distribution\n\n\nThe probability that a normal random variable falls between two values is the area under the curve between those values. This area can be computed using:\n\nZ-tables for the standard normal distribution.\nSoftware functions, e.g., pnorm in R"
   },
   {
     "objectID": "Day19.html#estimation-in-statistics",
