@@ -48,12 +48,18 @@ yt <- 0
 
 ## Introduction to Continuous Probability Distributions
 
-::: cle10
-::: font70
+::: cle11
+::: font80
 
 Continuous random variables are the backbone of modeling real-world phenomena where outcomes can take any value within a range. Unlike discrete variables, which deal with countable outcomes, continuous variables are described by smooth curves called **Probability Density Functions (PDFs)**.
+:::
+:::
 
-- **Key Features of PDFs**:
+
+## Key Features of PDFs
+
+::: font80
+::: cle6
   - **Area as Probability**: The probability that $X$ falls between $a$ and $b$ is the area under the PDF curve between these points.
   - **Non-negativity**: $f(x) \geq 0$ for all $x$.
   - **Total Probability**: The integral of $f(x)$ over its entire range equals 1, representing certainty.
@@ -149,34 +155,8 @@ Why Use the Uniform Distribution?
 
 
 
-## 
-
-::: font60
-
-> Example 1: An unprincipled used-car dealer sells a car to an unsuspecting buyer, even though the dealer knows that the car will have a major breakdown within the next 6 months. The dealer provides a warranty of 45 days on all cars sold. Let $x$ represent the length of time until the breakdown occurs. Assume that x is a uniform random variable with values between 0 and 6 months.
-
-a. Calculate and interpret the mean and standard deviation of $X$.
-
-:::
-
-##
-
-::: font60
-
-b. Graph the probability distribution of $X$ , and show the mean on the horizontal axis. Also show one and two-standard-deviation intervals around the mean.
-
-::: custom-space
-:::
-
-c. Calculate the probability that the breakdown occurs while the car is still under warranty.
-
-:::
-
-
-
 
 ## The Normal Distribution {.font80}
-
 
 ::: cle2
 ::: font80
@@ -199,10 +179,10 @@ $$
 ## Applications of the Normal Distribution {.font80}
 
 
-::: cle10
+::: cle13
 ::: font80
 
-Many real-world phenomena are well approximated by the normal distribution. For example:
+Many real-world phenomena are well approximated by the **normal distribution**. For example:
 
 - Measurement errors, e.g., blood pressure readings.
 - Yearly rainfall amounts in certain regions.
