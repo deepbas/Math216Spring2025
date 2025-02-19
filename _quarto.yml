@@ -44,9 +44,9 @@ website:
           - text: "Lecture 10"
             href: Day10.html
             target: "_blank"
-        #   - text: "Lecture 11"
-        #     href: Day11.html
-        #     target: "_blank"
+          - text: "Lecture 11"
+            href: Day11.html
+            target: "_blank"
         #   - text: "Lecture 12"
         #     href: Day12.html
         #     target: "_blank"
