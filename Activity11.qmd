@@ -13,7 +13,6 @@ library(ggplot2)
 ```
 
 
-
 ## Activity 1: Think-Pair-Share
 
 1. **Think:** Reflect on the following question:  
@@ -25,6 +24,8 @@ library(ggplot2)
 
 3. **Share:** Share your insights with the class, focusing on how the properties of PDFs differ from those of discrete probability mass functions.
 
+
+\vspace*{1in}
 
 ## Activity 2: Quiz
 
@@ -38,6 +39,8 @@ library(ggplot2)
 - $P(c \leq X \leq d) = \frac{d-c}{b-a}$  
 - $\mu = \frac{a+b}{2}$  
 - $\sigma^2 = \frac{(b-a)^2}{12}$
+
+\vspace*{1in}
 
 
 ## Activity 3: Data Exploration
@@ -56,8 +59,8 @@ data <- data.frame(x = x)
 
 # Plot using ggplot2
 ggplot(data, aes(x = x)) +
-  geom_histogram(aes(y = after_stat(density)), bins = 30, fill = "lightblue", color = "black") +
-  geom_function(fun = dunif, args = list(min = a, max = b), color = "red", linewidth = 1.5) +
+  geom_histogram(aes(y=after_stat(density)),bins = 30,fill="lightblue",color="black") +
+  geom_function(fun=dunif, args=list(min = a, max = b), color="red", linewidth=1.5) +
   labs(
     title = "Uniform Distribution PDF",
     x = "X",
@@ -71,6 +74,8 @@ ggplot(data, aes(x = x)) +
 - Modify the values of $a$ and $b$ to see how the distribution changes.  
 - Calculate the mean and variance of the generated data and compare them to the theoretical values.
 
+\vspace*{1in}
+
 
 ## Activity 4: Probability Calculations
 
@@ -78,8 +83,12 @@ ggplot(data, aes(x = x)) +
 
 a. Calculate and interpret the mean and standard deviation of $X$.
 
+\vspace*{0.5in}
+
 
 b. Graph the probability distribution of $X$ , and show the mean on the horizontal axis. Also show one and two-standard-deviation intervals around the mean.
+
+\vspace*{0.5in}
 
 
 c. Calculate the probability that the breakdown occurs while the car is still under warranty.
