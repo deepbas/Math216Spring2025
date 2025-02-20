@@ -46,6 +46,7 @@ library(ggplot2)
 ## Activity 3: Data Exploration
 
 ```{r}
+#| echo: true
 library(ggplot2)
 
 # Generate uniform distribution data

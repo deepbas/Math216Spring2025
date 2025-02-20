@@ -95,7 +95,7 @@
     "href": "Activity11.html#activity-3-data-exploration",
     "title": "Activity 11",
     "section": "Activity 3: Data Exploration",
-    "text": "Activity 3: Data Exploration\n\n\n\n\n\n\n\n\nTask:\n\nModify the values of \\(a\\) and \\(b\\) to see how the distribution changes.\n\nCalculate the mean and variance of the generated data and compare them to the theoretical values."
+    "text": "Activity 3: Data Exploration\n\nlibrary(ggplot2)\n\n# Generate uniform distribution data\nset.seed(123)  # For reproducibility\na &lt;- 0\nb &lt;- 6\nx &lt;- runif(1000, a, b)\n\n# Create a data frame\ndata &lt;- data.frame(x = x)\n\n# Plot using ggplot2\nggplot(data, aes(x = x)) +\n  geom_histogram(aes(y=after_stat(density)),bins = 30,fill=\"lightblue\",color=\"black\") +\n  geom_function(fun=dunif, args=list(min = a, max = b), color=\"red\", linewidth=1.5) +\n  labs(\n    title = \"Uniform Distribution PDF\",\n    x = \"X\",\n    y = \"Density\"\n  ) +\n  theme_minimal()\n\n\n\n\n\n\n\nTask:\n\nModify the values of \\(a\\) and \\(b\\) to see how the distribution changes.\n\nCalculate the mean and variance of the generated data and compare them to the theoretical values."
   },
   {
     "objectID": "Activity11.html#activity-4-probability-calculations",
