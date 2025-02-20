@@ -238,10 +238,10 @@ window.Quarto = {
         <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
    
   <ul>
-<li><a href="#activity-1-discrete-probability-calculations" id="toc-activity-1-discrete-probability-calculations" class="nav-link active" data-scroll-target="#activity-1-discrete-probability-calculations">Activity 1: Discrete Probability Calculations</a></li>
-  <li><a href="#activity-2-calculation-of-probability" id="toc-activity-2-calculation-of-probability" class="nav-link" data-scroll-target="#activity-2-calculation-of-probability">Activity 2: Calculation of Probability</a></li>
-  <li><a href="#activity-3-calaulations-of-probability" id="toc-activity-3-calaulations-of-probability" class="nav-link" data-scroll-target="#activity-3-calaulations-of-probability">Activity 3: Calaulations of Probability</a></li>
-  <li><a href="#activity-4-calculations-of-probability" id="toc-activity-4-calculations-of-probability" class="nav-link" data-scroll-target="#activity-4-calculations-of-probability">Activity 4: Calculations of Probability</a></li>
+<li><a href="#activity-1-think-pair-share" id="toc-activity-1-think-pair-share" class="nav-link active" data-scroll-target="#activity-1-think-pair-share">Activity 1: Think-Pair-Share</a></li>
+  <li><a href="#activity-2-quiz" id="toc-activity-2-quiz" class="nav-link" data-scroll-target="#activity-2-quiz">Activity 2: Quiz</a></li>
+  <li><a href="#activity-3-data-exploration" id="toc-activity-3-data-exploration" class="nav-link" data-scroll-target="#activity-3-data-exploration">Activity 3: Data Exploration</a></li>
+  <li><a href="#activity-4-probability-calculations" id="toc-activity-4-probability-calculations" class="nav-link" data-scroll-target="#activity-4-probability-calculations">Activity 4: Probability Calculations</a></li>
   </ul></nav>
     </div>
 <!-- main -->
@@ -261,48 +261,64 @@ window.Quarto = {
   
 
 
-</header><section id="activity-1-discrete-probability-calculations" class="level2"><h2 class="anchored" data-anchor-id="activity-1-discrete-probability-calculations">Activity 1: Discrete Probability Calculations</h2>
-<p><strong>Prompt</strong>: Medical research has shown that a certain type of chemotherapy is successful <span class="math inline">\(70 \%\)</span> of the time when used to treat skin cancer. Suppose five skin cancer patients are treated with this type of chemotherapy, and let <span class="math inline">\(x\)</span> equal the number of successful cures out of the five. The probability distribution for the number of successful cures out of five is given in the following table:</p>
-<table class="caption-top table">
-<thead><tr class="header">
-<th><span class="math inline">\(x\)</span></th>
-<th>0</th>
-<th>1</th>
-<th>2</th>
-<th>3</th>
-<th>4</th>
-<th>5</th>
-</tr></thead>
-<tbody><tr class="odd">
-<td><span class="math inline">\(p(x)\)</span></td>
-<td>0.002</td>
-<td>0.029</td>
-<td>0.132</td>
-<td>0.309</td>
-<td>0.360</td>
-<td>0.168</td>
-</tr></tbody>
-</table>
-<ol type="a">
-<li>Find <span class="math inline">\(\mu\)</span>
+</header><section id="activity-1-think-pair-share" class="level2"><h2 class="anchored" data-anchor-id="activity-1-think-pair-share">Activity 1: Think-Pair-Share</h2>
+<ol type="1">
+<li>
+<p><strong>Think:</strong> Reflect on the following question:</p>
+<ul>
+<li>
+<em>Why is the probability of a continuous random variable taking on a specific value always zero?</em><br>
 </li>
+<li><em>How does the area under the PDF curve relate to probability?</em></li>
+</ul>
+</li>
+<li><p><strong>Pair:</strong> Discuss your thoughts with a partner and come up with a joint explanation.</p></li>
+<li><p><strong>Share:</strong> Share your insights with the class, focusing on how the properties of PDFs differ from those of discrete probability mass functions.</p></li>
+</ol></section><section id="activity-2-quiz" class="level2"><h2 class="anchored" data-anchor-id="activity-2-quiz">Activity 2: Quiz</h2>
+<ul>
+<li>
+<p><strong>Question:</strong> Suppose <span class="math inline">\(X\)</span> is uniformly distributed between <span class="math inline">\(a = 2\)</span> and <span class="math inline">\(b = 8\)</span>.</p>
+<ul>
+<li>What is the probability that <span class="math inline">\(X\)</span> falls between 3 and 5?<br>
+</li>
+<li>Calculate the mean and variance of <span class="math inline">\(X\)</span>.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Instructions:</strong> Use the formula for the uniform distribution:</p>
+<ul>
+<li>
+<span class="math inline">\(P(c \leq X \leq d) = \frac{d-c}{b-a}\)</span><br>
+</li>
+<li>
+<span class="math inline">\(\mu = \frac{a+b}{2}\)</span><br>
+</li>
+<li><span class="math inline">\(\sigma^2 = \frac{(b-a)^2}{12}\)</span></li>
+</ul></section><section id="activity-3-data-exploration" class="level2"><h2 class="anchored" data-anchor-id="activity-3-data-exploration">Activity 3: Data Exploration</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure"><p><img src="Activity11_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><strong>Task:</strong></p>
+<ul>
+<li>Modify the values of <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> to see how the distribution changes.<br>
+</li>
+<li>Calculate the mean and variance of the generated data and compare them to the theoretical values.</li>
+</ul></section><section id="activity-4-probability-calculations" class="level2"><h2 class="anchored" data-anchor-id="activity-4-probability-calculations">Activity 4: Probability Calculations</h2>
+<p><strong>Prompt:</strong> An unprincipled used-car dealer sells a car to an unsuspecting buyer, even though the dealer knows that the car will have a major breakdown within the next 6 months. The dealer provides a warranty of 45 days on all cars sold. Let <span class="math inline">\(x\)</span> represent the length of time until the breakdown occurs. Assume that x is a uniform random variable with values between 0 and 6 months.</p>
+<ol type="a">
+<li>Calculate and interpret the mean and standard deviation of <span class="math inline">\(X\)</span>.</li>
 </ol>
 <ol start="2" type="a">
-<li>Find <span class="math inline">\(\sigma\)</span>
-</li>
+<li>Graph the probability distribution of <span class="math inline">\(X\)</span> , and show the mean on the horizontal axis. Also show one and two-standard-deviation intervals around the mean.</li>
 </ol>
 <ol start="3" type="a">
-<li>Use Chebyshev’s rule to approximate the probability that <span class="math inline">\(x\)</span> falls into the interval <span class="math inline">\(\mu \pm 2 \sigma\)</span>
-</li>
-</ol></section><section id="activity-2-calculation-of-probability" class="level2"><h2 class="anchored" data-anchor-id="activity-2-calculation-of-probability">Activity 2: Calculation of Probability</h2>
-<p><strong>Prompt</strong>: Calculate <span class="math inline">\(P(x=2)\)</span> for <span class="math inline">\(X \sim \operatorname{Bin}(5, 0.3)\)</span> using the binomial formula:</p>
-<p><span class="math display">\[
-  P(x) = \binom{n}{x} p^x q^{n-x}
-  \]</span></p>
-</section><section id="activity-3-calaulations-of-probability" class="level2"><h2 class="anchored" data-anchor-id="activity-3-calaulations-of-probability">Activity 3: Calaulations of Probability</h2>
-<p><strong>Prompt</strong>: The Heart Association claims that only 10% of U.S. adults over 30 years of age meet the minimum requirements established by the President’s Council on Fitness, Sports, and Nutrition. Suppose four adults are randomly selected and each is given the fitness test. Let <span class="math inline">\(X\)</span> represent the number of the four adults who pass the fitness test. Is <span class="math inline">\(X\)</span> a binomial random variable? Why? What is the probability of <span class="math inline">\(X=3\)</span> ?</p>
-</section><section id="activity-4-calculations-of-probability" class="level2"><h2 class="anchored" data-anchor-id="activity-4-calculations-of-probability">Activity 4: Calculations of Probability</h2>
-<p><strong>Prompt</strong>: What is the mean, variance, and standard deviation of <span class="math inline">\(\textbf{Bin}[4,0.1]\)</span> , <span class="math inline">\(\textbf{Bin}[40,0.1]\)</span>, and <span class="math inline">\(\textbf{Bin}[400,0.1]\)</span>?</p>
+<li>Calculate the probability that the breakdown occurs while the car is still under warranty.</li>
+</ol>
 
 
 </section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
