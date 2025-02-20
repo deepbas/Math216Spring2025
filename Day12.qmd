@@ -39,13 +39,48 @@ library(Lock5Data)
 library(plotly)
 
 # Set ggplot theme
-theme_set(theme_tufte(base_size = 10))
-yt <- 0
 #<iframe width="1380" height="900" src="https://www.geogebra.org/m/mehn8u8s"></iframe>
 #::: {.callout-note title="Definition"}
 ```
 
 
+
+## Normal Distribution
+
+
+$$
+ f(x) = \frac{1}{\sqrt{2\pi}\sigma} e^{-\frac{(x-\mu)^2}{2\sigma^2}}
+$$
+
+```{r}
+#| echo: false
+ggplot(data = data.frame(x = c(-4, 15)), aes(x)) + 
+  stat_function(fun = dnorm, args = list(mean = 5, sd = 2)) +
+  xlab("z") + ylab("f(x)") + 
+  theme(plot.title = element_text(hjust = 0.5),
+        axis.text.y = element_blank(),
+        axis.ticks.y = element_blank(),
+        axis.line = element_line(colour = "black"))
+
+```
+
+## Standard Normal Distribution
+
+$$
+ f(z) = \frac{1}{\sqrt{2\pi}} e^{-\frac{z^2}{2}}
+$$
+
+```{r}
+#| echo: false
+ggplot(data = data.frame(x = c(-4, 4)), aes(x)) + 
+  stat_function(fun = dnorm, args = list(mean = 0, sd = 1)) +
+  xlab("z") + ylab("f(z)") + 
+  theme(plot.title = element_text(hjust = 0.5),
+        axis.text.y = element_blank(),
+        axis.ticks.y = element_blank(),
+        axis.line = element_line(colour = "black"))
+
+```
 
 
 ##  {.font70}
@@ -240,10 +275,10 @@ ggplot(data = data.frame(x = c(-4, 4)), aes(x)) +
 :::
 
 
-## Converting Normal Variable to Standard Normal and Its Applications {.font60}
+## Converting Normal Variable to Standard Normal {.font60}
 
-::: cle15
-To utilize the standard normal distribution effectively in statistical calculations, we convert a normal random variable $x$ with any mean $\mu$ and standard deviation $\sigma$ to a standard normal variable $z$. This conversion simplifies the calculation of probabilities and other statistical measures.
+::: cle12
+To utilize the standard normal distribution effectively in statistical calculations, we convert a normal random variable $x$ with any mean $\mu$ and standard deviation $\sigma$ to a standard normal variable $z$. 
 
 ### Z-score
 

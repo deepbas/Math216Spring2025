@@ -3,6 +3,7 @@ title: "Activity 12"
 subtitle: "MATH 216: Statistical Thinking"
 format: html
 echo: false
+fig.width: 3
 ---
 
 ```{r setup, include=FALSE}
@@ -11,4 +12,122 @@ library(dplyr)
 library(knitr)
 library(ggplot2)
 ```
+
+
+### Example 1: Probability Z < 1.28
+
+To find the probability that the standard normal random variable \(z\) is less than 1.28:
+
+```{r}
+# Plotting the standard normal distribution
+library(ggplot2)
+
+ggplot(data = data.frame(x = c(-4, 4)), aes(x)) + 
+  stat_function(fun = dnorm, args = list(mean = 0, sd = 1)) +
+  geom_vline(xintercept = 1.28, linetype = "dashed", color = "blue") +
+  xlab("z") + ylab("f(z)") + 
+  theme_minimal()
+```
+
+
+### Example 2: Probability Z > 1.64
+
+To find the probability that $z$ exceeds 1.64.
+
+```{r}
+ggplot(data = data.frame(x = c(-4, 4)), aes(x)) + 
+  stat_function(fun = dnorm, args = list(mean = 0, sd = 1)) +
+  geom_vline(xintercept = 1.64, linetype = "dashed", color = "blue") +
+  xlab("z") + ylab("f(z)") + 
+  theme_minimal() 
+```
+
+
+
+### Example 3: Probability Z < -1.64
+
+To find the probability that $z$ is less than -1.64.
+
+
+```{r}
+ggplot(data = data.frame(x = c(-4, 4)), aes(x)) + 
+  stat_function(fun = dnorm, args = list(mean = 0, sd = 1)) +
+  geom_vline(xintercept = -1.64, linetype = "dashed", color = "blue") +
+  xlab("z") + ylab("f(z)") + 
+  theme_minimal() 
+
+```
+
+
+### Example 4: Probability Z > -1.28
+
+To find the probability that $z$ exceeds -1.28.
+
+```{r}
+ggplot(data = data.frame(x = c(-4, 4)), aes(x)) + 
+  stat_function(fun = dnorm, args = list(mean = 0, sd = 1)) +
+  geom_vline(xintercept = -1.28, linetype = "dashed", color = "blue") +
+  xlab("z") + ylab("f(z)") + 
+  theme_minimal() 
+
+```
+
+
+### Example 5: Probability -1.64 < Z < 1.28
+
+To find the probability that $z$ lies between -1.64 and 1.28.
+
+
+```{r}
+ggplot(data = data.frame(x = c(-4, 4)), aes(x)) + 
+  stat_function(fun = dnorm, args = list(mean = 0, sd = 1)) +
+  geom_vline(xintercept = c(-1.64, 1.28), linetype = "dashed", color = "blue") +
+  xlab("z") + ylab("f(z)") + 
+  theme_minimal()
+```
+
+
+### Example 6: Probability |Z| > 1.96
+
+To find the probability that the absolute value of $z$ exceeds 1.96.
+
+```{r}
+ggplot(data = data.frame(x = c(-4, 4)), aes(x)) + 
+  stat_function(fun = dnorm, args = list(mean = 0, sd = 1)) +
+  geom_vline(xintercept = c(-1.96, 1.96), linetype = "dashed", color = "blue") +
+  xlab("z") + ylab("f(z)") + 
+  theme_minimal() 
+```
+
+
+### Example 7: Probability for a Normal Distribution
+
+Suppose the length of time $x$, between charges of a cellular phone is normally distributed with a mean of 10 hours and a standard deviation of 1.5 hours. To find the probability that the cell phone will last between 8 and 12 hours.
+
+```{r}
+mu <- 10  # mean
+sigma <- 1.5  # standard deviation
+lower <- (8 - mu) / sigma
+upper <- (12 - mu) / sigma
+
+ggplot(data = data.frame(x = c((mu - 4 * sigma), (mu + 4 * sigma))), aes(x)) + 
+  stat_function(fun = function(x) dnorm(x, mean = mu, sd = sigma), color = "red") +
+  geom_area(stat = "function", fun = function(x) dnorm(x, mean = mu, sd = sigma),
+            xlim = c(8, 12), fill = "blue", alpha = 0.3) +
+  xlab("Hours") + ylab("Density") + 
+  theme_minimal()
+```
+
+
+### Example 8: 
+
+Suppose the scores $x$ on a college entrance examination are normally distributed with a mean of 550 and a standard deviation of 100. A certain prestigious university will consider for admission only those applicants whose scores exceed the 90th percentile of the distribution. Find the minimum score an applicant must achieve in order to receive consideration for admission to the university.
+
+
+\vspace*{1in}
+
+### Example 9: 
+
+Find $z_0$ such that $P(-z_0 \leq z \leq z_0)=0.95$.
+
 

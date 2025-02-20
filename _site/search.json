@@ -399,6 +399,20 @@
     "text": "Example 2: A manufacturer of microwave ovens is trying to determine the length of warranty period it should attach to its magnetron tube, the most critical component in the oven. Preliminary testing has shown that the length of life (in years), \\(x\\), of a magnetron tube has an exponential probability distribution with \\(\\theta=6.25\\).\n\n\nFind the mean and standard deviation of \\(x\\).\nSuppose a warranty period of five years is attached to the magnetron tube. What fraction of tubes must the manufacturer plan to replace, assuming that the exponential model with \\(\\theta=6.25\\) is correct?\nWhat should the warranty period be if the manufacturer wants to replace only \\(27.5 \\%\\) of the tubes?"
   },
   {
+    "objectID": "Day12.html#normal-distribution",
+    "href": "Day12.html#normal-distribution",
+    "title": "Day 12",
+    "section": "Normal Distribution",
+    "text": "Normal Distribution\n\\[\nf(x) = \\frac{1}{\\sqrt{2\\pi}\\sigma} e^{-\\frac{(x-\\mu)^2}{2\\sigma^2}}\n\\]"
+  },
+  {
+    "objectID": "Day12.html#standard-normal-distribution",
+    "href": "Day12.html#standard-normal-distribution",
+    "title": "Day 12",
+    "section": "Standard Normal Distribution",
+    "text": "Standard Normal Distribution\n\\[\nf(z) = \\frac{1}{\\sqrt{2\\pi}} e^{-\\frac{z^2}{2}}\n\\]"
+  },
+  {
     "objectID": "Day12.html#section",
     "href": "Day12.html#section",
     "title": "Day 12",
@@ -441,11 +455,11 @@
     "text": "Example 6: Find the probability that the standard normal random variable \\(z\\) exceeds 1.96 in absolute value; that is, find \\(P(|z|&gt;1.96)\\)"
   },
   {
-    "objectID": "Day12.html#converting-normal-variable-to-standard-normal-and-its-applications",
-    "href": "Day12.html#converting-normal-variable-to-standard-normal-and-its-applications",
+    "objectID": "Day12.html#converting-normal-variable-to-standard-normal",
+    "href": "Day12.html#converting-normal-variable-to-standard-normal",
     "title": "Day 12",
-    "section": "Converting Normal Variable to Standard Normal and Its Applications",
-    "text": "Converting Normal Variable to Standard Normal and Its Applications\n\nTo utilize the standard normal distribution effectively in statistical calculations, we convert a normal random variable \\(x\\) with any mean \\(\\mu\\) and standard deviation \\(\\sigma\\) to a standard normal variable \\(z\\). This conversion simplifies the calculation of probabilities and other statistical measures.\nZ-score\n\\[\nZ = \\frac{x - \\mu}{\\sigma}\n\\]\nExample:\nTo find the probability of \\(x\\) being less than a particular value \\(x_0\\), use: \\[\nP(x \\leq x_0) = P\\left(Z \\leq \\frac{x_0 - \\mu}{\\sigma}\\right)\n\\]"
+    "section": "Converting Normal Variable to Standard Normal",
+    "text": "Converting Normal Variable to Standard Normal\n\nTo utilize the standard normal distribution effectively in statistical calculations, we convert a normal random variable \\(x\\) with any mean \\(\\mu\\) and standard deviation \\(\\sigma\\) to a standard normal variable \\(z\\).\nZ-score\n\\[\nZ = \\frac{x - \\mu}{\\sigma}\n\\]\nExample:\nTo find the probability of \\(x\\) being less than a particular value \\(x_0\\), use: \\[\nP(x \\leq x_0) = P\\left(Z \\leq \\frac{x_0 - \\mu}{\\sigma}\\right)\n\\]"
   },
   {
     "objectID": "Day12.html#section-6",
@@ -1265,6 +1279,13 @@
     "title": "Day 6",
     "section": "Exercise: Cigarette Smoking \\(\\&\\) Cancer",
     "text": "Exercise: Cigarette Smoking \\(\\&\\) Cancer\n\n\nGiven a person is a smoker, what is the probability of having cancer?\n\n\n\nGiven a person is a smoker, what is the probability of not having cancer?\n\n\n\nGiven a person is not a smoker, what is the probability of having cancer?\n\n\n\nGiven a person is not a smoker, what is the probability of not having cancer?"
+  },
+  {
+    "objectID": "Activity12.html",
+    "href": "Activity12.html",
+    "title": "Activity 12",
+    "section": "",
+    "text": "Example 1: Probability Z &lt; 1.28\nTo find the probability that the standard normal random variable (z) is less than 1.28:\n\n\n\n\n\n\n\n\nExample 2: Probability Z &gt; 1.64\nTo find the probability that \\(z\\) exceeds 1.64.\n\n\n\n\n\n\n\n\nExample 3: Probability Z &lt; -1.64\nTo find the probability that \\(z\\) is less than -1.64.\n\n\n\n\n\n\n\n\nExample 4: Probability Z &gt; -1.28\nTo find the probability that \\(z\\) exceeds -1.28.\n\n\n\n\n\n\n\n\nExample 5: Probability -1.64 &lt; Z &lt; 1.28\nTo find the probability that \\(z\\) lies between -1.64 and 1.28.\n\n\n\n\n\n\n\n\nExample 6: Probability |Z| &gt; 1.96\nTo find the probability that the absolute value of \\(z\\) exceeds 1.96.\n\n\n\n\n\n\n\n\nExample 7: Probability for a Normal Distribution\nSuppose the length of time \\(x\\), between charges of a cellular phone is normally distributed with a mean of 10 hours and a standard deviation of 1.5 hours. To find the probability that the cell phone will last between 8 and 12 hours.\n\n\n\n\n\n\n\n\nExample 8:\nSuppose the scores \\(x\\) on a college entrance examination are normally distributed with a mean of 550 and a standard deviation of 100. A certain prestigious university will consider for admission only those applicants whose scores exceed the 90th percentile of the distribution. Find the minimum score an applicant must achieve in order to receive consideration for admission to the university.\nExample 9:\nFind \\(z_0\\) such that \\(P(-z_0 \\leq z \\leq z_0)=0.95\\)."
   },
   {
     "objectID": "Day7.html#the-multiplicative-rule",

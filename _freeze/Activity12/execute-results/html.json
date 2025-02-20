@@ -1,9 +1,11 @@
 {
-  "hash": "41229faa843ebc52a1786ba3d63b1ba7",
+  "hash": "ea15ca351ea9ebfc4a1479a82ad6f3f8",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"Activity 12\"\nsubtitle: \"MATH 216: Statistical Thinking\"\nformat: html\necho: false\n---\n\n\n\n",
-    "supporting": [],
+    "markdown": "---\ntitle: \"Activity 12\"\nsubtitle: \"MATH 216: Statistical Thinking\"\nformat: html\necho: false\nfig.width: 3\n---\n\n\n\n\n### Example 1: Probability Z < 1.28\n\nTo find the probability that the standard normal random variable \\(z\\) is less than 1.28:\n\n::: {.cell}\n::: {.cell-output-display}\n![](Activity12_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n\n\n### Example 2: Probability Z > 1.64\n\nTo find the probability that $z$ exceeds 1.64.\n\n::: {.cell}\n::: {.cell-output-display}\n![](Activity12_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n:::\n\n\n\n### Example 3: Probability Z < -1.64\n\nTo find the probability that $z$ is less than -1.64.\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](Activity12_files/figure-html/unnamed-chunk-3-1.png){width=672}\n:::\n:::\n\n\n### Example 4: Probability Z > -1.28\n\nTo find the probability that $z$ exceeds -1.28.\n\n::: {.cell}\n::: {.cell-output-display}\n![](Activity12_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\n\n### Example 5: Probability -1.64 < Z < 1.28\n\nTo find the probability that $z$ lies between -1.64 and 1.28.\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](Activity12_files/figure-html/unnamed-chunk-5-1.png){width=672}\n:::\n:::\n\n\n### Example 6: Probability |Z| > 1.96\n\nTo find the probability that the absolute value of $z$ exceeds 1.96.\n\n::: {.cell}\n::: {.cell-output-display}\n![](Activity12_files/figure-html/unnamed-chunk-6-1.png){width=672}\n:::\n:::\n\n\n### Example 7: Probability for a Normal Distribution\n\nSuppose the length of time $x$, between charges of a cellular phone is normally distributed with a mean of 10 hours and a standard deviation of 1.5 hours. To find the probability that the cell phone will last between 8 and 12 hours.\n\n::: {.cell}\n::: {.cell-output-display}\n![](Activity12_files/figure-html/unnamed-chunk-7-1.png){width=672}\n:::\n:::\n\n\n### Example 8: \n\nSuppose the scores $x$ on a college entrance examination are normally distributed with a mean of 550 and a standard deviation of 100. A certain prestigious university will consider for admission only those applicants whose scores exceed the 90th percentile of the distribution. Find the minimum score an applicant must achieve in order to receive consideration for admission to the university.\n\n\n\\vspace*{1in}\n\n### Example 9: \n\nFind $z_0$ such that $P(-z_0 \\leq z \\leq z_0)=0.95$.\n\n\n",
+    "supporting": [
+      "Activity12_files"
+    ],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],
