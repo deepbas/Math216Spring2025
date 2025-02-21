@@ -129,7 +129,7 @@ Why Use the Uniform Distribution?
   It’s ideal for modeling fair processes, such as random number generation or selecting a random time within a fixed interval.
 
 - **Easy Calculations**:  
-  Probabilities are straightforward to compute. For example, $P(a \leq X \leq b) = (b-c) \times \frac{1}{d-c}$.
+  Probabilities are straightforward to compute. For example, $P(a \leq X \leq b) = (b-a) \times \frac{1}{d-c}$.
 
 :::
 :::
