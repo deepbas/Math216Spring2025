@@ -20,6 +20,8 @@ format:
     background-transition: fade    
     touch: false
     controls: true
+fig-height: 4
+fig-width: 5
 ---
 
 ```{r setup, include=FALSE}
@@ -39,6 +41,8 @@ library(Lock5Data)
 library(plotly)
 
 # Set ggplot theme
+theme_set(ggthemes::theme_solarized_2(base_size = 14))
+
 #<iframe width="1380" height="900" src="https://www.geogebra.org/m/mehn8u8s"></iframe>
 #::: {.callout-note title="Definition"}
 ```
@@ -329,7 +333,7 @@ ggplot(data = data.frame(x = c(-4, 4)), aes(x)) +
 
 
 
-##  {.font80}
+##  {.font60}
 
 > Example 8: Suppose the scores $x$ on a college entrance examination are normally distributed with a mean of 550 and a standard deviation of 100 . A certain prestigious university will consider for admission only those applicants whose scores exceed the 90th percentile of the distribution. Find the minimum score an applicant must achieve in order to receive consideration for admission to the university.
 
