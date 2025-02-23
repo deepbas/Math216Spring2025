@@ -246,10 +246,10 @@ Bastola
 <h2>Parameters of the Exponential Distribution</h2>
 <div class="cle13">
 <ul>
-<li>Mean: <span class="math display">\[\mu=\theta\]</span></li>
-<li>Rate: <span class="math display">\[\lambda=\frac{1}{\theta}\]</span></li>
-<li>Standard Deviation: <span class="math display">\[\sigma=\theta\]</span></li>
-<li>Variance: <span class="math display">\[\sigma^2=\theta^2\]</span></li>
+<li>Mean: <span class="math inline">\(\mu=\theta\)</span></li>
+<li>Rate: <span class="math inline">\(\lambda=\frac{1}{\theta}\)</span></li>
+<li>Standard Deviation: <span class="math inline">\(\sigma=\theta\)</span></li>
+<li>Variance: <span class="math inline">\(\sigma^2=\theta^2\)</span></li>
 </ul>
 </div>
 </section>
@@ -274,14 +274,14 @@ Bastola
 <h2>Calculating Probabilities</h2>
 <div class="cle13">
 <ul>
-<li>To find the area to the right of a value <span class="math inline">\(a\)</span>: <span class="math display">\[P(X &gt; a) = \exp\left(-\frac{a}{\theta}\right)\]</span></li>
+<li>To find the area to the right of a value <span class="math inline">\(a\)</span>: <span class="math inline">\(P(X &gt; a) = \exp\left(-\frac{a}{\theta}\right)\)</span></li>
 </ul>
 <center>
 <img data-src="images/exponential_pdf.png">
 </center>
 </div>
 </section>
-<section id="calculating-probabilities-and-quantiles-in-r" class="slide level2 font60">
+<section id="calculating-probabilities-and-quantiles-in-r" class="slide level2 font70">
 <h2>Calculating Probabilities and Quantiles in R</h2>
 <div class="cle13">
 <p><strong>pexp</strong>: Calculates the cumulative probability for a given value.</p>
@@ -294,6 +294,11 @@ Bastola
 <li><code>pexp(5, rate = 1/2, lower.tail = FALSE)</code> for <span class="math inline">\(P(X &gt; 5)\)</span>.</li>
 </ul></li>
 </ul>
+</div>
+</section>
+<section id="calculating-probabilities-and-quantiles-in-r-1" class="slide level2 font70">
+<h2>Calculating Probabilities and Quantiles in R</h2>
+<div class="cle13">
 <p><strong>qexp</strong>: Computes the quantile for a specified probability.</p>
 <ul>
 <li>Syntax: <code>qexp(p, rate = 1, lower.tail = TRUE)</code></li>

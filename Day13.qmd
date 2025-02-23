@@ -1,0 +1,339 @@
+---
+title: "Day 13"
+title-slide-attributes:
+  data-background-image: images/lake.jpg
+  data-background-size: contain
+  data-background-opacity: "0.5"
+subtitle: "Math 216: Statistical Thinking"
+author: "Bastola"
+format:
+  revealjs:
+    html-math-method: mathjax
+    mathjax-url: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/MathJax.js" 
+    theme: [default, scss/main.scss]
+    slide-number: true
+    preview-links: auto
+    history: true
+    chalkboard: 
+      src: drawings.json
+    transition: slide
+    background-transition: fade    
+    touch: false
+    controls: true
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+options(htmltools.preserve.raw = FALSE)
+options(ggrepel.max.overlaps = Inf)
+
+
+# load necessary packages
+library(tidyverse)
+library(countdown)
+library(mosaic)
+library(ggthemes)
+library(forcats)
+library(patchwork)
+library(Lock5Data)
+library(plotly)
+library(gridExtra)
+# Set ggplot theme
+theme_set(theme_tufte(base_size = 10))
+yt <- 0
+#<iframe width="1380" height="900" src="https://www.geogebra.org/m/mehn8u8s"></iframe>
+#::: {.callout-note title="Definition"}
+```
+
+
+
+## Introduction to Assessing Normality {.font80}
+
+
+::: cle13
+
+\boxed{\text{Why check normality?}}  
+- **Goal**: Verify if data comes from a normal distribution, required for many parametric tests (e.g., t-tests, ANOVA).  
+- **Key Context**: Ensures validity of statistical inferences.  
+- **Primary Methods**:  
+  1. Visual checks (plots)  
+  2. Empirical rule alignment  
+  3. IQR/SD ratio  
+
+:::
+
+
+## Visual Assessment Tools {.font80}
+
+
+::: cle10
+
+\boxed{\text{Graphical Methods}}  
+- **Histogram/Density Plot**:  
+  - Look for symmetric bell-shaped curve.  
+  - Check tails: abrupt drops may indicate non-normality.  
+- **Q-Q Plot**:  
+  - Data points should align with 45° reference line.  
+  - Curves or outliers = potential skew/kurtosis.  
+  
+:::
+
+
+## Numerical Assessment Methods {.font80}
+
+::: cle6
+\boxed{\text{Quantitative Checks}}  
+- **Empirical Rule**:  
+  - $\pm1\sigma$: ≈68%, $\pm2\sigma$: ≈95%, $\pm3\sigma$: ≈99.7%.  
+  - Compare calculated %s to these benchmarks.  
+- **IQR/SD Ratio**:  
+  - For normality: $\frac{\text{IQR}}{s} \approx 1.3$.  
+  - Compute via $\frac{Q3 - Q1}{s}$ and compare.  
+:::
+
+
+
+## Case Study: EPA ratings {.font80}
+
+<br>
+
+> The dataset consists of EPA gas mileage ratings for 100 cars. Each value represents the miles per gallon (MPG) that a particular car achieves under standardized testing conditions. This dataset can help understand how statistical methods are applied in real-world scenarios like assessing the fuel efficiency of vehicles.
+
+
+## {.font60}
+
+::: panel-tabset
+
+### Data
+
+EPA Gas Mileage Ratings for 100 Cars (miles per gallon) 
+
+| col1 |col2|col3|col4|col5|col6|col7|col8|col9|col10|
+| :------|:------|:------|:------|:------|:------|:------|:------|:------|:------|
+| 36.3 | 41.0 | 36.9 | 37.1 | 44.9 | 36.8 | 30.0 | 37.2 | 42.1 | 36.7 |
+| 32.7 | 37.3 | 41.2 | 36.6 | 32.9 | 36.5 | 33.2 | 37.4 | 37.5 | 33.6 |
+| 40.5 | 36.5 | 37.6 | 33.9 | 40.2 | 36.4 | 37.7 | 37.7 | 40.0 | 34.2 |
+| 36.2 | 37.9 | 36.0 | 37.9 | 35.9 | 38.2 | 38.3 | 35.7 | 35.6 | 35.1 |
+| 38.5 | 39.0 | 35.5 | 34.8 | 38.6 | 39.4 | 35.3 | 34.4 | 38.8 | 39.7 |
+| 36.3 | 36.8 | 32.5 | 36.4 | 40.5 | 36.6 | 36.1 | 38.2 | 38.4 | 39.3 |
+| 41.0 | 31.8 | 37.3 | 33.1 | 37.0 | 37.6 | 37.0 | 38.7 | 39.0 | 35.8 |
+| 37.0 | 37.2 | 40.7 | 37.4 | 37.1 | 37.8 | 35.9 | 35.6 | 36.7 | 34.5 |
+| 37.1 | 40.3 | 36.7 | 37.0 | 33.9 | 40.1 | 38.0 | 35.2 | 34.8 | 39.5 |
+| 39.9 | 36.9 | 32.9 | 33.8 | 39.8 | 34.0 | 36.8 | 35.0 | 38.1 | 36.9 |
+
+### R code
+
+```{r}
+# store 100 mpgs in an object called 'mpg'
+mpg <- c(
+  36.3, 41.0, 36.9, 37.1, 44.9, 36.8, 30.0, 37.2, 42.1, 36.7,
+  32.7, 37.3, 41.2, 36.6, 32.9, 36.5, 33.2, 37.4, 37.5, 33.6,
+  40.5, 36.5, 37.6, 33.9, 40.2, 36.4, 37.7, 37.7, 40.0, 34.2,
+  36.2, 37.9, 36.0, 37.9, 35.9, 38.2, 38.3, 35.7, 35.6, 35.1,
+  38.5, 39.0, 35.5, 34.8, 38.6, 39.4, 35.3, 34.4, 38.8, 39.7,
+  36.3, 36.8, 32.5, 36.4, 40.5, 36.6, 36.1, 38.2, 38.4, 39.3,
+  41.0, 31.8, 37.3, 33.1, 37.0, 37.6, 37.0, 38.7, 39.0, 35.8,
+  37.0, 37.2, 40.7, 37.4, 37.1, 37.8, 35.9, 35.6, 36.7, 34.5,
+  37.1, 40.3, 36.7, 37.0, 33.9, 40.1, 38.0, 35.2, 34.8, 39.5,
+  39.9, 36.9, 32.9, 33.8, 39.8, 34.0, 36.8, 35.0, 38.1, 36.9
+)
+
+mpg_data <- data.frame(mpg = mpg)
+```
+
+
+:::
+
+
+## Visualization Approach {.font70}
+
+::: panel-tabset
+
+
+### Step 1: Histogram + Density
+
+```{r}
+#| label: enhanced-hist
+#| echo: false
+ggplot(mpg_data, aes(x = mpg)) +
+  geom_histogram(aes(y = after_stat(density)), bins = 15, fill = "steelblue", alpha = 0.7) +
+  geom_density(color = "red", linewidth = 1) +
+  geom_vline(xintercept = mean(mpg_data$mpg), linetype = "dashed") +
+  annotate("text", x = mean(mpg_data$mpg)+1, y = 0.08, 
+           label = paste("Mean =", round(mean(mpg_data$mpg),1))) +
+  labs(title = "Histogram with Density Curve") +
+  theme_minimal()
+```
+
+### Step 2: Boxplot Analysis
+
+```{r}
+#| label: boxplot
+#| echo: false
+ggplot(mpg_data, aes(y = mpg)) +
+  geom_boxplot(fill = "orange", alpha = 0.7) +
+  labs(title = "Boxplot Showing Spread and Outliers") +
+  theme_minimal()
+```
+
+:::
+
+
+## Normality Assessment {.font70}
+
+::: panel-tabset
+
+### Q-Q Plot Diagnostics
+
+```{r}
+#| label: qq-enhanced
+#| echo: false
+ggplot(mpg_data, aes(sample = mpg)) +
+  stat_qq(color = "darkgreen") +
+  stat_qq_line(color = "navy", linewidth = 1) +
+  labs(title = "Detailed Q-Q Plot with Confidence Band") +
+  theme_minimal()
+```
+
+### Empirical Rule Check
+
+```{r}
+#| label: empirical-rule
+#| echo: false
+emp_rule <- mpg_data %>% 
+  summarise(
+    `Mean (μ)` = mean(mpg),
+    `SD (σ)` = sd(mpg),
+    `Within μ±1σ` = mean(between(mpg, `Mean (μ)`-`SD (σ)`, `Mean (μ)`+`SD (σ)`)),
+    `Within μ±2σ` = mean(between(mpg, `Mean (μ)`-2*`SD (σ)`, `Mean (μ)`+2*`SD (σ)`)),
+    `Within μ±3σ` = mean(between(mpg, `Mean (μ)`-3*`SD (σ)`, `Mean (μ)`+3*`SD (σ)`))
+  ) %>% 
+  pivot_longer(everything()) %>% 
+  mutate(Expected = case_when(
+    name == "Within μ±1σ" ~ 0.68,
+    name == "Within μ±2σ" ~ 0.95,
+    name == "Within μ±3σ" ~ 0.997,
+    TRUE ~ NA_real_
+  ))
+
+ggplot(emp_rule %>% filter(!is.na(Expected)), aes(x = name, y = value)) +
+  geom_col(fill = "purple", alpha = 0.6) +
+  geom_hline(aes(yintercept = Expected), color = "red", linetype = "dashed") +
+  scale_y_continuous(labels = scales::percent) +
+  labs(title = "Empirical Rule Compliance", x = "", y = "Percentage") +
+  theme_minimal()
+```
+
+### IQR/SD Ratio Test
+
+```{r}
+#| label: iqr-ratio
+#| echo: false
+iqr_sd <- mpg_data %>% 
+  summarise(
+    IQR = IQR(mpg),
+    SD = sd(mpg),
+    Ratio = IQR/SD
+  )
+
+iqr_sd %>%
+  mutate(Expected = 1.3, Difference = Ratio - Expected) %>% 
+  knitr::kable(digits = 2)
+```
+
+:::
+
+
+## Key Findings from EPA Case Study {.font70}
+
+::: cle13
+1. Visual Evidence:
+   - Histogram shows right skew (confirmed by boxplot outlier at 44.9 MPG)
+   - Q-Q plot shows systematic deviation from reference line in upper tail
+
+2. Empirical Rule Compliance:
+
+   - 72% within μ±1σ (expected 68%) - **Close**
+   - 95% within μ±2σ (exact match) - **Good**
+   - 100% within μ±3σ (expected 99.7%) - **Borderline**
+
+3. IQR/SD Ratio:
+   - Observed 1.15 vs Expected 1.3 - **Suggests lighter tails**
+
+:::
+
+## Implications for Future Analysis {.font70}
+
+```{r}
+#| label: trans-comparison
+#| echo: false
+# Demonstrate transformation impact
+# Set seed for reproducibility
+set.seed(123)
+
+# Generate skewed data with 50 observations (lognormal)
+mpg_data <- data.frame(
+  mpg = rlnorm(50, meanlog = 3, sdlog = 1)
+)
+
+# Create transformations
+mpg_data$log_mpg <- log(mpg_data$mpg)
+mpg_data$sqrt_mpg <- sqrt(mpg_data$mpg)
+```
+
+
+::: panel-tabset
+
+### Original Data
+
+```{r}
+#| echo: false
+p1 <- ggplot(mpg_data, aes(x = mpg)) +
+  geom_histogram(aes(y = ..density..), bins = 30, fill = "gray", color = "black") +
+  geom_density(alpha = 0.5, color = "blue") +
+  ggtitle("Original Data Histogram + Density")
+
+p2 <- ggplot(mpg_data, aes(sample = mpg)) +
+  stat_qq() +
+  stat_qq_line() +
+  ggtitle("Original Data Q-Q Plot")
+
+grid.arrange(p1, p2, ncol = 2)
+```
+
+
+### Square Root Transformed
+
+```{r}
+#| echo: false
+p5 <- ggplot(mpg_data, aes(x = sqrt_mpg)) +
+  geom_histogram(aes(y = ..density..), bins = 30, fill = "gray", color = "black") +
+  geom_density(alpha = 0.5, color = "blue") +
+  ggtitle("Square Root Transformed Histogram + Density")
+
+p6 <- ggplot(mpg_data, aes(sample = sqrt_mpg)) +
+  stat_qq() +
+  stat_qq_line() +
+  ggtitle("Square Root Transformed Q-Q Plot")
+grid.arrange(p5, p6, ncol = 2)
+```
+
+### Log Transformed
+
+```{r}
+#| echo: false
+p3 <- ggplot(mpg_data, aes(x = log_mpg)) +
+  geom_histogram(aes(y = ..density..), bins = 30, fill = "gray", color = "black") +
+  geom_density(alpha = 0.5, color = "blue") 
+
+p4 <- ggplot(mpg_data, aes(sample = log_mpg)) +
+  stat_qq() +
+  stat_qq_line() +
+  ggtitle("Log-Transformed Q-Q Plot")
+grid.arrange(p3, p4, ncol = 2)
+```
+
+:::
+
+
+

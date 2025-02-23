@@ -1,0 +1,15 @@
+---
+title: "Activity 14"
+subtitle: "MATH 216: Statistical Thinking"
+format: html
+echo: false
+fig.width: 3
+---
+
+```{r setup, include=FALSE}
+library(openintro)
+library(dplyr)
+library(knitr)
+library(ggplot2)
+```
+

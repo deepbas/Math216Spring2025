@@ -96,10 +96,10 @@ $$f(x)=\frac{1}{\theta} \exp \left(-\frac{x}{\theta}\right), \quad x>0$$
 
 ::: cle13
 
-- Mean: $$\mu=\theta$$
-- Rate: $$\lambda=\frac{1}{\theta}$$
-- Standard Deviation: $$\sigma=\theta$$
-- Variance: $$\sigma^2=\theta^2$$
+- Mean: $\mu=\theta$
+- Rate: $\lambda=\frac{1}{\theta}$
+- Standard Deviation: $\sigma=\theta$
+- Variance: $\sigma^2=\theta^2$
 
 :::
 
@@ -133,16 +133,17 @@ $$f(x)=\frac{1}{\theta} \exp \left(-\frac{x}{\theta}\right), \quad x>0$$
 ## Calculating Probabilities {.font80}
 
 ::: cle13
-- To find the area to the right of a value $a$: $$P(X > a) = \exp\left(-\frac{a}{\theta}\right)$$
+- To find the area to the right of a value $a$: $P(X > a) = \exp\left(-\frac{a}{\theta}\right)$
 
 <center>
 ![](images/exponential_pdf.png)
 </center>
 :::
 
-## Calculating Probabilities and Quantiles in R {.font60}
+## Calculating Probabilities and Quantiles in R {.font70}
 
 ::: cle13
+
 **pexp**: Calculates the cumulative probability for a given value.
 
 - Syntax: `pexp(q, rate = 1, lower.tail = TRUE)`
@@ -151,6 +152,12 @@ $$f(x)=\frac{1}{\theta} \exp \left(-\frac{x}{\theta}\right), \quad x>0$$
   - `pexp(5, rate = 1/2)` calculates $P(X \leq 5)$ for $\theta = 2$.
   - `pexp(5, rate = 1/2, lower.tail = FALSE)` for $P(X > 5)$.
 
+:::
+
+
+## Calculating Probabilities and Quantiles in R {.font70}
+
+::: cle13
 
 **qexp**: Computes the quantile for a specified probability.
 

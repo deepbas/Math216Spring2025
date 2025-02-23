@@ -1,0 +1,81 @@
+---
+title: "Activity 13"
+subtitle: "MATH 216: Statistical Thinking"
+format: html
+echo: false
+fig.width: 3
+---
+
+```{r setup, include=FALSE}
+library(openintro)
+library(dplyr)
+library(knitr)
+library(ggplot2)
+```
+
+
+
+## Activity 1: EPA gas mileage
+
+1. Calculate the IQR and standard deviation.
+
+2. Compute the IQR to standard deviation ratio.
+
+3. Discuss whether the data appear to be normally distributed based on the ratio calculations and visuals.
+
+
+
+```{r}
+# store 100 mpgs in an object called 'mpg'
+set.seed(123)
+
+# Generate skewed data with 50 observations (lognormal)
+mpg_data <- data.frame(
+  mpg = rlnorm(100, meanlog = 3, sdlog = 1)
+)
+
+# Create transformations
+mpg_data$log_mpg <- log(mpg_data$mpg)
+mpg_data$sqrt_mpg <- sqrt(mpg_data$mpg)
+```
+
+
+
+```{r}
+#| label: enhanced-hist
+#| echo: false
+ggplot(mpg_data, aes(x = mpg)) +
+  geom_histogram(aes(y = after_stat(density)), bins = 15, fill = "steelblue", alpha = 0.7) +
+  geom_density(color = "red", linewidth = 1) +
+  geom_vline(xintercept = mean(mpg_data$mpg), linetype = "dashed") +
+  annotate("text", x = mean(mpg_data$mpg)+1, y = 0.08, 
+           label = paste("Mean =", round(mean(mpg_data$mpg),1))) +
+  theme_minimal() -> p1
+
+ggplot(mpg_data, aes(y = mpg)) +
+  geom_boxplot(fill = "orange", alpha = 0.7) +
+  theme_minimal() -> p2
+
+ggplot(mpg_data, aes(sample = mpg)) +
+  stat_qq(color = "darkgreen") +
+  stat_qq_line(color = "navy", linewidth = 1) +
+  theme_minimal() -> p3
+
+grid.arrange(p1, p2, p3, ncol = 3)
+
+```
+
+
+```{r}
+#| label: iqr-ratio
+#| echo: false
+iqr_sd <- mpg_data %>% 
+  summarise(
+    Q1 = quantile(mpg, 0.25),
+    Q3 = quantile(mpg, 0.75),
+    SD = sd(mpg)
+  )
+
+iqr_sd %>% knitr::kable()
+```
+
