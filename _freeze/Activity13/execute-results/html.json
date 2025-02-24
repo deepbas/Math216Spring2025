@@ -1,9 +1,11 @@
 {
-  "hash": "8d8e1dcb161fa2e9654c4b369abf6cd2",
+  "hash": "3230f3c9c236e823d0dfb3a0c89d87cc",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"Activity 13\"\nsubtitle: \"MATH 216: Statistical Thinking\"\nformat: html\necho: false\nfig.width: 3\n---\n\n\n\n",
-    "supporting": [],
+    "markdown": "---\ntitle: \"Activity 13\"\nsubtitle: \"MATH 216: Statistical Thinking\"\nformat: html\necho: false\nfig.width: 3\n---\n\n\n\n\n\n## Activity 1: EPA gas mileage\n\n1. Calculate the IQR and standard deviation.\n\n2. Compute the IQR to standard deviation ratio.\n\n3. Discuss whether the data appear to be normally distributed based on the ratio calculations and visuals.\n\n\n\n::: {.cell}\n\n:::\n\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](Activity13_files/figure-html/enhanced-hist-1.png){width=672}\n:::\n:::\n\n\n::: {.cell}\n::: {.cell-output-display}\n\n\n|       Q1|       Q3|       SD|\n|--------:|--------:|--------:|\n| 12.25774| 40.11837| 34.58906|\n\n\n:::\n:::\n\n",
+    "supporting": [
+      "Activity13_files"
+    ],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],

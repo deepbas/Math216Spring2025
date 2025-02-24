@@ -917,6 +917,20 @@
     "text": "Example 2: Based on data from the U.S. Census, the mean age of college students in 2011 was \\(\\mu=25\\) years, with a standard deviation of \\(\\sigma=9.5\\) years.\n\n\nDescribe the sampling distribution of the mean of a sample of 125 students.\n\n \n\nWhat is the probability that the sample mean age of the 125 students is greater than 26 years?"
   },
   {
+    "objectID": "Activity13.html",
+    "href": "Activity13.html",
+    "title": "Activity 13",
+    "section": "",
+    "text": "Calculate the IQR and standard deviation.\nCompute the IQR to standard deviation ratio.\nDiscuss whether the data appear to be normally distributed based on the ratio calculations and visuals.\n\n\n\n\n\n\n\n\n\n\n\n\n\nQ1\nQ3\nSD\n\n\n12.25774\n40.11837\n34.58906"
+  },
+  {
+    "objectID": "Activity13.html#activity-1-epa-gas-mileage",
+    "href": "Activity13.html#activity-1-epa-gas-mileage",
+    "title": "Activity 13",
+    "section": "",
+    "text": "Calculate the IQR and standard deviation.\nCompute the IQR to standard deviation ratio.\nDiscuss whether the data appear to be normally distributed based on the ratio calculations and visuals.\n\n\n\n\n\n\n\n\n\n\n\n\n\nQ1\nQ3\nSD\n\n\n12.25774\n40.11837\n34.58906"
+  },
+  {
     "objectID": "Activity6.html",
     "href": "Activity6.html",
     "title": "Activity 6",
