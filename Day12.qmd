@@ -60,7 +60,7 @@ $$
 #| echo: false
 ggplot(data = data.frame(x = c(-4, 15)), aes(x)) + 
   stat_function(fun = dnorm, args = list(mean = 5, sd = 2)) +
-  xlab("z") + ylab("f(x)") + 
+  xlab("x") + ylab("f(x)") + 
   theme(plot.title = element_text(hjust = 0.5),
         axis.text.y = element_blank(),
         axis.ticks.y = element_blank(),
