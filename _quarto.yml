@@ -173,10 +173,10 @@ website:
         menu:
           - text: "R and RStudio"
             href: RandRStudio.html
-      # - text: "ShinyApps"
-      #   menu:
-      #     - text: "Sampling Distributions"
-      #       href: SamplingApp.html
+      - text: "ShinyApps"
+        menu:
+          - text: "Sampling Distributions"
+            href: SamplingApp.html
       #     - text: "Confidence Intervals"
       #       href: ConfIntervalsApp.html
       #     - text: "Power of Hypothesis Tests"
