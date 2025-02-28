@@ -47,32 +47,23 @@ yt <- 0
 
 
 
-## Introduction to the Exponential Distribution {.font80}
-
-::: cle13
-- Commonly used to model waiting times
-- Examples: Time between emergencies, equipment failures, and sighting rare species
-:::
-
-
-## What is the Exponential Distribution? {.font80}
-
-
-::: cle10
-
-- Describes the time or distance between random events
-- Called the waiting-time distribution
-
-:::
-
-
-## Key Characteristics {.font80}
+## Exponential Distribution {.font70}
 
 ::: cle6
 
-- Only one parameter: $\theta$
-- Shape and scale determined by $\theta$
+- **Models waiting times** between events (time/distance)  
+- **Key applications**:  
 
+  ▸ Emergency intervals  
+  ▸ Equipment failures  
+  ▸ Rare species sightings  
+
+- **Defining features**:  
+
+  - Single parameter $θ$ controls both shape *and* scale  
+  - Memoryless property (future probability independent of past)  
+
+- **Alternate name**: "Waiting-time distribution" 
 :::
 
 
@@ -192,22 +183,3 @@ qexp(0.9, rate = 1/6.25)
 
 :::
 
-## {.font60}
-
-> Example 1: Suppose the length of time (in hours) between emergency arrivals at a certain hospital is modeled as an exponential distribution with $\theta=2$. What is the probability that more than 5 hours pass without an emergency arrival?
-
-
-## {.font60}
-
-> Example 2: A manufacturer of microwave ovens is trying to determine the length of warranty period it should attach to its magnetron tube, the most critical component in the oven. Preliminary testing has shown that the length of life (in years), $x$, of a magnetron tube has an exponential probability distribution with $\theta=6.25$.
-
-a. Find the mean and standard deviation of $x$.
-
-b. Suppose a warranty period of five years is attached to the magnetron tube. What fraction of tubes must the manufacturer plan to replace, assuming that the exponential model with $\theta=6.25$ is correct?
-
-c. What should the warranty period be if the manufacturer wants to replace only $27.5 \%$ of the tubes?
-
-##
-
-
-##

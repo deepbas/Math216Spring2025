@@ -13,3 +13,4 @@ library(knitr)
 library(ggplot2)
 ```
 
+In-class midterm!!
