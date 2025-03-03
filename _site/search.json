@@ -1736,13 +1736,6 @@
     "text": "List of relevant parameters"
   },
   {
-    "objectID": "Day16.html#section",
-    "href": "Day16.html#section",
-    "title": "Day 16",
-    "section": "",
-    "text": "Example 1: Suppose two statistics, \\(A\\) and \\(B\\), exist to estimate the same population parameter \\(\\theta\\) (theta). (Note that \\(\\theta\\) could be any parameter: \\(\\mu, \\sigma^2\\), etc.) Suppose the two statistics have sampling distributions as shown in the following figure. On the basis of these sampling distributions, which statistic is more attractive as an estimator of \\(\\theta\\) ?"
-  },
-  {
     "objectID": "Day16.html#standard-error-and-estimation-error",
     "href": "Day16.html#standard-error-and-estimation-error",
     "title": "Day 16",
@@ -1762,20 +1755,6 @@
     "title": "Day 16",
     "section": "Practical Implications",
     "text": "Practical Implications\n\n\nInference: Sampling distributions allow us to make educated guesses about population parameters.\nApplication: Essential in fields like epidemiology, economics, and quality control where population parameters are not directly observable."
-  },
-  {
-    "objectID": "Day16.html#section-1",
-    "href": "Day16.html#section-1",
-    "title": "Day 16",
-    "section": "",
-    "text": "Example 2: The rolling machine of a steel manufacturer produces sheets of steel of varying thickness. The thickness of a steel sheet follows a uniform distribution with values between 150 and 200 millimeters. Suppose we perform the following experiment over and over again: Randomly sample 11 steel sheets from the production line and record the thickness x of each. Calculate the two sample statistics:\n\n\\[\n\\bar{x}=\\text { Sample mean }=\\sum x / 11\n\\]\n\\(M=\\) Median = Sixth sample measurement when the 11 thicknesses 1 are arranged in ascending order Obtain approximations to the sampling distributions of \\(\\bar{x}\\) and \\(M\\). Since we know that it is uniform distribution, the mean is 175 mm . But let’s assume that we don’t know that and just use the sampling to approximate the parameter."
-  },
-  {
-    "objectID": "Day16.html#which-one-is-better",
-    "href": "Day16.html#which-one-is-better",
-    "title": "Day 16",
-    "section": "Which one is better?",
-    "text": "Which one is better?"
   },
   {
     "objectID": "about.html",

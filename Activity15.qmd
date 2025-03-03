@@ -13,3 +13,52 @@ library(knitr)
 library(ggplot2)
 ```
 
+## Activity 1: Quiz
+
+**Question:** Given the PDF of the exponential distribution:
+
+$$
+f(x) = \frac{1}{\theta} \exp\left(-\frac{x}{\theta}\right), \quad x > 0
+$$
+What is the probability that $X > 3$ if $\theta = 2$?
+
+\vspace*{1in}
+
+## Activity 2: Case Study: battery reliability
+
+**Case Study:** A company is testing a new battery with an expected lifetime modeled by an exponential distribution with $\theta = 5$ years. The company wants to offer a warranty period such that only 10% of the batteries fail within the warranty period.
+
+**Task:** 
+
+1. Calculate the warranty period that meets the company's requirement.
+
+\vspace*{1in}
+
+2. Discuss the implications of this warranty period for the company and its customers.
+
+\vspace*{1in}
+
+
+## Activity 3: Case Study: emergency arrivals
+
+**Case Study:** Suppose the length of time (in hours) between emergency arrivals at a certain hospital is modeled as an exponential distribution with $\theta=2$. What is the probability that more than 5 hours pass without an emergency arrival?
+
+\vspace*{1in}
+
+## Activity 4: microwave warranty
+
+**Case Study:** A manufacturer of microwave ovens is trying to determine the length of warranty period it should attach to its magnetron tube, the most critical component in the oven. Preliminary testing has shown that the length of life (in years), $x$, of a magnetron tube has an exponential probability distribution with $\theta=6.25$.
+
+a. Find the mean and standard deviation of $x$.
+
+\
+\
+
+b. Suppose a warranty period of five years is attached to the magnetron tube. What fraction of tubes must the manufacturer plan to replace, assuming that the exponential model with $\theta=6.25$ is correct?
+
+\
+\
+
+c. What should the warranty period be if the manufacturer wants to replace only $27.5 \%$ of the tubes?
+
+
