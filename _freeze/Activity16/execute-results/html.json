@@ -1,0 +1,17 @@
+{
+  "hash": "578700c39e8a781a8666e9ba3902f532",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Activity 16\"\nsubtitle: \"MATH 216: Statistical Thinking\"\nformat: html\necho: false\nfig.width: 3\n---\n\n\n\n\n## Activity 1: Think-Pair-Share\n\n1. **Think**: Reflect on why unbiasedness is important in statistical estimation.\n\n2. **Pair**: Discuss with a partner whether they would prefer an unbiased estimator with high variance or a slightly biased estimator with low variance.\n\n3. **Share**: Share your insights with the class.\n\n\n## Activity 2: Conceptual understanding\n\nSuppose two statistics, $A$ and $B$, exist to estimate the same population parameter $\\theta$ (theta). (Note that $\\theta$ could be any parameter: $\\mu, \\sigma^2$, etc.) Suppose the two statistics have sampling distributions as shown in the following figure. On the basis of these sampling distributions, which statistic is more attractive as an estimator of $\\theta$ ?\n\n![](images/unbiasedness.png)\n\n## Activity 3: Quiz\n\n- **Question**: What does the standard error measure in the context of sampling distributions?\n\nA). The mean of the sampling distribution  \nB). The spread of the sampling distribution  \nC). The bias of the estimator  \nD). The population parameter  \n\n\n## Activity 4: Group Activities with Real Data\n\n**Prompt**: The rolling machine of a steel manufacturer produces sheets of steel of varying thickness. The thickness of a steel sheet follows a uniform distribution with values between 150 and 200 millimeters. Suppose we perform the following experiment over and over again: Randomly sample 11 steel sheets from the production line and record the thickness x of each. Calculate the two sample statistics:\n\n$$\n\\bar{x}=\\text { Sample mean }=\\sum x / 11\n$$\n\n\n$M=$ Median = Sixth sample measurement when the 11 thicknesses 1 are arranged in ascending order\nObtain approximations to the sampling distributions of $\\bar{x}$ and $M$.\nSince we know that it is uniform distribution, the mean is 175 mm . But let's assume that we don't know that and just use the sampling to approximate the parameter.\n\n1. Analyze the steel thickness dataset.\n\n![](images/example6.1.png)\n\n2. Compare the sampling distributions of $\\bar{x}$ and $M$.\n\n![](images/mean_median6.1.png)\n\n3. Discuss which statistic (mean or median) is a better estimator of the population parameter and why.\n\n\n\n## Activity 5: Case Studies and Problem-Solving\n\n\n- **Scenario**: A factory produces steel sheets with thicknesses following a uniform distribution. The quality control team wants to estimate the average thickness using sample statistics.\n\n- **Task**: Apply the concepts of unbiasedness and standard error to determine whether the sample mean or median is a better estimator for the population mean.\n\n::: {.cell}\n::: {.cell-output-display}\n![](Activity16_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n\n\n",
+    "supporting": [
+      "Activity16_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -56,9 +56,9 @@ website:
           - text: "Lecture 15"
             href: Day15.html
             target: "_blank"
-        #   - text: "Lecture 16"
-        #     href: Day16.html
-        #     target: "_blank"
+          - text: "Lecture 16"
+            href: Day16.html
+            target: "_blank"
         #   - text: "Lecture 17"
         #     href: Day17.html
         #     target: "_blank"
@@ -163,7 +163,23 @@ website:
             href: Activity12.html
           - text: "Activity 13"
             href: Activity13.html
-           # - text: "Activity 1"
+          - text: "Activity 13"
+            href: Activity14.html
+          - text: "Activity 14"
+            href: Activity15.html
+          - text: "Activity 15"
+            href: Activity16.html
+          - text: "Activity 16"
+          #   href: Activity13.html
+          # - text: "Activity 13"
+          #   href: Activity13.html
+          # - text: "Activity 13"
+          #   href: Activity13.html
+          # - text: "Activity 13"
+          #   href: Activity13.html
+          # - text: "Activity 13"
+          #   href: Activity13.html             
+            # - text: "Activity 1"
            #  href: Activity1.html
          #     target: "_blank"
         #   - text: "Lecture 2"

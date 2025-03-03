@@ -1,0 +1,113 @@
+---
+title: "Activity 16"
+subtitle: "MATH 216: Statistical Thinking"
+format: html
+echo: false
+fig.width: 3
+---
+
+```{r setup, include=FALSE}
+library(openintro)
+library(dplyr)
+library(knitr)
+library(ggplot2)
+```
+
+
+## Activity 1: Think-Pair-Share
+
+1. **Think**: Reflect on why unbiasedness is important in statistical estimation.
+
+2. **Pair**: Discuss with a partner whether they would prefer an unbiased estimator with high variance or a slightly biased estimator with low variance.
+
+3. **Share**: Share your insights with the class.
+
+
+## Activity 2: Conceptual understanding
+
+Suppose two statistics, $A$ and $B$, exist to estimate the same population parameter $\theta$ (theta). (Note that $\theta$ could be any parameter: $\mu, \sigma^2$, etc.) Suppose the two statistics have sampling distributions as shown in the following figure. On the basis of these sampling distributions, which statistic is more attractive as an estimator of $\theta$ ?
+
+![](images/unbiasedness.png)
+
+## Activity 3: Quiz
+
+- **Question**: What does the standard error measure in the context of sampling distributions?
+
+A). The mean of the sampling distribution  
+B). The spread of the sampling distribution  
+C). The bias of the estimator  
+D). The population parameter  
+
+
+## Activity 4: Group Activities with Real Data
+
+**Prompt**: The rolling machine of a steel manufacturer produces sheets of steel of varying thickness. The thickness of a steel sheet follows a uniform distribution with values between 150 and 200 millimeters. Suppose we perform the following experiment over and over again: Randomly sample 11 steel sheets from the production line and record the thickness x of each. Calculate the two sample statistics:
+
+$$
+\bar{x}=\text { Sample mean }=\sum x / 11
+$$
+
+
+$M=$ Median = Sixth sample measurement when the 11 thicknesses 1 are arranged in ascending order
+Obtain approximations to the sampling distributions of $\bar{x}$ and $M$.
+Since we know that it is uniform distribution, the mean is 175 mm . But let's assume that we don't know that and just use the sampling to approximate the parameter.
+
+1. Analyze the steel thickness dataset.
+
+![](images/example6.1.png)
+
+2. Compare the sampling distributions of $\bar{x}$ and $M$.
+
+![](images/mean_median6.1.png)
+
+3. Discuss which statistic (mean or median) is a better estimator of the population parameter and why.
+
+
+
+## Activity 5: Case Studies and Problem-Solving
+
+
+- **Scenario**: A factory produces steel sheets with thicknesses following a uniform distribution. The quality control team wants to estimate the average thickness using sample statistics.
+
+- **Task**: Apply the concepts of unbiasedness and standard error to determine whether the sample mean or median is a better estimator for the population mean.
+
+```{r}
+#| echo: false
+library(ggplot2)
+set.seed(123)
+
+# Population parameters (uniform distribution)
+a <- 1  # minimum thickness
+b <- 3  # maximum thickness
+true_mean <- (a + b)/2  # Population mean = 2
+
+# Generate sampling distributions
+n_samples <- 10000
+sample_size <- 100
+
+sample_means <- replicate(n_samples, mean(runif(sample_size, a, b)))
+sample_medians <- replicate(n_samples, median(runif(sample_size, a, b)))
+
+# Calculate estimator properties
+mean_bias <- mean(sample_means) - true_mean
+median_bias <- mean(sample_medians) - true_mean
+se_mean <- sd(sample_means)
+se_median <- sd(sample_medians)
+
+# Create comparison data frame
+estimators <- data.frame(
+  Estimate = c(sample_means, sample_medians),
+  Type = rep(c("Mean", "Median"), each = n_samples)
+)
+
+# Density plot comparing estimators
+ggplot(estimators, aes(x = Estimate, fill = Type)) +
+  geom_density(alpha = 0.5) +
+  geom_vline(xintercept = true_mean, linetype = "dashed") +
+  labs(title = "Sampling Distributions of Mean vs Median",
+       subtitle = paste("True population mean =", true_mean),
+       x = "Estimate Value", y = "Density") +
+  theme_minimal()
+```
+
+

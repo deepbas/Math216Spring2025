@@ -66,42 +66,12 @@ yt <- 0
 :::
 
 
-## <i class="fa fa-pencil-square-o" style="font-size:48px;color:purple"> Group Activity `r (yt <- yt + 1)`</i> {background="#ffdf9e"}
-
-::: row
-::: left
-![](https://media.giphy.com/media/RKApDdwsQ6jkwd6RNn/giphy.gif)
-:::
-
-::: right
-
-::: font80
-::: cle13
-- **Task:** In groups of two- three, discuss why it's important to estimate these proportions accurately.
-- **Question:** What might be some implications of inaccurate estimates in these scenarios?
-:::
-:::
-
-:::
-:::
-
-`r countdown(minutes = 5, seconds = 00, top = 0 , right = 0, color_background = "inherit", padding = "3px 4px", font_size = "1em")`
-
-
-## {.font50}
-
-> Example 1: (Example 6.5 - Textbook) A study of city voters is taken to determine whether they are in favor of a certain candidate for mayor. We assume that $60 \%$ of all the city's voters favor the candidate. Suppose we will randomly sample 100 voters and ask each if he or she is or is not in favor of the candidate. We want to study the sampling distribution of $\hat{p}$, the sample proportion of voters in favor of the candidate. What properties do you observe?
-
-<center>
-    <img src="images/table_6.5.png" width="50%" alt="Descriptive Alt Text">
-</center>
-
 
 ## Sampling distribution for $\hat{p}$ {.font80}
 
 ![](images/hist6.5.png)
 
-## Properties of Sampling Distribution of $\hat{p}$ {.font80}
+## Properties of Sampling Distribution of $\hat{p}$ {.font70}
 
 ::: cle13
 1. **Mean of $\hat{p}$**
@@ -131,21 +101,3 @@ yt <- 0
 
 
 
-
-## {.font60}
-
-> Example 2: The soft-drink cups at a certain fast-food restaurant have tickets attached to them. Customers peel off the tickets to see whether they win a prize. The proportion of tickets that are winners is $p=0.25$. A total of $n=70$ people purchase soft drinks between noon and 1:00 p.m. on a certain day. Let $\hat{p}$ be the proportion that win a prize. Find the mean and standard deviation of $\hat{p}$.
-
-
-
-## {.font60}
-
-> Example 3: According to a Harris poll taken in September 2013, chocolate is the favorite ice cream flavor for $27 \%$ of Americans. If a sample of 100 Americans is taken, what is the probability that the sample proportion of those who prefer chocolate is greater than 0.30?
-
-
-## {.font60}
-
-> Example 4: In the 2012 U.S. presidential election, $51 \%$ of voters voted for Barack Obama. If a sample of 75 voters were polled, would it be unusual if less than $40 \%$ of them had voted for Barack Obama?
-
-
-##

@@ -83,7 +83,7 @@ yt <- 0
 ## Sample Mean and Estimation {.font80}
 
 
-::: cle9
+::: cle10
 
 - **Sample Mean**: $\bar{x} = \frac{\sum x}{11}$
 - **Role of Sample Mean**: Serves as a better statistic to approximate the population mean, especially useful when population parameters are unknown.
@@ -95,7 +95,7 @@ yt <- 0
 ## Properties of the Sampling Distribution {.font70}
 
 
-::: cle13
+::: cle6
 - **Mean of Sampling Distribution**: Equals the population mean, i.e., $E(\bar{x}) = \mu$.
 - **Standard Error of the Mean (SE)**: $\sigma_{\bar{x}} = \frac{\sigma}{\sqrt{n}}$ for sample size \(n\).
 - **Implication**: The standard error quantifies the spread of the sampling distribution around the population mean.
@@ -106,7 +106,7 @@ yt <- 0
 
 ## Central Limit Theorem (CLT) {.font80}
 
-::: cle14
+::: cle15
 
 - **Theorem Statement**: For any population with mean $\mu$ and standard deviation $\sigma$, the sampling distribution of the sample mean $\bar{x}$ will be approximately normal if the sample size $n$ is sufficiently large (typically $n \geq 30$).
 - **Application**: This theorem applies regardless of the original population's distribution, making it a powerful tool in statistical inference.
@@ -116,7 +116,7 @@ yt <- 0
 
 ## Impact of Sample Size {.font80}
 
-::: cle13
+::: cle11
 - **Visualization**: Tells us how increasing sample size narrows the spread of the sampling distribution, aligning closer to a normal distribution.
 - **Practical Implication**: Larger sample sizes lead to more precise estimations of the population mean, emphasizing the importance of sample size in experimental design.
 
@@ -126,34 +126,8 @@ yt <- 0
 ## 
 
 
-![](images/various_sampling_distr.png)
+![](images/various_sampling_distr.png){width=300px}
 
 
-## {.font60}
-
-> Example 1: Suppose we have selected a random sample of $n=36$ observations from a population with mean $\mu=80$ and standard deviation $\sigma=6$.
-
-a. What is the value of the mean $\mu_{\bar{x}}$ and standard deviation (standard error) $\sigma_{\bar{x}}$ of the sampling distribution of the sample mean $\bar{x}$.
-
-<br>
-<br>
-
-b. What is the probability that the sample mean is greater than 82 ?
 
 
-## {.font60}
-
-> Example 2: Based on data from the U.S. Census, the mean age of college students in 2011 was $\mu=25$ years, with a standard deviation of $\sigma=9.5$ years.
-
-a. Describe the sampling distribution of the mean of a sample of 125 students.
-
-<br>
-<br>
-
-b. What is the probability that the sample mean age of the 125 students is greater than 26 years?
-
-
-##
-
-
-##

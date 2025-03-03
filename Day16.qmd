@@ -91,15 +91,6 @@ yt <- 0
 ![](images/parameter_list.png)
 
 
-
-## {.font60}
-
-> Example 1: Suppose two statistics, $A$ and $B$, exist to estimate the same population parameter $\theta$ (theta). (Note that $\theta$ could be any parameter: $\mu, \sigma^2$, etc.) Suppose the two statistics have sampling distributions as shown in the following figure. On the basis of these sampling distributions, which statistic is more attractive as an estimator of $\theta$ ?
-
-![](images/unbiasedness.png)
-
-
-
 ## Standard Error and Estimation Error {.font80}
 
 ::: cle4
@@ -122,45 +113,6 @@ yt <- 0
 :::
 
 
-## {.font60}
-
-> Example 2: The rolling machine of a steel manufacturer produces sheets of steel of varying thickness. The thickness of a steel sheet follows a uniform distribution with values between 150 and 200 millimeters. Suppose we perform the following experiment over and over again: Randomly sample 11 steel sheets from the production line and record the thickness x of each. Calculate the two sample statistics:
-
-$$
-\bar{x}=\text { Sample mean }=\sum x / 11
-$$
-
-$M=$ Median = Sixth sample measurement when the 11 thicknesses 1 are arranged in ascending order
-Obtain approximations to the sampling distributions of $\bar{x}$ and $M$.
-Since we know that it is uniform distribution, the mean is 175 mm . But let's assume that we don't know that and just use the sampling to approximate the parameter.
-
-##
-
-![](images/example6.1.png)
-
-## Which one is better? {.font80}
 
 
-![](images/mean_median6.1.png)
 
-
-## <i class="fa fa-pencil-square-o" style="font-size:48px;color:purple"> Group Activity `r (yt <- yt + 1)`</i> {background="#ffdf9e"}
-
-::: row
-::: left
-![](https://media.giphy.com/media/RKApDdwsQ6jkwd6RNn/giphy.gif)
-:::
-
-::: right
-
-<br>
-
-::: lqt
-
-Say hi to your group members and discuss which distribution is better and why. 
-
-:::
-:::
-:::
-
-`r countdown(minutes = 5, seconds = 00, top = 0 , right = 0, color_background = "inherit", padding = "3px 4px", font_size = "1em")`
