@@ -193,8 +193,8 @@ website:
         menu:
           - text: "Sampling Distributions"
             href: SamplingApp.html
-      #     - text: "Confidence Intervals"
-      #       href: ConfIntervalsApp.html
+          - text: "Advanced Sampling Distributions"
+            href: sampApp.html
       #     - text: "Power of Hypothesis Tests"
       #       href: PowerApp.html
       #     - text: "Simple Linear Regression"
