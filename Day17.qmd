@@ -128,6 +128,23 @@ yt <- 0
 
 ![](images/various_sampling_distr.png){width=300px}
 
+## Normal Approx. for Poisson   
 
+::: cle4
+::: font60
+ 
+- **Poisson Properties**: For $X \sim \text{Poisson}(\lambda)$:  
+  - Mean: $\mu = \lambda$  
+  - Variance: $\sigma^2 = \lambda$  
+  - *Shape*: Right-skewed for small $\lambda$, but becomes approximately normal as $\lambda$ grows ($\lambda > 10$ is often sufficient).  
 
+- **Central Limit Theorem (CLT)**:  
+  For large sample sizes $n$, the sampling distribution of $\bar{X}$ is approximately normal:  
+  $$  
+  \bar{X} \approx N\left(\mu_{\bar{x}} = \lambda,\ \sigma_{\bar{x}} = \sqrt{\frac{\lambda}{n}}\right)  
+  $$  
+  Even if the population is Poisson, the sample mean becomes normal when $n$ is large.  
+
+:::
+:::
 

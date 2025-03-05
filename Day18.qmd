@@ -94,6 +94,26 @@ yt <- 0
   $$ n \cdot \hat{p} \geq 15 \quad \text{and} \quad n(1-\hat{p}) \geq 15 $$
 :::
 
+## Normal Approx. for Binomial  
+
+::: cle5
+::: font60
+ 
+
+- **Binomial Properties**: For $X \sim \text{Binomial}(n, p)$:  
+  - Mean: $\mu = np$  
+  - Variance: $\sigma^2 = np(1-p)$  
+  - *Normal approximation*: Valid if $np \geq 10$ and $n(1-p) \geq 10$.  
+
+- **Sampling Distribution of Sample Proportion**:  
+  For proportions $\hat{p} = X/n$, the sampling distribution is approximately normal:  
+  $$  
+  \hat{p} \approx N\left(\mu_{\hat{p}} = p,\ \sigma_{\hat{p}} = \sqrt{\frac{p(1-p)}{n}}\right)  
+  $$  
+
+:::
+:::
+
 
 ## {.font80}
 

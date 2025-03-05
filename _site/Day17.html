@@ -209,9 +209,32 @@ Bastola
 <section id="section" class="slide level2">
 <h2></h2>
 
-
-
 <img data-src="images/various_sampling_distr.png" width="300" class="r-stretch"></section>
+<section id="normal-approx.-for-poisson" class="slide level2">
+<h2>Normal Approx. for Poisson</h2>
+<div class="cle4">
+<div class="font60">
+<ul>
+<li><strong>Poisson Properties</strong>: For <span class="math inline">\(X \sim \text{Poisson}(\lambda)\)</span>:
+<ul>
+<li>Mean: <span class="math inline">\(\mu = \lambda\)</span><br>
+</li>
+<li>Variance: <span class="math inline">\(\sigma^2 = \lambda\)</span><br>
+</li>
+<li><em>Shape</em>: Right-skewed for small <span class="math inline">\(\lambda\)</span>, but becomes approximately normal as <span class="math inline">\(\lambda\)</span> grows (<span class="math inline">\(\lambda &gt; 10\)</span> is often sufficient).</li>
+</ul></li>
+<li><strong>Central Limit Theorem (CLT)</strong>:<br>
+For large sample sizes <span class="math inline">\(n\)</span>, the sampling distribution of <span class="math inline">\(\bar{X}\)</span> is approximately normal:<br>
+<span class="math display">\[  
+\bar{X} \approx N\left(\mu_{\bar{x}} = \lambda,\ \sigma_{\bar{x}} = \sqrt{\frac{\lambda}{n}}\right)  
+\]</span><br>
+Even if the population is Poisson, the sample mean becomes normal when <span class="math inline">\(n\)</span> is large.</li>
+</ul>
+</div>
+</div>
+
+
+</section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
