@@ -123,24 +123,6 @@ A call center receives an average of 12 calls per hour (Poisson-distributed). Su
 a. Describe the sampling distribution of the sample mean.  
 b. Calculate the probability that the sample mean is less than 11.5 calls.  
 
-<!--
 
-### Solution to Activity 4 Case Study: 
-
-**Step 1**: For a uniform distribution $U(150, 200)$:  
-- $\mu = \frac{150 + 200}{2} = 175$ mm  
-- $\sigma = \sqrt{\frac{(200-150)^2}{12}} \approx 14.43$ mm  
-
-**Step 2**: Sampling distribution for $n=36$:  
-- $\mu_{\bar{x}} = 175$ mm  
-- $\sigma_{\bar{x}} = \frac{14.43}{\sqrt{36}} \approx 2.405$ mm  
-
-**Step 3**: Calculate $P(\\bar{X} > 180)$:  
-- $Z = \frac{180 - 175}{2.405} \approx 2.08$  
-- $P(Z > 2.08) = 1 - \Phi(2.08) \approx 0.0188$ (1.88%).  
-
-**Answer**: The probability is approximately **1.9%**.
-
--->
 
 

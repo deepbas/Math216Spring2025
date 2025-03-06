@@ -1,0 +1,15 @@
+{
+  "hash": "817bcbe7846b267c9c3c0bdc17349c64",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Activity 18\"\nsubtitle: \"MATH 216: Statistical Thinking\"\nformat: html\necho: false\nfig.width: 3\n---\n\n\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
