@@ -1,0 +1,111 @@
+---
+title: "Activity 19"
+subtitle: "MATH 216: Statistical Thinking"
+format: html
+echo: false
+fig.width: 3
+---
+
+```{r setup, include=FALSE}
+library(openintro)
+library(dplyr)
+library(knitr)
+library(ggplot2)
+```
+
+
+## Activity 1: Quiz
+
+- **Question:** Given a sample mean $\bar{x} = 5.2$, a population standard deviation $\sigma = 2.5$, and a sample size $n = 100$, calculate the 95% confidence interval for the population mean $\mu$.
+
+\vspace*{1in}
+
+## Activity 2: Data Exploration
+
+<img src="images/Day19-3.png" style="display: block; margin: auto;" width="80%"  loading="lazy" decoding="async">
+
+- **Task:** Use the following R-code output to calculate the sample mean and standard deviation, then infer the shape, mean, and spread of the population and sampling distribution.
+
+```{r}
+#| echo: true
+data_vector <- c(
+2, 3, 8, 6, 4, 4, 6, 4, 2, 5, 8, 10, 4, 4, 4, 2, 1, 3, 2, 10,
+1, 3, 2, 3, 4, 3, 5, 2, 4, 1, 2, 9, 1, 7, 17, 9, 9, 9, 4, 4,
+1, 1, 1, 3, 1, 6, 3, 3, 2, 5, 1, 3, 3, 14, 2, 3, 9, 6, 6, 3,
+5, 1, 4, 6, 11, 22, 1, 9, 6, 5, 2, 2, 5, 4, 3, 6, 1, 5, 1, 6,
+17, 1, 2, 4, 5, 4, 4, 3, 2, 3, 3, 5, 2, 3, 3, 2, 10, 2, 4, 2
+)
+mean(data_vector) #xbar
+sd(data_vector) #s
+```
+
+
+```{r}
+# Plot histogram of the original data
+hist(data_vector, main = "Histogram of Population Data", col = "skyblue", border = "black")
+
+
+library(ggplot2)
+library(purrr)
+
+set.seed(123) # Ensure reproducibility
+
+# sampling distribution
+# Sampling parameters
+n_samples <- 1000  # Number of samples
+sample_size <- 100  # Size of each sample
+
+# Generate sample means using map
+sample_means <- map_dbl(1:n_samples, ~mean(sample(data_vector, sample_size, replace = TRUE)))
+
+# Compute statistics
+mean_sample <- mean(sample_means)
+sd_sample <- sd(sample_means)
+
+# Plot the density of the sample means
+ggplot(data.frame(sample_means), aes(x = sample_means)) +
+  geom_histogram(aes(y = ..density..), bins = 30, fill = "lightblue", color = "black", alpha = 0.6) +
+  geom_density(color = "red", size = 1) +
+  geom_vline(xintercept = mean_sample, linetype = "dashed", color = "blue", size = 1) +
+  annotate("text", x = mean_sample, y = 0.15, label = paste0("Mean: ", round(mean_sample, 2)), color = "blue") +
+  annotate("text", x = mean_sample + sd_sample, y = 0.13, label = paste0("SD: ", round(sd_sample, 2)), color = "darkgreen") +
+  labs(title = "Sampling Distribution of Sample Means",
+       x = "Sample Means",
+       y = "Density") +
+  theme_minimal()
+```
+
+
+
+
+
+## Activity 3: Understanding Confidence Intervals
+
+
+![Confidence Intervals](images/Day19-5.png){ width=50% }
+
+![100(1-$\alpha$) CI](images/Day19-6.png){ width=100% }
+
+![90% CI](images/Day19-7.png){ width=100% }
+
+
+
+What is the correct interpretation of $100(1-\alpha)\%$ confidence intervals for a mean of a population?
+
+\vspace*{1in}
+
+
+
+## Activity 4: Group Activities with Real Data
+
+- **Task:** Using the provided dataset in Activity 2, calculate a 95% confidence interval for the population mean $\mu$. Interpret the results in the context of the problem.
+
+
+\vspace*{1in}
+
+
+## Activity 5: Case Studies and Problem-Solving
+
+- **Case Study:** A hospital wants to estimate the average length of stay for its patients. They have collected data from 30 patients and found a sample mean of 5 days with a standard deviation of 5 days. Calculate a 95% confidence interval for the average length of stay and interpret the results. Use the interval estimator $\bar{x} \pm 1.96 \sigma_{\bar{x}}$ to calculate a confidence interval for the target parameter, $\mu$.
+
+

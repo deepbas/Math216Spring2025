@@ -1,0 +1,218 @@
+---
+title: "Day 22"
+title-slide-attributes:
+  data-background-image: images/lake.jpg
+  data-background-size: contain
+  data-background-opacity: "0.5"
+subtitle: "Math 216: Statistical Thinking"
+author: "Bastola"
+format:
+  revealjs:
+    html-math-method: mathjax
+    mathjax-url: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/MathJax.js" 
+    theme: [default, scss/main.scss]
+    slide-number: true
+    preview-links: auto
+    history: true
+    chalkboard: 
+      src: drawings.json
+    transition: slide
+    background-transition: fade    
+    touch: false
+    controls: true
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+options(htmltools.preserve.raw = FALSE)
+options(ggrepel.max.overlaps = Inf)
+
+
+# load necessary packages
+library(tidyverse)
+library(countdown)
+library(mosaic)
+library(ggthemes)
+library(forcats)
+library(patchwork)
+library(Lock5Data)
+library(plotly)
+
+# Set ggplot theme
+theme_set(theme_tufte(base_size = 10))
+yt <- 0
+#<iframe width="1380" height="900" src="https://www.geogebra.org/m/mehn8u8s"></iframe>
+#::: {.callout-note title="Definition"}
+```
+
+
+## Introduction to Hypothesis Testing {.font80}
+
+::: cle6
+
+- Hypothesis testing is a statistical method used to decide whether to support or refute a specific claim about a population parameter based on sample data.
+- Analogous to a judicial process: The null hypothesis ($H_0$) represents the "status quo" (e.g., "innocent until proven guilty").
+:::
+
+## Elements of a Test of Hypothesis {.font80}
+
+::: cle7
+- City regulations require residential sewer pipes to have an average breaking strength greater than 2,400 pounds per foot.
+- Manufacturers must demonstrate that their products meet this standard.
+
+#### Hypotheses {.font80}
+
+- **Null Hypothesis ($H_0$)**: In theory, $\mu \leq 2400$. If we reject $\mu = 2400$, $\mu < 2400$ is also rejected.
+- **Alternative Hypothesis ($H_a$)**: $\mu > 2400$ (Pipes meet or exceed the standard).
+:::
+
+
+## Testing the Hypothesis {.font80}
+
+::: cle8
+Computation of Test Statistic
+
+- By the Central Limit Theorem, for large samples ($n \geq 30$), $\bar{x}$ approximates a normal distribution.
+- Test statistic $z$: 
+  $$
+  z = \frac{\bar{x} - \mu_0}{\sigma/\sqrt{n}}
+  $$
+  where $\sigma$ is the population standard deviation and $\mu_0 = 2400$.
+
+:::
+
+
+##
+
+<img src="images/Day22-1.png" style="display: block; margin: auto;" width="60%"  loading="lazy" decoding="async">
+
+
+## Decision Making {.font80}
+
+::: cle6
+- If the observed $\bar{x}$ exceeds 1.645 standard deviations above 2,400, we consider rejecting $H_0$.
+- Rejection implies that a rare event (occurring with probability $\leq 0.05$ under $H_0$) is unlikely without true cause (i.e., $H_a$ is likely true).
+
+::: 
+
+## Evidence from Sample Data {.font80}
+
+::: cle7
+
+- **Sample Characteristics:**
+  - Number of samples ($n$): 50
+  - Mean strength ($\bar{x}$): 2,460 pounds per linear foot
+  - Standard deviation ($s$): 200 pounds per linear foot
+
+- **Test Statistic Calculation:**
+  - The test statistic ($z$) is calculated as follows:
+  $$
+  z = \frac{\bar{x} - 2400}{s/\sqrt{n}} \approx \frac{2460 - 2400}{200 / \sqrt{50}} = \frac{60}{28.28} \approx 2.12
+  $$
+
+:::
+
+
+
+##
+
+<img src="images/Day22-2.png" style="display: block; margin: auto;" width="60%"  loading="lazy" decoding="async">
+
+
+
+
+
+## Types of Errors {.font80}
+
+::: cle9
+
+Type I Error
+
+- **Analogy**: Convicting an innocent person.
+- Occurs if we reject $H_0$ when it is, in fact, true.
+- Probability of Type I error is denoted by $\alpha$ (commonly set at 0.05).
+
+:::
+
+## Types of Errors {.font80}
+
+::: cle10
+
+Type II Error
+
+- **Analogy**: Acquitting a guilty person.
+- Occurs if we fail to reject $H_0$ when, in fact, $H_a$ is true.
+- Probability of Type II error is denoted by $\beta$.
+- Unlike $\alpha$, $\beta$ is not usually pre-specified but affected by the sample size, effect size, and the set $\alpha$.
+
+:::
+
+
+##  Types of Errors {.font80}
+
+<img src="images/Day22-4.png" style="display: block; margin: auto;" width="60%"  loading="lazy" decoding="async">
+
+
+##
+
+<img src="images/Day22-3.png" style="display: block; margin: auto;" width="60%"  loading="lazy" decoding="async">
+
+
+## Rejection Region {.font80}
+
+::: cle11
+- The set of values of the test statistic that lead us to reject $H_0$.
+- For this test, it's values greater than the z-value corresponding to a 0.05 probability in the upper tail of the normal distribution.
+
+:::
+
+##
+
+<img src="images/Day22-5.png" style="display: block; margin: auto;" width="60%"  loading="lazy" decoding="async">
+
+
+## Summary {.font80}
+
+::: cle12
+- **Hypothesis Testing as a Judicial Process**:
+  - $H_0$: The defendant (population parameter) is presumed innocent (equals 2400) until proven otherwise.
+  - $H_a$: Claims the defendant is not innocent (greater than 2400).
+  - We examine the "evidence" (sample data) to decide whether it sufficiently supports $H_a$ over $H_0$.
+
+:::
+
+## Hypothesis Test: Step-by-Step Procedure {.font40}
+
+::: cle15
+
+1. **State the Hypotheses**
+   - Null Hypothesis ($H_0$): Assume the status quo or a specific value (e.g., $\mu = 2400$).
+   - Alternative Hypothesis ($H_a$): Proposes a different scenario (e.g., $\mu > 2400$).
+
+2. **Assume $H_0$ is True**
+   - Collect data under the assumption that $H_0$ holds.
+
+3. **Compute the Test Statistic**
+   - Use the formula:
+     $$
+     z = \frac{\bar{x} - \mu_0}{\sigma / \sqrt{n}}
+     $$
+   - $\bar{x}$ is the sample mean, $\mu_0$ is the value under $H_0$, $\sigma$ is the standard deviation, and $n$ is the sample size.
+
+4. **Determine the Significance Level**
+   - Commonly set at $\alpha = 0.05$.
+   - Decide if the computed $z$ value suggests a rare event:
+     - If $z > 1.645$, it's considered unusual under the assumption that $H_0$ is true.
+
+5. **Make a Decision**
+   - Reject $H_0$ if the test statistic falls in the rejection region (e.g., $z > 1.645$ for $\alpha = 0.05$).
+   - If not, fail to reject $H_0$.
+
+:::
+
+
+##
+
+
+
+##

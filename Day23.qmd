@@ -1,0 +1,133 @@
+---
+title: "Day 23"
+title-slide-attributes:
+  data-background-image: images/lake.jpg
+  data-background-size: contain
+  data-background-opacity: "0.5"
+subtitle: "Math 216: Statistical Thinking"
+author: "Bastola"
+format:
+  revealjs:
+    html-math-method: mathjax
+    mathjax-url: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/MathJax.js" 
+    theme: [default, scss/main.scss]
+    slide-number: true
+    preview-links: auto
+    history: true
+    chalkboard: 
+      src: drawings.json
+    transition: slide
+    background-transition: fade    
+    touch: false
+    controls: true
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+options(htmltools.preserve.raw = FALSE)
+options(ggrepel.max.overlaps = Inf)
+
+
+# load necessary packages
+library(tidyverse)
+library(countdown)
+library(mosaic)
+library(ggthemes)
+library(forcats)
+library(patchwork)
+library(Lock5Data)
+library(plotly)
+
+# Set ggplot theme
+theme_set(theme_tufte(base_size = 10))
+yt <- 0
+#<iframe width="1380" height="900" src="https://www.geogebra.org/m/mehn8u8s"></iframe>
+#::: {.callout-note title="Definition"}
+```
+
+
+## Null and Allternate Hypotheses {.font80}
+
+<img src="images/Day23-1.png" style="display: block; margin: auto;" width="80%"  loading="lazy" decoding="async">
+
+
+## Direction of Alternate Hypotheses {.font80}
+
+<img src="images/Day23-2.png" style="display: block; margin: auto;" width="80%"  loading="lazy" decoding="async">
+
+<img src="images/Day23-3.png" style="display: block; margin: auto;" width="80%"  loading="lazy" decoding="async">
+
+
+<img src="images/Day23-4.png" style="display: block; margin: auto;" width="80%"  loading="lazy" decoding="async">
+
+## P-Value in Hypothesis Testing {.font80}
+
+::: cle6
+
+**What is a P-Value?**
+
+- The $p$-value quantifies the level of disagreement between the sample data and the null hypothesis ($H_0$).
+- It is the probability, assuming $H_0$ is true, of observing a test statistic as extreme as, or more extreme than, the statistic calculated from the sample data.
+
+:::
+
+## Statistical Significance
+
+::: cle15
+- A smaller $p$-value indicates stronger evidence against $H_0$ and in support of the alternative hypothesis ($H_a$).
+- Common thresholds for $p$-values are 0.05, 0.01, or 0.001, where a $p$-value less than these thresholds typically leads to rejecting $H_0$.
+
+:::
+
+## Calculation of P-Value
+
+::: cle7
+- The $p$-value is calculated based on the distribution of the test statistic under the null hypothesis.
+- For a right-tailed test, if $z$ is the observed test statistic, $p = P(Z \geq z | H_0)$.
+
+:::
+
+
+## {.font80}
+
+<img src="images/Day23-5.png" style="display: block; margin: auto;" width="80%"  loading="lazy" decoding="async">
+
+<img src="images/Day23-6.png" style="display: block; margin: auto;" width="80%"  loading="lazy" decoding="async">
+
+
+
+
+## Example 1: Testing Mean Breaking Strength {.font60}
+
+- **Null Hypothesis ($H_0$)**: $\mu \leq 2400$ (lbs/ft)
+- **Alternative Hypothesis ($H_a$)**: $\mu > 2400$ (lbs/ft)
+- Suppose a sample of 50 sections of sewer pipe shows a mean breaking strength that suggests $\mu > 2400$. 
+  - Mean strength ($\bar{x}$): 2,460 pounds per linear foot
+  - Standard deviation ($s$): 200 pounds per linear foot
+
+
+Calculate the $p$-value for this test using the sample mean and standard deviation obtained from these 50 measurements. 
+
+##
+
+
+## {.font60}
+
+
+> Example 2: Consider the one-tailed test of hypothesis, $H_0: \mu=100$ versus $H_a: \mu>100$. 
+
+a. Suppose the test statistic is $z=1.44$. Find the $p$-value of the test and the rejection region for the test when $\alpha=.05$. Then show that the conclusion using the rejection region approach will be identical to the conclusion based on the p-value.
+
+::: custom-space
+:::
+
+
+
+## {.font60}
+
+b. Suppose the test statistic is $z=3.01$. Find the $p$-value of the test and the rejection region for the test when $\alpha=.05$. Then show that the conclusion using the rejection region approach will be identical to the conclusion based on the p-value.
+
+
+##
+
+

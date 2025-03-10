@@ -1,0 +1,164 @@
+---
+title: "Day 24"
+title-slide-attributes:
+  data-background-image: images/lake.jpg
+  data-background-size: contain
+  data-background-opacity: "0.5"
+subtitle: "Math 216: Statistical Thinking"
+author: "Bastola"
+format:
+  revealjs:
+    html-math-method: mathjax
+    mathjax-url: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/MathJax.js" 
+    theme: [default, scss/main.scss]
+    slide-number: true
+    preview-links: auto
+    history: true
+    chalkboard: 
+      src: drawings.json
+    transition: slide
+    background-transition: fade    
+    touch: false
+    controls: true
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+options(htmltools.preserve.raw = FALSE)
+options(ggrepel.max.overlaps = Inf)
+
+
+# load necessary packages
+library(tidyverse)
+library(countdown)
+library(mosaic)
+library(ggthemes)
+library(forcats)
+library(patchwork)
+library(Lock5Data)
+library(plotly)
+
+# Set ggplot theme
+theme_set(theme_tufte(base_size = 10))
+yt <- 0
+#<iframe width="1380" height="900" src="https://www.geogebra.org/m/mehn8u8s"></iframe>
+#::: {.callout-note title="Definition"}
+#::: custom-space
+#<img src="images/Day23-1.png" style="display: block; margin: auto;" width="80%"  loading="lazy" decoding="async">
+```
+
+
+## Steps for Hypothesis Testing Part I: {.font60}
+
+::: cle6
+
+1. **State the Hypotheses**
+   - Null Hypothesis ($H_0$): No effect or no difference, posits that $\mu = \mu_0$.
+   - Alternative Hypothesis ($H_A$): Asserts a specific claim about the population mean $\mu$ that is different from $\mu_0$ (e.g., $\mu > \mu_0$, $\mu < \mu_0$, or $\mu \neq \mu_0$).
+
+2. **Set the Significance Level ($\alpha$)**
+   - The probability of making a Type I error (rejecting a true null hypothesis). Common values are 0.05, 0.01, or 0.10.
+
+3. **Assumptions**
+   - The sample is a simple random sample.
+   - The sample size is large (usually $n \geq 30$), which justifies the use of the Central Limit Theorem.
+
+4. **Collect Data**
+   - Obtain a random sample and compute the sample mean ($\bar{X}$) and standard deviation ($S$).
+:::
+
+
+## Steps for Hypothesis Testing Part II: {.font50}
+
+
+::: cle6
+5. **Calculate the Test Statistic ($z$)**
+   - If the population standard deviation ($\sigma$) is known:
+     $$ z = \frac{\bar{X} - \mu_0}{\sigma/\sqrt{n}} $$
+   - If $\sigma$ is unknown and $n \geq 30$, use $s$ (sample standard deviation):
+     $$ z = \frac{\bar{X} - \mu_0}{s/\sqrt{n}} $$
+
+
+
+6. **Decision Rule**
+   - For a one-tailed test: Reject $H_0$ if $z$ falls in the rejection region (either $z < -z_{\alpha}$ for left-tailed or $z > z_{\alpha}$ for right-tailed).
+   - For a two-tailed test: Reject $H_0$ if $|z| > z_{\alpha/2}$.
+
+7. **Compute the P-Value**
+   - The probability of observing a test statistic as extreme as, or more extreme than, the statistic calculated from the sample data, assuming that $H_0$ is true.
+
+8. **Conclusion**
+   - Reject $H_0$ if the p-value is less than $\alpha$; otherwise, do not reject $H_0$. Report whether the evidence supports $H_a$ based on the statistical significance.
+
+:::
+
+
+## One-Sided (Greater Than) Example {.font60}
+
+::: cle14
+- **Scenario**: A study group claims that their session increases the average test score above 75.
+- **Sample Data**: $\bar{x} = 78$, $s = 5$, $n = 30$
+- **Test**: $H_0: \mu \leq 75$ vs. $H_a: \mu > 75$
+- **Calculation**: $z = \frac{78 - 75}{5/\sqrt{30}} \approx 3.29$
+- **Conclusion**: Reject $H_0$ if $z > 1.645$ (at $\alpha = 0.05$).
+:::
+
+## One-Sided (Less Than) Example {.font60}
+
+::: cle6
+
+- **Scenario**: A nutritionist claims that a new diet reduces the average calorie intake below 2200 calories/day.
+- **Sample Data**: $\bar{x} = 2150$, $s = 120$, $n = 35$
+- **Test**: $H_0: \mu \geq 2200$ vs. $H_a: \mu < 2200$
+- **Calculation**: $z = \frac{2150 - 2200}{120/\sqrt{35}} \approx -2.47$
+- **Conclusion**: Reject $H_0$ if $z < -1.645$ (at $\alpha = 0.05$).
+
+:::
+
+## Two sided example {.font60}
+
+::: cle15
+- **Scenario**: An analyst claims that a new billing system changes the average monthly bill from $100.
+- **Sample Data**: $\bar{x} = 105$, $s = 10$, $n = 40$
+- **Test**: $H_0: \mu = 100$ vs. $H_a: \mu \neq 100$
+- **Calculation**: $z = \frac{105 - 100}{10/\sqrt{40}} \approx 3.16$
+- **Conclusion**: Reject $H_0$ if $|z| > 1.96$ (at $\alpha = 0.05$).
+:::
+
+
+## Two Sided example contd. {.font60}
+
+a. Based on the test statistic $z = 2.53$, calculate the p-value and determine whether to reject the null hypothesis at a significance level of $\alpha = 0.05$. Does the p-value suggest strong evidence against the null hypothesis?
+
+::: custom-space
+:::
+
+b. Construct the 95% confidence interval for the population mean using the sample data ($\bar{x} = 105$, $s = 10$, $n = 40$). Based on the confidence interval, would you reject the null hypothesis that the population mean is $100$?
+
+
+
+## {.font60}
+
+
+> Example 4: The sample of 100 drug-injected rats yielded the results (in seconds) shown in the following Table. At $\alpha=.01$, use these data to conduct the test of hypothesis:
+
+\begin{align*}
+H_0: \mu=1.2 \\
+H_a: \mu \neq 1.2
+\end{align*}
+
+
+<img src="images/Day24-1.png" style="display: block; margin: auto;" width="60%"  loading="lazy" decoding="async">
+
+
+::: custom-space
+:::
+
+
+
+## {.font60}
+
+
+##
+
+

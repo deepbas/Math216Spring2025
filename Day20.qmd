@@ -102,50 +102,20 @@ $$
 <img src="images/Day20-4.png" style="display: block; margin: auto;" width="80%"  loading="lazy" decoding="async">
 
 
+## Overview of Determining Sample Size {.font80}
 
+::: cle9
+- Importance of sample size in designing experiments.
+- Impacts the reliability of inferences about a population mean.
+:::
 
-## {.font60}
-
-
-> Example 1: Consider the pharmaceutical company that desires an estimateof the mean increase in blood pressure of patients who take a new drug. The blood pressure increases (measured in points) for the n $=6$ patients in the human testing phase are shown in the following. Use this information to construct a $95 \%$ confidence interval for $\mu$, the mean increase in blood pressure associated with the new drug for all patients in the population.
-
-\begin{align*}
-\begin{array}{llllll}
-1.7 & 3.0 & 0.8 & 3.4 & 2.7 & 2.1
-\end{array}
-\end{align*}
-
-(From R/hand calculation, $\bar{x}=2.283, s=0.950$ )
+<img src="images/Day21-3.png" style="display: block; margin: auto;" width="60%"  loading="lazy" decoding="async">
 
 
 ##
 
+<img src="images/Day21-5.png" style="display: block; margin: auto;" width="60%"  loading="lazy" decoding="async">
 
 
 
-## {.font60}
 
-> Example 2: Some quality control experiments require destructive sampling (i.e., the test to determine whether the item is defective destroys the item) in order to measure a particular characteristic of the product. The cost of destructive sampling often dictates small samples. Suppose a manufacturer of printers for personal computers wishes to estimate the mean number of characters printed before the printhead fails. The printer manufacturer tests $n=15$ printheads and records the number of characters printed until failure for each. These 15 measurements (in millions of characters) are listed in the following table.
-
-<img src="images/Day20-5.png" style="display: block; margin: auto;" width="80%"  loading="lazy" decoding="async">
-
-(From R/hand calculation, $\bar{x}=1.23867, s=0.19316$ )
-
-a. Form a $99 \%$ confidence interval for the mean number of characters printed before the printhead fails. Interpret the result.
-
-## {.font60}
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-b. What assumption is required for the interval you found in part a to be valid? Is that assumption reasonably satisfied?
-
-
-
-##
