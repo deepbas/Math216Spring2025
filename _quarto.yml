@@ -173,10 +173,10 @@ website:
             href: Activity17.html
           - text: "Activity 18"
             href: Activity18.html
-          # - text: "Activity 13"
-          #   href: Activity13.html
-          # - text: "Activity 13"
-          #   href: Activity13.html
+          - text: "Activity 19"
+            href: Activity19.html
+          - text: "Activity 20"
+            href: Activity20.html
           # - text: "Activity 13"
           #   href: Activity13.html             
             # - text: "Activity 1"

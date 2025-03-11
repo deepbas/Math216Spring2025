@@ -1,0 +1,15 @@
+{
+  "hash": "f609b76ad85d76fc7dac78da90b53e72",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Activity 20\"\nsubtitle: \"MATH 216: Statistical Thinking\"\nformat: html\nfig.width: 3\n---\n\n\n\n## Activity 1: Think-Pair-Share\n\n\n$$\nT = \\frac{\\bar{x} - \\mu}{s / \\sqrt{n}}\n$$\n\n\n1. **Think** individually about why the t-statistic is more appropriate for small samples compared to the z-statistic.\n2. **Pair** with a neighbor to discuss their thoughts.\n3. **Share** your insights with the class.\n\n\\vspace*{1in}\n\n## Activity 2: Quiz\n\n\n- **Question:** Given a sample mean $\\bar{x} = 2.283$, sample standard deviation $s = 0.950$, and sample size $n = 6$, calculate the t-statistic for a population mean $\\mu = 2.0$.\n\n\\vspace*{1in}\n\n\n## Activity 3: Interactive Data Exploration\n\n**Prompt:** Provide students with the following dataset and ask them to explore it using RStudio:\n\n::: {.cell}\n\n```{.r .cell-code}\nblood_pressure <- c(1.7, 3.0, 0.8, 3.4, 2.7, 2.1)\n```\n:::\n\n- **Task:** Calculate the sample mean $\\bar{x}$ and sample standard deviation $s$.\n- **Visualization:** Create a histogram of the data and overlay a normal distribution curve.\n\n\\vspace*{1in}\n\n\n## Activity 4: Group Activities with Real Data\n\n- **Dataset:** \n\n::: {.cell}\n\n```{.r .cell-code}\nprinthead_failures <- c(1.14, 1.23, 1.32, 1.21, 1.25, 1.28, 1.31, 1.22, \n                        1.26, 1.29, 1.33, 1.24, 1.27, 1.30, 1.34)\n```\n:::\n\n- **Task:** Calculate the 99% confidence interval for the mean number of characters printed before the printhead fails.\n- **Interpretation:** Discuss the implications of the confidence interval in the context of the problem.\n\n\\vspace*{1in}\n\n\n## Activity 5: Case Studies and Problem-Solving\n\n\n- **Scenario:** A pharmaceutical company wants to estimate the mean increase in blood pressure for patients taking a new drug. They have a small sample of 6 patients with the following blood pressure increases (in points):\n\n::: {.cell}\n\n```{.r .cell-code}\nblood_pressure_increases <- c(1.7, 3.0, 0.8, 3.4, 2.7, 2.1)\n```\n:::\n\n- **Task:** Construct a 95% confidence interval for the mean increase in blood pressure. Discuss the assumptions required for this interval to be valid and whether they are reasonably satisfied.\n\n\\vspace*{1in}\n\n\n## Activity 6: Calculating Sample Size\n\nConsider a large hospital that wants to estimate the average length of stay of its patients, $\\mu$ . The hospital randomly samples $n=100$ of its patients and finds that the sample mean length of stay is $\\bar{x}=4.5$ days. Also, suppose it is known that the standard deviation of the length of stay for all hospital patients is $\\sigma=4$ days.\n\nInitial 95\\% C.I.: $4.5 \\pm 0.78$ days; width $=1.56$ days.\n\n**Adjusting Sample Size for Precision** \n\n- Goal: Narrow C.I. width from 1.56 days to 0.50 day.\n- Calculation leads to a required sample size of approximately ____ patients.\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
