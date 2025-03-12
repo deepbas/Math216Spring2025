@@ -197,8 +197,8 @@ website:
             href: sampApp.html
           - text: "Confidence Intervals"
             href: CIApp.html
-      #     - text: "Power of Hypothesis Tests"
-      #       href: PowerApp.html
+          - text: "CI for means and proportions"
+            href: ConfIntervalsApp.html
       #     - text: "Simple Linear Regression"
       #       href: SimpleLinearRegression.html
 
