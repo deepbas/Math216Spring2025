@@ -8,7 +8,6 @@ format: html
 library(openintro)
 library(dplyr)
 library(knitr)
-data(hsb2)
 ```
 
 

@@ -1,14 +1,23 @@
 ---
 title: "Activity 2"
 subtitle: "MATH 216: Statistical Thinking"
-format: html
+format: live-html
+engine: knitr
+toc: true
+webr:
+  packages:
+    - dplyr
+    - ggplot2
+    - purrr
+    - MASS
 ---
+
+{{< include _extensions/r-wasm/live/_knitr.qmd >}}
 
 ```{r setup, include=FALSE}
 library(openintro)
 library(dplyr)
 library(knitr)
-data(hsb2)
 ```
 
 ### **Activity 1: Think-Pair-Share**
@@ -29,26 +38,15 @@ C) It can lead to underestimation of public concern.
 D) It can polarize responses.  
 
 
-
 ### **Activity 3: Interactive Data Exploration**
 
-::: scrollable
-
-```{r echo=FALSE}
-library(tidyverse)
-# Load the MASS package
-library(MASS)
-
+```{webr}
 # Load the crabs dataset
 data(crabs)
 
 # Display the first few rows of the dataset
 crabs %>% head() %>%  knitr::kable()
-```
 
-:::
-
-```{r echo=FALSE}
 ggplot(crabs, aes(x = CL, fill = sex)) + 
   geom_histogram(binwidth = 5) + 
   facet_wrap(~sex) + 
@@ -58,8 +56,6 @@ ggplot(crabs, aes(x = CL, fill = sex)) +
 ```
 
 1. **Question:** What do you see on the above plots? .
-
-
 
 
 ### **Activity 4: Quiz**

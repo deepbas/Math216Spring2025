@@ -1,10 +1,17 @@
 ---
 title: "Activity 16"
 subtitle: "MATH 216: Statistical Thinking"
-format: html
-echo: false
-fig.width: 3
+format: live-html
+engine: knitr
+toc: true
+webr:
+  packages:
+    - dplyr
+    - ggplot2
+    - purrr
 ---
+
+{{< include _extensions/r-wasm/live/_knitr.qmd >}}
 
 ```{r setup, include=FALSE}
 library(openintro)
@@ -71,9 +78,7 @@ Since we know that it is uniform distribution, the mean is 175 mm . But let's as
 
 - **Task**: Apply the concepts of unbiasedness and standard error to determine whether the sample mean or median is a better estimator for the population mean.
 
-```{r}
-#| echo: false
-library(ggplot2)
+```{webr}
 set.seed(123)
 
 # Population parameters (uniform distribution)

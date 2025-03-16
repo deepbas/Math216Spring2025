@@ -1,9 +1,17 @@
 ---
 title: "Activity 11"
 subtitle: "MATH 216: Statistical Thinking"
-format: html
-echo: false
+format: live-html
+engine: knitr
+toc: true
+webr:
+  packages:
+    - dplyr
+    - ggplot2
+    - purrr
 ---
+
+{{< include _extensions/r-wasm/live/_knitr.qmd >}}
 
 ```{r setup, include=FALSE}
 library(openintro)
@@ -45,10 +53,7 @@ library(ggplot2)
 
 ## Activity 3: Data Exploration
 
-```{r}
-#| echo: true
-library(ggplot2)
-
+```{webr}
 # Generate uniform distribution data
 set.seed(123)  # For reproducibility
 a <- 0
@@ -69,8 +74,6 @@ ggplot(data, aes(x = x)) +
   ) +
   theme_minimal()
 ```
-
-**Task:** 
 
 - Modify the values of $a$ and $b$ to see how the distribution changes.  
 - Calculate the mean and variance of the generated data and compare them to the theoretical values.

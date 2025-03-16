@@ -1,9 +1,18 @@
 ---
 title: "Activity 4"
 subtitle: "MATH 216: Statistical Thinking"
-format: html
-echo: false
+format: live-html
+engine: knitr
+toc: true
+webr:
+  packages:
+    - dplyr
+    - ggplot2
+    - purrr
+    - tidyr
 ---
+
+{{< include _extensions/r-wasm/live/_knitr.qmd >}}
 
 ```{r setup, include=FALSE}
 library(openintro)
@@ -43,14 +52,13 @@ Answer the following question individually:
 
 1. **Case Study:** Use the graphical and numerical summaries of **Student Survey Dataset** to compare the GPA of students for different Year.  
 
-```{r}
+```{webr}
 survey <- read.csv("https://raw.githubusercontent.com/deepbas/statdatasets/main/StudentSurvey.csv") %>% 
   tidyr::drop_na()
 
 ggplot(survey, aes(x=GPA, fill=Year)) +
   geom_histogram() +
   facet_wrap(~Year) 
-
 
 survey %>% 
   group_by(Year) %>% 

@@ -1,9 +1,16 @@
 ---
 title: "Activity 20"
 subtitle: "MATH 216: Statistical Thinking"
-format: html
-fig.width: 3
+format: live-html
+engine: knitr
+toc: true
+webr:
+  packages:
+    - dplyr
+    - ggplot2
 ---
+
+{{< include _extensions/r-wasm/live/_knitr.qmd >}}
 
 ```{r setup, include=FALSE}
 library(openintro)
@@ -38,7 +45,7 @@ $$
 
 **Prompt:** Provide students with the following dataset and ask them to explore it using RStudio:
 
-```{r}
+```{webr}
 blood_pressure <- c(1.7, 3.0, 0.8, 3.4, 2.7, 2.1)
 ```
 
@@ -52,7 +59,7 @@ blood_pressure <- c(1.7, 3.0, 0.8, 3.4, 2.7, 2.1)
 
 - **Dataset:** 
 
-```{r}
+```{webr}
 printhead_failures <- c(1.14, 1.23, 1.32, 1.21, 1.25, 1.28, 1.31, 1.22, 
                         1.26, 1.29, 1.33, 1.24, 1.27, 1.30, 1.34)
 ```
@@ -68,7 +75,7 @@ printhead_failures <- c(1.14, 1.23, 1.32, 1.21, 1.25, 1.28, 1.31, 1.22,
 
 - **Scenario:** A pharmaceutical company wants to estimate the mean increase in blood pressure for patients taking a new drug. They have a small sample of 6 patients with the following blood pressure increases (in points):
 
-```{r}
+```{webr}
 blood_pressure_increases <- c(1.7, 3.0, 0.8, 3.4, 2.7, 2.1)
 ```
 
@@ -87,4 +94,9 @@ Initial 95\% C.I.: $4.5 \pm 0.78$ days; width $=1.56$ days.
 
 - Goal: Narrow C.I. width from 1.56 days to 0.50 day.
 - Calculation leads to a required sample size of approximately ____ patients.
+
+```{webr}
+# Enter your code here ...
+
+```
 

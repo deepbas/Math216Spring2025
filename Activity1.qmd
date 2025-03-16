@@ -1,8 +1,18 @@
 ---
 title: "Activity 1"
 subtitle: "MATH 216: Statistical Thinking"
-format: html
+format: live-html
+engine: knitr
+toc: true
+webr:
+  packages:
+    - dplyr
+    - ggplot2
+    - purrr
+    - openintro
 ---
+
+{{< include _extensions/r-wasm/live/_knitr.qmd >}}
 
 ```{r setup, include=FALSE}
 library(openintro)
@@ -28,9 +38,7 @@ The **High School and Beyond (hsb2)** dataset contains information about 200 hig
 
 ## Data Preview
 
-```{r}
-#| echo: false
-#| warning: false
+```{webr}
 hsb2 %>%
   head() %>%
   kable(format = "html", caption = "First 6 observations from hsb2 dataset")

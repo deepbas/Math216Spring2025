@@ -1,9 +1,17 @@
 ---
 title: "Activity 5"
 subtitle: "MATH 216: Statistical Thinking"
-format: html
-echo: false
+format: live-html
+engine: knitr
+toc: true
+webr:
+  packages:
+    - dplyr
+    - ggplot2
+    - purrr
 ---
+
+{{< include _extensions/r-wasm/live/_knitr.qmd >}}
 
 ```{r setup, include=FALSE}
 library(openintro)
@@ -48,11 +56,7 @@ D) 1/1
 3. **Discussion**: Compare the empirical probability with the theoretical probability.
 
 
-```{r}
-# Load necessary library
-library(ggplot2)
-library(dplyr)
-
+```{webr}
 # Create a data frame
 die_roll_data <- data.frame(
   outcome = sample(1:6, 200, replace = TRUE)

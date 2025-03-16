@@ -1,9 +1,17 @@
 ---
 title: "Activity 10"
 subtitle: "MATH 216: Statistical Thinking"
-format: html
-echo: false
+format: live-html
+engine: knitr
+toc: true
+webr:
+  packages:
+    - dplyr
+    - ggplot2
+    - purrr
 ---
+
+{{< include _extensions/r-wasm/live/_knitr.qmd >}}
 
 ```{r setup, include=FALSE}
 library(openintro)
@@ -14,7 +22,6 @@ library(ggplot2)
 
 
 ## Activity 1: Ecological Research
-
 
 **Scenario**: Weekly sightings of blue whales are recorded, with an average of 2.6 sightings.
 
@@ -52,8 +59,7 @@ library(ggplot2)
 
 **R Code Example**:
 
-```{r echo=TRUE}
-library(ggplot2)
+```{webr}
 lambda_values <- c(1, 2, 3, 4, 5)
 probabilities <- dpois(3, lambda = lambda_values)
 data <- data.frame(lambda = lambda_values, probability = probabilities)
@@ -78,13 +84,10 @@ ggplot(data, aes(x = lambda, y = probability)) +
 
 **Dataset Example**:
 
-```{r echo=TRUE}
+```{webr}
 set.seed(42)
 accidents <- rpois(100, lambda = 3)  
-```
 
-
-```{r}
 lambda <- mean(accidents)
 accidents_df <- data.frame(accidents)
 

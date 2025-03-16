@@ -1,10 +1,18 @@
 ---
 title: "Activity 13"
 subtitle: "MATH 216: Statistical Thinking"
-format: html
-echo: false
-fig.width: 3
+format: live-html
+engine: knitr
+toc: true
+webr:
+  packages:
+    - dplyr
+    - ggplot2
+    - purrr
+    - gridExtra
 ---
+
+{{< include _extensions/r-wasm/live/_knitr.qmd >}}
 
 ```{r setup, include=FALSE}
 library(openintro)
@@ -26,7 +34,7 @@ library(gridExtra)
 
 
 
-```{r}
+```{webr}
 # store 100 mpgs in an object called 'mpg'
 set.seed(123)
 
@@ -42,9 +50,8 @@ mpg_data$sqrt_mpg <- sqrt(mpg_data$mpg)
 
 
 
-```{r}
+```{webr}
 #| label: enhanced-hist
-#| echo: false
 ggplot(mpg_data, aes(x = mpg)) +
   geom_histogram(aes(y = after_stat(density)), bins = 15, fill = "steelblue", alpha = 0.7) +
   geom_density(color = "red", linewidth = 1) +
@@ -63,13 +70,11 @@ ggplot(mpg_data, aes(sample = mpg)) +
   theme_minimal() -> p3
 
 grid.arrange(p1, p2, p3, ncol = 3)
-
 ```
 
 
-```{r}
+```{webr}
 #| label: iqr-ratio
-#| echo: false
 iqr_sd <- mpg_data %>% 
   summarise(
     Q1 = quantile(mpg, 0.25),
