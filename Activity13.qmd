@@ -82,6 +82,8 @@ iqr_sd <- mpg_data %>%
     SD = sd(mpg)
   )
 
-iqr_sd %>% knitr::kable()
+iqr_sd %>%
+  round(3) %>% 
+  knitr::kable()
 ```
 

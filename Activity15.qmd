@@ -1,10 +1,16 @@
 ---
 title: "Activity 15"
 subtitle: "MATH 216: Statistical Thinking"
-format: html
-echo: false
-fig.width: 3
+format: live-html
+engine: knitr
+toc: true
+webr:
+  packages:
+    - dplyr
+    - ggplot2
 ---
+
+{{< include _extensions/r-wasm/live/_knitr.qmd >}}
 
 ```{r setup, include=FALSE}
 library(openintro)
@@ -45,7 +51,7 @@ What is the probability that $X > 3$ if $\theta = 2$?
 
 \vspace*{1in}
 
-## Activity 4: microwave warranty
+## Activity 4: Microwave warranty
 
 **Case Study:** A manufacturer of microwave ovens is trying to determine the length of warranty period it should attach to its magnetron tube, the most critical component in the oven. Preliminary testing has shown that the length of life (in years), $x$, of a magnetron tube has an exponential probability distribution with $\theta=6.25$.
 

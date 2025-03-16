@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <meta charset="utf-8">
 <meta name="generator" content="quarto-99.9.9">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
 <title>Activity 7 – Math 216: Statistical Thinking</title>
 <style>
 code{white-space: pre-wrap;}
@@ -19,6 +22,7 @@ ul.task-list li input[type="checkbox"] {
 }
 </style>
 
+
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -31,12 +35,13 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-494121dfa8658343c03537e94414993d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-a0649ace7b9e9e15dfb5fe311d767a49.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-494121dfa8658343c03537e94414993d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-9e2db6d60132874137d35cd80df6d385.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-c2299866e9c1ed9e4d64cbb04b200562.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark"><script id="quarto-search-options" type="application/json">{
+<link href="site_libs/bootstrap/bootstrap-0522aeb2e65cb0a4bd37577de0a3038c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/live-runtime/live-runtime.js" type="module"></script>
+<link href="site_libs/quarto-contrib/live-runtime/live-runtime.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
@@ -62,7 +67,14 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
-}</script><script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script><script type="text/javascript">
+}</script>
+<script type="module" src="site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
+<link href="site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
 const typesetMath = (el) => {
   if (window.MathJax) {
     // MathJax Typeset
@@ -87,12 +99,16 @@ const typesetMath = (el) => {
 window.Quarto = {
   typesetMath
 };
-</script><link rel="stylesheet" href="styles.css">
+</script>
+
 </head>
+
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg " data-bs-theme="dark"><div class="navbar-container container-fluid">
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Math 216</span>
@@ -104,7 +120,7 @@ window.Quarto = {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-<li class="nav-item">
+  <li class="nav-item">
     <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
@@ -116,8 +132,8 @@ window.Quarto = {
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-lecture-slides" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Lecture Slides</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-lecture-slides">
-<li>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-lecture-slides">    
+        <li>
     <a class="dropdown-item" href="./Day1.html" target="_blank">
  <span class="dropdown-text">Lecture 1</span></a>
   </li>  
@@ -198,13 +214,13 @@ window.Quarto = {
  <span class="dropdown-text">Lecture 21</span></a>
   </li>  
     </ul>
-</li>
+  </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-activities" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Activities</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-activities">
-<li>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-activities">    
+        <li>
     <a class="dropdown-item" href="./Activity1.html">
  <span class="dropdown-text">Activity 1</span></a>
   </li>  
@@ -289,24 +305,24 @@ window.Quarto = {
  <span class="dropdown-text">Activity 21</span></a>
   </li>  
     </ul>
-</li>
+  </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-tutorials" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Tutorials</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-tutorials">
-<li>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-tutorials">    
+        <li>
     <a class="dropdown-item" href="./RandRStudio.html">
  <span class="dropdown-text">R and RStudio</span></a>
   </li>  
     </ul>
-</li>
+  </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-shinyapps" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">ShinyApps</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-shinyapps">
-<li>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-shinyapps">    
+        <li>
     <a class="dropdown-item" href="./SamplingApp.html">
  <span class="dropdown-text">Sampling Distributions</span></a>
   </li>  
@@ -323,36 +339,44 @@ window.Quarto = {
  <span class="dropdown-text">CI for means and proportions</span></a>
   </li>  
     </ul>
-</li>
+  </li>
 </ul>
-</div> <!-- /navcollapse -->
+          </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
-    </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
    
   <ul>
-<li><a href="#activity-1-think-pair-share" id="toc-activity-1-think-pair-share" class="nav-link active" data-scroll-target="#activity-1-think-pair-share">Activity 1: Think-Pair-Share</a></li>
+  <li><a href="#activity-1-think-pair-share" id="toc-activity-1-think-pair-share" class="nav-link active" data-scroll-target="#activity-1-think-pair-share">Activity 1: Think-Pair-Share</a></li>
   <li><a href="#activity-2-quiz" id="toc-activity-2-quiz" class="nav-link" data-scroll-target="#activity-2-quiz">Activity 2: Quiz</a></li>
   <li><a href="#activity-3-problem-solving" id="toc-activity-3-problem-solving" class="nav-link" data-scroll-target="#activity-3-problem-solving">Activity 3: Problem-Solving</a></li>
   <li><a href="#activity-4-problem-solving" id="toc-activity-4-problem-solving" class="nav-link" data-scroll-target="#activity-4-problem-solving">Activity 4: Problem-Solving</a></li>
   <li><a href="#activity-5-case-studies-and-problem-solving" id="toc-activity-5-case-studies-and-problem-solving" class="nav-link" data-scroll-target="#activity-5-case-studies-and-problem-solving">Activity 5: Case Studies and Problem-Solving</a></li>
-  </ul></nav>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
 <h1 class="title">Activity 7</h1>
 <p class="subtitle lead">MATH 216: Statistical Thinking</p>
 </div>
 
 
 
-<div class="quarto-title-meta column-page-left">
+<div class="quarto-title-meta">
 
     
   
@@ -361,28 +385,39 @@ window.Quarto = {
   
 
 
-</header><section id="activity-1-think-pair-share" class="level2"><h2 class="anchored" data-anchor-id="activity-1-think-pair-share">Activity 1: Think-Pair-Share</h2>
+</header>
+
+
+<section id="activity-1-think-pair-share" class="level2">
+<h2 class="anchored" data-anchor-id="activity-1-think-pair-share">Activity 1: Think-Pair-Share</h2>
 <p>Suppose that two balls are to be selected at random, without replacement, from a box containing <span class="math inline">\(r\)</span> red balls and <span class="math inline">\(b\)</span> blue balls. What is the probability that the first ball will be red and the second ball will be blue? What is the probability that the second ball will be blue?</p>
 <p><strong>Prompt</strong>: Suppose that two balls are to be selected at random, without replacement, from a box containing <span class="math inline">\(r\)</span> red balls and <span class="math inline">\(b\)</span> blue balls. What is the probability that the first ball will be red and the second ball will be blue? What is the probability that the second ball will be blue?</p>
 <ol type="1">
-<li>
-<strong>Think</strong>: Individually, calculate the probability that the first ball drawn is red and the second is blue from a box containing <span class="math inline">\(r\)</span> red balls and <span class="math inline">\(b\)</span> blue balls (Example 1).</li>
-<li>
-<strong>Pair</strong>: Discuss your calculations with a partner and compare results.</li>
-<li>
-<strong>Share</strong>: Share your insights with the class, focusing on how the multiplicative rule applies to this scenario.</li>
-</ol></section><section id="activity-2-quiz" class="level2"><h2 class="anchored" data-anchor-id="activity-2-quiz">Activity 2: Quiz</h2>
+<li><strong>Think</strong>: Individually, calculate the probability that the first ball drawn is red and the second is blue from a box containing <span class="math inline">\(r\)</span> red balls and <span class="math inline">\(b\)</span> blue balls (Example 1).</li>
+<li><strong>Pair</strong>: Discuss your calculations with a partner and compare results.</li>
+<li><strong>Share</strong>: Share your insights with the class, focusing on how the multiplicative rule applies to this scenario.</li>
+</ol>
+</section>
+<section id="activity-2-quiz" class="level2">
+<h2 class="anchored" data-anchor-id="activity-2-quiz">Activity 2: Quiz</h2>
 <p>Suppose you have two mutually exclusive and exhaustive events <span class="math inline">\(B\)</span> and <span class="math inline">\(B^c\)</span>. If <span class="math inline">\(P(B) = 0.6\)</span>, <span class="math inline">\(P(A|B) = 0.7\)</span>, and <span class="math inline">\(P(A|B^c) = 0.3\)</span>, what is <span class="math inline">\(P(A)\)</span>?</p>
-</section><section id="activity-3-problem-solving" class="level2"><h2 class="anchored" data-anchor-id="activity-3-problem-solving">Activity 3: Problem-Solving</h2>
+</section>
+<section id="activity-3-problem-solving" class="level2">
+<h2 class="anchored" data-anchor-id="activity-3-problem-solving">Activity 3: Problem-Solving</h2>
 <p><strong>Prompt</strong>: Consider the experiment of tossing a fair die, and let</p>
 <p><span class="math display">\[A= \{\text{Observe an even number.}\}\]</span> <span class="math display">\[B= \{\text{Observe a number less than or equal to 4.}\}\]</span></p>
 <p>Are <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> independent events?</p>
-</section><section id="activity-4-problem-solving" class="level2"><h2 class="anchored" data-anchor-id="activity-4-problem-solving">Activity 4: Problem-Solving</h2>
+</section>
+<section id="activity-4-problem-solving" class="level2">
+<h2 class="anchored" data-anchor-id="activity-4-problem-solving">Activity 4: Problem-Solving</h2>
 <p><strong>Prompt</strong>: The American Association for Marriage and Family Therapy (AAMFT) found that <span class="math inline">\(25 \%\)</span> of divorced couples are classified as “fiery foes” (i.e., they communicate through their children and are hostile toward each other).</p>
 <ol type="a">
 <li><p>What is the probability that in a sample of 2 divorced couples, both are classified as “fiery foes”?</p></li>
 <li><p>What is the probability that in a sample of 10 divorced couples, all 10 are classified as “fiery foes”?</p></li>
-</ol></section><section id="activity-5-case-studies-and-problem-solving" class="level2"><h2 class="anchored" data-anchor-id="activity-5-case-studies-and-problem-solving">Activity 5: Case Studies and Problem-Solving</h2>
+</ol>
+</section>
+<section id="activity-5-case-studies-and-problem-solving" class="level2">
+<h2 class="anchored" data-anchor-id="activity-5-case-studies-and-problem-solving">Activity 5: Case Studies and Problem-Solving</h2>
 <p><strong>Case Study</strong>: (Test for a Disease) Consider a certain disease that the chance of a randomly selected individual having this disease is <span class="math inline">\(r_1\)</span> (this can be estimated from the historical data). Suppose there is a medical test for this disease. If a person has the disease, there is a probability of <span class="math inline">\(r_2\)</span> that the test will give a positive response. If a person does not have the disease, there is a probability of <span class="math inline">\(r_3\)</span> that the test will give a positive response. Suppose you take the test. What is the probability that you get a positive response but in fact, you do not have the disease? Derive the formula, then compute the results for the following sets of values of parameters.</p>
 <p>Consider a medical test for a disease with the following parameters: <span class="math inline">\(r_1=0.01\)</span>, <span class="math inline">\(r_2=0.99\)</span>, <span class="math inline">\(r_3=0.01\)</span>.</p>
 <ol type="1">
@@ -392,7 +427,35 @@ window.Quarto = {
 </ol>
 
 
-</section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+<script type="ojs-module-contents">
+eyJjb250ZW50cyI6W119
+</script>
+<div id="exercise-loading-indicator" class="exercise-loading-indicator d-none d-flex align-items-center gap-2">
+<div id="exercise-loading-status" class="d-flex gap-2">
+
+</div>
+<div class="spinner-grow spinner-grow-sm">
+
+</div>
+</div>
+<script type="vfs-file">
+W10=
+</script>
+</section>
+
+</main> <!-- /main -->
+<script type="ojs-module-contents">
+eyJjb250ZW50cyI6W119
+</script>
+<script type="module">
+if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
+window._ojs.paths.runtimeToDoc = "../..";
+window._ojs.paths.runtimeToRoot = "../..";
+window._ojs.paths.docToRoot = "";
+window._ojs.selfContained = false;
+window._ojs.runtime.interpretFromScriptTags();
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -412,150 +475,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
-  const disableStylesheet = (stylesheets) => {
-    for (let i=0; i < stylesheets.length; i++) {
-      const stylesheet = stylesheets[i];
-      stylesheet.rel = 'prefetch';
-    }
-  }
-  const enableStylesheet = (stylesheets) => {
-    for (let i=0; i < stylesheets.length; i++) {
-      const stylesheet = stylesheets[i];
-      stylesheet.rel = 'stylesheet';
-    }
-  }
-  const manageTransitions = (selector, allowTransitions) => {
-    const els = window.document.querySelectorAll(selector);
-    for (let i=0; i < els.length; i++) {
-      const el = els[i];
-      if (allowTransitions) {
-        el.classList.remove('notransition');
-      } else {
-        el.classList.add('notransition');
-      }
-    }
-  }
-  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-    let newTheme = '';
-    if(darkModeDefault) {
-      newTheme = isAlternate ? baseTheme : alternateTheme;
-    } else {
-      newTheme = isAlternate ? alternateTheme : baseTheme;
-    }
-    const changeGiscusTheme = () => {
-      // From: https://github.com/giscus/giscus/issues/336
-      const sendMessage = (message) => {
-        const iframe = document.querySelector('iframe.giscus-frame');
-        if (!iframe) return;
-        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-      }
-      sendMessage({
-        setConfig: {
-          theme: newTheme
-        }
-      });
-    }
-    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-    if (isGiscussLoaded) {
-      changeGiscusTheme();
-    }
-  }
-  const toggleColorMode = (alternate) => {
-    // Switch the stylesheets
-    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-    manageTransitions('#quarto-margin-sidebar .nav-link', false);
-    if (alternate) {
-      enableStylesheet(alternateStylesheets);
-      for (const sheetNode of alternateStylesheets) {
-        if (sheetNode.id === "quarto-bootstrap") {
-          toggleBodyColorMode(sheetNode);
-        }
-      }
-    } else {
-      disableStylesheet(alternateStylesheets);
-      toggleBodyColorPrimary();
-    }
-    manageTransitions('#quarto-margin-sidebar .nav-link', true);
-    // Switch the toggles
-    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-    for (let i=0; i < toggles.length; i++) {
-      const toggle = toggles[i];
-      if (toggle) {
-        if (alternate) {
-          toggle.classList.add("alternate");     
-        } else {
-          toggle.classList.remove("alternate");
-        }
-      }
-    }
-    // Hack to workaround the fact that safari doesn't
-    // properly recolor the scrollbar when toggling (#1455)
-    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-      manageTransitions("body", false);
-      window.scrollTo(0, 1);
-      setTimeout(() => {
-        window.scrollTo(0, 0);
-        manageTransitions("body", true);
-      }, 40);  
-    }
-  }
-  const isFileUrl = () => { 
-    return window.location.protocol === 'file:';
-  }
-  const hasAlternateSentinel = () => {  
-    let styleSentinel = getColorSchemeSentinel();
-    if (styleSentinel !== null) {
-      return styleSentinel === "alternate";
-    } else {
-      return false;
-    }
-  }
-  const setStyleSentinel = (alternate) => {
-    const value = alternate ? "alternate" : "default";
-    if (!isFileUrl()) {
-      window.localStorage.setItem("quarto-color-scheme", value);
-    } else {
-      localAlternateSentinel = value;
-    }
-  }
-  const getColorSchemeSentinel = () => {
-    if (!isFileUrl()) {
-      const storageValue = window.localStorage.getItem("quarto-color-scheme");
-      return storageValue != null ? storageValue : localAlternateSentinel;
-    } else {
-      return localAlternateSentinel;
-    }
-  }
-  const darkModeDefault = false;
-  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
-  // Dark / light mode switch
-  window.quartoToggleColorScheme = () => {
-    // Read the current dark / light value 
-    let toAlternate = !hasAlternateSentinel();
-    toggleColorMode(toAlternate);
-    setStyleSentinel(toAlternate);
-    toggleGiscusIfUsed(toAlternate, darkModeDefault);
-  };
-  // Ensure there is a toggle, if there isn't float one in the top right
-  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-    const a = window.document.createElement('a');
-    a.classList.add('top-right');
-    a.classList.add('quarto-color-scheme-toggle');
-    a.href = "";
-    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-    const i = window.document.createElement("i");
-    i.classList.add('bi');
-    a.appendChild(i);
-    window.document.body.appendChild(a);
-  }
-  // Switch to dark mode if need be
-  if (hasAlternateSentinel()) {
-    toggleColorMode(true);
-  } else {
-    toggleColorMode(false);
-  }
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {
@@ -954,6 +873,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+
 
 
 

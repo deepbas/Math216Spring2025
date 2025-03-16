@@ -165,14 +165,14 @@
     "href": "Activity7.html",
     "title": "Activity 7",
     "section": "",
-    "text": "Suppose that two balls are to be selected at random, without replacement, from a box containing \\(r\\) red balls and \\(b\\) blue balls. What is the probability that the first ball will be red and the second ball will be blue? What is the probability that the second ball will be blue?\nPrompt: Suppose that two balls are to be selected at random, without replacement, from a box containing \\(r\\) red balls and \\(b\\) blue balls. What is the probability that the first ball will be red and the second ball will be blue? What is the probability that the second ball will be blue?\n\n\nThink: Individually, calculate the probability that the first ball drawn is red and the second is blue from a box containing \\(r\\) red balls and \\(b\\) blue balls (Example 1).\n\nPair: Discuss your calculations with a partner and compare results.\n\nShare: Share your insights with the class, focusing on how the multiplicative rule applies to this scenario."
+    "text": "Suppose that two balls are to be selected at random, without replacement, from a box containing \\(r\\) red balls and \\(b\\) blue balls. What is the probability that the first ball will be red and the second ball will be blue? What is the probability that the second ball will be blue?\nPrompt: Suppose that two balls are to be selected at random, without replacement, from a box containing \\(r\\) red balls and \\(b\\) blue balls. What is the probability that the first ball will be red and the second ball will be blue? What is the probability that the second ball will be blue?\n\nThink: Individually, calculate the probability that the first ball drawn is red and the second is blue from a box containing \\(r\\) red balls and \\(b\\) blue balls (Example 1).\nPair: Discuss your calculations with a partner and compare results.\nShare: Share your insights with the class, focusing on how the multiplicative rule applies to this scenario."
   },
   {
     "objectID": "Activity7.html#activity-1-think-pair-share",
     "href": "Activity7.html#activity-1-think-pair-share",
     "title": "Activity 7",
     "section": "",
-    "text": "Suppose that two balls are to be selected at random, without replacement, from a box containing \\(r\\) red balls and \\(b\\) blue balls. What is the probability that the first ball will be red and the second ball will be blue? What is the probability that the second ball will be blue?\nPrompt: Suppose that two balls are to be selected at random, without replacement, from a box containing \\(r\\) red balls and \\(b\\) blue balls. What is the probability that the first ball will be red and the second ball will be blue? What is the probability that the second ball will be blue?\n\n\nThink: Individually, calculate the probability that the first ball drawn is red and the second is blue from a box containing \\(r\\) red balls and \\(b\\) blue balls (Example 1).\n\nPair: Discuss your calculations with a partner and compare results.\n\nShare: Share your insights with the class, focusing on how the multiplicative rule applies to this scenario."
+    "text": "Suppose that two balls are to be selected at random, without replacement, from a box containing \\(r\\) red balls and \\(b\\) blue balls. What is the probability that the first ball will be red and the second ball will be blue? What is the probability that the second ball will be blue?\nPrompt: Suppose that two balls are to be selected at random, without replacement, from a box containing \\(r\\) red balls and \\(b\\) blue balls. What is the probability that the first ball will be red and the second ball will be blue? What is the probability that the second ball will be blue?\n\nThink: Individually, calculate the probability that the first ball drawn is red and the second is blue from a box containing \\(r\\) red balls and \\(b\\) blue balls (Example 1).\nPair: Discuss your calculations with a partner and compare results.\nShare: Share your insights with the class, focusing on how the multiplicative rule applies to this scenario."
   },
   {
     "objectID": "Activity7.html#activity-2-quiz",
@@ -207,7 +207,7 @@
     "href": "Activity3.html",
     "title": "Activity 3",
     "section": "",
-    "text": "1. Think-Pair-Share Activity\nThink-Pair-Share: Calculating Descriptive Statistics\n\n\nThink: Calculate the mean, median, and standard deviation for the following dataset by hand:\nPulse Rates: [68, 72, 70, 65, 74, 69, 71, 67, 73, 70]\n\nPair: Discuss your calculations with a partner. Compare your results and resolve any discrepancies.\nShare: Share your findings with the class. Be prepared to explain your calculations.\n\n2. Quiz\nQuiz: Proportions and Frequency Tables\n\n\nQuestion: In the cell phone dataset, what proportion of adults own an iPhone?\n\nA). 0.194\nB). 0.203\nC). 0.063\nD). 0.410\n\n\nQuestion: What is the difference in proportions between females and males who are in a relationship?\n\nA). 0.14\nB). 0.10\nC). 0.05\nD). 0.20\n3. Case Studies and Problem-Solving\nObjective: Apply statistical concepts to solve real-world problems.\nCase Study: Health Data Analysis\n\n\nScenario: A health study collected data on smoking habits and pulse rates. The dataset is provided below:\nSmoker: [Yes, No, No, Yes, No, Yes, No, No, Yes, No]  \nPulse: [72, 68, 70, 75, 69, 74, 67, 71, 73, 70]  \n\n\nTask:\n\nCalculate the mean and median pulse rates for smokers and non-smokers separately.\n\nCompare the variability (standard deviation) of pulse rates between the two groups.\n\nDiscuss whether smoking appears to have an effect on pulse rates.\n\n\nSubmit: Write a brief report summarizing your findings."
+    "text": "1. Think-Pair-Share Activity\n\n\nThink-Pair-Share: Calculating Descriptive Statistics\n\nThink: Calculate the mean, median, and standard deviation for the following dataset by hand:\nPulse Rates: [68, 72, 70, 65, 74, 69, 71, 67, 73, 70]\nPair: Discuss your calculations with a partner. Compare your results and resolve any discrepancies.\nShare: Share your findings with the class. Be prepared to explain your calculations.\n\n\n2. Quiz\n\n\n\nQuiz: Proportions and Frequency Tables\n\nQuestion: In the cell phone dataset, what proportion of adults own an iPhone?\n\nA). 0.194\nB). 0.203\nC). 0.063\nD). 0.410\n\nQuestion: What is the difference in proportions between females and males who are in a relationship?\n\nA). 0.14\nB). 0.10\nC). 0.05\nD). 0.20\n\n3. Case Studies and Problem-Solving\nObjective: Apply statistical concepts to solve real-world problems.\n\n\n\nCase Study: Health Data Analysis\n\nScenario: A health study collected data on smoking habits and pulse rates. The dataset is provided below:\nSmoker: [Yes, No, No, Yes, No, Yes, No, No, Yes, No]  \nPulse: [72, 68, 70, 75, 69, 74, 67, 71, 73, 70]  \nTask:\n\nCalculate the mean and median pulse rates for smokers and non-smokers separately.\n\nCompare the variability (standard deviation) of pulse rates between the two groups.\n\nDiscuss whether smoking appears to have an effect on pulse rates.\n\nSubmit: Write a brief report summarizing your findings."
   },
   {
     "objectID": "Activity10.html",
@@ -644,11 +644,53 @@
     "text": "Suppose the test statistic is \\(z=3.01\\). Find the \\(p\\)-value of the test and the rejection region for the test when \\(\\alpha=.05\\). Then show that the conclusion using the rejection region approach will be identical to the conclusion based on the p-value."
   },
   {
+    "objectID": "Activity18.html",
+    "href": "Activity18.html",
+    "title": "Activity 18",
+    "section": "",
+    "text": "Question: If \\(p = 0.4\\) and \\(n = 50\\), what is the standard deviation of \\(\\hat{p}\\)?\n\n\n0.069\n\n\n0.049\n\n\n0.089\n\n\n0.029"
+  },
+  {
+    "objectID": "Activity18.html#activity-1-quiz",
+    "href": "Activity18.html#activity-1-quiz",
+    "title": "Activity 18",
+    "section": "",
+    "text": "Question: If \\(p = 0.4\\) and \\(n = 50\\), what is the standard deviation of \\(\\hat{p}\\)?\n\n\n0.069\n\n\n0.049\n\n\n0.089\n\n\n0.029"
+  },
+  {
+    "objectID": "Activity18.html#activity-2-mean-and-standard-deviation-of-hatp",
+    "href": "Activity18.html#activity-2-mean-and-standard-deviation-of-hatp",
+    "title": "Activity 18",
+    "section": "Activity 2: Mean and Standard Deviation of \\(\\hat{p}\\)",
+    "text": "Activity 2: Mean and Standard Deviation of \\(\\hat{p}\\)\nTask: The soft-drink cups at a certain fast-food restaurant have tickets attached to them. Customers peel off the tickets to see whether they win a prize. The proportion of tickets that are winners is \\(p=0.25\\). A total of \\(n=70\\) people purchase soft drinks between noon and 1:00 p.m. on a certain day. Let \\(\\hat{p}\\) be the proportion that win a prize.\n\nFind the mean of \\(\\hat{p}\\).\nFind the standard deviation of \\(\\hat{p}\\)."
+  },
+  {
+    "objectID": "Activity18.html#activity-3-sampling-distribution-of-hatp",
+    "href": "Activity18.html#activity-3-sampling-distribution-of-hatp",
+    "title": "Activity 18",
+    "section": "Activity 3: Sampling Distribution of \\(\\hat{p}\\)",
+    "text": "Activity 3: Sampling Distribution of \\(\\hat{p}\\)\nTask: A study of city voters is taken to determine whether they are in favor of a certain candidate for mayor. We assume that \\(60\\%\\) of all the city’s voters favor the candidate. Suppose we randomly sample 100 voters and ask each if they are in favor of the candidate. We want to study the sampling distribution of \\(\\hat{p}\\), the sample proportion of voters in favor of the candidate.\n\n\n\nQuestions:\n\nWhat is the mean of \\(\\hat{p}\\)?\nWhat is the standard deviation of \\(\\hat{p}\\)?\nWhat properties do you observe about the sampling distribution of \\(\\hat{p}\\)?"
+  },
+  {
+    "objectID": "Activity18.html#activity-4-probability-of-sample-proportion",
+    "href": "Activity18.html#activity-4-probability-of-sample-proportion",
+    "title": "Activity 18",
+    "section": "Activity 4: Probability of Sample Proportion",
+    "text": "Activity 4: Probability of Sample Proportion\nTask: According to a Harris poll taken in September 2013, chocolate is the favorite ice cream flavor for \\(27\\%\\) of Americans. If a sample of 100 Americans is taken, what is the probability that the sample proportion of those who prefer chocolate is greater than 0.30?\nQuestions:\n\nCalculate the mean and standard deviation of \\(\\hat{p}\\).\nUse the normal approximation to find \\(P(\\hat{p} &gt; 0.30)\\)."
+  },
+  {
+    "objectID": "Activity18.html#activity-5-binomial-distribution",
+    "href": "Activity18.html#activity-5-binomial-distribution",
+    "title": "Activity 18",
+    "section": "Activity 5: Binomial Distribution:",
+    "text": "Activity 5: Binomial Distribution:\nA fair coin is flipped 200 times, with \\(X\\) denoting the number of heads (binomial distribution: \\(n=200\\), \\(p=0.5\\)). If 40 trials of 200 flips are conducted:\n\nDetermine \\(\\mu_{\\bar{x}}\\) and \\(\\sigma_{\\bar{x}}\\) for the sample proportion of heads.\n\nWhat is the probability that the sample proportion differs from 0.5 by more than 0.04?"
+  },
+  {
     "objectID": "Activity8.html",
     "href": "Activity8.html",
     "title": "Activity 8",
     "section": "",
-    "text": "Activity 1: Tossing Two Coins\nPrompt: Consider the experiment of tossing two coins, and let \\(x\\) be the number of heads observed. Find the probability associated with each value of the random variable \\(x\\), assuming that the two coins are fair.\n\nList all possible outcomes of tossing two coins.\nAssign probabilities to each outcome.\nCreate a probability distribution table for \\(x\\).\nActivity 2: Discrete Probability Distribution\nPrompt: The random variable \\(x\\) has the discrete probability distribution shown here:\n\n\n\\(x\\)\n-2\n-1\n0\n1\n2\n\n\n\\(p(x)\\)\n.10\n.15\n.40\n.30\n.05\n\n\n\nFind \\(P(X \\leq 0)\\).\nFind \\(P(X &gt; -1)\\).\nFind \\(P(-1 \\leq X &lt; 1)\\).\nFind \\(P(-1 \\leq X \\leq 1)\\).\n\nActivity 3: Drought Probability\nPrompt: A drought is a period of abnormal dry weather that causes serious problems in the farming industry of the region. University of Arizona researchers used historical annual data to study the severity of droughts in Texas (Journal of Hydrologic Engineering, Sept./Oct. 2003). The researchers showed that the distribution of \\(x\\), the number of consecutive years that must be sampled until a dry (drought) year is observed, can be modeled using the formula:\n\\[\np(x) = (0.3)(0.7)^{x-1}, \\quad x = 1, 2, 3, \\ldots\n\\]\n\nFind the probability that exactly 3 years must be sampled before a drought year occurs.\nWhat is the probability that NO more than 2 years must be sampled?\nActivity 4: Expected Value\nPrompt: Suppose you work for an insurance company and you sell a \\(\\$10,000\\) one-year term insurance policy at an annual premium of \\(\\$290\\). Actuarial tables show that the probability of death during the next year for a person of your customer’s age, sex, health, etc., is \\(0.001\\). What is the expected gain (amount of money made by the company) for a policy of this type?\nActivity 5: Variance and Standard Deviation\nPrompt: For the insurance policy in Activity 4, calculate:\n\nThe variance of the gain.\nThe standard deviation of the gain.\n\nFormulas:\n\nVariance: \\(\\sigma^2 = \\sum (x_i - \\mu)^2 p(x_i)\\)\n\nStandard Deviation: \\(\\sigma = \\sqrt{\\sigma^2}\\)"
+    "text": "Activity 1: Tossing Two Coins\nPrompt: Consider the experiment of tossing two coins, and let \\(x\\) be the number of heads observed. Find the probability associated with each value of the random variable \\(x\\), assuming that the two coins are fair.\n\nList all possible outcomes of tossing two coins.\nAssign probabilities to each outcome.\nCreate a probability distribution table for \\(x\\).\n\n\n\nActivity 2: Discrete Probability Distribution\nPrompt: The random variable \\(x\\) has the discrete probability distribution shown here:\n\n\n\n\\(x\\)\n-2\n-1\n0\n1\n2\n\n\n\n\n\\(p(x)\\)\n.10\n.15\n.40\n.30\n.05\n\n\n\n\nFind \\(P(X \\leq 0)\\).\nFind \\(P(X &gt; -1)\\).\nFind \\(P(-1 \\leq X &lt; 1)\\).\nFind \\(P(-1 \\leq X \\leq 1)\\).\n\n\n\n\nActivity 3: Drought Probability\nPrompt: A drought is a period of abnormal dry weather that causes serious problems in the farming industry of the region. University of Arizona researchers used historical annual data to study the severity of droughts in Texas (Journal of Hydrologic Engineering, Sept./Oct. 2003). The researchers showed that the distribution of \\(x\\), the number of consecutive years that must be sampled until a dry (drought) year is observed, can be modeled using the formula:\n\\[\np(x) = (0.3)(0.7)^{x-1}, \\quad x = 1, 2, 3, \\ldots\n\\]\n\nFind the probability that exactly 3 years must be sampled before a drought year occurs.\nWhat is the probability that NO more than 2 years must be sampled?\n\n\n\nActivity 4: Expected Value\nPrompt: Suppose you work for an insurance company and you sell a \\(\\$10,000\\) one-year term insurance policy at an annual premium of \\(\\$290\\). Actuarial tables show that the probability of death during the next year for a person of your customer’s age, sex, health, etc., is \\(0.001\\). What is the expected gain (amount of money made by the company) for a policy of this type?\n\n\nActivity 5: Variance and Standard Deviation\nPrompt: For the insurance policy in Activity 4, calculate:\n\nThe variance of the gain.\nThe standard deviation of the gain.\n\nFormulas:\n\nVariance: \\(\\sigma^2 = \\sum (x_i - \\mu)^2 p(x_i)\\)\nStandard Deviation: \\(\\sigma = \\sqrt{\\sigma^2}\\)"
   },
   {
     "objectID": "Day13.html#introduction-to-assessing-normality",
@@ -1019,7 +1061,7 @@
     "href": "Activity21.html#activity-2-case-studies-and-problem-solving",
     "title": "Activity 21",
     "section": "Activity 2: Case Studies and Problem-Solving",
-    "text": "Activity 2: Case Studies and Problem-Solving\n\n\nScenario: A political campaign wants to estimate the proportion of voters who support their candidate. They survey 500 voters and find that 300 support the candidate.\n\nTask: Apply the concepts learned to calculate a 95% confidence interval for the true proportion of supporters. Discuss the implications of the confidence interval width on the campaign’s strategy."
+    "text": "Activity 2: Case Studies and Problem-Solving\n\nScenario: A political campaign wants to estimate the proportion of voters who support their candidate. They survey 500 voters and find that 300 support the candidate.\nTask: Apply the concepts learned to calculate a 95% confidence interval for the true proportion of supporters. Discuss the implications of the confidence interval width on the campaign’s strategy."
   },
   {
     "objectID": "Activity21.html#activity-3-sample-size-calulations",
@@ -1110,7 +1152,7 @@
     "href": "Activity6.html#case-studies-and-problem-solving",
     "title": "Activity 6",
     "section": "2. Case Studies and Problem-Solving",
-    "text": "2. Case Studies and Problem-Solving\nTo develop programs for business travelers staying at convention hotels, Hyatt Hotels Corp. commissioned a study of executives who play golf. The study revealed that \\(55 \\%\\) of the executives admitted that they had cheated at golf. Also, \\(20 \\%\\) of the executives admitted that they had cheated at golf, and had lied in business. Given that an executive had cheated at golf, what is the probability that the executive also had lied in business?\n\nCalculate the conditional probability that an executive lied in business given they cheated at golf.\n\nDiscuss the ethical implications of the findings.\n\nPropose strategies for businesses to address such ethical dilemmas.\n\n\n\n\\(P(\\text{Cheated at golf}) = 0.55\\)\n\n\\(P(\\text{Cheated at golf and lied in business}) = 0.20\\)\n\nGiven that an executive cheated at golf, what is the probability that they also lied in business?\n3. Cigarette smoking and cancer\nMany medical researchers have conducted experiments to examine the relationship between cigarette smoking and cancer. Consider an individual randomly selected from the adult male population. Let \\(A\\) represent the event that the individual smokes, and let \\(A^c\\) denote the complement of \\(A\\) (the event that the individual does not smoke). Similarly, let \\(B\\) represent the event that the individual develops cancer, and let \\(B^c\\) be the complement of that event. Then the four sample points associated with the experiment are shown in the following figure, and their probabilities for a certain section of the United States are given in the table (Refer to the sides). Use these sample point probabilities to examine the relationship between smoking and cancer.\n\nGiven a person is a smoker, what is the probability of having cancer?\n\n\n\nGiven a person is a smoker, what is the probability of not having cancer?\n\n\n\nGiven a person is not a smoker, what is the probability of having cancer?\n\n\n\nGiven a person is not a smoker, what is the probability of not having cancer?"
+    "text": "2. Case Studies and Problem-Solving\nTo develop programs for business travelers staying at convention hotels, Hyatt Hotels Corp. commissioned a study of executives who play golf. The study revealed that \\(55 \\%\\) of the executives admitted that they had cheated at golf. Also, \\(20 \\%\\) of the executives admitted that they had cheated at golf, and had lied in business. Given that an executive had cheated at golf, what is the probability that the executive also had lied in business?\n\nCalculate the conditional probability that an executive lied in business given they cheated at golf.\n\nDiscuss the ethical implications of the findings.\n\nPropose strategies for businesses to address such ethical dilemmas.\n\n\n\\(P(\\text{Cheated at golf}) = 0.55\\)\n\n\\(P(\\text{Cheated at golf and lied in business}) = 0.20\\)\n\nGiven that an executive cheated at golf, what is the probability that they also lied in business?\n\n3. Cigarette smoking and cancer\nMany medical researchers have conducted experiments to examine the relationship between cigarette smoking and cancer. Consider an individual randomly selected from the adult male population. Let \\(A\\) represent the event that the individual smokes, and let \\(A^c\\) denote the complement of \\(A\\) (the event that the individual does not smoke). Similarly, let \\(B\\) represent the event that the individual develops cancer, and let \\(B^c\\) be the complement of that event. Then the four sample points associated with the experiment are shown in the following figure, and their probabilities for a certain section of the United States are given in the table (Refer to the sides). Use these sample point probabilities to examine the relationship between smoking and cancer.\n\nGiven a person is a smoker, what is the probability of having cancer?\n\n\n\nGiven a person is a smoker, what is the probability of not having cancer?\n\n\n\nGiven a person is not a smoker, what is the probability of having cancer?\n\n\n\nGiven a person is not a smoker, what is the probability of not having cancer?"
   },
   {
     "objectID": "Day4.html#recap-student-survey",
@@ -1453,7 +1495,7 @@
     "href": "Activity12.html",
     "title": "Activity 12",
     "section": "",
-    "text": "Example 1: Probability Z &lt; 1.28\nTo find the probability that the standard normal random variable (z) is less than 1.28:\n\n\n\n\n\n\n\n\n\n\nExample 2: Probability Z &gt; 1.64\nTo find the probability that \\(z\\) exceeds 1.64.\n\n\n\n\n\n\n\n\n\n\nExample 3: Probability Z &lt; -1.64\nTo find the probability that \\(z\\) is less than -1.64.\n\n\n\n\n\n\n\n\n\n\nExample 4: Probability Z &gt; -1.28\nTo find the probability that \\(z\\) exceeds -1.28.\n\n\n\n\n\n\n\n\n\n\nExample 5: Probability -1.64 &lt; Z &lt; 1.28\nTo find the probability that \\(z\\) lies between -1.64 and 1.28.\n\n\n\n\n\n\n\n\n\n\nExample 6: Probability |Z| &gt; 1.96\nTo find the probability that the absolute value of \\(z\\) exceeds 1.96.\n\n\n\n\n\n\n\n\n\n\nExample 7: Probability for a Normal Distribution\nSuppose the length of time \\(x\\), between charges of a cellular phone is normally distributed with a mean of 10 hours and a standard deviation of 1.5 hours. To find the probability that the cell phone will last between 8 and 12 hours.\n\n\n\n\n\n\n\n\n\n\nExample 8:\nSuppose the scores \\(x\\) on a college entrance examination are normally distributed with a mean of 550 and a standard deviation of 100. A certain prestigious university will consider for admission only those applicants whose scores exceed the 90th percentile of the distribution. Find the minimum score an applicant must achieve in order to receive consideration for admission to the university.\n\n\nExample 9:\nFind \\(z_0\\) such that \\(P(-z_0 \\leq z \\leq z_0)=0.95\\)."
+    "text": "Example 1: Probability Z &lt; 1.28\nTo find the probability that the standard normal random variable (z) is less than 1.28:\n\n\n\n\n\n\n\n\n\n\nExample 2: Probability Z &gt; 1.64\nTo find the probability that \\(z\\) exceeds 1.64.\n\n\n\n\n\n\n\n\n\n\nExample 3: Probability Z &lt; -1.64\nTo find the probability that \\(z\\) is less than -1.64.\n\n\n\n\n\n\n\n\n\n\nExample 4: Probability Z &gt; -1.28\nTo find the probability that \\(z\\) exceeds -1.28.\n\n\n\n\n\n\n\n\n\n\nExample 5: Probability -1.64 &lt; Z &lt; 1.28\nTo find the probability that \\(z\\) lies between -1.64 and 1.28.\n\n\n\n\n\n\n\n\n\n\nExample 6: Probability |Z| &gt; 1.96\nTo find the probability that the absolute value of \\(z\\) exceeds 1.96.\n\n\n\n\n\n\n\n\n\n\nExample 7: Probability for a Normal Distribution\nSuppose the length of time \\(x\\), between charges of a cellular phone is normally distributed with a mean of 10 hours and a standard deviation of 1.5 hours. To find the probability that the cell phone will last between 8 and 12 hours.\n\n\n\n\n\n\n\n\n\n\nExample 8: College entrance examination\nSuppose the scores \\(x\\) on a college entrance examination are normally distributed with a mean of 550 and a standard deviation of 100. A certain prestigious university will consider for admission only those applicants whose scores exceed the 90th percentile of the distribution. Find the minimum score an applicant must achieve in order to receive consideration for admission to the university.\n\n\nExample 9: Quantile\nFind \\(z_0\\) such that \\(P(-z_0 \\leq z \\leq z_0)=0.95\\)."
   },
   {
     "objectID": "Day19.html#estimation-in-statistics",
@@ -1747,14 +1789,14 @@
     "href": "Activity9.html",
     "title": "Activity 9",
     "section": "",
-    "text": "Prompt: Medical research has shown that a certain type of chemotherapy is successful \\(70 \\%\\) of the time when used to treat skin cancer. Suppose five skin cancer patients are treated with this type of chemotherapy, and let \\(x\\) equal the number of successful cures out of the five. The probability distribution for the number of successful cures out of five is given in the following table:\n\n\n\\(x\\)\n0\n1\n2\n3\n4\n5\n\n\n\\(p(x)\\)\n0.002\n0.029\n0.132\n0.309\n0.360\n0.168\n\n\n\nFind \\(\\mu\\)\n\n\n\nFind \\(\\sigma\\)\n\n\n\nUse Chebyshev’s rule to approximate the probability that \\(x\\) falls into the interval \\(\\mu \\pm 2 \\sigma\\)"
+    "text": "Prompt: Medical research has shown that a certain type of chemotherapy is successful \\(70 \\%\\) of the time when used to treat skin cancer. Suppose five skin cancer patients are treated with this type of chemotherapy, and let \\(x\\) equal the number of successful cures out of the five. The probability distribution for the number of successful cures out of five is given in the following table:\n\n\n\n\\(x\\)\n0\n1\n2\n3\n4\n5\n\n\n\n\n\\(p(x)\\)\n0.002\n0.029\n0.132\n0.309\n0.360\n0.168\n\n\n\n\nFind \\(\\mu\\)\n\n\nFind \\(\\sigma\\)\n\n\nUse Chebyshev’s rule to approximate the probability that \\(x\\) falls into the interval \\(\\mu \\pm 2 \\sigma\\)"
   },
   {
     "objectID": "Activity9.html#activity-1-probability-calculations",
     "href": "Activity9.html#activity-1-probability-calculations",
     "title": "Activity 9",
     "section": "",
-    "text": "Prompt: Medical research has shown that a certain type of chemotherapy is successful \\(70 \\%\\) of the time when used to treat skin cancer. Suppose five skin cancer patients are treated with this type of chemotherapy, and let \\(x\\) equal the number of successful cures out of the five. The probability distribution for the number of successful cures out of five is given in the following table:\n\n\n\\(x\\)\n0\n1\n2\n3\n4\n5\n\n\n\\(p(x)\\)\n0.002\n0.029\n0.132\n0.309\n0.360\n0.168\n\n\n\nFind \\(\\mu\\)\n\n\n\nFind \\(\\sigma\\)\n\n\n\nUse Chebyshev’s rule to approximate the probability that \\(x\\) falls into the interval \\(\\mu \\pm 2 \\sigma\\)"
+    "text": "Prompt: Medical research has shown that a certain type of chemotherapy is successful \\(70 \\%\\) of the time when used to treat skin cancer. Suppose five skin cancer patients are treated with this type of chemotherapy, and let \\(x\\) equal the number of successful cures out of the five. The probability distribution for the number of successful cures out of five is given in the following table:\n\n\n\n\\(x\\)\n0\n1\n2\n3\n4\n5\n\n\n\n\n\\(p(x)\\)\n0.002\n0.029\n0.132\n0.309\n0.360\n0.168\n\n\n\n\nFind \\(\\mu\\)\n\n\nFind \\(\\sigma\\)\n\n\nUse Chebyshev’s rule to approximate the probability that \\(x\\) falls into the interval \\(\\mu \\pm 2 \\sigma\\)"
   },
   {
     "objectID": "Activity9.html#activity-2-probability-calculations",
@@ -1909,6 +1951,41 @@
     "title": "Day 22",
     "section": "Hypothesis Test: Step-by-Step Procedure",
     "text": "Hypothesis Test: Step-by-Step Procedure\n\n\nState the Hypotheses\n\nNull Hypothesis (\\(H_0\\)): Assume the status quo or a specific value (e.g., \\(\\mu = 2400\\)).\nAlternative Hypothesis (\\(H_a\\)): Proposes a different scenario (e.g., \\(\\mu &gt; 2400\\)).\n\nAssume \\(H_0\\) is True\n\nCollect data under the assumption that \\(H_0\\) holds.\n\nCompute the Test Statistic\n\nUse the formula: \\[\nz = \\frac{\\bar{x} - \\mu_0}{\\sigma / \\sqrt{n}}\n\\]\n\\(\\bar{x}\\) is the sample mean, \\(\\mu_0\\) is the value under \\(H_0\\), \\(\\sigma\\) is the standard deviation, and \\(n\\) is the sample size.\n\nDetermine the Significance Level\n\nCommonly set at \\(\\alpha = 0.05\\).\nDecide if the computed \\(z\\) value suggests a rare event:\n\nIf \\(z &gt; 1.645\\), it’s considered unusual under the assumption that \\(H_0\\) is true.\n\n\nMake a Decision\n\nReject \\(H_0\\) if the test statistic falls in the rejection region (e.g., \\(z &gt; 1.645\\) for \\(\\alpha = 0.05\\)).\nIf not, fail to reject \\(H_0\\)."
+  },
+  {
+    "objectID": "Activity15.html",
+    "href": "Activity15.html",
+    "title": "Activity 15",
+    "section": "",
+    "text": "Question: Given the PDF of the exponential distribution:\n\\[\nf(x) = \\frac{1}{\\theta} \\exp\\left(-\\frac{x}{\\theta}\\right), \\quad x &gt; 0\n\\] What is the probability that \\(X &gt; 3\\) if \\(\\theta = 2\\)?"
+  },
+  {
+    "objectID": "Activity15.html#activity-1-quiz",
+    "href": "Activity15.html#activity-1-quiz",
+    "title": "Activity 15",
+    "section": "",
+    "text": "Question: Given the PDF of the exponential distribution:\n\\[\nf(x) = \\frac{1}{\\theta} \\exp\\left(-\\frac{x}{\\theta}\\right), \\quad x &gt; 0\n\\] What is the probability that \\(X &gt; 3\\) if \\(\\theta = 2\\)?"
+  },
+  {
+    "objectID": "Activity15.html#activity-2-case-study-battery-reliability",
+    "href": "Activity15.html#activity-2-case-study-battery-reliability",
+    "title": "Activity 15",
+    "section": "Activity 2: Case Study: battery reliability",
+    "text": "Activity 2: Case Study: battery reliability\nCase Study: A company is testing a new battery with an expected lifetime modeled by an exponential distribution with \\(\\theta = 5\\) years. The company wants to offer a warranty period such that only 10% of the batteries fail within the warranty period.\nTask:\n\nCalculate the warranty period that meets the company’s requirement.\n\n\nDiscuss the implications of this warranty period for the company and its customers."
+  },
+  {
+    "objectID": "Activity15.html#activity-3-case-study-emergency-arrivals",
+    "href": "Activity15.html#activity-3-case-study-emergency-arrivals",
+    "title": "Activity 15",
+    "section": "Activity 3: Case Study: emergency arrivals",
+    "text": "Activity 3: Case Study: emergency arrivals\nCase Study: Suppose the length of time (in hours) between emergency arrivals at a certain hospital is modeled as an exponential distribution with \\(\\theta=2\\). What is the probability that more than 5 hours pass without an emergency arrival?"
+  },
+  {
+    "objectID": "Activity15.html#activity-4-microwave-warranty",
+    "href": "Activity15.html#activity-4-microwave-warranty",
+    "title": "Activity 15",
+    "section": "Activity 4: microwave warranty",
+    "text": "Activity 4: microwave warranty\nCase Study: A manufacturer of microwave ovens is trying to determine the length of warranty period it should attach to its magnetron tube, the most critical component in the oven. Preliminary testing has shown that the length of life (in years), \\(x\\), of a magnetron tube has an exponential probability distribution with \\(\\theta=6.25\\).\n\nFind the mean and standard deviation of \\(x\\).\n\n\n\n\n\nSuppose a warranty period of five years is attached to the magnetron tube. What fraction of tubes must the manufacturer plan to replace, assuming that the exponential model with \\(\\theta=6.25\\) is correct?\n\n\n\n\n\nWhat should the warranty period be if the manufacturer wants to replace only \\(27.5 \\%\\) of the tubes?"
   },
   {
     "objectID": "Activity1.html",

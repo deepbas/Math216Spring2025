@@ -98,7 +98,7 @@ poisson_df <- data.frame(accidents = x_values, density = poisson_probs)
 
 # Create a histogram and overlay Poisson distribution
 ggplot(accidents_df, aes(x = accidents)) +
-  geom_histogram(aes(y = ..density..), bins = 10, fill = "lightblue", color = "black") +
+  geom_histogram(aes(y = after_stat(density)), bins = 10, fill = "lightblue", color = "black") +
   geom_point(data = poisson_df, aes(x = accidents, y = density), color = "red", size = 2) +
   geom_line(data = poisson_df, aes(x = accidents, y = density), color = "red", linetype = "dashed") +
   labs(title = "Monthly Traffic Accidents Histogram with Poisson Overlay",
