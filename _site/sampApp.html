@@ -20,6 +20,7 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="site_libs/quarto-search/fuse.min.js"></script>
@@ -35,13 +36,13 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-a0649ace7b9e9e15dfb5fe311d767a49.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-9e2db6d60132874137d35cd80df6d385.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-c2299866e9c1ed9e4d64cbb04b200562.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark"><script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
+<link href="site_libs/bootstrap/bootstrap-4789234e350ca1e99b539bff90e1e810.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-d54c9ffe6210977c38a931cb54d5a492.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark"><script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
+  "panel-placement": "start",
+  "type": "textbox",
   "limit": 50,
   "keyboard-shortcut": [
     "f",
@@ -64,255 +65,439 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script><link rel="stylesheet" href="styles.css">
 </head>
-<body class="nav-fixed">
+<body class="nav-sidebar docked">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg " data-bs-theme="dark"><div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Math 216</span>
-    </a>
-  </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-<li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
-<span class="menu-text">About</span></a>
-  </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-lecture-slides" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Lecture Slides</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-lecture-slides">
-<li>
-    <a class="dropdown-item" href="./Day1.html" target="_blank">
- <span class="dropdown-text">Lecture 1</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Day2.html" target="_blank">
- <span class="dropdown-text">Lecture 2</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Day3.html" target="_blank">
- <span class="dropdown-text">Lecture 3</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Day4.html" target="_blank">
- <span class="dropdown-text">Lecture 4</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Day5.html" target="_blank">
- <span class="dropdown-text">Lecture 5</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Day6.html" target="_blank">
- <span class="dropdown-text">Lecture 6</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Day7.html" target="_blank">
- <span class="dropdown-text">Lecture 7</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Day8.html" target="_blank">
- <span class="dropdown-text">Lecture 8</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Day9.html" target="_blank">
- <span class="dropdown-text">Lecture 9</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Day10.html" target="_blank">
- <span class="dropdown-text">Lecture 10</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Day11.html" target="_blank">
- <span class="dropdown-text">Lecture 11</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Day12.html" target="_blank">
- <span class="dropdown-text">Lecture 12</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Day13.html" target="_blank">
- <span class="dropdown-text">Lecture 13</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Day15.html" target="_blank">
- <span class="dropdown-text">Lecture 15</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Day16.html" target="_blank">
- <span class="dropdown-text">Lecture 16</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Day17.html" target="_blank">
- <span class="dropdown-text">Lecture 17</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Day18.html" target="_blank">
- <span class="dropdown-text">Lecture 18</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Day19.html" target="_blank">
- <span class="dropdown-text">Lecture 19</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Day20.html" target="_blank">
- <span class="dropdown-text">Lecture 20</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Day21.html" target="_blank">
- <span class="dropdown-text">Lecture 21</span></a>
-  </li>  
-    </ul>
-</li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-activities" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Activities</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-activities">
-<li>
-    <a class="dropdown-item" href="./Activity1.html">
- <span class="dropdown-text">Activity 1</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Activity2.html">
- <span class="dropdown-text">Activity 2</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Activity3.html">
- <span class="dropdown-text">Activity 3</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Activity4.html">
- <span class="dropdown-text">Activity 4</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Activity5.html">
- <span class="dropdown-text">Activity 5</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Activity6.html">
- <span class="dropdown-text">Activity 6</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Activity7.html">
- <span class="dropdown-text">Activity 7</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Activity8.html">
- <span class="dropdown-text">Activity 8</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Activity9.html">
- <span class="dropdown-text">Activity 9</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Activity10.html">
- <span class="dropdown-text">Activity 10</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Activity11.html">
- <span class="dropdown-text">Activity 11</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Activity12.html">
- <span class="dropdown-text">Activity 12</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Activity13.html">
- <span class="dropdown-text">Activity 13</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Activity14.html">
- <span class="dropdown-text">Activity 14</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Activity15.html">
- <span class="dropdown-text">Activity 15</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Activity16.html">
- <span class="dropdown-text">Activity 16</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Activity17.html">
- <span class="dropdown-text">Activity 17</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Activity18.html">
- <span class="dropdown-text">Activity 18</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Activity19.html">
- <span class="dropdown-text">Activity 19</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Activity20.html">
- <span class="dropdown-text">Activity 20</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Activity21.html">
- <span class="dropdown-text">Activity 21</span></a>
-  </li>  
-    </ul>
-</li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-tutorials" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Tutorials</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-tutorials">
-<li>
-    <a class="dropdown-item" href="./RandRStudio.html">
- <span class="dropdown-text">R and RStudio</span></a>
-  </li>  
-    </ul>
-</li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-shinyapps" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">ShinyApps</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-shinyapps">
-<li>
-    <a class="dropdown-item" href="./SamplingApp.html">
- <span class="dropdown-text">Sampling Distributions</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./sampApp.html">
- <span class="dropdown-text">Advanced Sampling Distributions</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./CIApp.html">
- <span class="dropdown-text">Confidence Intervals</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./ConfIntervalsApp.html">
- <span class="dropdown-text">CI for means and proportions</span></a>
-  </li>  
-    </ul>
-</li>
-</ul>
-</div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
+  <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./SamplingApp.html">ShinyApps</a></li><li class="breadcrumb-item"><a href="./sampApp.html">Advanced Sampling Distributions</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto"><div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Math 216: Statistical Thinking</a> 
+        <div class="sidebar-tools-main">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
-      </div> <!-- /container-fluid -->
-    </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
-<!-- sidebar -->
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Home</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
+ <span class="menu-text">Week 7</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Day21.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Day 21</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./activity21.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Activity 21</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Day20.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Day 20</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./activity20.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Activity 20</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Day19.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Day 19</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./activity19.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Activity 19</span></a>
+  </div>
+</li>
+      </ul>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+ <span class="menu-text">Week 6</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Day18.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Day 18</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./activity18.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Activity 18</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Day17.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Day 17</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./activity17.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Activity 17</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Day16.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Day 16</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./activity16.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Activity 16</span></a>
+  </div>
+</li>
+      </ul>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+ <span class="menu-text">Week 5</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Day15.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Day 15</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./activity15.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Activity 15</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Day14.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Day 14</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./activity14.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Activity 14</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Day13.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Day 13</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./activity13.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Activity 13</span></a>
+  </div>
+</li>
+      </ul>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
+ <span class="menu-text">Week 4</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Day12.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Day 12</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./activity12.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Activity 12</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Day11.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Day 11</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./activity11.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Activity 11</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Day10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Day 10</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./activity10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Activity 10</span></a>
+  </div>
+</li>
+      </ul>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false">
+ <span class="menu-text">Week 3</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Day9.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Day 9</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./activity9.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Activity 9</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Day8.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Day 8</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./activity8.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Activity 8</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Day7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Day 7</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./activity7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Activity 7</span></a>
+  </div>
+</li>
+      </ul>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false">
+ <span class="menu-text">Week 2</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Day6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Day 6</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./activity6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Activity 6</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Day5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Day 5</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./activity5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Activity 5</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Day4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Day 4</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./activity4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Activity 4</span></a>
+  </div>
+</li>
+      </ul>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false">
+ <span class="menu-text">Week 1</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Day3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Day 3</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./activity3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Activity 3</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Day2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Day 2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./activity2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Activity 2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Day1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Day 1</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./activity1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Activity 1</span></a>
+  </div>
+</li>
+      </ul>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false">
+ <span class="menu-text">Tutorials</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 ">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./RandRStudio.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R and RStudio</span></a>
+  </div>
+</li>
+      </ul>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true">
+ <span class="menu-text">ShinyApps</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./SamplingApp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sampling Distributions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./sampApp.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Advanced Sampling Distributions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./CIApp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Confidence Intervals</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ConfIntervalsApp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CI for Means and Proportions</span></a>
+  </div>
+</li>
+      </ul>
+</li>
+    </ul>
+</div>
+</nav><div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
         
     </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header><iframe width="1280" height="1300" src="https://shinylive.io/r/app/#h=0&amp;code=NobwRAdghgtgpmAXGKAHVA6ASmANGAYwHsIAXOMpMAGwEsAjAJykYE8AKAZwAtaJWAlAB0IdJiw6laAE1YA3OI05xhohszbtU1IqWqCRYjRwItVRiewDmjGQFEAHqWbn1lgI7vtuxq-GbGInoAV05SeihlP2N2ABEAFWjLVGDGNNURYNoAAgAeAFpsgDNqLOkABSgrOHYRbOypPThKiDhqWrAAZVhtPits2Now2xCpEmyoCGlsgGEAGXihMAFcOuzOGTgIxjmoViJg0lqIevqN6S2WFrbj09OAdzbqa-a1u-rmaVoiACFD0hInA6XzCS1w2SW5SIKWoUDGJ0GwwYh2+EEQYLe7yx2IIHQAckRGDAoNQltkALwQsCMCCEmAYk7YpnYpYAVQgtCKdLJlKWjGCHKKDOZIruSywtCs3FI2U6AGs4I9pDyqYxqLSicLRaKlnM4EUZfLFXBlWAKar6HBSFAtdrmUsfrQYERpCSVXz6E7TatGXamUsZlBggRuKx3dTTMHQ0sBCtMXdOHQLowAJIQFJHJYQMFU7owbRwWW0ABecHReGyAFZwZWAAy18EAZgbVbjvveic2qfThw6cpzSzxwRglsY2SIRVlPWocE45fBAEYW3X6zXV1Xa22mRBh4paAQ0xmOsoTQOwFhJtIiDBZXATfPsguAEyNrfYqAEeF-UgAiAdYKoK65BnlgArZAAgtA+gbJwOYELCnCcOaSz0KQED5KgtjEmwMbxtkqh3G+9TEnwLy3O81r0MopBkXh9SUbRYBQjCcKojm3h6KwADyhxHksqDQuUOikDGRHvHRDRQPQjEAGK0EoMoABxTvmM6wXgEnMhx+g8aQfFgJw05wAAsnAkyxLoQm6Op4LcHAkrSshYAAGz1qgDiiT6-rtncDGTDcSx2LE4HjpOeYFjZmlMgkun6YZqlwJ0w7Yaw8RSTOMZeX69TadxvG9ks8UFqZkxWaQNnZHZDkyryLluR5yxiWKPmnH5rSvF0059AMQzOMi8KhdkJUQJFLWiiUZRYEQ9zkdl9TEKUMB-s54K5bFBUGV1EBWAAEr1nlRcyC3Dstq3CetmZgJ4ZXDepsaxllWISW1AWdap3WIn1oyooNplfJMo1zcUpQyFNM2HUyx1LewK3ZGt+WXUVdDbX9tCTHtoKNY9c1Q6dcPnQjHTXcJqMA6JsZ4QRpxU6oGQjYoChjgUxQCp+qLsHwGbggcemHOCyiIaiAjZCAawAMTZFgZlswocPQsEsIDdUrTMACjBrAJqAAPpAVAeSFIw0tSAo7Ci+21EYCe0gcz2pAACRW1TZz3LQpAhjbGZ2yCpDY9iNJ0ua-tEuwC5wM5TVYvygqBwKnIh2HEfvGqGo3pSyd0vHsMtrWGCVondyMJa1qB0XUCZzWi65-npyF165q4kHMDsJWcDVtk+RPis2SN83rdNuCnfVx8kYhqwgcj6GmcU4yAC+wsAKQAHzz9knpTIGIY1Jzhxe714Lb-bVvgqYm9OQLGwkDG2RLyva-SHYChkB7O8AUBKgiGsSOzvr3dG7QJtmwLnAdwz97Zyn3rbO2EAna-16KYcgoC7bgPWEZLQ0IdZwjLl3A+UDwSG20B+QslJ4hYFZHYae9Q57X2XqvPg0gN52UQd7CBnsj7ZBwRAFhO9kEnzsmfWcF9szLGofPTEd8H4UCODg1+cJ37ZkZBLGSrMBoAgmNIaY5AnATAgLSa0A0XakG4Ow-MgQFDTE4KgD8fQ1hQHUVrTgyUJBa00TKZmRRlHs11uCRoM5haANOGEOESFma6xEXhBxMBsJDBqBJYagcDhTHYPASY7A5AkmCCoJs+dSYnDTgk628B-p-jSaUTJ2RXy+1OJ0WI8SBTW04NbEpGSu4VIkrk7If4YH1Dpr5OATgtYOB-jAPg7BdZ2yaSobIABqbIOcFyVmyAAKmyF8IoRR2DMG2jUMZEzYz1AlsZQkhYZwGnWJYgg1j2wuK1mPZmxIHCjIoBsUgHAdnpJUHbVg4JoAYCJOaEhZDhbLJzopBZ+yhpHIaNCM5Vjtof3bFYKwHFRmYPBFAWcqT3l7KmXhao14ta8DCEQGwsB2DoqBGPSkGAMAXBGq7Vg1Ku5ryQpSOs4Iii0GoNQJyYsAAsdgADsABOcCAqr44panimAOsnn0vYAtQkPK7DzIFZWIVOYNilnNAuYWEqsSTF0bIjoLicyDMpNchw4JKUND6aQG54IIanFhJabllJLFhDgLWDow1EBUn5nozgdthoOrGkDJ6YAhAiByb6jVAag0mjRpwiEoaw1igjSIapMaKyBPKnbapIbU06nTTorN-qglQKHu8bgAArUINVZngjkLWsI2r+YliIeU3Ox8iA6DHLVegsICD9mEXq94zqgQ+I7ZO3VeFDFwHgFrYZHJiTtAiMoex7btW8qpjPNY4tsjMQVqxcY3sRgonGBxNYPNPaazKj-Q2UxFBlX0KbTEmsf5SHoAOmoEzzSawwdadgFDTiItymSuxESUrONtWg1ADqmLy0Vj9T6Z79GuyMbEWVLzZipAUKJNYc890KJUgWdYji2CSW-VehGDsjJJUiRINK3770UGTAkV95sej2IDT-NA2gOBfyBAIYAuAFyIEUgAXQHuyjxJB2AOD8XhXEcTKTJL-Ap8EOTzSFMTfJru1TzQNL0zAqhN8GhAZERMTgNLMEYCKMweAQHMSYl1pRGcXAuM5s4JUpk0J4QsuyHQMIWgqhwD1NtQx5pFL8wIIELlAANf5pDyE+ZxGgAatV6MpVlHo3q+4kJcjHHJBS2RlLhTUlfG+eFCvElIFNOp8qe0nQC2Jxs4IvhWFdgF18BGqb7vK4WNTlVerEoc0hdgHKSuKSpteneX9hplWCQbVjT7hIvv8WcHovHODOIYN+jzCUhMibE5JmBb7hJLeyMSVAIdxPggAH4bdOAtLW0B4A-zexioqwmMAOAk3hXFSLhIHbgxMDFABCcHnBWBNxe59+60yJJSoJSNklTdyXsGtdS2lzyGUYCZXwALT4Wwcq5TygVzkfgCp+E+cVSO4D4px3KhVfaqRiyCjMIVvLFIas3ZSEFM7Q3jvYJOv9kQEFLAGzmX78GMYAjR6JRHoa50LqXU6EkTn2yEfbJiBx9BkUcW8x0wI9wifgmwp19pOdax5160RiWA2rtmROFeGUhvsgTfki26b2QDFGMCCEFta8OTbW0dMatrtyDq0ZLNw+RlhoWRohdljj7GDPo4E9oq23dtfvc4JoDx3xMSbO+2d3dy0C3ei9kR7Sme2vdgIWZmn2gTfeAL9-7kqge6BB2iiHUOYeNeoPX+ACPR1YmR675FrvNUdpztupXTJhei7deLmJb0CzS8tVSRPHFfrO7uoLpkKu4CLr4Or9oJmS8JmCPr4Hhvvkm7N1dlglvzTW9t7POmRHwXle6qe-qP0E4TuZMMeNGSMfQcuKeyY6eHGdwaml2n6+2v6lIC0t0IOakQGwG9QoGa2HAti0g9i5GrA0GTgSS++8Gv+oeKGAB4wQBt0+Gn+3+2QDuW0-Q-+30tBk4OmIB9QsetG70KMCa6MvUUBq2ug62mI3BI0H6e27myBEw6AL6+eXcT45uQh0CMCOB4heBEGRBJBRwUhRukurBPUSIHBJwdB6hB+dujI+6AAivkHYfjLoMUIql-MASNNRrzPbMTLoLdKIWnsDk9vAT-KgfvugRilgdkFoUcIge5vAV3Bju4ZSJwKYPEfvqPuEnolrJ4FrMjDUCzjyjJDJEKsFGKiOlkXCDke4FrAJHwEcIUbVGLIpJTjMD8M5HTi1Evq7DOE5ASESCSNkA4U4XekAY7vQRUS1MfqfsuhrmuifjPlujun1sRsMc4TKIVigglE7kUrBKAd4XbL4aQDkpdg+tAUEZIVYbxooQJkZEJtJjsYmpoV3rEbITUIYYkV9kZIZmke8VYZkS1DmtUXkXwAUT2oqk0cUaUaKp0ViECbkXUU-I0Wzi0T8G0R0ZMViN0U0H0XSIMWsaMWFN8ScbCRRHZKrmfiuuwPMRulqpSAuNujYbuvIjwHwKwOBOgOwFkPzAzIoKoGADPBJkAA"></iframe>
+<main class="content column-page-right" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./SamplingApp.html">ShinyApps</a></li><li class="breadcrumb-item"><a href="./sampApp.html">Advanced Sampling Distributions</a></li></ol></nav></header><iframe width="1280" height="1300" src="https://shinylive.io/r/app/#h=0&amp;code=NobwRAdghgtgpmAXGKAHVA6ASmANGAYwHsIAXOMpMAGwEsAjAJykYE8AKAZwAtaJWAlAB0IdJiw6laAE1YA3OI05xhohszbtU1IqWqCRYjRwItVRiewDmjGQFEAHqWbn1lgI7vtuxq-GbGInoAV05SeihlP2N2ABEAFWjLVGDGNNURYNoAAgAeAFpsgDNqLOkABSgrOHYRbOypPThKiDhqWrAAZVhtPits2Now2xCpEmyoCGlsgGEAGXihMAFcOuzOGTgIxjmoViJg0lqIevqN6S2WFrbj09OAdzbqa-a1u-rmaVoiACFD0hInA6XzCS1w2SW5SIKWoUDGJ0GwwYh2+EEQYLe7yx2IIHQAckRGDAoNQltkALwQsCMCCEmAYk7YpnYpYAVQgtCKdLJlKWjGCHKKDOZIruSywtCs3FI2U6AGs4I9pDyqYxqLSicLRaKlnM4EUZfLFXBlWAKar6HBSFAtdrmUsfrQYERpCSVXz6E7TatGXamUsZlBggRuKx3dTTMHQ0sBCtMXdOHQLowAJIQFJHJYQMFU7owbRwWW0ABecHReGyAFZwZWAAy18EAZgbVbjvveic2qfThw6cpzSzxwRglsY2SIRVlPWocE45fBAEYW3X6zXV1Xa22mRBh4paAQ0xmOsoTQOwFhJtIiDBZXATfPsguAEyNrfYqAEeF-UgAiAdYKoK65BnlgArZAAgtA+gbJwOYELCnCcOaSz0KQED5KgtjEmwMbxtkqh3G+9TEnwLy3O81r0MopBkXh9SUbRYBQjCcKojm3h6KwADyhxHksqDQuUOikDGRHvHRDRQPQjEAGK0EoMoABxTvmM6wXgEnMhx+g8aQfFgJw05wAAsnAkyxLoQm6Op4LcHAkrSshYAAGz1qgDiiT6-rtncDGTDcSx2LE4HjpOeYFjZmlMgkun6YZqlwJ0w7Yaw8RSTOMZeX69TadxvG9ks8UFqZkxWaQNnZHZDkyryLluR5yxiWKPmnH5rSvF0059AMQzOMi8KhdkJUQJFLWiiUZRYEQ9zkdl9TEKUMB-s54K5bFBUGV1EBWAAEr1nlRcyC3Dstq3CetmZgJ4ZXDepsaxllWISW1AWdap3WIn1oyooNplfJMo1zcUpQyFNM2HUyx1LewK3ZGt+WXUVdDbX9tCTHtoKNY9c1Q6dcPnQjHTXcJqMA6JsZ4QRpxU6oGQjYoChjgUxQCp+qLsHwGbggcemHOCyiIaiAjZCAawAMTZFgZlswocPQsEsIDdUrTMACjBrAJqAAPpAVAeSFIw0tSAo7Ci+21EYCe0gcz2pAACRW1TZz3LQpAhjbGZ2yCpDY9iNJ0ua-tEuwC5wM5TVYvygqBwKnIh2HEfvGqGo3pSyd0vHsMtrWGCVondyMJa1qB0XUCZzWi65-npyF165q4kHMDsJWcDVtk+RPis2SN83rdNuCnfVx8kYhqwgcj6GmcU4yAC+wsAKQAHzz9knpTIGIY1Jzhxe714Lb-bVvgqYm9OQLGwkDG2RLyva-SHYChkB7O8AUBKgiGsSOzvr3dG7QJtmwLnAdwz97Zyn3rbO2EAna-16KYcgoC7bgPWEZLQ0IdZwjLl3A+UDwSG20B+QslJ4hYFZHYae9Q57X2XqvPg0gN52UQd7CBnsj7ZBwRAFhO9kEnzsmfWcF9szLGofPTEd8H4UCODg1+cJ37ZkZBLGSrMBoAgmNIaY5AnATAgLSa0A0XakG4Ow-MgQFDTE4KgD8fQ1hQHUVrTgyUJBa00TKZmRRlHs11uCRoM5haANOGEOESFma6xEXhBxMBsJDBqBJYagcDhTHYPASY7A5AkmCCoJs+dSYnDTgk628B-p-jSaUTJ2RXy+1OJ0WI8SBTW04NbEpGSu4VIkrk7If4YH1Dpr5OATgtYOB-jAPg7BdZ2yaSobIABqbIOcFyVmyAAKmyF8IoRR2DMG2jUMZEzYz1AlsZQkhYZwGnWJYgg1j2wuK1mPZmxIHCjIoBsUgHAdnpJUHbVg4JoAYCJOaEhZDhbLJzopBZ+yhpHIaNCM5Vjtof3bFYKwHFRmYPBFAWcqT3l7KmXhao14ta8DCEQGwsB2DoqBGPSkGAMAXBGq7Vg1Ku5ryQpSOs4Iii0GoNQJyYsAAsdgADsABOcCAqr44panimAOsnn0vYAtQkPK7DzIFZWIVOYNilnNAuYWEqsSTF0bIjoLicyDMpNchw4JKUND6aQG54IIanFhJabllJLFhDgLWDow1EBUn5nozgdthoOrGkDJ6YAhAiByb6jVAag0mjRpwiEoaw1igjSIapMaKyBPKnbapIbU06nTTorN-qglQKHu8bgAArUINVZngjkLWsI2r+YliIeU3Ox8iA6DHLVegsICD9mEXq94zqgQ+I7ZO3VeFDFwHgFrYZHJiTtAiMoex7btW8qpjPNY4tsjMQVqxcY3sRgonGBxNYPNPaazKj-Q2UxFBlX0KbTEmsf5SHoAOmoEzzSawwdadgFDTiItymSuxESUrONtWg1ADqmLy0Vj9T6Z79GuyMbEWVLzZipAUKJNYc890KJUgWdYji2CSW-VehGDsjJJUiRINK3770UGTAkV95sej2IDT-NA2gOBfyBAIYAuAFyIEUgAXQHuyjxJB2AOD8XhXEcTKTJL-Ap8EOTzSFMTfJru1TzQNL0zAqhN8GhAZERMTgNLMEYCKMweAQHMSYl1pRGcXAuM5s4JUpk0J4QsuyHQMIWgqhwD1NtQx5pFL8wIIELlAANf5pDyE+ZxGgAatV6MpVlHo3q+4kJcjHHJBS2RlLhTUlfG+eFCvElIFNOp8qe0nQC2Jxs4IvhWFdgF18BGqb7vK4WNTlVerEoc0hdgHKSuKSpteneX9hplWCQbVjT7hIvv8WcHovHODOIYN+jzCUhMibE5JmBb7hJLeyMSVAIdxPggAH4bdOAtLW0B4A-zexioqwmMAOAk3hXFSLhIHbgxMDFABCcHnBWBNxe59+60yJJSoJSNklTdyXsGtdS2lzyGUYCZXwALT4Wwcq5TygVzkfgCp+E+cVSO4D4px3KhVfaqRiyCjMIVvLFIas3ZSEFM7Q3jvYJOv9kQEFLAGzmX78GMYAjR6JRHoa50LqXU6EkTn2yEfbJiBx9BkUcW8x0wI9wifgmwp19pOdax5160RiWA2rtmROFeGUhvsgTfki26b2QDFGMCCEFta8OTbW0dMatrtyDq0ZLNw+RlhoWRohdljj7GDPo4E9oq23dtfvc4JoDx3xMSbO+2d3dy0C3ei9kR7Sme2vdgIWZmn2gTfeAL9-7kqge6BB2iiHUOYeNeoPX+ACPR1YmR675FrvNUdpztupXTJhei7deLmJb0CzS8tVSRPHFfrO7uoLpkKu4CLr4Or9oJmS8JmCPr4Hhvvkm7N1dlglvzTW9t7POmRHwXle6qe-qP0E4TuZMMeNGSMfQcuKeyY6eHGdwaml2n6+2v6lIC0t0IOakQGwG9QoGa2HAti0g9i5GrA0GTgSS++8Gv+oeKGAB4wQBt0+Gn+3+2QDuW0-Q-+30tBk4OmIB9QsetG70KMCa6MvUUBq2ug62mI3BI0H6e27myBEw6AL6+eXcT45uQh0CMCOB4heBEGRBJBRwUhRukurBPUSIHBJwdB6hB+dujI+6AAivkHYfjLoMUIql-MASNNRrzPbMTLoLdKIWnsDk9vAT-KgfvugRilgdkFoUcIge5vAV3Bju4ZSJwKYPEfvqPuEnolrJ4FrMjDUCzjyjJDJEKsFGKiOlkXCDke4FrAJHwEcIUbVGLIpJTjMD8M5HTi1Evq7DOE5ASESCSNkA4U4XekAY7vQRUS1MfqfsuhrmuifjPlujun1sRsMc4TKIVigglE7kUrBKAd4XbL4aQDkpdg+tAUEZIVYbxooQJkZEJtJjsYmpoV3rEbITUIYYkV9kZIZmke8VYZkS1DmtUXkXwAUT2oqk0cUaUaKp0ViECbkXUU-I0Wzi0T8G0R0ZMViN0U0H0XSIMWsaMWFN8ScbCRRHZKrmfiuuwPMRulqpSAuNujYbuvIjwHwKwOBOgOwFkPzAzIoKoGADPBJkAA"></iframe>
 
 
 

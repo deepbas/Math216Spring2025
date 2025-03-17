@@ -4,203 +4,206 @@ output-dir: docs
 
 website:
   title: "Math 216: Statistical Thinking"
-  navbar:
-    title: "Math 216"
-    pinned: true
-    left:
+  sidebar:
+    style: "docked"
+    collapse-level: 1
+    contents:
       - text: "Home"
         href: index.html
       - text: "About"
         href: about.html
-      - text: "Lecture Slides"
-        menu:
-          - text: "Lecture 1"
-            href: Day1.html
-            target: "_blank"
-          - text: "Lecture 2"
-            href: Day2.html
-            target: "_blank"
-          - text: "Lecture 3"
-            href: Day3.html
-            target: "_blank"
-          - text: "Lecture 4"
-            href: Day4.html
-            target: "_blank"
-          - text: "Lecture 5"
-            href: Day5.html
-            target: "_blank"
-          - text: "Lecture 6"
-            href: Day6.html
-            target: "_blank"
-          - text: "Lecture 7"
-            href: Day7.html
-            target: "_blank"
-          - text: "Lecture 8"
-            href: Day8.html
-            target: "_blank"
-          - text: "Lecture 9"
-            href: Day9.html
-            target: "_blank"
-          - text: "Lecture 10"
-            href: Day10.html
-            target: "_blank"
-          - text: "Lecture 11"
-            href: Day11.html
-            target: "_blank"
-          - text: "Lecture 12"
-            href: Day12.html
-            target: "_blank"
-          - text: "Lecture 13"
-            href: Day13.html
-            target: "_blank"
-          - text: "Lecture 15"
-            href: Day15.html
-            target: "_blank"
-          - text: "Lecture 16"
-            href: Day16.html
-            target: "_blank"
-          - text: "Lecture 17"
-            href: Day17.html
-            target: "_blank"
-          - text: "Lecture 18"
-            href: Day18.html
-            target: "_blank"
-          - text: "Lecture 19"
-            href: Day19.html
-            target: "_blank"
-          - text: "Lecture 20"
-            href: Day20.html
-            target: "_blank"
-          - text: "Lecture 21"
+      # - section: "Week 14"
+      #   contents:
+      #     - text: "Day 42"
+      #       href: Day42.html
+      #     - text: "Day 41"
+      #       href: Day41.html
+      #     - text: "Day 40"
+      #       href: Day40.html
+      #     - text: "Activity 14"
+      #       href: Activity14.html
+      # - section: "Week 13"
+      #   contents:
+      #     - text: "Day 39"
+      #       href: Day39.html
+      #     - text: "Day 38"
+      #       href: Day38.html
+      #     - text: "Day 37"
+      #       href: Day37.html
+      #     - text: "Activity 13"
+      #       href: Activity13.html
+      # - section: "Week 12"
+      #   contents:
+      #     - text: "Day 36"
+      #       href: Day36.html
+      #     - text: "Day 35"
+      #       href: Day35.html
+      #     - text: "Day 34"
+      #       href: Day34.html
+      #     - text: "Activity 12"
+      #       href: Activity12.html
+      # - section: "Week 11"
+      #   contents:
+      #     - text: "Day 33"
+      #       href: Day33.html
+      #     - text: "Day 32"
+      #       href: Day32.html
+      #     - text: "Day 31"
+      #       href: Day31.html
+      #     - text: "Activity 11"
+      #       href: Activity11.html
+      # - section: "Week 10"
+      #   contents:
+      #     - text: "Day 30"
+      #       href: Day30.html
+      #     - text: "Day 29"
+      #       href: Day29.html
+      #     - text: "Day 28"
+      #       href: Day28.html
+      #     - text: "Activity 10"
+      #       href: Activity10.html
+      # - section: "Week 9"
+      #   contents:
+      #     - text: "Day 27"
+      #       href: Day27.html
+      #     - text: "Day 26"
+      #       href: Day26.html
+      #     - text: "Day 25"
+      #       href: Day25.html
+      #     - text: "Activity 9"
+      #       href: Activity9.html
+      # - section: "Week 8"
+      #   contents:
+      #     - text: "Day 24"
+      #       href: Day24.html
+      #     - text: "Day 23"
+      #       href: Day23.html
+      #     - text: "Day 22"
+      #       href: Day22.html
+      #     - text: "Activity 8"
+      #       href: Activity8.html
+
+      - section: "Week 7"
+        contents:
+          - text: "Day 21"
             href: Day21.html
-            target: "_blank"
-        #   - text: "Lecture 22"
-        #     href: Day22.html
-        #     target: "_blank"
-        #   - text: "Lecture 23"
-        #     href: Day23.html
-        #     target: "_blank"
-        #   - text: "Lecture 24"
-        #     href: Day24.html
-        #     target: "_blank"
-        #   - text: "Lecture 26"
-        #     href: Day26.html
-        #     target: "_blank"
-        #   - text: "Lecture 27"
-        #     href: Day27.html
-        #     target: "_blank"  
-        #   - text: "Lecture 28"
-        #     href: Day28.html
-        #     target: "_blank"            
-        #   - text: "Lecture 29"
-        #     href: Day29.html
-        #     target: "_blank"
-        #   - text: "Lecture 30"
-        #     href: Day30.html
-        #     target: "_blank"
-        #   - text: "Lecture 31"
-        #     href: Day31.html
-        #     target: "_blank"
-        #   - text: "Lecture 32"
-        #     href: Day32.html
-        #     target: "_blank"
-        #   - text: "Lecture 33"
-        #     href: Day33.html
-        #     target: "_blank"
-        #   - text: "Lecture 34"
-        #     href: Day34.html
-        #     target: "_blank"
-        #   - text: "Lecture 35"
-        #     href: Day35.html
-        #     target: "_blank"
-        #   - text: "Lecture 36"
-        #     href: Day36.html
-        #     target: "_blank"
-        #   - text: "Lecture 37"
-        #     href: Day37.html
-        #     target: "_blank"
-        #   - text: "Lecture 38"
-        #     href: Day38.html
-        #     target: "_blank"
-        #   - text: "Lecture 40"
-        #     href: Day40.html
-        #     target: "_blank"
-        #   - text: "Lecture 41"
-        #     href: Day41.html
-        #     target: "_blank"
-        #   - text: "Lecture 42"
-        #     href: Day42.html
-        #     target: "_blank"
-          # - text: "Lecture 35"
-          #   href: Day35.html
-          #   target: "_blank"
-
-      - text: "Activities"
-        menu:
-          - text: "Activity 1"
-            href: Activity1.html
-          - text: "Activity 2"
-            href: Activity2.html
-          - text: "Activity 3"
-            href: Activity3.html
-          - text: "Activity 4"
-            href: Activity4.html
-          - text: "Activity 5"
-            href: Activity5.html
-          - text: "Activity 6"
-            href: Activity6.html
-          - text: "Activity 7"
-            href: Activity7.html
-          - text: "Activity 8"
-            href: Activity8.html
-          - text: "Activity 9"
-            href: Activity9.html
-          - text: "Activity 10"
-            href: Activity10.html
-          - text: "Activity 11"
-            href: Activity11.html
-          - text: "Activity 12"
-            href: Activity12.html
-          - text: "Activity 13"
-            href: Activity13.html
-          - text: "Activity 14"
-            href: Activity14.html
-          - text: "Activity 15"
-            href: Activity15.html
-          - text: "Activity 16"
-            href: Activity16.html
-          - text: "Activity 17"
-            href: Activity17.html
-          - text: "Activity 18"
-            href: Activity18.html
-          - text: "Activity 19"
-            href: Activity19.html
-          - text: "Activity 20"
-            href: Activity20.html
           - text: "Activity 21"
-            href: Activity21.html
-            # - text: "Activity 1"
-           #  href: Activity1.html
-         #     target: "_blank"
-        #   - text: "Lecture 2"
-        #     href: Day2.html
-
-      - text: "Tutorials"
-        menu:
+            href: activity21.html
+          - text: "Day 20"
+            href: Day20.html
+          - text: "Activity 20"
+            href: activity20.html
+          - text: "Day 19"
+            href: Day19.html
+          - text: "Activity 19"
+            href: activity19.html
+      - section: "Week 6"
+        contents:
+          - text: "Day 18"
+            href: Day18.html
+          - text: "Activity 18"
+            href: activity18.html
+          - text: "Day 17"
+            href: Day17.html
+          - text: "Activity 17"
+            href: activity17.html
+          - text: "Day 16"
+            href: Day16.html
+          - text: "Activity 16"
+            href: activity16.html
+      - section: "Week 5"
+        contents:
+          - text: "Day 15"
+            href: Day15.html
+          - text: "Activity 15"
+            href: activity15.html
+          - text: "Day 14"
+            href: Day14.html
+          - text: "Activity 14"
+            href: activity14.html
+          - text: "Day 13"
+            href: Day13.html
+          - text: "Activity 13"
+            href: activity13.html
+      - section: "Week 4"
+        contents:
+          - text: "Day 12"
+            href: Day12.html
+          - text: "Activity 12"
+            href: activity12.html
+          - text: "Day 11"
+            href: Day11.html
+          - text: "Activity 11"
+            href: activity11.html
+          - text: "Day 10"
+            href: Day10.html
+          - text: "Activity 10"
+            href: activity10.html
+      - section: "Week 3"
+        contents:
+          - text: "Day 9"
+            href: Day9.html
+          - text: "Activity 9"
+            href: activity9.html
+          - text: "Day 8"
+            href: Day8.html
+          - text: "Activity 8"
+            href: activity8.html
+          - text: "Day 7"
+            href: Day7.html
+          - text: "Activity 7"
+            href: activity7.html
+      - section: "Week 2"
+        contents:
+          - text: "Day 6"
+            href: Day6.html
+          - text: "Activity 6"
+            href: activity6.html
+          - text: "Day 5"
+            href: Day5.html
+          - text: "Activity 5"
+            href: activity5.html
+          - text: "Day 4"
+            href: Day4.html
+          - text: "Activity 4"
+            href: activity4.html
+      - section: "Week 1"
+        contents:
+          - text: "Day 3"
+            href: Day3.html
+          - text: "Activity 3"
+            href: activity3.html
+          - text: "Day 2"
+            href: Day2.html
+          - text: "Activity 2"
+            href: activity2.html
+          - text: "Day 1"
+            href: Day1.html
+          - text: "Activity 1"
+            href: activity1.html
+      - section: "Tutorials"
+        contents:
           - text: "R and RStudio"
             href: RandRStudio.html
-      - text: "ShinyApps"
-        menu:
+      - section: "ShinyApps"
+        contents:
           - text: "Sampling Distributions"
             href: SamplingApp.html
           - text: "Advanced Sampling Distributions"
             href: sampApp.html
           - text: "Confidence Intervals"
             href: CIApp.html
-          - text: "CI for means and proportions"
+          - text: "CI for Means and Proportions"
             href: ConfIntervalsApp.html
-      #     - text: "Simple Linear Regression"
-      #       href: SimpleLinearRegression.html
+
+
+webr:
+  setup: setup.R
+  packages:
+    - dplyr
+    - ggplot2
+    - patchwork
+    - gridExtra
 
 
 format:
@@ -219,6 +222,7 @@ format:
     fig-cap-location: margin
     reference-location: margin
     footnotes-hover: true 
+    
 filters:
   - shinylive
   - webr
@@ -237,6 +241,3 @@ execute:
   echo: true
   warning: false
 
-language:
-  label:
-    chapter: "Chapter "

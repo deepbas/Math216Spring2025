@@ -24,6 +24,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="site_libs/quarto-search/fuse.min.js"></script>
@@ -38,15 +39,15 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-494121dfa8658343c03537e94414993d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-0522aeb2e65cb0a4bd37577de0a3038c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-aa984c81c997eb9a74c6fcaf0c3b0d80.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="site_libs/quarto-contrib/live-runtime/live-runtime.js" type="module"></script>
 <link href="site_libs/quarto-contrib/live-runtime/live-runtime.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
+  "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
+  "panel-placement": "start",
+  "type": "textbox",
   "limit": 50,
   "keyboard-shortcut": [
     "f",
@@ -103,253 +104,439 @@ window.Quarto = {
 
 </head>
 
-<body class="nav-fixed">
+<body class="nav-sidebar docked">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Math 216</span>
-    </a>
-  </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
-<span class="menu-text">About</span></a>
-  </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-lecture-slides" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Lecture Slides</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-lecture-slides">    
-        <li>
-    <a class="dropdown-item" href="./Day1.html" target="_blank">
- <span class="dropdown-text">Lecture 1</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Day2.html" target="_blank">
- <span class="dropdown-text">Lecture 2</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Day3.html" target="_blank">
- <span class="dropdown-text">Lecture 3</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Day4.html" target="_blank">
- <span class="dropdown-text">Lecture 4</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Day5.html" target="_blank">
- <span class="dropdown-text">Lecture 5</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Day6.html" target="_blank">
- <span class="dropdown-text">Lecture 6</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Day7.html" target="_blank">
- <span class="dropdown-text">Lecture 7</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Day8.html" target="_blank">
- <span class="dropdown-text">Lecture 8</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Day9.html" target="_blank">
- <span class="dropdown-text">Lecture 9</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Day10.html" target="_blank">
- <span class="dropdown-text">Lecture 10</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Day11.html" target="_blank">
- <span class="dropdown-text">Lecture 11</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Day12.html" target="_blank">
- <span class="dropdown-text">Lecture 12</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Day13.html" target="_blank">
- <span class="dropdown-text">Lecture 13</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Day15.html" target="_blank">
- <span class="dropdown-text">Lecture 15</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Day16.html" target="_blank">
- <span class="dropdown-text">Lecture 16</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Day17.html" target="_blank">
- <span class="dropdown-text">Lecture 17</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Day18.html" target="_blank">
- <span class="dropdown-text">Lecture 18</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Day19.html" target="_blank">
- <span class="dropdown-text">Lecture 19</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Day20.html" target="_blank">
- <span class="dropdown-text">Lecture 20</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Day21.html" target="_blank">
- <span class="dropdown-text">Lecture 21</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-activities" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Activities</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-activities">    
-        <li>
-    <a class="dropdown-item" href="./Activity1.html">
- <span class="dropdown-text">Activity 1</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Activity2.html">
- <span class="dropdown-text">Activity 2</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Activity3.html">
- <span class="dropdown-text">Activity 3</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Activity4.html">
- <span class="dropdown-text">Activity 4</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Activity5.html">
- <span class="dropdown-text">Activity 5</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Activity6.html">
- <span class="dropdown-text">Activity 6</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Activity7.html">
- <span class="dropdown-text">Activity 7</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Activity8.html">
- <span class="dropdown-text">Activity 8</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Activity9.html">
- <span class="dropdown-text">Activity 9</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Activity10.html">
- <span class="dropdown-text">Activity 10</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Activity11.html">
- <span class="dropdown-text">Activity 11</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Activity12.html">
- <span class="dropdown-text">Activity 12</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Activity13.html">
- <span class="dropdown-text">Activity 13</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Activity14.html">
- <span class="dropdown-text">Activity 14</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Activity15.html">
- <span class="dropdown-text">Activity 15</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Activity16.html">
- <span class="dropdown-text">Activity 16</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Activity17.html">
- <span class="dropdown-text">Activity 17</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Activity18.html">
- <span class="dropdown-text">Activity 18</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Activity19.html">
- <span class="dropdown-text">Activity 19</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Activity20.html">
- <span class="dropdown-text">Activity 20</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./Activity21.html">
- <span class="dropdown-text">Activity 21</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-tutorials" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Tutorials</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-tutorials">    
-        <li>
-    <a class="dropdown-item" href="./RandRStudio.html">
- <span class="dropdown-text">R and RStudio</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-shinyapps" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">ShinyApps</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-shinyapps">    
-        <li>
-    <a class="dropdown-item" href="./SamplingApp.html">
- <span class="dropdown-text">Sampling Distributions</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./sampApp.html">
- <span class="dropdown-text">Advanced Sampling Distributions</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./CIApp.html">
- <span class="dropdown-text">Confidence Intervals</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./ConfIntervalsApp.html">
- <span class="dropdown-text">CI for means and proportions</span></a>
-  </li>  
-    </ul>
-  </li>
-</ul>
-          </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
-</div>
-      </div> <!-- /container-fluid -->
-    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      Math 216: Statistical Thinking
+      </li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Math 216: Statistical Thinking</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Home</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
+ <span class="menu-text">Week 7</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Day21.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Day 21</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./activity21.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Activity 21</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Day20.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Day 20</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./activity20.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Activity 20</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Day19.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Day 19</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./activity19.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Activity 19</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+ <span class="menu-text">Week 6</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Day18.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Day 18</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./activity18.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Activity 18</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Day17.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Day 17</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./activity17.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Activity 17</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Day16.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Day 16</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./activity16.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Activity 16</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+ <span class="menu-text">Week 5</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Day15.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Day 15</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./activity15.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Activity 15</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Day14.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Day 14</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./activity14.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Activity 14</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Day13.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Day 13</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./activity13.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Activity 13</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
+ <span class="menu-text">Week 4</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Day12.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Day 12</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./activity12.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Activity 12</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Day11.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Day 11</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./activity11.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Activity 11</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Day10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Day 10</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./activity10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Activity 10</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false">
+ <span class="menu-text">Week 3</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Day9.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Day 9</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./activity9.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Activity 9</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Day8.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Day 8</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./activity8.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Activity 8</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Day7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Day 7</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./activity7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Activity 7</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false">
+ <span class="menu-text">Week 2</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Day6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Day 6</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./activity6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Activity 6</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Day5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Day 5</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./activity5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Activity 5</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Day4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Day 4</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./activity4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Activity 4</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false">
+ <span class="menu-text">Week 1</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Day3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Day 3</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./activity3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Activity 3</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Day2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Day 2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./activity2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Activity 2</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Day1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Day 1</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./activity1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Activity 1</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false">
+ <span class="menu-text">Tutorials</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./RandRStudio.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R and RStudio</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="false">
+ <span class="menu-text">ShinyApps</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./SamplingApp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sampling Distributions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./sampApp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Advanced Sampling Distributions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./CIApp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Confidence Intervals</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ConfIntervalsApp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">CI for Means and Proportions</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
