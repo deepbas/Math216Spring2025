@@ -1442,7 +1442,7 @@
     "href": "Activity21.html",
     "title": "Activity 21",
     "section": "",
-    "text": "Question: Given \\(\\hat{p} = 0.65\\), \\(n = 169\\), and a 90% confidence level, calculate the confidence interval for \\(p\\). Use \\(z_{\\alpha/2} = 1.645\\)."
+    "text": "library(dplyr) library(ggplot2) library(patchwork) library(gridExtra) library(purrr) library(tidyverse)\n\n\n\nQuestion: Given \\(\\hat{p} = 0.65\\), \\(n = 169\\), and a 90% confidence level, calculate the confidence interval for \\(p\\). Use \\(z_{\\alpha/2} = 1.645\\).\n\n\n\n\n\nScenario: A political campaign wants to estimate the proportion of voters who support their candidate. They survey 500 voters and find that 300 support the candidate.\nTask: Apply the concepts learned to calculate a 95% confidence interval for the true proportion of supporters. Discuss the implications of the confidence interval width on the campaign’s strategy.\n\n\n\n\nBuilding on the information and context from Activity 1, design a study where the goal is to calculate the required sample size to achieve a narrower margin of error for the population proportion \\(p\\). Assume a desired sampling error of 0.03 at a \\(90 \\%\\) confidence level, maintaining the same population proportion estimate \\((\\hat{p}=0.65)\\). How many individuals should be included in the new sample to meet these precision requirements? If you did not know \\(p\\) in advance, how would you estimate the sample size in advance for the same sampling error?\n\n\n\nUsing the setup of Activity 1, find the sample size needed for a SE of 0.01?"
   },
   {
     "objectID": "Activity21.html#activity-1-quiz",
@@ -1455,22 +1455,22 @@
     "objectID": "Activity21.html#activity-2-case-studies-and-problem-solving",
     "href": "Activity21.html#activity-2-case-studies-and-problem-solving",
     "title": "Activity 21",
-    "section": "Activity 2: Case Studies and Problem-Solving",
-    "text": "Activity 2: Case Studies and Problem-Solving\n\nScenario: A political campaign wants to estimate the proportion of voters who support their candidate. They survey 500 voters and find that 300 support the candidate.\nTask: Apply the concepts learned to calculate a 95% confidence interval for the true proportion of supporters. Discuss the implications of the confidence interval width on the campaign’s strategy."
+    "section": "",
+    "text": "Scenario: A political campaign wants to estimate the proportion of voters who support their candidate. They survey 500 voters and find that 300 support the candidate.\nTask: Apply the concepts learned to calculate a 95% confidence interval for the true proportion of supporters. Discuss the implications of the confidence interval width on the campaign’s strategy."
   },
   {
     "objectID": "Activity21.html#activity-3-sample-size-calulations",
     "href": "Activity21.html#activity-3-sample-size-calulations",
     "title": "Activity 21",
-    "section": "Activity 3: Sample Size Calulations",
-    "text": "Activity 3: Sample Size Calulations\nBuilding on the information and context from Activity 1, design a study where the goal is to calculate the required sample size to achieve a narrower margin of error for the population proportion \\(p\\). Assume a desired sampling error of 0.03 at a \\(90 \\%\\) confidence level, maintaining the same population proportion estimate \\((\\hat{p}=0.65)\\). How many individuals should be included in the new sample to meet these precision requirements? If you did not know \\(p\\) in advance, how would you estimate the sample size in advance for the same sampling error?"
+    "section": "",
+    "text": "Building on the information and context from Activity 1, design a study where the goal is to calculate the required sample size to achieve a narrower margin of error for the population proportion \\(p\\). Assume a desired sampling error of 0.03 at a \\(90 \\%\\) confidence level, maintaining the same population proportion estimate \\((\\hat{p}=0.65)\\). How many individuals should be included in the new sample to meet these precision requirements? If you did not know \\(p\\) in advance, how would you estimate the sample size in advance for the same sampling error?"
   },
   {
     "objectID": "Activity21.html#activity-4-sample-size-calulations",
     "href": "Activity21.html#activity-4-sample-size-calulations",
     "title": "Activity 21",
-    "section": "Activity 4: Sample Size Calulations",
-    "text": "Activity 4: Sample Size Calulations\nUsing the setup of Activity 1, find the sample size needed for a SE of 0.01?"
+    "section": "",
+    "text": "Using the setup of Activity 1, find the sample size needed for a SE of 0.01?"
   },
   {
     "objectID": "Activity19.html",

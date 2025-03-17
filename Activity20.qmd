@@ -1,13 +1,13 @@
 ---
 title: "Activity 20"
 subtitle: "MATH 216: Statistical Thinking"
-format: live-html
+format: 
+  live-html:
+    theme:
+      light: minty
+      dark: darkly  
 engine: knitr
 toc: true
-webr:
-  packages:
-    - dplyr
-    - ggplot2
 ---
 
 {{< include _extensions/r-wasm/live/_knitr.qmd >}}

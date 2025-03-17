@@ -1,7 +1,11 @@
 ---
 title: "Activity 1"
 subtitle: "MATH 216: Statistical Thinking"
-format: live-html
+format: 
+  live-html:
+    theme:
+      light: minty
+      dark: darkly  
 engine: knitr
 toc: true
 webr:
