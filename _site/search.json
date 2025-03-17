@@ -1880,7 +1880,7 @@
     "href": "Day22.html#introduction-to-hypothesis-testing",
     "title": "Day 22",
     "section": "Introduction to Hypothesis Testing",
-    "text": "Introduction to Hypothesis Testing\n\n\nHypothesis testing is a statistical method used to decide whether to support or refute a specific claim about a population parameter based on sample data.\nAnalogous to a judicial process: The null hypothesis (\\(H_0\\)) represents the “status quo” (e.g., “innocent until proven guilty”)."
+    "text": "Introduction to Hypothesis Testing\n\n\n\nHypothesis testing is a statistical method used to decide whether to support or refute a specific claim about a population parameter based on sample data.\nAnalogous to a judicial process: The null hypothesis (\\(H_0\\)) represents the “status quo” (e.g., “innocent until proven guilty”)."
   },
   {
     "objectID": "Day22.html#elements-of-a-test-of-hypothesis",
@@ -1901,7 +1901,7 @@
     "href": "Day22.html#decision-making",
     "title": "Day 22",
     "section": "Decision Making",
-    "text": "Decision Making\n\n\nIf the observed \\(\\bar{x}\\) exceeds 1.645 standard deviations above 2,400, we consider rejecting \\(H_0\\).\nRejection implies that a rare event (occurring with probability \\(\\leq 0.05\\) under \\(H_0\\)) is unlikely without true cause (i.e., \\(H_a\\) is likely true)."
+    "text": "Decision Making\n\n\n\nIf the observed \\(\\bar{x}\\) exceeds 1.645 standard deviations above 2,400, we consider rejecting \\(H_0\\).\nRejection implies that a rare event (occurring with probability \\(\\leq 0.05\\) under \\(H_0\\)) is unlikely without true cause (i.e., \\(H_a\\) is likely true)."
   },
   {
     "objectID": "Day22.html#evidence-from-sample-data",

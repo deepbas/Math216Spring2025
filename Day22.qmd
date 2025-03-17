@@ -48,8 +48,9 @@ yt <- 0
 
 ## Introduction to Hypothesis Testing {.font80}
 
-::: cle6
+<br>
 
+::: cle6
 - Hypothesis testing is a statistical method used to decide whether to support or refute a specific claim about a population parameter based on sample data.
 - Analogous to a judicial process: The null hypothesis ($H_0$) represents the "status quo" (e.g., "innocent until proven guilty").
 :::
@@ -89,13 +90,15 @@ Computation of Test Statistic
 
 ## Decision Making {.font80}
 
+<br>
+
 ::: cle6
 - If the observed $\bar{x}$ exceeds 1.645 standard deviations above 2,400, we consider rejecting $H_0$.
 - Rejection implies that a rare event (occurring with probability $\leq 0.05$ under $H_0$) is unlikely without true cause (i.e., $H_a$ is likely true).
 
 ::: 
 
-## Evidence from Sample Data {.font80}
+## Evidence from Sample Data {.font70}
 
 ::: cle7
 
@@ -150,6 +153,8 @@ Type II Error
 
 ##  Types of Errors {.font80}
 
+<br>
+
 <img src="images/Day22-4.png" style="display: block; margin: auto;" width="60%"  loading="lazy" decoding="async">
 
 
@@ -166,10 +171,6 @@ Type II Error
 
 :::
 
-##
-
-<img src="images/Day22-5.png" style="display: block; margin: auto;" width="60%"  loading="lazy" decoding="async">
-
 
 ## Summary {.font80}
 
@@ -181,38 +182,3 @@ Type II Error
 
 :::
 
-## Hypothesis Test: Step-by-Step Procedure {.font40}
-
-::: cle15
-
-1. **State the Hypotheses**
-   - Null Hypothesis ($H_0$): Assume the status quo or a specific value (e.g., $\mu = 2400$).
-   - Alternative Hypothesis ($H_a$): Proposes a different scenario (e.g., $\mu > 2400$).
-
-2. **Assume $H_0$ is True**
-   - Collect data under the assumption that $H_0$ holds.
-
-3. **Compute the Test Statistic**
-   - Use the formula:
-     $$
-     z = \frac{\bar{x} - \mu_0}{\sigma / \sqrt{n}}
-     $$
-   - $\bar{x}$ is the sample mean, $\mu_0$ is the value under $H_0$, $\sigma$ is the standard deviation, and $n$ is the sample size.
-
-4. **Determine the Significance Level**
-   - Commonly set at $\alpha = 0.05$.
-   - Decide if the computed $z$ value suggests a rare event:
-     - If $z > 1.645$, it's considered unusual under the assumption that $H_0$ is true.
-
-5. **Make a Decision**
-   - Reject $H_0$ if the test statistic falls in the rejection region (e.g., $z > 1.645$ for $\alpha = 0.05$).
-   - If not, fail to reject $H_0$.
-
-:::
-
-
-##
-
-
-
-##
