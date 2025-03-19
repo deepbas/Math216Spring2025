@@ -1,5 +1,6 @@
 ---
 title: "MATH 216: SPRING 2025"
+subtitle: "Statistical Thinking"
 ---
 
 Welcome to the world of statistics!
