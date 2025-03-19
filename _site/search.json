@@ -208,7 +208,7 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Math 216: Spring 2025",
+    "title": "MATH 216: SPRING 2025",
     "section": "",
     "text": "Welcome to the world of statistics!",
     "crumbs": [
@@ -1442,7 +1442,7 @@
     "href": "Activity21.html",
     "title": "Activity 21",
     "section": "",
-    "text": "library(dplyr) library(ggplot2) library(patchwork) library(gridExtra) library(purrr) library(tidyverse)\n\n\n\nQuestion: Given \\(\\hat{p} = 0.65\\), \\(n = 169\\), and a 90% confidence level, calculate the confidence interval for \\(p\\). Use \\(z_{\\alpha/2} = 1.645\\).\n\n\n\n\n\nScenario: A political campaign wants to estimate the proportion of voters who support their candidate. They survey 500 voters and find that 300 support the candidate.\nTask: Apply the concepts learned to calculate a 95% confidence interval for the true proportion of supporters. Discuss the implications of the confidence interval width on the campaign’s strategy.\n\n\n\n\nBuilding on the information and context from Activity 1, design a study where the goal is to calculate the required sample size to achieve a narrower margin of error for the population proportion \\(p\\). Assume a desired sampling error of 0.03 at a \\(90 \\%\\) confidence level, maintaining the same population proportion estimate \\((\\hat{p}=0.65)\\). How many individuals should be included in the new sample to meet these precision requirements? If you did not know \\(p\\) in advance, how would you estimate the sample size in advance for the same sampling error?\n\n\n\nUsing the setup of Activity 1, find the sample size needed for a SE of 0.01?"
+    "text": "Question: Given \\(\\hat{p} = 0.65\\), \\(n = 169\\), and a 90% confidence level, calculate the confidence interval for \\(p\\). Use \\(z_{\\alpha/2} = 1.645\\)."
   },
   {
     "objectID": "Activity21.html#activity-1-quiz",
@@ -1455,22 +1455,22 @@
     "objectID": "Activity21.html#activity-2-case-studies-and-problem-solving",
     "href": "Activity21.html#activity-2-case-studies-and-problem-solving",
     "title": "Activity 21",
-    "section": "",
-    "text": "Scenario: A political campaign wants to estimate the proportion of voters who support their candidate. They survey 500 voters and find that 300 support the candidate.\nTask: Apply the concepts learned to calculate a 95% confidence interval for the true proportion of supporters. Discuss the implications of the confidence interval width on the campaign’s strategy."
+    "section": "Activity 2: Case Studies and Problem-Solving",
+    "text": "Activity 2: Case Studies and Problem-Solving\n\nScenario: A political campaign wants to estimate the proportion of voters who support their candidate. They survey 500 voters and find that 300 support the candidate.\nTask: Apply the concepts learned to calculate a 95% confidence interval for the true proportion of supporters. Discuss the implications of the confidence interval width on the campaign’s strategy."
   },
   {
     "objectID": "Activity21.html#activity-3-sample-size-calulations",
     "href": "Activity21.html#activity-3-sample-size-calulations",
     "title": "Activity 21",
-    "section": "",
-    "text": "Building on the information and context from Activity 1, design a study where the goal is to calculate the required sample size to achieve a narrower margin of error for the population proportion \\(p\\). Assume a desired sampling error of 0.03 at a \\(90 \\%\\) confidence level, maintaining the same population proportion estimate \\((\\hat{p}=0.65)\\). How many individuals should be included in the new sample to meet these precision requirements? If you did not know \\(p\\) in advance, how would you estimate the sample size in advance for the same sampling error?"
+    "section": "Activity 3: Sample Size Calulations",
+    "text": "Activity 3: Sample Size Calulations\nBuilding on the information and context from Activity 1, design a study where the goal is to calculate the required sample size to achieve a narrower margin of error for the population proportion \\(p\\). Assume a desired sampling error of 0.03 at a \\(90 \\%\\) confidence level, maintaining the same population proportion estimate \\((\\hat{p}=0.65)\\). How many individuals should be included in the new sample to meet these precision requirements? If you did not know \\(p\\) in advance, how would you estimate the sample size in advance for the same sampling error?"
   },
   {
     "objectID": "Activity21.html#activity-4-sample-size-calulations",
     "href": "Activity21.html#activity-4-sample-size-calulations",
     "title": "Activity 21",
-    "section": "",
-    "text": "Using the setup of Activity 1, find the sample size needed for a SE of 0.01?"
+    "section": "Activity 4: Sample Size Calulations",
+    "text": "Activity 4: Sample Size Calulations\nUsing the setup of Activity 1, find the sample size needed for a SE of 0.01?"
   },
   {
     "objectID": "Activity19.html",
@@ -2701,7 +2701,7 @@
     "href": "Activity15.html",
     "title": "Activity 15",
     "section": "",
-    "text": "Question: Given the PDF of the exponential distribution:\n\\[\nf(x) = \\frac{1}{\\theta} \\exp\\left(-\\frac{x}{\\theta}\\right), \\quad x &gt; 0\n\\] What is the probability that \\(X &gt; 3\\) if \\(\\theta = 2\\)?"
+    "text": "library(dplyr) library(ggplot2) library(patchwork) library(gridExtra) library(purrr) library(tidyverse)\n\n\nQuestion: Given the PDF of the exponential distribution:\n\\[\nf(x) = \\frac{1}{\\theta} \\exp\\left(-\\frac{x}{\\theta}\\right), \\quad x &gt; 0\n\\] What is the probability that \\(X &gt; 3\\) if \\(\\theta = 2\\)?\n\n\n\nCase Study: A company is testing a new battery with an expected lifetime modeled by an exponential distribution with \\(\\theta = 5\\) years. The company wants to offer a warranty period such that only 10% of the batteries fail within the warranty period.\nTask:\n\nCalculate the warranty period that meets the company’s requirement.\n\n\nDiscuss the implications of this warranty period for the company and its customers.\n\n\n\n\nCase Study: Suppose the length of time (in hours) between emergency arrivals at a certain hospital is modeled as an exponential distribution with \\(\\theta=2\\). What is the probability that more than 5 hours pass without an emergency arrival?\n\n\n\nCase Study: A manufacturer of microwave ovens is trying to determine the length of warranty period it should attach to its magnetron tube, the most critical component in the oven. Preliminary testing has shown that the length of life (in years), \\(x\\), of a magnetron tube has an exponential probability distribution with \\(\\theta=6.25\\).\n\nFind the mean and standard deviation of \\(x\\).\n\n\n\n\n\nSuppose a warranty period of five years is attached to the magnetron tube. What fraction of tubes must the manufacturer plan to replace, assuming that the exponential model with \\(\\theta=6.25\\) is correct?\n\n\n\n\n\nWhat should the warranty period be if the manufacturer wants to replace only \\(27.5 \\%\\) of the tubes?"
   },
   {
     "objectID": "Activity15.html#activity-1-quiz",
@@ -2714,22 +2714,22 @@
     "objectID": "Activity15.html#activity-2-case-study-battery-reliability",
     "href": "Activity15.html#activity-2-case-study-battery-reliability",
     "title": "Activity 15",
-    "section": "Activity 2: Case Study: battery reliability",
-    "text": "Activity 2: Case Study: battery reliability\nCase Study: A company is testing a new battery with an expected lifetime modeled by an exponential distribution with \\(\\theta = 5\\) years. The company wants to offer a warranty period such that only 10% of the batteries fail within the warranty period.\nTask:\n\nCalculate the warranty period that meets the company’s requirement.\n\n\nDiscuss the implications of this warranty period for the company and its customers."
+    "section": "",
+    "text": "Case Study: A company is testing a new battery with an expected lifetime modeled by an exponential distribution with \\(\\theta = 5\\) years. The company wants to offer a warranty period such that only 10% of the batteries fail within the warranty period.\nTask:\n\nCalculate the warranty period that meets the company’s requirement.\n\n\nDiscuss the implications of this warranty period for the company and its customers."
   },
   {
     "objectID": "Activity15.html#activity-3-case-study-emergency-arrivals",
     "href": "Activity15.html#activity-3-case-study-emergency-arrivals",
     "title": "Activity 15",
-    "section": "Activity 3: Case Study: emergency arrivals",
-    "text": "Activity 3: Case Study: emergency arrivals\nCase Study: Suppose the length of time (in hours) between emergency arrivals at a certain hospital is modeled as an exponential distribution with \\(\\theta=2\\). What is the probability that more than 5 hours pass without an emergency arrival?"
+    "section": "",
+    "text": "Case Study: Suppose the length of time (in hours) between emergency arrivals at a certain hospital is modeled as an exponential distribution with \\(\\theta=2\\). What is the probability that more than 5 hours pass without an emergency arrival?"
   },
   {
     "objectID": "Activity15.html#activity-4-microwave-warranty",
     "href": "Activity15.html#activity-4-microwave-warranty",
     "title": "Activity 15",
-    "section": "Activity 4: microwave warranty",
-    "text": "Activity 4: microwave warranty\nCase Study: A manufacturer of microwave ovens is trying to determine the length of warranty period it should attach to its magnetron tube, the most critical component in the oven. Preliminary testing has shown that the length of life (in years), \\(x\\), of a magnetron tube has an exponential probability distribution with \\(\\theta=6.25\\).\n\nFind the mean and standard deviation of \\(x\\).\n\n\n\n\n\nSuppose a warranty period of five years is attached to the magnetron tube. What fraction of tubes must the manufacturer plan to replace, assuming that the exponential model with \\(\\theta=6.25\\) is correct?\n\n\n\n\n\nWhat should the warranty period be if the manufacturer wants to replace only \\(27.5 \\%\\) of the tubes?"
+    "section": "",
+    "text": "Case Study: A manufacturer of microwave ovens is trying to determine the length of warranty period it should attach to its magnetron tube, the most critical component in the oven. Preliminary testing has shown that the length of life (in years), \\(x\\), of a magnetron tube has an exponential probability distribution with \\(\\theta=6.25\\).\n\nFind the mean and standard deviation of \\(x\\).\n\n\n\n\n\nSuppose a warranty period of five years is attached to the magnetron tube. What fraction of tubes must the manufacturer plan to replace, assuming that the exponential model with \\(\\theta=6.25\\) is correct?\n\n\n\n\n\nWhat should the warranty period be if the manufacturer wants to replace only \\(27.5 \\%\\) of the tubes?"
   },
   {
     "objectID": "Activity1.html",

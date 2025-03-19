@@ -11,7 +11,6 @@ toc: true
 ---
 
 {{< include _extensions/r-wasm/live/_knitr.qmd >}}
-{{< include setup.R >}}
 
 ```{r setup, include=FALSE}
 library(openintro)
@@ -20,7 +19,6 @@ library(knitr)
 library(ggplot2)
 library(gridExtra)
 ```
-
 
 
 ## Activity 1: EPA gas mileage

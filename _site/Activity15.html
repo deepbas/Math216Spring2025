@@ -548,10 +548,13 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#activity-1-quiz" id="toc-activity-1-quiz" class="nav-link active" data-scroll-target="#activity-1-quiz">Activity 1: Quiz</a></li>
+  <li><a href="#setup.r" id="toc-setup.r" class="nav-link active" data-scroll-target="#setup.r">setup.R</a>
+  <ul class="collapse">
+  <li><a href="#activity-1-quiz" id="toc-activity-1-quiz" class="nav-link" data-scroll-target="#activity-1-quiz">Activity 1: Quiz</a></li>
   <li><a href="#activity-2-case-study-battery-reliability" id="toc-activity-2-case-study-battery-reliability" class="nav-link" data-scroll-target="#activity-2-case-study-battery-reliability">Activity 2: Case Study: battery reliability</a></li>
   <li><a href="#activity-3-case-study-emergency-arrivals" id="toc-activity-3-case-study-emergency-arrivals" class="nav-link" data-scroll-target="#activity-3-case-study-emergency-arrivals">Activity 3: Case Study: emergency arrivals</a></li>
-  <li><a href="#activity-4-microwave-warranty" id="toc-activity-4-microwave-warranty" class="nav-link" data-scroll-target="#activity-4-microwave-warranty">Activity 4: microwave warranty</a></li>
+  <li><a href="#activity-4-microwave-warranty" id="toc-activity-4-microwave-warranty" class="nav-link" data-scroll-target="#activity-4-microwave-warranty">Activity 4: Microwave warranty</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -578,6 +581,9 @@ window.Quarto = {
 </header>
 
 
+<section id="setup.r" class="level1">
+<h1>setup.R</h1>
+<p>library(dplyr) library(ggplot2) library(patchwork) library(gridExtra) library(purrr) library(tidyverse)</p>
 <section id="activity-1-quiz" class="level2">
 <h2 class="anchored" data-anchor-id="activity-1-quiz">Activity 1: Quiz</h2>
 <p><strong>Question:</strong> Given the PDF of the exponential distribution:</p>
@@ -601,7 +607,7 @@ f(x) = \frac{1}{\theta} \exp\left(-\frac{x}{\theta}\right), \quad x &gt; 0
 <p><strong>Case Study:</strong> Suppose the length of time (in hours) between emergency arrivals at a certain hospital is modeled as an exponential distribution with <span class="math inline">\(\theta=2\)</span>. What is the probability that more than 5 hours pass without an emergency arrival?</p>
 </section>
 <section id="activity-4-microwave-warranty" class="level2">
-<h2 class="anchored" data-anchor-id="activity-4-microwave-warranty">Activity 4: microwave warranty</h2>
+<h2 class="anchored" data-anchor-id="activity-4-microwave-warranty">Activity 4: Microwave warranty</h2>
 <p><strong>Case Study:</strong> A manufacturer of microwave ovens is trying to determine the length of warranty period it should attach to its magnetron tube, the most critical component in the oven. Preliminary testing has shown that the length of life (in years), <span class="math inline">\(x\)</span>, of a magnetron tube has an exponential probability distribution with <span class="math inline">\(\theta=6.25\)</span>.</p>
 <ol type="a">
 <li>Find the mean and standard deviation of <span class="math inline">\(x\)</span>.</li>
@@ -634,6 +640,7 @@ eyJjb250ZW50cyI6W119
 <script type="vfs-file">
 W10=
 </script>
+</section>
 </section>
 
 </main> <!-- /main -->
