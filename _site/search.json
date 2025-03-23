@@ -3016,5 +3016,33 @@
     "crumbs": [
       "About"
     ]
+  },
+  {
+    "objectID": "Activity22.html",
+    "href": "Activity22.html",
+    "title": "Activity 22",
+    "section": "",
+    "text": "Scenario: Park benches allegedly fail before 5-year warranty (vendor claims μ ≥ 5 years).\n\n\n“Which claim becomes our default assumption (H₀)? Should our alternative hypothesis be left or right-tailed?”\n\n\n\n“Why left-tailed?\n\n\n\n“Type I Error (\\(\\alpha=0.05\\)):\nType II Error:"
+  },
+  {
+    "objectID": "Activity22.html#activity-1-hypothesis-setup-directionality",
+    "href": "Activity22.html#activity-1-hypothesis-setup-directionality",
+    "title": "Activity 22",
+    "section": "",
+    "text": "Scenario: Park benches allegedly fail before 5-year warranty (vendor claims μ ≥ 5 years).\n\n\n“Which claim becomes our default assumption (H₀)? Should our alternative hypothesis be left or right-tailed?”\n\n\n\n“Why left-tailed?\n\n\n\n“Type I Error (\\(\\alpha=0.05\\)):\nType II Error:"
+  },
+  {
+    "objectID": "Activity22.html#activity-2-test-statistic-distribution-choice",
+    "href": "Activity22.html#activity-2-test-statistic-distribution-choice",
+    "title": "Activity 22",
+    "section": "Activity 2: Test Statistic & Distribution Choice",
+    "text": "Activity 2: Test Statistic & Distribution Choice\nScenario: Sample data shows \\(\\bar{x}=4.2\\) years, \\(s=1.1\\), \\(n=35\\)\n\nStep 1: Distribution Selection\nZ vs T:\n\n\nStep 2: Standard Error Calculation\n\n\n\n\n\n\n\n\n\n\nStep 3: t-Score Computation"
+  },
+  {
+    "objectID": "Activity22.html#activity-3-rejection-regions-decision-making",
+    "href": "Activity22.html#activity-3-rejection-regions-decision-making",
+    "title": "Activity 22",
+    "section": "Activity 3: Rejection Regions & Decision Making",
+    "text": "Activity 3: Rejection Regions & Decision Making\nScenario: Critical t-value = -1.69 (\\(df=34, \\alpha=0.05\\))\n\nStep 1: Visualize Rejection Region\n\n\n\n\n\n\n\n\n\n\nStep 2: Decision Rule\n\n\nStep 3: Formal Conclusion\n\n\nStep 4: Error Accountability"
   }
 ]

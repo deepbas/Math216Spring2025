@@ -1,0 +1,98 @@
+---
+title: "Activity 22"
+subtitle: "MATH 216: Statistical Thinking"
+format: 
+  live-html:
+    theme:
+      light: [lux, theme-light.scss]
+      dark: [superhero, theme-dark.scss]
+engine: knitr
+toc: true
+---
+
+{{< include _extensions/r-wasm/live/_knitr.qmd >}}
+
+
+```{r setup, include=FALSE}
+library(openintro)
+library(dplyr)
+library(knitr)
+library(ggplot2)
+```
+
+
+## **Activity 1: Hypothesis Setup & Directionality**  
+
+**Scenario**: Park benches allegedly fail before 5-year warranty (vendor claims μ ≥ 5 years).
+
+### Step 1: Frame Hypotheses
+
+"Which claim becomes our default assumption (H₀)? Should our alternative hypothesis be left or right-tailed?"
+
+
+
+### Step 2: Direction Reasoning
+
+"*Why left-tailed?* 
+
+### Step 3: Error Contextualization
+
+"**Type I Error** ($\alpha=0.05$):  
+
+
+
+**Type II Error**:  
+
+
+
+---
+
+## **Activity 2: Test Statistic & Distribution Choice**  
+
+**Scenario**: Sample data shows $\bar{x}=4.2$ years, $s=1.1$, $n=35$
+
+### Step 1: Distribution Selection
+
+**Z vs T**:  
+
+
+### Step 2: Standard Error Calculation
+
+```{webr}
+n <- 35
+se <- 1.1/sqrt(35)  # Standard Error
+round(se, 3)
+```
+
+### Step 3: t-Score Computation
+
+```{webr}
+t_score <- (4.2 - 5)/se
+round(t_score, 2)
+```
+
+
+---
+
+## **Activity 3: Rejection Regions & Decision Making**  
+
+**Scenario**: Critical t-value = -1.69 ($df=34, \alpha=0.05$)
+
+### Step 1: Visualize Rejection Region
+
+```{webr}
+curve(dt(x, df=34), from=-5, to=3, main="t-Distribution (df=34)")
+abline(v=qt(0.05, 34), col="red", lwd=2)
+text(-2, 0.3, "Rejection Region\nα = 0.05", col="red")
+```
+
+### Step 2: Decision Rule
+
+
+
+### Step 3: Formal Conclusion
+
+
+### Step 4: Error Accountability
+
+

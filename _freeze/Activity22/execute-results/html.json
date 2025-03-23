@@ -1,0 +1,15 @@
+{
+  "hash": "7924959d1cd7f0639dc5f48d692cad41",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Activity 22\"\nsubtitle: \"MATH 216: Statistical Thinking\"\nformat: \n  live-html:\n    theme:\n      light: [lux, theme-light.scss]\n      dark: [superhero, theme-dark.scss]\nengine: knitr\ntoc: true\n---\n\n::: {.cell}\n\n:::\n\n\n\n\n\n\n## **Activity 1: Hypothesis Setup & Directionality**  \n\n**Scenario**: Park benches allegedly fail before 5-year warranty (vendor claims μ ≥ 5 years).\n\n### Step 1: Frame Hypotheses\n\n\"Which claim becomes our default assumption (H₀)? Should our alternative hypothesis be left or right-tailed?\"\n\n\n\n### Step 2: Direction Reasoning\n\n\"*Why left-tailed?* \n\n### Step 3: Error Contextualization\n\n\"**Type I Error** ($\\alpha=0.05$):  \n\n\n\n**Type II Error**:  \n\n\n\n---\n\n## **Activity 2: Test Statistic & Distribution Choice**  \n\n**Scenario**: Sample data shows $\\bar{x}=4.2$ years, $s=1.1$, $n=35$\n\n### Step 1: Distribution Selection\n\n**Z vs T**:  \n\n\n### Step 2: Standard Error Calculation\n\n::: {.cell}\n```{webr}\nn <- 35\nse <- 1.1/sqrt(35)  # Standard Error\nround(se, 3)\n```\n:::\n\n### Step 3: t-Score Computation\n\n::: {.cell}\n```{webr}\nt_score <- (4.2 - 5)/se\nround(t_score, 2)\n```\n:::\n\n\n---\n\n## **Activity 3: Rejection Regions & Decision Making**  \n\n**Scenario**: Critical t-value = -1.69 ($df=34, \\alpha=0.05$)\n\n### Step 1: Visualize Rejection Region\n\n::: {.cell}\n```{webr}\ncurve(dt(x, df=34), from=-5, to=3, main=\"t-Distribution (df=34)\")\nabline(v=qt(0.05, 34), col=\"red\", lwd=2)\ntext(-2, 0.3, \"Rejection Region\\nα = 0.05\", col=\"red\")\n```\n:::\n\n### Step 2: Decision Rule\n\n\n\n### Step 3: Formal Conclusion\n\n\n### Step 4: Error Accountability\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
