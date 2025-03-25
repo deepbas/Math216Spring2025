@@ -1,0 +1,248 @@
+---
+title: "Day 36"
+title-slide-attributes:
+  data-background-image: images/lake.jpg
+  data-background-size: contain
+  data-background-opacity: "0.5"
+subtitle: "Math 216: Statistical Thinking"
+author: "Bastola"
+format:
+  revealjs:
+    html-math-method: mathjax
+    mathjax-url: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/MathJax.js" 
+    theme: [default, scss/main.scss]
+    slide-number: true
+    preview-links: auto
+    history: true
+    chalkboard: 
+      src: drawings.json
+    transition: slide
+    background-transition: fade    
+    touch: false
+    controls: true
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+options(htmltools.preserve.raw = FALSE)
+options(ggrepel.max.overlaps = Inf)
+
+
+# load necessary packages
+library(tidyverse)
+library(countdown)
+library(mosaic)
+library(ggthemes)
+library(forcats)
+library(patchwork)
+library(Lock5Data)
+library(plotly)
+
+# Set ggplot theme
+theme_set(theme_tufte(base_size = 10))
+yt <- 0
+#<iframe width="1380" height="900" src="https://www.geogebra.org/m/mehn8u8s"></iframe>
+#::: {.callout-note title="Definition"}
+#<img src="images/Day23-1.png" style="display: block; margin: auto;" width="80%"  loading="lazy" decoding="async">
+```
+
+
+## Review of Simple Linear Regression Model Estimation {.font80}
+
+::: cle6
+- **Recap**: From the last session, we learned to estimate the simple linear regression line $\hat{y} = \hat{\beta}_0 + \hat{\beta}_1 x$ from a sample.
+- **Further Analysis Needs**: To conduct deeper analysis, we adhere to key assumptions about the regression model.
+:::
+
+## Conducting a Simple Linear Regression {.font70}
+
+::: cle4
+- **Step 1:** Hypothesize the deterministic component of the model that relates the mean $E(y)$ to the independent variable $x$ (Section 11.2).
+- **Step 2:** Use the sample data to estimate unknown parameters in the model (Section 11.2).
+- **Step 3:** Specify the probability distribution of the random-error term and estimate the standard deviation of this distribution (Section 11.3).
+- **Step 4:** Statistically evaluate the usefulness of the model (Sections 11.4 and 11.5).
+- **Step 5:** When satisfied that the model is useful, use it for prediction, estimation, and other purposes (Section 11.6).
+:::
+
+## {.font60}
+
+> Example 1: Consider an experiment designed to estimate the linear relationship between the percentage of a certain drug in the bloodstream of a subject and the length of time it takes the subject to react to a stimulus. In particular, the researchers want to predict reaction time $y$ based on the amount of drug in the bloodstream $x$. Data were collected for five subjects, and the results are shown in Table 11.1. (The number of measurements and the measurements themselves are unrealistically simple in order to avoid arithmetic confusion in this introductory example.)
+
+<img src="images/Day36-1.png" style="display: block; margin: auto;" width="80%"  loading="lazy" decoding="async">
+
+
+
+## Step 1: Hypothesize the Deterministic Component {.font80}
+
+::: cle5
+- **Focus:** Straight-line models
+- **Relationship:** Mean response time to drug percentage
+
+
+Assume the model relating mean response time $E(y)$ to drug percentage $x$:
+
+$$
+H: E(y) = \beta_0 + \beta x \longleftarrow \begin{aligned} & \text{The true unknown relationship} \\ & \text{between } x \text{ and } Y \text{ is a straight line} \end{aligned}
+$$
+
+:::
+
+
+## Step 2: Use sample data to estimate unknown parameters in the model. {.font80}
+
+This step is the subject of this section - namely, how can we best use the information in the sample of five observations in Table 11.1 to estimate the unknown $y$-intercept $\beta_0$ and slope $\beta_1$ ?
+
+
+::: row
+::: left
+<img src="images/Day36-12.png" style="display: block; margin: auto;" width="80%"  loading="lazy" decoding="async">
+
+
+:::
+
+::: right
+<img src="images/Day36-2.png" style="display: block; margin: auto;" width="80%"  loading="lazy" decoding="async">
+
+:::
+:::
+
+
+##
+
+<img src="images/Day36-3.png" style="display: block; margin: auto;" width="80%"  loading="lazy" decoding="async">
+
+
+
+##
+
+
+<img src="images/Day36-4.png" style="display: block; margin: auto;" width="80%"  loading="lazy" decoding="async">
+
+
+## {.font80}
+
+
+```{r}
+# Define the data
+x <- c(1, 2, 3, 4, 5)
+y <- c(1, 1, 2, 2, 4)
+
+# Create a dataframe
+data <- data.frame(x, y)
+
+# Fit a linear model
+mod <- lm(y ~ x, data = data)
+summary(mod)
+```
+
+
+
+##
+
+::: panel-tabset
+
+### Plot
+
+```{r, echo=FALSE}
+library(ggplot2)
+ggplot(data, aes(x = x, y = y)) +
+  geom_point() +  # Add points
+  geom_smooth(method = "lm", se = FALSE) +  
+  ggtitle("Linear Model Fit") +
+  theme_minimal()
+```
+
+
+### Code
+
+```{r, eval=FALSE}
+library(ggplot2)
+ggplot(data, aes(x = x, y = y)) +
+  geom_point() +  # Add points
+  geom_smooth(method = "lm", se = FALSE) +  
+  ggtitle("Linear Model Fit") +
+  theme_minimal()
+```
+
+:::
+
+## {.font60}
+
+> Back to Example 1, we will use these results to answer the following questions:
+
+a. Use the method of least squares to estimate the values of $\beta_0$ and $\beta_1$.
+
+::: custom-space
+:::
+
+b. Predict the reaction time when $x=2$.
+
+
+## {.font60}
+
+c. Find the SSE for the analysis.
+
+::: custom-space
+:::
+
+d. Give practical interpretations of $\widehat{\beta}_0$ and $\widehat{\beta}_1$.
+
+
+##
+
+
+## {.font60}
+
+
+
+```{=html}
+<iframe width="1280" height="1300" src="https://shinylive.io/r/app/#h=0&code=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"></iframe>
+```
+
+
+## {.font50}
+
+
+> You are provided with a dataset of study hours and GPA scores from 15 students. Your task is to input this data into a Shiny app to calculate the correlation, slope, and intercept of the regression line. Analyze these parameters to understand how study hours relate to GPA.
+
+::: row
+::: left
+
+| Study Hours (X) | GPA (Y)     |
+|-----------------|-------------|
+| 1               | 2.1         |
+| 2               | 2.4         |
+| 3               | 2.6         |
+| 4               | 3.0         |
+| 5               | 3.1         |
+| 6               | 3.2         |
+| 7               | 3.3         |
+| 8               | 3.6         |
+| 9               | 3.9         |
+| 10              | 3.7         |
+| 11              | 3.7         |
+| 12              | 3.7         |
+| 13              | 3.9         |
+| 14              | 3.8         |
+| 15              | 3.9         |
+
+
+:::
+
+::: right
+
+1. **Input the Data**: Enter the study hours and GPA into the Shiny app.
+2. **Calculate the Parameters**: Use the app to find the correlation, slope, and intercept.
+3. **Interpret the Results**:
+   - **Correlation**: Discuss what the correlation coefficient tells you about the relationship between study hours and GPA.
+   - **Slope**: Explain what the slope indicates about the effect of an additional hour of study on GPA.
+   - **Intercept**: Consider the meaning of the intercept in the context of GPA prediction when no study hours are recorded.
+
+:::
+:::
+
+
+##
+
+
+

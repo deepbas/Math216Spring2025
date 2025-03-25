@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-99.9.9">
 
   <meta name="author" content="Bastola">
-  <title>Math 216: Statistical Thinking – Day 24</title>
+  <title>Math 216: Statistical Thinking – Day 29</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -129,7 +129,7 @@
     <div class="slides">
 
 <section id="title-slide" data-background-image="images/lake.jpg" data-background-opacity="0.5" data-background-size="contain" class="quarto-title-block center">
-  <h1 class="title">Day 24</h1>
+  <h1 class="title">Day 29</h1>
   <p class="subtitle">Math 216: Statistical Thinking</p>
 
 <div class="quarto-title-authors">
@@ -141,120 +141,132 @@ Bastola
 </div>
 
 </section>
-<section id="steps-for-hypothesis-testing-part-i" class="slide level2 font60">
-<h2>Steps for Hypothesis Testing Part I:</h2>
+<section id="independent-sampling-overview" class="slide level2 font70">
+<h2>Independent Sampling Overview</h2>
 <div class="cle6">
+<p>When samples cannot be paired, they are treated as independent. For two independent samples:</p>
+<ul>
+<li><strong>Sample 1:</strong> Size <span class="math inline">\(n_1\)</span>, mean <span class="math inline">\(\bar{x}_1\)</span>, variance <span class="math inline">\(s_1^2\)</span><br>
+</li>
+<li><strong>Sample 2:</strong> Size <span class="math inline">\(n_2\)</span>, mean <span class="math inline">\(\bar{x}_2\)</span>, variance <span class="math inline">\(s_2^2\)</span></li>
+</ul>
+<p><strong>Conditions to Check:</strong></p>
 <ol type="1">
-<li><strong>State the Hypotheses</strong>
-<ul>
-<li>Null Hypothesis (<span class="math inline">\(H_0\)</span>): No effect or no difference, posits that <span class="math inline">\(\mu = \mu_0\)</span>.</li>
-<li>Alternative Hypothesis (<span class="math inline">\(H_A\)</span>): Asserts a specific claim about the population mean <span class="math inline">\(\mu\)</span> that is different from <span class="math inline">\(\mu_0\)</span> (e.g., <span class="math inline">\(\mu &gt; \mu_0\)</span>, <span class="math inline">\(\mu &lt; \mu_0\)</span>, or <span class="math inline">\(\mu \neq \mu_0\)</span>).</li>
-</ul></li>
-<li><strong>Set the Significance Level (<span class="math inline">\(\alpha\)</span>)</strong>
-<ul>
-<li>The probability of making a Type I error (rejecting a true null hypothesis). Common values are 0.05, 0.01, or 0.10.</li>
-</ul></li>
-<li><strong>Assumptions</strong>
-<ul>
-<li>The sample is a simple random sample.</li>
-<li>The sample size is large (usually <span class="math inline">\(n \geq 30\)</span>), which justifies the use of the Central Limit Theorem.</li>
-</ul></li>
-<li><strong>Collect Data</strong>
-<ul>
-<li>Obtain a random sample and compute the sample mean (<span class="math inline">\(\bar{X}\)</span>) and standard deviation (<span class="math inline">\(S\)</span>).</li>
-</ul></li>
+<li><strong>Sample Sizes:</strong> <span class="math inline">\(n_1 \geq 30\)</span>, <span class="math inline">\(n_2 \geq 30\)</span> (for large samples).<br>
+</li>
+<li><strong>Normality:</strong> For smaller samples, ensure the data is approximately normally distributed.<br>
+</li>
+<li><strong>Variances:</strong> Known variances or assume equal variance under normality.<br>
+</li>
 </ol>
 </div>
 </section>
-<section id="steps-for-hypothesis-testing-part-ii" class="slide level2 font40">
-<h2>Steps for Hypothesis Testing Part II:</h2>
+<section id="properties-of-sampling-distribution" class="slide level2 font70">
+<h2>Properties of Sampling Distribution</h2>
 <div class="cle7">
-<ol start="5" type="1">
-<li><p><strong>Calculate the Test Statistic (<span class="math inline">\(z\)</span>)</strong></p>
+<p>For large samples or small but normally distributed samples:</p>
 <ul>
-<li>If the population standard deviation (<span class="math inline">\(\sigma\)</span>) is known: <span class="math display">\[ z = \frac{\bar{X} - \mu_0}{\sigma/\sqrt{n}} \]</span></li>
-<li>If <span class="math inline">\(\sigma\)</span> is unknown and <span class="math inline">\(n \geq 30\)</span>, use <span class="math inline">\(s\)</span> (sample standard deviation): <span class="math display">\[ z = \frac{\bar{X} - \mu_0}{s/\sqrt{n}} \]</span></li>
-</ul></li>
-<li><p><strong>Decision Rule</strong></p>
-<ul>
-<li>For a one-tailed test: Reject <span class="math inline">\(H_0\)</span> if <span class="math inline">\(z\)</span> falls in the rejection region (either <span class="math inline">\(z &lt; -z_{\alpha}\)</span> for left-tailed or <span class="math inline">\(z &gt; z_{\alpha}\)</span> for right-tailed).</li>
-<li>For a two-tailed test: Reject <span class="math inline">\(H_0\)</span> if <span class="math inline">\(|z| &gt; z_{\alpha/2}\)</span>.</li>
-</ul></li>
-<li><p><strong>Compute the P-Value</strong></p>
-<ul>
-<li>The probability of observing a test statistic as extreme as, or more extreme than, the statistic calculated from the sample data, assuming that <span class="math inline">\(H_0\)</span> is true.</li>
-</ul></li>
-<li><p><strong>Conclusion</strong></p>
-<ul>
-<li>Reject <span class="math inline">\(H_0\)</span> if the p-value is less than <span class="math inline">\(\alpha\)</span>; otherwise, do not reject <span class="math inline">\(H_0\)</span>. Report whether the evidence supports <span class="math inline">\(H_a\)</span> based on the statistical significance.</li>
-</ul></li>
-</ol>
-</div>
-</section>
-<section id="one-sided-greater-than-example" class="slide level2 font60">
-<h2>One-Sided (Greater Than) Example</h2>
-<div class="cle14">
-<ul>
-<li><strong>Scenario</strong>: A study group claims that their session increases the average test score above 75.</li>
-<li><strong>Sample Data</strong>: <span class="math inline">\(\bar{x} = 78\)</span>, <span class="math inline">\(s = 5\)</span>, <span class="math inline">\(n = 30\)</span></li>
-<li><strong>Test</strong>: <span class="math inline">\(H_0: \mu \leq 75\)</span> vs.&nbsp;<span class="math inline">\(H_a: \mu &gt; 75\)</span></li>
-<li><strong>Calculation</strong>: <span class="math inline">\(z = \frac{78 - 75}{5/\sqrt{30}} \approx 3.29\)</span></li>
-<li><strong>Conclusion</strong>: Reject <span class="math inline">\(H_0\)</span> if <span class="math inline">\(z &gt; 1.645\)</span> (at <span class="math inline">\(\alpha = 0.05\)</span>).</li>
+<li><strong>Mean of the Distribution:</strong> <span class="math inline">\((\bar{x}_1 - \bar{x}_2)\)</span> has a mean of <span class="math inline">\((\mu_1 - \mu_2)\)</span>.<br>
+</li>
+<li><strong>Standard Deviation:</strong><br>
+<span class="math display">\[\sigma_{(\bar{x}_1 - \bar{x}_2)} = \sqrt{\frac{\sigma_1^2}{n_1} + \frac{\sigma_2^2}{n_2}}\]</span><br>
+</li>
+<li><strong>Distribution Assumption:</strong> Approximately normal by the Central Limit Theorem.<br>
+</li>
 </ul>
 </div>
 </section>
-<section id="one-sided-less-than-example" class="slide level2 font60">
-<h2>One-Sided (Less Than) Example</h2>
+<section id="confidence-interval-for-mu_1---mu_2" class="slide level2 font60">
+<h2>Confidence Interval for <span class="math inline">\((\mu_1 - \mu_2)\)</span></h2>
 <div class="cle6">
 <ul>
-<li><strong>Scenario</strong>: A nutritionist claims that a new diet reduces the average calorie intake below 2200 calories/day.</li>
-<li><strong>Sample Data</strong>: <span class="math inline">\(\bar{x} = 2150\)</span>, <span class="math inline">\(s = 120\)</span>, <span class="math inline">\(n = 35\)</span></li>
-<li><strong>Test</strong>: <span class="math inline">\(H_0: \mu \geq 2200\)</span> vs.&nbsp;<span class="math inline">\(H_a: \mu &lt; 2200\)</span></li>
-<li><strong>Calculation</strong>: <span class="math inline">\(z = \frac{2150 - 2200}{120/\sqrt{35}} \approx -2.47\)</span></li>
-<li><strong>Conclusion</strong>: Reject <span class="math inline">\(H_0\)</span> if <span class="math inline">\(z &lt; -1.645\)</span> (at <span class="math inline">\(\alpha = 0.05\)</span>).</li>
+<li><p><strong>Known Variances:</strong><br>
+<span class="math display">\[(\bar{x}_1 - \bar{x}_2) \pm z_{\alpha/2} \sqrt{\frac{\sigma_1^2}{n_1} + \frac{\sigma_2^2}{n_2}}\]</span></p></li>
+<li><p><strong>Unknown Variances (Pooled Standard Deviation):</strong><br>
+<span class="math display">\[s_p = \sqrt{\frac{(n_1-1)s_1^2 + (n_2-1)s_2^2}{n_1+n_2-2}}\]</span><br>
+<span class="math display">\[(\bar{x}_1 - \bar{x}_2) \pm t_{\alpha/2, n_1+n_2-2} \cdot s_p \cdot \sqrt{\frac{1}{n_1} + \frac{1}{n_2}}\]</span><br>
+</p></li>
 </ul>
 </div>
 </section>
-<section id="two-sided-example" class="slide level2 font60">
-<h2>Two sided example</h2>
-<div class="cle15">
+<section id="hypothesis-testing" class="slide level2 font70">
+<h2>Hypothesis Testing</h2>
+<div class="cle12">
 <ul>
-<li><strong>Scenario</strong>: An analyst claims that a new billing system changes the average monthly bill from $100.</li>
-<li><strong>Sample Data</strong>: <span class="math inline">\(\bar{x} = 105\)</span>, <span class="math inline">\(s = 10\)</span>, <span class="math inline">\(n = 40\)</span></li>
-<li><strong>Test</strong>: <span class="math inline">\(H_0: \mu = 100\)</span> vs.&nbsp;<span class="math inline">\(H_a: \mu \neq 100\)</span></li>
-<li><strong>Calculation</strong>: <span class="math inline">\(z = \frac{105 - 100}{10/\sqrt{40}} \approx 3.16\)</span></li>
-<li><strong>Conclusion</strong>: Reject <span class="math inline">\(H_0\)</span> if <span class="math inline">\(|z| &gt; 1.96\)</span> (at <span class="math inline">\(\alpha = 0.05\)</span>).</li>
+<li><strong>Null Hypothesis (<span class="math inline">\(H_0\)</span>):</strong> <span class="math inline">\(\mu_1 = \mu_2\)</span> (no difference in means).<br>
+</li>
+<li><strong>Alternative Hypothesis (<span class="math inline">\(H_a\)</span>):</strong> <span class="math inline">\(\mu_1 \neq \mu_2\)</span> (means are different).</li>
+</ul>
+<p><strong>Test Statistic for Equal Variances:</strong><br>
+<span class="math display">\[t = \frac{\bar{x}_1 - \bar{x}_2}{s_p \sqrt{\frac{1}{n_1} + \frac{1}{n_2}}}\]</span></p>
+<ul>
+<li><strong>Degrees of Freedom:</strong> <span class="math inline">\(n_1 + n_2 - 2\)</span>.<br>
+</li>
+<li><strong>Decision Rule:</strong> Reject <span class="math inline">\(H_0\)</span> if <span class="math inline">\(p\)</span>-value &lt; <span class="math inline">\(\alpha\)</span> (commonly 0.05).<br>
+</li>
 </ul>
 </div>
-</section>
-<section id="two-sided-example-contd." class="slide level2 font60">
-<h2>Two Sided example contd.</h2>
-<ol type="a">
-<li>Based on the test statistic <span class="math inline">\(z = 2.53\)</span>, calculate the p-value and determine whether to reject the null hypothesis at a significance level of <span class="math inline">\(\alpha = 0.05\)</span>. Does the p-value suggest strong evidence against the null hypothesis?</li>
-</ol>
-<div class="custom-space">
-
-</div>
-<ol start="2" type="a">
-<li>Construct the 95% confidence interval for the population mean using the sample data (<span class="math inline">\(\bar{x} = 105\)</span>, <span class="math inline">\(s = 10\)</span>, <span class="math inline">\(n = 40\)</span>). Based on the confidence interval, would you reject the null hypothesis that the population mean is <span class="math inline">\(100\)</span>?</li>
-</ol>
 </section>
 <section id="section" class="slide level2 font60">
 <h2></h2>
 <blockquote>
-<p>Example 4: The sample of 100 drug-injected rats yielded the results (in seconds) shown in the following Table. At <span class="math inline">\(\alpha=.01\)</span>, use these data to conduct the test of hypothesis:</p>
+<p>Example 1: A study comparing two diets:<br>
+- <strong>Low-fat diet:</strong> <span class="math inline">\(n_1 = 100\)</span>, <span class="math inline">\(\bar{x}_1 = 9.31\)</span>, <span class="math inline">\(s_1 = 4.67\)</span><br>
+- <strong>Regular diet:</strong> <span class="math inline">\(n_2 = 100\)</span>, <span class="math inline">\(\bar{x}_2 = 7.40\)</span>, <span class="math inline">\(s_2 = 4.04\)</span><br>
+Form 95% CI for the difference in mean weight loss and conduct a hypothesis test at <span class="math inline">\(\alpha = 0.05\)</span> to see if the low-fat diet is more effective.</p>
 </blockquote>
-<p><span class="math display">\[\begin{align*}
-H_0: \mu=1.2 \\
-H_a: \mu \neq 1.2
-\end{align*}\]</span></p>
-
-<img src="images/Day24-1.png" style="display: block; margin: auto;" width="60%" loading="lazy" decoding="async" class="r-stretch"><div class="custom-space">
-
-</div>
 </section>
 <section id="section-1" class="slide level2 font60">
 <h2></h2>
+<blockquote>
+<p>Example 2: Suppose you wish to compare a new method of teaching reading to “slow learners” with the current standard method. You decide to base your comparison on the results of a reading test given at the end of a learning period of six months. Of a random sample of 22 “slow learners,” 10 are taught by the new method and 12 are taught by the standard method. All 22 children are taught by qualified instructors under similar conditions for the designated six-month period. The results of the reading test at the end of this period are given in the following table:</p>
+</blockquote>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: center;">New Method</th>
+<th style="text-align: center;"></th>
+<th style="text-align: center;"></th>
+<th style="text-align: center;"></th>
+<th style="text-align: center;">Standard Method</th>
+<th style="text-align: center;"></th>
+<th style="text-align: center;"></th>
+<th style="text-align: center;"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">80</td>
+<td style="text-align: center;">80</td>
+<td style="text-align: center;">79</td>
+<td style="text-align: center;">81</td>
+<td style="text-align: center;">79</td>
+<td style="text-align: center;">62</td>
+<td style="text-align: center;">70</td>
+<td style="text-align: center;">68</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">76</td>
+<td style="text-align: center;">66</td>
+<td style="text-align: center;">71</td>
+<td style="text-align: center;">76</td>
+<td style="text-align: center;">73</td>
+<td style="text-align: center;">76</td>
+<td style="text-align: center;">86</td>
+<td style="text-align: center;">73</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">70</td>
+<td style="text-align: center;">85</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">72</td>
+<td style="text-align: center;">68</td>
+<td style="text-align: center;">75</td>
+<td style="text-align: center;">66</td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="section-2" class="slide level2">
 <h2></h2>

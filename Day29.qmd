@@ -1,0 +1,132 @@
+---
+title: "Day 29"
+title-slide-attributes:
+  data-background-image: images/lake.jpg
+  data-background-size: contain
+  data-background-opacity: "0.5"
+subtitle: "Math 216: Statistical Thinking"
+author: "Bastola"
+format:
+  revealjs:
+    html-math-method: mathjax
+    mathjax-url: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/MathJax.js" 
+    theme: [default, scss/main.scss]
+    slide-number: true
+    preview-links: auto
+    history: true
+    chalkboard: 
+      src: drawings.json
+    transition: slide
+    background-transition: fade    
+    touch: false
+    controls: true
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+options(htmltools.preserve.raw = FALSE)
+options(ggrepel.max.overlaps = Inf)
+
+
+# load necessary packages
+library(tidyverse)
+library(countdown)
+library(mosaic)
+library(ggthemes)
+library(forcats)
+library(patchwork)
+library(Lock5Data)
+library(plotly)
+
+# Set ggplot theme
+theme_set(theme_tufte(base_size = 10))
+yt <- 0
+#<iframe width="1380" height="900" src="https://www.geogebra.org/m/mehn8u8s"></iframe>
+#::: {.callout-note title="Definition"}
+#<img src="images/Day23-1.png" style="display: block; margin: auto;" width="80%"  loading="lazy" decoding="async">
+```
+
+
+
+## Independent Sampling Overview {.font70}
+
+::: cle6
+When samples cannot be paired, they are treated as independent. For two independent samples:  
+
+- **Sample 1:** Size $n_1$, mean $\bar{x}_1$, variance $s_1^2$  
+- **Sample 2:** Size $n_2$, mean $\bar{x}_2$, variance $s_2^2$  
+
+**Conditions to Check:**  
+
+1. **Sample Sizes:** $n_1 \geq 30$, $n_2 \geq 30$ (for large samples).  
+2. **Normality:** For smaller samples, ensure the data is approximately normally distributed.  
+3. **Variances:** Known variances or assume equal variance under normality.  
+:::
+
+---
+
+## Properties of Sampling Distribution {.font70}
+
+::: cle7
+For large samples or small but normally distributed samples:  
+
+- **Mean of the Distribution:** $(\bar{x}_1 - \bar{x}_2)$ has a mean of $(\mu_1 - \mu_2)$.  
+- **Standard Deviation:**  
+  $$\sigma_{(\bar{x}_1 - \bar{x}_2)} = \sqrt{\frac{\sigma_1^2}{n_1} + \frac{\sigma_2^2}{n_2}}$$  
+- **Distribution Assumption:** Approximately normal by the Central Limit Theorem.  
+:::
+
+---
+
+## Confidence Interval for $(\mu_1 - \mu_2)$ {.font60}
+
+::: cle6
+- **Known Variances:**  
+  $$(\bar{x}_1 - \bar{x}_2) \pm z_{\alpha/2} \sqrt{\frac{\sigma_1^2}{n_1} + \frac{\sigma_2^2}{n_2}}$$  
+
+- **Unknown Variances (Pooled Standard Deviation):**  
+  $$s_p = \sqrt{\frac{(n_1-1)s_1^2 + (n_2-1)s_2^2}{n_1+n_2-2}}$$  
+  $$(\bar{x}_1 - \bar{x}_2) \pm t_{\alpha/2, n_1+n_2-2} \cdot s_p \cdot \sqrt{\frac{1}{n_1} + \frac{1}{n_2}}$$  
+:::
+
+---
+
+## Hypothesis Testing {.font70}
+
+::: cle12
+- **Null Hypothesis ($H_0$):** $\mu_1 = \mu_2$ (no difference in means).  
+- **Alternative Hypothesis ($H_a$):** $\mu_1 \neq \mu_2$ (means are different).  
+
+**Test Statistic for Equal Variances:**  
+$$t = \frac{\bar{x}_1 - \bar{x}_2}{s_p \sqrt{\frac{1}{n_1} + \frac{1}{n_2}}}$$  
+
+- **Degrees of Freedom:** $n_1 + n_2 - 2$.  
+- **Decision Rule:** Reject $H_0$ if $p$-value < $\alpha$ (commonly 0.05).  
+:::
+
+## {.font60}
+
+
+> Example 1: A study comparing two diets:  
+- **Low-fat diet:** $n_1 = 100$, $\bar{x}_1 = 9.31$, $s_1 = 4.67$  
+- **Regular diet:** $n_2 = 100$, $\bar{x}_2 = 7.40$, $s_2 = 4.04$  
+Form 95% CI for the difference in mean weight loss and conduct a hypothesis test at $\alpha = 0.05$ to see if the low-fat diet is more effective.
+
+
+
+
+
+
+## {.font60}
+
+> Example 2: Suppose you wish to compare a new method of teaching reading to "slow learners" with the current standard method. You decide to base your comparison on the results of a reading test given at the end of a learning period of six months. Of a random sample of 22 "slow learners," 10 are taught by the new method and 12 are taught by the standard method. All 22 children are taught by qualified instructors under similar conditions for the designated six-month period. The results of the reading test at the end of this period are given in the following table:
+
+
+| New Method |  |  |  | Standard Method |  |  |  |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| 80 | 80 | 79 | 81 | 79 | 62 | 70 | 68 |
+| 76 | 66 | 71 | 76 | 73 | 76 | 86 | 73 |
+| 70 | 85 |  |  | 72 | 68 | 75 | 66 |
+
+##
+

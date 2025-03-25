@@ -1,0 +1,168 @@
+---
+title: "Day 27"
+title-slide-attributes:
+  data-background-image: images/lake.jpg
+  data-background-size: contain
+  data-background-opacity: "0.5"
+subtitle: "Math 216: Statistical Thinking"
+author: "Bastola"
+format:
+  revealjs:
+    html-math-method: mathjax
+    mathjax-url: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/MathJax.js" 
+    theme: [default, scss/main.scss]
+    slide-number: true
+    preview-links: auto
+    history: true
+    chalkboard: 
+      src: drawings.json
+    transition: slide
+    background-transition: fade    
+    touch: false
+    controls: true
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+options(htmltools.preserve.raw = FALSE)
+options(ggrepel.max.overlaps = Inf)
+
+
+# load necessary packages
+library(tidyverse)
+library(countdown)
+library(mosaic)
+library(ggthemes)
+library(forcats)
+library(patchwork)
+library(Lock5Data)
+library(plotly)
+
+# Set ggplot theme
+theme_set(theme_tufte(base_size = 10))
+yt <- 0
+#<iframe width="1380" height="900" src="https://www.geogebra.org/m/mehn8u8s"></iframe>
+#::: {.callout-note title="Definition"}
+#<img src="images/Day23-1.png" style="display: block; margin: auto;" width="80%"  loading="lazy" decoding="async">
+```
+
+
+## Recap {.font80}
+
+<img src="images/Day27-info.png" style="display: block; margin: auto;" width="80%"  loading="lazy" decoding="async">
+
+
+## Challenges with Non-normal Distributions {.font70}
+
+::: cle9
+
+**What if the population data is decidedly non-normal?**
+
+- **Small Sample Sizes and Non-normality**: When sample sizes are small ($n < 30$) and the data is non-normal, traditional tests like t-tests may become unreliable. This can lead to **Type I errors**—incorrectly rejecting the null hypothesis ($H_0$) when it is true.
+
+- **Nonparametric Statistics**: These tests do not assume a normal distribution. Instead, they rely on ranks or medians, making them robust to outliers and extreme values.
+:::
+
+---
+
+## Nonparametric Sign Test {.font80}
+
+::: cle10
+
+- **Purpose**: The sign test is a simple nonparametric method to test hypotheses about the median of a distribution. It is particularly useful when the data is skewed or contains outliers.
+
+- **Focus on the Median**: Unlike parametric tests that focus on the mean, the sign test uses the median, which is less sensitive to extreme values.
+:::
+
+<img src="images/Day27-1.png" style="display: block; margin: auto;" width="80%" loading="lazy" decoding="async">
+
+---
+
+## How the Sign Test Works {.font80}
+
+::: cle4
+
+1. **Null Hypothesis**: Start by assuming the median is a specific value ($\eta_0$).
+2. **Classify Observations**: For each observation, determine if it is above or below $\eta_0$.
+3. **Count Signs**: Count the number of observations above ($S_A$) and below ($S_B$) the median.
+
+```{r, eval=FALSE}
+# R Code to Perform the Sign Test
+library(BSDA)
+SIGN.test(x = data, md = eta_0, alternative = "less", conf.level = 0.95)
+```
+
+:::
+
+---
+
+## Decision Making in the Sign Test {.font80}
+
+::: cle4
+
+**Decision Rule**:
+- Reject $H_0$ if the p-value is less than the significance level ($\alpha$).
+- The p-value is calculated using the binomial distribution with parameters $n$ (total non-zero differences) and $p = 0.5$ (probability under $H_0$).
+
+:::
+
+---
+
+## Example: Substance Abuse Testing {.font60}
+
+> **Scenario**: A lab uses a normalized measurement scale where values < 1.00 indicate "normal" ranges, and values ≥ 1.00 suggest potential substance abuse. The lab reports a normal result if the median level for an individual is less than 1.00. Eight independent measurements are taken for one individual. Test whether the population median is less than 1.00 at $\alpha = 0.05$.
+
+<img src="images/Day27-2.png" style="display: block; margin: auto;" width="80%" loading="lazy" decoding="async">
+
+---
+
+## Group Activity: Study Session Impact {background="#ffdf9e"}
+
+::: row
+::: left
+![](https://media.giphy.com/media/RKApDdwsQ6jkwd6RNn/giphy.gif)
+:::
+
+::: right
+
+<br>
+
+::: lqt
+
+**Objective**: Determine if a one-hour study session significantly improves quiz scores among students.
+
+:::
+:::
+:::
+
+`r countdown(minutes = 10, seconds = 00, top = 0 , right = 1, color_background = "inherit", padding = "3px 4px", font_size = "1em")`
+
+---
+
+## Data and Steps {.font50}
+
+**Before and After Quiz Scores for 10 Students**:
+
+| Student | Before Study Session (Score) | After Study Session (Score) |
+|---------|-----------------------------|----------------------------|
+| 1       | 70                           | 75                         |
+| 2       | 65                           | 68                         |
+| 3       | 80                           | 75                         |
+| 4       | 58                           | 60                         |
+| 5       | 77                           | 76                         |
+| 6       | 82                           | 84                         |
+| 7       | 55                           | 58                         |
+| 8       | 90                           | 95                         |
+| 9       | 62                           | 65                         |
+| 10      | 83                           | 88                         |
+
+### Activity Steps
+
+1. **Calculate Differences**: For each student, compute the difference (After - Before).
+2. **Assign Signs**: Assign a plus (+) if the score increased and a minus (-) if it decreased.
+3. **Count Signs**: Count the total number of positive and negative signs.
+4. **Perform the Sign Test**: Use the counts to test whether the study session had a significant impact.
+
+---
+
+

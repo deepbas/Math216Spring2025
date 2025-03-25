@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-99.9.9">
 
   <meta name="author" content="Bastola">
-  <title>Math 216: Statistical Thinking – Day 24</title>
+  <title>Math 216: Statistical Thinking – Day 27</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -28,6 +28,71 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-70353739610410f1fff3a0db99dd5850.css">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -123,13 +188,15 @@
       margin-right: 0; 
     }
   </style>
+  <link href="site_libs/countdown/countdown.css" rel="stylesheet">
+  <script src="site_libs/countdown/countdown.js"></script>
 </head>
 <body class="quarto-light">
   <div class="reveal">
     <div class="slides">
 
 <section id="title-slide" data-background-image="images/lake.jpg" data-background-opacity="0.5" data-background-size="contain" class="quarto-title-block center">
-  <h1 class="title">Day 24</h1>
+  <h1 class="title">Day 27</h1>
   <p class="subtitle">Math 216: Statistical Thinking</p>
 
 <div class="quarto-title-authors">
@@ -141,123 +208,150 @@ Bastola
 </div>
 
 </section>
-<section id="steps-for-hypothesis-testing-part-i" class="slide level2 font60">
-<h2>Steps for Hypothesis Testing Part I:</h2>
-<div class="cle6">
+<section id="recap" class="slide level2 font80">
+<h2>Recap</h2>
+
+<img src="images/Day27-info.png" style="display: block; margin: auto;" width="80%" loading="lazy" decoding="async" class="r-stretch"></section>
+<section id="challenges-with-non-normal-distributions" class="slide level2 font70">
+<h2>Challenges with Non-normal Distributions</h2>
+<div class="cle9">
+<p><strong>What if the population data is decidedly non-normal?</strong></p>
+<ul>
+<li><p><strong>Small Sample Sizes and Non-normality</strong>: When sample sizes are small (<span class="math inline">\(n &lt; 30\)</span>) and the data is non-normal, traditional tests like t-tests may become unreliable. This can lead to <strong>Type I errors</strong>—incorrectly rejecting the null hypothesis (<span class="math inline">\(H_0\)</span>) when it is true.</p></li>
+<li><p><strong>Nonparametric Statistics</strong>: These tests do not assume a normal distribution. Instead, they rely on ranks or medians, making them robust to outliers and extreme values.</p></li>
+</ul>
+</div>
+</section>
+<section id="nonparametric-sign-test" class="slide level2 font80">
+<h2>Nonparametric Sign Test</h2>
+<div class="cle10">
+<ul>
+<li><p><strong>Purpose</strong>: The sign test is a simple nonparametric method to test hypotheses about the median of a distribution. It is particularly useful when the data is skewed or contains outliers.</p></li>
+<li><p><strong>Focus on the Median</strong>: Unlike parametric tests that focus on the mean, the sign test uses the median, which is less sensitive to extreme values.</p></li>
+</ul>
+</div>
+
+<img src="images/Day27-1.png" style="display: block; margin: auto;" width="80%" loading="lazy" decoding="async" class="r-stretch"></section>
+<section id="how-the-sign-test-works" class="slide level2 font80">
+<h2>How the Sign Test Works</h2>
+<div class="cle4">
 <ol type="1">
-<li><strong>State the Hypotheses</strong>
-<ul>
-<li>Null Hypothesis (<span class="math inline">\(H_0\)</span>): No effect or no difference, posits that <span class="math inline">\(\mu = \mu_0\)</span>.</li>
-<li>Alternative Hypothesis (<span class="math inline">\(H_A\)</span>): Asserts a specific claim about the population mean <span class="math inline">\(\mu\)</span> that is different from <span class="math inline">\(\mu_0\)</span> (e.g., <span class="math inline">\(\mu &gt; \mu_0\)</span>, <span class="math inline">\(\mu &lt; \mu_0\)</span>, or <span class="math inline">\(\mu \neq \mu_0\)</span>).</li>
-</ul></li>
-<li><strong>Set the Significance Level (<span class="math inline">\(\alpha\)</span>)</strong>
-<ul>
-<li>The probability of making a Type I error (rejecting a true null hypothesis). Common values are 0.05, 0.01, or 0.10.</li>
-</ul></li>
-<li><strong>Assumptions</strong>
-<ul>
-<li>The sample is a simple random sample.</li>
-<li>The sample size is large (usually <span class="math inline">\(n \geq 30\)</span>), which justifies the use of the Central Limit Theorem.</li>
-</ul></li>
-<li><strong>Collect Data</strong>
-<ul>
-<li>Obtain a random sample and compute the sample mean (<span class="math inline">\(\bar{X}\)</span>) and standard deviation (<span class="math inline">\(S\)</span>).</li>
-</ul></li>
+<li><strong>Null Hypothesis</strong>: Start by assuming the median is a specific value (<span class="math inline">\(\eta_0\)</span>).</li>
+<li><strong>Classify Observations</strong>: For each observation, determine if it is above or below <span class="math inline">\(\eta_0\)</span>.</li>
+<li><strong>Count Signs</strong>: Count the number of observations above (<span class="math inline">\(S_A\)</span>) and below (<span class="math inline">\(S_B\)</span>) the median.</li>
 </ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="co"># R Code to Perform the Sign Test</span></span>
+<span id="cb1-2"><a></a><span class="fu">library</span>(BSDA)</span>
+<span id="cb1-3"><a></a><span class="fu">SIGN.test</span>(<span class="at">x =</span> data, <span class="at">md =</span> eta_0, <span class="at">alternative =</span> <span class="st">"less"</span>, <span class="at">conf.level =</span> <span class="fl">0.95</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </div>
 </section>
-<section id="steps-for-hypothesis-testing-part-ii" class="slide level2 font40">
-<h2>Steps for Hypothesis Testing Part II:</h2>
-<div class="cle7">
-<ol start="5" type="1">
-<li><p><strong>Calculate the Test Statistic (<span class="math inline">\(z\)</span>)</strong></p>
-<ul>
-<li>If the population standard deviation (<span class="math inline">\(\sigma\)</span>) is known: <span class="math display">\[ z = \frac{\bar{X} - \mu_0}{\sigma/\sqrt{n}} \]</span></li>
-<li>If <span class="math inline">\(\sigma\)</span> is unknown and <span class="math inline">\(n \geq 30\)</span>, use <span class="math inline">\(s\)</span> (sample standard deviation): <span class="math display">\[ z = \frac{\bar{X} - \mu_0}{s/\sqrt{n}} \]</span></li>
-</ul></li>
-<li><p><strong>Decision Rule</strong></p>
-<ul>
-<li>For a one-tailed test: Reject <span class="math inline">\(H_0\)</span> if <span class="math inline">\(z\)</span> falls in the rejection region (either <span class="math inline">\(z &lt; -z_{\alpha}\)</span> for left-tailed or <span class="math inline">\(z &gt; z_{\alpha}\)</span> for right-tailed).</li>
-<li>For a two-tailed test: Reject <span class="math inline">\(H_0\)</span> if <span class="math inline">\(|z| &gt; z_{\alpha/2}\)</span>.</li>
-</ul></li>
-<li><p><strong>Compute the P-Value</strong></p>
-<ul>
-<li>The probability of observing a test statistic as extreme as, or more extreme than, the statistic calculated from the sample data, assuming that <span class="math inline">\(H_0\)</span> is true.</li>
-</ul></li>
-<li><p><strong>Conclusion</strong></p>
-<ul>
-<li>Reject <span class="math inline">\(H_0\)</span> if the p-value is less than <span class="math inline">\(\alpha\)</span>; otherwise, do not reject <span class="math inline">\(H_0\)</span>. Report whether the evidence supports <span class="math inline">\(H_a\)</span> based on the statistical significance.</li>
-</ul></li>
-</ol>
+<section id="decision-making-in-the-sign-test" class="slide level2 font80">
+<h2>Decision Making in the Sign Test</h2>
+<div class="cle4">
+<p><strong>Decision Rule</strong>: - Reject <span class="math inline">\(H_0\)</span> if the p-value is less than the significance level (<span class="math inline">\(\alpha\)</span>). - The p-value is calculated using the binomial distribution with parameters <span class="math inline">\(n\)</span> (total non-zero differences) and <span class="math inline">\(p = 0.5\)</span> (probability under <span class="math inline">\(H_0\)</span>).</p>
 </div>
 </section>
-<section id="one-sided-greater-than-example" class="slide level2 font60">
-<h2>One-Sided (Greater Than) Example</h2>
-<div class="cle14">
-<ul>
-<li><strong>Scenario</strong>: A study group claims that their session increases the average test score above 75.</li>
-<li><strong>Sample Data</strong>: <span class="math inline">\(\bar{x} = 78\)</span>, <span class="math inline">\(s = 5\)</span>, <span class="math inline">\(n = 30\)</span></li>
-<li><strong>Test</strong>: <span class="math inline">\(H_0: \mu \leq 75\)</span> vs.&nbsp;<span class="math inline">\(H_a: \mu &gt; 75\)</span></li>
-<li><strong>Calculation</strong>: <span class="math inline">\(z = \frac{78 - 75}{5/\sqrt{30}} \approx 3.29\)</span></li>
-<li><strong>Conclusion</strong>: Reject <span class="math inline">\(H_0\)</span> if <span class="math inline">\(z &gt; 1.645\)</span> (at <span class="math inline">\(\alpha = 0.05\)</span>).</li>
-</ul>
-</div>
-</section>
-<section id="one-sided-less-than-example" class="slide level2 font60">
-<h2>One-Sided (Less Than) Example</h2>
-<div class="cle6">
-<ul>
-<li><strong>Scenario</strong>: A nutritionist claims that a new diet reduces the average calorie intake below 2200 calories/day.</li>
-<li><strong>Sample Data</strong>: <span class="math inline">\(\bar{x} = 2150\)</span>, <span class="math inline">\(s = 120\)</span>, <span class="math inline">\(n = 35\)</span></li>
-<li><strong>Test</strong>: <span class="math inline">\(H_0: \mu \geq 2200\)</span> vs.&nbsp;<span class="math inline">\(H_a: \mu &lt; 2200\)</span></li>
-<li><strong>Calculation</strong>: <span class="math inline">\(z = \frac{2150 - 2200}{120/\sqrt{35}} \approx -2.47\)</span></li>
-<li><strong>Conclusion</strong>: Reject <span class="math inline">\(H_0\)</span> if <span class="math inline">\(z &lt; -1.645\)</span> (at <span class="math inline">\(\alpha = 0.05\)</span>).</li>
-</ul>
-</div>
-</section>
-<section id="two-sided-example" class="slide level2 font60">
-<h2>Two sided example</h2>
-<div class="cle15">
-<ul>
-<li><strong>Scenario</strong>: An analyst claims that a new billing system changes the average monthly bill from $100.</li>
-<li><strong>Sample Data</strong>: <span class="math inline">\(\bar{x} = 105\)</span>, <span class="math inline">\(s = 10\)</span>, <span class="math inline">\(n = 40\)</span></li>
-<li><strong>Test</strong>: <span class="math inline">\(H_0: \mu = 100\)</span> vs.&nbsp;<span class="math inline">\(H_a: \mu \neq 100\)</span></li>
-<li><strong>Calculation</strong>: <span class="math inline">\(z = \frac{105 - 100}{10/\sqrt{40}} \approx 3.16\)</span></li>
-<li><strong>Conclusion</strong>: Reject <span class="math inline">\(H_0\)</span> if <span class="math inline">\(|z| &gt; 1.96\)</span> (at <span class="math inline">\(\alpha = 0.05\)</span>).</li>
-</ul>
-</div>
-</section>
-<section id="two-sided-example-contd." class="slide level2 font60">
-<h2>Two Sided example contd.</h2>
-<ol type="a">
-<li>Based on the test statistic <span class="math inline">\(z = 2.53\)</span>, calculate the p-value and determine whether to reject the null hypothesis at a significance level of <span class="math inline">\(\alpha = 0.05\)</span>. Does the p-value suggest strong evidence against the null hypothesis?</li>
-</ol>
-<div class="custom-space">
-
-</div>
-<ol start="2" type="a">
-<li>Construct the 95% confidence interval for the population mean using the sample data (<span class="math inline">\(\bar{x} = 105\)</span>, <span class="math inline">\(s = 10\)</span>, <span class="math inline">\(n = 40\)</span>). Based on the confidence interval, would you reject the null hypothesis that the population mean is <span class="math inline">\(100\)</span>?</li>
-</ol>
-</section>
-<section id="section" class="slide level2 font60">
-<h2></h2>
+<section id="example-substance-abuse-testing" class="slide level2 font60">
+<h2>Example: Substance Abuse Testing</h2>
 <blockquote>
-<p>Example 4: The sample of 100 drug-injected rats yielded the results (in seconds) shown in the following Table. At <span class="math inline">\(\alpha=.01\)</span>, use these data to conduct the test of hypothesis:</p>
+<p><strong>Scenario</strong>: A lab uses a normalized measurement scale where values &lt; 1.00 indicate “normal” ranges, and values ≥ 1.00 suggest potential substance abuse. The lab reports a normal result if the median level for an individual is less than 1.00. Eight independent measurements are taken for one individual. Test whether the population median is less than 1.00 at <span class="math inline">\(\alpha = 0.05\)</span>.</p>
 </blockquote>
-<p><span class="math display">\[\begin{align*}
-H_0: \mu=1.2 \\
-H_a: \mu \neq 1.2
-\end{align*}\]</span></p>
 
-<img src="images/Day24-1.png" style="display: block; margin: auto;" width="60%" loading="lazy" decoding="async" class="r-stretch"><div class="custom-space">
-
+<img src="images/Day27-2.png" style="display: block; margin: auto;" width="80%" loading="lazy" decoding="async" class="r-stretch"></section>
+<section id="group-activity-study-session-impact" class="slide level2" data-background="#ffdf9e">
+<h2>Group Activity: Study Session Impact</h2>
+<div class="row">
+<div class="left">
+<p><img data-src="https://media.giphy.com/media/RKApDdwsQ6jkwd6RNn/giphy.gif"></p>
 </div>
+<div class="right">
+<p><br></p>
+<div class="lqt">
+<p><strong>Objective</strong>: Determine if a one-hour study session significantly improves quiz scores among students.</p>
+</div>
+</div>
+</div>
+<p></p><div class="countdown" id="timer_154b900b" data-update-every="1" tabindex="0" style="top:0;right:1;padding:3px 4px;font-size:1em;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div><p></p>
 </section>
-<section id="section-1" class="slide level2 font60">
-<h2></h2>
+<section id="data-and-steps" class="slide level2 font50">
+<h2>Data and Steps</h2>
+<p><strong>Before and After Quiz Scores for 10 Students</strong>:</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Student</th>
+<th>Before Study Session (Score)</th>
+<th>After Study Session (Score)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>70</td>
+<td>75</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>65</td>
+<td>68</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>80</td>
+<td>75</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>58</td>
+<td>60</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>77</td>
+<td>76</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>82</td>
+<td>84</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>55</td>
+<td>58</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>90</td>
+<td>95</td>
+</tr>
+<tr class="odd">
+<td>9</td>
+<td>62</td>
+<td>65</td>
+</tr>
+<tr class="even">
+<td>10</td>
+<td>83</td>
+<td>88</td>
+</tr>
+</tbody>
+</table>
+<h3 id="activity-steps">Activity Steps</h3>
+<ol type="1">
+<li><strong>Calculate Differences</strong>: For each student, compute the difference (After - Before).</li>
+<li><strong>Assign Signs</strong>: Assign a plus (+) if the score increased and a minus (-) if it decreased.</li>
+<li><strong>Count Signs</strong>: Count the total number of positive and negative signs.</li>
+<li><strong>Perform the Sign Test</strong>: Use the counts to test whether the study session had a significant impact.</li>
+</ol>
 </section>
-<section id="section-2" class="slide level2">
-<h2></h2>
+<section class="slide level2">
+
 
 
 </section>

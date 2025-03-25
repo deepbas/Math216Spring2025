@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-99.9.9">
 
   <meta name="author" content="Bastola">
-  <title>Math 216: Statistical Thinking – Day 24</title>
+  <title>Math 216: Statistical Thinking – Day 30</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -28,6 +28,71 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-70353739610410f1fff3a0db99dd5850.css">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -129,7 +194,7 @@
     <div class="slides">
 
 <section id="title-slide" data-background-image="images/lake.jpg" data-background-opacity="0.5" data-background-size="contain" class="quarto-title-block center">
-  <h1 class="title">Day 24</h1>
+  <h1 class="title">Day 30</h1>
   <p class="subtitle">Math 216: Statistical Thinking</p>
 
 <div class="quarto-title-authors">
@@ -141,116 +206,99 @@ Bastola
 </div>
 
 </section>
-<section id="steps-for-hypothesis-testing-part-i" class="slide level2 font60">
-<h2>Steps for Hypothesis Testing Part I:</h2>
-<div class="cle6">
-<ol type="1">
-<li><strong>State the Hypotheses</strong>
-<ul>
-<li>Null Hypothesis (<span class="math inline">\(H_0\)</span>): No effect or no difference, posits that <span class="math inline">\(\mu = \mu_0\)</span>.</li>
-<li>Alternative Hypothesis (<span class="math inline">\(H_A\)</span>): Asserts a specific claim about the population mean <span class="math inline">\(\mu\)</span> that is different from <span class="math inline">\(\mu_0\)</span> (e.g., <span class="math inline">\(\mu &gt; \mu_0\)</span>, <span class="math inline">\(\mu &lt; \mu_0\)</span>, or <span class="math inline">\(\mu \neq \mu_0\)</span>).</li>
-</ul></li>
-<li><strong>Set the Significance Level (<span class="math inline">\(\alpha\)</span>)</strong>
-<ul>
-<li>The probability of making a Type I error (rejecting a true null hypothesis). Common values are 0.05, 0.01, or 0.10.</li>
-</ul></li>
-<li><strong>Assumptions</strong>
-<ul>
-<li>The sample is a simple random sample.</li>
-<li>The sample size is large (usually <span class="math inline">\(n \geq 30\)</span>), which justifies the use of the Central Limit Theorem.</li>
-</ul></li>
-<li><strong>Collect Data</strong>
-<ul>
-<li>Obtain a random sample and compute the sample mean (<span class="math inline">\(\bar{X}\)</span>) and standard deviation (<span class="math inline">\(S\)</span>).</li>
-</ul></li>
-</ol>
-</div>
-</section>
-<section id="steps-for-hypothesis-testing-part-ii" class="slide level2 font40">
-<h2>Steps for Hypothesis Testing Part II:</h2>
-<div class="cle7">
-<ol start="5" type="1">
-<li><p><strong>Calculate the Test Statistic (<span class="math inline">\(z\)</span>)</strong></p>
-<ul>
-<li>If the population standard deviation (<span class="math inline">\(\sigma\)</span>) is known: <span class="math display">\[ z = \frac{\bar{X} - \mu_0}{\sigma/\sqrt{n}} \]</span></li>
-<li>If <span class="math inline">\(\sigma\)</span> is unknown and <span class="math inline">\(n \geq 30\)</span>, use <span class="math inline">\(s\)</span> (sample standard deviation): <span class="math display">\[ z = \frac{\bar{X} - \mu_0}{s/\sqrt{n}} \]</span></li>
-</ul></li>
-<li><p><strong>Decision Rule</strong></p>
-<ul>
-<li>For a one-tailed test: Reject <span class="math inline">\(H_0\)</span> if <span class="math inline">\(z\)</span> falls in the rejection region (either <span class="math inline">\(z &lt; -z_{\alpha}\)</span> for left-tailed or <span class="math inline">\(z &gt; z_{\alpha}\)</span> for right-tailed).</li>
-<li>For a two-tailed test: Reject <span class="math inline">\(H_0\)</span> if <span class="math inline">\(|z| &gt; z_{\alpha/2}\)</span>.</li>
-</ul></li>
-<li><p><strong>Compute the P-Value</strong></p>
-<ul>
-<li>The probability of observing a test statistic as extreme as, or more extreme than, the statistic calculated from the sample data, assuming that <span class="math inline">\(H_0\)</span> is true.</li>
-</ul></li>
-<li><p><strong>Conclusion</strong></p>
-<ul>
-<li>Reject <span class="math inline">\(H_0\)</span> if the p-value is less than <span class="math inline">\(\alpha\)</span>; otherwise, do not reject <span class="math inline">\(H_0\)</span>. Report whether the evidence supports <span class="math inline">\(H_a\)</span> based on the statistical significance.</li>
-</ul></li>
-</ol>
-</div>
-</section>
-<section id="one-sided-greater-than-example" class="slide level2 font60">
-<h2>One-Sided (Greater Than) Example</h2>
-<div class="cle14">
-<ul>
-<li><strong>Scenario</strong>: A study group claims that their session increases the average test score above 75.</li>
-<li><strong>Sample Data</strong>: <span class="math inline">\(\bar{x} = 78\)</span>, <span class="math inline">\(s = 5\)</span>, <span class="math inline">\(n = 30\)</span></li>
-<li><strong>Test</strong>: <span class="math inline">\(H_0: \mu \leq 75\)</span> vs.&nbsp;<span class="math inline">\(H_a: \mu &gt; 75\)</span></li>
-<li><strong>Calculation</strong>: <span class="math inline">\(z = \frac{78 - 75}{5/\sqrt{30}} \approx 3.29\)</span></li>
-<li><strong>Conclusion</strong>: Reject <span class="math inline">\(H_0\)</span> if <span class="math inline">\(z &gt; 1.645\)</span> (at <span class="math inline">\(\alpha = 0.05\)</span>).</li>
-</ul>
-</div>
-</section>
-<section id="one-sided-less-than-example" class="slide level2 font60">
-<h2>One-Sided (Less Than) Example</h2>
-<div class="cle6">
-<ul>
-<li><strong>Scenario</strong>: A nutritionist claims that a new diet reduces the average calorie intake below 2200 calories/day.</li>
-<li><strong>Sample Data</strong>: <span class="math inline">\(\bar{x} = 2150\)</span>, <span class="math inline">\(s = 120\)</span>, <span class="math inline">\(n = 35\)</span></li>
-<li><strong>Test</strong>: <span class="math inline">\(H_0: \mu \geq 2200\)</span> vs.&nbsp;<span class="math inline">\(H_a: \mu &lt; 2200\)</span></li>
-<li><strong>Calculation</strong>: <span class="math inline">\(z = \frac{2150 - 2200}{120/\sqrt{35}} \approx -2.47\)</span></li>
-<li><strong>Conclusion</strong>: Reject <span class="math inline">\(H_0\)</span> if <span class="math inline">\(z &lt; -1.645\)</span> (at <span class="math inline">\(\alpha = 0.05\)</span>).</li>
-</ul>
-</div>
-</section>
-<section id="two-sided-example" class="slide level2 font60">
-<h2>Two sided example</h2>
-<div class="cle15">
-<ul>
-<li><strong>Scenario</strong>: An analyst claims that a new billing system changes the average monthly bill from $100.</li>
-<li><strong>Sample Data</strong>: <span class="math inline">\(\bar{x} = 105\)</span>, <span class="math inline">\(s = 10\)</span>, <span class="math inline">\(n = 40\)</span></li>
-<li><strong>Test</strong>: <span class="math inline">\(H_0: \mu = 100\)</span> vs.&nbsp;<span class="math inline">\(H_a: \mu \neq 100\)</span></li>
-<li><strong>Calculation</strong>: <span class="math inline">\(z = \frac{105 - 100}{10/\sqrt{40}} \approx 3.16\)</span></li>
-<li><strong>Conclusion</strong>: Reject <span class="math inline">\(H_0\)</span> if <span class="math inline">\(|z| &gt; 1.96\)</span> (at <span class="math inline">\(\alpha = 0.05\)</span>).</li>
-</ul>
-</div>
-</section>
-<section id="two-sided-example-contd." class="slide level2 font60">
-<h2>Two Sided example contd.</h2>
-<ol type="a">
-<li>Based on the test statistic <span class="math inline">\(z = 2.53\)</span>, calculate the p-value and determine whether to reject the null hypothesis at a significance level of <span class="math inline">\(\alpha = 0.05\)</span>. Does the p-value suggest strong evidence against the null hypothesis?</li>
-</ol>
-<div class="custom-space">
+<section class="slide level2">
 
-</div>
-<ol start="2" type="a">
-<li>Construct the 95% confidence interval for the population mean using the sample data (<span class="math inline">\(\bar{x} = 105\)</span>, <span class="math inline">\(s = 10\)</span>, <span class="math inline">\(n = 40\)</span>). Based on the confidence interval, would you reject the null hypothesis that the population mean is <span class="math inline">\(100\)</span>?</li>
-</ol>
+<iframe style="width: 65%; height: 140vh; border: none;" src="images/onesampleflow.html">
+</iframe>
 </section>
-<section id="section" class="slide level2 font60">
+<section id="section" class="slide level2">
 <h2></h2>
-<blockquote>
-<p>Example 4: The sample of 100 drug-injected rats yielded the results (in seconds) shown in the following Table. At <span class="math inline">\(\alpha=.01\)</span>, use these data to conduct the test of hypothesis:</p>
-</blockquote>
-<p><span class="math display">\[\begin{align*}
-H_0: \mu=1.2 \\
-H_a: \mu \neq 1.2
-\end{align*}\]</span></p>
+<iframe style="width: 65%; height: 140vh; border: none;" src="images/twosampleflow.html">
+</iframe>
+</section>
+<section id="wilcoxon-test-in-r" class="slide level2 font60">
+<h2>Wilcoxon Test in R</h2>
+<div class="cle12">
+<h3 id="one-sample-wilcoxon-signed-rank-test">One-Sample Wilcoxon Signed Rank Test</h3>
+<p>Used to test whether the median of a single sample differs from a hypothesized value.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="fu">wilcox.test</span>(x, <span class="at">mu =</span> <span class="dv">0</span>, <span class="at">alternative =</span> <span class="st">"two.sided"</span>, <span class="at">conf.level =</span> <span class="fl">0.95</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<h3 id="paired-wilcoxon-signed-rank-test">Paired Wilcoxon Signed Rank Test</h3>
+<p>Used for paired samples to test whether the median difference is significantly different from zero.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a><span class="fu">wilcox.test</span>(x, y, <span class="at">paired =</span> <span class="cn">TRUE</span>, <span class="at">alternative =</span> <span class="st">"two.sided"</span>, <span class="at">conf.level =</span> <span class="fl">0.95</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<h3 id="wilcoxon-rank-sum-test-mann-whitney-u-test">Wilcoxon Rank Sum Test (Mann-Whitney U Test)</h3>
+<p>Used to compare medians of two independent samples.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a><span class="fu">wilcox.test</span>(x <span class="sc">~</span> group, <span class="at">data =</span> dataset, <span class="at">alternative =</span> <span class="st">"two.sided"</span>, <span class="at">conf.level =</span> <span class="fl">0.95</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="additional-statistical-tests-in-r" class="slide level2 font60">
+<h2>Additional Statistical Tests in R</h2>
+<div class="cle12">
+<h3 id="z-test-for-known-population-variance">z-Test for Known Population Variance</h3>
+<p>Used when the population variance is known.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a><span class="fu">z.test</span>(x, <span class="at">alternative =</span> <span class="st">"two.sided"</span>, <span class="at">mu =</span> <span class="dv">0</span>, <span class="at">sigma.x =</span> <span class="dv">1</span>, <span class="at">conf.level =</span> <span class="fl">0.95</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<h3 id="t-test-for-comparing-means">t-Test for Comparing Means</h3>
+<p>Used to compare means of two groups.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a><span class="fu">t.test</span>(x, <span class="at">y =</span> <span class="cn">NULL</span>, <span class="at">alternative =</span> <span class="st">"two.sided"</span>, <span class="at">mu =</span> <span class="dv">0</span>, <span class="at">paired =</span> <span class="cn">FALSE</span>, <span class="at">var.equal =</span> <span class="cn">FALSE</span>, <span class="at">conf.level =</span> <span class="fl">0.95</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="zsum.test-and-tsum.test-in-bsda-package" class="slide level2 font60">
+<h2>zsum.test and tsum.test in BSDA Package</h2>
+<div class="cle6">
+<p>The <code>zsum.test</code> and <code>tsum.test</code> functions from the BSDA package are designed for conducting z-tests and t-tests using summarized data. These functions are particularly useful when individual data points are not available, and only summary statistics are available.</p>
+<h3 id="zsum.test">zsum.test</h3>
+<p>Performs a z-test on summarized data.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a><span class="fu">zsum.test</span>(mean.x, sigma.x, n.x, mean.y, sigma.y, n.y, <span class="at">alternative =</span> <span class="st">"two.sided"</span>, <span class="at">mu =</span> <span class="dv">0</span>, <span class="at">conf.level =</span> <span class="fl">0.95</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<h3 id="tsum.test">tsum.test</h3>
+<p>Performs a t-test on summarized data.</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a><span class="fu">tsum.test</span>(mean.x, s.x, n.x, mean.y, s.y, n.y, <span class="at">alternative =</span> <span class="st">"two.sided"</span>, <span class="at">mu =</span> <span class="dv">0</span>, <span class="at">var.equal =</span> <span class="cn">FALSE</span>, <span class="at">conf.level =</span> <span class="fl">0.95</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="analysis-of-exam-scores-online-vs-traditional-classroom" class="slide level2 font80">
+<h2>Analysis of Exam Scores: Online vs Traditional Classroom</h2>
+<div class="cle8">
+<p>Two groups of students, one taking an online class and the other in a traditional classroom setting, were given the same final exam. Here are the scores:</p>
+<ul>
+<li><strong>Online</strong>: 78, 82, 83, 87, 75, 43, 78, 42, 94, 47, 98, 90, 97, 81</li>
+<li><strong>Traditional</strong>: 83, 82, 92, 100, 74, 90, 44, 84, 77, 89, 70, 34</li>
+</ul>
+<p>We want to determine if there’s a statistically significant difference between the exam scores of the two groups using a non-parametric test.</p>
+</div>
+</section>
+<section id="hypothesis-test-setup" class="slide level2 font80">
+<h2>Hypothesis Test Setup</h2>
+<div class="cle9">
+<p>We will perform a Mann-Whitney U test, which does not assume a normal distribution of the scores.</p>
+<h3 id="hypotheses">Hypotheses</h3>
+<ul>
+<li><strong>Null hypothesis (<span class="math inline">\(H_0\)</span>)</strong>: There is no difference in the median scores between the two classes.</li>
+<li><strong>Alternative hypothesis (<span class="math inline">\(H_a\)</span>)</strong>: There is a difference in the median scores between the two classes.</li>
+</ul>
+<h3 id="significance-level">Significance Level</h3>
+<ul>
+<li><strong><span class="math inline">\(\alpha = 0.05\)</span></strong>: This is the threshold for determining statistical significance.</li>
+</ul>
+</div>
+</section>
+<section id="mann-whitney-u-test-in-r" class="slide level2 font70">
+<h2>Mann-Whitney U Test in R</h2>
+<div class="cle12">
+<p>First, we’ll enter the exam scores into R and perform the test.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a>online_scores <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">78</span>, <span class="dv">82</span>, <span class="dv">83</span>, <span class="dv">87</span>, <span class="dv">75</span>, <span class="dv">43</span>, <span class="dv">78</span>, <span class="dv">42</span>, <span class="dv">94</span>, <span class="dv">47</span>, <span class="dv">98</span>, <span class="dv">90</span>, <span class="dv">97</span>, <span class="dv">81</span>)</span>
+<span id="cb8-2"><a></a>traditional_scores <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">83</span>, <span class="dv">82</span>, <span class="dv">92</span>, <span class="dv">100</span>, <span class="dv">74</span>, <span class="dv">90</span>, <span class="dv">44</span>, <span class="dv">84</span>, <span class="dv">77</span>, <span class="dv">89</span>, <span class="dv">70</span>, <span class="dv">34</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Next, we use the <code>wilcox.test()</code> function to conduct the Mann-Whitney U test.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a><span class="fu">wilcox.test</span>(online_scores, traditional_scores, <span class="at">alternative =</span> <span class="st">"two.sided"</span>, <span class="at">conf.level =</span> <span class="fl">0.95</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Wilcoxon rank sum test with continuity correction
 
-<img src="images/Day24-1.png" style="display: block; margin: auto;" width="60%" loading="lazy" decoding="async" class="r-stretch"><div class="custom-space">
-
+data:  online_scores and traditional_scores
+W = 85.5, p-value = 0.959
+alternative hypothesis: true location shift is not equal to 0</code></pre>
+</div>
+</div>
 </div>
 </section>
 <section id="section-1" class="slide level2 font60">

@@ -1,0 +1,185 @@
+---
+title: "Day 25"
+title-slide-attributes:
+  data-background-image: images/lake.jpg
+  data-background-size: contain
+  data-background-opacity: "0.5"
+subtitle: "Math 216: Statistical Thinking"
+author: "Bastola"
+format:
+  revealjs:
+    html-math-method: mathjax
+    mathjax-url: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/MathJax.js" 
+    theme: [default, scss/main.scss]
+    slide-number: true
+    preview-links: auto
+    history: true
+    chalkboard: 
+      src: drawings.json
+    transition: slide
+    background-transition: fade    
+    touch: false
+    controls: true
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+options(htmltools.preserve.raw = FALSE)
+options(ggrepel.max.overlaps = Inf)
+
+
+# load necessary packages
+library(tidyverse)
+library(countdown)
+library(mosaic)
+library(ggthemes)
+library(forcats)
+library(patchwork)
+library(Lock5Data)
+library(plotly)
+
+# Set ggplot theme
+theme_set(theme_tufte(base_size = 10))
+yt <- 0
+#<iframe width="1380" height="900" src="https://www.geogebra.org/m/mehn8u8s"></iframe>
+#::: {.callout-note title="Definition"}
+#<img src="images/Day23-1.png" style="display: block; margin: auto;" width="80%"  loading="lazy" decoding="async">
+```
+
+
+## Introduction to Small Sample Confidence Intervals {.font80}
+
+::: cle6
+- **Background**: Confidence intervals and hypothesis testing for large samples ($n \geq 30$) rely on the $z$-statistic.
+- **Challenge**: What happens with a small sample size ($n < 30$) where the Central Limit Theorem does not apply?
+
+:::
+
+## Adjusting for Small Samples {.font70}
+
+::: cle6
+- **Population Distribution**: If the sample comes from an approximately normal distribution, we can use the $t$-statistic.
+- **Standard Deviation**: When the population standard deviation $\sigma$ is unknown and $n < 30$, using the sample standard deviation $s$ to approximate $\sigma$ is unreliable.
+- **Solution**:
+  $$
+  t=\frac{\bar{x}-\mu}{s / \sqrt{n}}
+  $$
+  - Follows a $t$-distribution with degrees of freedom, $df = n-1$.
+:::
+
+
+
+## Confidence Interval Using Student's t-Statistic {.font80}
+
+::: cle9
+- **When $\sigma$ is unknown**: Use the $t$-statistic for confidence intervals.
+  - For a $95\%$ confidence interval:
+    $$
+    \bar{x} \pm t_{\alpha/2} \left(\frac{s}{\sqrt{n}}\right)
+    $$
+    where $t_{\alpha/2}$ is determined from the $t$-distribution table for $df = n-1$.
+:::
+
+
+## {.font60}
+
+<img src="images/t-table.png" style="display: block; margin: auto;" width="90%"  loading="lazy" decoding="async">
+
+
+## {.font60} 
+
+> Example 1: Consider the pharmaceutical company that desires an estimate of the mean increase in blood pressure of patients who take a new drug. The blood pressure increases (measured in points) for the $n=6$ patients in the human testing phase are shown in the following. Use this information to construct a $95 \%$ confidence interval for $\mu$, the mean increase in blood pressure associated with the new drug for all patients in the population.
+
+\begin{array}{llllll}
+1.7 & 3.0 & 0.8 & 3.4 & 2.7 & 2.1
+\end{array}
+
+
+```{r}
+x <- c(1.7, 3.0, 0.8, 3.4, 2.7, 2.1)
+mean(x) # x.bar, sample mean
+sd(x)   #s, sample standard deviation
+qt(1 - 0.05/2, df = 6 - 1) # t_alpha/2 for df = n - 1
+```
+
+
+## <i class="fa fa-pencil-square-o" style="font-size:48px;color:purple"> Group Activity `r (yt <- yt + 1)`</i> {background="#ffdf9e"}
+
+::: row
+::: left
+![](https://media.giphy.com/media/RKApDdwsQ6jkwd6RNn/giphy.gif)
+:::
+
+::: right
+
+<br>
+
+::: lqt
+
+Say hi to your neighbor and think about your approach to solve example 1.
+
+:::
+:::
+:::
+
+`r countdown(minutes = 3, seconds = 00, top = 0 , right = 0, color_background = "inherit", padding = "3px 4px", font_size = "1em")`
+
+
+##
+
+
+
+
+## Calculation of P-Value {.font80}
+
+::: cle7
+- **When $n<30$** and $\sigma$ is unknown:
+  - **Use Case**: If the population is approximately normally distributed.
+  - **Student's t-Statistic**:
+    $$
+    t = \frac{\bar{x} - \mu_{0}}{s / \sqrt{n}}
+    $$
+    - Follows a $t$-distribution with $df = n - 1$.
+:::
+
+
+
+## {.font60}
+
+> Example 2: Most water-treatment facilities monitor the quality of their drinking water on an hourly basis. One variable monitored is pH , which measures the degree of alkalinity or acidity in the water. A pH below 7.0 is acidic, one above 7.0 is alkaline, and a pH of 7.0 is neutral. One water-treatment plant has a target pH of 8.5. (Most try to maintain a slightly alkaline level.) The mean and standard deviation of 1 hour's test results, based on 17 water samples at this plant, are $\bar{x}=8.42$ and $s=0.16$. Does this sample provide sufficient evidence that the mean pH level in the water differs from 8.5 ? Perform the hypothesis test with $\alpha = 0.05$.
+
+```{r}
+qt(1 - 0.05/2, df = 17 -1)  # critical value for t_alpha/2, df = n-1
+```
+
+
+## <i class="fa fa-pencil-square-o" style="font-size:48px;color:purple"> Group Activity `r (yt <- yt + 1)`</i> {background="#ffdf9e"}
+
+::: row
+::: left
+![](https://media.giphy.com/media/RKApDdwsQ6jkwd6RNn/giphy.gif)
+:::
+
+::: right
+
+<br>
+
+::: lqt
+
+Say hi to your neighbor and think about your approach to solve example 2.
+
+:::
+:::
+:::
+
+`r countdown(minutes = 3, seconds = 00, top = 0 , right = 0, color_background = "inherit", padding = "3px 4px", font_size = "1em")`
+
+
+
+##
+
+
+
+
+
+

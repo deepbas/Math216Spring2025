@@ -1,0 +1,235 @@
+---
+title: "Day 35"
+title-slide-attributes:
+  data-background-image: images/lake.jpg
+  data-background-size: contain
+  data-background-opacity: "0.5"
+subtitle: "Math 216: Statistical Thinking"
+author: "Bastola"
+format:
+  revealjs:
+    html-math-method: mathjax
+    mathjax-url: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/MathJax.js" 
+    theme: [default, scss/main.scss]
+    slide-number: true
+    preview-links: auto
+    history: true
+    chalkboard: 
+      src: drawings.json
+    transition: slide
+    background-transition: fade    
+    touch: false
+    controls: true
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+options(htmltools.preserve.raw = FALSE)
+options(ggrepel.max.overlaps = Inf)
+
+
+# load necessary packages
+library(tidyverse)
+library(countdown)
+library(mosaic)
+library(ggthemes)
+library(forcats)
+library(patchwork)
+library(Lock5Data)
+library(plotly)
+
+# Set ggplot theme
+theme_set(theme_tufte(base_size = 10))
+yt <- 0
+#<iframe width="1380" height="900" src="https://www.geogebra.org/m/mehn8u8s"></iframe>
+#::: {.callout-note title="Definition"}
+#<img src="images/Day23-1.png" style="display: block; margin: auto;" width="80%"  loading="lazy" decoding="async">
+```
+
+
+
+## Describing associations between two quantitative variables {.font80}
+
+::: bqt
+
+Data: each case $i$ has two measurements
+
+- $x_i$ is explanatory variable
+- $y_i$ is response variable
+:::
+
+
+
+::: out-t
+::: font80
+A scatterplot is the plot of $(x_i, y_i)$
+
+- form? linear or non-linear
+- direction? positive, negative, no association
+- strength? amount of variation in $y$ around a "trend"
+
+:::
+:::
+
+## Example: Associations in Car dataset {.font80}
+
+
+<center>
+<img src="images/linearassociation.png" width="80%" height="80%"><br>
+<a>Various Associations of quantitative variables in Cars data</a>
+</center>
+
+
+
+
+## Direction of relationship {.font80}
+
+<br>
+
+::: bq
+::: font80
+[positive association:]{.bold-text} as $x$ increases, $y$ increases 
+
+- age of the husband and age of the wife
+- height and diameter of a tree
+  
+ 
+   
+[negative association:]{.bold-text} as $x$ increases, $y$ decreases
+
+- number of cigarettes smoked per day and lung capacity
+- depth of tire tread and number of miles driven on the tires
+
+:::
+:::
+
+## Understanding Correlation Coefficients $r$ and $\rho$ {.font60}
+
+::: {.cle9}
+  - Correlation coefficients, denoted $r$ (sample) or $\rho$ (population), measure the linear relationship between two variables.
+  - Strength varies as $r \approx \pm 1$ (strong), $r \approx 0$ (weak).
+
+- **Direction**:
+  - Positive ($r > 0$) or negative ($r < 0$) linear association.
+
+- **Calculation and Interpretation**:
+  - $$ r = \frac{\sum_{i=1}^n \left(\frac{x_i - \bar{x}}{s_x}\right) \left(\frac{y_i - \bar{y}}{s_y}\right)}{n-1} $$
+    - Considers deviations from the mean, normalized by standard deviations.
+  - Interpretation: $r = 1$ (perfect positive), $r = -1$ (perfect negative), $r = 0$ (no relationship).
+
+- **Visualization & Outliers**:
+  - Scatterplots reveal the clustering around the regression line; outliers can heavily influence $r$.
+
+```{r, eval=FALSE}
+# Example R code to calculate correlation
+cor(data$x, data$y)  # Note: Order of x and y doesn't affect the outcome.
+```
+
+:::
+
+## Car Correlations {.font80}
+
+<center>
+<img src="images/carcorrelations.png" width="80%" height="75%"><br>
+<a>Correlations of various variables in Cars data</a>
+</center>
+
+
+
+## Deterministic vs. Probabilistic Models {.font80}
+
+<img src="images/Day35-1.png" style="display: block; margin: auto;" width="80%"  loading="lazy" decoding="async">
+
+
+
+## Deterministic vs. Probabilistic Models {.font80}
+
+::: {.cle7}
+- **Deterministic Model**: Assumes a perfect, predictable relationship without error, e.g., $y = 1.5x$.
+- **Probabilistic Model**: Incorporates randomness, modeling $y$ as:
+  $$ y = 1.5x + \text{random error} $$
+  - **General Form**:
+    $$ y = \text{Deterministic component} + \text{Random error} $$
+  - Assumes mean of random error is 0, aligning $E(y)$ with the deterministic component.
+:::
+
+## Linear Regression Model {.font60}
+
+::: {.cle6}
+- **Goal**: To find a straight line that best fits the data in a scatterplot.
+- **Regression Equation**:
+  $$ \hat{y} = b_0 + b_1x $$
+  - $x$: explanatory variable
+  - $\hat{y}$: predicted response variable
+- **Parameters**:
+  - **Slope** ($b_1$): Increase in predicted $y$ for every unit increase in $x$.
+    $$ b_1 = \frac{\text{change }\hat{y}}{\text{change } x} $$
+  - **Intercept** ($b_0$): Predicted $y$ value when $x = 0$.
+    $$ \hat{y} = b_0 + b_1(0) = b_0 $$
+
+:::
+
+
+##
+
+<img src="images/Day35-2.png" style="display: block; margin: auto;" width="80%"  loading="lazy" decoding="async">
+
+
+## Simple Linear Regression: Fitting and Evaluation {.font80}
+
+::: {.cle12}
+- **Steps**:
+  1. Hypothesize the deterministic component (e.g., $E(y) = \beta_0 + \beta_1x$).
+  2. Estimate model parameters using least squares.
+  3. Assess the fit and use the model for prediction.
+- **Residuals**:
+  - Geometrically, a residual is the vertical distance from each point to the regression line, helping measure model fit.
+:::
+
+## Residuals
+
+
+<center>
+<img src="images/residuals.png"><br>
+</center>
+
+
+
+## Implementing Regression Analysis {.font80}
+
+::: {.cle6}
+- **Example**: Understanding the relationship between temperature and cricket chirp rate.
+  - Model cricket chirp rate as a function of temperature.
+- **Methodology**:
+  - Utilize observed data to fit a linear model that predicts cricket chirp rate based on temperature.
+  - Calculate deviations to assess model fit and refine parameters as needed.
+:::
+
+## Data Overview {.font50}
+
+
+| Observation | Temperature (°F) | Chirp Rate (chirps/15 sec) |
+|-------------|------------------|---------------------------|
+| 1           | 89               | 20                        |
+| 2           | 72               | 16                        |
+| 3           | 93               | 20                        |
+| 4           | 84               | 18                        |
+| 5           | 81               | 17                        |
+| 6           | 75               | 16                        |
+| 7           | 70               | 15                        |
+| 8           | 82               | 17                        |
+| 9           | 69               | 15                        |
+| 10          | 83               | 16                        |
+| 11          | 80               | 15                        |
+| 12          | 83               | 17                        |
+| 13          | 81               | 16                        |
+| 14          | 84               | 17                        |
+| 15          | 76               | 14                        |
+
+
+##
+
+
+```{=html}
+<iframe width="1280" height="1300" src="https://shinylive.io/r/app/#h=0&code=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-LvLwfg6R0DEUsHpCwZLzwOWysqyFIgwDRW2UAA"></iframe>
+```

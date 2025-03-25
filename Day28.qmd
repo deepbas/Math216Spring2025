@@ -1,0 +1,237 @@
+---
+title: "Day 28"
+title-slide-attributes:
+  data-background-image: images/lake.jpg
+  data-background-size: contain
+  data-background-opacity: "0.5"
+subtitle: "Math 216: Statistical Thinking"
+author: "Bastola"
+format:
+  revealjs:
+    html-math-method: mathjax
+    mathjax-url: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/MathJax.js" 
+    theme: [default, scss/main.scss]
+    slide-number: true
+    preview-links: auto
+    history: true
+    chalkboard: 
+      src: drawings.json
+    transition: slide
+    background-transition: fade    
+    touch: false
+    controls: true
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+options(htmltools.preserve.raw = FALSE)
+options(ggrepel.max.overlaps = Inf)
+
+
+# load necessary packages
+library(tidyverse)
+library(countdown)
+library(mosaic)
+library(ggthemes)
+library(forcats)
+library(patchwork)
+library(Lock5Data)
+library(plotly)
+
+# Set ggplot theme
+theme_set(theme_tufte(base_size = 10))
+yt <- 0
+#<iframe width="1380" height="900" src="https://www.geogebra.org/m/mehn8u8s"></iframe>
+#::: {.callout-note title="Definition"}
+#<img src="images/Day23-1.png" style="display: block; margin: auto;" width="80%"  loading="lazy" decoding="async">
+```
+
+
+## Comparing Two Population Means: Paired Difference Example {.font80}
+
+::: cle1
+
+- **Objective**: Assess the effectiveness of two training programs in skill enhancement.
+- **Design Rationale**: Participants are paired based on initial assessments to ensure comparable skill levels, enhancing the validity of the comparison.
+
+:::
+
+
+
+## Conceptual Foundation for Paired Samples {.font80}
+
+::: cle2
+
+- Paired designs minimize variability by controlling for individual differences.
+- This approach is crucial in settings where participants have inherent variability in initial abilities.
+
+:::
+
+
+
+## Hypotheses Framework {.font80}
+
+::: cle3
+
+- **Null Hypothesis** $(H_0)$: $\mu_{\text{A}} = \mu_{\text{B}}$ (no difference in means between two methods).
+- **Alternative Hypothesis** $(H_a)$: $\mu_{\text{A}} > \mu_{\text{B}}$ (Method A outperforms Method B).
+
+:::
+
+
+
+## Data Overview {.font70}
+
+::: {.columns}
+::: {.column width="50%"}
+| Pair | Method A | Method B |
+|------|----------|----------|
+| 1    | 85       | 83       |
+| 2    | 88       | 89       |
+| 3    | 90       | 87       |
+| 4    | 92       | 84       |
+| 5    | 91       | 92       |
+| 6    | 89       | 90       |
+| 7    | 93       | 85       |
+| 8    | 95       | 91       |
+| 9    | 96       | 98       |
+| 10   | 97       | 94       |
+
+:::
+::: {.column width="50%"}
+| Pair | Method A | Method B |
+|------|----------|----------|
+| 11   | 98       | 100      |
+| 12   | 99       | 101      |
+| 13   | 100      | 99       |
+| 14   | 101      | 111      |
+| 15   | 102      | 111      |
+| 16   | 103      | 106      |
+| 17   | 104      | 109      |
+| 18   | 105      | 103      |
+| 19   | 106      | 111      |
+| 20   | 107      | 114      |
+:::
+:::
+
+
+
+## Transition to Paired Analysis {.font80}
+
+::: cle5
+
+- Transition from single-sample to paired-sample testing involves considering the dependency between paired observations.
+- Independence within pairs is crucial; the pairing itself should not influence the measured outcomes.
+
+:::
+
+
+## Statistical Techniques and Conditions {.font80}
+
+::: cle6
+
+### Known vs. Unknown Standard Deviations
+
+- Use $z$-tests when standard deviations are known and sample sizes are large.
+- Employ $t$-tests when standard deviations are unknown and sample sizes are small.
+
+### Normality and Non-Normal Data
+
+- For normally distributed differences, use $t$-tests.
+- For non-normal data, consider non-parametric tests like the Sign Test or Wilcoxon Signed-Rank Test.
+
+:::
+
+
+## Selecting Appropriate Statistical Tests {.font80}
+
+::: cle7
+
+- **For Normal Distributions**: Apply the paired $t$-test.
+- **For Non-Normal Distributions**: Use non-parametric methods that do not assume a normal distribution.
+
+:::
+
+
+
+## Results Interpretation and Confidence Intervals {.font80}
+
+::: cle8
+
+- Evaluate the p-value against the significance level to decide on rejecting the null hypothesis.
+- Construct confidence intervals to estimate the range of true effect sizes, enhancing understanding of practical significance.
+
+:::
+
+
+## Diagnostic Plots and R Code {.font80}
+
+::: panel-tabset
+
+### Diagnostic Plots
+
+```{r, echo=FALSE}
+library(gridExtra)
+library(ggplot2)
+
+# Define the scores for Method A and Method B
+methodA <- c(85, 88, 90, 92, 91, 89, 93, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107)
+methodB <- c(83, 89, 87, 84, 92, 90, 85, 91, 98, 94, 100, 101, 99, 111, 111, 106, 109, 103, 111, 114)
+
+# Calculate differences
+differences <- methodA - methodB
+
+# Generate a QQ plot for normality check
+qq_norm <- ggplot(data = as.data.frame(differences), aes(sample = differences)) +
+  stat_qq() + stat_qq_line() +
+  ggtitle("QQ Plot of Differences")
+
+# Generate a histogram for normality check
+histogram <- ggplot(data = as.data.frame(differences), aes(x = differences)) +
+  geom_histogram(bins = 10, color = "maroon", fill = "gold") +
+  ggtitle("Histogram of Differences")
+
+grid.arrange(qq_norm, histogram, ncol = 2)
+```
+
+### R Code
+
+```{r, eval=FALSE}
+# Perform the Anderson-Darling test for normality
+library(nortest)
+ad.test(differences)
+
+# Perform the paired t-test
+t.test(methodA, methodB, paired = TRUE, alternative = "greater")
+
+# Calculate standard deviation of differences
+sd(differences) # s_d
+
+# Calculate critical value for t-distribution
+qt(0.975, df = 20 - 1) # critical value
+```
+
+:::
+
+
+
+## {.font50}
+
+> Example 1: An experiment is conducted to compare the starting salaries of male and female college graduates who find jobs. Pairs are formed by choosing a male and a female with the same major and similar grade point averages (GPAs). Suppose a random sample of 10 pairs is formed in this manner and the starting annual salary of each person is recorded. The results are shown in following table. Use $\alpha=0.05$, perform hypothesis test to see if the data provide sufficient evidence to support "the male average starting salary is greater than female average starting salary".
+
+| Table 9.5 | Data on Annual Salaries for Matched Pairs of College <br> Graduates |  |  |
+| :---: | :---: | :---: | :---: |
+| Pair | Male | Female | Difference Male - Female |
+| 1 | $\$ 29,300$ | $\$ 28,800$ | $\$ 500$ |
+| 2 | 41,500 | 41,600 | -100 |
+| 3 | 40,400 | 39,800 | 600 |
+| 4 | 38,500 | 38,500 | 0 |
+| 5 | 43,500 | 42,600 | 900 |
+| 6 | 37,800 | 38,000 | -200 |
+| 7 | 69,500 | 69,200 | 300 |
+| 8 | 41,200 | 40,100 | 1,100 |
+| 9 | 38,400 | 38,200 | 200 |
+| 10 | 59,200 | 58,500 | 700 |
+
+##
+

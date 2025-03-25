@@ -1,0 +1,165 @@
+---
+title: "Day 31"
+title-slide-attributes:
+  data-background-image: images/lake.jpg
+  data-background-size: contain
+  data-background-opacity: "0.5"
+subtitle: "Math 216: Statistical Thinking"
+author: "Bastola"
+format:
+  revealjs:
+    html-math-method: mathjax
+    mathjax-url: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/MathJax.js" 
+    theme: [default, scss/main.scss]
+    slide-number: true
+    preview-links: auto
+    history: true
+    chalkboard: 
+      src: drawings.json
+    transition: slide
+    background-transition: fade    
+    touch: false
+    controls: true
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+options(htmltools.preserve.raw = FALSE)
+options(ggrepel.max.overlaps = Inf)
+
+
+# load necessary packages
+library(tidyverse)
+library(countdown)
+library(mosaic)
+library(ggthemes)
+library(forcats)
+library(patchwork)
+library(Lock5Data)
+library(plotly)
+
+# Set ggplot theme
+theme_set(theme_tufte(base_size = 10))
+yt <- 0
+#<iframe width="1380" height="900" src="https://www.geogebra.org/m/mehn8u8s"></iframe>
+#::: {.callout-note title="Definition"}
+#<img src="images/Day23-1.png" style="display: block; margin: auto;" width="80%"  loading="lazy" decoding="async">
+```
+
+
+## Review: Mean vs. Proportion {.font80}
+
+::: cle6
+- Previously studied: Confidence intervals (C.I.) and hypothesis tests for population **means**.
+- Non-parametric tests were focused on **population medians**.
+:::
+
+## Transition to Proportions {.font80}
+
+::: cle1
+- Now focusing on population **proportion** (e.g., "What percentage of voters favor candidate A?")
+- Applies similar principles as the Central Limit Theorem for means, using properties of the sampling distribution of $\hat{p}$.
+:::
+
+## Properties of $\hat{p}$ {.font80}
+
+::: cle3
+1. **Mean**: The expected value (mean) of $\hat{p}$ is equal to the true population proportion $p$.
+   $$
+   E(\hat{p}) = p
+   $$
+2. **Standard Deviation**: For large samples, approximated by
+   $$
+   \sigma_{\hat{p}} \approx \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}
+   $$
+3. **Distribution**: Becomes approximately normal with large sample sizes.
+:::
+
+## Large-Sample Hypothesis Testing {.font80}
+
+::: cle9
+- **Test Statistic**: Normal (z) statistic for $H_0: p = p_0$:
+  $$
+  z_c = \frac{(\hat{p} - p_0)}{\sqrt{\frac{p_0(1-p_0)}{n}}}
+  $$
+- **Decision Rule**: Reject $H_0$ if p-value $< \alpha$, or if $z_c$ falls into the rejection region.
+:::
+
+## Hypothesis Test Types {.font80}
+
+::: cle15
+- **One-Tailed Test**:
+  - $H_a: p < p_0$ or $H_a: p > p_0$
+  - Rejection region: $z_c < -z_{\alpha}$ or $z_c > z_{\alpha}$
+
+- **Two-Tailed Test**:
+  - $H_a: p \neq p_0$
+  - Rejection region: $z_c < -z_{\alpha/2}$ or $z_c > z_{\alpha/2}$
+:::
+
+
+##
+
+<img src="images/Day31-1.png" style="display: block; margin: auto;" width="80%"  loading="lazy" decoding="async">
+
+
+## Conditions for Testing {.font80}
+
+::: cle14
+1. **Random sample** from the population.
+2. Large enough sample size, typically $n\hat{p} \geq 15$ and $n\hat{q} \geq 15$.
+:::
+
+<img src="images/Day31-2.png" style="display: block; margin: auto;" width="80%"  loading="lazy" decoding="async">
+
+
+## Confidence Interval for $\hat{p}$ {.font80}
+
+::: cle9
+- Large-sample confidence interval:
+  $$
+  \hat{p} \pm z_{\alpha/2} \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}
+  $$
+- Valid when $n$ is large for normal approximation.
+:::
+
+## Sample Size Determination {.font80}
+
+::: cle10
+- To specify sampling error (SE) and confidence level:
+  $$
+  n = \frac{(z_{\alpha/2})^2 \hat{p}(1-\hat{p})}{SE^2}
+  $$
+- Conservative estimate uses $p \approx 0.5$ when $\hat{p}$ is unknown.
+:::
+
+
+##
+
+<img src="images/Day31-3.png" style="display: block; margin: auto;" width="80%"  loading="lazy" decoding="async">
+
+
+
+## {.font60}
+
+> Example 1: Many public polling agencies conduct surveys to determine the current consumer sentiment concerning the state of the economy. For example, the Bureau of Economic and Business Research (BEBR) at the University of Florida conducts quarterly surveys to gauge consumer sentiment in the Sunshine State. Suppose that BEBR randomly samples 484 consumers and finds that only 157 are optimistic about the state of the economy. Use a $90 \%$ confidence interval to estimate the proportion of all consumers in Florida who are optimistic about the state of the economy. Based on the confidence interval, can BEBR infer that a minority of Florida consumers is optimistic about the economy?
+
+##
+
+
+
+
+## {.font60}
+
+> Example 2: The reputations (and hence sales) of many businesses can be severely damaged by shipments of manufactured items that contain a large percentage of defectives. For example, a manufacturer of alkaline batteries may want to be reasonably certain that less than $5 \%$ of its batteries are defective. Suppose 300 batteries are randomly selected from a very large shipment; each is tested and 10 defective batteries are found. Does this outcome provide sufficient evidence for the manufacturer to conclude that the fraction.
+
+
+
+##
+
+
+## {.font50}
+
+> Example 3: A cellular telephone manufacturer that entered the post-regulation market quickly has an initial problem with excessive customer complaints and consequent returns of cell phones for repair or replacement. The manufacturer wants to estimate the magnitude of the problem in order to design a quality control program. How many cellular telephones should be sampled and checked in order to estimate the fraction defective, p, to within .01 with $90 \%$ confidence?
+
+

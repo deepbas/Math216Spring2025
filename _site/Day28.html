@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-99.9.9">
 
   <meta name="author" content="Bastola">
-  <title>Math 216: Statistical Thinking – Day 24</title>
+  <title>Math 216: Statistical Thinking – Day 28</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -28,6 +28,71 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-70353739610410f1fff3a0db99dd5850.css">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -129,7 +194,7 @@
     <div class="slides">
 
 <section id="title-slide" data-background-image="images/lake.jpg" data-background-opacity="0.5" data-background-size="contain" class="quarto-title-block center">
-  <h1 class="title">Day 24</h1>
+  <h1 class="title">Day 28</h1>
   <p class="subtitle">Math 216: Statistical Thinking</p>
 
 <div class="quarto-title-authors">
@@ -141,122 +206,330 @@ Bastola
 </div>
 
 </section>
-<section id="steps-for-hypothesis-testing-part-i" class="slide level2 font60">
-<h2>Steps for Hypothesis Testing Part I:</h2>
-<div class="cle6">
-<ol type="1">
-<li><strong>State the Hypotheses</strong>
+<section id="comparing-two-population-means-paired-difference-example" class="slide level2 font80">
+<h2>Comparing Two Population Means: Paired Difference Example</h2>
+<div class="cle1">
 <ul>
-<li>Null Hypothesis (<span class="math inline">\(H_0\)</span>): No effect or no difference, posits that <span class="math inline">\(\mu = \mu_0\)</span>.</li>
-<li>Alternative Hypothesis (<span class="math inline">\(H_A\)</span>): Asserts a specific claim about the population mean <span class="math inline">\(\mu\)</span> that is different from <span class="math inline">\(\mu_0\)</span> (e.g., <span class="math inline">\(\mu &gt; \mu_0\)</span>, <span class="math inline">\(\mu &lt; \mu_0\)</span>, or <span class="math inline">\(\mu \neq \mu_0\)</span>).</li>
-</ul></li>
-<li><strong>Set the Significance Level (<span class="math inline">\(\alpha\)</span>)</strong>
-<ul>
-<li>The probability of making a Type I error (rejecting a true null hypothesis). Common values are 0.05, 0.01, or 0.10.</li>
-</ul></li>
-<li><strong>Assumptions</strong>
-<ul>
-<li>The sample is a simple random sample.</li>
-<li>The sample size is large (usually <span class="math inline">\(n \geq 30\)</span>), which justifies the use of the Central Limit Theorem.</li>
-</ul></li>
-<li><strong>Collect Data</strong>
-<ul>
-<li>Obtain a random sample and compute the sample mean (<span class="math inline">\(\bar{X}\)</span>) and standard deviation (<span class="math inline">\(S\)</span>).</li>
-</ul></li>
-</ol>
+<li><strong>Objective</strong>: Assess the effectiveness of two training programs in skill enhancement.</li>
+<li><strong>Design Rationale</strong>: Participants are paired based on initial assessments to ensure comparable skill levels, enhancing the validity of the comparison.</li>
+</ul>
 </div>
 </section>
-<section id="steps-for-hypothesis-testing-part-ii" class="slide level2 font40">
-<h2>Steps for Hypothesis Testing Part II:</h2>
+<section id="conceptual-foundation-for-paired-samples" class="slide level2 font80">
+<h2>Conceptual Foundation for Paired Samples</h2>
+<div class="cle2">
+<ul>
+<li>Paired designs minimize variability by controlling for individual differences.</li>
+<li>This approach is crucial in settings where participants have inherent variability in initial abilities.</li>
+</ul>
+</div>
+</section>
+<section id="hypotheses-framework" class="slide level2 font80">
+<h2>Hypotheses Framework</h2>
+<div class="cle3">
+<ul>
+<li><strong>Null Hypothesis</strong> <span class="math inline">\((H_0)\)</span>: <span class="math inline">\(\mu_{\text{A}} = \mu_{\text{B}}\)</span> (no difference in means between two methods).</li>
+<li><strong>Alternative Hypothesis</strong> <span class="math inline">\((H_a)\)</span>: <span class="math inline">\(\mu_{\text{A}} &gt; \mu_{\text{B}}\)</span> (Method A outperforms Method B).</li>
+</ul>
+</div>
+</section>
+<section id="data-overview" class="slide level2 font70">
+<h2>Data Overview</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Pair</th>
+<th>Method A</th>
+<th>Method B</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>85</td>
+<td>83</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>88</td>
+<td>89</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>90</td>
+<td>87</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>92</td>
+<td>84</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>91</td>
+<td>92</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>89</td>
+<td>90</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>93</td>
+<td>85</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>95</td>
+<td>91</td>
+</tr>
+<tr class="odd">
+<td>9</td>
+<td>96</td>
+<td>98</td>
+</tr>
+<tr class="even">
+<td>10</td>
+<td>97</td>
+<td>94</td>
+</tr>
+</tbody>
+</table>
+</div><div class="column" style="width:50%;">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Pair</th>
+<th>Method A</th>
+<th>Method B</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>11</td>
+<td>98</td>
+<td>100</td>
+</tr>
+<tr class="even">
+<td>12</td>
+<td>99</td>
+<td>101</td>
+</tr>
+<tr class="odd">
+<td>13</td>
+<td>100</td>
+<td>99</td>
+</tr>
+<tr class="even">
+<td>14</td>
+<td>101</td>
+<td>111</td>
+</tr>
+<tr class="odd">
+<td>15</td>
+<td>102</td>
+<td>111</td>
+</tr>
+<tr class="even">
+<td>16</td>
+<td>103</td>
+<td>106</td>
+</tr>
+<tr class="odd">
+<td>17</td>
+<td>104</td>
+<td>109</td>
+</tr>
+<tr class="even">
+<td>18</td>
+<td>105</td>
+<td>103</td>
+</tr>
+<tr class="odd">
+<td>19</td>
+<td>106</td>
+<td>111</td>
+</tr>
+<tr class="even">
+<td>20</td>
+<td>107</td>
+<td>114</td>
+</tr>
+</tbody>
+</table>
+</div></div>
+</section>
+<section id="transition-to-paired-analysis" class="slide level2 font80">
+<h2>Transition to Paired Analysis</h2>
+<div class="cle5">
+<ul>
+<li>Transition from single-sample to paired-sample testing involves considering the dependency between paired observations.</li>
+<li>Independence within pairs is crucial; the pairing itself should not influence the measured outcomes.</li>
+</ul>
+</div>
+</section>
+<section id="statistical-techniques-and-conditions" class="slide level2 font80">
+<h2>Statistical Techniques and Conditions</h2>
+<div class="cle6">
+<h3 id="known-vs.-unknown-standard-deviations">Known vs.&nbsp;Unknown Standard Deviations</h3>
+<ul>
+<li>Use <span class="math inline">\(z\)</span>-tests when standard deviations are known and sample sizes are large.</li>
+<li>Employ <span class="math inline">\(t\)</span>-tests when standard deviations are unknown and sample sizes are small.</li>
+</ul>
+<h3 id="normality-and-non-normal-data">Normality and Non-Normal Data</h3>
+<ul>
+<li>For normally distributed differences, use <span class="math inline">\(t\)</span>-tests.</li>
+<li>For non-normal data, consider non-parametric tests like the Sign Test or Wilcoxon Signed-Rank Test.</li>
+</ul>
+</div>
+</section>
+<section id="selecting-appropriate-statistical-tests" class="slide level2 font80">
+<h2>Selecting Appropriate Statistical Tests</h2>
 <div class="cle7">
-<ol start="5" type="1">
-<li><p><strong>Calculate the Test Statistic (<span class="math inline">\(z\)</span>)</strong></p>
 <ul>
-<li>If the population standard deviation (<span class="math inline">\(\sigma\)</span>) is known: <span class="math display">\[ z = \frac{\bar{X} - \mu_0}{\sigma/\sqrt{n}} \]</span></li>
-<li>If <span class="math inline">\(\sigma\)</span> is unknown and <span class="math inline">\(n \geq 30\)</span>, use <span class="math inline">\(s\)</span> (sample standard deviation): <span class="math display">\[ z = \frac{\bar{X} - \mu_0}{s/\sqrt{n}} \]</span></li>
-</ul></li>
-<li><p><strong>Decision Rule</strong></p>
-<ul>
-<li>For a one-tailed test: Reject <span class="math inline">\(H_0\)</span> if <span class="math inline">\(z\)</span> falls in the rejection region (either <span class="math inline">\(z &lt; -z_{\alpha}\)</span> for left-tailed or <span class="math inline">\(z &gt; z_{\alpha}\)</span> for right-tailed).</li>
-<li>For a two-tailed test: Reject <span class="math inline">\(H_0\)</span> if <span class="math inline">\(|z| &gt; z_{\alpha/2}\)</span>.</li>
-</ul></li>
-<li><p><strong>Compute the P-Value</strong></p>
-<ul>
-<li>The probability of observing a test statistic as extreme as, or more extreme than, the statistic calculated from the sample data, assuming that <span class="math inline">\(H_0\)</span> is true.</li>
-</ul></li>
-<li><p><strong>Conclusion</strong></p>
-<ul>
-<li>Reject <span class="math inline">\(H_0\)</span> if the p-value is less than <span class="math inline">\(\alpha\)</span>; otherwise, do not reject <span class="math inline">\(H_0\)</span>. Report whether the evidence supports <span class="math inline">\(H_a\)</span> based on the statistical significance.</li>
-</ul></li>
-</ol>
-</div>
-</section>
-<section id="one-sided-greater-than-example" class="slide level2 font60">
-<h2>One-Sided (Greater Than) Example</h2>
-<div class="cle14">
-<ul>
-<li><strong>Scenario</strong>: A study group claims that their session increases the average test score above 75.</li>
-<li><strong>Sample Data</strong>: <span class="math inline">\(\bar{x} = 78\)</span>, <span class="math inline">\(s = 5\)</span>, <span class="math inline">\(n = 30\)</span></li>
-<li><strong>Test</strong>: <span class="math inline">\(H_0: \mu \leq 75\)</span> vs.&nbsp;<span class="math inline">\(H_a: \mu &gt; 75\)</span></li>
-<li><strong>Calculation</strong>: <span class="math inline">\(z = \frac{78 - 75}{5/\sqrt{30}} \approx 3.29\)</span></li>
-<li><strong>Conclusion</strong>: Reject <span class="math inline">\(H_0\)</span> if <span class="math inline">\(z &gt; 1.645\)</span> (at <span class="math inline">\(\alpha = 0.05\)</span>).</li>
+<li><strong>For Normal Distributions</strong>: Apply the paired <span class="math inline">\(t\)</span>-test.</li>
+<li><strong>For Non-Normal Distributions</strong>: Use non-parametric methods that do not assume a normal distribution.</li>
 </ul>
 </div>
 </section>
-<section id="one-sided-less-than-example" class="slide level2 font60">
-<h2>One-Sided (Less Than) Example</h2>
-<div class="cle6">
+<section id="results-interpretation-and-confidence-intervals" class="slide level2 font80">
+<h2>Results Interpretation and Confidence Intervals</h2>
+<div class="cle8">
 <ul>
-<li><strong>Scenario</strong>: A nutritionist claims that a new diet reduces the average calorie intake below 2200 calories/day.</li>
-<li><strong>Sample Data</strong>: <span class="math inline">\(\bar{x} = 2150\)</span>, <span class="math inline">\(s = 120\)</span>, <span class="math inline">\(n = 35\)</span></li>
-<li><strong>Test</strong>: <span class="math inline">\(H_0: \mu \geq 2200\)</span> vs.&nbsp;<span class="math inline">\(H_a: \mu &lt; 2200\)</span></li>
-<li><strong>Calculation</strong>: <span class="math inline">\(z = \frac{2150 - 2200}{120/\sqrt{35}} \approx -2.47\)</span></li>
-<li><strong>Conclusion</strong>: Reject <span class="math inline">\(H_0\)</span> if <span class="math inline">\(z &lt; -1.645\)</span> (at <span class="math inline">\(\alpha = 0.05\)</span>).</li>
+<li>Evaluate the p-value against the significance level to decide on rejecting the null hypothesis.</li>
+<li>Construct confidence intervals to estimate the range of true effect sizes, enhancing understanding of practical significance.</li>
 </ul>
 </div>
 </section>
-<section id="two-sided-example" class="slide level2 font60">
-<h2>Two sided example</h2>
-<div class="cle15">
-<ul>
-<li><strong>Scenario</strong>: An analyst claims that a new billing system changes the average monthly bill from $100.</li>
-<li><strong>Sample Data</strong>: <span class="math inline">\(\bar{x} = 105\)</span>, <span class="math inline">\(s = 10\)</span>, <span class="math inline">\(n = 40\)</span></li>
-<li><strong>Test</strong>: <span class="math inline">\(H_0: \mu = 100\)</span> vs.&nbsp;<span class="math inline">\(H_a: \mu \neq 100\)</span></li>
-<li><strong>Calculation</strong>: <span class="math inline">\(z = \frac{105 - 100}{10/\sqrt{40}} \approx 3.16\)</span></li>
-<li><strong>Conclusion</strong>: Reject <span class="math inline">\(H_0\)</span> if <span class="math inline">\(|z| &gt; 1.96\)</span> (at <span class="math inline">\(\alpha = 0.05\)</span>).</li>
-</ul>
+<section id="diagnostic-plots-and-r-code" class="slide level2 font80">
+<h2>Diagnostic Plots and R Code</h2>
+<div class="panel-tabset">
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">Diagnostic Plots</a></li><li><a href="#tabset-1-2">R Code</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="Day28_files/figure-revealjs/unnamed-chunk-1-1.png" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-1-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="co"># Perform the Anderson-Darling test for normality</span></span>
+<span id="cb1-2"><a></a><span class="fu">library</span>(nortest)</span>
+<span id="cb1-3"><a></a><span class="fu">ad.test</span>(differences)</span>
+<span id="cb1-4"><a></a></span>
+<span id="cb1-5"><a></a><span class="co"># Perform the paired t-test</span></span>
+<span id="cb1-6"><a></a><span class="fu">t.test</span>(methodA, methodB, <span class="at">paired =</span> <span class="cn">TRUE</span>, <span class="at">alternative =</span> <span class="st">"greater"</span>)</span>
+<span id="cb1-7"><a></a></span>
+<span id="cb1-8"><a></a><span class="co"># Calculate standard deviation of differences</span></span>
+<span id="cb1-9"><a></a><span class="fu">sd</span>(differences) <span class="co"># s_d</span></span>
+<span id="cb1-10"><a></a></span>
+<span id="cb1-11"><a></a><span class="co"># Calculate critical value for t-distribution</span></span>
+<span id="cb1-12"><a></a><span class="fu">qt</span>(<span class="fl">0.975</span>, <span class="at">df =</span> <span class="dv">20</span> <span class="sc">-</span> <span class="dv">1</span>) <span class="co"># critical value</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
 </div>
 </section>
-<section id="two-sided-example-contd." class="slide level2 font60">
-<h2>Two Sided example contd.</h2>
-<ol type="a">
-<li>Based on the test statistic <span class="math inline">\(z = 2.53\)</span>, calculate the p-value and determine whether to reject the null hypothesis at a significance level of <span class="math inline">\(\alpha = 0.05\)</span>. Does the p-value suggest strong evidence against the null hypothesis?</li>
-</ol>
-<div class="custom-space">
-
-</div>
-<ol start="2" type="a">
-<li>Construct the 95% confidence interval for the population mean using the sample data (<span class="math inline">\(\bar{x} = 105\)</span>, <span class="math inline">\(s = 10\)</span>, <span class="math inline">\(n = 40\)</span>). Based on the confidence interval, would you reject the null hypothesis that the population mean is <span class="math inline">\(100\)</span>?</li>
-</ol>
-</section>
-<section id="section" class="slide level2 font60">
+<section id="section" class="slide level2 font50">
 <h2></h2>
 <blockquote>
-<p>Example 4: The sample of 100 drug-injected rats yielded the results (in seconds) shown in the following Table. At <span class="math inline">\(\alpha=.01\)</span>, use these data to conduct the test of hypothesis:</p>
+<p>Example 1: An experiment is conducted to compare the starting salaries of male and female college graduates who find jobs. Pairs are formed by choosing a male and a female with the same major and similar grade point averages (GPAs). Suppose a random sample of 10 pairs is formed in this manner and the starting annual salary of each person is recorded. The results are shown in following table. Use <span class="math inline">\(\alpha=0.05\)</span>, perform hypothesis test to see if the data provide sufficient evidence to support “the male average starting salary is greater than female average starting salary”.</p>
 </blockquote>
-<p><span class="math display">\[\begin{align*}
-H_0: \mu=1.2 \\
-H_a: \mu \neq 1.2
-\end{align*}\]</span></p>
-
-<img src="images/Day24-1.png" style="display: block; margin: auto;" width="60%" loading="lazy" decoding="async" class="r-stretch"><div class="custom-space">
-
-</div>
+<table class="caption-top">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Table 9.5</th>
+<th style="text-align: center;">Data on Annual Salaries for Matched Pairs of College <br> Graduates</th>
+<th style="text-align: center;"></th>
+<th style="text-align: center;"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Pair</td>
+<td style="text-align: center;">Male</td>
+<td style="text-align: center;">Female</td>
+<td style="text-align: center;">Difference Male - Female</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><span class="math inline">\(\$ 29,300\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\$ 28,800\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\$ 500\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">41,500</td>
+<td style="text-align: center;">41,600</td>
+<td style="text-align: center;">-100</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">40,400</td>
+<td style="text-align: center;">39,800</td>
+<td style="text-align: center;">600</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">38,500</td>
+<td style="text-align: center;">38,500</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">43,500</td>
+<td style="text-align: center;">42,600</td>
+<td style="text-align: center;">900</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">37,800</td>
+<td style="text-align: center;">38,000</td>
+<td style="text-align: center;">-200</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">69,500</td>
+<td style="text-align: center;">69,200</td>
+<td style="text-align: center;">300</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">41,200</td>
+<td style="text-align: center;">40,100</td>
+<td style="text-align: center;">1,100</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">38,400</td>
+<td style="text-align: center;">38,200</td>
+<td style="text-align: center;">200</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">59,200</td>
+<td style="text-align: center;">58,500</td>
+<td style="text-align: center;">700</td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="section-1" class="slide level2 font60">
-<h2></h2>
-</section>
-<section id="section-2" class="slide level2">
+<section id="section-1" class="slide level2">
 <h2></h2>
 
 

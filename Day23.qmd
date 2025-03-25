@@ -97,37 +97,4 @@ yt <- 0
 
 
 
-## Example 1: Testing Mean Breaking Strength {.font60}
-
-- **Null Hypothesis ($H_0$)**: $\mu \leq 2400$ (lbs/ft)
-- **Alternative Hypothesis ($H_a$)**: $\mu > 2400$ (lbs/ft)
-- Suppose a sample of 50 sections of sewer pipe shows a mean breaking strength that suggests $\mu > 2400$. 
-  - Mean strength ($\bar{x}$): 2,460 pounds per linear foot
-  - Standard deviation ($s$): 200 pounds per linear foot
-
-
-Calculate the $p$-value for this test using the sample mean and standard deviation obtained from these 50 measurements. 
-
-##
-
-
-## {.font60}
-
-
-> Example 2: Consider the one-tailed test of hypothesis, $H_0: \mu=100$ versus $H_a: \mu>100$. 
-
-a. Suppose the test statistic is $z=1.44$. Find the $p$-value of the test and the rejection region for the test when $\alpha=.05$. Then show that the conclusion using the rejection region approach will be identical to the conclusion based on the p-value.
-
-::: custom-space
-:::
-
-
-
-## {.font60}
-
-b. Suppose the test statistic is $z=3.01$. Find the $p$-value of the test and the rejection region for the test when $\alpha=.05$. Then show that the conclusion using the rejection region approach will be identical to the conclusion based on the p-value.
-
-
-##
-
 

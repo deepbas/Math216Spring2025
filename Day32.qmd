@@ -1,0 +1,160 @@
+---
+title: "Day 32"
+title-slide-attributes:
+  data-background-image: images/lake.jpg
+  data-background-size: contain
+  data-background-opacity: "0.5"
+subtitle: "Math 216: Statistical Thinking"
+author: "Bastola"
+format:
+  revealjs:
+    html-math-method: mathjax
+    mathjax-url: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/MathJax.js" 
+    theme: [default, scss/main.scss]
+    slide-number: true
+    preview-links: auto
+    history: true
+    chalkboard: 
+      src: drawings.json
+    transition: slide
+    background-transition: fade    
+    touch: false
+    controls: true
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+options(htmltools.preserve.raw = FALSE)
+options(ggrepel.max.overlaps = Inf)
+
+
+# load necessary packages
+library(tidyverse)
+library(countdown)
+library(mosaic)
+library(ggthemes)
+library(forcats)
+library(patchwork)
+library(Lock5Data)
+library(plotly)
+
+# Set ggplot theme
+theme_set(theme_tufte(base_size = 10))
+yt <- 0
+#<iframe width="1380" height="900" src="https://www.geogebra.org/m/mehn8u8s"></iframe>
+#::: {.callout-note title="Definition"}
+#<img src="images/Day23-1.png" style="display: block; margin: auto;" width="80%"  loading="lazy" decoding="async">
+```
+
+
+## Understanding Type II Errors and Power in Hypothesis Testing {.font80}
+
+::: cle6
+- **Type I Error ($\alpha$):** Rejecting the null hypothesis $H_0$ when it is true. The probability of making a Type I error is controlled by the rejection region.
+
+- **Type II Error ($\beta$):** Accepting the null hypothesis $H_0$ when it is false. Unlike $\alpha$, $\beta$ is not as easily controllable and varies with the true value of the parameter being tested against $H_0$.
+:::
+
+
+## {.font60}
+
+
+<br>
+
+**Error Types Table** 
+
+
+| **Decision / Null Hypothesis**| **$H_0$ True** | **$H_0$ False** |
+|:--------------------------------------|:--------------|:----------------|
+| **Fail to Reject $H_0$**      | Correct Inference (True Negative)    Probability = 1 - $\alpha$ | Type II Error (False Negative)   Probability = $\beta$ |
+| **Reject $H_0$**              | Type I Error (False Positive) Probability = $\alpha$ | Correct Inference (True Positive) Probability = 1 - $\beta$ |
+
+: Error Types and their Probabilities {.caption}
+
+
+
+## Example Hypothesis Setup {.font80}
+
+::: cle8
+- Null Hypothesis ($H_0$): $\mu = 2400$
+- Alternative Hypothesis ($H_a$): $\mu > 2400$
+
+- Test Statistic: 
+$$
+z = \frac{\bar{x} - 2400}{\sigma / \sqrt{n}}
+$$
+
+- Suppose $\sigma_{\bar{x}} = 28.267$ and $\bar{x} \sim N(\mu, 28.267)$.
+- Rejection region for $\alpha = 0.05$ is $z > 1.645$.
+:::
+
+## Visualization of the Rejection Region {.font70}
+
+::: row
+::: left
+::: cle3
+The area in the rejection region under the null distribution (assuming $H_0$ is true) is 0.05. This area represents $\alpha$, the probability of rejecting $H_0$ when it is in fact true.
+
+- The figures illustrate $\beta$ for $\mu = 2425, 2450, 2475$.
+- As $\mu$ increases, $\beta$ decreases, reflecting a lower risk of incorrectly accepting $H_0$ as the true mean strength moves farther from $2400$.
+:::
+:::
+
+::: right
+<img src="images/Day32-1.png" style="display: block; margin: auto;" width="70%" loading="lazy" decoding="async">
+
+:::
+:::
+
+
+
+## Calculating $\beta$ for Different $\mu$ Values {.font80}
+
+::: cle12
+- The probability of a Type II error, $\beta$, is defined under the assumption that the null hypothesis is false.
+- $\beta$ is calculated for each $\mu > 2400$, reflecting the risk of accepting $H_0$ when it is false.
+  - For $\mu = 2425$, we find $\beta$ as the area under the curve to the left of $\bar{x} = 2446.5$:
+
+$$
+\beta = \operatorname{Prob}\left[\bar{x} < 2446.5 \mid \mu = 2425\right] = 0.7764
+$$
+:::
+
+
+## The Power of the Test {.font80}
+
+::: cle2
+- The power of a test is the probability that the test correctly rejects $H_0$ for a specific $\mu$ in $H_a$.
+  - Calculated as $1 - beta$, the power increases as $\beta$ decreases.
+- Understanding $\beta$ and the power of a test is crucial for assessing the effectiveness of hypothesis tests, especially when the true parameter differs significantly from the null hypothesis value.
+:::
+
+
+
+
+
+
+
+## {.font60}
+
+> Example1: The effect of drugs and alcohol on the nervous system has been the subject of considerable research. Suppose a research neurologist is testing the effect of a drug on response time by injecting 100 rats with a unit dose of the drug, subjecting each rat to a neurological stimulus, and recording its response time. The neurologist knows that the mean response time for rats not injected with the drug (the "control" mean) is 1.2 seconds. She wishes to test whether the mean response time for drug-injected rats differs from 1.2 seconds. Set up the test of hypothesis for this experiment, using $\alpha=.01$.
+
+::: {.custom-space}
+:::
+
+a. Suppose drug-injected rats have a mean response time of 1.1 seconds; that is, $\mu=1.1$. Calculate the values of $\beta$ corresponding to the two rejection regions. Discuss the relationship between the values of $\alpha$ and $\beta$.
+
+
+##
+
+<img src="images/Day32-3.png" style="display: block; margin-right: 0;" width="50%"  loading="lazy" decoding="async">
+
+
+
+## {.font60}
+
+b. Calculate the power of the test for each of the rejection regions when $\mu=1.1$.
+
+
+##
+

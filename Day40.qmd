@@ -1,0 +1,255 @@
+---
+title: "Day 40"
+title-slide-attributes:
+  data-background-image: images/lake.jpg
+  data-background-size: contain
+  data-background-opacity: "0.5"
+subtitle: "Math 216: Statistical Thinking"
+author: "Bastola"
+format:
+  revealjs:
+    html-math-method: mathjax
+    mathjax-url: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/MathJax.js" 
+    theme: [default, scss/main.scss]
+    slide-number: true
+    preview-links: auto
+    history: true
+    chalkboard: 
+      src: drawings.json
+    transition: slide
+    background-transition: fade    
+    touch: false
+    controls: true
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+options(htmltools.preserve.raw = FALSE)
+options(ggrepel.max.overlaps = Inf)
+
+
+# load necessary packages
+library(tidyverse)
+library(countdown)
+library(mosaic)
+library(ggthemes)
+library(forcats)
+library(patchwork)
+library(Lock5Data)
+library(plotly)
+
+# Set ggplot theme
+theme_set(theme_tufte(base_size = 10))
+yt <- 0
+#<iframe width="1380" height="900" src="https://www.geogebra.org/m/mehn8u8s"></iframe>
+#::: {.callout-note title="Definition"}
+#<img src="images/Day23-1.png" style="display: block; margin: auto;" width="80%"  loading="lazy" decoding="async">
+
+library(ggplot2)
+bac <- read.csv("https://raw.githubusercontent.com/deepbas/statdatasets/main/BAC.csv")
+bac.lm <- lm(BAC ~ Beers, data = bac) # fit the model
+```
+
+
+## Blood Alcohol Content (BAC) {.font40}
+
+::: row
+
+::: left
+
+```{r, echo=FALSE, out.width="40%"}
+knitr::kable(bac)
+```
+
+:::
+
+::: right
+
+<br>
+
+```{r, echo=FALSE, out.width="140%", fig.width=8}
+# Create a scatter plot with the regression line
+ggplot(bac, aes(x = Beers, y = BAC)) +
+  geom_point() +  # This adds the scatter plot points
+  geom_smooth(method = "lm", se = FALSE, color = "blue") +  # This adds the regression line with confidence interval
+  labs(title = "Regression of BAC on Number of Beers Consumed",
+       x = "Number of Beers Consumed",
+       y = "Blood Alcohol Concentration (BAC)") +
+  theme_minimal()  # Optional: Apply a minimal theme for aesthetics
+```
+
+
+:::
+:::
+
+## Simple Linear Regression: Linear Regression of BAC (y) on Beers (x) {.font70}
+
+::: cle1
+$$
+\begin{align*}
+\widehat{BAC} &=-0.0127+0.0180(\text{Beers})\\
+\hat{\sigma} &= 0.02044
+\end{align*}
+$$
+:::
+
+
+```{r, echo=FALSE}
+
+summary(bac.lm)
+```
+
+
+## Confidence Interval {.font80}
+
+::: cle6
+$$
+C\% \text{ confidence interval for } \beta_i \text{ is } \hat{\beta}_i \pm t^* \operatorname{SE}(\hat{\beta}_i)
+$$
+
+- Get CIs for slope/intercept with `confint` command or compute using `qt(.975, df= )` to get t* for 95% CI
+:::
+
+```{r}
+confint(bac.lm)  # 95% C.I.
+```
+
+
+## Inference for slope (effect of Beers on BAC) {.font80}
+
+::: cle6
+$$
+\begin{align*}
+\mathrm{H}_0: &\ \beta_i = 0 & \text{(no effect for predictor i)} \\
+\mathrm{H}_A: &\ \beta_i \neq 0 & \text{(predictor i has an effect on y)}
+\end{align*}
+$$
+:::
+
+```{r}
+library(broom)
+knitr::kable(tidy(bac.lm))
+```
+
+
+
+## Multiple Regression: Include More Predictors (Explanatory Variables) {.font80}
+
+Suppose you have $p$ explanatory variables. The mean of Y is a linear function of $\boldsymbol{x}_1, \boldsymbol{x}_2, \ldots, \boldsymbol{x}_p$.
+
+
+::: cle6
+$$
+ E(Y \mid X) = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \cdots + \beta_p X_p
+$$
+:::
+
+## Scatterplot Matrix for BAC Example {.font80}
+
+
+```{r}
+library(GGally)
+ggpairs(bac[, -c(1,2,3)]) + theme(axis.text.x = element_text(size = 12))
+```
+
+
+
+## Regression of BAC on Beers and Weight {.font70}
+
+The fitted model for BAC is:
+
+```{r}
+lm1.bac <- lm(BAC ~ Beers + Weight, data = bac) # fit the model
+summary(lm1.bac)
+```
+
+
+$$
+\widehat{BAC} =  0.0399 + 0.0200 (\text{Beers}) - 0.00036 (\text{Weight}).
+$$
+
+
+## Regression of BAC on Beers and Weight {.font80}
+
+```{r}
+knitr::kable(tidy(lm1.bac))
+knitr::kable(confint(lm1.bac))
+
+```
+
+
+
+## Regression of BAC on Beers, Weight, and Gender {.font80}
+
+::: cle6
+$$
+\widehat{BAC} = 0.039 + 0.020 (\text{Beers}) - 0.00034 (\text{Weight}) - 0.0032 \text{ (Male)}
+$$
+:::
+
+Both number of beers and weight are statistically significant predictors of BAC (p-value < 0.0001). Holding weight constant, we are 95\% confident that the true effect of drinking one more beer is a 0.017 to 0.023 unit increase in mean BAC.
+
+## Scatterplot Matrix for BAC Example {.font80}
+
+```{r}
+library(GGally)
+ggpairs(bac[, -c(1,2)]) + theme(axis.text.x = element_text(size = 12))
+```
+
+
+
+## Regression for BAC on Beers, Weight, and Gender {.font70}
+
+```{r}
+lm2.bac <- lm(BAC ~ Beers + Weight + Gender, data = bac) # fit the model
+summary(lm2.bac)
+```
+
+## Regression Details for BAC on Beers, Weight, and Gender {.font60}
+
+::: cle6
+"Male" is an indicator variable that equals 1 when predicting male Blood Alcohol Content (BAC) and 0 for female.
+
+1. **Barb's Prediction**
+   - **Context**: Barb drank 4 beers, weighs 160 lbs, and is female.
+   - **Equation**:
+     $$
+     \widehat{BAC} = 0.039 + 0.020(4) - 0.00034(160) - 0.0032(0) = 0.0646
+     $$
+
+2. **John's Prediction**
+   - **Context**: John drank 4 beers, weighs 160 lbs, and is male.
+   - **Equation**:
+     $$
+     \widehat{BAC} = 0.039 + 0.020(4) - 0.00034(160) - 0.0032(1) = 0.0614
+     $$
+
+:::
+
+
+## Model Disgnostics {.font80}
+
+::: row
+::: left
+
+```{r}
+plot(lm2.bac, which=1)
+```
+
+
+:::
+
+::: right
+
+```{r}
+plot(lm2.bac, which=2)
+```
+
+:::
+:::
+
+
+
+
+
+

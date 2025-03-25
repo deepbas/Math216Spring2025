@@ -68,10 +68,9 @@ yt <- 0
 :::
 
 
-## Steps for Hypothesis Testing Part II: {.font50}
+## Steps for Hypothesis Testing Part II: {.font40}
 
-
-::: cle6
+::: cle7
 5. **Calculate the Test Statistic ($z$)**
    - If the population standard deviation ($\sigma$) is known:
      $$ z = \frac{\bar{X} - \mu_0}{\sigma/\sqrt{n}} $$
@@ -81,6 +80,7 @@ yt <- 0
 
 
 6. **Decision Rule**
+
    - For a one-tailed test: Reject $H_0$ if $z$ falls in the rejection region (either $z < -z_{\alpha}$ for left-tailed or $z > z_{\alpha}$ for right-tailed).
    - For a two-tailed test: Reject $H_0$ if $|z| > z_{\alpha/2}$.
 
