@@ -20,3 +20,81 @@ library(knitr)
 library(ggplot2)
 ```
 
+
+#### **Activity 1: Think-Pair-Share**  
+
+**Prompt**: Reflect on the role of $p$-values in hypothesis testing.  
+
+1. **Think**: Define the $p$-value in your own words.  
+2. **Pair**: Compare definitions with a partner. Discuss:  
+   - Is the $p$-value the probability that $H_0$ is true?  
+   - How does it guide decisions about $H_0$?  
+3. **Share**: Present key insights (e.g., "$p$-value quantifies evidence against $H_0$").  
+
+\vspace*{0.5in}
+
+#### **Activity 2: Quiz**  
+
+**Question**: For a right-tailed test with $z = 2.33$, find the $p$-value.  
+
+
+
+```{webr}
+p_value <- 1 - pnorm(2.33)  # Right-tailed
+round(p_value, 3)  
+```  
+
+
+
+---
+
+#### **Activity 3: Data Exploration**  
+
+**Dataset**: Breaking strength of pipes ($n=50$, $\bar{x}=2460$, $s=200$).  
+**Task**: Test $H_0: \mu \leq 2400$ vs. $H_a: \mu > 2400$.  
+
+
+```{webr}
+t_stat <- (2460 - 2400) / (200 / sqrt(50))  
+p_value <- 1 - pt(t_stat, df=49)  # Right-tailed t-test
+round(p_value, 4)
+```  
+
+\vspace*{0.5in}
+
+#### **Activity 4: Full Hypothesis Test**  
+
+**Scenario**: Test if a pipe supplier meets $\mu = 2450$ psi (sample: $n=50$, $\bar{x}=2420$, $\sigma=210$). 
+
+
+```{webr}
+z <- (2420 - 2450) / (210 / sqrt(50))  
+p_value <- pnorm(z)  # Left-tailed  
+round(z, 2)
+round(p_value, 4)
+```  
+
+\vspace*{1in}
+
+
+#### **Activity 5: z-test vs. t-test (Critical Thinking)**  
+
+**Objective**: Compare z and t tests for small vs. large samples.  
+
+**Prompt**: Given a sample ($n=15$, $\bar{x}=105$, $s=10$), test $H_0: \mu = 100$ vs. $H_a: \mu > 100$ using both tests.  
+
+
+\vspace*{1in}
+
+
+#### **Activity 6: Two-Tailed Test Interpretation**  
+
+**Objective**: Practice calculating and interpreting two-tailed $p$-values. 
+
+**Prompt**: A study claims the mean reaction time is 250 ms. Your sample ($n=40$, $\bar{x}=255$, $s=30$) suggests otherwise. Test $H_a: \mu \neq 250$.  
+
+**Questions**:  
+
+1. Why double the one-tailed $p$-value?  
+2. Interpret the result: Should we reject $H_0$ at $\alpha = 0.05$? 
+
