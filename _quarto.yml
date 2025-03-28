@@ -74,8 +74,10 @@ website:
       #       href: Activity9.html
       - section: "Week 8"
         contents:
-      #     - text: "Day 24"
-      #       href: Day24.html
+          - text: "Day 24"
+            href: Day24.html
+          - text: "Activity 24"
+            href: Activity24.html      
           - text: "Day 23"
             href: Day23.html
           - text: "Activity 23"

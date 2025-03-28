@@ -101,6 +101,61 @@
     "text": "Activity 4: Probability Calculations\nPrompt: An unprincipled used-car dealer sells a car to an unsuspecting buyer, even though the dealer knows that the car will have a major breakdown within the next 6 months. The dealer provides a warranty of 45 days on all cars sold. Let \\(x\\) represent the length of time until the breakdown occurs. Assume that x is a uniform random variable with values between 0 and 6 months.\n\nCalculate and interpret the mean and standard deviation of \\(X\\).\n\n\nGraph the probability distribution of \\(X\\) , and show the mean on the horizontal axis. Also show one and two-standard-deviation intervals around the mean.\n\n\nCalculate the probability that the breakdown occurs while the car is still under warranty."
   },
   {
+    "objectID": "Activity24.html",
+    "href": "Activity24.html",
+    "title": "Activity 24",
+    "section": "",
+    "text": "Given the following sample data: \\(\\bar{x} = 80\\), \\(s = 6\\), \\(n = 25\\), and \\(\\mu_0 = 75\\), calculate the test statistic (\\(z\\)) for a one-tailed test where \\(H_a: \\mu &gt; 75\\).\nUse the formula:\n\\[ z = \\frac{\\bar{x} - \\mu_0}{s/\\sqrt{n}} \\]\nDiscuss: After calculating your answer, discuss with a neighbor how you arrived at your result.\n\n\nWhat is the critical value for \\(\\alpha = 0.05\\)?\nWould you reject the null hypothesis based on your calculated \\(z\\)-score?",
+    "crumbs": [
+      "Week 8",
+      "Activity 24"
+    ]
+  },
+  {
+    "objectID": "Activity24.html#activity-1-quiz",
+    "href": "Activity24.html#activity-1-quiz",
+    "title": "Activity 24",
+    "section": "",
+    "text": "Given the following sample data: \\(\\bar{x} = 80\\), \\(s = 6\\), \\(n = 25\\), and \\(\\mu_0 = 75\\), calculate the test statistic (\\(z\\)) for a one-tailed test where \\(H_a: \\mu &gt; 75\\).\nUse the formula:\n\\[ z = \\frac{\\bar{x} - \\mu_0}{s/\\sqrt{n}} \\]\nDiscuss: After calculating your answer, discuss with a neighbor how you arrived at your result.\n\n\nWhat is the critical value for \\(\\alpha = 0.05\\)?\nWould you reject the null hypothesis based on your calculated \\(z\\)-score?",
+    "crumbs": [
+      "Week 8",
+      "Activity 24"
+    ]
+  },
+  {
+    "objectID": "Activity24.html#activity-2-case-studies-and-problem-solving",
+    "href": "Activity24.html#activity-2-case-studies-and-problem-solving",
+    "title": "Activity 24",
+    "section": "Activity 2: Case Studies and Problem-Solving",
+    "text": "Activity 2: Case Studies and Problem-Solving\n\nCase Study: A nutritionist claims that a new diet reduces the average calorie intake below 2200 calories/day. The sample data shows \\(\\bar{x} = 2150\\), \\(s = 120\\), \\(n = 35\\).\nTask: Conduct a hypothesis test to determine if the data supports the nutritionist’s claim at \\(\\alpha = 0.05\\).\nAnalysis: Calculate the test statistic (\\(z\\)) and p-value. Determine whether to reject the null hypothesis.\nDiscussion: Discuss the implications of your findings. What are the potential consequences of a Type I or Type II error in this context?",
+    "crumbs": [
+      "Week 8",
+      "Activity 24"
+    ]
+  },
+  {
+    "objectID": "Activity24.html#activity-3-group-activities-with-real-data",
+    "href": "Activity24.html#activity-3-group-activities-with-real-data",
+    "title": "Activity 24",
+    "section": "Activity 3: Group Activities with Real Data",
+    "text": "Activity 3: Group Activities with Real Data\nAn analyst claims that a new billing system changes the average monthly bill from $100.\n\nSample Data: \\(\\bar{x} = 105\\), \\(s = 10\\), \\(n = 40\\)\nTest: \\(H_0: \\mu = 100\\) vs. \\(H_a: \\mu \\neq 100\\)\nCalculation: \\(z = \\frac{105 - 100}{10/\\sqrt{40}} \\approx 3.16\\)\nConclusion: Reject \\(H_0\\) if \\(|z| &gt; 1.96\\) (at \\(\\alpha = 0.05\\)).\n\n\nBased on the test statistic \\(z = 2.53\\), calculate the p-value and determine whether to reject the null hypothesis at a significance level of \\(\\alpha = 0.05\\). Does the p-value suggest strong evidence against the null hypothesis?\n\n\nConstruct the 95% confidence interval for the population mean using the sample data (\\(\\bar{x} = 105\\), \\(s = 10\\), \\(n = 40\\)). Based on the confidence interval, would you reject the null hypothesis that the population mean is \\(100\\)?\n\n\nBased on the confidence interval, determine whether you would reject the null hypothesis that the population mean is \\(100\\).",
+    "crumbs": [
+      "Week 8",
+      "Activity 24"
+    ]
+  },
+  {
+    "objectID": "Activity24.html#activity-4",
+    "href": "Activity24.html#activity-4",
+    "title": "Activity 24",
+    "section": "Activity 4",
+    "text": "Activity 4\nThe sample of 100 drug-injected rats yielded the results (in seconds) shown in the following Table. Conduct a hypothesis test to determine if the mean reaction time differs from 1.2 seconds at \\(\\alpha = 0.01\\). Assume \\(\\bar{x} = 1.05\\), \\(s = 0.49\\), \\(n = 100\\)\n\\[\\begin{align*}\nH_0: \\mu=1.2 \\\\\nH_a: \\mu \\neq 1.2\n\\end{align*}\\]\n\n\n# Create vector from the table data\ndata_vector &lt;- c(\n  1.90, 2.17, 0.61, 1.17, 0.66, 1.86, 1.41, 1.30, 0.70, 0.56,\n  2.00, 1.27, 0.98, 1.55, 0.64, 0.60, 1.55, 0.93, 0.48, 0.39,\n  0.88, 1.19, 0.79, 1.37, 1.31, 0.85, 0.71, 1.21, 1.23, 0.89,\n  1.81, 0.80, 0.64, 1.08, 0.74, 0.93, 1.71, 1.05, 1.44, 0.42,\n  0.70, 0.54, 1.40, 1.06, 0.54, 0.17, 0.98, 0.89, 1.28, 0.68,\n  0.98, 1.14, 1.16, 1.64, 1.16, 1.01, 1.09, 0.77, 1.58, 0.99,\n  0.57, 0.27, 0.51, 1.27, 1.81, 0.88, 0.31, 0.92, 0.93, 1.66,\n  0.21, 0.79, 0.94, 0.65, 1.19, 1.60, 0.34, 0.99, 1.08, 1.57,\n  0.55, 1.65, 0.81, 1.00, 2.55, 1.96, 1.31, 1.88, 1.51, 1.48,\n  0.61, 0.05, 1.21, 0.48, 1.63, 1.45, 0.22, 0.49, 1.29, 1.40\n)\n\n# Calculate statistics\nmean(data_vector)\n\n[1] 1.0556\n\nsd(data_vector)\n\n[1] 0.492303\n\nlength(data_vector)\n\n[1] 100\n\n\n\nWhat is the calculated \\(z\\)-score?\nWhat is the p-value, and does it support rejecting the null hypothesis?",
+    "crumbs": [
+      "Week 8",
+      "Activity 24"
+    ]
+  },
+  {
     "objectID": "Day10.html#introduction-to-poisson-random-variables",
     "href": "Day10.html#introduction-to-poisson-random-variables",
     "title": "Day 10",
@@ -3140,49 +3195,55 @@
     "href": "Day24.html#steps-for-hypothesis-testing-part-i",
     "title": "Day 24",
     "section": "Steps for Hypothesis Testing Part I:",
-    "text": "Steps for Hypothesis Testing Part I:\n\n\nState the Hypotheses\n\nNull Hypothesis (\\(H_0\\)): No effect or no difference, posits that \\(\\mu = \\mu_0\\).\nAlternative Hypothesis (\\(H_A\\)): Asserts a specific claim about the population mean \\(\\mu\\) that is different from \\(\\mu_0\\) (e.g., \\(\\mu &gt; \\mu_0\\), \\(\\mu &lt; \\mu_0\\), or \\(\\mu \\neq \\mu_0\\)).\n\nSet the Significance Level (\\(\\alpha\\))\n\nThe probability of making a Type I error (rejecting a true null hypothesis). Common values are 0.05, 0.01, or 0.10.\n\nAssumptions\n\nThe sample is a simple random sample.\nThe sample size is large (usually \\(n \\geq 30\\)), which justifies the use of the Central Limit Theorem.\n\nCollect Data\n\nObtain a random sample and compute the sample mean (\\(\\bar{X}\\)) and standard deviation (\\(S\\))."
+    "text": "Steps for Hypothesis Testing Part I:\n\n\nState the Hypotheses\n\nNull Hypothesis (\\(H_0\\)): No effect or no difference, posits that \\(\\mu = \\mu_0\\).\nAlternative Hypothesis (\\(H_A\\)): Asserts a specific claim about the population mean \\(\\mu\\) that is different from \\(\\mu_0\\) (e.g., \\(\\mu &gt; \\mu_0\\), \\(\\mu &lt; \\mu_0\\), or \\(\\mu \\neq \\mu_0\\)).\n\nSet the Significance Level (\\(\\alpha\\))\n\nThe probability of making a Type I error (rejecting a true null hypothesis). Common values are 0.05, 0.01, or 0.10.\n\nAssumptions\n\nThe sample is a simple random sample.\nThe sample size is large (usually \\(n \\geq 30\\)), which justifies the use of the Central Limit Theorem.\n\nCollect Data\n\nObtain a random sample and compute the sample mean (\\(\\bar{X}\\)) and standard deviation (\\(S\\)).",
+    "crumbs": [
+      "Week 8",
+      "Day 24"
+    ]
   },
   {
     "objectID": "Day24.html#steps-for-hypothesis-testing-part-ii",
     "href": "Day24.html#steps-for-hypothesis-testing-part-ii",
     "title": "Day 24",
     "section": "Steps for Hypothesis Testing Part II:",
-    "text": "Steps for Hypothesis Testing Part II:\n\n\nCalculate the Test Statistic (\\(z\\))\n\nIf the population standard deviation (\\(\\sigma\\)) is known: \\[ z = \\frac{\\bar{X} - \\mu_0}{\\sigma/\\sqrt{n}} \\]\nIf \\(\\sigma\\) is unknown and \\(n \\geq 30\\), use \\(s\\) (sample standard deviation): \\[ z = \\frac{\\bar{X} - \\mu_0}{s/\\sqrt{n}} \\]\n\nDecision Rule\n\nFor a one-tailed test: Reject \\(H_0\\) if \\(z\\) falls in the rejection region (either \\(z &lt; -z_{\\alpha}\\) for left-tailed or \\(z &gt; z_{\\alpha}\\) for right-tailed).\nFor a two-tailed test: Reject \\(H_0\\) if \\(|z| &gt; z_{\\alpha/2}\\).\n\nCompute the P-Value\n\nThe probability of observing a test statistic as extreme as, or more extreme than, the statistic calculated from the sample data, assuming that \\(H_0\\) is true.\n\nConclusion\n\nReject \\(H_0\\) if the p-value is less than \\(\\alpha\\); otherwise, do not reject \\(H_0\\). Report whether the evidence supports \\(H_a\\) based on the statistical significance."
+    "text": "Steps for Hypothesis Testing Part II:\n\n\nCalculate the Test Statistic (\\(z\\))\n\nIf the population standard deviation (\\(\\sigma\\)) is known: \\[ z = \\frac{\\bar{X} - \\mu_0}{\\sigma/\\sqrt{n}} \\]\nIf \\(\\sigma\\) is unknown and \\(n \\geq 30\\), use \\(s\\) (sample standard deviation): \\[ z = \\frac{\\bar{X} - \\mu_0}{s/\\sqrt{n}} \\]\n\nDecision Rule\n\nFor a one-tailed test: Reject \\(H_0\\) if \\(z\\) falls in the rejection region (either \\(z &lt; -z_{\\alpha}\\) for left-tailed or \\(z &gt; z_{\\alpha}\\) for right-tailed).\nFor a two-tailed test: Reject \\(H_0\\) if \\(|z| &gt; z_{\\alpha/2}\\).\n\nCompute the P-Value\n\nThe probability of observing a test statistic as extreme as, or more extreme than, the statistic calculated from the sample data, assuming that \\(H_0\\) is true.\n\nConclusion\n\nReject \\(H_0\\) if the p-value is less than \\(\\alpha\\); otherwise, do not reject \\(H_0\\). Report whether the evidence supports \\(H_a\\) based on the statistical significance.",
+    "crumbs": [
+      "Week 8",
+      "Day 24"
+    ]
   },
   {
     "objectID": "Day24.html#one-sided-greater-than-example",
     "href": "Day24.html#one-sided-greater-than-example",
     "title": "Day 24",
     "section": "One-Sided (Greater Than) Example",
-    "text": "One-Sided (Greater Than) Example\n\n\nScenario: A study group claims that their session increases the average test score above 75.\nSample Data: \\(\\bar{x} = 78\\), \\(s = 5\\), \\(n = 30\\)\nTest: \\(H_0: \\mu \\leq 75\\) vs. \\(H_a: \\mu &gt; 75\\)\nCalculation: \\(z = \\frac{78 - 75}{5/\\sqrt{30}} \\approx 3.29\\)\nConclusion: Reject \\(H_0\\) if \\(z &gt; 1.645\\) (at \\(\\alpha = 0.05\\))."
+    "text": "One-Sided (Greater Than) Example\n\n\nScenario: A study group claims that their session increases the average test score above 75.\nSample Data: \\(\\bar{x} = 78\\), \\(s = 5\\), \\(n = 30\\)\nTest: \\(H_0: \\mu \\leq 75\\) vs. \\(H_a: \\mu &gt; 75\\)\nCalculation: \\(z = \\frac{78 - 75}{5/\\sqrt{30}} \\approx 3.29\\)\nConclusion: Reject \\(H_0\\) if \\(z &gt; 1.645\\) (at \\(\\alpha = 0.05\\)).",
+    "crumbs": [
+      "Week 8",
+      "Day 24"
+    ]
   },
   {
     "objectID": "Day24.html#one-sided-less-than-example",
     "href": "Day24.html#one-sided-less-than-example",
     "title": "Day 24",
     "section": "One-Sided (Less Than) Example",
-    "text": "One-Sided (Less Than) Example\n\n\nScenario: A nutritionist claims that a new diet reduces the average calorie intake below 2200 calories/day.\nSample Data: \\(\\bar{x} = 2150\\), \\(s = 120\\), \\(n = 35\\)\nTest: \\(H_0: \\mu \\geq 2200\\) vs. \\(H_a: \\mu &lt; 2200\\)\nCalculation: \\(z = \\frac{2150 - 2200}{120/\\sqrt{35}} \\approx -2.47\\)\nConclusion: Reject \\(H_0\\) if \\(z &lt; -1.645\\) (at \\(\\alpha = 0.05\\))."
+    "text": "One-Sided (Less Than) Example\n\n\nScenario: A nutritionist claims that a new diet reduces the average calorie intake below 2200 calories/day.\nSample Data: \\(\\bar{x} = 2150\\), \\(s = 120\\), \\(n = 35\\)\nTest: \\(H_0: \\mu \\geq 2200\\) vs. \\(H_a: \\mu &lt; 2200\\)\nCalculation: \\(z = \\frac{2150 - 2200}{120/\\sqrt{35}} \\approx -2.47\\)\nConclusion: Reject \\(H_0\\) if \\(z &lt; -1.645\\) (at \\(\\alpha = 0.05\\)).",
+    "crumbs": [
+      "Week 8",
+      "Day 24"
+    ]
   },
   {
     "objectID": "Day24.html#two-sided-example",
     "href": "Day24.html#two-sided-example",
     "title": "Day 24",
     "section": "Two sided example",
-    "text": "Two sided example\n\n\nScenario: An analyst claims that a new billing system changes the average monthly bill from $100.\nSample Data: \\(\\bar{x} = 105\\), \\(s = 10\\), \\(n = 40\\)\nTest: \\(H_0: \\mu = 100\\) vs. \\(H_a: \\mu \\neq 100\\)\nCalculation: \\(z = \\frac{105 - 100}{10/\\sqrt{40}} \\approx 3.16\\)\nConclusion: Reject \\(H_0\\) if \\(|z| &gt; 1.96\\) (at \\(\\alpha = 0.05\\))."
-  },
-  {
-    "objectID": "Day24.html#two-sided-example-contd.",
-    "href": "Day24.html#two-sided-example-contd.",
-    "title": "Day 24",
-    "section": "Two Sided example contd.",
-    "text": "Two Sided example contd.\n\nBased on the test statistic \\(z = 2.53\\), calculate the p-value and determine whether to reject the null hypothesis at a significance level of \\(\\alpha = 0.05\\). Does the p-value suggest strong evidence against the null hypothesis?\n\n\n\n\n\nConstruct the 95% confidence interval for the population mean using the sample data (\\(\\bar{x} = 105\\), \\(s = 10\\), \\(n = 40\\)). Based on the confidence interval, would you reject the null hypothesis that the population mean is \\(100\\)?"
-  },
-  {
-    "objectID": "Day24.html#section",
-    "href": "Day24.html#section",
-    "title": "Day 24",
-    "section": "",
-    "text": "Example 4: The sample of 100 drug-injected rats yielded the results (in seconds) shown in the following Table. At \\(\\alpha=.01\\), use these data to conduct the test of hypothesis:\n\n\\[\\begin{align*}\nH_0: \\mu=1.2 \\\\\nH_a: \\mu \\neq 1.2\n\\end{align*}\\]"
+    "text": "Two sided example\n\n\nScenario: An analyst claims that a new billing system changes the average monthly bill from $100.\nSample Data: \\(\\bar{x} = 105\\), \\(s = 10\\), \\(n = 40\\)\nTest: \\(H_0: \\mu = 100\\) vs. \\(H_a: \\mu \\neq 100\\)\nCalculation: \\(z = \\frac{105 - 100}{10/\\sqrt{40}} \\approx 3.16\\)\nConclusion: Reject \\(H_0\\) if \\(|z| &gt; 1.96\\) (at \\(\\alpha = 0.05\\)).",
+    "crumbs": [
+      "Week 8",
+      "Day 24"
+    ]
   },
   {
     "objectID": "Day38.html#coefficient-of-correlation-and-determination",

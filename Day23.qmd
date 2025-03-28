@@ -46,7 +46,7 @@ yt <- 0
 ```
 
 
-## Null and Allternate Hypotheses {.font80}
+## Null and Alternate Hypotheses {.font80}
 
 <img src="images/Day23-1.png" style="display: block; margin: auto;" width="80%"  loading="lazy" decoding="async">
 
