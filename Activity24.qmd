@@ -82,7 +82,7 @@ H_a: \mu \neq 1.2
 
 <img src="images/Day24-1.png" style="display: block; margin: auto;" width="60%"  loading="lazy" decoding="async">
 
-```{r}
+```{webr}
 # Create vector from the table data
 data_vector <- c(
   1.90, 2.17, 0.61, 1.17, 0.66, 1.86, 1.41, 1.30, 0.70, 0.56,
