@@ -1,0 +1,15 @@
+{
+  "hash": "a321404e02071162b2cd7a654a194e4d",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Activity 25\"\nsubtitle: \"MATH 216: Statistical Thinking\"\nformat: \n  live-html:\n    theme:\n      light: [lux, theme-light.scss]\n      dark: [superhero, theme-dark.scss]\nengine: knitr\ntoc: true\necho: false\n---\n\n::: {.cell}\n\n:::\n\n\n\n\n\n\n# One-Sample Inference Activity: t-test & z-test\n\n## Review & Flowchart\n\n**Key concepts:**  \n\n- **Confidence Interval (CI):**  \n\n  $\\bar{x} \\pm t_{\\frac{\\alpha}{2}, n-1} \\frac{s}{\\sqrt{n}}$ (unknown $\\sigma$)  \n  $\\bar{x} \\pm z_{\\frac{\\alpha}{2}} \\frac{\\sigma}{\\sqrt{n}}$ (known $\\sigma$)  \n\n**Hypothesis test flow:**  \n\n```{mermaid}\ngraph TD\n  A[Start] --> B{σ known?}\n  B -->|Yes| C[\"Use z-test/z-interval\"]\n  B -->|No| D{n ≥ 30?}\n  D -->|Yes| E[\"CLT: Use t-test (z ≈ t)\"]\n  D -->|No| F[\"Normal? QQ-plot/test\"]\n  F -->|Yes| G[Use t-test]\n  F -->|No| H[Non-parametric test]\n```\n\n---\n\n## Activity 1: CI for Small Sample (Unknown σ)\n\n**Problem:** Construct 95% CI for blood pressure increase (n=6).  \n\n**Data:** 1.7, 3.0, 0.8, 3.4, 2.7, 2.1  \n\n::: {.cell}\n```{webr}\nx <- c(1.7, 3.0, 0.8, 3.4, 2.7, 2.1)\n```\n:::\n\n\n<!--\n\n**Solution steps:** \n\n1. Calculate $\\bar{x} = 2.28$, $s = 0.97$  \n2. Use $t_{0.025}(5) = 2.571$  \n3. CI: $2.28 \\pm 2.571 \\cdot \\frac{0.97}{\\sqrt{6}} = (1.25, 3.31)$  \n\n-->\n\n---\n\n## Activity 2: Hypothesis Test (Unknown σ, Moderate n)\n\n**Problem:** Test if pH ≠ 8.5 (α=0.05, n=17, $\\bar{x}=8.42$, $s=0.16$).  \n\n<!--\n**Solution steps:**  \n\n1. $H_0: \\mu=8.5$, $H_1: \\mu \\neq 8.5$  \n2. Calculate $t = \\frac{8.42-8.5}{0.16/\\sqrt{17}} = -2.06$  \n3. Compare $|t|=2.06$ vs $t_{0.025}(16)=2.12$  \n4. Fail to reject $H_0$: No evidence μ differs from 8.5.\n\n---\n\n-->\n\n## Activity 3: Known σ (z-test)\n\n**Problem:** Bolts have σ=0.15 cm. Sample (n=20): $\\bar{x}=5.08$ cm.  Test if μ≠5.\n\n<!--\n**Tasks:**  \na) 99% CI: $5.08 \\pm 2.576 \\cdot \\frac{0.15}{\\sqrt{20}} = (4.99, 5.17)$  \nb) Test μ=5 vs μ≠5 (z=2.39 > z_{0.005}=2.576 → Fail to reject).  \nc) Compare: $t_{0.005}(19)=2.861$ vs z=2.576 → Wider CI with t.\n\n-->\n\n## Activity 4: Large Sample Approximation\n\n**Problem:** Commute time (n=50, $\\bar{x}=35$, s=8). Test if $\\mu \\neq 30$.  \n**Tasks:**  \n\n<!--\n\na) Use t (σ unknown), but z ≈ t due to large n.  \nb) 90% CI:  \n   - t: $35 \\pm 1.677 \\cdot \\frac{8}{\\sqrt{50}} = (33.08, 36.92)$  \n   - z: $35 \\pm 1.645 \\cdot \\frac{8}{\\sqrt{50}} = (33.13, 36.87)$  \nc) Test: t=4.42/z=4.42 > critical values → Reject H₀ both methods.\n\n-->\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
