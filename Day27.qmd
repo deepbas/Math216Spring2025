@@ -37,7 +37,9 @@ library(forcats)
 library(patchwork)
 library(Lock5Data)
 library(plotly)
-
+library(nortest)
+library(BSDA)
+library(gridExtra)
 # Set ggplot theme
 theme_set(theme_tufte(base_size = 10))
 yt <- 0
@@ -47,10 +49,40 @@ yt <- 0
 ```
 
 
-## Recap {.font80}
+## Recap {.font70}
 
-<img src="images/Day27-info.png" style="display: block; margin: auto;" width="80%"  loading="lazy" decoding="async">
+::: row
+::: left
 
+```{mermaid}
+%%| echo: false
+graph TD
+  A[Start] --> B{"σ known?"}
+  B -->|Yes| C["Use z-test/z-interval"]
+  B -->|No| D{"n ≥ 30?"}
+  D -->|Yes| E["CLT: Use t-test (z ≈ t)"]
+  D -->|No| F["Normal? QQ-plot/test"]
+  F -->|Yes| G[Use t-test]
+  F -->|No| H[Non-parametric test]
+```
+
+:::
+
+::: right
+
+> With small samples (n < 30), normality checks become critical. Let’s examine real data from the `Davis` dataset (car package) of self-reported vs actual weights:
+
+```{r}
+#| echo: true
+library(car)
+data(Davis)
+small_sample <- Davis$weight[1:15]  # Small subsample
+ad.test(small_sample)$p.value 
+
+```
+
+:::
+:::
 
 ## Challenges with Non-normal Distributions {.font70}
 
@@ -58,111 +90,153 @@ yt <- 0
 
 **What if the population data is decidedly non-normal?**
 
-- **Small Sample Sizes and Non-normality**: When sample sizes are small ($n < 30$) and the data is non-normal, traditional tests like t-tests may become unreliable. This can lead to **Type I errors**—incorrectly rejecting the null hypothesis ($H_0$) when it is true.
+- **Small Sample Sizes and Non-normality**: When sample sizes are small ($n < 30$) and the data is non-normal, traditional tests like t-tests may become unreliable. This can lead to inflated **Type I errors**—incorrectly rejecting the null hypothesis ($H_0$) when it is true.
 
 - **Nonparametric Statistics**: These tests do not assume a normal distribution. Instead, they rely on ranks or medians, making them robust to outliers and extreme values.
 :::
 
----
 
-## Nonparametric Sign Test {.font80}
+## Visual Diagnostics: The Illusion of Normality (QQ plot) {.font70}
 
-::: cle10
+**Example**: 15-weight sample from `Davis` dataset:
 
-- **Purpose**: The sign test is a simple nonparametric method to test hypotheses about the median of a distribution. It is particularly useful when the data is skewed or contains outliers.
+```{r}
+#| echo: true
+qqPlot(small_sample, main="QQ-Plot: Small Sample") + theme_tufte()
+```
 
-- **Focus on the Median**: Unlike parametric tests that focus on the mean, the sign test uses the median, which is less sensitive to extreme values.
+
+## Visual Diagnostics: The Illusion of Normality (Histogram) {.font70}
+
+**Example**: 20-weight sample from `Davis` dataset:
+
+```{r}
+#| echo: true
+ggplot(tibble(x=small_sample), aes(x)) + 
+  geom_histogram(fill="#1f77b4", bins=5) + 
+  geom_vline(xintercept=57, color="red") +
+  labs(title="Seemingly Normal? (n=15)")
+```
+
+
+
+## Case Study 1: Davis Weight Data (n=15) {.font80}
+
+::: cle8
+**Population Context**: Full dataset (N=200) has median=57kg, but our sample (first 15 obs) has median=68kg:
+
+```{r}
+#| echo: true
+SIGN.test(small_sample, md=57)$p.value  
+t.test(small_sample, mu=57)$p.value     
+```
+
+**Resolution**: Sign test detects true median shift (68 vs 57) while t-test is confused by:
+
+- Right skew (γ₁ = 1.2)
+- Outlier (166kg) inflating mean (64.1 vs median 68)
 :::
 
-<img src="images/Day27-1.png" style="display: block; margin: auto;" width="80%" loading="lazy" decoding="async">
+## Case Study 2: Simulated Skewed Data (n=15) {.font80}
 
----
+**Population**: Lognormal distribution (median=7.38, mean=12.18)
 
-## How the Sign Test Works {.font80}
+```{r}
+#| echo: true
+set.seed(123)
+skewed_pop <- exp(rnorm(1000, mean=2))  # True median=7.38
+samp <- sample(skewed_pop, 15)
 
-::: cle4
+# Wrong approach: t-test for median
+t.test(samp, mu=7.38)$p.value    
 
-1. **Null Hypothesis**: Start by assuming the median is a specific value ($\eta_0$).
-2. **Classify Observations**: For each observation, determine if it is above or below $\eta_0$.
-3. **Count Signs**: Count the number of observations above ($S_A$) and below ($S_B$) the median.
+# Right approach: Sign test
+SIGN.test(samp, md=7.38)$p.value
+```
 
-```{r, eval=FALSE}
-# R Code to Perform the Sign Test
-library(BSDA)
-SIGN.test(x = data, md = eta_0, alternative = "less", conf.level = 0.95)
+
+## Type I Error Rates (10,000 Simulations) {.font80}
+
+**When H₀ is TRUE** (testing median=7.38 in lognormal population):
+
+```{r}
+#| echo: true
+set.seed(456)
+err_rates <- replicate(10000, {
+  samp <- sample(skewed_pop, 15)
+  c(
+    t = t.test(samp, mu = 7.38)$p.value < 0.05,
+    sign = SIGN.test(samp, md = 7.38)$p.value < 0.05
+  )
+})
+
+# Get one error rate per method:
+rowMeans(err_rates)  
+```
+
+**Results**:
+
+1. T-test falsely rejects 9.6% of time (inflated Type I error)
+2. Sign test maintains 3.5% error rate
+
+
+##  Recommendations {.font80}
+
+::: cle6
+1. **Small n**: Use sign test unless strong evidence of normality
+2. **Visual Cues**:
+   - Always pair histograms (≤5 bins) with QQ-plots
+   - Treat "normal-looking" plots with skepticism
+3. **Test Alignment**:
+   - Means → t-test (requires normality)
+   - Medians → sign test (requires only ranked data)
+:::
+
+## How P-values are Calculated: Sign Test {.font80}
+
+**Binomial Foundation**: Under $H_0$: median $= \eta_0$, each observation has 50% chance of being above/below $\eta_0$
+
+**Davis Example** ($H_0$: $\eta = 57$ kg):
+
+::: cle8
+```{r}
+#| echo: true
+small_sample
+above <- sum(small_sample > 57)  
+above
+n <- length(small_sample - 57)
+n
 ```
 
 :::
 
----
+## **Exact Binomial Formula**: {.font60}
 
-## Decision Making in the Sign Test {.font80}
+$$
+\begin{aligned}
+\text{p-value} &= 2 \times P(X \geq 12) \\
+&= 2 \times \sum_{k=12}^{15} \binom{15}{k} (0.5)^{15} \\
+&= 2 \times (0.01389 + 0.00320 + 0.00046 + 0.00003) \\
+&= 0.03516
+\end{aligned}
+$$
 
-::: cle4
+**R Calculation**:
 
-**Decision Rule**:
-- Reject $H_0$ if the p-value is less than the significance level ($\alpha$).
-- The p-value is calculated using the binomial distribution with parameters $n$ (total non-zero differences) and $p = 0.5$ (probability under $H_0$).
+```{r}
+#| echo: true
+2 * pbinom(11, 15, 0.5, lower.tail=FALSE)  # Matches SIGN.test()
+```
 
-:::
+```r
+SIGN.test(small_sample, md=57)
+    One-sample Sign-Test
 
----
+data:  small_sample
+s = 12, p-value = 0.03516
+alternative hypothesis: true median is not equal to 57
+95 percent confidence interval:
+ 58.17817 75.10916
 
-## Example: Substance Abuse Testing {.font60}
-
-> **Scenario**: A lab uses a normalized measurement scale where values < 1.00 indicate "normal" ranges, and values ≥ 1.00 suggest potential substance abuse. The lab reports a normal result if the median level for an individual is less than 1.00. Eight independent measurements are taken for one individual. Test whether the population median is less than 1.00 at $\alpha = 0.05$.
-
-<img src="images/Day27-2.png" style="display: block; margin: auto;" width="80%" loading="lazy" decoding="async">
-
----
-
-## Group Activity: Study Session Impact {background="#ffdf9e"}
-
-::: row
-::: left
-![](https://media.giphy.com/media/RKApDdwsQ6jkwd6RNn/giphy.gif)
-:::
-
-::: right
-
-<br>
-
-::: lqt
-
-**Objective**: Determine if a one-hour study session significantly improves quiz scores among students.
-
-:::
-:::
-:::
-
-`r countdown(minutes = 10, seconds = 00, top = 0 , right = 1, color_background = "inherit", padding = "3px 4px", font_size = "1em")`
-
----
-
-## Data and Steps {.font50}
-
-**Before and After Quiz Scores for 10 Students**:
-
-| Student | Before Study Session (Score) | After Study Session (Score) |
-|---------|-----------------------------|----------------------------|
-| 1       | 70                           | 75                         |
-| 2       | 65                           | 68                         |
-| 3       | 80                           | 75                         |
-| 4       | 58                           | 60                         |
-| 5       | 77                           | 76                         |
-| 6       | 82                           | 84                         |
-| 7       | 55                           | 58                         |
-| 8       | 90                           | 95                         |
-| 9       | 62                           | 65                         |
-| 10      | 83                           | 88                         |
-
-### Activity Steps
-
-1. **Calculate Differences**: For each student, compute the difference (After - Before).
-2. **Assign Signs**: Assign a plus (+) if the score increased and a minus (-) if it decreased.
-3. **Count Signs**: Count the total number of positive and negative signs.
-4. **Perform the Sign Test**: Use the counts to test whether the study session had a significant impact.
-
----
-
+```
 

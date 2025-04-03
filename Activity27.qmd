@@ -1,0 +1,106 @@
+---
+title: "Activity 27"
+subtitle: "MATH 216: Statistical Thinking"
+format: 
+  live-html:
+    theme:
+      light: [lux, theme-light.scss]
+      dark: [superhero, theme-dark.scss]
+engine: knitr
+toc: true
+echo: false
+---
+
+{{< include _extensions/r-wasm/live/_knitr.qmd >}}
+
+
+```{r setup, include=FALSE}
+library(openintro)
+library(dplyr)
+library(knitr)
+library(ggplot2)
+library(car)
+library(BSDA)
+```
+
+### Activity 1: Quick Hypothesis Check  
+
+**Scenario**: A company claims their meditation app reduces stress (median stress score < 20). 12 users' scores:  
+
+`data <- c(18, 22, 19, 17, 25, 16, 21, 19, 20, 18, 23, 17)`  
+
+**Tasks**:  
+
+1. Calculate test statistic $S$ (number of values < 20)  
+2. Write null hypothesis ($H_0: m \geq 20$)  
+3. Calculate binomial probability for $S$ successes  
+4. R code: `SIGN.test(data, md=20, alternative="less")`  
+
+```{webr}
+
+```
+
+
+### Activity 2: P-Value Understanding  
+
+**Question**: For n=15 non-zero differences with 12 positive signs (testing $H_1: m > m_0$), which formula calculates the one-tailed p-value?  
+
+**Options**:  
+
+A) $P(X \leq 12)$  
+B) $P(X \geq 12)$  
+C) $2 \times P(X \geq 12)$  
+D) $P(X = 12)$  
+
+
+### Activity 3: Test Statistic Calculation  
+
+**Data**: 10 paired observations with 7 positive differences, 1 negative, 2 zeros.  
+
+**Question**: What is the value of the test statistic $S$?  
+
+
+### Activity 4: R Code Interpretation  
+
+```{r}  
+SIGN.test(x = c(3,5,-2,0,1), md=2, alternative="two.sided")  
+```  
+
+**Question**: What is being tested?  
+
+
+### P-Value Discussion Key Points:  
+
+<blockquote>
+
+1. Under $H_0$, probability of "+" signs follows binomial$(n,0.5)$  
+
+2. For $S$ observed "+" signs:  
+
+   - Left-tailed: $P(X \leq S)$  
+   - Right-tailed: $P(X \geq S)$  
+   - Two-tailed: $2 \times \min[P(X \leq S), P(X \geq S)]$  
+   
+3. In R, `SIGN.test()` automatically handles:  
+
+   - Exclusion of zero differences  
+   - Normal approximation for large n  
+   - Exact binomial p-value for small n  
+
+</blockquote>
+
+### Activity 5: Full Analysis  
+
+**Scenario**: 14 patients tried a diet. Weight changes:  
+
+`differences <- c(-2, -1, 0, -3, -2, -1, -4, 0, -3, -2, -1, -2, 0, -1)`  
+
+**Tasks**:  
+
+1. State $H_0$ ($m \geq 0$) vs $H_1$ ($m < 0$)  
+2. Calculate $S$ = number of positive differences 
+3. Exact p-value = `pbinom(S, 12, 0.5)` 
+4. Conclusion at α=0.05: 
+
+
+
