@@ -1034,7 +1034,7 @@
     "href": "Day27.html#visual-diagnostics-the-illusion-of-normality-histogram",
     "title": "Day 27",
     "section": "Visual Diagnostics: The Illusion of Normality (Histogram)",
-    "text": "Visual Diagnostics: The Illusion of Normality (Histogram)\nExample: 20-weight sample from Davis dataset:\n\nggplot(tibble(x=small_sample), aes(x)) + \n  geom_histogram(fill=\"#1f77b4\", bins=5) + \n  geom_vline(xintercept=57, color=\"red\") +\n  labs(title=\"Seemingly Normal? (n=15)\")",
+    "text": "Visual Diagnostics: The Illusion of Normality (Histogram)\nExample: 15-weight sample from Davis dataset:\n\nggplot(tibble(x=small_sample), aes(x)) + \n  geom_histogram(fill=\"#1f77b4\", bins=5) + \n  geom_vline(xintercept=57, color=\"red\") +\n  labs(title=\"Seemingly Normal? (n=15)\")",
     "crumbs": [
       "Week 9",
       "Day 27"
