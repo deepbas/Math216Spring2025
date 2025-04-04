@@ -31,7 +31,7 @@ library(BSDA)
 
 **Tasks**:  
 
-1. Calculate test statistic $S$ (number of values < 20)  
+1. Calculate test statistic $S$ 
 2. Write null hypothesis ($H_0: m \geq 20$)  
 3. Calculate binomial probability for $S$ successes  
 4. R code: `SIGN.test(data, md=20, alternative="less")`  

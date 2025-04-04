@@ -231,6 +231,7 @@ webr:
     - purrr
     - openintro
     - tidyr
+    - BSDA
 
 format:
   html:

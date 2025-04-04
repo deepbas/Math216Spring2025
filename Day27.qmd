@@ -108,7 +108,7 @@ qqPlot(small_sample, main="QQ-Plot: Small Sample") + theme_tufte()
 
 ## Visual Diagnostics: The Illusion of Normality (Histogram) {.font70}
 
-**Example**: 20-weight sample from `Davis` dataset:
+**Example**: 15-weight sample from `Davis` dataset:
 
 ```{r}
 #| echo: true
