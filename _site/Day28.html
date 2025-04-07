@@ -206,35 +206,8 @@ Bastola
 </div>
 
 </section>
-<section id="comparing-two-population-means-paired-difference-example" class="slide level2 font80">
-<h2>Comparing Two Population Means: Paired Difference Example</h2>
-<div class="cle1">
-<ul>
-<li><strong>Objective</strong>: Assess the effectiveness of two training programs in skill enhancement.</li>
-<li><strong>Design Rationale</strong>: Participants are paired based on initial assessments to ensure comparable skill levels, enhancing the validity of the comparison.</li>
-</ul>
-</div>
-</section>
-<section id="conceptual-foundation-for-paired-samples" class="slide level2 font80">
-<h2>Conceptual Foundation for Paired Samples</h2>
-<div class="cle2">
-<ul>
-<li>Paired designs minimize variability by controlling for individual differences.</li>
-<li>This approach is crucial in settings where participants have inherent variability in initial abilities.</li>
-</ul>
-</div>
-</section>
-<section id="hypotheses-framework" class="slide level2 font80">
-<h2>Hypotheses Framework</h2>
-<div class="cle3">
-<ul>
-<li><strong>Null Hypothesis</strong> <span class="math inline">\((H_0)\)</span>: <span class="math inline">\(\mu_{\text{A}} = \mu_{\text{B}}\)</span> (no difference in means between two methods).</li>
-<li><strong>Alternative Hypothesis</strong> <span class="math inline">\((H_a)\)</span>: <span class="math inline">\(\mu_{\text{A}} &gt; \mu_{\text{B}}\)</span> (Method A outperforms Method B).</li>
-</ul>
-</div>
-</section>
-<section id="data-overview" class="slide level2 font70">
-<h2>Data Overview</h2>
+<section id="effectiveness-of-two-training-programs-paired-data" class="slide level2 font70">
+<h2>Effectiveness of two training programs: Paired Data</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <table class="caption-top">
@@ -362,27 +335,83 @@ Bastola
 </table>
 </div></div>
 </section>
-<section id="transition-to-paired-analysis" class="slide level2 font80">
-<h2>Transition to Paired Analysis</h2>
-<div class="cle5">
+<section id="comparing-two-population-means-paired-difference" class="slide level2 font80">
+<h2>Comparing Two Population Means: Paired Difference</h2>
+<div class="cle1">
 <ul>
-<li>Transition from single-sample to paired-sample testing involves considering the dependency between paired observations.</li>
-<li>Independence within pairs is crucial; the pairing itself should not influence the measured outcomes.</li>
+<li><strong>Objective</strong>: Assess the effectiveness of two training programs using paired observations</li>
+<li><strong>Key Insight</strong>: Analyze differences within pairs (<span class="math inline">\(d_i = A_i - B_i\)</span>) to control for individual variability</li>
+<li><strong>Design</strong>: Repeated measures from same participants or matched pairs</li>
 </ul>
 </div>
 </section>
-<section id="statistical-techniques-and-conditions" class="slide level2 font80">
-<h2>Statistical Techniques and Conditions</h2>
-<div class="cle6">
-<h3 id="known-vs.-unknown-standard-deviations">Known vs.&nbsp;Unknown Standard Deviations</h3>
+<section id="conceptual-foundation" class="slide level2 font80">
+<h2>Conceptual Foundation</h2>
+<div class="cle2">
 <ul>
-<li>Use <span class="math inline">\(z\)</span>-tests when standard deviations are known and sample sizes are large.</li>
-<li>Employ <span class="math inline">\(t\)</span>-tests when standard deviations are unknown and sample sizes are small.</li>
+<li><strong>Dependency</strong>: Observations are naturally linked (same subject, matched characteristics)</li>
+<li><strong>Advantage</strong>: Reduces variability by eliminating between-subject differences</li>
+<li><strong>Data Structure</strong>: Focuses on pairwise differences rather than raw scores</li>
 </ul>
-<h3 id="normality-and-non-normal-data">Normality and Non-Normal Data</h3>
+</div>
+</section>
+<section id="hypothesis-framework" class="slide level2 font80">
+<h2>Hypothesis Framework</h2>
+<div class="cle3">
+<p>Let <span class="math inline">\(\mu_d = \mu_A - \mu_B\)</span> denote the population mean difference:</p>
 <ul>
-<li>For normally distributed differences, use <span class="math inline">\(t\)</span>-tests.</li>
-<li>For non-normal data, consider non-parametric tests like the Sign Test or Wilcoxon Signed-Rank Test.</li>
+<li><strong>Null Hypothesis</strong>: <span class="math inline">\(H_0: \mu_d = 0\)</span><br>
+(No difference between methods)</li>
+<li><strong>Alternative Hypothesis</strong>: <span class="math inline">\(H_a: \mu_d &gt; 0\)</span><br>
+(Method A produces higher scores than Method B)</li>
+<li><strong>Two-Sided Alternative</strong>: <span class="math inline">\(H_a: \mu_d \neq 0\)</span> if testing for any difference</li>
+</ul>
+</div>
+</section>
+<section id="general-testing-procedure" class="slide level2 font70">
+<h2>General Testing Procedure</h2>
+<div class="cle4">
+<ol type="1">
+<li><p><strong>Calculate Differences</strong>: <span class="math inline">\(d_i = A_i - B_i\)</span> for each pair</p></li>
+<li><p><strong>Compute Summary Statistics</strong>:</p>
+<ul>
+<li>Mean difference: <span class="math inline">\(\bar{d} = \frac{\sum d_i}{n}\)</span></li>
+<li>Standard deviation: <span class="math inline">\(s_d = \sqrt{\frac{\sum (d_i - \bar{d})^2}{n-1}}\)</span></li>
+</ul></li>
+<li><p><strong>Check Conditions</strong>:</p>
+<ul>
+<li>Normality of differences (QQ-plot or Shapiro-Wilk)</li>
+<li>Random sampling/assignment</li>
+</ul></li>
+<li><p><strong>Select Test Statistic</strong>:</p>
+<p><span class="math display">\[t = \frac{\bar{d} - \mu_{d0}}{s_d/\sqrt{n}} \quad \text{with } df = n-1\]</span></p>
+<p>Where <span class="math inline">\(\mu_{d0}\)</span> is the hypothesized mean difference (0 under <span class="math inline">\(H_0\)</span>)</p></li>
+<li><p><strong>Make Decision</strong>:</p>
+<ul>
+<li>Compare p-value to <span class="math inline">\(\alpha\)</span> (typically 0.05)</li>
+<li>Interpret confidence interval for <span class="math inline">\(\mu_d\)</span></li>
+</ul></li>
+</ol>
+</div>
+</section>
+<section id="interpretation-guidance" class="slide level2 font70">
+<h2>Interpretation Guidance</h2>
+<div class="cle6">
+<ul>
+<li><strong>Significant Result</strong>: Reject <span class="math inline">\(H_0\)</span> if p-value &lt; <span class="math inline">\(\alpha\)</span>
+<ul>
+<li>“Evidence suggests Method A outperforms Method B (t(19)=2.15, p=0.022)”</li>
+</ul></li>
+<li><strong>Nonsignificant Result</strong>: Fail to reject <span class="math inline">\(H_0\)</span>
+<ul>
+<li>“No statistically significant difference detected”</li>
+</ul></li>
+<li><strong>Always Report</strong>:
+<ul>
+<li>Effect size (mean difference)</li>
+<li>Confidence interval</li>
+<li>Practical significance</li>
+</ul></li>
 </ul>
 </div>
 </section>
@@ -395,12 +424,14 @@ Bastola
 </ul>
 </div>
 </section>
-<section id="results-interpretation-and-confidence-intervals" class="slide level2 font80">
-<h2>Results Interpretation and Confidence Intervals</h2>
-<div class="cle8">
+<section id="connection-to-confidence-intervals" class="slide level2 font80">
+<h2>Connection to Confidence Intervals</h2>
+<div class="cle7">
+<p>A 95% CI for <span class="math inline">\(\mu_d\)</span> is constructed as:</p>
+<p><span class="math display">\[\bar{d} \pm t^*_{\alpha/2} \frac{s_d}{\sqrt{n}}\]</span></p>
 <ul>
-<li>Evaluate the p-value against the significance level to decide on rejecting the null hypothesis.</li>
-<li>Construct confidence intervals to estimate the range of true effect sizes, enhancing understanding of practical significance.</li>
+<li><strong>Interpretation</strong>: “We are 95% confident the true mean difference lies between [X, Y]”</li>
+<li><strong>Decision Rule</strong>: If CI excludes 0, reject <span class="math inline">\(H_0\)</span> at <span class="math inline">\(\alpha=0.05\)</span></li>
 </ul>
 </div>
 </section>
@@ -422,115 +453,101 @@ Bastola
 </div>
 <div id="tabset-1-2">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="co"># Perform the Anderson-Darling test for normality</span></span>
-<span id="cb1-2"><a></a><span class="fu">library</span>(nortest)</span>
-<span id="cb1-3"><a></a><span class="fu">ad.test</span>(differences)</span>
-<span id="cb1-4"><a></a></span>
-<span id="cb1-5"><a></a><span class="co"># Perform the paired t-test</span></span>
-<span id="cb1-6"><a></a><span class="fu">t.test</span>(methodA, methodB, <span class="at">paired =</span> <span class="cn">TRUE</span>, <span class="at">alternative =</span> <span class="st">"greater"</span>)</span>
-<span id="cb1-7"><a></a></span>
-<span id="cb1-8"><a></a><span class="co"># Calculate standard deviation of differences</span></span>
-<span id="cb1-9"><a></a><span class="fu">sd</span>(differences) <span class="co"># s_d</span></span>
-<span id="cb1-10"><a></a></span>
-<span id="cb1-11"><a></a><span class="co"># Calculate critical value for t-distribution</span></span>
-<span id="cb1-12"><a></a><span class="fu">qt</span>(<span class="fl">0.975</span>, <span class="at">df =</span> <span class="dv">20</span> <span class="sc">-</span> <span class="dv">1</span>) <span class="co"># critical value</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="co"># Define the scores for Method A and Method B</span></span>
+<span id="cb1-2"><a></a>methodA <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">85</span>, <span class="dv">88</span>, <span class="dv">90</span>, <span class="dv">92</span>, <span class="dv">91</span>, <span class="dv">89</span>, <span class="dv">93</span>, <span class="dv">95</span>, <span class="dv">96</span>, <span class="dv">97</span>, <span class="dv">98</span>,</span>
+<span id="cb1-3"><a></a>             <span class="dv">99</span>, <span class="dv">100</span>, <span class="dv">101</span>, <span class="dv">102</span>, <span class="dv">103</span>, <span class="dv">104</span>, <span class="dv">105</span>, <span class="dv">106</span>, <span class="dv">107</span>)</span>
+<span id="cb1-4"><a></a>methodB <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">83</span>, <span class="dv">89</span>, <span class="dv">87</span>, <span class="dv">84</span>, <span class="dv">92</span>, <span class="dv">90</span>, <span class="dv">85</span>, <span class="dv">91</span>, <span class="dv">98</span>, <span class="dv">94</span>, <span class="dv">100</span>,</span>
+<span id="cb1-5"><a></a>             <span class="dv">101</span>, <span class="dv">99</span>, <span class="dv">111</span>, <span class="dv">111</span>, <span class="dv">106</span>, <span class="dv">109</span>, <span class="dv">103</span>, <span class="dv">111</span>, <span class="dv">114</span>)</span>
+<span id="cb1-6"><a></a></span>
+<span id="cb1-7"><a></a><span class="co"># Calculate differences</span></span>
+<span id="cb1-8"><a></a>differences <span class="ot">&lt;-</span> methodA <span class="sc">-</span> methodB</span>
+<span id="cb1-9"><a></a></span>
+<span id="cb1-10"><a></a><span class="co"># Generate a QQ plot for normality check</span></span>
+<span id="cb1-11"><a></a>qq_norm <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data =</span> <span class="fu">tibble</span>(differences), <span class="fu">aes</span>(<span class="at">sample =</span> differences)) <span class="sc">+</span></span>
+<span id="cb1-12"><a></a>  <span class="fu">stat_qq</span>() <span class="sc">+</span> <span class="fu">stat_qq_line</span>() <span class="sc">+</span></span>
+<span id="cb1-13"><a></a>  <span class="fu">ggtitle</span>(<span class="st">"QQ Plot of Differences"</span>)</span>
+<span id="cb1-14"><a></a></span>
+<span id="cb1-15"><a></a><span class="co"># Generate a histogram for normality check</span></span>
+<span id="cb1-16"><a></a>histogram <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data =</span> <span class="fu">as.data.frame</span>(differences), <span class="fu">aes</span>(<span class="at">x =</span> differences)) <span class="sc">+</span></span>
+<span id="cb1-17"><a></a>  <span class="fu">geom_histogram</span>(<span class="at">bins =</span> <span class="dv">10</span>, <span class="at">color =</span> <span class="st">"maroon"</span>, <span class="at">fill =</span> <span class="st">"gold"</span>) <span class="sc">+</span></span>
+<span id="cb1-18"><a></a>  <span class="fu">ggtitle</span>(<span class="st">"Histogram of Differences"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
 </div>
 </section>
-<section id="section" class="slide level2 font50">
-<h2></h2>
-<blockquote>
-<p>Example 1: An experiment is conducted to compare the starting salaries of male and female college graduates who find jobs. Pairs are formed by choosing a male and a female with the same major and similar grade point averages (GPAs). Suppose a random sample of 10 pairs is formed in this manner and the starting annual salary of each person is recorded. The results are shown in following table. Use <span class="math inline">\(\alpha=0.05\)</span>, perform hypothesis test to see if the data provide sufficient evidence to support “the male average starting salary is greater than female average starting salary”.</p>
-</blockquote>
-<table class="caption-top">
-<colgroup>
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: center;">Table 9.5</th>
-<th style="text-align: center;">Data on Annual Salaries for Matched Pairs of College <br> Graduates</th>
-<th style="text-align: center;"></th>
-<th style="text-align: center;"></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">Pair</td>
-<td style="text-align: center;">Male</td>
-<td style="text-align: center;">Female</td>
-<td style="text-align: center;">Difference Male - Female</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">1</td>
-<td style="text-align: center;"><span class="math inline">\(\$ 29,300\)</span></td>
-<td style="text-align: center;"><span class="math inline">\(\$ 28,800\)</span></td>
-<td style="text-align: center;"><span class="math inline">\(\$ 500\)</span></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">41,500</td>
-<td style="text-align: center;">41,600</td>
-<td style="text-align: center;">-100</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">40,400</td>
-<td style="text-align: center;">39,800</td>
-<td style="text-align: center;">600</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">4</td>
-<td style="text-align: center;">38,500</td>
-<td style="text-align: center;">38,500</td>
-<td style="text-align: center;">0</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">5</td>
-<td style="text-align: center;">43,500</td>
-<td style="text-align: center;">42,600</td>
-<td style="text-align: center;">900</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">6</td>
-<td style="text-align: center;">37,800</td>
-<td style="text-align: center;">38,000</td>
-<td style="text-align: center;">-200</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">7</td>
-<td style="text-align: center;">69,500</td>
-<td style="text-align: center;">69,200</td>
-<td style="text-align: center;">300</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">8</td>
-<td style="text-align: center;">41,200</td>
-<td style="text-align: center;">40,100</td>
-<td style="text-align: center;">1,100</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">9</td>
-<td style="text-align: center;">38,400</td>
-<td style="text-align: center;">38,200</td>
-<td style="text-align: center;">200</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">10</td>
-<td style="text-align: center;">59,200</td>
-<td style="text-align: center;">58,500</td>
-<td style="text-align: center;">700</td>
-</tr>
-</tbody>
-</table>
+<section id="preliminary-tests-in-r" class="slide level2 font60">
+<h2>Preliminary Tests in R</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a><span class="co"># Perform the Anderson-Darling test for normality</span></span>
+<span id="cb2-2"><a></a><span class="fu">library</span>(nortest)</span>
+<span id="cb2-3"><a></a><span class="fu">ad.test</span>(differences)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Anderson-Darling normality test
+
+data:  differences
+A = 0.2269, p-value = 0.787</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a><span class="co"># Calculate standard deviation of differences</span></span>
+<span id="cb4-2"><a></a><span class="fu">sd</span>(differences) <span class="co"># s_d</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 4.92336</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a><span class="co"># Calculate critical value for t-distribution</span></span>
+<span id="cb6-2"><a></a><span class="fu">qt</span>(<span class="fl">0.975</span>, <span class="at">df =</span> <span class="dv">20</span> <span class="sc">-</span> <span class="dv">1</span>) <span class="co"># critical value</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 2.093024</code></pre>
+</div>
+</div>
 </section>
-<section id="section-1" class="slide level2">
-<h2></h2>
+<section id="t.test-for-paired-samples" class="slide level2 font80">
+<h2><code>t.test</code> for paired samples</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a><span class="co"># Perform the paired t-test</span></span>
+<span id="cb8-2"><a></a><span class="fu">t.test</span>(methodA, methodB, <span class="at">paired =</span> <span class="cn">TRUE</span>, <span class="at">alternative =</span> <span class="st">"greater"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Paired t-test
+
+data:  methodA and methodB
+t = -0.7721, df = 19, p-value = 0.7752
+alternative hypothesis: true mean difference is greater than 0
+95 percent confidence interval:
+ -2.753597       Inf
+sample estimates:
+mean difference 
+          -0.85 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a></a><span class="fu">t.test</span>(differences<span class="sc">~</span><span class="dv">1</span>, <span class="at">alternative =</span> <span class="st">"greater"</span>, <span class="at">data =</span> <span class="fu">tibble</span>(differences)) <span class="co"># alternate 1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    One Sample t-test
+
+data:  differences
+t = -0.7721, df = 19, p-value = 0.7752
+alternative hypothesis: true mean is greater than 0
+95 percent confidence interval:
+ -2.753597       Inf
+sample estimates:
+mean of x 
+    -0.85 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a><span class="fu">t.test</span>(differences, <span class="at">alternative =</span> <span class="st">"greater"</span>) <span class="co"># alternate 2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    One Sample t-test
+
+data:  differences
+t = -0.7721, df = 19, p-value = 0.7752
+alternative hypothesis: true mean is greater than 0
+95 percent confidence interval:
+ -2.753597       Inf
+sample estimates:
+mean of x 
+    -0.85 </code></pre>
+</div>
+</div>
 
 
 </section>

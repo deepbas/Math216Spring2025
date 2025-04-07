@@ -63,70 +63,112 @@ When samples cannot be paired, they are treated as independent. For two independ
 3. **Variances:** Known variances or assume equal variance under normality.  
 :::
 
----
 
-## Properties of Sampling Distribution {.font70}
+## Sampling Distribution Properties {.font70}
 
 ::: cle7
-For large samples or small but normally distributed samples:  
 
-- **Mean of the Distribution:** $(\bar{x}_1 - \bar{x}_2)$ has a mean of $(\mu_1 - \mu_2)$.  
-- **Standard Deviation:**  
-  $$\sigma_{(\bar{x}_1 - \bar{x}_2)} = \sqrt{\frac{\sigma_1^2}{n_1} + \frac{\sigma_2^2}{n_2}}$$  
-- **Distribution Assumption:** Approximately normal by the Central Limit Theorem.  
+For $\bar{X}_1 - \bar{X}_2$:
+
+- **Expected Value**: $E(\bar{X}_1 - \bar{X}_2) = \mu_1 - \mu_2$
+- **Standard Error**:
+  
+  $$\sigma_{\bar{X}_1 - \bar{X}_2} = \sqrt{
+  \underbrace{\frac{\sigma_1^2}{n_1}}_{\text{Group 1 variability}} + 
+  \underbrace{\frac{\sigma_2^2}{n_2}}_{\text{Group 2 variability}}}$$
+  
+- **Distribution Shape**:
+  - Exactly normal if populations are normal
+  - Approximately normal via CLT for $n \geq 30$
+  
 :::
 
----
 
-## Confidence Interval for $(\mu_1 - \mu_2)$ {.font60}
+
+## Variance Homogeneity Testing
 
 ::: cle6
-- **Known Variances:**  
-  $$(\bar{x}_1 - \bar{x}_2) \pm z_{\alpha/2} \sqrt{\frac{\sigma_1^2}{n_1} + \frac{\sigma_2^2}{n_2}}$$  
-
-- **Unknown Variances (Pooled Standard Deviation):**  
-  $$s_p = \sqrt{\frac{(n_1-1)s_1^2 + (n_2-1)s_2^2}{n_1+n_2-2}}$$  
-  $$(\bar{x}_1 - \bar{x}_2) \pm t_{\alpha/2, n_1+n_2-2} \cdot s_p \cdot \sqrt{\frac{1}{n_1} + \frac{1}{n_2}}$$  
+- **Formal Tests**: Levene's test
+- **Practical Approach**:
+  - Compare variance ratios ($s_1^2/s_2^2$)
+  - Consider sample sizes (unequal n exacerbates heterogeneity effects)
 :::
 
----
-
-## Hypothesis Testing {.font70}
+## Pooled Variance {.font70}
 
 ::: cle12
-- **Null Hypothesis ($H_0$):** $\mu_1 = \mu_2$ (no difference in means).  
-- **Alternative Hypothesis ($H_a$):** $\mu_1 \neq \mu_2$ (means are different).  
 
-**Test Statistic for Equal Variances:**  
-$$t = \frac{\bar{x}_1 - \bar{x}_2}{s_p \sqrt{\frac{1}{n_1} + \frac{1}{n_2}}}$$  
+Used when assuming equal population variances ($\sigma_1^2 = \sigma_2^2$):
 
-- **Degrees of Freedom:** $n_1 + n_2 - 2$.  
-- **Decision Rule:** Reject $H_0$ if $p$-value < $\alpha$ (commonly 0.05).  
+$$s_p^2 = \frac{(n_1-1)s_1^2 + (n_2-1)s_2^2}{n_1 + n_2 - 2}$$
+
+- **Weighted Average**: Combines variances proportionally to sample sizes
+- **Degrees of Freedom**: $df = n_1 + n_2 - 2$ (total observations minus groups)
+
+| Component | Meaning |
+|-----------|---------|
+| $(n_1-1)s_1^2$ | Scaled variability from Group 1 |
+| $(n_2-1)s_2^2$ | Scaled variability from Group 2 |
+| Denominator | Total degrees of freedom |
 :::
 
-## {.font60}
+## Hypothesis Testing Framework {.font60}
+
+::: cle8
+- **Null Hypothesis**: $H_0: \mu_1 - \mu_2 = 0$
+- **Alternatives**:
+  - $H_a: \mu_1 - \mu_2 \neq 0$ (Two-tailed)
+  - $H_a: \mu_1 - \mu_2 > 0$ (One-tailed)
+
+::: row
+::: left
+
+**Case 1: Equal Variances (Pooled)**
+$$t = \frac{\bar{x}_1 - \bar{x}_2}{s_p\sqrt{\frac{1}{n_1}+\frac{1}{n_2}}}$$
+$$s_p^2 = \frac{(n_1-1)s_1^2 + (n_2-1)s_2^2}{n_1+n_2-2}$$
+$$df = n_1 + n_2 - 2$$
+:::
+
+::: right
+**Case 2: Unequal Variances (Welch)**
+$$t = \frac{\bar{x}_1 - \bar{x}_2}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}}$$
+$$df = \frac{\left(\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}\right)^2}{\frac{(s_1^2/n_1)^2}{n_1-1} + \frac{(s_2^2/n_2)^2}{n_2-1}}$$
+:::
+:::
+
+:::
 
 
-> Example 1: A study comparing two diets:  
-- **Low-fat diet:** $n_1 = 100$, $\bar{x}_1 = 9.31$, $s_1 = 4.67$  
-- **Regular diet:** $n_2 = 100$, $\bar{x}_2 = 7.40$, $s_2 = 4.04$  
-Form 95% CI for the difference in mean weight loss and conduct a hypothesis test at $\alpha = 0.05$ to see if the low-fat diet is more effective.
+
+
+## Confidence Interval Construction {.font60}
+
+::: cle10
+### General Form
+$$(\bar{x}_1 - \bar{x}_2) \pm t^*_{\alpha/2} \cdot SE$$
+
+**Pooled Variance CI**:
+$$SE = s_p\sqrt{\frac{1}{n_1} + \frac{1}{n_2}}$$
+
+**Welch's CI**:
+$$SE = \sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}$$
+
+### Interpretation Example
+"With 95% confidence, the true mean difference lies between [−3.2, 5.8]. As this interval contains 0, we cannot reject the null hypothesis at α=0.05."
+:::
 
 
 
+## Practical Considerations {.font70}
 
+::: cle11
+### When to Use Pooled Variance
+- Small samples with strong evidence of equal variances
+- Experimental designs with enforced variance control
+- Historical data showing consistent variance ratios
 
-
-## {.font60}
-
-> Example 2: Suppose you wish to compare a new method of teaching reading to "slow learners" with the current standard method. You decide to base your comparison on the results of a reading test given at the end of a learning period of six months. Of a random sample of 22 "slow learners," 10 are taught by the new method and 12 are taught by the standard method. All 22 children are taught by qualified instructors under similar conditions for the designated six-month period. The results of the reading test at the end of this period are given in the following table:
-
-
-| New Method |  |  |  | Standard Method |  |  |  |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 80 | 80 | 79 | 81 | 79 | 62 | 70 | 68 |
-| 76 | 66 | 71 | 76 | 73 | 76 | 86 | 73 |
-| 70 | 85 |  |  | 72 | 68 | 75 | 66 |
-
-##
-
+### When to Use Welch's Test
+- Default approach for unknown population variances
+- Unequal sample sizes ($n_1 \neq n_2$)
+- Variance ratio > 4:1 between groups
+- Conservative error rate control

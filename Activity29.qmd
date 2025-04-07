@@ -1,0 +1,25 @@
+---
+title: "Activity 29"
+subtitle: "MATH 216: Statistical Thinking"
+format: 
+  live-html:
+    theme:
+      light: [lux, theme-light.scss]
+      dark: [superhero, theme-dark.scss]
+engine: knitr
+toc: true
+echo: false
+---
+
+{{< include _extensions/r-wasm/live/_knitr.qmd >}}
+
+
+```{r setup, include=FALSE}
+library(openintro)
+library(dplyr)
+library(knitr)
+library(ggplot2)
+library(car)
+library(BSDA)
+```
+

@@ -47,40 +47,8 @@ yt <- 0
 ```
 
 
-## Comparing Two Population Means: Paired Difference Example {.font80}
 
-::: cle1
-
-- **Objective**: Assess the effectiveness of two training programs in skill enhancement.
-- **Design Rationale**: Participants are paired based on initial assessments to ensure comparable skill levels, enhancing the validity of the comparison.
-
-:::
-
-
-
-## Conceptual Foundation for Paired Samples {.font80}
-
-::: cle2
-
-- Paired designs minimize variability by controlling for individual differences.
-- This approach is crucial in settings where participants have inherent variability in initial abilities.
-
-:::
-
-
-
-## Hypotheses Framework {.font80}
-
-::: cle3
-
-- **Null Hypothesis** $(H_0)$: $\mu_{\text{A}} = \mu_{\text{B}}$ (no difference in means between two methods).
-- **Alternative Hypothesis** $(H_a)$: $\mu_{\text{A}} > \mu_{\text{B}}$ (Method A outperforms Method B).
-
-:::
-
-
-
-## Data Overview {.font70}
+## Effectiveness of two training programs: Paired Data {.font70}
 
 ::: {.columns}
 ::: {.column width="50%"}
@@ -115,32 +83,78 @@ yt <- 0
 :::
 
 
+## Comparing Two Population Means: Paired Difference {.font80}
 
-## Transition to Paired Analysis {.font80}
+::: cle1
 
-::: cle5
-
-- Transition from single-sample to paired-sample testing involves considering the dependency between paired observations.
-- Independence within pairs is crucial; the pairing itself should not influence the measured outcomes.
-
+- **Objective**: Assess the effectiveness of two training programs using paired observations
+- **Key Insight**: Analyze differences within pairs ($d_i = A_i - B_i$) to control for individual variability
+- **Design**: Repeated measures from same participants or matched pairs
 :::
 
 
-## Statistical Techniques and Conditions {.font80}
+## Conceptual Foundation {.font80}
+
+::: cle2
+
+- **Dependency**: Observations are naturally linked (same subject, matched characteristics)
+- **Advantage**: Reduces variability by eliminating between-subject differences
+- **Data Structure**: Focuses on pairwise differences rather than raw scores
+:::
+
+
+
+## Hypothesis Framework {.font80}
+
+::: cle3
+
+Let $\mu_d = \mu_A - \mu_B$ denote the population mean difference:
+
+- **Null Hypothesis**: $H_0: \mu_d = 0$  
+  (No difference between methods)
+- **Alternative Hypothesis**: $H_a: \mu_d > 0$  
+  (Method A produces higher scores than Method B)
+- **Two-Sided Alternative**: $H_a: \mu_d \neq 0$ if testing for any difference
+:::
+
+
+## General Testing Procedure {.font70}
+
+::: cle4
+
+1. **Calculate Differences**: $d_i = A_i - B_i$ for each pair
+2. **Compute Summary Statistics**:
+   - Mean difference: $\bar{d} = \frac{\sum d_i}{n}$
+   - Standard deviation: $s_d = \sqrt{\frac{\sum (d_i - \bar{d})^2}{n-1}}$
+3. **Check Conditions**:
+   - Normality of differences (QQ-plot or Shapiro-Wilk)
+   - Random sampling/assignment
+4. **Select Test Statistic**:
+   
+   $$t = \frac{\bar{d} - \mu_{d0}}{s_d/\sqrt{n}} \quad \text{with } df = n-1$$
+   
+   Where $\mu_{d0}$ is the hypothesized mean difference (0 under $H_0$)
+5. **Make Decision**:
+   - Compare p-value to $\alpha$ (typically 0.05)
+   - Interpret confidence interval for $\mu_d$
+:::
+
+
+
+## Interpretation Guidance {.font70}
 
 ::: cle6
 
-### Known vs. Unknown Standard Deviations
-
-- Use $z$-tests when standard deviations are known and sample sizes are large.
-- Employ $t$-tests when standard deviations are unknown and sample sizes are small.
-
-### Normality and Non-Normal Data
-
-- For normally distributed differences, use $t$-tests.
-- For non-normal data, consider non-parametric tests like the Sign Test or Wilcoxon Signed-Rank Test.
-
+- **Significant Result**: Reject $H_0$ if p-value < $\alpha$
+  - "Evidence suggests Method A outperforms Method B (t(19)=2.15, p=0.022)"
+- **Nonsignificant Result**: Fail to reject $H_0$
+  - "No statistically significant difference detected"
+- **Always Report**:
+  - Effect size (mean difference)
+  - Confidence interval
+  - Practical significance
 :::
+
 
 
 ## Selecting Appropriate Statistical Tests {.font80}
@@ -153,16 +167,17 @@ yt <- 0
 :::
 
 
+## Connection to Confidence Intervals {.font80}
 
-## Results Interpretation and Confidence Intervals {.font80}
+::: cle7
 
-::: cle8
+A 95% CI for $\mu_d$ is constructed as:
 
-- Evaluate the p-value against the significance level to decide on rejecting the null hypothesis.
-- Construct confidence intervals to estimate the range of true effect sizes, enhancing understanding of practical significance.
+$$\bar{d} \pm t^*_{\alpha/2} \frac{s_d}{\sqrt{n}}$$
 
+- **Interpretation**: "We are 95% confident the true mean difference lies between [X, Y]"
+- **Decision Rule**: If CI excludes 0, reject $H_0$ at $\alpha=0.05$
 :::
-
 
 ## Diagnostic Plots and R Code {.font80}
 
@@ -187,7 +202,7 @@ qq_norm <- ggplot(data = as.data.frame(differences), aes(sample = differences)) 
   ggtitle("QQ Plot of Differences")
 
 # Generate a histogram for normality check
-histogram <- ggplot(data = as.data.frame(differences), aes(x = differences)) +
+histogram <- ggplot(data = tibble(differences), aes(x = differences)) +
   geom_histogram(bins = 10, color = "maroon", fill = "gold") +
   ggtitle("Histogram of Differences")
 
@@ -197,12 +212,35 @@ grid.arrange(qq_norm, histogram, ncol = 2)
 ### R Code
 
 ```{r, eval=FALSE}
+# Define the scores for Method A and Method B
+methodA <- c(85, 88, 90, 92, 91, 89, 93, 95, 96, 97, 98,
+             99, 100, 101, 102, 103, 104, 105, 106, 107)
+methodB <- c(83, 89, 87, 84, 92, 90, 85, 91, 98, 94, 100,
+             101, 99, 111, 111, 106, 109, 103, 111, 114)
+
+# Calculate differences
+differences <- methodA - methodB
+
+# Generate a QQ plot for normality check
+qq_norm <- ggplot(data = tibble(differences), aes(sample = differences)) +
+  stat_qq() + stat_qq_line() +
+  ggtitle("QQ Plot of Differences")
+
+# Generate a histogram for normality check
+histogram <- ggplot(data = as.data.frame(differences), aes(x = differences)) +
+  geom_histogram(bins = 10, color = "maroon", fill = "gold") +
+  ggtitle("Histogram of Differences")
+```
+
+:::
+
+## Preliminary Tests in R {.font60}
+
+
+```{r}
 # Perform the Anderson-Darling test for normality
 library(nortest)
 ad.test(differences)
-
-# Perform the paired t-test
-t.test(methodA, methodB, paired = TRUE, alternative = "greater")
 
 # Calculate standard deviation of differences
 sd(differences) # s_d
@@ -211,27 +249,13 @@ sd(differences) # s_d
 qt(0.975, df = 20 - 1) # critical value
 ```
 
-:::
+## `t.test` for paired samples {.font80}
 
+```{r}
+# Perform the paired t-test
+t.test(methodA, methodB, paired = TRUE, alternative = "greater")
+t.test(differences~1, alternative = "greater", data = tibble(differences)) # alternate 1
+t.test(differences, alternative = "greater") # alternate 2
+```
 
-
-## {.font50}
-
-> Example 1: An experiment is conducted to compare the starting salaries of male and female college graduates who find jobs. Pairs are formed by choosing a male and a female with the same major and similar grade point averages (GPAs). Suppose a random sample of 10 pairs is formed in this manner and the starting annual salary of each person is recorded. The results are shown in following table. Use $\alpha=0.05$, perform hypothesis test to see if the data provide sufficient evidence to support "the male average starting salary is greater than female average starting salary".
-
-| Table 9.5 | Data on Annual Salaries for Matched Pairs of College <br> Graduates |  |  |
-| :---: | :---: | :---: | :---: |
-| Pair | Male | Female | Difference Male - Female |
-| 1 | $\$ 29,300$ | $\$ 28,800$ | $\$ 500$ |
-| 2 | 41,500 | 41,600 | -100 |
-| 3 | 40,400 | 39,800 | 600 |
-| 4 | 38,500 | 38,500 | 0 |
-| 5 | 43,500 | 42,600 | 900 |
-| 6 | 37,800 | 38,000 | -200 |
-| 7 | 69,500 | 69,200 | 300 |
-| 8 | 41,200 | 40,100 | 1,100 |
-| 9 | 38,400 | 38,200 | 200 |
-| 10 | 59,200 | 58,500 | 700 |
-
-##
 

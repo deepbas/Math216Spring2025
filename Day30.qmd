@@ -178,10 +178,5 @@ wilcox.test(online_scores, traditional_scores, alternative = "two.sided", conf.l
 :::
 
 
-## {.font60}
 
-
-
-
-##
 

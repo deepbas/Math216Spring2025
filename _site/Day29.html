@@ -161,117 +161,121 @@ Bastola
 </ol>
 </div>
 </section>
-<section id="properties-of-sampling-distribution" class="slide level2 font70">
-<h2>Properties of Sampling Distribution</h2>
+<section id="sampling-distribution-properties" class="slide level2 font70">
+<h2>Sampling Distribution Properties</h2>
 <div class="cle7">
-<p>For large samples or small but normally distributed samples:</p>
+<p>For <span class="math inline">\(\bar{X}_1 - \bar{X}_2\)</span>:</p>
 <ul>
-<li><strong>Mean of the Distribution:</strong> <span class="math inline">\((\bar{x}_1 - \bar{x}_2)\)</span> has a mean of <span class="math inline">\((\mu_1 - \mu_2)\)</span>.<br>
-</li>
-<li><strong>Standard Deviation:</strong><br>
-<span class="math display">\[\sigma_{(\bar{x}_1 - \bar{x}_2)} = \sqrt{\frac{\sigma_1^2}{n_1} + \frac{\sigma_2^2}{n_2}}\]</span><br>
-</li>
-<li><strong>Distribution Assumption:</strong> Approximately normal by the Central Limit Theorem.<br>
-</li>
+<li><p><strong>Expected Value</strong>: <span class="math inline">\(E(\bar{X}_1 - \bar{X}_2) = \mu_1 - \mu_2\)</span></p></li>
+<li><p><strong>Standard Error</strong>:</p>
+<p><span class="math display">\[\sigma_{\bar{X}_1 - \bar{X}_2} = \sqrt{
+\underbrace{\frac{\sigma_1^2}{n_1}}_{\text{Group 1 variability}} +
+\underbrace{\frac{\sigma_2^2}{n_2}}_{\text{Group 2 variability}}}\]</span></p></li>
+<li><p><strong>Distribution Shape</strong>:</p>
+<ul>
+<li>Exactly normal if populations are normal</li>
+<li>Approximately normal via CLT for <span class="math inline">\(n \geq 30\)</span></li>
+</ul></li>
 </ul>
 </div>
 </section>
-<section id="confidence-interval-for-mu_1---mu_2" class="slide level2 font60">
-<h2>Confidence Interval for <span class="math inline">\((\mu_1 - \mu_2)\)</span></h2>
+<section id="variance-homogeneity-testing" class="slide level2">
+<h2>Variance Homogeneity Testing</h2>
 <div class="cle6">
 <ul>
-<li><p><strong>Known Variances:</strong><br>
-<span class="math display">\[(\bar{x}_1 - \bar{x}_2) \pm z_{\alpha/2} \sqrt{\frac{\sigma_1^2}{n_1} + \frac{\sigma_2^2}{n_2}}\]</span></p></li>
-<li><p><strong>Unknown Variances (Pooled Standard Deviation):</strong><br>
-<span class="math display">\[s_p = \sqrt{\frac{(n_1-1)s_1^2 + (n_2-1)s_2^2}{n_1+n_2-2}}\]</span><br>
-<span class="math display">\[(\bar{x}_1 - \bar{x}_2) \pm t_{\alpha/2, n_1+n_2-2} \cdot s_p \cdot \sqrt{\frac{1}{n_1} + \frac{1}{n_2}}\]</span><br>
-</p></li>
+<li><strong>Formal Tests</strong>: Levene’s test</li>
+<li><strong>Practical Approach</strong>:
+<ul>
+<li>Compare variance ratios (<span class="math inline">\(s_1^2/s_2^2\)</span>)</li>
+<li>Consider sample sizes (unequal n exacerbates heterogeneity effects)</li>
+</ul></li>
 </ul>
 </div>
 </section>
-<section id="hypothesis-testing" class="slide level2 font70">
-<h2>Hypothesis Testing</h2>
+<section id="pooled-variance" class="slide level2 font70">
+<h2>Pooled Variance</h2>
 <div class="cle12">
+<p>Used when assuming equal population variances (<span class="math inline">\(\sigma_1^2 = \sigma_2^2\)</span>):</p>
+<p><span class="math display">\[s_p^2 = \frac{(n_1-1)s_1^2 + (n_2-1)s_2^2}{n_1 + n_2 - 2}\]</span></p>
 <ul>
-<li><strong>Null Hypothesis (<span class="math inline">\(H_0\)</span>):</strong> <span class="math inline">\(\mu_1 = \mu_2\)</span> (no difference in means).<br>
-</li>
-<li><strong>Alternative Hypothesis (<span class="math inline">\(H_a\)</span>):</strong> <span class="math inline">\(\mu_1 \neq \mu_2\)</span> (means are different).</li>
+<li><strong>Weighted Average</strong>: Combines variances proportionally to sample sizes</li>
+<li><strong>Degrees of Freedom</strong>: <span class="math inline">\(df = n_1 + n_2 - 2\)</span> (total observations minus groups)</li>
 </ul>
-<p><strong>Test Statistic for Equal Variances:</strong><br>
-<span class="math display">\[t = \frac{\bar{x}_1 - \bar{x}_2}{s_p \sqrt{\frac{1}{n_1} + \frac{1}{n_2}}}\]</span></p>
-<ul>
-<li><strong>Degrees of Freedom:</strong> <span class="math inline">\(n_1 + n_2 - 2\)</span>.<br>
-</li>
-<li><strong>Decision Rule:</strong> Reject <span class="math inline">\(H_0\)</span> if <span class="math inline">\(p\)</span>-value &lt; <span class="math inline">\(\alpha\)</span> (commonly 0.05).<br>
-</li>
-</ul>
-</div>
-</section>
-<section id="section" class="slide level2 font60">
-<h2></h2>
-<blockquote>
-<p>Example 1: A study comparing two diets:<br>
-- <strong>Low-fat diet:</strong> <span class="math inline">\(n_1 = 100\)</span>, <span class="math inline">\(\bar{x}_1 = 9.31\)</span>, <span class="math inline">\(s_1 = 4.67\)</span><br>
-- <strong>Regular diet:</strong> <span class="math inline">\(n_2 = 100\)</span>, <span class="math inline">\(\bar{x}_2 = 7.40\)</span>, <span class="math inline">\(s_2 = 4.04\)</span><br>
-Form 95% CI for the difference in mean weight loss and conduct a hypothesis test at <span class="math inline">\(\alpha = 0.05\)</span> to see if the low-fat diet is more effective.</p>
-</blockquote>
-</section>
-<section id="section-1" class="slide level2 font60">
-<h2></h2>
-<blockquote>
-<p>Example 2: Suppose you wish to compare a new method of teaching reading to “slow learners” with the current standard method. You decide to base your comparison on the results of a reading test given at the end of a learning period of six months. Of a random sample of 22 “slow learners,” 10 are taught by the new method and 12 are taught by the standard method. All 22 children are taught by qualified instructors under similar conditions for the designated six-month period. The results of the reading test at the end of this period are given in the following table:</p>
-</blockquote>
 <table class="caption-top">
 <thead>
 <tr class="header">
-<th style="text-align: center;">New Method</th>
-<th style="text-align: center;"></th>
-<th style="text-align: center;"></th>
-<th style="text-align: center;"></th>
-<th style="text-align: center;">Standard Method</th>
-<th style="text-align: center;"></th>
-<th style="text-align: center;"></th>
-<th style="text-align: center;"></th>
+<th>Component</th>
+<th>Meaning</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;">80</td>
-<td style="text-align: center;">80</td>
-<td style="text-align: center;">79</td>
-<td style="text-align: center;">81</td>
-<td style="text-align: center;">79</td>
-<td style="text-align: center;">62</td>
-<td style="text-align: center;">70</td>
-<td style="text-align: center;">68</td>
+<td><span class="math inline">\((n_1-1)s_1^2\)</span></td>
+<td>Scaled variability from Group 1</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">76</td>
-<td style="text-align: center;">66</td>
-<td style="text-align: center;">71</td>
-<td style="text-align: center;">76</td>
-<td style="text-align: center;">73</td>
-<td style="text-align: center;">76</td>
-<td style="text-align: center;">86</td>
-<td style="text-align: center;">73</td>
+<td><span class="math inline">\((n_2-1)s_2^2\)</span></td>
+<td>Scaled variability from Group 2</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">70</td>
-<td style="text-align: center;">85</td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;"></td>
-<td style="text-align: center;">72</td>
-<td style="text-align: center;">68</td>
-<td style="text-align: center;">75</td>
-<td style="text-align: center;">66</td>
+<td>Denominator</td>
+<td>Total degrees of freedom</td>
 </tr>
 </tbody>
 </table>
+</div>
 </section>
-<section id="section-2" class="slide level2">
-<h2></h2>
+<section id="hypothesis-testing-framework" class="slide level2 font60">
+<h2>Hypothesis Testing Framework</h2>
+<div class="cle8">
+<ul>
+<li><strong>Null Hypothesis</strong>: <span class="math inline">\(H_0: \mu_1 - \mu_2 = 0\)</span></li>
+<li><strong>Alternatives</strong>:
+<ul>
+<li><span class="math inline">\(H_a: \mu_1 - \mu_2 \neq 0\)</span> (Two-tailed)</li>
+<li><span class="math inline">\(H_a: \mu_1 - \mu_2 &gt; 0\)</span> (One-tailed)</li>
+</ul></li>
+</ul>
+<div class="row">
+<div class="left">
+<p><strong>Case 1: Equal Variances (Pooled)</strong> <span class="math display">\[t = \frac{\bar{x}_1 - \bar{x}_2}{s_p\sqrt{\frac{1}{n_1}+\frac{1}{n_2}}}\]</span> <span class="math display">\[s_p^2 = \frac{(n_1-1)s_1^2 + (n_2-1)s_2^2}{n_1+n_2-2}\]</span> <span class="math display">\[df = n_1 + n_2 - 2\]</span></p>
+</div>
+<div class="right">
+<p><strong>Case 2: Unequal Variances (Welch)</strong> <span class="math display">\[t = \frac{\bar{x}_1 - \bar{x}_2}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}}\]</span> <span class="math display">\[df = \frac{\left(\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}\right)^2}{\frac{(s_1^2/n_1)^2}{n_1-1} + \frac{(s_2^2/n_2)^2}{n_2-1}}\]</span></p>
+</div>
+</div>
+</div>
+</section>
+<section id="confidence-interval-construction" class="slide level2 font60">
+<h2>Confidence Interval Construction</h2>
+<div class="cle10">
+<h3 id="general-form">General Form</h3>
+<p><span class="math display">\[(\bar{x}_1 - \bar{x}_2) \pm t^*_{\alpha/2} \cdot SE\]</span></p>
+<p><strong>Pooled Variance CI</strong>: <span class="math display">\[SE = s_p\sqrt{\frac{1}{n_1} + \frac{1}{n_2}}\]</span></p>
+<p><strong>Welch’s CI</strong>: <span class="math display">\[SE = \sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}\]</span></p>
+<h3 id="interpretation-example">Interpretation Example</h3>
+<p>“With 95% confidence, the true mean difference lies between [−3.2, 5.8]. As this interval contains 0, we cannot reject the null hypothesis at α=0.05.”</p>
+</div>
+</section>
+<section id="practical-considerations" class="slide level2 font70">
+<h2>Practical Considerations</h2>
+<div class="cle11">
+<h3 id="when-to-use-pooled-variance">When to Use Pooled Variance</h3>
+<ul>
+<li>Small samples with strong evidence of equal variances</li>
+<li>Experimental designs with enforced variance control</li>
+<li>Historical data showing consistent variance ratios</li>
+</ul>
+<h3 id="when-to-use-welchs-test">When to Use Welch’s Test</h3>
+<ul>
+<li>Default approach for unknown population variances</li>
+<li>Unequal sample sizes (<span class="math inline">\(n_1 \neq n_2\)</span>)</li>
+<li>Variance ratio &gt; 4:1 between groups</li>
+<li>Conservative error rate control</li>
+</ul>
 
 
+</div>
 </section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">

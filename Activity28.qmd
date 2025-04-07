@@ -1,0 +1,126 @@
+---
+title: "Activity 28"
+subtitle: "MATH 216: Statistical Thinking"
+format: 
+  live-html:
+    theme:
+      light: [lux, theme-light.scss]
+      dark: [superhero, theme-dark.scss]
+engine: knitr
+toc: true
+echo: false
+---
+
+{{< include _extensions/r-wasm/live/_knitr.qmd >}}
+
+
+```{r setup, include=FALSE}
+library(openintro)
+library(dplyr)
+library(knitr)
+library(ggplot2)
+library(car)
+library(BSDA)
+```
+
+
+## Activity 1: Quiz
+
+
+- **Question**: Given the null hypothesis $H_0: \mu_{\text{A}} = \mu_{\text{B}}$ and the alternative hypothesis $H_a: \mu_{\text{A}} > \mu_{\text{B}}$, what does rejecting $H_0$ imply about the effectiveness of Method A compared to Method B?
+- **Options**:
+  - A) Method A is less effective than Method B.
+  - B) Method A is equally effective as Method B.
+  - C) Method A is more effective than Method B.
+  - D) The test is inconclusive.
+
+
+
+## Activity 2: Case Studies and Problem-Solving
+
+
+- **Case Study**: An experiment is conducted to compare the starting salaries of male and female college graduates who find jobs. Pairs are formed by choosing a male and a female with the same major and similar GPAs. The data is provided in the table below. Use $\alpha=0.05$ to perform a hypothesis test to see if the data provide sufficient evidence to support the claim that "the male average starting salary is greater than the female average starting salary."
+
+| Pair | Male | Female | Difference Male - Female |
+|------|------|--------|--------------------------|
+| 1    | 29,300 | 28,800 | 500 |
+| 2    | 41,500 | 41,600 | -100 |
+| 3    | 40,400 | 39,800 | 600 |
+| 4    | 38,500 | 38,500 | 0 |
+| 5    | 43,500 | 42,600 | 900 |
+| 6    | 37,800 | 38,000 | -200 |
+| 7    | 69,500 | 69,200 | 300 |
+| 8    | 41,200 | 40,100 | 1,100 |
+| 9    | 38,400 | 38,200 | 200 |
+| 10   | 59,200 | 58,500 | 700 |
+
+1. **Analyze**: Perform a paired t-test on the salary data.
+2. **Interpret**: Discuss the results, including the p-value and confidence interval.
+3. **Conclude**: Determine whether the data supports the claim that male graduates earn more than female graduates.
+
+
+```{webr}
+diff <- c(500, -100, 600, 0, 900, -200, 300, 1100, 200, 700)
+# Perform the paired t-test
+t.test(diff, alternative = "greater")
+```
+
+## **Activity 3: Exam Improvement**
+
+
+A teacher gives a pre-test and post-test to 8 students. Did scores improve? Test with α=0.05.  
+
+**Data**:  
+
+```{webr}
+pre <- c(65, 72, 58, 83, 90, 75, 62, 68)
+post <- c(72, 75, 65, 88, 92, 82, 70, 73)
+```
+
+
+1. Run the paired t-test:  
+
+```{webr}
+t.test(post, pre, paired=TRUE, alternative="greater")
+```
+2. Report the p-value. Is the improvement significant?  
+
+
+
+## **Activity 4: Drug Effectiveness**
+
+
+A drug claims to reduce blood pressure. Test with α=0.05 using this data from 6 patients (mmHg):  
+
+**Data**:  
+
+```{webr}
+before <- c(140, 155, 132, 148, 160, 135)
+after <- c(132, 145, 130, 140, 152, 128)
+```
+
+**Steps**:  
+
+1. Verify normality of differences:  
+
+```{webr}
+differences <- before - after
+shapiro.test(differences)  
+```
+
+2. Run the test:  
+
+```{webr}
+t.test(before, after, paired=TRUE, alternative="greater")
+```
+
+3. **Output**:  
+
+
+
+
+
+
+
+
+
