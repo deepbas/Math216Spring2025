@@ -23,3 +23,49 @@ library(car)
 library(BSDA)
 ```
 
+
+### Activity 1: Quiz 
+
+- What is the null hypothesis for the Mann-Whitney U test?  
+
+  A) The medians are equal  
+  B) The means are equal  
+  C) The variances are equal  
+  D) The distributions are identical  
+
+### Activity 2: Group Height Analysis
+
+**Task:** Compare heights using Wilcoxon Rank Sum:  
+
+```{r}
+group1 <- c(160,165,170,155,168)
+group2 <- c(172,168,175,180,165)
+wilcox.test(group1, group2)
+```
+
+\vspace*{1in}
+
+
+### Activity 3: Treatment Recovery Case Study
+
+**Solution:** 
+
+```{r}
+treatment_a <- c(10,12,14,11,13)
+treatment_b <- c(15,14,16,17,12)
+wilcox.test(treatment_a, treatment_b, paired=TRUE)
+```
+
+\vspace*{1in}
+
+
+### Activity 4: Exam Scores Analysis (From Slides)
+
+
+```{r}
+online <- c(78,82,83,87,75,43,78,42,94,47,98,90,97,81)
+traditional <- c(83,82,92,100,74,90,44,84,77,89,70,34)
+wilcox.test(online, traditional)
+```
+
+

@@ -5,7 +5,7 @@ title-slide-attributes:
   data-background-size: contain
   data-background-opacity: "0.5"
 subtitle: "Math 216: Statistical Thinking"
-author: "Bastola"
+author: "Dr. Bastola"
 format:
   revealjs:
     html-math-method: mathjax
@@ -91,7 +91,7 @@ For $\bar{X}_1 - \bar{X}_2$:
 - **Formal Tests**: Levene's test
 - **Practical Approach**:
   - Compare variance ratios ($s_1^2/s_2^2$)
-  - Consider sample sizes (unequal n exacerbates heterogeneity effects)
+  - Consider sample sizes (unequal n makes it harder to find effects)
 :::
 
 ## Pooled Variance {.font70}
@@ -141,7 +141,7 @@ $$df = \frac{\left(\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}\right)^2}{\frac{(s_1^2/
 
 
 
-## Confidence Interval Construction {.font60}
+## Confidence Interval {.font50}
 
 ::: cle10
 ### General Form

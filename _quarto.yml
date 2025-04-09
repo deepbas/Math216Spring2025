@@ -58,6 +58,10 @@ website:
           #   href: Day30.html
           # - text: "Day 29"
           #   href: Day29.html
+          - text: "Day 29"
+            href: Day29.html
+          - text: "Activity 29"
+            href: Activity29.html
           - text: "Day 28"
             href: Day28.html
           - text: "Activity 28"

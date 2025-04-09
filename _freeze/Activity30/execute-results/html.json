@@ -1,8 +1,8 @@
 {
-  "hash": "405ab935bc774bea7310e1d3e10e397d",
+  "hash": "cccc5f71628007a453b9307802e94907",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"Activity 30\"\nsubtitle: \"MATH 216: Statistical Thinking\"\nformat: \n  live-html:\n    theme:\n      light: [lux, theme-light.scss]\n      dark: [superhero, theme-dark.scss]\nengine: knitr\ntoc: true\necho: false\n---\n\n::: {.cell}\n\n:::\n\n\n\n\n\n",
+    "markdown": "---\ntitle: \"Activity 30\"\nsubtitle: \"MATH 216: Statistical Thinking\"\nformat: \n  live-html:\n    theme:\n      light: [lux, theme-light.scss]\n      dark: [superhero, theme-dark.scss]\nengine: knitr\ntoc: true\necho: false\n---\n\n::: {.cell}\n\n:::\n\n\n\n\n\n\n### Activity 1: Quiz \n\n- What is the null hypothesis for the Mann-Whitney U test?  \n\n  A) The medians are equal  \n  B) The means are equal  \n  C) The variances are equal  \n  D) The distributions are identical  \n\n### Activity 2: Group Height Analysis\n\n**Task:** Compare heights using Wilcoxon Rank Sum:  \n\n::: {.cell}\n::: {.cell-output .cell-output-stdout}\n\n```\n\n\tWilcoxon rank sum test with continuity correction\n\ndata:  group1 and group2\nW = 4, p-value = 0.09269\nalternative hypothesis: true location shift is not equal to 0\n```\n\n\n:::\n:::\n\n\\vspace*{1in}\n\n\n### Activity 3: Treatment Recovery Case Study\n\n**Solution:** \n\n::: {.cell}\n::: {.cell-output .cell-output-stdout}\n\n```\n\n\tWilcoxon signed rank test with continuity correction\n\ndata:  treatment_a and treatment_b\nV = 1, p-value = 0.1041\nalternative hypothesis: true location shift is not equal to 0\n```\n\n\n:::\n:::\n\n\\vspace*{1in}\n\n\n### Activity 4: Exam Scores Analysis (From Slides)\n\n\n::: {.cell}\n::: {.cell-output .cell-output-stdout}\n\n```\n\n\tWilcoxon rank sum test with continuity correction\n\ndata:  online and traditional\nW = 85.5, p-value = 0.959\nalternative hypothesis: true location shift is not equal to 0\n```\n\n\n:::\n:::\n\n\n",
     "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"
