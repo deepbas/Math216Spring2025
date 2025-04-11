@@ -172,3 +172,5 @@ $$SE = \sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}$$
 - Unequal sample sizes ($n_1 \neq n_2$)
 - Variance ratio > 4:1 between groups
 - Conservative error rate control
+
+

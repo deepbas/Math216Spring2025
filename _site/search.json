@@ -912,56 +912,88 @@
     "href": "Day30.html#one-sample-tests-summary",
     "title": "Day 30",
     "section": "One sample tests summary",
-    "text": "One sample tests summary\n\n\n\n\n\ngraph LR\n  A[Start] --&gt; B{Paired?}\n  B --&gt;|Yes| C[Diffs] --&gt; D{σ?}\n  D --&gt;|Yes| E[Z]:::green\n  D --&gt;|No| F{Normal?} --&gt;|Yes| G[T]:::green\n  F --&gt;|No| H[Wilcoxon]:::orange\n  B --&gt;|No| I{σ?}\n  I --&gt;|Yes| J[Z]:::green\n  I --&gt;|No| K{n≥30?}\n  K --&gt;|Yes| L[T*]:::yellow\n  K --&gt;|No| M{Normal?} --&gt;|Yes| N[T]:::green\n  M --&gt;|No| O[Sign/Wilcox]:::orange\n\n  classDef green fill:#D5E8D4,stroke:#82B366;\n  classDef yellow fill:#FFF2CC,stroke:#D6B656;\n  classDef orange fill:#F8CECC,stroke:#B85450;\n  linkStyle 0 stroke-width:2px;"
+    "text": "One sample tests summary\n\n\n\n\n\ngraph LR\n  A[Start] --&gt; B{Paired?}\n  B --&gt;|Yes| C[Diffs] --&gt; D{σ?}\n  D --&gt;|Yes| E[Z]:::green\n  D --&gt;|No| F{Normal?} --&gt;|Yes| G[T]:::green\n  F --&gt;|No| H[Wilcoxon]:::orange\n  B --&gt;|No| I{σ?}\n  I --&gt;|Yes| J[Z]:::green\n  I --&gt;|No| K{n≥30?}\n  K --&gt;|Yes| L[T*]:::yellow\n  K --&gt;|No| M{Normal?} --&gt;|Yes| N[T]:::green\n  M --&gt;|No| O[Sign/Wilcox]:::orange\n\n  classDef green fill:#D5E8D4,stroke:#82B366;\n  classDef yellow fill:#FFF2CC,stroke:#D6B656;\n  classDef orange fill:#F8CECC,stroke:#B85450;\n  linkStyle 0 stroke-width:2px;",
+    "crumbs": [
+      "Week 10",
+      "Day 30"
+    ]
   },
   {
     "objectID": "Day30.html#two-samples-tests-summary",
     "href": "Day30.html#two-samples-tests-summary",
     "title": "Day 30",
     "section": "Two samples tests summary",
-    "text": "Two samples tests summary\n\n\n\n\n\ngraph LR\n  A[Two Samples] --&gt; B{Paired?}\n  B --&gt;|Yes| C[Diffs] --&gt; D{σ?}\n  D --&gt;|Yes| E[Z]:::green\n  D --&gt;|No| F{Norm?} --&gt;|Yes| G[T]:::green\n  F --&gt;|No| H[Wilcoxon]:::orange\n  B --&gt;|No| I{σ?}\n  I --&gt;|Yes| J[Z]:::green\n  I --&gt;|No| K{n≥30?}\n  K --&gt;|Yes| L[T*]:::yellow\n  K --&gt;|No| M{Normal both?} --&gt;|Yes| N[T]:::green\n  M --&gt;|No| O[Mann Whitney]:::orange\n\n  classDef green fill:#D5E8D4,stroke:#82B366;\n  classDef yellow fill:#FFF2CC,stroke:#D6B656;\n  classDef orange fill:#F8CECD,stroke:#B85450;"
+    "text": "Two samples tests summary\n\n\n\n\n\ngraph LR\n  A[Two Samples] --&gt; B{Paired?}\n  B --&gt;|Yes| C[Diffs] --&gt; D{σ?}\n  D --&gt;|Yes| E[Z]:::green\n  D --&gt;|No| F{Norm?} --&gt;|Yes| G[T]:::green\n  F --&gt;|No| H[Wilcoxon]:::orange\n  B --&gt;|No| I{σ?}\n  I --&gt;|Yes| J[Z]:::green\n  I --&gt;|No| K{n≥30?}\n  K --&gt;|Yes| L[T*]:::yellow\n  K --&gt;|No| M{Normal both?} --&gt;|Yes| N[T]:::green\n  M --&gt;|No| O[Mann Whitney]:::orange\n\n  classDef green fill:#D5E8D4,stroke:#82B366;\n  classDef yellow fill:#FFF2CC,stroke:#D6B656;\n  classDef orange fill:#F8CECD,stroke:#B85450;",
+    "crumbs": [
+      "Week 10",
+      "Day 30"
+    ]
   },
   {
     "objectID": "Day30.html#wilcoxon-test-in-r",
     "href": "Day30.html#wilcoxon-test-in-r",
     "title": "Day 30",
     "section": "Wilcoxon Test in R",
-    "text": "Wilcoxon Test in R\n\nOne-Sample Wilcoxon Signed Rank Test\nNon-parametric test of whether a single sample’s median differs from a hypothesized value.\nwilcox.test(x, mu = 0, alternative = \"two.sided\", conf.level = 0.95)\nPaired Wilcoxon Signed Rank Test\nTests median differences between paired measurements (non-parametric alternative to paired t-test).\nwilcox.test(x, y, paired = TRUE, alternative = \"two.sided\")\nWilcoxon Rank Sum/Mann-Whitney U Test\nNon-parametric comparison of two independent sample distributions (location).\nwilcox.test(x ~ group, data = dataset, alternative = \"two.sided\")"
+    "text": "Wilcoxon Test in R\n\nOne-Sample Wilcoxon Signed Rank Test\nNon-parametric test of whether a single sample’s median differs from a hypothesized value.\nwilcox.test(x, mu = 0, alternative = \"two.sided\", conf.level = 0.95)\nPaired Wilcoxon Signed Rank Test\nTests median differences between paired measurements (non-parametric alternative to paired t-test).\nwilcox.test(x, y, paired = TRUE, alternative = \"two.sided\")\nWilcoxon Rank Sum/Mann-Whitney U Test\nNon-parametric comparison of two independent sample distributions (location).\nwilcox.test(x ~ group, data = dataset, alternative = \"two.sided\")",
+    "crumbs": [
+      "Week 10",
+      "Day 30"
+    ]
   },
   {
     "objectID": "Day30.html#parametric-tests-in-r",
     "href": "Day30.html#parametric-tests-in-r",
     "title": "Day 30",
     "section": "Parametric Tests in R",
-    "text": "Parametric Tests in R\n\n\nz-Test (Known σ²)\nRequires BSDA package. For known population variance:\nBSDA::z.test(x, mu = 0, sigma.x = 1, alternative = \"two.sided\")\nStudent’s t-Test\nCompare means (one-sample, two-sample, or paired). Default assumes unequal variances:\nt.test(x, y = NULL, paired = FALSE, var.equal = FALSE, conf.level = 0.95)"
+    "text": "Parametric Tests in R\n\n\nz-Test (Known σ²)\nRequires BSDA package. For known population variance:\nBSDA::z.test(x, mu = 0, sigma.x = 1, alternative = \"two.sided\")\nStudent’s t-Test\nCompare means (one-sample, two-sample, or paired). Default assumes unequal variances:\nt.test(x, y = NULL, paired = FALSE, var.equal = FALSE, conf.level = 0.95)",
+    "crumbs": [
+      "Week 10",
+      "Day 30"
+    ]
   },
   {
     "objectID": "Day30.html#summary-statistics-tests-bsda",
     "href": "Day30.html#summary-statistics-tests-bsda",
     "title": "Day 30",
     "section": "Summary Statistics Tests (BSDA)",
-    "text": "Summary Statistics Tests (BSDA)\n\nzsum.test\nZ-test from summary statistics:\nBSDA::zsum.test(mean.x, sigma.x, n.x, mu = 0, alternative = \"two.sided\")\ntsum.test\nt-test from summary statistics:\nBSDA::tsum.test(mean.x, s.x, n.x, mu = 0, var.equal = FALSE)"
+    "text": "Summary Statistics Tests (BSDA)\n\nzsum.test\nZ-test from summary statistics:\nBSDA::zsum.test(mean.x, sigma.x, n.x, mu = 0, alternative = \"two.sided\")\ntsum.test\nt-test from summary statistics:\nBSDA::tsum.test(mean.x, s.x, n.x, mu = 0, var.equal = FALSE)",
+    "crumbs": [
+      "Week 10",
+      "Day 30"
+    ]
   },
   {
     "objectID": "Day30.html#analysis-of-exam-scores-online-vs-traditional-classroom",
     "href": "Day30.html#analysis-of-exam-scores-online-vs-traditional-classroom",
     "title": "Day 30",
     "section": "Analysis of Exam Scores: Online vs Traditional Classroom",
-    "text": "Analysis of Exam Scores: Online vs Traditional Classroom\n\nTwo groups of students, one taking an online class and the other in a traditional classroom setting, were given the same final exam. Here are the scores:\n\nOnline: 78, 82, 83, 87, 75, 43, 78, 42, 94, 47, 98, 90, 97, 81\nTraditional: 83, 82, 92, 100, 74, 90, 44, 84, 77, 89, 70, 34\n\nWe want to determine if there’s a statistically significant difference between the exam scores of the two groups using a non-parametric test."
+    "text": "Analysis of Exam Scores: Online vs Traditional Classroom\n\nTwo groups of students, one taking an online class and the other in a traditional classroom setting, were given the same final exam. Here are the scores:\n\nOnline: 78, 82, 83, 87, 75, 43, 78, 42, 94, 47, 98, 90, 97, 81\nTraditional: 83, 82, 92, 100, 74, 90, 44, 84, 77, 89, 70, 34\n\nWe want to determine if there’s a statistically significant difference between the exam scores of the two groups using a non-parametric test.",
+    "crumbs": [
+      "Week 10",
+      "Day 30"
+    ]
   },
   {
     "objectID": "Day30.html#hypothesis-test-setup",
     "href": "Day30.html#hypothesis-test-setup",
     "title": "Day 30",
     "section": "Hypothesis Test Setup",
-    "text": "Hypothesis Test Setup\n\nWe will perform a Mann-Whitney U test, which does not assume a normal distribution of the scores.\nHypotheses\n\nNull hypothesis (\\(H_0\\)): There is no difference in the median scores between the two classes.\nAlternative hypothesis (\\(H_a\\)): There is a difference in the median scores between the two classes.\n\nSignificance Level\n\n\\(\\alpha = 0.05\\): This is the threshold for determining statistical significance."
+    "text": "Hypothesis Test Setup\n\nWe will perform a Mann-Whitney U test, which does not assume a normal distribution of the scores.\nHypotheses\n\nNull hypothesis (\\(H_0\\)): There is no difference in the median scores between the two classes.\nAlternative hypothesis (\\(H_a\\)): There is a difference in the median scores between the two classes.\n\nSignificance Level\n\n\\(\\alpha = 0.05\\): This is the threshold for determining statistical significance.",
+    "crumbs": [
+      "Week 10",
+      "Day 30"
+    ]
   },
   {
     "objectID": "Day30.html#mann-whitney-u-test-in-r",
     "href": "Day30.html#mann-whitney-u-test-in-r",
     "title": "Day 30",
     "section": "Mann-Whitney U Test in R",
-    "text": "Mann-Whitney U Test in R\n\nFirst, we’ll enter the exam scores into R and perform the test.\n\nonline_scores &lt;- c(78, 82, 83, 87, 75, 43, 78, 42, 94, 47, 98, 90, 97, 81)\ntraditional_scores &lt;- c(83, 82, 92, 100, 74, 90, 44, 84, 77, 89, 70, 34)\n\nNext, we use the wilcox.test() function to conduct the Mann-Whitney U test.\n\nwilcox.test(online_scores, traditional_scores, alternative = \"two.sided\", conf.level = 0.95)\n\n\n    Wilcoxon rank sum test with continuity correction\n\ndata:  online_scores and traditional_scores\nW = 85.5, p-value = 0.959\nalternative hypothesis: true location shift is not equal to 0"
+    "text": "Mann-Whitney U Test in R\n\nFirst, we’ll enter the exam scores into R and perform the test.\n\nonline_scores &lt;- c(78, 82, 83, 87, 75, 43, 78, 42, 94, 47, 98, 90, 97, 81)\ntraditional_scores &lt;- c(83, 82, 92, 100, 74, 90, 44, 84, 77, 89, 70, 34)\n\nNext, we use the wilcox.test() function to conduct the Mann-Whitney U test.\n\nwilcox.test(online_scores, traditional_scores, alternative = \"two.sided\", conf.level = 0.95)\n\n\n    Wilcoxon rank sum test with continuity correction\n\ndata:  online_scores and traditional_scores\nW = 85.5, p-value = 0.959\nalternative hypothesis: true location shift is not equal to 0",
+    "crumbs": [
+      "Week 10",
+      "Day 30"
+    ]
   },
   {
     "objectID": "Activity30.html",
