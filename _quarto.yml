@@ -55,7 +55,7 @@ website:
       - section: "Week 10"
         contents:
           - text: "Day 30"
-            href: Day29--30.html
+            href: Day30.html
           - text: "Activity 30"
             href: Activity30.html
           - text: "Day 29"
