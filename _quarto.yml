@@ -54,10 +54,10 @@ website:
       #       href: Activity11.html
       - section: "Week 10"
         contents:
-          # - text: "Day 30"
-          #   href: Day30.html
-          # - text: "Day 29"
-          #   href: Day29.html
+          - text: "Day 30"
+            href: Day29--30.html
+          - text: "Activity 30"
+            href: Activity30.html
           - text: "Day 29"
             href: Day29.html
           - text: "Activity 29"
